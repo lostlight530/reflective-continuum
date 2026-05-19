@@ -1,0 +1,23 @@
+name: Deterministic Verification Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Run Deterministic Tests (Zero Dependency)
+      run: |
+        # Using pure Python standard library to run tests
+        python -m unittest discover tests/
