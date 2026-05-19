@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Deterministic Manifesto</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --text-main: #e8e8e8;
+            --text-dim: #999999;
+            --text-dark: #666666;
+            --text-darkest: #555555;
+
+            --plasma: #ffffff;
+            --liquid: #00b4d8;
+            --solid: #ffffff;
+            --gas: rgba(255,255,255,0.7);
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 50px 0;
+            text-align: center;
+            opacity: 0;
+            animation: fadeInPage 2s forwards;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            opacity: 0;
+        }
+
+        .line {
+            width: 1px;
+            height: 40px;
+            background-color: var(--text-dark);
+            margin: 0 auto 40px auto;
+            opacity: 0;
+        }
+
+        a {
+            color: var(--text-dim);
+            text-decoration: none;
+            border-bottom: 1px solid var(--text-dark);
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        a:hover {
+            color: var(--text-main);
+            border-color: var(--text-main);
+        }
+
+        /* Narrative Layers */
+        .awe { color: var(--text-main); animation: fadeUp 2s 1s forwards; }
+        .arrogance { color: var(--text-dim); animation: fadeUp 2s 3s forwards; }
+        .date { color: var(--text-dark); font-size: 0.9em; animation: fadeUp 2s 5s forwards; letter-spacing: 2px;}
+
+        .line-1 { animation: scaleY 1s 7s forwards; }
+
+        .terminal {
+            text-align: left;
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid #333;
+            padding: 20px;
+            font-size: 0.85em;
+            color: var(--text-dim);
+            animation: fadeUp 2s 8s forwards;
+            margin: 0 auto 40px auto;
+            max-width: 600px;
+        }
+
+        .terminal h3 { color: #888; font-weight: normal; margin-top: 0; font-size: 1em; text-transform: uppercase; letter-spacing: 1px;}
+        .terminal ul { list-style: none; padding: 0; margin: 0; }
+        .terminal li { margin-bottom: 10px; }
+        .terminal .highlight { color: #bbb; }
+        .terminal .verdict { color: var(--text-main); margin-top: 20px; border-top: 1px dashed #444; padding-top: 10px;}
+
+        .line-2 { animation: scaleY 1s 10s forwards; }
+
+        /* The Four Repos */
+        .repos {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: fadeUp 2s 11s forwards;
+        }
+
+        .repo-plasma { color: var(--plasma); text-shadow: 0 0 10px #e0f7fa, 0 0 20px #80deea; }
+        .repo-liquid { color: var(--liquid); text-shadow: 0 0 8px var(--liquid); }
+        .repo-solid { color: var(--solid); }
+        .repo-gas { color: var(--text-main); text-shadow: 0 0 15px var(--gas); }
+        .repo-desc { font-size: 0.6em; color: var(--text-dark); font-weight: normal; margin-left: 10px; text-shadow: none; letter-spacing: 1px;}
+
+        .vision { color: #ffffff; animation: fadeUp 2s 14s forwards; font-size: 1.1em; letter-spacing: 1px;}
+
+        .line-3 { animation: scaleY 1s 16s forwards; }
+
+        .honesty { color: var(--text-dim); font-size: 0.9em; animation: fadeUp 2s 17s forwards; }
+
+        .landing { color: var(--text-main); animation: fadeUp 2s 20s forwards; }
+
+        .signature { color: var(--text-darkest); margin-top: 60px; text-align: right; animation: fadeUp 2s 23s forwards; font-style: italic; letter-spacing: 2px;}
+
+        /* Animations */
+        @keyframes fadeInPage { to { opacity: 1; } }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleY {
+            from { opacity: 0; transform: scaleY(0); }
+            to { opacity: 1; transform: scaleY(1); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="section awe">
+        感谢学术界先驱与研究机构的灯塔指引<br>
+        你们定义了概率的边界，让我们得以将确定性的公理落地
+    </div>
+
+    <div class="section arrogance">
+        也向那些在暗处默默克隆的自动化流水线与爬虫致敬<br>
+        带走证明过程吧，但公理不可复制
+    </div>
+
+    <div class="section date">
+        2026.02.14 — 2026.05.19
+    </div>
+
+    <div class="line line-1"></div>
+
+    <div class="section terminal">
+        <h3>[ Data & Timestamps ]</h3>
+        <ul>
+            <li>Total Clones: 15,000+ | Machine-to-Human Ratio: 14.8 : 1</li>
+            <li><span class="highlight">02.15</span> - 认知系统上线 (<a href="https://github.com/lostlight530/welcome-to-github/pull/22" target="_blank">PR#22</a>)</li>
+            <li><span class="highlight">03.17</span> - FTS5 落地 (<a href="https://github.com/lostlight530/zero-entropy-lab/commit/6412e1d" target="_blank">Commit 6412e1d</a>)</li>
+            <li><span class="highlight">03.26</span> - Hermes 博客发布 (<a href="https://hermes-agent.nousresearch.com/features/memory" target="_blank">Memory Docs</a>)</li>
+        </ul>
+        <div class="verdict">
+            Hermes 依赖 LLM 读写 Markdown 的不确定性。<br>
+            我们在 SQLite/FTS5 之上构建 BM25三级管线 + HMAC签名 + Merkle防篡改 + 多核PageRank。<br>
+            全部零依赖 stdlib。第一公民。<br><br>
+            原理一样，我们更早、更深。Commit 随时可查。<br>
+            但这在我们的体系中微不足道。
+        </div>
+    </div>
+
+    <div class="line line-2"></div>
+
+    <div class="section repos">
+        <div><span class="repo-plasma">Axiom-0</span><span class="repo-desc">协议层：数学边界</span></div>
+        <div><span class="repo-liquid">zero-entropy-lab</span><span class="repo-desc">协作层：效率极值</span></div>
+        <div><span class="repo-solid">welcome-to-github</span><span class="repo-desc">孵化层：不死证明</span></div>
+        <div><span class="repo-gas">reflective-continuum</span><span class="repo-desc">收束层：绝对自治</span></div>
+    </div>
+
+    <div class="section vision">
+        向伟大的开源精神致敬<br>
+        此四仓，前赴后继，无一保留，见证知识的纯粹
+    </div>
+
+    <div class="line line-3"></div>
+
+    <div class="section honesty">
+        感谢 GitHub 承载这一自治生态<br>
+        感谢 Google Jules 在构建过程中的忠实推演<br>
+        感谢 NVIDIA 提供的底层算力，哪怕我们选择了零 GPU 的道路
+    </div>
+
+    <div class="section landing">
+        感谢所有的注视与解析<br>
+        这 98 天的绝对确定性，让我原本平淡的 20 岁，拥有了坍缩概率波的重量
+    </div>
+
+    <div class="section signature">
+        lostLight
+    </div>
+
+</div>
+
+</body>
+</html>
