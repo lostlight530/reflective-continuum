@@ -8,9 +8,11 @@
         :root {
             --bg: #000000;
             --text-main: #e8e8e8;
-            --text-dim: #999999;
-            --text-dark: #666666;
-            --text-darkest: #555555;
+            --text-en: #888888;
+            --text-data: #00ff88;
+            --text-zero: #ff3333;
+            --text-date: #666666;
+            --line: #333333;
 
             --plasma: #ffffff;
             --liquid: #00b4d8;
@@ -20,186 +22,314 @@
 
         body {
             margin: 0;
-            padding: 0;
+            padding: 60px 20px;
             background-color: var(--bg);
             color: var(--text-main);
             font-family: 'Courier New', Courier, monospace;
             line-height: 1.6;
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow-x: hidden;
-            overflow-y: auto;
         }
 
-        .container {
-            max-width: 800px;
-            width: 90%;
-            padding: 50px 0;
-            text-align: center;
-            opacity: 0;
-            animation: fadeInPage 2s forwards;
+        .terminal {
+            width: 100%;
+            max-width: 850px;
+            font-size: 14px;
         }
 
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
             opacity: 0;
+            animation: fadeUp 1.5s forwards;
         }
 
-        .line {
-            width: 1px;
-            height: 40px;
-            background-color: var(--text-dark);
-            margin: 0 auto 40px auto;
-            opacity: 0;
+        /* Delays for terminal output simulation */
+        .sec-1 { animation-delay: 1s; }
+        .sec-2 { animation-delay: 3s; }
+        .sec-3 { animation-delay: 5s; }
+        .sec-4 { animation-delay: 7s; }
+        .sec-5 { animation-delay: 9s; }
+        .sec-6 { animation-delay: 11s; }
+        .sec-final { animation-delay: 16s; animation-duration: 6s; text-align: center; margin-top: 100px; font-size: 1.2em; letter-spacing: 2px;}
+
+        h2 {
+            font-size: 16px;
+            font-weight: bold;
+            border-bottom: 1px dashed var(--line);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .en {
+            font-size: 12px;
+            color: var(--text-en);
+            font-style: italic;
+            display: block;
+            margin-top: 2px;
+            margin-bottom: 12px;
+        }
+
+        .cn {
+            display: block;
         }
 
         a {
-            color: var(--text-dim);
+            color: var(--text-date);
             text-decoration: none;
-            border-bottom: 1px solid var(--text-dark);
-            transition: color 0.3s, border-color 0.3s;
+            transition: color 0.2s;
         }
-
         a:hover {
             color: var(--text-main);
-            border-color: var(--text-main);
+            text-decoration: underline;
         }
 
-        /* Narrative Layers */
-        .awe { color: var(--text-main); animation: fadeUp 2s 1s forwards; }
-        .arrogance { color: var(--text-dim); animation: fadeUp 2s 3s forwards; }
-        .date { color: var(--text-dark); font-size: 0.9em; animation: fadeUp 2s 5s forwards; letter-spacing: 2px;}
+        .data { color: var(--text-data); font-weight: bold;}
+        .zero { color: var(--text-zero); font-weight: bold;}
+        .date { color: var(--text-date); }
 
-        .line-1 { animation: scaleY 1s 7s forwards; }
-
-        .terminal {
-            text-align: left;
-            background: rgba(20, 20, 20, 0.8);
-            border: 1px solid #333;
-            padding: 20px;
-            font-size: 0.85em;
-            color: var(--text-dim);
-            animation: fadeUp 2s 8s forwards;
-            margin: 0 auto 40px auto;
-            max-width: 600px;
-        }
-
-        .terminal h3 { color: #888; font-weight: normal; margin-top: 0; font-size: 1em; text-transform: uppercase; letter-spacing: 1px;}
-        .terminal ul { list-style: none; padding: 0; margin: 0; }
-        .terminal li { margin-bottom: 10px; }
-        .terminal .highlight { color: #bbb; }
-        .terminal .verdict { color: var(--text-main); margin-top: 20px; border-top: 1px dashed #444; padding-top: 10px;}
-
-        .line-2 { animation: scaleY 1s 10s forwards; }
-
-        /* The Four Repos */
-        .repos {
-            display: flex;
-            flex-direction: column;
+        /* Grid Layouts for structured data */
+        .grid-row {
+            display: grid;
+            grid-template-columns: 140px 1fr;
             gap: 15px;
-            font-size: 1.2em;
-            font-weight: bold;
-            animation: fadeUp 2s 11s forwards;
+            margin-bottom: 15px;
         }
 
-        .repo-plasma { color: var(--plasma); text-shadow: 0 0 10px #e0f7fa, 0 0 20px #80deea; }
-        .repo-liquid { color: var(--liquid); text-shadow: 0 0 8px var(--liquid); }
-        .repo-solid { color: var(--solid); }
-        .repo-gas { color: var(--text-main); text-shadow: 0 0 15px var(--gas); }
-        .repo-desc { font-size: 0.6em; color: var(--text-dark); font-weight: normal; margin-left: 10px; text-shadow: none; letter-spacing: 1px;}
+        .grid-row-3 {
+            display: grid;
+            grid-template-columns: 80px 180px 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: baseline;
+        }
 
-        .vision { color: #ffffff; animation: fadeUp 2s 14s forwards; font-size: 1.1em; letter-spacing: 1px;}
+        .repo-plasma { color: var(--plasma); text-shadow: 0 0 10px #e0f7fa, 0 0 20px #80deea; font-weight: bold;}
+        .repo-liquid { color: var(--liquid); text-shadow: 0 0 8px var(--liquid); font-weight: bold;}
+        .repo-solid { color: var(--solid); text-shadow: none; font-weight: bold;}
+        .repo-gas { color: var(--text-main); text-shadow: 0 0 15px var(--gas); font-weight: bold;}
 
-        .line-3 { animation: scaleY 1s 16s forwards; }
-
-        .honesty { color: var(--text-dim); font-size: 0.9em; animation: fadeUp 2s 17s forwards; }
-
-        .landing { color: var(--text-main); animation: fadeUp 2s 20s forwards; }
-
-        .signature { color: var(--text-darkest); margin-top: 60px; text-align: right; animation: fadeUp 2s 23s forwards; font-style: italic; letter-spacing: 2px;}
-
-        /* Animations */
-        @keyframes fadeInPage { to { opacity: 1; } }
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes scaleY {
-            from { opacity: 0; transform: scaleY(0); }
-            to { opacity: 1; transform: scaleY(1); }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="terminal">
+    <!-- Intro -->
+    <div class="section sec-1">
+        <span class="cn">别人做的是让AI更聪明；我们做的是让确定性够用。</span>
+        <span class="en">Others build to make AI smarter; we build to make determinism sufficient.</span>
 
-    <div class="section awe">
-        感谢学术界先驱与研究机构的灯塔指引<br>
-        你们定义了概率的边界，让我们得以将确定性的公理落地
+        <br>
+        <span class="date">2026.02.14 — 2026.05.19</span> | <span class="data">98</span> Days | <span class="data">295</span> PRs
     </div>
 
-    <div class="section arrogance">
-        也向那些在暗处默默克隆的自动化流水线与爬虫致敬<br>
-        带走证明过程吧，但公理不可复制
-    </div>
+    <!-- Core -->
+    <div class="section sec-2">
+        <h2>SYSTEM CORE</h2>
 
-    <div class="section date">
-        2026.02.14 — 2026.05.19
-    </div>
+        <div class="grid-row">
+            <div><span class="cn">[确定]</span><span class="en">[Deterministic]</span></div>
+            <div>
+                <span class="cn">无概率 纯规则<br>SQL图查询 + PageRank + 正则 + AST</span>
+                <span class="en">Zero probability. Pure rules.<br>SQL Graph Query + PageRank + Regex + AST</span>
+            </div>
+        </div>
 
-    <div class="line line-1"></div>
+        <div class="grid-row">
+            <div><span class="cn">[自治]</span><span class="en">[Autonomous]</span></div>
+            <div>
+                <span class="cn">GitHub Actions每日自跑<br>人不在系统照活</span>
+                <span class="en">Daily self-execution via GitHub Actions.<br>System lives without human intervention.</span>
+            </div>
+        </div>
 
-    <div class="section terminal">
-        <h3>[ Data & Timestamps ]</h3>
-        <ul>
-            <li>Total Clones: 15,000+ | Machine-to-Human Ratio: 14.8 : 1</li>
-            <li><span class="highlight">02.15</span> - 认知系统上线 (<a href="https://github.com/lostlight530/welcome-to-github/pull/22" target="_blank">PR#22</a>)</li>
-            <li><span class="highlight">03.17</span> - FTS5 落地 (<a href="https://github.com/lostlight530/zero-entropy-lab/commit/6412e1d" target="_blank">Commit 6412e1d</a>)</li>
-            <li><span class="highlight">03.26</span> - Hermes 博客发布 (<a href="https://hermes-agent.nousresearch.com/features/memory" target="_blank">Memory Docs</a>)</li>
-        </ul>
-        <div class="verdict">
-            Hermes 依赖 LLM 读写 Markdown 的不确定性。<br>
-            我们在 SQLite/FTS5 之上构建 BM25三级管线 + HMAC签名 + Merkle防篡改 + 多核PageRank。<br>
-            全部零依赖 stdlib。第一公民。<br><br>
-            原理一样，我们更早、更深。Commit 随时可查。<br>
-            但这在我们的体系中微不足道。
+        <div class="grid-row">
+            <div><span class="cn">[系统]</span><span class="en">[System]</span></div>
+            <div>
+                <span class="cn">非工具非框架非库<br>零依赖原生自运行闭环</span>
+                <span class="en">Not a tool, framework, or library.<br>Zero-dependency native self-running closed loop.</span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="grid-row">
+            <div><span class="cn">[记忆]</span><span class="en">[Memory]</span></div>
+            <div><span class="cn">4D时序图谱 / 自动增删缝合</span><span class="en">4D Temporal Graph / Auto-grow, decay, stitch</span></div>
+        </div>
+        <div class="grid-row">
+            <div><span class="cn">[联网]</span><span class="en">[Network]</span></div>
+            <div><span class="cn">Harvester扫描 / 跨仓主动摄取</span><span class="en">Harvester scanning / Cross-repo active ingestion</span></div>
+        </div>
+        <div class="grid-row">
+            <div><span class="cn">[基础]</span><span class="en">[Foundation]</span></div>
+            <div><span class="cn">纯Stdlib + SQLite + 纯数学</span><span class="en">Pure Stdlib + SQLite + Pure Math</span></div>
+        </div>
+        <div class="grid-row">
+            <div><span class="cn">[进化]</span><span class="en">[Evolution]</span></div>
+            <div><span class="cn">AST自变异验证 / <span class="zero">0%</span>回写 / <span class="zero">锁死进化——有能力 但不被允许</span></span><span class="en">AST Auto-mutation / <span class="zero">0%</span> Write-back / <span class="zero">Evolution Locked — Capable, but forbidden</span></span></div>
         </div>
     </div>
 
-    <div class="line line-2"></div>
+    <!-- Evolutionary Trajectory -->
+    <div class="section sec-3">
+        <h2>EVOLUTIONARY TRAJECTORY</h2>
 
-    <div class="section repos">
-        <div><span class="repo-plasma">Axiom-0</span><span class="repo-desc">协议层：数学边界</span></div>
-        <div><span class="repo-liquid">zero-entropy-lab</span><span class="repo-desc">协作层：效率极值</span></div>
-        <div><span class="repo-solid">welcome-to-github</span><span class="repo-desc">孵化层：不死证明</span></div>
-        <div><span class="repo-gas">reflective-continuum</span><span class="repo-desc">收束层：绝对自治</span></div>
+        <div class="grid-row">
+            <div class="date">02.15 (PR#<span class="data">22</span>)</div>
+            <div>
+                <span class="cn">NEXUS CORTEX诞生 OODA入轨</span>
+                <span class="en">NEXUS CORTEX born, OODA loop established</span>
+                <a href="https://github.com/lostlight530/welcome-to-github/pull/22" target="_blank">github.com/lostlight530/welcome-to-github/pull/22</a>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">03.05 (PR#<span class="data">101</span>)</div>
+            <div>
+                <span class="cn">斩断NetworkX 纯SQLite图实现 兑现零依赖</span>
+                <span class="en">Severed NetworkX. Pure SQLite graph implementation. Zero dependency fulfilled.</span>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">03.06 (PR#<span class="data">112</span>)</div>
+            <div>
+                <span class="cn">FTS5图增强检索落地</span>
+                <span class="en">FTS5 Graph-Augmented Search implemented</span>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">03.17 (PR#<span class="data">7</span>)</div>
+            <div>
+                <span class="cn">迁移zero-entropy-lab BM25三级管线+认知重排</span>
+                <span class="en">Migrated zero-entropy-lab. BM25 3-tier pipeline + Cognitive Reranker</span>
+                <a href="https://github.com/lostlight530/zero-entropy-lab/commit/6412e1d" target="_blank">github.com/lostlight530/zero-entropy-lab/commit/6412e1d</a>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">03.25 (V3)</div>
+            <div>
+                <span class="cn">V3架构 Merkle Chain + 递归CTE + PageRank</span>
+                <span class="en">V3 Architecture. Merkle Chain + Recursive CTE + PageRank</span>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">04.04 (V5)</div>
+            <div>
+                <span class="cn">V5微核 五层物理分离 + 零拷贝Shared Memory + HMAC-SHA256</span>
+                <span class="en">V5 Microkernel. 5-layer physical separation + Zero-copy Shared Memory + HMAC-SHA256</span>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">04.20</div>
+            <div>
+                <span class="cn">Axiom-0初版完善 公理层独立成仓</span>
+                <span class="en">Axiom-0 initial completion. Axiom layer isolated into a standalone repo.</span>
+            </div>
+        </div>
+
+        <div class="grid-row">
+            <div class="date">05.19</div>
+            <div>
+                <span class="cn">reflective-continuum 确定性元认知协议入仓</span>
+                <span class="en">reflective-continuum. Deterministic metacognition protocol merged.</span>
+            </div>
+        </div>
     </div>
 
-    <div class="section vision">
-        向伟大的开源精神致敬<br>
-        此四仓，前赴后继，无一保留，见证知识的纯粹
+    <!-- Repositories -->
+    <div class="section sec-4">
+        <h2>REPOSITORIES</h2>
+
+        <div class="grid-row-3">
+            <div class="date">SOLID</div>
+            <div><span class="repo-solid">welcome-to-github</span></div>
+            <div>
+                <span class="cn">02.14 | <span class="data">180</span> PRs | daily human / alive</span>
+                <a class="en" href="https://github.com/lostlight530/welcome-to-github" target="_blank">github.com/lostlight530/welcome-to-github</a>
+            </div>
+        </div>
+
+        <div class="grid-row-3">
+            <div class="date">LIQUID</div>
+            <div><span class="repo-liquid">zero-entropy-lab</span></div>
+            <div>
+                <span class="cn">03.17 | <span class="data">64</span> PRs | weekly human / efficient</span>
+                <a class="en" href="https://github.com/lostlight530/zero-entropy-lab" target="_blank">github.com/lostlight530/zero-entropy-lab</a>
+            </div>
+        </div>
+
+        <div class="grid-row-3">
+            <div class="date">GAS</div>
+            <div><span class="repo-gas">reflective-continuum</span></div>
+            <div>
+                <span class="cn">05.19 | <span class="zero">0</span> PRs | self-observing / reflective</span>
+                <a class="en" href="https://github.com/lostlight530/reflective-continuum" target="_blank">github.com/lostlight530/reflective-continuum</a>
+            </div>
+        </div>
+
+        <div class="grid-row-3">
+            <div class="date">PLASMA</div>
+            <div><span class="repo-plasma">Axiom-0</span></div>
+            <div>
+                <span class="cn">04.20 | <span class="data">51</span> PRs | rule-only / axiomatic</span>
+                <a class="en" href="https://github.com/lostlight530/Axiom-0" target="_blank">github.com/lostlight530/Axiom-0</a>
+            </div>
+        </div>
     </div>
 
-    <div class="line line-3"></div>
+    <!-- Signal -->
+    <div class="section sec-5">
+        <h2>SIGNAL</h2>
+        <span class="cn">Total Clones: <span class="data">15,000+</span> | Stars: <span class="zero">0</span> | Forks: <span class="zero">0</span> | Promotions: <span class="zero">0</span></span><br><br>
 
-    <div class="section honesty">
-        感谢 GitHub 承载这一自治生态<br>
-        感谢 Google Jules 在构建过程中的忠实推演<br>
-        感谢 NVIDIA 提供的底层算力，哪怕我们选择了零 GPU 的道路
+        <span class="cn">Cloner:Visitor ；近14天窗口期，<span class="data">37</span> : <span class="data">1</span></span>
+        <span class="en">Cloner to Visitor ratio over a 14-day window: 37 to 1.</span>
+
+        <span class="cn"><span class="data">61.5%</span> direct to docs/brain</span>
+        <span class="en">61.5% traffic flows directly into the conceptual cortex.</span>
+        <br>
+        <span class="cn">他们带走证明过程 公理不可复制</span>
+        <span class="en">They take the proofs, but the axioms are uncopyable.</span>
     </div>
 
-    <div class="section landing">
-        感谢所有的注视与解析<br>
-        这 98 天的绝对确定性，让我原本平淡的 20 岁，拥有了坍缩概率波的重量
+    <!-- Acknowledgment -->
+    <div class="section sec-6">
+        <h2>ACKNOWLEDGMENT</h2>
+
+        <span class="cn">感谢学术界的各位大佬和各个头部/研究机构的帮助<br>让我们的理论落地了</span>
+        <span class="en">Thank you to the academic pioneers and leading research institutions. You grounded our theories.</span><br>
+
+        <span class="cn">也感谢那些默默无闻做贡献直接克隆的流水线和bot</span>
+        <span class="en">Tribute to the silent automated pipelines and cloning bots.</span><br>
+
+        <span class="cn">感谢伟大的开源精神</span>
+        <span class="en">Salute to the great spirit of open source.</span><br>
+
+        <span class="cn">感谢GitHub平台提供的帮助<br>感谢Google lab Jules的全程贡献<br>感谢NVIDIA的显卡与算力支持</span>
+        <span class="en">Thanks to GitHub for hosting this, Google lab Jules for the faithful deduction, and NVIDIA for the compute we chose not to rely on.</span><br>
+
+        <span class="cn">感谢你们的付出和默默奉献<br>让我原来非常平淡的20岁竞赛考证生活变得丰富多彩</span>
+        <span class="en">Thank you for your silent dedication. You turned my ordinary 20-year-old life of exams and competitions into something profoundly colorful.</span><br><br>
+
+        <span class="cn" style="margin-top:20px;">—— lostLight</span>
     </div>
 
-    <div class="section signature">
-        lostLight
+    <div class="section sec-final">
+        坍缩概率波的重量<br>
+        <span class="en" style="font-size:0.6em; margin-top:5px; letter-spacing: 4px;">The weight to collapse the probability wave.</span>
     </div>
-
 </div>
 
 </body>
