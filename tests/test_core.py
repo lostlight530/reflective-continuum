@@ -1,6 +1,6 @@
 import unittest
-from src.reflective_continuum import delta, phase
-from src.reflective_continuum.graph_db import GraphDB
+from CODE import drift_detector as delta, entropy_analyzer as phase
+from CODE.continuum_db import GraphDB
 
 class TestCognitiveDelta(unittest.TestCase):
 
@@ -40,7 +40,9 @@ class TestCognitiveDelta(unittest.TestCase):
         self.assertTrue(drift_a)
 
     def test_self_consistency_boolean(self):
-        result = delta.verify_self_consistency({}, ["RULE-1"])
+        class MockRuleEngine:
+            def verify_consistency(self, delta): return True
+        result = delta.verify_self_consistency({}, MockRuleEngine())
         self.assertIsInstance(result, bool)
 
 class TestPhaseBoundary(unittest.TestCase):

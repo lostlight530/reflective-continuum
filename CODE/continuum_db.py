@@ -63,17 +63,41 @@ class GraphDB:
         ''')
         self.conn.commit()
 
-    def insert_node(self, node_id: str, content: str, version: int = 1):
+    def insert_node(self, node_id: str, content: str, version: int = 1, commit: bool = True):
         """Inserts a node. Trigger automatically updates FTS5."""
         self.conn.execute("INSERT OR REPLACE INTO nodes (node_id, content, version) VALUES (?, ?, ?)",
                           (node_id, content, version))
-        self.conn.commit()
+        if commit:
+            self.conn.commit()
 
-    def insert_edge(self, source: str, target: str, relationship: str, version: int = 1):
+    def insert_edge(self, source: str, target: str, relationship: str, version: int = 1, commit: bool = True):
         """Inserts a directed edge."""
         self.conn.execute("INSERT OR REPLACE INTO edges (source_id, target_id, relationship, version) VALUES (?, ?, ?, ?)",
                           (source, target, relationship, version))
-        self.conn.commit()
+        if commit:
+            self.conn.commit()
+
+    def fork(self, name: str):
+        """Creates a named savepoint for transactional isolation (ADR-004)."""
+        self.conn.execute(f"SAVEPOINT {name}")
+
+    def commit_fork(self, name: str):
+        """Releases the named savepoint, committing changes."""
+        self.conn.execute(f"RELEASE SAVEPOINT {name}")
+
+    def rollback_fork(self, name: str):
+        """Rolls back to the named savepoint."""
+        self.conn.execute(f"ROLLBACK TO SAVEPOINT {name}")
+
+    def get_all_nodes(self, version: int = 1):
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT node_id FROM nodes WHERE version = ?", (version,))
+        return [row['node_id'] for row in cursor.fetchall()]
+
+    def get_all_edges(self, version: int = 1):
+        cursor = self.conn.cursor()
+        cursor.execute("SELECT source_id, target_id FROM edges WHERE version = ?", (version,))
+        return [tuple(row) for row in cursor.fetchall()]
 
     def semantic_search(self, query: str) -> typing.List[dict]:
         """Performs a deterministic FTS5 search."""
