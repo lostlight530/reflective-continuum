@@ -62,11 +62,24 @@ def compute_semantic_delta(conn: sqlite3.Connection, query: str, v1: int, v2: in
 
     return top_v1 != top_v2
 
-def verify_self_consistency(delta: dict, rules: typing.List[str]) -> bool:
+def compute_rank_delta(pr1: typing.Dict[str, float], pr2: typing.Dict[str, float], threshold: float) -> typing.List[str]:
+    """
+    Identifies nodes with significant PageRank shift between two states (ADR-003).
+    """
+    significant_shifts = []
+    all_nodes = set(pr1.keys()).union(set(pr2.keys()))
+
+    for node in all_nodes:
+        score1 = pr1.get(node, 0.0)
+        score2 = pr2.get(node, 0.0)
+        if abs(score1 - score2) > threshold:
+            significant_shifts.append(node)
+
+    return significant_shifts
+
+def verify_self_consistency(delta: dict, rule_engine: typing.Any) -> bool:
     """
     Verifies state mutations against internal architectural decision records (ADR-004).
     Returns True if valid (deterministic Boolean output), False if contradiction found.
     """
-    # Stub: Always assumes consistency unless explicitly rejected by a hard rule constraint.
-    # In a full implementation, this parses ADR text to boolean AST flags.
-    return True
+    return rule_engine.verify_consistency(delta)
