@@ -1,6 +1,6 @@
 import unittest
-from CODE import differential as delta, thermodynamics as phase
-from CODE.substrate import GraphDB
+from CODE import drift_detector as delta, entropy_analyzer as phase
+from CODE.continuum_db import GraphDB
 
 class TestCognitiveDelta(unittest.TestCase):
 

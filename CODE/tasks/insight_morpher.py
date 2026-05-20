@@ -4,10 +4,10 @@ import typing
 import urllib.request
 import re
 
-class Harvester:
+class InsightMorpher:
     """
-    T-10 Synthesis: Daily Ingestion & Synthesis.
-    Scans for 2025/2026 tech news and generates bilingual reports.
+    T-10 Synthesis: Reflective Insight Morphing.
+    Morphes ingested news into internal knowledge shards for the Gaseous Phase.
     """
 
     def __init__(self, output_dir: str = "RESEARCH/daily"):
@@ -61,5 +61,5 @@ class Harvester:
         print(f"[Harvester] T-10 Synthesis Complete: {path}")
 
 if __name__ == "__main__":
-    harvester = Harvester()
+    harvester = InsightMorpher()
     harvester.dehydrate_and_report()

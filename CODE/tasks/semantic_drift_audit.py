@@ -3,10 +3,10 @@ import re
 import math
 import typing
 
-class AbyssalEchoes:
+class SemanticDriftAudit:
     """
-    T-06 Analysis & T-09 Coherence: Deep Code & Spec Alignment.
-    Scans CODE/, ADR/, and METHODOLOGY/ for structural consistency.
+    T-06 Analysis: Specialized Semantic Drift & Metacognitive Alignment.
+    Audits the Gaseous Phase's reflection logs against the Spec.
     """
 
     def __init__(self, root: str = "."):
@@ -63,7 +63,7 @@ class AbyssalEchoes:
         return dk_l
 
 if __name__ == "__main__":
-    auditor = AbyssalEchoes()
+    auditor = SemanticDriftAudit()
     try:
         auditor.run_audit()
     except Exception as e:

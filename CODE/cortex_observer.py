@@ -1,13 +1,13 @@
 import typing
-from .substrate import GraphDB
-from .thermodynamics import check_phase_boundary, compute_pagerank
-from .differential import compute_structural_delta
-from .orthodoxy import RuleEngine
+from .continuum_db import GraphDB
+from .entropy_analyzer import check_phase_boundary, compute_pagerank
+from .drift_detector import compute_structural_delta
+from .reflective_validator import RuleEngine
 
-class Cortex:
+class CortexObserver:
     """
-    The central orchestrator for the Reflective Continuum.
-    Manages phase transitions and reflection depth.
+    Metacognitive Observer for the Reflective Continuum (Gaseous Phase).
+    Monitors the continuum's entropy and manages self-reflective cycles.
     """
 
     def __init__(self, db: GraphDB, rule_engine: RuleEngine, max_depth: int = 3, entropy_threshold: float = 1.0):

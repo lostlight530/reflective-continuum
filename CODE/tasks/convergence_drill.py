@@ -1,14 +1,14 @@
 import os
 import sys
 import hashlib
-from CODE.substrate import GraphDB
-from CODE.orthodoxy import RuleEngine
-from CODE.governor import Cortex
+from CODE.continuum_db import GraphDB
+from CODE.reflective_validator import RuleEngine
+from CODE.cortex_observer import CortexObserver
 
-class BlastTester:
+class ConvergenceDrill:
     """
-    T-07 Grounding: High-Pressure Drill (AOT Blast Testing).
-    Runs the core logic 100 times to ensure Zero-Entropy State.
+    T-07 Grounding: Metacognitive Convergence Drill.
+    Verifies that self-reflection leads to deterministic stable states.
     """
 
     def __init__(self, iterations: int = 100):
@@ -23,7 +23,7 @@ class BlastTester:
             # 1. Isolated Environment
             db = GraphDB(":memory:")
             rules = RuleEngine()
-            cortex = Cortex(db, rules, entropy_threshold=0.1)
+            cortex = CortexObserver(db, rules, entropy_threshold=0.1)
 
             # 2. Deterministic Input Sequence
             inputs = [
@@ -58,5 +58,5 @@ class BlastTester:
             sys.exit(1)
 
 if __name__ == "__main__":
-    tester = BlastTester()
+    tester = ConvergenceDrill()
     tester.run_drill()

@@ -1,7 +1,7 @@
 import unittest
-from CODE.substrate import GraphDB
-from CODE.orthodoxy import RuleEngine
-from CODE.governor import Cortex
+from CODE.continuum_db import GraphDB
+from CODE.reflective_validator import RuleEngine
+from CODE.cortex_observer import CortexObserver as Cortex
 
 class TestArchitectureIntegration(unittest.TestCase):
     def setUp(self):

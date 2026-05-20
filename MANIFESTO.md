@@ -26,11 +26,11 @@ This ecosystem is a physical manifestation of a four-phase thermodynamic continu
   Bypassing the "Tower of Babel" (npm/pip bloat) to run directly on bare-metal logic (Python Stdlib + SQLite + Shared Memory).
   绕过“巴别塔”（npm/pip 臃肿层），直接运行在底层逻辑之上。
 
-### 3. Workflow Mechanism | 工作流机制 (AXIOM Tasks)
+### 3. Workflow Mechanism | 工作流机制 (Reflective Cycles)
 
-1. **Abyssal Echoes (深渊回音)**: Constant audit of Code vs. Spec. (T-06 Analysis).
-2. **High-Pressure Drill (高压演习)**: AOT Blast Testing for bit-identical reproducibility (T-07 Grounding).
-3. **Daily Ingestion (定海神针)**: Automated harvesting and dehydration of 2025/2026 high-entropy intelligence (T-10 Synthesis).
+1. **Semantic Drift Audit (语义漂移审计)**: Specialized audit of metacognitive alignment. (T-06 Analysis).
+2. **Convergence Drill (收敛演习)**: Verifying that self-reflection leads to deterministic stable states. (T-07 Grounding).
+3. **Insight Morpher (见解变形器)**: Morphing harvested insights into reflective knowledge shards. (T-10 Synthesis).
 
 ---
 
