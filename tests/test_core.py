@@ -40,7 +40,9 @@ class TestCognitiveDelta(unittest.TestCase):
         self.assertTrue(drift_a)
 
     def test_self_consistency_boolean(self):
-        result = delta.verify_self_consistency({}, ["RULE-1"])
+        class MockRuleEngine:
+            def verify_consistency(self, delta): return True
+        result = delta.verify_self_consistency({}, MockRuleEngine())
         self.assertIsInstance(result, bool)
 
 class TestPhaseBoundary(unittest.TestCase):
