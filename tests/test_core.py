@@ -1,6 +1,6 @@
 import unittest
-from src.reflective_continuum import delta, phase
-from src.reflective_continuum.graph_db import GraphDB
+from CODE import differential as delta, topology as phase
+from CODE.lattice import GraphDB
 
 class TestCognitiveDelta(unittest.TestCase):
 

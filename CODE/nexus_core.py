@@ -1,8 +1,8 @@
 import typing
-from .graph_db import GraphDB
-from .phase import check_phase_boundary, compute_pagerank
-from .delta import compute_structural_delta
-from .rules import RuleEngine
+from .lattice import GraphDB
+from .topology import check_phase_boundary, compute_pagerank
+from .differential import compute_structural_delta
+from .axioms import RuleEngine
 
 class Cortex:
     """

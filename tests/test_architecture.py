@@ -1,7 +1,7 @@
 import unittest
-from src.reflective_continuum.graph_db import GraphDB
-from src.reflective_continuum.rules import RuleEngine
-from src.reflective_continuum.cortex import Cortex
+from CODE.lattice import GraphDB
+from CODE.axioms import RuleEngine
+from CODE.nexus_core import Cortex
 
 class TestArchitectureIntegration(unittest.TestCase):
     def setUp(self):
