@@ -1,7 +1,7 @@
 import unittest
-from CODE.lattice import GraphDB
-from CODE.axioms import RuleEngine
-from CODE.nexus_core import Cortex
+from CODE.substrate import GraphDB
+from CODE.orthodoxy import RuleEngine
+from CODE.governor import Cortex
 
 class TestArchitectureIntegration(unittest.TestCase):
     def setUp(self):

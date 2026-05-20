@@ -1,6 +1,6 @@
 import unittest
-from CODE import differential as delta, topology as phase
-from CODE.lattice import GraphDB
+from CODE import differential as delta, thermodynamics as phase
+from CODE.substrate import GraphDB
 
 class TestCognitiveDelta(unittest.TestCase):
 
