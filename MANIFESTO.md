@@ -31,9 +31,9 @@ This ecosystem is a physical manifestation of a four-phase thermodynamic continu
 The following maintenance tasks are strictly executed by **External Agents**, never by automated GitHub Actions within the system, preserving the "External Observer" constraint.
 以下维护任务严格由 **外部 Agent** 执行，系统内绝不能通过自动化 GitHub Actions 运行，以保留“外部观察者”约束。
 
-1. **Semantic Drift Audit (语义漂移审计, T-10)**: Weekly specialized audit of metacognitive alignment. (每周一次，T-10 综合审查).
-2. **Convergence Drill (收敛演习, T-07)**: Daily validation ensuring self-reflection loops reliably lead to bit-identical stable states. (每日验证，T-07 基础演习，确保反射循环可靠导向一致状态).
-3. **Insight Morpher (见解变形器, T-06)**: Daily morphing of ingested global insights into internal reflective knowledge shards. (每日执行，T-06 状态分析与见解碎片转化).
+1. **Axiom Decay Scanner (公理衰减扫描器, T-10)**: Weekly specialized audit of metacognitive alignment. (每周一次，T-10 综合审查，防止底层约束腐化).
+2. **Entropy Collapse Drill (熵坍缩演习, T-07)**: Daily validation ensuring self-reflection loops reliably lead to bit-identical stable states. (每日验证，T-07 基础演习，确保反射循环可靠导向无熵一致状态).
+3. **Cognition Dehydrator (认知脱水器, T-06)**: Daily morphing of ingested global insights into internal reflective knowledge shards. (每日执行，T-06 状态分析，将外界冗余信息剥离转化为高纯度知识碎片).
 
 ---
 

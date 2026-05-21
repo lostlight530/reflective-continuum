@@ -81,7 +81,7 @@ We stand on the shoulders of giants. This repository specifically pays profound 
 While defining the formal continuum, this repository also houses the zero-dependency structural scaffolding needed to execute the proofs:
 在定义形式化连续体的同时，本仓库还包含了执行这些证明所需的零依赖结构脚手架：
 - `CODE/`: The core deterministic routines including `continuum_db.py`, `cortex_observer.py`, `drift_detector.py`, `entropy_analyzer.py`, `reflective_validator.py`. (核心确定性例程，采用硬核赛博命名法)
-- `CODE/tasks/`: Specialized task executors (`convergence_drill.py`, `insight_morpher.py`, `semantic_drift_audit.py`) intended ONLY for external Agent execution. (特化任务执行器，仅限外部 Agent 运行)
+- `CODE/tasks/`: Specialized task executors (`entropy_collapse_drill.py`, `cognition_dehydrator.py`, `axiom_decay_scanner.py`) intended ONLY for external Agent execution. (特化任务执行器，仅限外部 Agent 运行)
 - `tests/`: Pure `unittest` modules verifying invariants without external frameworks. (验证不变量的纯 `unittest` 模块)
 - `ADR/` & `METHODOLOGY/`: The binding architectural constraints. (具有约束力的架构决策记录和方法论)
 
