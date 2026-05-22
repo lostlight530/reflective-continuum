@@ -89,12 +89,12 @@ class GraphDB:
         """Rolls back to the named savepoint."""
         self.conn.execute(f"ROLLBACK TO SAVEPOINT {name}")
 
-    def get_all_nodes(self, version: int = 1):
+    def get_all_nodes(self, version: int = 1) -> typing.List[str]:
         cursor = self.conn.cursor()
         cursor.execute("SELECT node_id FROM nodes WHERE version = ?", (version,))
         return [row['node_id'] for row in cursor.fetchall()]
 
-    def get_all_edges(self, version: int = 1):
+    def get_all_edges(self, version: int = 1) -> typing.List[typing.Tuple[str, str]]:
         cursor = self.conn.cursor()
         cursor.execute("SELECT source_id, target_id FROM edges WHERE version = ?", (version,))
         return [tuple(row) for row in cursor.fetchall()]

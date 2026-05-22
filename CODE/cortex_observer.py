@@ -46,7 +46,11 @@ class CortexObserver:
 
         except Exception as e:
             print(f"[Cortex] Critical error processing input: {e}")
-            self.db.rollback_fork(input_fork)
+            # Ensure safe rollback in case of unexpected exceptions during graph operations
+            try:
+                self.db.rollback_fork(input_fork)
+            except Exception as rollback_e:
+                print(f"[Cortex] Rollback failed: {rollback_e}")
 
     def _check_and_reflect(self) -> bool:
         """
@@ -113,7 +117,6 @@ class CortexObserver:
 
         try:
             # 2. Verify current state consistency
-            # Fetch content for actual verification
             cursor = self.db.conn.cursor()
             cursor.execute("SELECT node_id, content FROM nodes")
             nodes_data = cursor.fetchall()
@@ -136,7 +139,10 @@ class CortexObserver:
 
         except Exception as e:
             print(f"[Cortex] Error during reflection: {e}")
-            self.db.rollback_fork(fork_name)
+            try:
+                self.db.rollback_fork(fork_name)
+            except Exception:
+                pass
             self.phase = "LIQUID"
             self.current_depth = 0
             return False

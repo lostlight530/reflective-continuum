@@ -1,65 +1,54 @@
-import os
-import datetime
-import typing
-import urllib.request
-import re
+import sys
+from CODE.continuum_db import GraphDB
+from CODE.cortex_observer import CortexObserver
+from CODE.reflective_validator import RuleEngine
 
 class InsightMorpher:
     """
-    T-10 Synthesis: Reflective Insight Morphing.
-    Morphes ingested news into internal knowledge shards for the Gaseous Phase.
+    T-10 Synthesis: Ingestion and Morphing of External Signals.
+    Processes external data points into strictly formatted structural nodes.
     """
 
-    def __init__(self, output_dir: str = "RESEARCH/daily"):
-        self.output_dir = output_dir
-        os.makedirs(output_dir, exist_ok=True)
+    def __init__(self):
+        self.db = GraphDB(":memory:")
+        self.rules = RuleEngine()
+        self.cortex = CortexObserver(self.db, self.rules)
 
-    def fetch_news(self) -> typing.List[dict]:
+    def morph_signals(self, raw_signals: list) -> bool:
         """
-        Simulates scanning arXiv and major tech blogs for 2025/2026 insights.
-        In a real scenario, this would use RSS or API calls.
+        Takes raw signals and deterministically morphs them into the Knowledge Graph.
+        Returns True if all signals were successfully ingested without cognitive rejection.
         """
-        # Mocking deterministic ingestion for the proof of concept
-        return [
-            {
-                "title": "Deterministic Metacognition in Autonomous Systems",
-                "source": "arXiv:2502.1456",
-                "summary": "Exploration of zero-dependency self-observation loops in cybernetic kernels."
-            },
-            {
-                "title": "Topological Entropy as a Phase Boundary Trigger",
-                "source": "Nous Research Blog",
-                "summary": "Using graph theory to determine modal shifts in large-scale knowledge bases."
-            }
-        ]
+        print("[InsightMorpher] Initializing T-10 Synthesis...")
+        success_count = 0
 
-    def dehydrate_and_report(self):
-        print("[Harvester] Initializing T-10 Daily Ingestion...")
-        news = self.fetch_news()
+        for sig in raw_signals:
+            node_id = sig.get("id")
+            content = sig.get("content")
+            edges = sig.get("edges", [])
 
-        today = datetime.date.today().strftime("%Y-%m-%d")
-        filename = f"{today}-dehydrated-report.md"
-        path = os.path.join(self.output_dir, filename)
+            if not node_id or not content:
+                print(f"[InsightMorpher] Warning: Invalid signal format: {sig}")
+                continue
 
-        content = f"# Daily Dehydrated Report | 每日脱水报告\n"
-        content += f"**Date:** {today}\n"
-        content += f"**Status:** System Locked / Zero-Entropy\n\n"
-        content += "---\n\n"
+            print(f"[InsightMorpher] Morphing signal: {node_id}")
+            # Process via the Cortex Observer to ensure phase transitions and rollback constraints apply
+            self.cortex.process_input(node_id, content, edges)
 
-        for item in news:
-            content += f"### {item['title']}\n"
-            content += f"- **Source:** {item['source']}\n"
-            content += f"- **Summary (EN):** {item['summary']}\n"
+            # Verify if the node actually made it into the DB (not rolled back)
+            if node_id in self.db.get_all_nodes():
+                success_count += 1
+            else:
+                print(f"[InsightMorpher] Signal {node_id} was rejected by Cortex constraints.")
 
-            # Simple "Dehydration" (mock translation for proof of concept)
-            zh_summary = item['summary'].replace("zero-dependency", "零依赖").replace("deterministic", "确定性")
-            content += f"- **摘要 (ZH):** {zh_summary}\n\n"
-
-        with open(path, 'w', encoding='utf-8') as f:
-            f.write(content)
-
-        print(f"[Harvester] T-10 Synthesis Complete: {path}")
+        print(f"[InsightMorpher] Synthesis complete. Successfully ingested {success_count}/{len(raw_signals)} signals.")
+        return success_count == len(raw_signals)
 
 if __name__ == "__main__":
-    harvester = InsightMorpher()
-    harvester.dehydrate_and_report()
+    # Test data representing industry signals
+    test_signals = [
+        {"id": "SIG_001", "content": "NVIDIA advances deterministic execution", "edges": []},
+        {"id": "SIG_002", "content": "OpenAI test-time limits reached", "edges": [("SIG_001", "SIG_002", "contrasts")]}
+    ]
+    morpher = InsightMorpher()
+    morpher.morph_signals(test_signals)
