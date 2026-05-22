@@ -1,86 +1,81 @@
-Reflective Continuum
+# Reflective Continuum (反射连续体)
 
-Formal specification of reflective state transitions in deterministic continua
+## What is this? (这是什么？)
 
-Statement
+**English:**
+Welcome to the Reflective Continuum. This repository is not a library, framework, or tool. It is a formal specification and architectural blueprint for **Deterministic Meta-Cognition**.
+Imagine an AI system that needs to "think about how it thinks" (metacognition). Usually, this is done using neural networks and probability, which can hallucinate or produce unpredictable results.
+Our approach is entirely different: we use **zero probability, zero neural networks, and zero external dependencies**. Instead, we rely strictly on deterministic rules, mathematics, and exact state differences (like SQL diffs and PageRank) to allow a system to observe, evaluate, and correct its own cognitive state reliably.
 
-This repository defines reflective state transitions — the protocol by which a deterministic system observes, evaluates, and corrects its own cognitive processes without probability, without neural inference, and without human intervention.
+**中文 (Chinese):**
+欢迎来到反射连续体 (Reflective Continuum)。这个仓库不是一个现成的代码库、框架或工具。它是**确定性元认知**的正式规范和架构蓝图。
+想象一下，一个AI系统需要“思考自己是如何思考的”（即元认知）。通常，这是通过神经网络和概率模型来完成的，这可能会导致幻觉或不可预测的结果。
+我们的方法截然不同：我们**不使用概率，不使用神经网络，零外部依赖**。相反，我们完全依靠确定性规则、纯数学和精确的状态差异（比如数据库的 SQL 差异比对和 PageRank 算法），让系统能够可靠地观察、评估并纠正自身的认知状态。
 
-It does not implement. It constrains.
+## The Thermodynamic Analogy (热力学相变比喻)
 
-Core Definitions
+**English:**
+To understand how our architecture manages information, we use a metaphor based on the states of matter:
+- **Solid (White):** Hardcoded axioms and static data. (The `welcome` repo).
+- **Liquid (Cyan):** Fluid, flowing data execution and operations. (The `zero` repo).
+- **Gas (Translucent):** Diffusive self-observation and entropy monitoring. **This repository lives in the Gas phase.** It monitors the "Liquid" execution, detects chaos (high entropy), and steps in to reflect and organize.
+- **Plasma (Intense Glow):** Pure, high-energy autonomous rule-making. (The `Axiom-0` repo).
 
-1. Metacognition (Definition 1.1)
+When the system detects too much chaos (measured mathematically as topological entropy), it triggers a phase boundary transition from Liquid to Gas, starting a reflective cycle to restore order.
 
-A deterministic observation and rule-driven self-correction of the system's own cognitive state. Contains no probabilistic sampling. Contains no neural network inference.
+**中文 (Chinese):**
+为了帮助理解我们的架构如何管理信息，我们借用了物质状态（相变）的比喻：
+- **固态 (白色)：** 硬编码的公理和静态数据。（对应 `welcome` 仓库）。
+- **液态 (青色)：** 流动的、执行中的数据和操作。（对应 `zero` 仓库）。
+- **气态 (半透明)：** 弥散的自我观察和熵值监控。**本仓库就处于“气态”阶段。** 它监控“液态”的执行过程，一旦发现系统陷入混乱（高熵值），就会介入进行反思和整理。
+- **等离子态 (强烈发光)：** 纯粹的、高能量的自主规则制定。（对应 `Axiom-0` 仓库）。
 
-2. Reflection Depth Constraint (Definition 1.2)
+当系统在数学上检测到过高的“拓扑熵”（混乱度）时，就会触发相界转换，从液态转变为气态，开启一次确定性的反思循环，从而恢复系统的秩序。
 
-The number of reflective layers is bounded by a deterministic constant N. Exceeding N without convergence is classified as Cognitive Rejection — the system does not recurse indefinitely.
+## Architecture & Function (架构与功能)
 
-3. Cognitive Delta Protocol (Definition 1.3)
+**English:**
+1. **Zero-Entropy State:** Every mutation (change) in the knowledge graph is transactionally isolated (using SQLite SAVEPOINTs). If a change violates strict architectural rules, it is rolled back instantly—no "rethinking," just a hard deterministic reset.
+2. **Cognitive Delta Protocol:** We calculate exactly what changed using SQL differences, PageRank rank shifts, and FTS5 semantic drift.
+3. **Convergence Drill:** The system ensures that given the same inputs, it always converges to the exact same cryptographic hash.
 
-Deterministic difference detection between two knowledge graph snapshots. Implemented via SQL diff + PageRank rank shift + FTS5 semantic drift. No embedding. No vector similarity.
+**中文 (Chinese):**
+1. **零熵状态：** 知识图谱中的每一次突变（修改）都被事务隔离（使用 SQLite SAVEPOINT）。如果某个更改违反了严格的架构规则，它会立刻被回滚——没有模糊的“重新思考”，只有硬性的确定性重置。
+2. **认知增量协议：** 我们使用 SQL 差异、PageRank 排名变动和 FTS5 语义漂移，精确计算出系统状态发生了什么改变。
+3. **收敛演练：** 系统能够确保，只要输入相同，不论经过多少次反思，最终都会收敛到完全一致的加密哈希值状态。
 
-4. Self-Consistency Verification (Definition 1.4)
+## REFERENCES/PIONEERS/ (致敬先驱)
 
-System output must pass deterministic validation against its own constraint set (ADR corpus). Inconsistency triggers rollback, not "rethinking."
-
-5. Phase Boundary Detection (Definition 1.5)
-
-When the PageRank topological entropy of the knowledge state exceeds a threshold, the system transitions from execution mode to reflection mode — a phase change in the continuum.
-
-Phase Topology
-
-plaintext
-  Solid ──── Liquid ──── Gas ──── Plasma
-   │           │          │          │
- welcome    zero      this repo   Axiom-0
-   │           │          │          │
- daily      weekly    zero+auto   full-auto
- human      human     self-obs     rule-only
- alive     efficient  reflective   axiomatic
-
-
-This repository occupies the Gas phase — diffusive, self-observing, filling the gap between collaborative execution and pure constraint.
-
-What This Repository Is Not
-
-Not a library. Not a framework. Not a tool.
-Not an implementation of probabilistic metacognition — it is the specification and structural scaffold of how metacognition must behave under strictly deterministic constraints.
-Not dependent on any external package. Python stdlib + SQLite + pure mathematics only.
-
-## Homage & Coordinates (致敬与坐标)
-
-We stand on the shoulders of giants. This repository specifically pays profound respect to the pioneers of Meta-Learning and Metacognition:
-我们站在巨人的肩膀上。本仓库向元学习与元认知领域的先驱们表达最深切的敬意：
+**English:**
+We stand on the shoulders of giants. While our system is strictly deterministic, we pay profound respect to the pioneers of Meta-Learning and Metacognition whose probabilistic work inspired our mathematical counterpart:
 - **Google DeepMind:** For AlphaEvolve, Meta-RL (LAMER), and Demis Hassabis' vision that true introspection is the final piece of the AGI puzzle.
 - **Jürgen Schmidhuber:** For the foundational "Learning to Learn" architectures.
-- **OpenAI:** For pioneering test-time reflection limits.
+- **OpenAI:** For pioneering test-time reflection limits and iterative self-correction.
 
-*See `REFERENCES/PIONEERS/` for our full acknowledgments and how our deterministic approach serves as a strict mathematical counterpart to their probabilistic and Reinforcement Learning achievements.*
-*详见 `REFERENCES/PIONEERS/` 了解我们完整的致敬内容，以及我们如何将这种确定性方法作为他们概率与强化学习成就的严格数学对应物。*
+Our deterministic approach operates orthogonally on top of these probabilistic paradigms, serving as an observation and constraint layer.
 
-## Engineering Architecture (工程架构)
+**中文 (Chinese):**
+我们站在巨人的肩膀上。虽然我们的系统是严格确定性的，但我们向元学习与元认知领域的先驱们表达最深切的敬意，正是他们的概率性研究启发了我们这种纯数学的对应实现：
+- **Google DeepMind:** 感谢其 AlphaEvolve、Meta-RL (LAMER)，以及 Demis Hassabis 关于“真正的内省是实现AGI的最后拼图”的愿景。
+- **Jürgen Schmidhuber:** 感谢其奠基性的“学会学习 (Learning to Learn)”架构。
+- **OpenAI:** 感谢其在测试时反思限制和迭代自我纠正方面的开创性工作。
 
-While defining the formal continuum, this repository also houses the zero-dependency structural scaffolding needed to execute the proofs:
-在定义形式化连续体的同时，本仓库还包含了执行这些证明所需的零依赖结构脚手架：
-- `src/reflective_continuum/`: The core deterministic routines (`delta`, `phase`, `morph`).
-- `tests/`: Pure `unittest` modules verifying invariants without external frameworks.
-- `ADR/` & `METHODOLOGY/`: The binding architectural constraints.
+我们的确定性方法作为一种观察和约束层，与这些概率性范式正交运行（互补而不替代）。
 
-## Deterministic Workflow (确定性工作流)
+## Developer Guide (开发者指南)
 
-To run the verification suite and ensure no constraint violations exist:
-运行验证套件以确保不存在违反约束的情况：
+**English:**
+To verify the system's determinism and ensure no constraint violations, run the pure standard-library test suite:
 ```bash
-python -m unittest discover tests/
+python3 -m unittest discover tests/
 ```
+No dependencies are required. Pure Python only.
 
-What This Repository Answers
-
-Can a system know what it knows — without probability?
-
-The answer is a protocol, not an experiment.
+**中文 (Chinese):**
+要验证系统的确定性并确保没有违反任何架构约束，请运行基于纯标准库的测试套件：
+```bash
+python3 -m unittest discover tests/
+```
+完全不需要外部依赖，仅需要 Python 环境。
 
 "Build it Brutally, Run it Deterministically"

@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Deterministic Manifesto</title>
+    <title>Reflective Continuum (反射连续体)</title>
     <style>
         :root {
-            --bg: #000000;
-            --text-main: #e8e8e8;
-            --text-muted: #888888;
-            --text-data: #00ff88;
-            --text-zero: #ff3333;
-            --text-date: #666666;
-            --line: #333333;
-
-            /* Thermodynamic phases */
-            --solid: #ffffff;
-            --liquid: #00b4d8;
-            --gas: rgba(255, 255, 255, 0.4);
-            --plasma: #ffffff;
-        }
-
-        /* Base setup */
-        *, *::before, *::after {
-            box-sizing: border-box;
+            --bg-color: #000000;
+            --text-color: #00ff00; /* Default terminal green */
+            --solid-color: #ffffff;
+            --liquid-color: #00ffff;
+            --gas-color: rgba(255, 255, 255, 0.5);
+            --plasma-color: #ff00ff;
+            --font-main: 'Courier New', Courier, monospace;
         }
 
         body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
             margin: 0;
-            padding: 0;
-            background-color: var(--bg);
-            color: var(--text-main);
-            font-family: 'Courier New', Courier, monospace;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            min-height: 100vh;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
             overflow-x: hidden;
-            /* Screen flicker */
-            animation: flicker 0.15s infinite;
+            position: relative;
         }
 
-        /* CRT scanlines effect */
+        /* CRT Scanline Effect */
         body::after {
             content: " ";
             display: block;
@@ -51,556 +38,168 @@
             bottom: 0;
             right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-            z-index: 999;
+            z-index: 2;
             background-size: 100% 2px, 3px 100%;
             pointer-events: none;
         }
 
+        /* Screen Flicker */
         @keyframes flicker {
-            0% { opacity: 0.98; }
-            5% { opacity: 0.95; }
-            10% { opacity: 0.9; }
-            15% { opacity: 0.95; }
-            20% { opacity: 0.98; }
-            25% { opacity: 0.95; }
-            30% { opacity: 0.9; }
-            35% { opacity: 0.96; }
-            40% { opacity: 0.98; }
-            45% { opacity: 0.95; }
-            50% { opacity: 0.9; }
-            55% { opacity: 0.95; }
-            60% { opacity: 0.98; }
-            65% { opacity: 0.95; }
-            70% { opacity: 0.9; }
-            75% { opacity: 0.96; }
-            80% { opacity: 0.98; }
-            85% { opacity: 0.95; }
-            90% { opacity: 0.9; }
-            95% { opacity: 0.95; }
-            100% { opacity: 0.98; }
+            0% { opacity: 0.95; }
+            5% { opacity: 0.85; }
+            10% { opacity: 0.95; }
+            15% { opacity: 1; }
+            100% { opacity: 1; }
         }
 
-        .terminal {
-            width: 100%;
-            max-width: 900px;
-            padding: 80px 20px;
-            font-size: 14px;
+        .container {
             position: relative;
-            z-index: 1;
+            z-index: 3;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: flicker 0.15s infinite;
         }
 
-        /* Language Toggle */
-        .lang-controls {
+        h1, h2, h3 {
+            border-bottom: 1px solid var(--text-color);
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .phase-solid { color: var(--solid-color); text-shadow: 0 0 5px var(--solid-color); }
+        .phase-liquid { color: var(--liquid-color); text-shadow: 0 0 5px var(--liquid-color); }
+        .phase-gas { color: var(--gas-color); }
+        .phase-plasma { color: var(--plasma-color); text-shadow: 0 0 10px var(--plasma-color), 0 0 20px var(--plasma-color); }
+
+        .terminal-block {
+            border: 1px solid var(--text-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            background: rgba(0, 255, 0, 0.05);
+        }
+
+        button.lang-toggle {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            border: 1px solid var(--text-color);
+            padding: 5px 15px;
+            font-family: var(--font-main);
+            cursor: pointer;
+            text-transform: uppercase;
             position: fixed;
             top: 20px;
             right: 20px;
-            z-index: 100;
-            display: flex;
-            gap: 10px;
-            font-size: 12px;
+            z-index: 10;
         }
 
-        .lang-btn {
-            background: transparent;
-            border: 1px solid var(--text-muted);
-            color: var(--text-muted);
-            font-family: inherit;
-            padding: 5px 10px;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-transform: uppercase;
+        button.lang-toggle:hover {
+            background-color: var(--text-color);
+            color: var(--bg-color);
         }
 
-        .lang-btn:hover, .lang-btn.active {
-            border-color: var(--text-data);
-            color: var(--text-data);
-            text-shadow: 0 0 8px var(--text-data);
-        }
-
-        /* Content Language Toggling */
+        /* Language visibility classes */
+        .lang-en { display: block; }
         .lang-zh { display: none; }
-        .lang-en { display: inline-block; }
 
-        body.zh-mode .lang-zh { display: inline-block; }
-        body.zh-mode .lang-en { display: none !important; }
-        body.en-mode .lang-zh { display: none !important; }
+        /* State class applied to body */
+        body.show-zh .lang-en { display: none; }
+        body.show-zh .lang-zh { display: block; }
 
-        /* Specific rules for block elements */
-        body.zh-mode span.lang-zh.block-lang { display: block; }
-        span.lang-en.block-lang { display: block; }
-
-        .section {
-            margin-bottom: 60px;
-            opacity: 0;
-            animation: fadeUp 1.2s forwards cubic-bezier(0.1, 0.8, 0.2, 1);
-        }
-
-        /* Sequential revealing */
-        .sec-1 { animation-delay: 0.5s; }
-        .sec-2 { animation-delay: 1.5s; }
-        .sec-3 { animation-delay: 2.5s; }
-        .sec-4 { animation-delay: 3.5s; }
-        .sec-5 { animation-delay: 4.5s; }
-        .sec-6 { animation-delay: 5.5s; }
-        .sec-final {
-            animation-delay: 7s;
-            text-align: center;
-            margin-top: 100px;
-            font-size: 1.2em;
-            letter-spacing: 2px;
-        }
-
-        h2 {
-            font-size: 16px;
-            font-weight: normal;
-            border-bottom: 1px dashed var(--line);
-            padding-bottom: 8px;
-            margin-bottom: 24px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            position: relative;
-            display: inline-block;
-        }
-
-        h2::before {
-            content: '>';
-            margin-right: 8px;
-            color: var(--text-data);
-        }
-
-        a {
-            color: var(--text-date);
-            text-decoration: none;
-            transition: color 0.2s, text-shadow 0.2s;
-            position: relative;
-        }
-        a:hover {
-            color: var(--text-main);
-            text-shadow: 0 0 5px var(--text-main);
-        }
-        a::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            bottom: -2px;
-            left: 0;
-            background-color: var(--text-main);
-            transform: scaleX(0);
-            transform-origin: bottom right;
-            transition: transform 0.3s ease-out;
-        }
-        a:hover::after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-        }
-
-        .data { color: var(--text-data); font-weight: bold; text-shadow: 0 0 5px rgba(0,255,136,0.5); }
-        .zero { color: var(--text-zero); font-weight: bold; text-shadow: 0 0 5px rgba(255,51,51,0.5); }
-        .date { color: var(--text-date); }
-
-        /* Modern Grid Layouts */
-        .grid-row {
-            display: grid;
-            grid-template-columns: 160px 1fr;
-            gap: 20px;
-            margin-bottom: 16px;
-            align-items: start;
-        }
-
-        .grid-row:hover {
-            background: rgba(255,255,255,0.02);
-        }
-
-        .grid-row-3 {
-            display: grid;
-            grid-template-columns: 100px 220px 1fr;
-            gap: 20px;
-            margin-bottom: 24px;
-            align-items: baseline;
-            padding: 8px 0;
-            border-left: 2px solid transparent;
-            transition: border-color 0.3s, background 0.3s;
-        }
-
-        .grid-row-3:hover {
-            background: rgba(255,255,255,0.03);
-            border-left-color: var(--line);
-            padding-left: 10px;
-        }
-
-        /* Thermodynamic Phase Styling (2026 Best Practices) */
-
-        /* SOLID: Absolute, unyielding, bright white */
-        .repo-solid {
-            color: var(--solid);
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        /* LIQUID: Flowing, cyan, slight pulse */
-        .repo-liquid {
-            color: var(--liquid);
-            font-weight: bold;
-            text-shadow: 0 0 8px var(--liquid), 0 0 15px rgba(0, 180, 216, 0.5);
-            animation: liquid-flow 4s infinite alternate ease-in-out;
-        }
-        @keyframes liquid-flow {
-            0% { text-shadow: 0 0 8px var(--liquid), 0 0 15px rgba(0, 180, 216, 0.5); }
-            100% { text-shadow: 0 0 12px var(--liquid), 0 0 25px rgba(0, 180, 216, 0.8); }
-        }
-
-        /* GAS: Ethereal, translucent, scattered */
-        .repo-gas {
-            color: var(--gas);
-            font-weight: 300;
-            letter-spacing: 2px;
-            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-            transition: all 0.5s ease;
-        }
-        .repo-gas:hover {
-            color: rgba(255, 255, 255, 0.8);
-            letter-spacing: 3px;
-            text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-        }
-
-        /* PLASMA: High energy, intense glow, unstable */
-        .repo-plasma {
-            color: #fff;
-            font-weight: 900;
-            text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #0ff,
-                0 0 40px #0ff,
-                0 0 80px #0ff;
-            animation: plasma-pulse 0.15s infinite alternate;
-        }
-        @keyframes plasma-pulse {
-            0% { text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 15px #0ff, 0 0 30px #0ff, 0 0 60px #0ff; transform: skewX(0deg); }
-            100% { text-shadow: 0 0 6px #fff, 0 0 12px #fff, 0 0 25px #0ff, 0 0 50px #0ff, 0 0 100px #0ff; transform: skewX(0.5deg); }
-        }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(20px); filter: blur(4px); }
-            to { opacity: 1; transform: translateY(0); filter: blur(0); }
-        }
-
-        .cursor {
-            display: inline-block;
-            width: 8px;
-            height: 14px;
-            background-color: var(--text-main);
-            animation: blink 1s step-end infinite;
-            vertical-align: text-bottom;
-            margin-left: 4px;
-        }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-
-        .sys-log {
-            font-size: 12px;
-            color: var(--text-muted);
-            margin-bottom: 20px;
-            font-family: monospace;
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
     </style>
 </head>
-<body class="zh-mode">
+<body>
+    <button class="lang-toggle" onclick="toggleLanguage()">EN / 中文</button>
 
-<div class="lang-controls">
-    <button class="lang-btn active" id="btn-zh" onclick="setLang('zh')">ZH</button>
-    <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
-</div>
-
-<div class="terminal">
-    <!-- Intro -->
-    <div class="section sec-1">
-        <div class="sys-log">> INITIALIZING DETERMINISTIC KERNEL... OK</div>
-
-        <span class="lang-zh block-lang" style="font-size: 1.1em;">别人做的是让AI更聪明；我们做的是让确定性够用。</span>
-        <span class="lang-en block-lang" style="font-size: 1.1em;">Others build to make AI smarter; we build to make determinism sufficient.</span>
-
-        <br>
-        <span class="date">2026.02.14 — 2026.05.19</span> | <span class="data">98</span> Days | <span class="data">295</span> PRs
-    </div>
-
-    <!-- Core -->
-    <div class="section sec-2">
-        <h2>SYSTEM CORE<span class="cursor"></span></h2>
-
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[确定]</span>
-                <span class="lang-en">[Deterministic]</span>
+    <div class="container">
+        <!-- English Content -->
+        <div class="lang-en">
+            <h1>Reflective Continuum</h1>
+            <div class="terminal-block">
+                <p>> INITIALIZING DETERMINISTIC META-COGNITION PROTOCOL...</p>
+                <p>> STATUS: ONLINE</p>
+                <p>> PHASE: <span class="phase-gas">GASEOUS (SELF-OBSERVATION)</span></p>
             </div>
-            <div>
-                <span class="lang-zh block-lang">无概率 纯规则<br>SQL图查询 + PageRank + 正则 + AST</span>
-                <span class="lang-en block-lang">Zero probability. Pure rules.<br>SQL Graph Query + PageRank + Regex + AST</span>
+
+            <h2>Core Definition</h2>
+            <p>This repository defines reflective state transitions — the protocol by which a deterministic system observes, evaluates, and corrects its own cognitive processes without probability, without neural inference, and without human intervention.</p>
+
+            <h2>Phase Topology</h2>
+            <pre>
+Solid ──── Liquid ──── Gas ──── Plasma
+  │           │          │          │
+welcome     zero      this repo   Axiom-0
+  │           │          │          │
+ daily      weekly    zero+auto   full-auto
+ human      human     self-obs     rule-only
+ alive     efficient  reflective   axiomatic
+            </pre>
+
+            <h3>Thermodynamic Phases</h3>
+            <ul>
+                <li class="phase-solid">[SOLID] Hardcoded axioms and static data.</li>
+                <li class="phase-liquid">[LIQUID] Fluid, flowing data execution and operations.</li>
+                <li class="phase-gas">[GAS] Diffusive self-observation and entropy monitoring. Monitors execution and handles high topological entropy via reflection.</li>
+                <li class="phase-plasma">[PLASMA] Pure, high-energy autonomous rule-making.</li>
+            </ul>
+
+            <h2>System Architecture</h2>
+            <div class="terminal-block">
+                <p><strong>1. Zero-Entropy State:</strong> Mutations are transactionally isolated (SQLite SAVEPOINTs). Rule violations trigger hard rollback.</p>
+                <p><strong>2. Cognitive Delta Protocol:</strong> Deterministic difference detection using SQL diffs, PageRank rank shifts, and FTS5 semantic drift.</p>
+                <p><strong>3. Convergence Drill:</strong> Ensures self-reflection leads to cryptographically stable states.</p>
             </div>
         </div>
 
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[任务]</span>
-                <span class="lang-en">[Tasks]</span>
+        <!-- Chinese Content -->
+        <div class="lang-zh">
+            <h1>Reflective Continuum (反射连续体)</h1>
+            <div class="terminal-block">
+                <p>> 正在初始化确定性元认知协议...</p>
+                <p>> 状态: 在线</p>
+                <p>> 相态: <span class="phase-gas">气态 (自我观察)</span></p>
             </div>
-            <div>
-                <span class="lang-zh block-lang">深渊回音 (T-06/09) / 高压演习 (T-07) / 定海神针 (T-10)</span>
-                <span class="lang-en block-lang">Abyssal Echoes (T-06/09) / Blast Testing (T-07) / Daily Ingestion (T-10)</span>
-            </div>
-        </div>
 
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[自治]</span>
-                <span class="lang-en">[Autonomous]</span>
-            </div>
-            <div>
-                <span class="lang-zh block-lang">GitHub Actions每日自跑<br>人不在系统照活</span>
-                <span class="lang-en block-lang">Daily self-execution via GitHub Actions.<br>System lives without human intervention.</span>
-            </div>
-        </div>
+            <h2>核心定义</h2>
+            <p>本仓库定义了反射性状态转换——确定性系统通过该协议观察、评估并纠正自身的认知过程，无需概率、无需神经推理、无需人工干预。</p>
 
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[系统]</span>
-                <span class="lang-en">[System]</span>
-            </div>
-            <div>
-                <span class="lang-zh block-lang">非工具非框架非库<br>零依赖原生自运行闭环</span>
-                <span class="lang-en block-lang">Not a tool, framework, or library.<br>Zero-dependency native self-running closed loop.</span>
-            </div>
-        </div>
+            <h2>相界拓扑</h2>
+            <pre>
+固态 ──── 液态 ──── 气态 ──── 等离子态
+ │          │         │           │
+welcome    zero    本仓库      Axiom-0
+ │          │         │           │
+日常       每周    零依赖+自动  全自动
+人类       人类     自我观察    纯规则
+存活       高效      反射性      公理化
+            </pre>
 
-        <br>
+            <h3>热力学相变</h3>
+            <ul>
+                <li class="phase-solid">[固态] 硬编码公理与静态数据。</li>
+                <li class="phase-liquid">[液态] 流动的执行与数据操作。</li>
+                <li class="phase-gas">[气态] 弥散的自我观察与熵值监控。监控执行过程，通过反思处理高拓扑熵状态。</li>
+                <li class="phase-plasma">[等离子态] 纯粹的、高能量的自主规则制定。</li>
+            </ul>
 
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[记忆]</span>
-                <span class="lang-en">[Memory]</span>
-            </div>
-            <div>
-                <span class="lang-zh">4D时序图谱 / 自动增删缝合</span>
-                <span class="lang-en">4D Temporal Graph / Auto-grow, decay, stitch</span>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[联网]</span>
-                <span class="lang-en">[Network]</span>
-            </div>
-            <div>
-                <span class="lang-zh">Harvester扫描 / 跨仓主动摄取</span>
-                <span class="lang-en">Harvester scanning / Cross-repo active ingestion</span>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[基础]</span>
-                <span class="lang-en">[Foundation]</span>
-            </div>
-            <div>
-                <span class="lang-zh">纯Stdlib + SQLite + 纯数学</span>
-                <span class="lang-en">Pure Stdlib + SQLite + Pure Math</span>
-            </div>
-        </div>
-        <div class="grid-row">
-            <div>
-                <span class="lang-zh">[进化]</span>
-                <span class="lang-en">[Evolution]</span>
-            </div>
-            <div>
-                <span class="lang-zh">AST自变异验证 / <span class="zero">0%</span>回写 / <span class="zero">锁死进化——有能力 但不被允许</span></span>
-                <span class="lang-en">AST Auto-mutation / <span class="zero">0%</span> Write-back / <span class="zero">Evolution Locked — Capable, but forbidden</span></span>
+            <h2>系统架构</h2>
+            <div class="terminal-block">
+                <p><strong>1. 零熵状态：</strong> 状态突变被事务隔离（SQLite SAVEPOINT）。违反规则将触发硬回滚。</p>
+                <p><strong>2. 认知增量协议：</strong> 使用SQL差异、PageRank排名偏移和FTS5语义漂移进行确定性差异检测。</p>
+                <p><strong>3. 收敛演练：</strong> 确保自我反思能导向密码学上稳定的状态。</p>
             </div>
         </div>
     </div>
 
-    <!-- Evolutionary Trajectory -->
-    <div class="section sec-3">
-        <h2>EVOLUTIONARY TRAJECTORY<span class="cursor"></span></h2>
-
-        <div class="grid-row">
-            <div class="date">02.15 (PR#<span class="data">22</span>)</div>
-            <div>
-                <span class="lang-zh block-lang">NEXUS CORTEX诞生 OODA入轨</span>
-                <span class="lang-en block-lang">NEXUS CORTEX born, OODA loop established</span>
-                <a href="https://github.com/lostlight530/welcome-to-github/pull/22" target="_blank">github.com/lostlight530/welcome-to-github/pull/22</a>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">03.05 (PR#<span class="data">101</span>)</div>
-            <div>
-                <span class="lang-zh block-lang">斩断NetworkX 纯SQLite图实现 兑现零依赖</span>
-                <span class="lang-en block-lang">Severed NetworkX. Pure SQLite graph implementation. Zero dependency fulfilled.</span>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">03.06 (PR#<span class="data">112</span>)</div>
-            <div>
-                <span class="lang-zh block-lang">FTS5图增强检索落地</span>
-                <span class="lang-en block-lang">FTS5 Graph-Augmented Search implemented</span>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">03.17 (PR#<span class="data">7</span>)</div>
-            <div>
-                <span class="lang-zh block-lang">迁移zero-entropy-lab BM25三级管线+认知重排</span>
-                <span class="lang-en block-lang">Migrated zero-entropy-lab. BM25 3-tier pipeline + Cognitive Reranker</span>
-                <a href="https://github.com/lostlight530/zero-entropy-lab/commit/6412e1d" target="_blank">github.com/lostlight530/zero-entropy-lab/commit/6412e1d</a>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">03.25 (V3)</div>
-            <div>
-                <span class="lang-zh block-lang">V3架构 Merkle Chain + 递归CTE + PageRank</span>
-                <span class="lang-en block-lang">V3 Architecture. Merkle Chain + Recursive CTE + PageRank</span>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">04.04 (V5)</div>
-            <div>
-                <span class="lang-zh block-lang">V5微核 五层物理分离 + 零拷贝Shared Memory + HMAC-SHA256</span>
-                <span class="lang-en block-lang">V5 Microkernel. 5-layer physical separation + Zero-copy Shared Memory + HMAC-SHA256</span>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">04.20</div>
-            <div>
-                <span class="lang-zh block-lang">Axiom-0初版完善 公理层独立成仓</span>
-                <span class="lang-en block-lang">Axiom-0 initial completion. Axiom layer isolated into a standalone repo.</span>
-            </div>
-        </div>
-
-        <div class="grid-row">
-            <div class="date">05.19</div>
-            <div>
-                <span class="lang-zh block-lang">reflective-continuum 确定性元认知协议入仓</span>
-                <span class="lang-en block-lang">reflective-continuum. Deterministic metacognition protocol merged.</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Repositories -->
-    <div class="section sec-4">
-        <h2>REPOSITORIES<span class="cursor"></span></h2>
-
-        <div class="grid-row-3">
-            <div class="date">SOLID</div>
-            <div><span class="repo-solid">welcome-to-github</span></div>
-            <div>
-                <span class="lang-zh block-lang">02.14 | <span class="data">180</span> PRs | daily human / alive</span>
-                <span class="lang-en block-lang">02.14 | <span class="data">180</span> PRs | daily human / alive</span>
-                <a href="https://github.com/lostlight530/welcome-to-github" target="_blank">github.com/lostlight530/welcome-to-github</a>
-            </div>
-        </div>
-
-        <div class="grid-row-3">
-            <div class="date">LIQUID</div>
-            <div><span class="repo-liquid">zero-entropy-lab</span></div>
-            <div>
-                <span class="lang-zh block-lang">03.17 | <span class="data">64</span> PRs | weekly human / efficient</span>
-                <span class="lang-en block-lang">03.17 | <span class="data">64</span> PRs | weekly human / efficient</span>
-                <a href="https://github.com/lostlight530/zero-entropy-lab" target="_blank">github.com/lostlight530/zero-entropy-lab</a>
-            </div>
-        </div>
-
-        <div class="grid-row-3">
-            <div class="date">GAS</div>
-            <div><span class="repo-gas">reflective-continuum</span></div>
-            <div>
-                <span class="lang-zh block-lang">05.19 | <span class="zero">0</span> PRs | self-observing / reflective</span>
-                <span class="lang-en block-lang">05.19 | <span class="zero">0</span> PRs | self-observing / reflective</span>
-                <a href="https://github.com/lostlight530/reflective-continuum" target="_blank">github.com/lostlight530/reflective-continuum</a>
-            </div>
-        </div>
-
-        <div class="grid-row-3">
-            <div class="date">PLASMA</div>
-            <div><span class="repo-plasma">Axiom-0</span></div>
-            <div>
-                <span class="lang-zh block-lang">04.20 | <span class="data">51</span> PRs | rule-only / axiomatic</span>
-                <span class="lang-en block-lang">04.20 | <span class="data">51</span> PRs | rule-only / axiomatic</span>
-                <a href="https://github.com/lostlight530/Axiom-0" target="_blank">github.com/lostlight530/Axiom-0</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Signal -->
-    <div class="section sec-5">
-        <h2>SIGNAL<span class="cursor"></span></h2>
-        <span class="lang-zh block-lang">Total Clones: <span class="data">15,000+</span> | Stars: <span class="zero">0</span> | Forks: <span class="zero">0</span> | Promotions: <span class="zero">0</span></span>
-        <span class="lang-en block-lang">Total Clones: <span class="data">15,000+</span> | Stars: <span class="zero">0</span> | Forks: <span class="zero">0</span> | Promotions: <span class="zero">0</span></span>
-        <br>
-
-        <span class="lang-zh block-lang">Cloner:Visitor ；近14天窗口期，<span class="data">37</span> : <span class="data">1</span></span>
-        <span class="lang-en block-lang">Cloner to Visitor ratio over a 14-day window: <span class="data">37</span> : <span class="data">1</span>.</span>
-
-        <span class="lang-zh block-lang"><span class="data">61.5%</span> direct to docs/brain</span>
-        <span class="lang-en block-lang"><span class="data">61.5%</span> traffic flows directly into the conceptual cortex.</span>
-        <br>
-        <span class="lang-zh block-lang">他们带走证明过程 公理不可复制</span>
-        <span class="lang-en block-lang">They take the proofs, but the axioms are uncopyable.</span>
-    </div>
-
-    <!-- Acknowledgment -->
-    <div class="section sec-6">
-        <h2>ACKNOWLEDGMENT<span class="cursor"></span></h2>
-
-        <span class="lang-zh block-lang">感谢学术界的各位大佬和各个头部/研究机构的帮助<br>让我们的理论落地了</span>
-        <span class="lang-en block-lang">Thank you to the academic pioneers and leading research institutions.<br>You grounded our theories.</span><br>
-
-        <span class="lang-zh block-lang">也感谢那些默默无闻做贡献直接克隆的流水线和bot</span>
-        <span class="lang-en block-lang">Tribute to the silent automated pipelines and cloning bots.</span><br>
-
-        <span class="lang-zh block-lang">感谢伟大的开源精神</span>
-        <span class="lang-en block-lang">Salute to the great spirit of open source.</span><br>
-
-        <span class="lang-zh block-lang">感谢GitHub平台提供的帮助<br>感谢Google lab Jules的全程贡献<br>感谢NVIDIA的显卡与算力支持</span>
-        <span class="lang-en block-lang">Thanks to GitHub for hosting this, Google lab Jules for the faithful deduction, and NVIDIA for the compute we chose not to rely on.</span><br>
-
-        <span class="lang-zh block-lang">感谢你们的付出和默默奉献<br>让我原来非常平淡的20岁竞赛考证生活变得丰富多彩</span>
-        <span class="lang-en block-lang">Thank you for your silent dedication. You turned my ordinary 20-year-old life of exams and competitions into something profoundly colorful.</span><br><br>
-
-        <span style="margin-top:20px; display: block;">—— lostLight</span>
-    </div>
-
-    <div class="section sec-final">
-        <span class="lang-zh block-lang">坍缩概率波的重量</span>
-        <span class="lang-en block-lang" style="font-size:0.6em; margin-top:5px; letter-spacing: 4px;">The weight to collapse the probability wave.</span>
-    </div>
-</div>
-
-<script>
-    function setLang(lang) {
-        if (lang === 'zh') {
-            document.body.classList.add('zh-mode');
-            document.body.classList.remove('en-mode');
-            document.getElementById('btn-zh').classList.add('active');
-            document.getElementById('btn-en').classList.remove('active');
-            document.documentElement.lang = 'zh-CN';
-        } else {
-            document.body.classList.add('en-mode');
-            document.body.classList.remove('zh-mode');
-            document.getElementById('btn-en').classList.add('active');
-            document.getElementById('btn-zh').classList.remove('active');
-            document.documentElement.lang = 'en';
+    <script>
+        function toggleLanguage() {
+            document.body.classList.toggle('show-zh');
         }
-    }
-</script>
-
+    </script>
 </body>
 </html>

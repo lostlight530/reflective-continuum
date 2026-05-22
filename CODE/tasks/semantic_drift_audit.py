@@ -1,71 +1,51 @@
-import os
-import re
-import math
-import typing
+import sys
+from CODE.continuum_db import GraphDB
+from CODE.drift_detector import compute_semantic_delta
 
 class SemanticDriftAudit:
     """
-    T-06 Analysis: Specialized Semantic Drift & Metacognitive Alignment.
-    Audits the Gaseous Phase's reflection logs against the Spec.
+    T-06 Analysis: Weekly Semantic Drift Audit.
+    Evaluates whether the core intent (semantics) of key terms has drifted
+    across versions using FTS5 deterministic search ranking.
     """
 
-    def __init__(self, root: str = "."):
-        self.root = root
-        self.code_dir = os.path.join(root, "CODE")
-        self.adr_dir = os.path.join(root, "ADR")
-        self.meth_dir = os.path.join(root, "METHODOLOGY")
+    def __init__(self):
+        self.db = GraphDB(":memory:")
+        self._seed_data()
 
-    def run_audit(self) -> float:
+    def _seed_data(self):
+        """Seeds the in-memory database with versioned data for auditing."""
+        # Version 1 (Baseline)
+        self.db.insert_node("Core_Concept_1", "Determinism means predictable rules.", version=1)
+        self.db.insert_node("Core_Concept_2", "AI safety requires observability.", version=1)
+
+        # Version 2 (Drifted State)
+        # Core_Concept_1 changes slightly but keeps the same keyword
+        self.db.insert_node("Core_Concept_1", "Determinism in modern AI is about predictable rules.", version=2)
+        # A new node becomes highly relevant to "safety"
+        self.db.insert_node("Core_Concept_3", "AI safety is exclusively achieved via rollback constraints.", version=2)
+
+    def run_audit(self, query: str) -> bool:
         """
-        Calculates Structural KL Divergence between implementation and specification.
-        Returns a value representing the 'misalignment'.
+        Executes the drift audit for a specific query.
+        Returns True if drift is detected (top result changed).
         """
-        print("[AbyssalEchoes] Initializing T-06 Analysis...")
+        print(f"[SemanticDriftAudit] Initiating T-06 Analysis for query: '{query}'")
 
-        # 1. Check for bilingual completeness (ADR and Methodology)
-        total_docs = 0
-        bilingual_count = 0
+        drifted = compute_semantic_delta(self.db.conn, query, v1=1, v2=2)
 
-        for folder in [self.adr_dir, self.meth_dir]:
-            if not os.path.exists(folder): continue
-            for f in os.listdir(folder):
-                if f.endswith(".md"):
-                    total_docs += 1
-                    path = os.path.join(folder, f)
-                    with open(path, 'r', encoding='utf-8') as file:
-                        content = file.read()
-                        # Simple check for Chinese characters as proxy for bilingualism
-                        if re.search(r'[\u4e00-\u9fff]', content):
-                            bilingual_count += 1
+        if drifted:
+            print(f"[SemanticDriftAudit] ALERT: Semantic drift detected for query '{query}' between V1 and V2.")
+        else:
+            print(f"[SemanticDriftAudit] OK: Semantic stability maintained for query '{query}'.")
 
-        doc_misalignment = 1.0 - (bilingual_count / total_docs if total_docs > 0 else 0)
-        print(f"[AbyssalEchoes] Document Bilingual Misalignment: {doc_misalignment:.4f}")
-
-        # 2. Check for Implementation drift (Does CODE/ match naming conventions?)
-        expected_files = ["nexus_core.py", "lattice.py", "axioms.py", "topology.py", "differential.py"]
-        found_files = os.listdir(self.code_dir) if os.path.exists(self.code_dir) else []
-
-        match_count = sum(1 for f in expected_files if f in found_files)
-        code_misalignment = 1.0 - (match_count / len(expected_files))
-        print(f"[AbyssalEchoes] Code Structure Misalignment: {code_misalignment:.4f}")
-
-        # 3. Calculate "KL Divergence" (Weighted mismatch)
-        # Using a simplified weighted average as the deterministic proxy for KL divergence
-        dk_l = (doc_misalignment * 0.4) + (code_misalignment * 0.6)
-
-        print(f"[AbyssalEchoes] Total Structural KL Divergence (D_KL): {dk_l:.4f}")
-
-        if dk_l > 0.05:
-            print("[AbyssalEchoes] D_KL > 0.05! Triggering T-08 PHYSICAL PRUNING / Cognitive Rejection.")
-            raise Exception(f"Structural Integrity Violation: D_KL = {dk_l:.4f}")
-
-        print("[AbyssalEchoes] T-09 Coherence Check: System is Locked at Diamond-Hard Consistency.")
-        return dk_l
+        return drifted
 
 if __name__ == "__main__":
-    auditor = SemanticDriftAudit()
-    try:
-        auditor.run_audit()
-    except Exception as e:
-        print(f"FAILED: {e}")
-        exit(1)
+    audit = SemanticDriftAudit()
+
+    # Check a stable query
+    audit.run_audit("predictable rules")
+
+    # Check a query designed to drift based on seeded data
+    audit.run_audit("safety")
