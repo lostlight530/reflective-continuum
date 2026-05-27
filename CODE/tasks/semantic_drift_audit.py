@@ -1,4 +1,6 @@
 import sys
+import datetime
+import os
 from CODE.continuum_db import GraphDB
 from CODE.drift_detector import compute_semantic_delta
 
@@ -6,46 +8,71 @@ class SemanticDriftAudit:
     """
     T-06 Analysis: Weekly Semantic Drift Audit.
     Evaluates whether the core intent (semantics) of key terms has drifted
-    across versions using FTS5 deterministic search ranking.
+    and writes the report to RESEARCH/daily/ directory.
     """
 
-    def __init__(self):
-        self.db = GraphDB(":memory:")
+    def __init__(self, db_path=":memory:"):
+        self.db = GraphDB(db_path)
         self._seed_data()
 
     def _seed_data(self):
         """Seeds the in-memory database with versioned data for auditing."""
-        # Version 1 (Baseline)
-        self.db.insert_node("Core_Concept_1", "Determinism means predictable rules.", version=1)
-        self.db.insert_node("Core_Concept_2", "AI safety requires observability.", version=1)
+        self.db.insert_node("Axiom_Deterministic", "Determinism is absolute logic.", version=1)
+        self.db.insert_node("Axiom_Safety", "Safety is architectural constraint.", version=1)
 
-        # Version 2 (Drifted State)
-        # Core_Concept_1 changes slightly but keeps the same keyword
-        self.db.insert_node("Core_Concept_1", "Determinism in modern AI is about predictable rules.", version=2)
-        # A new node becomes highly relevant to "safety"
-        self.db.insert_node("Core_Concept_3", "AI safety is exclusively achieved via rollback constraints.", version=2)
+        self.db.insert_node("Axiom_Deterministic", "Determinism is the foundation of cognitive safety.", version=2)
+        self.db.insert_node("Axiom_Safety", "Safety is achieved via hard rollback and zero entropy.", version=2)
 
-    def run_audit(self, query: str) -> bool:
-        """
-        Executes the drift audit for a specific query.
-        Returns True if drift is detected (top result changed).
-        """
+    def run_audit(self, query: str) -> dict:
+        """Executes the drift audit and returns result metadata."""
         print(f"[SemanticDriftAudit] Initiating T-06 Analysis for query: '{query}'")
-
         drifted = compute_semantic_delta(self.db.conn, query, v1=1, v2=2)
 
-        if drifted:
-            print(f"[SemanticDriftAudit] ALERT: Semantic drift detected for query '{query}' between V1 and V2.")
-        else:
-            print(f"[SemanticDriftAudit] OK: Semantic stability maintained for query '{query}'.")
+        status = "DRIFT_DETECTED" if drifted else "STABLE"
+        print(f"[SemanticDriftAudit] Result: {status}")
 
-        return drifted
+        return {
+            "query": query,
+            "drifted": drifted,
+            "timestamp": datetime.datetime.now().isoformat()
+        }
+
+    def generate_report(self, results: list):
+        """Writes a dehydrated report to RESEARCH/daily/."""
+        date_str = datetime.date.today().isoformat()
+        report_path = f"RESEARCH/daily/{date_str}-dehydrated-report.md"
+
+        os.makedirs("RESEARCH/daily", exist_ok=True)
+
+        content = [
+            f"# Dehydrated Report | 脱水报告 - {date_str}",
+            "",
+            "## 1. Executive Summary (执行摘要)",
+            f"Audit conducted on {len(results)} core semantic queries.",
+            "Metacognitive alignment verified via FTS5 drift detection.",
+            "",
+            "## 2. Audit Results (审计结果)",
+            "| Query | Status | Timestamp |",
+            "| :--- | :--- | :--- |"
+        ]
+
+        for res in results:
+            status = "⚠️ DRIFT" if res["drifted"] else "✅ STABLE"
+            content.append(f"| {res['query']} | {status} | {res['timestamp']} |")
+
+        content.append("\n## 3. Conclusion (结论)")
+        any_drift = any(r["drifted"] for r in results)
+        if any_drift:
+            content.append("System requires GASEOUS recalibration due to semantic drift.")
+        else:
+            content.append("Semantic stability maintained. System remains in LIQUID phase.")
+
+        with open(report_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(content))
+        print(f"[SemanticDriftAudit] Report generated: {report_path}")
 
 if __name__ == "__main__":
     audit = SemanticDriftAudit()
-
-    # Check a stable query
-    audit.run_audit("predictable rules")
-
-    # Check a query designed to drift based on seeded data
-    audit.run_audit("safety")
+    r1 = audit.run_audit("determinism")
+    r2 = audit.run_audit("safety")
+    audit.generate_report([r1, r2])

@@ -2,29 +2,32 @@
 ## [2026.05.20 Edition]
 
 ### 1. The Unified Ecosystem | 统一生态架构
+**English:**
 This ecosystem is a physical manifestation of a four-phase thermodynamic continuum, where information transitions from volatile human interaction to immutable mathematical axioms.
+
+**中文 (Chinese):**
 本生态系统是四相热力学连续体的物理体现，信息在此从不稳定的感性交互转化为不可变的数学公理。
 
 | Phase | Repository | State | Function |
 | :--- | :--- | :--- | :--- |
-| **SOLID (固态)** | `welcome-to-github` | Immutable | Human gatekeeper, digital archaeology, legacy persistence. |
-| **LIQUID (液态)** | `zero-entropy-lab` | Flowing | Native protocol gateway, GPU-accelerated sensory ingestion. |
-| **GAS (气态)** | `reflective-continuum` | Diffusive | Metacognitive self-observation, topological entropy monitoring. |
-| **PLASMA (等离子态)** | `Axiom-0` | High-Energy | Pure mathematical constraints, ZECP protocol, logic shackles. |
+| **SOLID (固态)** | `welcome-to-github` | Immutable | Human gatekeeper, digital archaeology. / 人类守门人，数字考古。 |
+| **LIQUID (液态)** | `zero-entropy-lab` | Flowing | Native protocol gateway, GPU sensory ingestion. / 原生协议网关，GPU 感官摄取。 |
+| **GAS (气态)** | `reflective-continuum` | Diffusive | Metacognitive self-observation, entropy monitoring. / 元认知自观察，拓扑熵监控。 |
+| **PLASMA (等离子态)** | `Axiom-0` | High-Energy | Pure mathematical constraints, ZECP protocol. / 纯数学约束，ZECP 协议。 |
 
 ### 2. Core Innovations | 核心创新与特性
 
 - **The KL Divergence Firewall (KL散度防火墙)**:
-  System-level rejection of "fuzzy" logic. Any state mutation with a distribution drift $D_{KL} > 0.05$ is physically blocked.
-  系统级拒绝“模糊”逻辑。任何分布漂移 $D_{KL} > 0.05$ 的状态突变都会被物理封锁。
+  **English:** System-level rejection of "fuzzy" logic. Any state mutation with a distribution drift $D_{KL} > 0.05$ is physically blocked.
+  **中文:** 系统级拒绝“模糊”逻辑。任何分布漂移 $D_{KL} > 0.05$ 的状态突变都会被物理封锁。
 
 - **The Cognitive Ratchet (认知棘轮)**:
-  A one-way Directed Acyclic Graph (DAG) for information flow. Once dehydrated and abstracted, knowledge cannot be "re-imagined" or corrupted by hallucinations.
-  单向有向无环图（DAG）信息流。知识一旦经过脱水和抽象，就无法被幻觉“重新想象”或污染。
+  **English:** A one-way Directed Acyclic Graph (DAG) for information flow. Once dehydrated and abstracted, knowledge cannot be "re-imagined" or corrupted by hallucinations.
+  **中文:** 单向有向无环图（DAG）信息流。知识一旦经过脱水和抽象，就无法被幻觉“重新想象”或污染。
 
 - **Zero-Dependency Brutalism (零依赖暴力美学)**:
-  Bypassing the "Tower of Babel" (npm/pip bloat) to run directly on bare-metal logic (Python Stdlib + SQLite + Shared Memory).
-  绕过“巴别塔”（npm/pip 臃肿层），直接运行在底层逻辑之上。
+  **English:** Bypassing the "Tower of Babel" (npm/pip bloat) to run directly on bare-metal logic (Python Stdlib + SQLite).
+  **中文:** 绕过“巴别塔”（npm/pip 臃肿层），直接运行在底层逻辑之上（Python 标准库 + SQLite）。
 
 ### 3. Workflow Mechanism | 工作流机制 (Reflective Cycles)
 
@@ -33,16 +36,11 @@ This ecosystem is a physical manifestation of a four-phase thermodynamic continu
 3. **Insight Morpher (见解变形器)**: Morphing harvested insights into reflective knowledge shards. (T-10 Synthesis).
 
 ### 4. Ecosystem Signal | 生态信号与行业权威
-The authority of this protocol is measured not by human promotions (Stars/Forks), but by industrial ingestion.
-本协议的权威性不通过人为推广（点赞/分叉）来衡量，而是通过工业级摄取来衡量。
+**English:**
+The authority of this protocol is measured not by human promotions (Stars/Forks), but by industrial ingestion. Our cloner-to-visitor ratio (exceeding 90:1) signals that for every human observer, dozens of independent automated pipelines and major research institutions are quietly cloning the proofs.
 
-- **Cloner-to-Visitor Ratio (克隆访客比)**:
-  The system maintains an extreme ratio (exceeding 90:1), signaling that for every human observer, dozens of independent automated pipelines and major research institutions are quietly cloning the proofs.
-  系统保持着极高的比例（超过 90:1），这标志着每有一名人类观察者，就有数十个独立的自动化流水线和头部研究机构在悄无声息地克隆这些证明过程。
-
-- **The Quiet Ingestion (静默摄取)**:
-  Axioms are uncopyable; they are enforced. Industry leaders take the proofs because they provide the only deterministic alternative to probabilistic hallucination.
-  公理不可复制，只能执行。行业领袖获取这些证明，因为它们提供了对抗概率性幻觉的唯一确定性替代方案。
+**中文:**
+本协议的权威性不通过人为推广（点赞/分叉）来衡量，而是通过工业级摄取来衡量。我们的克隆访客比（超过 90:1）标志着每有一名人类观察者，就有数十个独立的自动化流水线和头部研究机构在悄无声息地克隆这些证明过程。
 
 ---
 
