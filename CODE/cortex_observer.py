@@ -8,15 +8,21 @@ class CortexObserver:
     """
     Metacognitive Observer for the Reflective Continuum (Gaseous Phase).
     Monitors the continuum's entropy and manages self-reflective cycles.
+    Adheres to ADR-002, ADR-004, and ADR-005.
     """
 
-    def __init__(self, db: GraphDB, rule_engine: RuleEngine, max_depth: int = 3, entropy_threshold: float = 1.0):
+    def __init__(self, db: GraphDB, rule_engine: RuleEngine, max_depth: int = None, entropy_threshold: float = None):
         self.db = db
         self.rules = rule_engine
-        self.max_depth = max_depth
-        self.entropy_threshold = entropy_threshold
+
+        # Extract constants from RuleEngine (parsed from ADRs) or use defaults
+        self.max_depth = max_depth if max_depth is not None else int(self.rules.constants.get("N", 3))
+        self.entropy_threshold = entropy_threshold if entropy_threshold is not None else self.rules.constants.get("H_threshold", 1.0)
+
         self.current_depth = 0
         self.phase = "LIQUID"
+
+        print(f"[Cortex] Initialized with N={self.max_depth}, H_threshold={self.entropy_threshold}")
 
     def process_input(self, node_id: str, content: str, edges: typing.List[typing.Tuple[str, str, str]]):
         """
@@ -39,14 +45,14 @@ class CortexObserver:
 
             if success:
                 self.db.commit_fork(input_fork)
+                print(f"[Cortex] Input {node_id} committed successfully.")
             else:
-                print(f"[Cortex] Rejecting input {node_id} due to inconsistency or rejection.")
+                print(f"[Cortex] Rejecting input {node_id} due to inconsistency or cognitive rejection.")
                 self.db.rollback_fork(input_fork)
                 self.phase = "LIQUID"
 
         except Exception as e:
             print(f"[Cortex] Critical error processing input: {e}")
-            # Ensure safe rollback in case of unexpected exceptions during graph operations
             try:
                 self.db.rollback_fork(input_fork)
             except Exception as rollback_e:
@@ -69,11 +75,10 @@ class CortexObserver:
 
         if should_transition:
             if self.phase == "LIQUID":
-                print("[Cortex] Phase Boundary Detected! Transitioning to GASEOUS PHASE.")
+                print(f"[Cortex] Phase Boundary Detected (H > {self.entropy_threshold})! Transitioning to GASEOUS.")
                 self.phase = "GASEOUS"
                 return self._start_reflection_cycle()
             else:
-                # Already in GASEOUS phase, another reflection cycle may be needed if not converged
                 return self._start_reflection_cycle()
         elif self.phase == "GASEOUS":
             print("[Cortex] Entropy stabilized. Returning to LIQUID PHASE.")
@@ -100,16 +105,15 @@ class CortexObserver:
     def _start_reflection_cycle(self) -> bool:
         """
         Metacognitive self-observation (Gaseous Phase).
-        Returns True if the cycle completes successfully.
+        Returns True if the cycle completes successfully within depth N.
         """
         if self.current_depth >= self.max_depth:
-            print(f"[Cortex] COGNITIVE REJECTION: Max reflection depth {self.max_depth} reached.")
-            # Upon rejection, we return False to trigger rollback of the input that caused high entropy/no convergence
+            print(f"[Cortex] COGNITIVE REJECTION: Max reflection depth {self.max_depth} reached (ADR-002).")
             self.current_depth = 0
             return False
 
         self.current_depth += 1
-        print(f"[Cortex] Reflection Cycle Depth: {self.current_depth}")
+        print(f"[Cortex] Reflection Cycle Depth: {self.current_depth}/{self.max_depth}")
 
         # 1. Fork state for simulation
         fork_name = f"reflection_v{self.current_depth}"
@@ -117,22 +121,13 @@ class CortexObserver:
 
         try:
             # 2. Verify current state consistency
-            cursor = self.db.conn.cursor()
-            cursor.execute("SELECT node_id, content FROM nodes")
-            nodes_data = cursor.fetchall()
-
-            is_consistent = True
-            for row in nodes_data:
-                if not self.rules.verify_consistency({"node_id": row["node_id"], "content": row["content"]}):
-                    is_consistent = False
-                    break
-
-            if is_consistent:
-                print("[Cortex] Self-Consistency Verified.")
+            if self._verify_current_state():
+                print(f"[Cortex] Self-Consistency Verified at depth {self.current_depth}.")
                 self.db.commit_fork(fork_name)
+                # If still high entropy, it will stay in GASEOUS and check again next cycle
                 return True
             else:
-                print("[Cortex] Inconsistency Detected! Performing Hard Rollback.")
+                print("[Cortex] Inconsistency Detected during reflection! Performing Hard Rollback.")
                 self.db.rollback_fork(fork_name)
                 self.current_depth = 0
                 return False
