@@ -1,5 +1,5 @@
 # The Deterministic Manifesto | 确定性宣言
-## [2026.05.20 Edition]
+## [2026.05.28 Edition]
 
 ### 1. The Unified Ecosystem | 统一生态架构
 **English:**
