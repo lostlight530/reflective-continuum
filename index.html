@@ -1,238 +1,627 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reflective Continuum | 反射连续体</title>
-    <style>
-        :root {
-            --bg-color: #000000;
-            --text-color: #00ff41; /* Classic Matrix Green */
-            --solid-color: #ffffff;
-            --liquid-color: #00ffff;
-            --gas-color: rgba(255, 255, 255, 0.6);
-            --plasma-color: #ff00ff;
-            --font-main: 'Fira Code', 'Courier New', Courier, monospace;
-            --scanline-color: rgba(18, 16, 16, 0.1);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zero-Entropy Continuum | 零熵连续体</title>
+<style>
+:root {
+  --bg-color: #000000;
+  --text-color: #00ff41;
+  --solid-color: #ffffff;
+  --liquid-color: #00ffff;
+  --gas-color: rgba(255, 255, 255, 0.6);
+  --plasma-color: #ff00ff;
+  --foundation-color: #ffd700;
+  --font-main: 'Fira Code', 'Courier New', Courier, monospace;
+  --scanline-color: rgba(18, 16, 16, 0.1);
+  --glow-s: 0 0 8px rgba(255,255,255,0.4);
+  --glow-l: 0 0 8px rgba(0,255,255,0.4);
+  --glow-g: 0 0 8px rgba(255,255,255,0.2);
+  --glow-p: 0 0 8px rgba(255,0,255,0.4);
+  --glow-f: 0 0 8px rgba(255,215,0,0.4);
+}
 
-        @keyframes flicker {
-            0% { opacity: 0.98; }
-            5% { opacity: 0.95; }
-            10% { opacity: 0.99; }
-            15% { opacity: 0.97; }
-            20% { opacity: 1; }
-            100% { opacity: 1; }
-        }
+@keyframes flicker {
+  0% { opacity: 0.98; } 5% { opacity: 0.95; } 10% { opacity: 0.99; }
+  15% { opacity: 0.97; } 20% { opacity: 1; } 100% { opacity: 1; }
+}
 
-        @keyframes scanline {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(100vh); }
-        }
+@keyframes scanline {
+  0% { transform: translateY(-10px); }
+  100% { transform: translateY(100vh); }
+}
 
-        * {
-            box-sizing: border-box;
-            cursor: crosshair !important;
-        }
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            font-family: var(--font-main);
-            margin: 0;
-            padding: 40px;
-            display: flex;
-            justify-content: center;
-            overflow-x: hidden;
-            animation: flicker 0.15s infinite;
-        }
+* { box-sizing: border-box; cursor: crosshair !important; }
 
-        /* CRT Overlay */
-        .crt-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: linear-gradient(
-                var(--scanline-color) 50%,
-                rgba(0, 0, 0, 0.2) 50%
-            );
-            background-size: 100% 4px;
-            z-index: 1000;
-            pointer-events: none;
-            opacity: 0.3;
-        }
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  animation: flicker 0.15s infinite;
+  line-height: 1.6;
+  font-size: 14px;
+}
 
-        .crt-scan {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 10px;
-            background: rgba(0, 255, 65, 0.05);
-            z-index: 1001;
-            pointer-events: none;
-            animation: scanline 8s linear infinite;
-        }
+.crt-overlay {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+  background: linear-gradient(var(--scanline-color) 50%, rgba(0,0,0,0.2) 50%);
+  background-size: 100% 4px;
+  z-index: 1000; pointer-events: none; opacity: 0.3;
+}
 
-        .container {
-            width: 100%;
-            max-width: 900px;
-            z-index: 10;
-        }
+.crt-scan {
+  position: fixed; top: 0; left: 0; width: 100vw; height: 10px;
+  background: rgba(0, 255, 65, 0.05);
+  z-index: 1001; pointer-events: none;
+  animation: scanline 8s linear infinite;
+}
 
-        .lang-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: transparent;
-            border: 1px solid var(--text-color);
-            color: var(--text-color);
-            padding: 5px 15px;
-            font-family: inherit;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            z-index: 2000;
-        }
+.container { width: 100%; max-width: 960px; z-index: 10; }
 
-        .lang-toggle:hover {
-            background: var(--text-color);
-            color: var(--bg-color);
-            box-shadow: 0 0 10px var(--text-color);
-        }
+.lang-toggle {
+  position: fixed; top: 20px; right: 20px;
+  background: transparent; border: 1px solid var(--text-color);
+  color: var(--text-color); padding: 5px 15px;
+  font-family: inherit; cursor: pointer;
+  transition: all 0.2s ease; z-index: 2000; font-size: 12px;
+}
+.lang-toggle:hover {
+  background: var(--text-color); color: var(--bg-color);
+  box-shadow: 0 0 10px var(--text-color);
+}
 
-        h1 {
-            font-size: 2rem;
-            border-bottom: 2px solid var(--text-color);
-            padding-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            margin-bottom: 30px;
-        }
+.boot-seq {
+  border: 1px solid var(--text-color);
+  padding: 20px; margin-bottom: 40px;
+  background: rgba(0, 255, 65, 0.02);
+  box-shadow: inset 0 0 15px rgba(0, 255, 65, 0.1);
+}
 
-        .terminal-block {
-            border: 1px solid var(--text-color);
-            padding: 20px;
-            background: rgba(0, 255, 65, 0.02);
-            margin-bottom: 30px;
-            position: relative;
-            box-shadow: inset 0 0 15px rgba(0, 255, 65, 0.1);
-        }
+.boot-line {
+  opacity: 0; animation: pulse 0.3s ease forwards;
+  margin: 2px 0;
+}
+.boot-line:nth-child(1) { animation-delay: 0.1s; }
+.boot-line:nth-child(2) { animation-delay: 0.3s; }
+.boot-line:nth-child(3) { animation-delay: 0.5s; }
+.boot-line:nth-child(4) { animation-delay: 0.7s; }
+.boot-line:nth-child(5) { animation-delay: 0.9s; }
 
-        .phase-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
+.cursor-blink::after {
+  content: '█'; animation: pulse 0.8s infinite;
+}
 
-        .phase-card {
-            border: 1px solid rgba(0, 255, 65, 0.3);
-            padding: 15px;
-            transition: transform 0.3s ease;
-        }
+h1 {
+  font-size: 2rem; border-bottom: 2px solid var(--text-color);
+  padding-bottom: 10px; text-transform: uppercase;
+  letter-spacing: 4px; margin-bottom: 30px;
+}
 
-        .phase-card:hover {
-            transform: scale(1.02);
-            border-color: var(--text-color);
-        }
+h2 {
+  font-size: 1.1rem; text-transform: uppercase;
+  letter-spacing: 3px; margin: 40px 0 20px;
+  padding-left: 10px;
+  border-left: 3px solid var(--text-color);
+}
 
-        .phase-title {
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
+.phase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
 
-        .solid { color: var(--solid-color); }
-        .liquid { color: var(--liquid-color); }
-        .gas { color: var(--gas-color); }
-        .plasma { color: var(--plasma-color); }
+.phase-card {
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+}
 
-        pre {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 15px;
-            border-radius: 4px;
-            overflow-x: auto;
-            color: #ddd;
-        }
+.phase-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 3px; height: 100%;
+}
 
-        /* Language visibility logic */
-        [lang="zh"] { display: none; }
-        body.show-zh [lang="en"] { display: none; }
-        body.show-zh [lang="zh"] { display: block; }
+.phase-card.solid::before { background: var(--solid-color); box-shadow: var(--glow-s); }
+.phase-card.liquid::before { background: var(--liquid-color); box-shadow: var(--glow-l); }
+.phase-card.gas::before { background: var(--gas-color); box-shadow: var(--glow-g); }
+.phase-card.plasma::before { background: var(--plasma-color); box-shadow: var(--glow-p); }
+.phase-card.foundation::before { background: var(--foundation-color); box-shadow: var(--glow-f); }
 
-    </style>
+.phase-card:hover {
+  border-color: var(--text-color);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.1);
+  transform: translateX(4px);
+}
+
+.phase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.phase-title {
+  font-weight: bold; text-transform: uppercase;
+  letter-spacing: 2px; font-size: 1rem;
+}
+
+.solid .phase-title { color: var(--solid-color); text-shadow: var(--glow-s); }
+.liquid .phase-title { color: var(--liquid-color); text-shadow: var(--glow-l); }
+.gas .phase-title { color: var(--gas-color); text-shadow: var(--glow-g); }
+.plasma .phase-title { color: var(--plasma-color); text-shadow: var(--glow-p); }
+.foundation .phase-title { color: var(--foundation-color); text-shadow: var(--glow-f); }
+
+.phase-repo {
+  font-size: 0.8rem; opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+.phase-stance {
+  font-size: 0.75rem; opacity: 0.4;
+  margin-top: 4px; font-style: italic;
+}
+
+.phase-desc {
+  margin: 10px 0;
+  color: rgba(0, 255, 65, 0.7);
+  font-size: 0.9rem;
+}
+
+.phase-capabilities {
+  list-style: none;
+  padding: 0; margin: 12px 0 0;
+}
+
+.phase-capabilities li {
+  padding: 3px 0 3px 20px;
+  position: relative;
+  font-size: 0.85rem;
+  color: rgba(0, 255, 65, 0.6);
+}
+
+.phase-capabilities li::before {
+  content: '>';
+  position: absolute; left: 0;
+  font-size: 0.8rem;
+}
+
+.solid .phase-capabilities li::before { color: var(--solid-color); }
+.liquid .phase-capabilities li::before { color: var(--liquid-color); }
+.gas .phase-capabilities li::before { color: var(--gas-color); }
+.plasma .phase-capabilities li::before { color: var(--plasma-color); }
+.foundation .phase-capabilities li::before { color: var(--foundation-color); }
+
+.arch-diagram {
+  border: 1px solid var(--text-color);
+  padding: 20px; margin: 30px 0;
+  background: rgba(0, 255, 65, 0.02);
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 2;
+  box-shadow: inset 0 0 15px rgba(0, 255, 65, 0.1);
+}
+
+.arch-flow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.arch-node {
+  border: 1px solid; padding: 8px 20px;
+  letter-spacing: 2px; font-size: 0.8rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.arch-node.plasma-node { border-color: var(--plasma-color); color: var(--plasma-color); }
+.arch-node.solid-node { border-color: var(--solid-color); color: var(--solid-color); }
+.arch-node.liquid-node { border-color: var(--liquid-color); color: var(--liquid-color); }
+.arch-node.gas-node { border-color: var(--gas-color); color: var(--gas-color); }
+.arch-node.foundation-node { border-color: var(--foundation-color); color: var(--foundation-color); }
+
+.arch-arrow { color: var(--text-color); opacity: 0.4; font-size: 0.7rem; }
+
+.signal-box {
+  border: 1px solid var(--text-color);
+  padding: 20px; margin: 30px 0;
+  background: rgba(0, 255, 65, 0.02);
+  box-shadow: inset 0 0 15px rgba(0, 255, 65, 0.1);
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.signal-item {
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  padding: 12px; text-align: center;
+}
+
+.signal-value {
+  font-size: 1.4rem; font-weight: bold;
+  margin: 5px 0;
+}
+
+.signal-label {
+  font-size: 0.75rem; opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.philosophy-block {
+  border: 1px solid rgba(0, 255, 65, 0.3);
+  padding: 20px; margin: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(0, 255, 65, 0.7);
+}
+
+.philosophy-block strong {
+  color: var(--text-color);
+}
+
+.entropy-monitor {
+  border: 1px solid var(--plasma-color);
+  padding: 20px; margin: 30px 0;
+  box-shadow: inset 0 0 15px rgba(255, 0, 255, 0.05);
+}
+
+.entropy-formula {
+  text-align: center; font-size: 1.1rem;
+  margin: 15px 0; color: var(--plasma-color);
+  text-shadow: var(--glow-p);
+  letter-spacing: 2px;
+}
+
+.entropy-state {
+  display: flex; justify-content: center;
+  gap: 30px; margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.entropy-state-item {
+  text-align: center;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 0, 255, 0.2);
+  font-size: 0.8rem;
+}
+
+.entropy-state-item.active {
+  border-color: var(--plasma-color);
+  box-shadow: var(--glow-p);
+}
+
+.footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 255, 65, 0.2);
+  text-align: center;
+  font-size: 0.8rem;
+  opacity: 0.4;
+}
+
+[lang="zh"] { display: none; }
+body.show-zh [lang="en"] { display: none; }
+body.show-zh [lang="zh"] { display: block; }
+
+@media (min-width: 768px) {
+  .phase-grid { grid-template-columns: 1fr; }
+  body { font-size: 15px; }
+}
+</style>
 </head>
 <body>
-    <div class="crt-overlay"></div>
-    <div class="crt-scan"></div>
+<div class="crt-overlay"></div>
+<div class="crt-scan"></div>
 
-    <button class="lang-toggle" onclick="document.body.classList.toggle('show-zh')">SYSTEM.LANGUAGE = [EN/ZH]</button>
+<button class="lang-toggle" onclick="document.body.classList.toggle('show-zh'); this.textContent = document.body.classList.contains('show-zh') ? '[EN]' : '[ZH]'">[ZH]</button>
 
-    <div class="container">
-        <header>
-            <h1 lang="en">Reflective Continuum</h1>
-            <h1 lang="zh">反射连续体 (Reflective Continuum)</h1>
-        </header>
+<div class="container">
 
-        <section class="terminal-block">
-            <div lang="en">
-                <p>> BOOT_SEQUENCE: DETERMINISTIC_METACOGNITION_INIT</p>
-                <p>> STATUS: <span style="color: #fff; text-shadow: 0 0 5px #fff;">OPERATIONAL</span></p>
-                <p>> ACTIVE_PHASE: <span class="gas">GASEOUS (SELF-OBSERVATION)</span></p>
-            </div>
-            <div lang="zh">
-                <p>> 启动序列: 确定性元认知初始化</p>
-                <p>> 状态: <span style="color: #fff; text-shadow: 0 0 5px #fff;">运行中</span></p>
-                <p>> 当前相态: <span class="gas">气态 (自我观察)</span></p>
-            </div>
-        </section>
+<div class="boot-seq">
+  <div class="boot-line">> BOOT_SEQUENCE: ZERO_ENTROPY_CONTINUUM_INIT</div>
+  <div class="boot-line">> STATUS: OPERATIONAL</div>
+  <div class="boot-line">> REPOSITORIES: 5 | DEPENDENCIES: 0 | PROBABILITY: NULL</div>
+  <div class="boot-line">> ARCHITECTURE: DETERMINISTIC_AUTONOMOUS_SYSTEM</div>
+  <div class="boot-line cursor-blink">> READY_</div>
+</div>
 
-        <main>
-            <div lang="en">
-                <h2>Cortex Definition</h2>
-                <p>A deterministic protocol for self-reflective state transitions. We eliminate probability to ensure absolute cognitive safety through mathematical convergence and structural invariants.</p>
-            </div>
-            <div lang="zh">
-                <h2>Cortex 定义</h2>
-                <p>一种用于反射性状态转换的确定性协议.我们消除概率，通过数学收敛和结构不变量确保绝对的认知安全.</p>
-            </div>
+<h1>
+  <span lang="en">Zero-Entropy Continuum</span>
+  <span lang="zh">零熵连续体</span>
+</h1>
 
-            <div class="phase-grid">
-                <div class="phase-card">
-                    <div class="phase-title solid">Solid | 固态</div>
-                    <p lang="en">Immutable axioms. Static memory. Human gatekeepers.</p>
-                    <p lang="zh">不可变的公理.静态记忆.人类守门人.</p>
-                </div>
-                <div class="phase-card">
-                    <div class="phase-title liquid">Liquid | 液态</div>
-                    <p lang="en">Fluid execution. Data flow. High-speed ingestion.</p>
-                    <p lang="zh">流动的执行。数据流。高速摄取.</p>
-                </div>
-                <div class="phase-card">
-                    <div class="phase-title gas">Gas | 气态</div>
-                    <p lang="en">Metacognition. Self-observation. Entropy audits.</p>
-                    <p lang="zh">元认知。自我观察。熵值审计.</p>
-                </div>
-                <div class="phase-card">
-                    <div class="phase-title plasma">Plasma | 等离子态</div>
-                    <p lang="en">Pure logic constraints. Axiomatic enforcement.</p>
-                    <p lang="zh">纯逻辑约束。公理化强制执行.</p>
-                </div>
-            </div>
+<div class="philosophy-block">
+  <span lang="en">Others make AI smarter <strong>We make determinism sufficient</strong></span>
+  <span lang="zh">别人做的是让AI更聪明 <strong>我们做的是让确定性够用</strong></span>
+</div>
 
-            <div lang="en" style="margin-top: 40px;">
-                <h2>Topological Entropy Monitor</h2>
-                <pre>H(P) = - ∑ p_i * log(p_i)</pre>
-                <p>When H(P) > H_threshold, the system vaporizes into the Gaseous phase to resolve structural complexity.</p>
-            </div>
-            <div lang="zh" style="margin-top: 40px;">
-                <h2>拓扑熵监控器</h2>
-                <pre>H(P) = - ∑ p_i * log(p_i)</pre>
-                <p>当 H(P) > H_threshold 时，系统蒸发进入气态，以解决结构复杂性.</p>
-            </div>
-        </main>
+<h2>
+  <span lang="en">System Architecture</span>
+  <span lang="zh">系统架构</span>
+</h2>
+
+<div class="arch-diagram">
+  <div class="arch-flow">
+    <div class="arch-node foundation-node">Agent Foundations — WHY IT WORKS</div>
+    <div class="arch-arrow">▼ axiom</div>
+    <div class="arch-node plasma-node">Axiom-0 — HOW IT THINKS</div>
+    <div class="arch-arrow">▼ constrain</div>
+    <div class="arch-node liquid-node">zero-entropy-lab — HUMAN-OPTIMAL</div>
+    <div class="arch-arrow">▼ evolve</div>
+    <div class="arch-node solid-node">welcome-to-github — ZERO-HUMAN RUNNING</div>
+    <div class="arch-arrow">▼ reflect</div>
+    <div class="arch-node gas-node">reflective-continuum — SELF-OBSERVATION</div>
+  </div>
+</div>
+
+<h2>
+  <span lang="en">Five Repositories</span>
+  <span lang="zh">五仓</span>
+</h2>
+
+<div class="phase-grid">
+
+  <div class="phase-card plasma">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Plasma | 等离子态</span>
+          <span lang="zh">等离子态 | Plasma</span>
+        </div>
+        <div class="phase-repo">Axiom-0</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="phase-stance">
+          <span lang="en">Rule-Only · Weekly</span>
+          <span lang="zh">纯规则 · 周级</span>
+        </div>
+      </div>
     </div>
+    <div class="phase-desc">
+      <span lang="en">Axiomatic enforcement — pure logic constraints defining how the system should think, 17 ADRs, 10-node DAG, zero implementation code, all constraint no execution</span>
+      <span lang="zh">公理化强制执行——纯逻辑约束定义系统应该怎么想，17个ADR，10节点DAG，零实现代码，全是约束没有执行</span>
+    </div>
+    <ul class="phase-capabilities">
+      <li><span lang="en">Zero-Entropy Axiom: KL divergence coherence bound</span><span lang="zh">零熵公理：KL散度相干性约束</span></li>
+      <li><span lang="en">17 ADRs: Architecture Decision Records as immutable law</span><span lang="zh">17个ADR：架构决策记录作为不可变法则</span></li>
+      <li><span lang="en">10-node DAG: Dependency graph with zero cycles</span><span lang="zh">10节点DAG：零环依赖图</span></li>
+      <li><span lang="en">0% Writeback: Capable of self-modification but forbidden</span><span lang="zh">0%回写：有能力自我修改但被禁止</span></li>
+    </ul>
+  </div>
+
+  <div class="phase-card solid">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Solid | 固态</span>
+          <span lang="zh">固态 | Solid</span>
+        </div>
+        <div class="phase-repo">welcome-to-github</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="phase-stance">
+          <span lang="en">Self-Running · Daily</span>
+          <span lang="zh">自运行 · 日级</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-desc">
+      <span lang="en">Proof that the system survives without humans — NEXUS CORTEX life-cycle runs daily on GitHub Actions, harvest ingest ponder evolve memory, the human never needs to show up</span>
+      <span lang="zh">证明没人时系统不死——NEXUS CORTEX生命循环每日在GitHub Actions上自跑，采集消化推理进化记忆，人不需要到场</span>
+    </div>
+    <ul class="phase-capabilities">
+      <li><span lang="en">Harvest: Dual-clutch radar scanning 8 repositories</span><span lang="zh">采集：双离合雷达扫描8个仓库</span></li>
+      <li><span lang="en">Ingest: AST self-parsing, structural self-awareness</span><span lang="zh">消化：AST自解析，结构自认知</span></li>
+      <li><span lang="en">Ponder: PageRank + graph reasoning, fragment into knowledge web</span><span lang="zh">推理：PageRank+图推理，碎片到知识网</span></li>
+      <li><span lang="en">Evolve: Sandbox-verified mutation / 0% writeback enforced</span><span lang="zh">进化：沙箱验证变异/0%回写强制执行</span></li>
+      <li><span lang="en">Memory: 4D temporal graph, auto grow decay suture</span><span lang="zh">记忆：4D时序图谱，自动生长衰减缝合</span></li>
+      <li><span lang="en">Trust Gateway: Hostile interaction assessment, physical block</span><span lang="zh">信任网关：恶意交互评估，物理阻断</span></li>
+    </ul>
+  </div>
+
+  <div class="phase-card liquid">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Liquid | 液态</span>
+          <span lang="zh">液态 | Liquid</span>
+        </div>
+        <div class="phase-repo">zero-entropy-lab</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="phase-stance">
+          <span lang="en">Human-Machine · Weekly</span>
+          <span lang="zh">人机协作 · 周级</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-desc">
+      <span lang="en">Proof that with humans efficiency peaks — human decides Jules executes, FTS5 full-text search BM25 three-stage pipeline CognitiveReranker, the fastest iteration loop in five-warehouse system</span>
+      <span lang="zh">证明有人时效率最高——人决策Jules执行，FTS5全文检索BM25三级管线认知重排器，五仓中最快的迭代循环</span></li>
+    </div>
+    <ul class="phase-capabilities">
+      <li><span lang="en">FTS5 + BM25 + CognitiveReranker: Three-stage retrieval pipeline</span><span lang="zh">FTS5+BM25+认知重排器：三级检索管线</span></li>
+      <li><span lang="en">Merkle Chain + Recursive CTE: Immutable knowledge lineage</span><span lang="zh">Merkle链+递归CTE：不可篡改知识谱系</span></li>
+      <li><span lang="en">Multi-core PageRank: Zero-copy shared memory bypassing GIL</span><span lang="zh">多核PageRank：零拷贝共享内存绕过GIL</span></li>
+      <li><span lang="en">128 PRs: Highest collaboration density across all warehouses</span><span lang="zh">128个PR：全仓最高协作密度</span></li>
+    </ul>
+  </div>
+
+  <div class="phase-card gas">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Gas | 气态</span>
+          <span lang="zh">气态 | Gas</span>
+        </div>
+        <div class="phase-repo">reflective-continuum</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="phase-stance">
+          <span lang="en">Self-Observing · Passive</span>
+          <span lang="zh">自我观察 · 被动</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-desc">
+      <span lang="en">Metacognition — the system observes itself, Cognitive Delta Protocol detects structural drift, ZECP continuum maps phase transitions, 0 PRs not because nobody submits but because this warehouse watches itself without needing change</span>
+      <span lang="zh">元认知——系统观察自己，认知增量协议检测结构漂移，ZECP连续体映射相变，0个PR不是没人提交是这仓自己观察自己不需要改变</span>
+    </div>
+    <ul class="phase-capabilities">
+      <li><span lang="en">Cognitive Delta Protocol: Detect structural drift between phases</span><span lang="zh">认知增量协议：检测相间结构漂移</span></li>
+      <li><span lang="en">ZECP Continuum: Phase transition mapping and entropy auditing</span><span lang="zh">ZECP连续体：相变映射与熵值审计</span></li>
+      <li><span lang="en">Entropy Vaporization: When H(P) > threshold system enters gas phase</span><span lang="zh">熵值蒸发：当H(P)>阈值时系统进入气态</span></li>
+      <li><span lang="en">Engineering Scaffold + CI + GitHub Pages: Full deployment zero interaction</span><span lang="zh">工程脚手架+CI+GitHub Pages：全部署零交互</span></li>
+    </ul>
+  </div>
+
+  <div class="phase-card foundation">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Foundation | 学术骨架</span>
+          <span lang="zh">学术骨架 | Foundation</span>
+        </div>
+        <div class="phase-repo">agent-foundations</div>
+      </div>
+      <div style="text-align:right;">
+        <div class="phase-stance">
+          <span lang="en">Theoretical Root · Immutable</span>
+          <span lang="zh">理论根基 · 不可变</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase-desc">
+      <span lang="en">The four repositories are what the system does, this repository is why it works — the mathematical and philosophical foundation underlying all phase transitions, Neuro-Symbolic Hybrid Architecture positioning, Non-LLM Agentic Systems engineering paradigm</span>
+      <span lang="zh">四个仓库是系统做什么，这个仓库是为什么这样能工作——所有相变背后的数学与哲学根基，神经符号主义混合架构定位，Non-LLM Agentic Systems工程范式</span>
+    </div>
+    <ul class="phase-capabilities">
+      <li><span lang="en">Neuro-Symbolic Hybrid Architecture: Symbolic + Graph-topology + Integration + Governance</span><span lang="zh">神经符号主义混合架构：符号层+图拓扑+整合层+治理层</span></li>
+      <li><span lang="en">Non-LLM Agentic Systems: The only complete closed-loop engineering practice</span><span lang="zh">Non-LLM Agentic Systems：唯一完整闭环工程实践</span></li>
+      <li><span lang="en">Deterministic Autonomous System: Ontology of Deterministic Autonomous System + Four Threads</span><span lang="zh">确定性自治系统：确定/自治/系统+四串本体论</span></li>
+      <li><span lang="en">Zero-Dependency Proof: Python stdlib + SQLite + pure math nothing else</span><span lang="zh">零依赖证明：Python标准库+SQLite+纯数学别无其他</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<h2>
+  <span lang="en">Topological Entropy Monitor</span>
+  <span lang="zh">拓扑熵监控器</span>
+</h2>
+
+<div class="entropy-monitor">
+  <div class="entropy-formula">H(P) = - ∑ p_i · log(p_i)</div>
+  <div style="text-align:center; font-size:0.85rem; margin:10px 0; opacity:0.6;">
+    <span lang="en">When H(P) > H_threshold the system vaporizes into Gaseous phase to resolve structural complexity</span>
+    <span lang="zh">当 H(P) > H_threshold 时系统蒸发进入气态以解决结构复杂性</span>
+  </div>
+  <div class="entropy-state">
+    <div class="entropy-state-item">
+      <span lang="en">PLASMA</span><span lang="zh">等离子态</span>
+      <br><span style="font-size:0.7rem;opacity:0.5;">
+        <span lang="en">axiom</span><span lang="zh">公理</span>
+      </span>
+    </div>
+    <div class="entropy-state-item">
+      <span lang="en">SOLID</span><span lang="zh">固态</span>
+      <br><span style="font-size:0.7rem;opacity:0.5;">
+        <span lang="en">persist</span><span lang="zh">持久</span>
+      </span>
+    </div>
+    <div class="entropy-state-item">
+      <span lang="en">LIQUID</span><span lang="zh">液态</span>
+      <br><span style="font-size:0.7rem;opacity:0.5;">
+        <span lang="en">flow</span><span lang="zh">流动</span>
+      </span>
+    </div>
+    <div class="entropy-state-item active">
+      <span lang="en">GAS</span><span lang="zh">气态</span>
+      <br><span style="font-size:0.7rem;opacity:0.5;">
+        <span lang="en">reflect</span><span lang="zh">反射</span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<h2>
+  <span lang="en">Signal Evidence</span>
+  <span lang="zh">信号证据</span>
+</h2>
+
+<div class="signal-box">
+  <div class="signal-grid">
+    <div class="signal-item">
+      <div class="signal-value">16,000+</div>
+      <div class="signal-label">
+        <span lang="en">Total Clones</span><span lang="zh">总克隆</span>
+      </div>
+    </div>
+    <div class="signal-item">
+      <div class="signal-value">0</div>
+      <div class="signal-label">
+        <span lang="en">Stars / Forks / Promotion</span><span lang="zh">星/复刻/推广</span>
+      </div>
+    </div>
+    <div class="signal-item">
+      <div class="signal-value">155:1</div>
+      <div class="signal-label">
+        <span lang="en">Clone:Visit Ratio</span><span lang="zh">克隆:访问比</span>
+      </div>
+    </div>
+    <div class="signal-item">
+      <div class="signal-value">61.5%</div>
+      <div class="signal-label">
+        <span lang="en">Direct to docs/brain</span><span lang="zh">直入核心目录</span>
+      </div>
+    </div>
+    <div class="signal-item">
+      <div class="signal-value">0</div>
+      <div class="signal-label">
+        <span lang="en">Dependencies (pip install)</span><span lang="zh">外部依赖</span>
+      </div>
+    </div>
+    <div class="signal-item">
+      <div class="signal-value">98</div>
+      <div class="signal-label">
+        <span lang="en">Days Autonomous</span><span lang="zh">自治天数</span>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top:20px; font-size:0.85rem; color:rgba(0,255,65,0.6);">
+    <span lang="en"><strong style="color:var(--text-color);">They take the proof The axiom cannot be copied</strong></span>
+    <span lang="zh"><strong style="color:var(--text-color);">他们带走证明过程 公理不可复制</strong></span>
+  </div>
+</div>
+
+<div class="footer">
+  <span lang="en">Deterministic Autonomous System · Zero Dependency · Zero Probability · Zero Writeback</span>
+  <span lang="zh">确定性自治系统 · 零依赖 · 零概率 · 零回写</span>
+  <br>
+  <span style="opacity:0.5;">lostLight · 2026</span>
+</div>
+
+</div>
 </body>
 </html>
