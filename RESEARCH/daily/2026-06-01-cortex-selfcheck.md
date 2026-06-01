@@ -1,4 +1,4 @@
-Module Health: 5/5 Modules Import/Init/Execute ✅
-Rule Engine: Rules=4 Parseable=✅ Conflicts=NONE
-DB State: Nodes=3 Edges=3 Pending rollbacks=0
-Incremental Drift: Delta vs yesterday=0.0 Within threshold=YES
+Module Health: [5模块 Import/Init/Execute ✅]
+Rule Engine: Rules=[24] Parseable=✅ Conflicts=[NONE]
+DB State: Nodes=[0] Edges=[0] Pending rollbacks=[0]
+Incremental Drift: Delta vs yesterday=[0.0] Within threshold=YES
