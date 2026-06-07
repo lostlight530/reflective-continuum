@@ -5,3 +5,4 @@
 [SemanticDriftAudit] Initiating T-06 Analysis for query: 'metacognition'
 [SemanticDriftAudit] Result: STABLE
 [SemanticDriftAudit] Report generated: RESEARCH/daily/2026-06-01-dehydrated-report.md
+[SemanticDriftAudit] ALERT: Semantic drift detected in nodes [safety]. Reporting...
