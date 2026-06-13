@@ -21,3 +21,10 @@ The Reflective Continuum diverges from DeepMind by replacing their probabilistic
 
 **中文 (Chinese):**
 反射连续体与 DeepMind 的不同之处在于，它用确定性的“架构约束”取代了他们的概率性“自我纠正策略”。我们不要求系统*学习*如何监控自己；我们定义了它*必须*在其中运行的数学边界。
+
+## 4. Deterministic Alignment & Hassabis's Vision (确定性对齐与哈萨比斯的愿景)
+**English:**
+Demis Hassabis's recent pursuits underscore the need for verifiable cognitive operations. Our implementation diverges from pure statistical RL by enforcing 'Hard Rollbacks' when systemic hallucination threatens absolute zero-entropy truth.
+
+**Chinese:**
+Demis Hassabis 最近的探索强调了可验证的认知操作的必要性。我们的实现通过在系统性幻觉威胁绝对零熵真理时强制执行“硬回滚”（Hard Rollback），偏离了纯粹的统计强化学习。

@@ -1,6 +1,5 @@
 Convergence: LOCKED | Hash=637781852c00fe1d262295f8c61dd843803d697902b699c6e12853040f358d84
-Signal Intake:
-S_001 [Anthropic publishes framework for strict deterministic agent safety. | Edges: ('S_001', 'Determinism', 'relates_to')] ACCEPTED
+Signal Intake: S_001 [Anthropic publishes framework for strict deterministic agent safety. | Edges: ('S_001', 'Determinism', 'relates_to')] ACCEPTED
 S_002 [New research validates metacognition limits in zero-entropy models. | Edges: ('S_002', 'Metacognition', 'relates_to')] ACCEPTED
 S_003 [DeepMind alignment paper enforces hard rollbacks for cognitive divergence. | Edges: ('S_003', 'AI_Alignment', 'relates_to')] ACCEPTED
 Hard Rollback Log: NONE

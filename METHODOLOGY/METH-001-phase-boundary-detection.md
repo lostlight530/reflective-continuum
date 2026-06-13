@@ -46,3 +46,10 @@ Think of the system as a thermodynamic body. As "heat" (complexity/data) is adde
 
 **中文 (Chinese):**
 将系统想象为一个热力学实体。随着“热量”（复杂性/数据）的增加，信息密度增加，直到结构不再能通过简单的执行来管理。在沸点（$H_{threshold}$）时，它汽化为气态，在这种状态下，每个“分子”（节点）都可以相对于整体被观察。
+
+## 5. Temporal Durations (时间持续度)
+**English:**
+The temporal duration spent in the Gaseous (reflective) state must be strictly monitored via the `Gas duration=[hours]` metric. Extended gas phases trigger the cognitive divergence alert if entropy fails to reach zero across sequential cycles.
+
+**Chinese:**
+在气态（反射）状态下度过的时间必须通过 `Gas duration=[hours]` 指标进行严格监控。如果熵在连续周期中无法降至零，延长的气态阶段将触发“认知发散警报”（cognitive divergence alert）。
