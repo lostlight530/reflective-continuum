@@ -1,7 +1,6 @@
 ```markdown
 Convergence: LOCKED | Hash=637781852c00fe1d262295f8c61dd843803d697902b699c6e12853040f358d84
-Signal Intake:
-- SIG_R1_001: Meta Llama-4 release highlights deterministic logic layers. [edges: []] [ACCEPTED]
+Signal Intake: - SIG_R1_001: Meta Llama-4 release highlights deterministic logic layers. [edges: []] [ACCEPTED]
 - SIG_R1_002: OpenAI tests metacognitive feedback loops for Q-star. [edges: [["SIG_R1_001", "SIG_R1_002", "compares"]]] [ACCEPTED]
 - SIG_R1_003: AI alignment shifts towards pure mathematics constraints. [edges: [["SIG_R1_002", "SIG_R1_003", "supports"]]] [ACCEPTED]
 Hard Rollback Log: NONE
