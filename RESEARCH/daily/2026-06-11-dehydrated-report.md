@@ -1,4 +1,6 @@
-```markdown
+# Dehydrated Report | 脱水报告 - 2026-06-11
+
+```text
 Convergence: LOCKED | Hash=637781852c00fe1d262295f8c61dd843803d697902b699c6e12853040f358d84
 Signal Intake: SIG_R1_001~003
 - SIG_R1_001: Meta metacognition research demonstrates predictable bounds on agentic self-reflection in deterministic architectures. [] ACCEPTED
