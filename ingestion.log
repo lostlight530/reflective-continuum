@@ -287,3 +287,31 @@ Injecting signals...
 [Cortex] Input SIG_R1_003 committed successfully.
 [InsightMorpher] Synthesis complete. Successfully ingested 3/3 signals.
 Done.
+[Cortex] Initialized with N=3, H_threshold=1.0
+[InsightMorpher] Initializing T-10 Synthesis for 3 signals...
+[InsightMorpher] Morphing signal: SIG_2026_0622_001
+[Cortex] Processing input: SIG_2026_0622_001 (Phase: LIQUID)
+[Cortex] Input SIG_2026_0622_001 committed successfully.
+[InsightMorpher] Morphing signal: SIG_2026_0622_002
+[Cortex] Processing input: SIG_2026_0622_002 (Phase: LIQUID)
+[Cortex] Input SIG_2026_0622_002 committed successfully.
+[InsightMorpher] Morphing signal: SIG_2026_0622_003
+[Cortex] Processing input: SIG_2026_0622_003 (Phase: LIQUID)
+[Cortex] Input SIG_2026_0622_003 committed successfully.
+[InsightMorpher] Synthesis complete. Successfully ingested 3/3 signals.
+
+[SUCCESS] All signals successfully ingested into the continuum deterministically.
+[Cortex] Initialized with N=3, H_threshold=1.0
+[InsightMorpher] Initializing T-10 Synthesis for 3 signals...
+[InsightMorpher] Morphing signal: SIG_2026_0622_001
+[Cortex] Processing input: SIG_2026_0622_001 (Phase: LIQUID)
+[Cortex] Input SIG_2026_0622_001 committed successfully.
+[InsightMorpher] Morphing signal: SIG_2026_0622_002
+[Cortex] Processing input: SIG_2026_0622_002 (Phase: LIQUID)
+[Cortex] Input SIG_2026_0622_002 committed successfully.
+[InsightMorpher] Morphing signal: SIG_2026_0622_003
+[Cortex] Processing input: SIG_2026_0622_003 (Phase: LIQUID)
+[Cortex] Input SIG_2026_0622_003 committed successfully.
+[InsightMorpher] Synthesis complete. Successfully ingested 3/3 signals.
+
+[SUCCESS] All signals successfully ingested into the continuum deterministically.
