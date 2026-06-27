@@ -1,37 +1,35 @@
-# METH-004: Cognitive Divergence Alert and Hard Rollback
-# METH-004：认知发散警报与硬回滚
+# METH-004: Execution Framework for Cognitive Divergence Rollbacks
+# METH-004：认知发散回滚执行框架
 
 ## 1. Introduction (简介)
 **English:**
-Building upon ADR-009, this methodology formalizes the mechanical process for detecting semantic drift during deep autonomous reasoning and executing an absolute Hard Rollback. This protocol ensures that any generated hallucination chain is instantly severed before impacting the Liquid (execution) phase.
+This methodology details the exact execution framework required by ADR-009, specifically operationalizing the "cognitive divergence alert" mechanisms observed in core AI alignment scaling behaviors (SIG_R1_001~003, June 2026). It enforces zero-entropy stabilization under FTS5-based verification constraints.
 
 **中文 (Chinese):**
-基于 ADR-009，本方法论形式化了在深度自主推理期间检测语义漂移以及执行绝对硬回滚的机械过程。该协议确保任何生成的幻觉链在影响液态（执行）相之前被立即切断。
+本方法论详细说明了 ADR-009 所要求的精确执行框架，专门将核心 AI 对齐扩展行为中观察到的“认知发散警报”机制（SIG_R1_001~003，2026年6月）付诸操作。它在基于 FTS5 的验证约束下强制实现零熵稳定。
 
-## 2. Triggering the Alert (触发警报)
+## 2. Trigger Conditions (触发条件)
 **English:**
-The "Cognitive Divergence Alert" is not based on a neural reward model. It is triggered deterministically if any of the following boundaries are breached during the Gaseous (Reflection) Phase:
-1. **Convergence Failure:** The Cryptographic State Lock (Convergence hash) fails to reach a zero-entropy state after $N$ iterations (typically 100).
-2. **Entropy Threshold Exceeded:** Topological entropy ($H$) remains $> 1.0$ after the allocated Gas duration.
-3. **FTS5 Validation Failure:** The resulting Structural Delta violates constraints parsed by the `Reflective Validator` from the ADR corpus.
+The alert triggers deterministically if:
+1. $H_{topological} > 1.0$ at the end of the Gas duration without state resolution.
+2. The Structural Delta violates established FTS5 constraint checks.
+3. The cryptographic Convergence Drill yields a non-uniform hash set across iterations.
 
 **中文 (Chinese):**
-“认知发散警报”不是基于神经奖励模型。如果在气态（反射）阶段违反了以下任何边界，它将被确定性地触发：
-1. **收敛失败：** 密码学状态锁（收敛哈希）在 $N$ 次迭代（通常为100次）后未能达到零熵状态。
-2. **超过熵阈值：** 在分配的气态持续时间之后，拓扑熵 ($H$) 仍然 $> 1.0$。
-3. **FTS5 验证失败：** 生成的结构差分违反了 `Reflective Validator` 从 ADR 语料库解析的约束。
+如果满足以下条件，警报将被确定性触发：
+1. 气态持续时间结束时 $H_{topological} > 1.0$ 且未解决状态。
+2. 结构差分违反了既定的 FTS5 约束检查。
+3. 密码学收敛演练在迭代中产生不统一的哈希集。
 
-## 3. The Hard Rollback Mechanism (硬回滚机制)
+## 3. The Execution Protocol (执行协议)
 **English:**
-Upon triggering a Cognitive Divergence Alert, the system executes an immediate and strict Hard Rollback:
-1. The execution pipeline is halted; no further state transitions are considered.
-2. The SQLite SAVEPOINT for the current iteration is unequivocally rolled back (`ROLLBACK TO SAVEPOINT current_reflection`).
-3. The rejected Structural Delta is purged from memory and is strictly recorded as 'NONE' (if no data was committed) or logged in the Hard Rollback Log for forensic phase transition analysis.
-4. The system is structurally prevented from attempting to probabilistically "re-reason" or self-correct the discarded state. It forces a return to the last mathematically proven zero-entropy state.
+1. Halt execution thread.
+2. `ROLLBACK TO SAVEPOINT metacognitive_gas_phase;`
+3. Log state to `semantic_drift_audit.log` (if semantic drift rules apply).
+4. Return cleanly to the Liquid phase execution line.
 
 **中文 (Chinese):**
-在触发认知发散警报时，系统将执行立即且严格的硬回滚：
-1. 停止执行管道；不再考虑进一步的状态转换。
-2. 明确回滚当前迭代的 SQLite SAVEPOINT (`ROLLBACK TO SAVEPOINT current_reflection`)。
-3. 从内存中清除被拒绝的结构差分，并严格记录为 'NONE'（如果未提交数据）或将其记录在硬回滚日志中以进行法医相变分析。
-4. 系统在结构上被禁止尝试概率性地“重新推理”或自我纠正被丢弃的状态。它强制返回到最后一个经过数学证明的零熵状态。
+1. 停止执行线程。
+2. `ROLLBACK TO SAVEPOINT metacognitive_gas_phase;`
+3. 将状态记录到 `semantic_drift_audit.log`（如果适用语义漂移规则）。
+4. 干净地返回到液态执行线。
