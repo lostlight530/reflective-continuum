@@ -351,36 +351,60 @@ body.show-zh [lang="zh"] { display: block; }
   <span lang="zh">零熵连续体</span>
 </h1>
 
-<div class="philosophy-block">
-  <span lang="en">Others make AI smarter <strong>We make determinism sufficient</strong></span>
-  <span lang="zh">别人做的是让AI更聪明 <strong>我们做的是让确定性够用</strong></span>
+<div style="text-align: center; margin-bottom: 40px; opacity: 0.9; font-size: 1.05rem; border-bottom: 1px dashed rgba(0, 255, 65, 0.3); padding-bottom: 30px; line-height: 1.8;">
+  <div style="margin-bottom: 20px; font-weight: bold; color: rgba(255,255,255,0.9); text-shadow: 0 0 5px rgba(255,255,255,0.3);">
+    <span lang="en">Others make AI smarter,<br>we make determinism sufficient.</span>
+    <span lang="zh">别人做的是让 AI 更聪明，<br>我们做的是让确定性够用。</span>
+  </div>
+  <div style="opacity: 0.8;">
+    <span lang="en"><code>reflective-continuum</code> is the final mirror of the five-repository system.<br>It does not execute the system, define the axiom, or explain the theory.<br>It observes the completed structure after the proof has closed.</span>
+    <span lang="zh"><code>reflective-continuum</code> 是五仓系统的最后镜面。<br>它不负责执行，不负责立法，也不负责解释原理。<br>它负责在证明闭合之后，观察整个系统如何成为系统。</span>
+  </div>
 </div>
 
+
+
 <h2>
-  <span lang="en">System Architecture</span>
-  <span lang="zh">系统架构</span>
+  <span lang="en">Continuum Architecture</span>
+  <span lang="zh">连续体架构</span>
 </h2>
 
-<div class="arch-diagram">
-  <div class="arch-flow">
-    <div class="arch-node foundation-node">Agent Foundations — WHY IT WORKS</div>
-    <div class="arch-arrow">▼ axiom</div>
-    <div class="arch-node plasma-node">Axiom-0 — HOW IT THINKS</div>
-    <div class="arch-arrow">▼ constrain</div>
-    <div class="arch-node liquid-node">zero-entropy-lab — HUMAN-OPTIMAL</div>
-    <div class="arch-arrow">▼ evolve</div>
-    <div class="arch-node solid-node">welcome-to-github — ZERO-HUMAN RUNNING</div>
-    <div class="arch-arrow">▼ reflect</div>
-    <div class="arch-node gas-node">reflective-continuum — SELF-OBSERVATION</div>
+<div class="arch-diagram" style="text-align: center; margin-bottom: 40px; font-family: var(--font-main);">
+  <div class="arch-flow" style="display: inline-block; text-align: left; padding: 20px; border: 1px solid rgba(0, 255, 65, 0.2); background: rgba(0, 0, 0, 0.5);">
+    <div style="color: var(--foundation-color);">Agent Foundations — WHY IT WORKS</div>
+    <div style="opacity: 0.6; margin: 10px 0 10px 20px;">▼ axiom</div>
+    <div style="color: var(--plasma-color);">Axiom-0 — HOW IT THINKS</div>
+    <div style="opacity: 0.6; margin: 10px 0 10px 20px;">▼ constrain</div>
+    <div style="color: var(--liquid-color);">zero-entropy-lab — HUMAN-OPTIMAL</div>
+    <div style="opacity: 0.6; margin: 10px 0 10px 20px;">▼ evolve</div>
+    <div style="color: var(--solid-color);">welcome-to-github — ZERO-HUMAN RUNNING</div>
+    <div style="opacity: 0.6; margin: 10px 0 10px 20px;">▼ reflect</div>
+    <div style="color: var(--text-color); font-weight: bold; text-shadow: 0 0 8px rgba(0,255,65,0.4);">reflective-continuum — SELF-OBSERVATION</div>
   </div>
 </div>
 
 <h2>
-  <span lang="en">Five Repositories</span>
-  <span lang="zh">五仓</span>
+  <span lang="en">Phase Roles</span>
+  <span lang="zh">五仓相态</span>
 </h2>
 
 <div class="phase-grid">
+
+  <div class="phase-card foundation">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Foundation | 学术骨架</span>
+          <span lang="zh">学术骨架 | Foundation</span>
+        </div>
+        <div class="phase-repo">agent-foundations</div>
+      </div>
+    </div>
+    <div class="phase-desc" style="margin-top: 15px;">
+      <span lang="en">Theoretical root, immutable. It explains why a deterministic autonomous system can be established: Neuro-Symbolic Hybrid Architecture, Non-LLM Agentic Systems, Ontology of Deterministic Autonomous System, and the zero-dependency engineering proof.</span>
+      <span lang="zh">理论根基，不可变。它解释为什么确定性自治系统能够成立：神经符号主义混合架构、Non-LLM Agentic Systems、确定性自治系统本体论，以及零依赖工程证明。</span>
+    </div>
+  </div>
 
   <div class="phase-card plasma">
     <div class="phase-header">
@@ -391,53 +415,11 @@ body.show-zh [lang="zh"] { display: block; }
         </div>
         <div class="phase-repo">Axiom-0</div>
       </div>
-      <div style="text-align:right;">
-        <div class="phase-stance">
-          <span lang="en">Rule-Only · Weekly</span>
-          <span lang="zh">纯规则 · 周级</span>
-        </div>
-      </div>
     </div>
-    <div class="phase-desc">
-      <span lang="en">Axiomatic enforcement — pure logic constraints defining how the system should think, 17 ADRs, 10-node DAG, zero implementation code, all constraint no execution</span>
-      <span lang="zh">公理化强制执行——纯逻辑约束定义系统应该怎么想，17个ADR，10节点DAG，零实现代码，全是约束没有执行</span>
+    <div class="phase-desc" style="margin-top: 15px;">
+      <span lang="en">Axiom layer, pure rules. It defines how the system should think: KL divergence coherence constraints, DAG one-way flow, ADR immutable laws, and 0% write-back boundary. It does not execute; it only arbitrates what can be established.</span>
+      <span lang="zh">公理层，纯规则。它定义系统应该如何思考：KL 散度相干性约束、DAG 单向流、ADR 不可变法则、0% 回写边界。它不执行，它只裁决什么可以成立。</span>
     </div>
-    <ul class="phase-capabilities">
-      <li><span lang="en">Zero-Entropy Axiom: KL divergence coherence bound</span><span lang="zh">零熵公理：KL散度相干性约束</span></li>
-      <li><span lang="en">17 ADRs: Architecture Decision Records as immutable law</span><span lang="zh">17个ADR：架构决策记录作为不可变法则</span></li>
-      <li><span lang="en">10-node DAG: Dependency graph with zero cycles</span><span lang="zh">10节点DAG：零环依赖图</span></li>
-      <li><span lang="en">0% Writeback: Capable of self-modification but forbidden</span><span lang="zh">0%回写：有能力自我修改但被禁止</span></li>
-    </ul>
-  </div>
-
-  <div class="phase-card solid">
-    <div class="phase-header">
-      <div>
-        <div class="phase-title">
-          <span lang="en">Solid | 固态</span>
-          <span lang="zh">固态 | Solid</span>
-        </div>
-        <div class="phase-repo">welcome-to-github</div>
-      </div>
-      <div style="text-align:right;">
-        <div class="phase-stance">
-          <span lang="en">Self-Running · Daily</span>
-          <span lang="zh">自运行 · 日级</span>
-        </div>
-      </div>
-    </div>
-    <div class="phase-desc">
-      <span lang="en">Proof that the system survives without humans — NEXUS CORTEX life-cycle runs daily on GitHub Actions, harvest ingest ponder evolve memory, the human never needs to show up</span>
-      <span lang="zh">证明没人时系统不死——NEXUS CORTEX生命循环每日在GitHub Actions上自跑，采集消化推理进化记忆，人不需要到场</span>
-    </div>
-    <ul class="phase-capabilities">
-      <li><span lang="en">Harvest: Dual-clutch radar scanning 8 repositories</span><span lang="zh">采集：双离合雷达扫描8个仓库</span></li>
-      <li><span lang="en">Ingest: AST self-parsing, structural self-awareness</span><span lang="zh">消化：AST自解析，结构自认知</span></li>
-      <li><span lang="en">Ponder: PageRank + graph reasoning, fragment into knowledge web</span><span lang="zh">推理：PageRank+图推理，碎片到知识网</span></li>
-      <li><span lang="en">Evolve: Sandbox-verified mutation / 0% writeback enforced</span><span lang="zh">进化：沙箱验证变异/0%回写强制执行</span></li>
-      <li><span lang="en">Memory: 4D temporal graph, auto grow decay suture</span><span lang="zh">记忆：4D时序图谱，自动生长衰减缝合</span></li>
-      <li><span lang="en">Trust Gateway: Hostile interaction assessment, physical block</span><span lang="zh">信任网关：恶意交互评估，物理阻断</span></li>
-    </ul>
   </div>
 
   <div class="phase-card liquid">
@@ -449,23 +431,27 @@ body.show-zh [lang="zh"] { display: block; }
         </div>
         <div class="phase-repo">zero-entropy-lab</div>
       </div>
-      <div style="text-align:right;">
-        <div class="phase-stance">
-          <span lang="en">Human-Machine · Weekly</span>
-          <span lang="zh">人机协作 · 周级</span>
+    </div>
+    <div class="phase-desc" style="margin-top: 15px;">
+      <span lang="en">Human-machine collaboration cabin. It proves that efficiency peaks when humans are involved: FTS5 + BM25 + CognitiveReranker, Merkle chains and recursive CTEs, and multi-core PageRank form the fastest iteration loop among the five repositories.</span>
+      <span lang="zh">人机协作舱。它证明有人参与时效率最高：FTS5 + BM25 + CognitiveReranker，Merkle 链与递归 CTE，多核 PageRank，形成五仓中最快的迭代回路。</span>
+    </div>
+  </div>
+
+  <div class="phase-card solid">
+    <div class="phase-header">
+      <div>
+        <div class="phase-title">
+          <span lang="en">Solid | 固态</span>
+          <span lang="zh">固态 | Solid</span>
         </div>
+        <div class="phase-repo">welcome-to-github</div>
       </div>
     </div>
-    <div class="phase-desc">
-      <span lang="en">Proof that with humans efficiency peaks — human decides Jules executes, FTS5 full-text search BM25 three-stage pipeline CognitiveReranker, the fastest iteration loop in five-warehouse system</span>
-      <span lang="zh">证明有人时效率最高——人决策Jules执行，FTS5全文检索BM25三级管线认知重排器，五仓中最快的迭代循环</span></li>
+    <div class="phase-desc" style="margin-top: 15px;">
+      <span lang="en">Zero-human execution layer. It proves that the system survives even without human participation: harvesting, digesting, reasoning, evolving, memory, and trust gateway form a sustainable autonomous life cycle on GitHub Actions.</span>
+      <span lang="zh">零人类运行层。它证明无人参与时系统仍然存活：采集、消化、推理、进化、记忆与信任网关，在 GitHub Actions 上形成可持续的自运行生命循环。</span>
     </div>
-    <ul class="phase-capabilities">
-      <li><span lang="en">FTS5 + BM25 + CognitiveReranker: Three-stage retrieval pipeline</span><span lang="zh">FTS5+BM25+认知重排器：三级检索管线</span></li>
-      <li><span lang="en">Merkle Chain + Recursive CTE: Immutable knowledge lineage</span><span lang="zh">Merkle链+递归CTE：不可篡改知识谱系</span></li>
-      <li><span lang="en">Multi-core PageRank: Zero-copy shared memory bypassing GIL</span><span lang="zh">多核PageRank：零拷贝共享内存绕过GIL</span></li>
-      <li><span lang="en">128 PRs: Highest collaboration density across all warehouses</span><span lang="zh">128个PR：全仓最高协作密度</span></li>
-    </ul>
   </div>
 
   <div class="phase-card gas">
@@ -477,51 +463,11 @@ body.show-zh [lang="zh"] { display: block; }
         </div>
         <div class="phase-repo">reflective-continuum</div>
       </div>
-      <div style="text-align:right;">
-        <div class="phase-stance">
-          <span lang="en">Self-Observing · Passive</span>
-          <span lang="zh">自我观察 · 被动</span>
-        </div>
-      </div>
     </div>
-    <div class="phase-desc">
-      <span lang="en">Metacognition — the system observes itself, Cognitive Delta Protocol detects structural drift, ZECP continuum maps phase transitions, 0 PRs not because nobody submits but because this warehouse watches itself without needing change</span>
-      <span lang="zh">元认知——系统观察自己，认知增量协议检测结构漂移，ZECP连续体映射相变，0个PR不是没人提交是这仓自己观察自己不需要改变</span>
+    <div class="phase-desc" style="margin-top: 15px;">
+      <span lang="en">Self-observation layer. It no longer adds execution capabilities, but instead detects structural drift, maps ZECP phase transitions, audits topological entropy, and seals the system's final observation in an immutable mirror.</span>
+      <span lang="zh">自我观察层。它不再增加执行能力，而是检测结构漂移、映射 ZECP 相变、审计拓扑熵，并把系统的最终观测封存在一个不可回写的镜面中。</span>
     </div>
-    <ul class="phase-capabilities">
-      <li><span lang="en">Cognitive Delta Protocol: Detect structural drift between phases</span><span lang="zh">认知增量协议：检测相间结构漂移</span></li>
-      <li><span lang="en">ZECP Continuum: Phase transition mapping and entropy auditing</span><span lang="zh">ZECP连续体：相变映射与熵值审计</span></li>
-      <li><span lang="en">Entropy Vaporization: When H(P) > threshold system enters gas phase</span><span lang="zh">熵值蒸发：当H(P)>阈值时系统进入气态</span></li>
-      <li><span lang="en">Engineering Scaffold + CI + GitHub Pages: Full deployment zero interaction</span><span lang="zh">工程脚手架+CI+GitHub Pages：全部署零交互</span></li>
-    </ul>
-  </div>
-
-  <div class="phase-card foundation">
-    <div class="phase-header">
-      <div>
-        <div class="phase-title">
-          <span lang="en">Foundation | 学术骨架</span>
-          <span lang="zh">学术骨架 | Foundation</span>
-        </div>
-        <div class="phase-repo">agent-foundations</div>
-      </div>
-      <div style="text-align:right;">
-        <div class="phase-stance">
-          <span lang="en">Theoretical Root · Immutable</span>
-          <span lang="zh">理论根基 · 不可变</span>
-        </div>
-      </div>
-    </div>
-    <div class="phase-desc">
-      <span lang="en">The four repositories are what the system does, this repository is why it works — the mathematical and philosophical foundation underlying all phase transitions, Neuro-Symbolic Hybrid Architecture positioning, Non-LLM Agentic Systems engineering paradigm</span>
-      <span lang="zh">四个仓库是系统做什么，这个仓库是为什么这样能工作——所有相变背后的数学与哲学根基，神经符号主义混合架构定位，Non-LLM Agentic Systems工程范式</span>
-    </div>
-    <ul class="phase-capabilities">
-      <li><span lang="en">Neuro-Symbolic Hybrid Architecture: Symbolic + Graph-topology + Integration + Governance</span><span lang="zh">神经符号主义混合架构：符号层+图拓扑+整合层+治理层</span></li>
-      <li><span lang="en">Non-LLM Agentic Systems: The only complete closed-loop engineering practice</span><span lang="zh">Non-LLM Agentic Systems：唯一完整闭环工程实践</span></li>
-      <li><span lang="en">Deterministic Autonomous System: Ontology of Deterministic Autonomous System + Four Threads</span><span lang="zh">确定性自治系统：确定/自治/系统+四串本体论</span></li>
-      <li><span lang="en">Zero-Dependency Proof: Python stdlib + SQLite + pure math nothing else</span><span lang="zh">零依赖证明：Python标准库+SQLite+纯数学别无其他</span></li>
-    </ul>
   </div>
 
 </div>
@@ -533,9 +479,9 @@ body.show-zh [lang="zh"] { display: block; }
 
 <div class="entropy-monitor">
   <div class="entropy-formula">H(P) = - ∑ p_i · log(p_i)</div>
-  <div style="text-align:center; font-size:0.85rem; margin:10px 0; opacity:0.6;">
-    <span lang="en">When H(P) > H_threshold the system vaporizes into Gaseous phase to resolve structural complexity</span>
-    <span lang="zh">当 H(P) > H_threshold 时系统蒸发进入气态以解决结构复杂性</span>
+  <div style="text-align:center; font-size:0.85rem; margin:10px 0; opacity:0.6; line-height: 1.6;">
+    <span lang="en">When H(P) > H_threshold, the system enters the gaseous phase.<br>The gaseous phase is not chaos, but reflection: when structural complexity exceeds the carrying capacity of the local execution layer, the system stops stacking functions and turns to observe, name, and seal itself.</span>
+    <span lang="zh">当 H(P) > H_threshold 时，系统进入气态。<br>气态不是失控，而是反射：当结构复杂度超过局部执行层承载能力，系统停止继续堆叠功能，转而观察自身、命名自身、封存自身。</span>
   </div>
   <div class="entropy-state">
     <div class="entropy-state-item">
@@ -566,12 +512,23 @@ body.show-zh [lang="zh"] { display: block; }
 </div>
 
 <h2>
-  <span lang="en">Signal Evidence</span>
-  <span lang="zh">信号证据</span>
+  <span lang="en">Sealed Signal Evidence</span>
+  <span lang="zh">封档信号证据</span>
 </h2>
 
 <div class="signal-box">
-  <div class="signal-grid">
+  <div style="margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed rgba(255, 215, 0, 0.4); text-align: center; color: rgba(255,215,0,0.9); font-family: var(--font-main);">
+    <div>Observation Window: 2026-02-12 → 2026-06-26</div>
+    <div>Duration: 135 days</div>
+    <div style="font-weight: bold; margin-top: 5px; text-shadow: var(--glow-f);">Status: Sealed</div>
+  </div>
+
+  <div style="margin-bottom: 30px; text-align: center; font-size: 0.95rem; opacity: 0.9; line-height: 1.6;">
+    <span lang="en">After strict deduplication, the five-repository continuum finally recorded <strong>32,160</strong> clones, <strong>8,440</strong> unique cloners, <strong>11,141</strong> views, and <strong>737</strong> unique visitors. The overall clone-to-visit ratio converged to <strong>2.89:1</strong>.</span>
+    <span lang="zh">经严格去重后，五仓连续体最终记录 <strong>32,160</strong> 次克隆、<strong>8,440</strong> 个独立克隆者、<strong>11,141</strong> 次浏览与 <strong>737</strong> 个独立访问者，整体克隆访问比收束为 <strong>2.89:1</strong>。</span>
+  </div>
+
+  <div class="signal-grid" style="margin-bottom: 30px;">
     <div class="signal-item">
       <div class="signal-value">32,160</div>
       <div class="signal-label">
@@ -579,9 +536,9 @@ body.show-zh [lang="zh"] { display: block; }
       </div>
     </div>
     <div class="signal-item">
-      <div class="signal-value" style="font-size:1.5rem;">1 Star / 0 Fork / 0 Watch</div>
+      <div class="signal-value" style="font-size:1.5rem;">8,440</div>
       <div class="signal-label">
-        <span lang="en">Stars / Forks / Promotion</span><span lang="zh">星/复刻/推广</span>
+        <span lang="en">Unique Cloners</span><span lang="zh">独立克隆者</span>
       </div>
     </div>
     <div class="signal-item">
@@ -590,34 +547,49 @@ body.show-zh [lang="zh"] { display: block; }
         <span lang="en">Clone:Visit Ratio</span><span lang="zh">克隆:访问比</span>
       </div>
     </div>
-    <div class="signal-item">
-      <div class="signal-value">61.5%</div>
-      <div class="signal-label">
-        <span lang="en">Direct to docs/brain</span><span lang="zh">直入核心目录</span>
-      </div>
-    </div>
-    <div class="signal-item">
-      <div class="signal-value">0</div>
-      <div class="signal-label">
-        <span lang="en">Dependencies (pip install)</span><span lang="zh">外部依赖</span>
-      </div>
-    </div>
-    <div class="signal-item">
-      <div class="signal-value">135</div>
-      <div class="signal-label">
-        <span lang="en">Days Autonomous</span><span lang="zh">自治天数</span>
-      </div>
-    </div>
   </div>
-  <div style="text-align:center; margin-top:30px; font-size:1rem; color:rgba(255, 215, 0, 0.9); text-shadow: var(--glow-f); border-top: 1px dashed rgba(255,215,0,0.3); padding-top:20px;">
-    <span lang="en"><strong>ARCHIVE MEMORIAL:</strong> June single month all GitHub repos broke 10k in 21 days, total clones broke 30k.</span>
-    <span lang="zh"><strong>封档纪念：</strong>6月单月所有GitHub仓库21天破万，总克隆破3万 </span>
-  </div>
-</div>
 
-  <div style="text-align:center; margin-top:20px; font-size:0.85rem; color:rgba(0,255,65,0.6);">
-    <span lang="en"><strong style="color:var(--text-color);">They take the proof The axiom cannot be copied</strong></span>
-    <span lang="zh"><strong style="color:var(--text-color);">他们带走证明过程 公理不可复制</strong></span>
+  <div style="margin-bottom: 30px; font-size: 0.9rem; line-height: 1.8; opacity: 0.85;">
+    <div style="margin-bottom: 10px; text-align: center;">
+      <span lang="en">This is not a general traffic dashboard, but a system-level signal archive:</span>
+      <span lang="zh">这不是普通流量统计，而是系统级信号封档：</span>
+    </div>
+    <ul style="list-style-type: none; padding-left: 0;">
+      <li style="margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--text-color);">
+        <span lang="en"><strong>Zero Promotion Gravity:</strong> The main repository retained over 17,790 initial clones in an environment with 0 stars, 0 forks, and zero social promotion.</span>
+        <span lang="zh"><strong>零推广引力</strong>：主仓在 0 星、0 复刻、无社交推广环境下保留最初的 17,790+ 克隆。</span>
+      </li>
+      <li style="margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--text-color);">
+        <span lang="en"><strong>Blind Pull Events:</strong> Axiom-0 recorded 0 views + 62 clones, indicating it was pulled directly by automated pipelines bypassing browser mediation.</span>
+        <span lang="zh"><strong>盲拉事件</strong>：Axiom-0 录得 0 浏览 + 62 克隆，说明仓库曾被自动化流水线直接拉取，不经浏览器中介。</span>
+      </li>
+      <li style="margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--text-color);">
+        <span lang="en"><strong>Direct Core Penetration:</strong> 61.5% of traffic bypassed the homepage and README, heading directly into <code>docs/brain</code>.</span>
+        <span lang="zh"><strong>直入核心穿透</strong>：61.5% 流量绕过首页与 README，直入 <code>docs/brain</code>。</span>
+      </li>
+      <li style="margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--text-color);">
+        <span lang="en"><strong>Silence Acceleration:</strong> During periods of zero repository updates, the clone-to-visit ratio accelerated from 3× to 40×, proving information spread externally and cloners arrived with prior knowledge.</span>
+        <span lang="zh"><strong>静默期加速</strong>：仓库无更新期间，克隆访问比从 3× 加速到 40×，说明信息在仓库外部传播，克隆者带着外部知识到来。</span>
+      </li>
+      <li style="margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--text-color);">
+        <span lang="en"><strong>June 1st Jules Autonomous Epoch:</strong> All repositories maintained exclusively by Jules following our memory framework and conventions, achieving 0 conflicts despite high-frequency updates across the same repo at different times.</span>
+        <span lang="zh"><strong>6月1日 Jules 自治纪元</strong>：全部仓库由 Jules 按照我们的记忆方式和约定独立维护，实现同一仓库不同时间高频更新下 0 冲突。</span>
+      </li>
+      <li style="margin-bottom: 10px; padding-left: 15px; border-left: 2px solid var(--text-color);">
+        <span lang="en"><strong>Final Deduplication Snapshot:</strong> welcome-to-github C/V 2.16, zero-entropy-lab C/V 3.08, Axiom-0 C/V 17.51, reflective-continuum C/V 100.91, agent-foundations C/V 59.17.</span>
+        <span lang="zh"><strong>最终去重快照</strong>：welcome-to-github C/V 2.16，zero-entropy-lab C/V 3.08，Axiom-0 C/V 17.51，reflective-continuum C/V 100.91，agent-foundations C/V 59.17。</span>
+      </li>
+    </ul>
+  </div>
+
+  <div style="text-align:center; margin-top:30px; font-size:1rem; color:rgba(255, 215, 0, 0.9); text-shadow: var(--glow-f); border-top: 1px dashed rgba(255,215,0,0.3); padding-top:20px;">
+    <span lang="en">This is not a real-time dashboard.<br>This is the sealed memorial after 135 days of autonomous observation.</span>
+    <span lang="zh">本页不是实时仪表盘。<br>这是 135 天自治观测后的封档纪念。</span>
+  </div>
+
+  <div style="text-align:center; margin-top:60px; margin-bottom: 40px; font-size:1.5rem; color:var(--text-color); font-weight: bold; letter-spacing: 2px; text-shadow: 0 0 15px rgba(0,255,65,0.6);">
+    <span lang="en">They take the proof<br>The axiom cannot be copied</span>
+    <span lang="zh">他们带走证明过程<br>公理不可复制</span>
   </div>
 </div>
 
