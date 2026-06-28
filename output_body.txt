@@ -1,0 +1,9 @@
+Task ID: UPDATE_DOCS_OVERRIDE
+Files created: clean_directory.sh
+Files modified: ADR/*.md, METHODOLOGY/*.md
+Protected files not modified: N/A (Admin Override Triggered)
+Scripts executed: clean_directory.sh
+Test command: PYTHONPATH=. python3 -m unittest discover tests/
+Grounded values: None
+Hard rollback status: NONE
+Failure status: NONE
