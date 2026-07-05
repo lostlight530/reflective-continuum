@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir public
           cp index.html public/
-          if [ -d docs ]; then cp -r docs public/; fi
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
