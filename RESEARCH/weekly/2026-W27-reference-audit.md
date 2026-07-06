@@ -1,17 +1,8 @@
-# Reference Audit W27
-
 REFERENCES:
-- [PIONEERS/]: In Graph ✅ | Orphans=NONE
-- [ADR-001.md]: In Graph ✅ | Orphans=NONE
-- [ADR-002.md]: In Graph ✅ | Orphans=NONE
-- [ADR-003.md]: In Graph ✅ | Orphans=NONE
-- [ADR-004.md]: In Graph ✅ | Orphans=NONE
-- [ADR-005.md]: In Graph ✅ | Orphans=NONE
-- [ADR-006.md]: In Graph ✅ | Orphans=NONE
-- [ADR-007.md]: In Graph ✅ | Orphans=NONE
-- [ADR-008.md]: In Graph ✅ | Orphans=NONE
-- [ADR-009.md]: In Graph ✅ | Orphans=NONE
-
-ADR Chain: COMPLETE | Details=All 9 ADRs are sequentially referenced and intact.
-SPEC↔ADR: CONSISTENT | Details=No undocumented ghost links found.
-Recommended Additions: NONE
+- PIO-001-Google_DeepMind.md: In Graph ❌ | Orphans=['PIO-001-Google_DeepMind.md', 'PIO-002-Google_Paper_Interpretations.md', 'PIO-003-Other_Pioneers.md', 'PIO-004-Anthropic_OpenAI.md']
+- PIO-002-Google_Paper_Interpretations.md: In Graph ❌ | Orphans=['PIO-001-Google_DeepMind.md', 'PIO-002-Google_Paper_Interpretations.md', 'PIO-003-Other_Pioneers.md', 'PIO-004-Anthropic_OpenAI.md']
+- PIO-003-Other_Pioneers.md: In Graph ❌ | Orphans=['PIO-001-Google_DeepMind.md', 'PIO-002-Google_Paper_Interpretations.md', 'PIO-003-Other_Pioneers.md', 'PIO-004-Anthropic_OpenAI.md']
+- PIO-004-Anthropic_OpenAI.md: In Graph ❌ | Orphans=['PIO-001-Google_DeepMind.md', 'PIO-002-Google_Paper_Interpretations.md', 'PIO-003-Other_Pioneers.md', 'PIO-004-Anthropic_OpenAI.md']
+ADR Chain: COMPLETE | Details=No ghost links found.
+SPEC↔ADR: INCONSISTENT | Details=Unmapped ADRs: ['ADR-001', 'ADR-004', 'ADR-006', 'ADR-007', 'ADR-008', 'ADR-009']
+Recommended Additions: Map unmapped ADRs to SPECIFICATION.md
