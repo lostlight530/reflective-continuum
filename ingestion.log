@@ -17593,3 +17593,1224 @@ SyntaxError: invalid syntax
 [Cortex] Self-Consistency Verified at depth 1.
 [Cortex] Input SIG_R1_003 committed successfully.
 [InsightMorpher] Synthesis complete. Successfully ingested 3/3 signals.
+[ConvergenceDrill] Initializing T-07 Grounding (100 iterations)...
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[ConvergenceDrill] Completed iteration 20...
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[ConvergenceDrill] Completed iteration 40...
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[ConvergenceDrill] Completed iteration 60...
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[ConvergenceDrill] Completed iteration 80...
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[Cortex] Initialized with N=3, H_threshold=0.1
+[Cortex] Processing input: Node_A (Phase: LIQUID)
+[Cortex] Input Node_A committed successfully.
+[Cortex] Processing input: Node_B (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 0.1)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input Node_B committed successfully.
+[Cortex] Processing input: Node_C (Phase: GASEOUS)
+[Cortex] Reflection Cycle Depth: 2/3
+[Cortex] Self-Consistency Verified at depth 2.
+[Cortex] Input Node_C committed successfully.
+[ConvergenceDrill] SUCCESS: Convergence achieved. Zero-Entropy state locked. Hash: 637781852c00fe1d262295f8c61dd843803d697902b699c6e12853040f358d84
+[Cortex] Initialized with N=3, H_threshold=1.0
+[InsightMorpher] Initializing T-10 Synthesis for 3 signals...
+[InsightMorpher] Morphing signal: SIG_R1_001
+[Cortex] Processing input: SIG_R1_001 (Phase: LIQUID)
+[Cortex] Input SIG_R1_001 committed successfully.
+[InsightMorpher] Morphing signal: SIG_R1_002
+[Cortex] Processing input: SIG_R1_002 (Phase: LIQUID)
+[Cortex] Input SIG_R1_002 committed successfully.
+[InsightMorpher] Morphing signal: SIG_R1_003
+[Cortex] Processing input: SIG_R1_003 (Phase: LIQUID)
+[Cortex] Phase Boundary Detected (H > 1.0)! Transitioning to GASEOUS.
+[Cortex] Reflection Cycle Depth: 1/3
+[Cortex] Self-Consistency Verified at depth 1.
+[Cortex] Input SIG_R1_003 committed successfully.
+[InsightMorpher] Synthesis complete. Successfully ingested 3/3 signals.
