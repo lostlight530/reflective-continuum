@@ -38,3 +38,28 @@ If the system fails to reach a stable, consistent state within $N$ reflection cy
 - **System Reflection**: Upon autonomous network scan and system state audit, the core principles of determinism remain inviolate.
 - **Alignment Note**: Semantic stability confirmed. No human-induced probabilistic sampling detected.
 - **Architectural Trace**: Graph relationships bounding this document conform perfectly to zero-entropy metrics.
+
+## 6. Architecture Update (架构更新)
+**English:**
+The phase boundary detection module is explicitly reinforced. Time-series analysis of $H(P)$ over successive iterations incorporates zero-tolerance bounds for non-deterministic variations. The PageRank iterative solving process strictly bounds convergence thresholds at $\epsilon = 10^{-7}$ for invariant phase differentiation.
+
+**Chinese (中文):**
+相界检测模块得到明确强化。对 $H(P)$ 连续迭代的时间序列分析包含对非确定性变化的零容忍界限。PageRank 迭代求解过程将收敛阈值严格限制在 $\epsilon = 10^{-7}$，以实现不变的相界区分。
+
+## 7. Security Proof Supplement (安全证明补充)
+**English:**
+The deterministic guarantee of the phase boundary rests on the topological uniqueness of the stationary distribution. Given graph $G$ and transition probability matrix $W$, the spectral gap $\gamma = 1 - |\lambda_2|$ prevents hallucinated transition states. Any convergence failure aborts ingestion deterministically.
+
+**Chinese (中文):**
+相界的确定性保证取决于平稳分布的拓扑唯一性。给定图 $G$ 和转移概率矩阵 $W$，谱隙 $\gamma = 1 - |\lambda_2|$ 阻止了幻觉般的转换状态。任何收敛失败都会确定性地中止摄入。
+
+## 8. Deterministic Execution Trace (确定性执行推演)
+**English:**
+1. Matrix Construction: Adjacency matrix $A$ generated from cognitive graph.
+2. Eigenvector Centrality: Power iteration computes invariant vector $P$.
+3. Entropy Extraction: $H(P)$ mapped directly to $Phase_{t+1}$ using rigid comparator operators.
+
+**Chinese (中文):**
+1. 矩阵构建：从认知图中生成邻接矩阵 $A$。
+2. 特征向量中心性：幂迭代计算不变向量 $P$。
+3. 熵提取：使用严格的比较运算符直接将 $H(P)$ 映射到 $Phase_{t+1}$。
