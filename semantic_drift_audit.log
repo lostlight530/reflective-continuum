@@ -55,3 +55,12 @@
 [SemanticDriftAudit] Result: STABLE
 [SemanticDriftAudit] Report generated: RESEARCH/daily/2026-07-19-dehydrated-report.md
 [SemanticDriftAudit] ALERT: Semantic drift detected in nodes ['safety']. Reporting...
+[SemanticDriftAudit] ALERT: Semantic drift detected in nodes [Axiom_Safety]. Reporting...
+[SemanticDriftAudit] Initiating T-06 Analysis for query: 'determinism'
+[SemanticDriftAudit] Result: STABLE
+[SemanticDriftAudit] Initiating T-06 Analysis for query: 'safety'
+[SemanticDriftAudit] Result: DRIFT_DETECTED
+[SemanticDriftAudit] Initiating T-06 Analysis for query: 'metacognition'
+[SemanticDriftAudit] Result: STABLE
+[SemanticDriftAudit] Report generated: RESEARCH/daily/2026-07-20-dehydrated-report.md
+[SemanticDriftAudit] ALERT: Semantic drift detected in nodes [Axiom_Safety]. Reporting...
