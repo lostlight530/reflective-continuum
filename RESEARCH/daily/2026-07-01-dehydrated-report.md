@@ -3,9 +3,9 @@
 ```text
 Convergence: LOCKED | Hash=637781852c00fe1d262295f8c61dd843803d697902b699c6e12853040f358d84
 Signal Intake: SIG_R1_20260701_001~003
-- {'id': 'SIG_R1_20260701_001', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'ACCEPTED'}
-- {'id': 'SIG_R1_20260701_002', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'ACCEPTED'}
-- {'id': 'SIG_R1_20260701_003', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'ACCEPTED'}
+- {'id': 'SIG_R1_20260701_001', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'REJECTED_FROM_INGESTION'}
+- {'id': 'SIG_R1_20260701_002', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'REJECTED_FROM_INGESTION'}
+- {'id': 'SIG_R1_20260701_003', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'REJECTED_FROM_INGESTION'}
 
 Hard Rollback Log: NONE
 
@@ -13,5 +13,5 @@ Synthesis(CN): 成功摄入大语言模型元认知与确定性对齐相关的�
 
 Synthesis(EN): Successfully ingested core signals related to LLM metacognition and deterministic alignment. The system completed knowledge graph injection via deterministic execution paths, during which a phase boundary (H > 1.0) was detected, verifying self-consistency in the gaseous (GAS) reflection mode.
 
-Phase State: GAS | Gas duration=0
+Phase State: GAS | Gas duration=NOT_COMPUTED
 ```

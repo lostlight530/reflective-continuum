@@ -6,4 +6,4 @@ Signal Intake:
 Hard Rollback Log: NONE
 Synthesis(CN): 冷酷客观分析
 Synthesis(EN): Cold objective analysis
-Phase State: GAS | Gas duration=[hours]
+Phase State: GAS | Gas duration=NOT_COMPUTED

@@ -13,5 +13,5 @@ Synthesis(CN): 成功摄入关于自观测循环和相界反射机制的信号�
 
 Synthesis(EN): Successfully ingested signals on self-observation loops and phase-boundary reflection mechanisms. The system completed knowledge graph injection via deterministic execution paths, during which a phase boundary (H > 1.0) was detected, verifying self-consistency in the gaseous (GAS) reflection mode.
 
-Phase State: GAS | Gas duration=[hours]
+Phase State: GAS | Gas duration=NOT_COMPUTED
 ```

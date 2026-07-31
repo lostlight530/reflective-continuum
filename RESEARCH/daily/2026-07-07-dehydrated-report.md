@@ -13,5 +13,5 @@ Synthesis(CN): 成功摄入大语言模型元认知与确定性对齐相关的�
 
 Synthesis(EN): Successfully ingested core signals related to LLM metacognition and deterministic alignment. The system completed knowledge graph injection via deterministic execution paths, during which a phase boundary (H > 1.0) was detected, verifying self-consistency in the gaseous (GAS) reflection mode.
 
-Phase State: GAS | Gas duration=[hours]
+Phase State: GAS | Gas duration=NOT_COMPUTED
 ```
