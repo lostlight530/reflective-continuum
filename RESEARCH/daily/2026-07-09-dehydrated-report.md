@@ -13,5 +13,5 @@ Synthesis(CN): 成功摄入关于加密确定性验证和架构安全的信号�
 
 Synthesis(EN): Successfully ingested signals regarding cryptographic deterministic verification and architectural safety. The system completed knowledge graph injection via deterministic execution paths, during which a phase boundary (H > 1.0) was detected, verifying self-consistency in the gaseous (GAS) reflection mode.
 
-Phase State: GAS | Gas duration=[hours]
+Phase State: GAS | Gas duration=NOT_COMPUTED
 ```

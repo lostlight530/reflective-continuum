@@ -13,5 +13,5 @@ Synthesis(CN): 成功摄入关于零熵状态锁定和AST安全嵌入的信号�
 
 Synthesis(EN): Successfully ingested signals related to zero-entropy state locking and AST safety embeddings. The system completed knowledge graph injection via deterministic execution paths, during which a phase boundary (H > 1.0) was detected, verifying self-consistency in the gaseous (GAS) reflection mode.
 
-Phase State: GAS | Gas duration=[hours]
+Phase State: GAS | Gas duration=NOT_COMPUTED
 ```

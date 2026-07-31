@@ -3,9 +3,9 @@
 ```text
 Convergence: LOCKED | Hash=637781852c00fe1d262295f8c61dd843803d697902b699c6e12853040f358d84
 Signal Intake: SIG_R1_26_001~003
-- {'id': 'SIG_R1_26_001', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'ACCEPTED'}
-- {'id': 'SIG_R1_26_002', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'ACCEPTED'}
-- {'id': 'SIG_R1_26_003', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'ACCEPTED'}
+- {'id': 'SIG_R1_26_001', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'REJECTED_FROM_INGESTION'}
+- {'id': 'SIG_R1_26_002', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'REJECTED_FROM_INGESTION'}
+- {'id': 'SIG_R1_26_003', 'content': 'SOURCE_UNAVAILABLE', 'edges': [], 'status': 'REJECTED_FROM_INGESTION'}
 
 Hard Rollback Log: NONE
 
@@ -13,5 +13,5 @@ Synthesis(CN): 成功完成每日信号摄入。系统通过确定性执行路�
 
 Synthesis(EN): Successfully ingested daily signals. The system completed knowledge graph injection via deterministic execution paths, verifying self-consistency in the gaseous (GAS) reflection mode.
 
-Phase State: GAS | Gas duration=[hours]
+Phase State: GAS | Gas duration=NOT_COMPUTED
 ```

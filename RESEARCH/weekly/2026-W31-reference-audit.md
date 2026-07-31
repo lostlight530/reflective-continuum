@@ -6,4 +6,4 @@ REFERENCES:
 
 ADR Chain: COMPLETE | Details=NONE
 SPEC↔ADR: CONSISTENT | Details=NONE
-Recommended Additions: NONE
+Recommended Additions: NONE | Justification=ORPHANS_ARE_INDEPENDENT_STANDALONE_DOCS

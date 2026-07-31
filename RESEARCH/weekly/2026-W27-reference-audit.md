@@ -4,4 +4,4 @@ REFERENCES:
 - REFERENCES/PIONEERS/Other_Pioneers.md: In Graph ❌ | Orphans=YES
 ADR Chain: BROKEN | Details=Cross-references validation not fully implemented
 SPEC↔ADR: INCONSISTENT | Details=ADR-001/004/006 unmapped
-Recommended Additions: NONE
+Recommended Additions: NONE | Justification=ORPHANS_ARE_INDEPENDENT_STANDALONE_DOCS
