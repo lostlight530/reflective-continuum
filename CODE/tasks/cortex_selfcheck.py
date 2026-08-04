@@ -59,8 +59,10 @@ test_suite = test_loader.discover('tests/')
 test_runner = unittest.TextTestRunner(stream=io.StringIO(), verbosity=2)
 result = test_runner.run(test_suite)
 total_tests = result.testsRun
-failed_tests = len(result.failures) + len(result.errors)
-passed_tests = total_tests - failed_tests
+failed_tests = len(result.failures)
+errors_tests = len(result.errors)
+skipped_tests = len(result.skipped)
+passed_tests = total_tests - failed_tests - errors_tests - skipped_tests
 
 content = f"Module Health: [5模块 Import/Init/Execute {modules_status}]\n"
 if exceptions:
@@ -83,6 +85,8 @@ content += f"\n测试结果:\n"
 content += f"Total: {total_tests}\n"
 content += f"Passed: {passed_tests}\n"
 content += f"Failed: {failed_tests}\n"
+content += f"Errors: {errors_tests}\n"
+content += f"Skipped: {skipped_tests}\n"
 
 with open(report_path, "w", encoding="utf-8") as f:
     f.write(content)
