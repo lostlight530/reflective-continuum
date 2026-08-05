@@ -1,30 +1,12 @@
-# Google DeepMind: The Vanguard of Introspection
-# Google DeepMind：内省的先锋
+# Google DeepMind: evaluator-backed search
 
-## 1. Vision of Introspection (内省愿景)
-**English:**
-Demis Hassabis has consistently argued that the final piece of the AGI puzzle is not just more data or larger transformers, but **Introspection**. DeepMind's research into meta-learning and self-correcting agents (like AlphaEvolve) demonstrates that a system must be able to reason about its own reasoning to reach higher-order intelligence.
+- Reviewed: 2026-08-05
+- Evidence state: SUPPORTED for the bounded description below
 
-**中文 (Chinese):**
-Demis Hassabis 一贯认为，AGI 拼图的最后一块不仅是更多的数据或更大的 Transformer，而是**内省（Introspection）**。DeepMind 对元学习和自我纠正智能体（如 AlphaEvolve）的研究表明，系统必须能够对其自身的推理进行推理，才能达到更高阶的智能。
+[AlphaEvolve](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) describes an evolutionary coding agent in which language models propose programs and automated evaluators run and score them. The official account emphasizes domains where progress can be measured programmatically, such as mathematics and computer science.
 
-## 2. Technical Heritage (技术传承)
-**English:**
-DeepMind's work on **Meta-Reinforcement Learning** (e.g., LAMER) and **Test-Time Adaptation** provides the empirical proof that the separation of execution and reflection is necessary. While they achieve this via gradient-based optimization and neural policy shifts, we acknowledge their pioneering role in identifying the "Liquidity" of execution and the "Gaseousness" of reflection.
+The repository may borrow one principle: separate proposal generation from executable evaluation and retain the evaluated artifact. It may not infer that evaluator-backed search proves general intelligence, deterministic cognition, universal convergence, or the correctness of an evaluator. An evaluator can be incomplete, gameable, contaminated, or aligned to the wrong objective.
 
-**中文 (Chinese):**
-DeepMind 在**元强化学习**（如 LAMER）和**测试时适应**方面的工作，提供了执行与反思分离之必要性的经验证明。虽然他们通过基于梯度的优化和神经策略偏移来实现这一点，但我们认可他们在识别执行的“液态性”和反思的“气态性”方面的先驱作用。
+Reflective mapping: tasks accept caller fixtures; snapshot digests measure fixed-state repeatability; validators and database constraints reject invalid local state. None of these is an AlphaEvolve implementation or a comparable scientific result.
 
-## 3. Deterministic Contrast (确定性对比)
-**English:**
-The Reflective Continuum diverges from DeepMind by replacing their probabilistic "Self-Correction Policies" with deterministic "Architectural Constraints." We do not ask the system to *learn* how to monitor itself; we define the mathematical boundaries within which it *must* operate.
-
-**中文 (Chinese):**
-反射连续体与 DeepMind 的不同之处在于，它用确定性的“架构约束”取代了他们的概率性“自我纠正策略”。我们不要求系统*学习*如何监控自己；我们定义了它*必须*在其中运行的数学边界。
-
-## 4. Deterministic Alignment & Hassabis's Vision (确定性对齐与哈萨比斯的愿景)
-**English:**
-Demis Hassabis's recent pursuits underscore the need for verifiable cognitive operations. Our implementation diverges from pure statistical RL by enforcing 'Hard Rollbacks' when systemic hallucination threatens absolute zero-entropy truth.
-
-**Chinese:**
-Demis Hassabis 最近的探索强调了可验证的认知操作的必要性。我们的实现通过在系统性幻觉威胁绝对零熵真理时强制执行“硬回滚”（Hard Rollback），偏离了纯粹的统计强化学习。
+Disconfirming condition: remove or narrow this interpretation if the cited source no longer supports LLM proposals plus automated evaluation, or if repository language exceeds that mechanism.

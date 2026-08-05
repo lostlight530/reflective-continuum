@@ -1,70 +1,59 @@
-import sys
+"""Validated ingestion of caller-provided JSON signals."""
+from __future__ import annotations
+import argparse
 import json
-import os
+from pathlib import Path
+from typing import Any
 from CODE.continuum_db import GraphDB
 from CODE.cortex_observer import CortexObserver
 from CODE.reflective_validator import RuleEngine
 
+
 class InsightMorpher:
-    """
-    T-10 Synthesis: Ingestion and Morphing of External Signals.
-    Processes external data points into strictly formatted structural nodes.
-    Supports ingestion from file-based signals.
-    """
-
-    def __init__(self, db_path=":memory:"):
+    def __init__(self, db_path: str = ":memory:") -> None:
         self.db = GraphDB(db_path)
-        self.rules = RuleEngine()
-        self.cortex = CortexObserver(self.db, self.rules)
+        self.cortex = CortexObserver(self.db, RuleEngine())
 
-    def morph_from_file(self, file_path: str) -> bool:
-        """Loads signals from a JSON file and morphs them."""
-        if not os.path.exists(file_path):
-            print(f"[InsightMorpher] Error: File not found {file_path}")
-            return False
+    @staticmethod
+    def _signal(value: Any) -> tuple[str, str, list[tuple[str, str, str]], int]:
+        if not isinstance(value, dict) or set(value) - {"id", "content", "edges", "version"}:
+            raise ValueError("signal must contain only id, content, edges, and optional version")
+        node_id, content = value.get("id"), value.get("content")
+        edges = value.get("edges", [])
+        version = value.get("version", 1)
+        if not isinstance(node_id, str) or not isinstance(content, str) or not isinstance(edges, list):
+            raise TypeError("invalid signal field type")
+        parsed = []
+        for edge in edges:
+            if not isinstance(edge, list) or len(edge) != 3 or not all(isinstance(part, str) and part for part in edge):
+                raise ValueError("each edge must be a three-string JSON array")
+            parsed.append(tuple(edge))
+        return node_id, content, parsed, version
 
-        with open(file_path, "r", encoding="utf-8") as f:
-            try:
-                signals = json.load(f)
-                return self.morph_signals(signals)
-            except Exception as e:
-                print(f"[InsightMorpher] Error parsing {file_path}: {e}")
-                return False
+    def morph_signals(self, raw_signals: list[Any]) -> dict:
+        if not isinstance(raw_signals, list) or not raw_signals:
+            raise ValueError("signals must be a non-empty list")
+        results = []
+        for raw in raw_signals:
+            node_id, content, edges, version = self._signal(raw)
+            result = self.cortex.process_input(node_id, content, edges, version)
+            results.append({"id": node_id, "accepted": result.accepted, "reasons": list(result.reasons)})
+        return {"total": len(results), "accepted": sum(item["accepted"] for item in results), "results": results}
 
-    def morph_signals(self, raw_signals: list) -> bool:
-        """
-        Takes raw signals and deterministically morphs them into the Knowledge Graph.
-        Returns True if all signals were successfully ingested without cognitive rejection.
-        """
-        print(f"[InsightMorpher] Initializing T-10 Synthesis for {len(raw_signals)} signals...")
-        success_count = 0
+    def morph_from_file(self, file_path: str | Path) -> dict:
+        with Path(file_path).open("r", encoding="utf-8") as handle:
+            return self.morph_signals(json.load(handle))
 
-        for sig in raw_signals:
-            node_id = sig.get("id")
-            content = sig.get("content")
-            edges = sig.get("edges", [])
 
-            if not node_id or not content:
-                print(f"[InsightMorpher] Warning: Invalid signal format: {sig}")
-                continue
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("signals")
+    args = parser.parse_args()
+    morpher = InsightMorpher()
+    result = morpher.morph_from_file(args.signals)
+    print(json.dumps(result, ensure_ascii=False, sort_keys=True))
+    return 0 if result["accepted"] == result["total"] else 1
 
-            print(f"[InsightMorpher] Morphing signal: {node_id}")
-            self.cortex.process_input(node_id, content, edges)
-
-            # Verify if the node actually made it into the DB (not rolled back)
-            if node_id in self.db.get_all_nodes():
-                success_count += 1
-            else:
-                print(f"[InsightMorpher] Signal {node_id} was rejected by Cortex constraints.")
-
-        print(f"[InsightMorpher] Synthesis complete. Successfully ingested {success_count}/{len(raw_signals)} signals.")
-        return success_count == len(raw_signals)
 
 if __name__ == "__main__":
-    # Example usage
-    test_signals = [
-        {"id": "SIG_2026_01", "content": "NVIDIA Blackwell B200 deterministic benchmarks", "edges": []},
-        {"id": "SIG_2026_02", "content": "OpenAI o1 scaling limits observed", "edges": [("SIG_2026_01", "SIG_2026_02", "context")]}
-    ]
-    morpher = InsightMorpher()
-    morpher.morph_signals(test_signals)
+    raise SystemExit(main())

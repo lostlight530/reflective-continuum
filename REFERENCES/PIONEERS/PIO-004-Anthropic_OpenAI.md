@@ -1,25 +1,12 @@
-# PIO-004: Anthropic & OpenAI
+# Anthropic and OpenAI: agent evaluation and control boundaries
 
-## 1. Subject Entities (主体)
-- **Anthropic**: An AI safety and research company.
-- **OpenAI**: An AI research and deployment company.
+- Reviewed: 2026-08-05
+- Evidence state: SUPPORTED summaries of official 2026 publications
 
-## 2. Relevance to Determinism & Metacognition (与确定性和元认知的相关性)
-Both organizations have fundamentally shaped the modern understanding of how to align probabilistic language models, which is the foundational problem our deterministic architecture seeks to solve.
+OpenAI’s [trustworthy third-party evaluations playbook](https://openai.com/index/trustworthy-third-party-evaluations-foundations/) explains that harness, tools, context handling, retries, scoring, resource budget, and validity checks materially affect measured agent capability. Reflective consequence: every behavioral or repeatability report names the tested system and budget; a score is not a context-free property.
 
-### Anthropic: Constitutional AI (宪法AI)
-Anthropic's development of Constitutional AI provides a vital real-world analogue to our `Reflective Validator`.
-- **Concept**: Instead of relying solely on human feedback (RLHF) which can be subjective and drifting, Constitutional AI uses a defined set of principles (a "constitution") to guide the AI's self-critique and revision process.
-- **Continuum Mapping**: This perfectly mirrors our GASEOUS reflection phase where the system uses predefined deterministic constraints (the rules in the `.md` files) to validate its own structural deltas before locking them in.
+Anthropic’s [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) discusses multi-turn, tool-using, state-changing agents and the need for evaluation strategies matching system complexity. [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents) states layered safeguards are not guarantees and emphasizes careful tool, data, permission, and environment choices. The [2026 Claude constitution announcement](https://www.anthropic.com/news/claude-new-constitution) notes outputs may not always adhere to intended ideals.
 
-### OpenAI: Reinforcement Learning from Human Feedback & Superalignment (RLHF与超级对齐)
-OpenAI popularized RLHF, demonstrating both the power and the limitations of aligning agents probabilistically.
-- **Concept**: Training models to optimize for human-preferred outcomes.
-- **Continuum Mapping**: While RLHF is probabilistic, OpenAI's newer research into "Superalignment" (attempting to align systems much smarter than humans) acknowledges the need for mathematical and structural guarantees of safety—aligning with our Zero-Entropy Convergence and Hard Rollback protocols to prevent unbounded semantic drift.
+Reflective Continuum therefore does not parse prose principles into executable guarantees. `RuleConfig`, database constraints, tests, permissions, and caller approvals are distinct controls. Even together they support bounded evidence, not perfect alignment or safety.
 
-## 3. Selected Real-World Signals (选定真实世界信号)
-- *Constitutional AI: Harmlessness from AI Feedback* (Bai et al., 2022) - Anthropic. Establishes the methodology of automated self-correction based on static rules.
-- *OpenAI's Superalignment initiative* (Announced 2023). Highlights the industry-wide recognition that current alignment methods (probabilistic) are insufficient for advanced autonomous agents, necessitating structural and verifiable safety bounds.
-
-## 4. Synthesis Status (综合状态)
-**MAPPED AND ACCEPTED**. The methodologies of these pioneers validate the necessity of the `reflective-continuum`'s strict adherence to deterministic rule engines to limit unbounded semantic drift in LLMs.
+Review trigger: update when an official source changes the stated boundary or when this repository adds model/tool execution.

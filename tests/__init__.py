@@ -1,4 +1,1 @@
-"""
-Tests for the Reflective Continuum.
-Zero dependencies. Pure unittest.
-"""
+"""Reflective Continuum contract tests."""

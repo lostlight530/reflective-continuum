@@ -1,94 +1,69 @@
-import os
-import re
-import typing
+"""Explicit validation configuration; prose ADRs are not executable policy."""
+from __future__ import annotations
+import ast
+import sys
+from dataclasses import dataclass
+from typing import Any
+
+
+@dataclass(frozen=True, slots=True)
+class RuleConfig:
+    max_reflection_depth: int = 3
+    entropy_threshold: float = 1.0
+    max_content_chars: int = 100_000
+
+    def __post_init__(self) -> None:
+        if not 1 <= self.max_reflection_depth <= 100:
+            raise ValueError("max_reflection_depth must be within 1..100")
+        if self.entropy_threshold < 0:
+            raise ValueError("entropy_threshold must be non-negative")
+        if not 1 <= self.max_content_chars <= 1_000_000:
+            raise ValueError("max_content_chars is out of bounds")
+
+
+@dataclass(frozen=True, slots=True)
+class ValidationResult:
+    accepted: bool
+    reasons: tuple[str, ...] = ()
+
 
 class RuleEngine:
-    """
-    Deterministic Rule Engine that parses ADRs and enforces architectural constraints.
-    Adheres to ADR-001 (Pure Python, no external dependencies).
-    """
-
-    def __init__(self, adr_dir: str = "ADR"):
-        self.adr_dir = adr_dir
-        self.constraints = self._load_constraints()
-        self.constants = self._extract_constants()
-
-    def _load_constraints(self) -> typing.Dict[str, typing.List[str]]:
-        """
-        Parses ADR files to extract sections under 'Architectural Constraints'.
-        """
-        constraints = {}
-        if not os.path.exists(self.adr_dir):
-            return constraints
-
-        for filename in sorted(os.listdir(self.adr_dir)):
-            if filename.endswith(".md"):
-                path = os.path.join(self.adr_dir, filename)
-                with open(path, "r", encoding="utf-8") as f:
-                    content = f.read()
-                    # Extract the Architectural Constraints section
-                    match = re.search(r"## Architectural Constraints.*?\n(.*?)(?=\n##|\Z)", content, re.DOTALL)
-                    if match:
-                        lines = match.group(1).strip().split("\n")
-                        # Clean up list markers
-                        cleaned_lines = [re.sub(r"^\d+\.\s*|-\s*", "", line).strip() for line in lines if line.strip()]
-                        constraints[filename] = cleaned_lines
-        return constraints
-
-    def _extract_constants(self) -> typing.Dict[str, float]:
-        """
-        Extracts mathematical constants like N or H_threshold from ADR text.
-        """
-        constants = {
-            "N": 3.0,  # Default fallback
-            "H_threshold": 1.0  # Default fallback
-        }
-
-        # Look for  = [value]$ or {threshold} = [value]$ pattern
-        # We also look for mention of constants in the text
-        for filename, lines in self.constraints.items():
-            text = " ".join(lines)
-
-            # Extract N from ADR-002 context if specifically assigned
-            if "ADR-002" in filename:
-                # Heuristic: search for N in the file content
-                path = os.path.join(self.adr_dir, filename)
-                with open(path, "r", encoding="utf-8") as f:
-                    full_content = f.read()
-                    n_match = re.search(r"N\s*=\s*(\d+)", full_content)
-                    if n_match:
-                        constants["N"] = float(n_match.group(1))
-
-            # Extract H_threshold from ADR-005
-            if "ADR-005" in filename:
-                path = os.path.join(self.adr_dir, filename)
-                with open(path, "r", encoding="utf-8") as f:
-                    full_content = f.read()
-                    h_match = re.search(r"H_{threshold}\s*>\s*([\d.]+)", full_content)
-                    if h_match:
-                        constants["H_threshold"] = float(h_match.group(1))
-
-        return constants
+    def __init__(self, adr_dir: str | None = None, *, config: RuleConfig | None = None) -> None:
+        self.config = config or RuleConfig()
+        self.adr_dir = adr_dir  # retained for source compatibility; never parsed as runtime policy
+        self.constants = {"N": self.config.max_reflection_depth, "H_threshold": self.config.entropy_threshold}
+        self.constraints: dict[str, list[str]] = {}
 
     def verify_stdlib_only(self, code: str) -> bool:
-        """
-        Enforces ADR-001: Pure Python stdlib only.
-        Checks for 'import' statements that reference common non-stdlib libs.
-        """
-        restricted = ["numpy", "pandas", "torch", "tensorflow", "jax", "scipy", "sklearn", "networkx", "openai", "anthropic"]
-        for lib in restricted:
-            if re.search(rf"import\s+{lib}|from\s+{lib}\s+import", code):
+        try:
+            tree = ast.parse(code)
+        except SyntaxError:
+            return False
+        roots = set(sys.stdlib_module_names)
+        for node in ast.walk(tree):
+            if isinstance(node, ast.Import):
+                names = [alias.name.split(".", 1)[0] for alias in node.names]
+            elif isinstance(node, ast.ImportFrom) and node.level == 0 and node.module:
+                names = [node.module.split(".", 1)[0]]
+            else:
+                continue
+            if any(name not in roots for name in names):
                 return False
         return True
 
-    def verify_consistency(self, state_delta: dict, context: dict = None) -> bool:
-        """
-        Verifies if a proposed state delta violates known ADR constraints.
-        """
-        content = state_delta.get("content", "")
-        if content:
-            if not self.verify_stdlib_only(content):
-                return False
+    def validate(self, state_delta: dict[str, Any]) -> ValidationResult:
+        if not isinstance(state_delta, dict):
+            return ValidationResult(False, ("state_delta_not_mapping",))
+        reasons: list[str] = []
+        node_id = state_delta.get("node_id")
+        content = state_delta.get("content")
+        if not isinstance(node_id, str) or not node_id or len(node_id) > 200:
+            reasons.append("invalid_node_id")
+        if not isinstance(content, str) or not content or len(content) > self.config.max_content_chars:
+            reasons.append("invalid_content")
+        if state_delta.get("content_type") == "python" and isinstance(content, str) and not self.verify_stdlib_only(content):
+            reasons.append("non_stdlib_or_invalid_python")
+        return ValidationResult(not reasons, tuple(reasons))
 
-        # Additional structural checks could be added here
-        return True
+    def verify_consistency(self, state_delta: dict[str, Any], context: dict[str, Any] | None = None) -> bool:
+        return self.validate(state_delta).accepted

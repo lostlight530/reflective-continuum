@@ -1,63 +1,48 @@
-# Reflective Continuum: Formal Specification
-# 反射连续体：形式化规范
+# Reflective Continuum Engineering Specification
 
-This document defines the deterministic metacognition protocol. It outlines the rules by which a system observes, evaluates, and corrects its own cognitive processes.
-本文档定义了确定性元认知协议。它概述了系统观察、评估和纠正自身认知过程的规则。
+- Version: 2026.08
+- Status: implemented reference contract
 
----
+## Purpose and non-goals
 
-## 1. Metacognition as Deterministic Self-Observation (元认知即确定性自观察)
+Reflective Continuum is a standard-library Python reference for versioned graph storage in SQLite, synchronized FTS5 lexical search, structural/search-result/rank deltas, PageRank-derived Shannon entropy, explicit content validation, transactional ingestion, and bounded reflection hooks.
 
-**Formal Definition (形式化定义):**
-Metacognition is the deterministic observation and rule-driven self-correction of the system's own cognitive state. It contains zero probabilistic sampling, zero neural network inference, and requires zero human intervention.
-元认知是对系统自身认知状态的确定性观察和规则驱动的自我纠正。它包含零概率采样，零神经网络推断，且需要零人工干预。
+It is not a cognitive system, semantic embedding model, truth engine, safety proof, autonomous researcher, distributed database, or production service. “Liquid”, “gaseous”, “cortex”, “reflection”, “entropy”, and “convergence” are project labels. Claims apply only to declared fixtures, versions, queries, thresholds, and environments.
 
-**Architectural Constraints (架构约束):**
-- All introspective actions must be computable via standard graph queries (e.g., SQL), matrix operations (e.g., PageRank), or deterministic string/AST matching.
-- 所有内省行为必须可以通过标准图查询（如SQL）、矩阵运算（如PageRank）或确定性字符串/AST匹配来计算。
-- The system must mathematically prove its state changes, rather than predicting or estimating them.
-- 系统必须在数学上证明其状态的变化，而不是预测或估计它们。
+## Runtime and persistence
 
-**Invariants (不变量):**
-- The probability of an introspective state transition is either exactly `0` or `1`.
-- 内省状态转换的概率必须且只能是 `0` 或 `1`。
+CI verifies Python 3.12 and 3.14. SQLite must provide FTS5. Every connection enables and verifies `PRAGMA foreign_keys=ON`.
 
----
+`nodes` is keyed by `(node_id, version)`. `edges` is keyed by `(source_id, target_id, relationship, version)` and each endpoint references a node at the same version. Node upsert uses `ON CONFLICT DO UPDATE`; it must not use `REPLACE`, because external-content FTS5 synchronization depends on the update/delete triggers. Existing databases with the prior edge schema require an explicit migration before use.
 
-## 2. Reflection Depth Constraint (反射深度约束) - ADR-002
+## Transaction contract
 
-**Formal Definition (形式化定义):**
-The recursive depth of metacognitive self-evaluation is strictly bounded by a deterministic constant $N$. If convergence is not achieved within $N$ layers, the system executes a Cognitive Rejection.
-元认知自我评估的递归深度严格受限于一个确定性常数 $N$。如果在 $N$ 层内未达到收敛，系统将执行认知拒绝（Cognitive Rejection）。
+Savepoint names match `[A-Za-z_][A-Za-z0-9_]{0,63}` and are quoted. Rollback always releases the savepoint. The context manager commits only a successful block and re-raises unexpected failures. Database integrity errors are not converted into success or hidden.
 
-**Invariants (不变量):**
-- $D_{current} \le N$, where $D_{current}$ is the current reflection depth.
-- $D_{current} \le N$，其中 $D_{current}$ 为当前反射深度。
+## Search and delta contracts
 
----
+FTS5 search treats caller text as a quoted lexical phrase, accepts an optional version, limits results to 1..100, and orders deterministically by BM25 score then identifiers. It does not measure semantic equivalence.
 
-## 3. Cognitive Delta Protocol (认知差分协议) - ADR-003
+Structural delta returns sorted added/removed/content-modified node identifiers between two versions. Semantic delta reports whether the top lexical result changed for the same declared query. Rank delta reports nodes whose absolute score shift exceeds a caller-declared non-negative threshold.
 
-**Formal Definition (形式化定义):**
-The quantitative and qualitative measurement of changes between two knowledge state snapshots, relying purely on deterministic signals without vector embeddings or neural similarities.
-在无向量嵌入或神经相似度的情况下，纯粹依靠确定性信号对两个知识状态快照之间的变化进行定量和定性的测量。
+## Analysis contract
 
-**Components (组成部分):**
-1. **Structural Delta (结构差分):** Evaluated via exact SQL diffs.
-   **结构差分：** 通过精确 SQL 差异评估。
-2. **Rank Delta (排名差分):** Evaluated via the shift in entity PageRank scores.
-   **排名差分：** 通过实体 PageRank 分数的偏移评估。
-3. **Semantic Delta (语义差分):** Evaluated via FTS5 query result drift.
-   **语义差分：** 通过 FTS5 搜索结果漂移评估。
+PageRank requires unique known nodes, validated configuration, and known edge endpoints; duplicate edges are collapsed. Output is normalized. Entropy normalizes finite non-negative scores and reports nats. A boundary check is a threshold comparison, not evidence of cognition, instability, or safety.
 
----
+## Validation and observation
 
-## 4. Phase Boundary Detection (相界检测) - ADR-005
+`RuleConfig` is executable policy. ADR prose is never parsed for runtime constants. Python import checking uses the AST and current interpreter’s standard-library module set.
 
-**Formal Definition (形式化定义):**
-The deterministic identification of topological complexity tipping points that mandate a shift from standard execution (Liquid Phase) to metacognitive self-observation (Gaseous Phase).
-确定性地识别拓扑复杂性临界点，该临界点要求系统从标准执行态（液态）切换到元认知自观察态（气态）。
+`CortexObserver.process_input` validates caller data, uses one transaction, returns `ProcessResult` for accepted or policy-rejected input, and propagates unexpected database/programming errors. When the boundary is exceeded, it invokes an optional reflector once per depth and recomputes state; unchanged high entropy exhausts the real configured loop and rolls back.
 
-**Measurement (测量):**
-- Boundary detection is computed via the topological entropy $H(P)$ of the knowledge graph (based on the PageRank distribution).
-- 边界检测通过知识图谱的拓扑熵 $H(P)$（基于 PageRank 分布）来计算。
+## Task contract
+
+Tasks are importable libraries plus bounded CLIs. They do not seed unsupported external claims, scan the entire repository, read ad-hoc logs, or write under `RESEARCH/**`. Default output is structured JSON on stdout. `semantic_drift_audit` and `cortex_selfcheck` write only to an explicitly supplied path.
+
+## Security and ownership
+
+Callers own database-file permissions, authentication, authorization, isolation, backups, encryption, retention, quotas, and incident response. FTS query limits do not prevent all resource abuse. Separately owned README, homepage, `.nojekyll`, RESEARCH, and license paths are protected by CI.
+
+## Acceptance
+
+Compile and tests pass on Python 3.12/3.14; selfcheck observes enabled foreign keys, FTS5 availability, integrity, and validator behavior; the 100-iteration fixture produces one snapshot digest; actions use least privilege and immutable SHAs; PR diff contains no protected path. These checks support only the tested revision and configuration.

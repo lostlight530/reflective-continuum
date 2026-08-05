@@ -1,94 +1,45 @@
-import sys
-import datetime
-import os
-import traceback
-import unittest
-import io
+"""Observable health checks without fabricated metrics or test-suite recursion."""
+from __future__ import annotations
+import argparse
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+from CODE.continuum_db import GraphDB
+from CODE.reflective_validator import RuleEngine
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 
-modules_status = "❌"
-conflicts = []
-rule_engine_rules = 0
-rule_parseable = "❌"
-nodes = 0
-edges = 0
-pending_rollbacks = 0
-delta = "0.0"
-within_threshold = "YES"
-exceptions = []
-
-try:
-    from CODE.continuum_db import GraphDB
-    from CODE.cortex_observer import CortexObserver
-    from CODE.drift_detector import compute_structural_delta
-    from CODE.reflective_validator import RuleEngine
-    from CODE.entropy_analyzer import compute_pagerank
-
-    db = GraphDB()
-    rules = RuleEngine()
-    cortex = CortexObserver(db, rules)
-
-    modules_status = "✅"
-    rule_engine_rules = sum(len(c) for c in rules.constraints.values())
-    if rule_engine_rules > 0:
-        rule_parseable = "✅"
-
+def selfcheck(db_path: str = ":memory:") -> dict:
+    checks: dict[str, bool] = {}
     try:
-        # Mock execution to verify it works
-        cortex.process_input("test_selfcheck", "health check content", [])
-        # Clean up mock input
-        db.conn.execute("DELETE FROM nodes WHERE node_id='test_selfcheck'")
-        db.conn.commit()
-        nodes = len(db.get_all_nodes())
-        edges = len(db.get_all_edges())
-    except Exception as e:
-        exceptions.append(f"Execute failed: {traceback.format_exc()}")
-        modules_status = "❌"
+        with GraphDB(db_path) as db:
+            checks["foreign_keys"] = db.conn.execute("PRAGMA foreign_keys").fetchone()[0] == 1
+            checks["fts5"] = db.conn.execute("SELECT count(*) FROM semantic_idx").fetchone()[0] >= 0
+            checks["integrity"] = db.conn.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
+            checks["rule_engine"] = RuleEngine().validate({"node_id": "health", "content": "fixture"}).accepted
+            counts = {"nodes": db.conn.execute("SELECT count(*) FROM nodes").fetchone()[0], "edges": db.conn.execute("SELECT count(*) FROM edges").fetchone()[0]}
+    except Exception as exc:
+        checks["initialization"] = False
+        counts = {}
+        error_type = type(exc).__name__
+    else:
+        checks["initialization"] = True
+        error_type = None
+    return {"observed_at": datetime.now(timezone.utc).isoformat(timespec="microseconds"), "database": str(db_path), "checks": checks, "counts": counts, "healthy": all(checks.values()), "error_type": error_type}
 
-except Exception as e:
-    exceptions.append(f"Module import/init failed: {traceback.format_exc()}")
-    modules_status = "❌"
 
-date_str = datetime.date.today().isoformat()
-report_path = f"RESEARCH/daily/{date_str}-cortex-selfcheck.md"
-os.makedirs("RESEARCH/daily", exist_ok=True)
+def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--database", default=":memory:")
+    parser.add_argument("--output")
+    args = parser.parse_args()
+    result = selfcheck(args.database)
+    text = json.dumps(result, ensure_ascii=False, indent=2, sort_keys=True)
+    if args.output:
+        Path(args.output).write_text(text + "\n", encoding="utf-8")
+    else:
+        print(text)
+    return 0 if result["healthy"] else 1
 
-test_loader = unittest.TestLoader()
-test_suite = test_loader.discover('tests/')
-test_runner = unittest.TextTestRunner(stream=io.StringIO(), verbosity=2)
-result = test_runner.run(test_suite)
-total_tests = result.testsRun
-failed_tests = len(result.failures)
-errors_tests = len(result.errors)
-skipped_tests = len(result.skipped)
-passed_tests = total_tests - failed_tests - errors_tests - skipped_tests
 
-content = f"Module Health: [5模块 Import/Init/Execute {modules_status}]\n"
-if exceptions:
-    content += "Exceptions:\n"
-    for ex in exceptions:
-        content += f"{ex}\n"
-content += f"Rule Engine: Rules=[{rule_engine_rules}] Parseable={rule_parseable} Conflicts=[{', '.join(conflicts) if conflicts else 'NONE'}]\n"
-content += f"DB State: Nodes=[{nodes}] Edges=[{edges}] Pending rollbacks=[{pending_rollbacks}]\n"
-content += f"Incremental Drift: Delta vs yesterday=[{delta}] Within threshold={within_threshold}\n\n"
-content += "状态解释:\n"
-
-if nodes == 0 and edges == 0:
-    content += "Nodes=0 与 Edges=0 只能记录为实际观测\n"
-    content += "Context: INDETERMINATE_EMPTY_STATE\n"
-    content += "可能原因: 没有有效摄入, 数据库刚初始化, 持久化路径错误, 写入失败, 当前数据库路径并非预期路径\n"
-else:
-    content += "Database has populated nodes/edges.\n"
-
-content += f"\n测试结果:\n"
-content += f"Total: {total_tests}\n"
-content += f"Passed: {passed_tests}\n"
-content += f"Failed: {failed_tests}\n"
-content += f"Errors: {errors_tests}\n"
-content += f"Skipped: {skipped_tests}\n"
-
-with open(report_path, "w", encoding="utf-8") as f:
-    f.write(content)
-
-print(f"Created {report_path}")
+if __name__ == "__main__":
+    raise SystemExit(main())
