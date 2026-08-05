@@ -27,7 +27,7 @@ def main() -> int:
     parser.add_argument("--allow-file", action="append", default=[])
     args = parser.parse_args()
     result = subprocess.run(
-        ["git", "diff", "--name-only", f"{args.base_ref}..HEAD"],
+        ["git", "diff", "--name-only", f"{args.base_ref}...HEAD"],
         check=True,
         capture_output=True,
         text=True,
