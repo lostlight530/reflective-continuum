@@ -46,3 +46,36 @@ class RepositoryTests(unittest.TestCase):
             text,
             r'(?m)^    groups:\n      actions:\n        patterns:\n          - "\*"$',
         )
+
+    def test_readme_claims_stay_within_evidence_scope(self):
+        text = (ROOT / "README.md").read_text(encoding="utf-8")
+        lowered = text.lower()
+        for obsolete in (
+            "metacognition",
+            "metacognitive observer",
+            "cognitive rollback",
+            "gaseous phase",
+            "??????",
+            "proves cognition",
+            "????",
+        ):
+            self.assertNotIn(obsolete, lowered)
+        for link in (
+            "[Engineering specification](SPECIFICATION.md)",
+            "[Evidence baseline](EVIDENCE_BASELINE.md)",
+            "[Reproducibility](REPRODUCIBILITY.md)",
+            "[Security policy](SECURITY.md)",
+        ):
+            self.assertIn(link, text)
+        for contract in (
+            "SQLite",
+            "FTS5",
+            "PageRank-derived Shannon entropy",
+            "Structural delta",
+            "reflection hook",
+            "Migration warning",
+            "python -m CODE.tasks.cortex_selfcheck",
+            "python -m CODE.tasks.convergence_drill --iterations 100",
+            "Non-goals and ownership",
+        ):
+            self.assertIn(contract, text)
