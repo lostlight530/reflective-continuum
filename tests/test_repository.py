@@ -4,6 +4,8 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+CHECKOUT_SHA = "3d3c42e5aac5ba805825da76410c181273ba90b1"
+SETUP_PYTHON_SHA = "5fda3b95a4ea91299a34e894583c3862153e4b97"
 
 
 class RepositoryTests(unittest.TestCase):
@@ -28,3 +30,19 @@ class RepositoryTests(unittest.TestCase):
             for line in path.read_text(encoding="utf-8").splitlines():
                 if "uses:" in line:
                     self.assertRegex(line, r"uses:\s+[\w.-]+/[\w.-]+@[0-9a-f]{40}(?:\s+#.*)?$")
+
+    def test_verified_action_runtime_pins(self):
+        ci = (ROOT / ".github" / "workflows" / "ci.yml").read_text(encoding="utf-8")
+        pages = (ROOT / ".github" / "workflows" / "pages.yml").read_text(encoding="utf-8")
+        checkout = f"actions/checkout@{CHECKOUT_SHA} # v7.0.1"
+        setup_python = f"actions/setup-python@{SETUP_PYTHON_SHA} # v7.0.0"
+        self.assertIn(checkout, ci)
+        self.assertIn(checkout, pages)
+        self.assertIn(setup_python, ci)
+
+    def test_dependabot_groups_action_updates(self):
+        text = (ROOT / ".github" / "dependabot.yml").read_text(encoding="utf-8")
+        self.assertRegex(
+            text,
+            r'(?m)^    groups:\n      actions:\n        patterns:\n          - "\*"$',
+        )
