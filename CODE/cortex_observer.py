@@ -1,143 +1,88 @@
-import typing
+"""Transactional observation with explicit rejection and bounded reflection."""
+from __future__ import annotations
+from dataclasses import dataclass
+from typing import Callable
+
 from .continuum_db import GraphDB
-from .entropy_analyzer import check_phase_boundary, compute_pagerank
-from .drift_detector import compute_structural_delta
+from .entropy_analyzer import calculate_topological_entropy, check_phase_boundary, compute_pagerank
 from .reflective_validator import RuleEngine
 
-class CortexObserver:
-    """
-    Metacognitive Observer for the Reflective Continuum (Gaseous Phase).
-    Monitors the continuum's entropy and manages self-reflective cycles.
-    Adheres to ADR-002, ADR-004, and ADR-005.
-    """
+Reflector = Callable[[int, GraphDB, int], None]
 
-    def __init__(self, db: GraphDB, rule_engine: RuleEngine, max_depth: int = None, entropy_threshold: float = None):
+
+@dataclass(frozen=True, slots=True)
+class ProcessResult:
+    accepted: bool
+    phase: str
+    reflection_depth: int
+    entropy_nats: float
+    reasons: tuple[str, ...] = ()
+
+
+class _RejectedInput(Exception):
+    def __init__(self, result: ProcessResult) -> None:
+        self.result = result
+
+
+class CortexObserver:
+    def __init__(self, db: GraphDB, rule_engine: RuleEngine, max_depth: int | None = None, entropy_threshold: float | None = None, *, reflector: Reflector | None = None) -> None:
         self.db = db
         self.rules = rule_engine
-
-        # Extract constants from RuleEngine (parsed from ADRs) or use defaults
-        self.max_depth = max_depth if max_depth is not None else int(self.rules.constants.get("N", 3))
-        self.entropy_threshold = entropy_threshold if entropy_threshold is not None else self.rules.constants.get("H_threshold", 1.0)
-
+        self.max_depth = self.rules.config.max_reflection_depth if max_depth is None else max_depth
+        self.entropy_threshold = self.rules.config.entropy_threshold if entropy_threshold is None else entropy_threshold
+        if not isinstance(self.max_depth, int) or not 1 <= self.max_depth <= 100:
+            raise ValueError("max_depth must be within 1..100")
+        if not isinstance(self.entropy_threshold, (int, float)) or self.entropy_threshold < 0:
+            raise ValueError("entropy_threshold must be non-negative")
+        self.reflector = reflector
         self.current_depth = 0
         self.phase = "LIQUID"
+        self._savepoint_counter = 0
 
-        print(f"[Cortex] Initialized with N={self.max_depth}, H_threshold={self.entropy_threshold}")
+    def _state(self, version: int) -> tuple[dict[str, float], float]:
+        rank = compute_pagerank(self.db.get_all_nodes(version), self.db.get_all_edges(version))
+        return rank, calculate_topological_entropy(rank.values())
 
-    def process_input(self, node_id: str, content: str, edges: typing.List[typing.Tuple[str, str, str]]):
-        """
-        Standard execution mode (Liquid Phase).
-        """
-        print(f"[Cortex] Processing input: {node_id} (Phase: {self.phase})")
+    def _validate_snapshot(self, version: int) -> tuple[str, ...]:
+        reasons: list[str] = []
+        for row in self.db.conn.execute("SELECT node_id,content FROM nodes WHERE version=? ORDER BY node_id", (version,)):
+            result = self.rules.validate({"node_id": row[0], "content": row[1]})
+            reasons.extend(f"{row[0]}:{reason}" for reason in result.reasons)
+        return tuple(reasons)
 
-        # 1. Fork state before mutation to allow hard rollback (ADR-004)
-        input_fork = f"input_{node_id}"
-        self.db.fork(input_fork)
-
+    def process_input(self, node_id: str, content: str, edges: list[tuple[str, str, str]], version: int = 1) -> ProcessResult:
+        validation = self.rules.validate({"node_id": node_id, "content": content})
+        if not validation.accepted:
+            return ProcessResult(False, "LIQUID", 0, 0.0, validation.reasons)
+        if not isinstance(edges, list) or any(not isinstance(edge, (tuple, list)) or len(edge) != 3 for edge in edges):
+            raise TypeError("edges must be a list of (source, target, relationship)")
+        self._savepoint_counter += 1
+        savepoint = f"input_{self._savepoint_counter}"
         try:
-            # 2. Update Knowledge Graph
-            self.db.insert_node(node_id, content, commit=False)
-            for src, dst, rel in edges:
-                self.db.insert_edge(src, dst, rel, commit=False)
-
-            # 3. Check for Phase Boundary and perform Reflection
-            success = self._check_and_reflect()
-
-            if success:
-                self.db.commit_fork(input_fork)
-                print(f"[Cortex] Input {node_id} committed successfully.")
-            else:
-                print(f"[Cortex] Rejecting input {node_id} due to inconsistency or cognitive rejection.")
-                self.db.rollback_fork(input_fork)
-                self.phase = "LIQUID"
-
-        except Exception as e:
-            print(f"[Cortex] Critical error processing input: {e}")
-            try:
-                self.db.rollback_fork(input_fork)
-            except Exception as rollback_e:
-                print(f"[Cortex] Rollback failed: {rollback_e}")
-
-    def _check_and_reflect(self) -> bool:
-        """
-        Evaluates topological entropy and triggers Gaseous Phase if needed.
-        Returns True if the state is considered consistent/stable.
-        """
-        # ADR-004: Every state mutation must be validated.
-        if not self._verify_current_state():
-            return False
-
-        nodes = self.db.get_all_nodes()
-        edges = self.db.get_all_edges()
-
-        pr = compute_pagerank(nodes, edges)
-        should_transition = check_phase_boundary(pr, self.entropy_threshold)
-
-        if should_transition:
-            if self.phase == "LIQUID":
-                print(f"[Cortex] Phase Boundary Detected (H > {self.entropy_threshold})! Transitioning to GASEOUS.")
+            with self.db.savepoint(savepoint):
+                self.db.insert_node(node_id, content, version, commit=False)
+                for source, target, relationship in edges:
+                    self.db.insert_edge(source, target, relationship, version, commit=False)
+                reasons = self._validate_snapshot(version)
+                if reasons:
+                    raise _RejectedInput(ProcessResult(False, "LIQUID", 0, 0.0, reasons))
+                rank, entropy = self._state(version)
+                if not check_phase_boundary(rank, float(self.entropy_threshold)):
+                    self.phase, self.current_depth = "LIQUID", 0
+                    return ProcessResult(True, self.phase, 0, entropy)
                 self.phase = "GASEOUS"
-                return self._start_reflection_cycle()
-            else:
-                return self._start_reflection_cycle()
-        elif self.phase == "GASEOUS":
-            print("[Cortex] Entropy stabilized. Returning to LIQUID PHASE.")
-            self.phase = "LIQUID"
-            self.current_depth = 0
-            return True
-
-        return True
-
-    def _verify_current_state(self) -> bool:
-        """
-        Performs deterministic consistency verification on all nodes in the current state.
-        """
-        cursor = self.db.conn.cursor()
-        cursor.execute("SELECT node_id, content FROM nodes")
-        nodes_data = cursor.fetchall()
-
-        for row in nodes_data:
-            if not self.rules.verify_consistency({"node_id": row["node_id"], "content": row["content"]}):
-                print(f"[Cortex] Inconsistency detected in node: {row['node_id']}")
-                return False
-        return True
-
-    def _start_reflection_cycle(self) -> bool:
-        """
-        Metacognitive self-observation (Gaseous Phase).
-        Returns True if the cycle completes successfully within depth N.
-        """
-        if self.current_depth >= self.max_depth:
-            print(f"[Cortex] COGNITIVE REJECTION: Max reflection depth {self.max_depth} reached (ADR-002).")
-            self.current_depth = 0
-            return False
-
-        self.current_depth += 1
-        print(f"[Cortex] Reflection Cycle Depth: {self.current_depth}/{self.max_depth}")
-
-        # 1. Fork state for simulation
-        fork_name = f"reflection_v{self.current_depth}"
-        self.db.fork(fork_name)
-
-        try:
-            # 2. Verify current state consistency
-            if self._verify_current_state():
-                print(f"[Cortex] Self-Consistency Verified at depth {self.current_depth}.")
-                self.db.commit_fork(fork_name)
-                # If still high entropy, it will stay in GASEOUS and check again next cycle
-                return True
-            else:
-                print("[Cortex] Inconsistency Detected during reflection! Performing Hard Rollback.")
-                self.db.rollback_fork(fork_name)
-                self.current_depth = 0
-                return False
-
-        except Exception as e:
-            print(f"[Cortex] Error during reflection: {e}")
-            try:
-                self.db.rollback_fork(fork_name)
-            except Exception:
-                pass
-            self.phase = "LIQUID"
-            self.current_depth = 0
-            return False
+                for depth in range(1, self.max_depth + 1):
+                    self.current_depth = depth
+                    if self.reflector is not None:
+                        self.reflector(depth, self.db, version)
+                    reasons = self._validate_snapshot(version)
+                    if reasons:
+                        raise _RejectedInput(ProcessResult(False, "LIQUID", depth, entropy, reasons))
+                    rank, entropy = self._state(version)
+                    if not check_phase_boundary(rank, float(self.entropy_threshold)):
+                        self.phase, self.current_depth = "LIQUID", 0
+                        return ProcessResult(True, self.phase, depth, entropy)
+                raise _RejectedInput(ProcessResult(False, "LIQUID", self.max_depth, entropy, ("reflection_depth_exhausted",)))
+        except _RejectedInput as rejected:
+            self.phase, self.current_depth = "LIQUID", 0
+            return rejected.result

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lostlight530.github.io/reflective-continuum/schemas/drift-report.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observed_at", "database", "versions", "structural", "semantic", "limitations"],
+  "properties": {
+    "observed_at": {"type": "string", "format": "date-time"},
+    "database": {"type": "string"},
+    "versions": {"type": "array", "prefixItems": [{"type": "integer", "minimum": 1}, {"type": "integer", "minimum": 1}], "items": false},
+    "structural": {"type": "object"},
+    "semantic": {"type": "array"},
+    "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

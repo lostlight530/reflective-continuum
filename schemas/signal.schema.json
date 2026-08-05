@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lostlight530.github.io/reflective-continuum/schemas/signal.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "content"],
+  "properties": {
+    "id": {"type": "string", "minLength": 1, "maxLength": 200},
+    "content": {"type": "string", "minLength": 1, "maxLength": 100000},
+    "version": {"type": "integer", "minimum": 1, "default": 1},
+    "edges": {"type": "array", "default": [], "items": {"type": "array", "prefixItems": [{"type": "string", "minLength": 1}, {"type": "string", "minLength": 1}, {"type": "string", "minLength": 1}], "items": false, "minItems": 3, "maxItems": 3}}
+  }
+}

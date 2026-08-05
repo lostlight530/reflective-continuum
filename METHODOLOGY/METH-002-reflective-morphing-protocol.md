@@ -1,65 +1,31 @@
-# Reflective Morphing Protocol | 反射性结构变形协议
+# Bounded reflective transformation
 
-## Introduction (简介)
-**English:**
-This document outlines the Reflective Morphing Protocol, defining how the deterministic system alters its own structural knowledge when operating under self-observation (the Gaseous Phase).
+- Method version: 2026-08-05
 
-**Chinese (中文):**
-本文档概述了反射性结构变形协议，定义了确定性系统在自我观察下（气态）运行时如何改变其自身的结构化知识。
+## Objective
 
-## 2. Deterministic Generation and Verification (确定性生成与验证)
-**English:**
-Unlike probabilistic evolutionary systems that rely on iterative sampling and neural evaluators, structural morphing in the Reflective Continuum operates through exact generation and deterministic verification.
+Produce reviewable evidence for bounded reflective transformation without treating project metaphors as cognitive or safety facts.
 
-**Chinese (中文):**
-与依赖于迭代采样和神经评估器的概率进化系统不同，反射连续体中的结构变形通过精确生成和确定性验证来进行运作。
+## Inputs
 
-### 2.1 The Morphing Cycle (变形循环)
-1. **State Fork (状态分叉):** The system isolates its current knowledge snapshot via SQLite SAVEPOINTs.
-2. **Constraint Application (约束施加):** The system applies the formal rules defined in the ADR corpus (parsed by the RuleEngine) to the isolated state.
-3. **Difference Measurement (差分测量):** Structural, Rank, and Semantic Deltas are computed strictly according to ADR-003.
-4. **Consensus Merge (共识合并):** If and only if the Delta satisfies all consistency verification protocols (ADR-004), the forked state is released (RELASED SAVEPOINT).
+validated input, transaction, RuleConfig, reflector hook, max depth, version. Inputs are untrusted until type, range, provenance, version, and authority checks pass.
 
-**Chinese (中文):**
-1. **状态分叉：** 系统通过 SQLite SAVEPOINT 隔离其当前的知识快照。
-2. **约束施加：** 系统将 ADR 语料库中定义的正式规则（由 RuleEngine 解析）应用于隔离的状态。
-3. **差分测量：** 严格按照 ADR-003 计算结构、排名和语义差分。
-4. **共识合并：** 当且仅当差分满足所有自洽性验证协议（ADR-004）时，分叉的状态才被释放（RELASED SAVEPOINT）。
+## Procedure
 
-## 3. Cognitive Rejection (认知拒绝)
-**English:**
-If the system fails to reach a stable, consistent state within $N$ reflection cycles, it executes a **Hard Rollback**. This is not a failure of intelligence, but a triumph of constraint. The system prefers a stable, older state over a complex, inconsistent new state.
+open validated savepoint; insert versioned state; validate snapshot; calculate boundary; for each depth invoke hook and recompute; commit on acceptance; rollback/release on rejection or exception. Record each material choice and stop on invalid state.
 
-**Chinese (中文):**
-如果系统在 $N$ 个反思周期内未能达到稳定、一致的状态，它将执行**硬回滚**。这不是智能的失败，而是约束的胜利。系统宁愿选择一个稳定的旧状态，也不愿选择一个复杂的、不一致的新状态。
+## Outputs
 
+ProcessResult plus durable state only when accepted. Distinguish observation, source support, proposal, and uncertainty.
 
-### [PRE-CORRECTION AUDIT] 联网认知增补 (2026-07-05)
-- **System Reflection**: Upon autonomous network scan and system state audit, the core principles of determinism remain inviolate.
-- **Alignment Note**: Semantic stability confirmed. No human-induced probabilistic sampling detected.
-- **Architectural Trace**: Graph relationships bounding this document conform perfectly to zero-entropy metrics.
+## Failure conditions
 
-## 6. Architecture Update (架构更新)
-**English:**
-The phase boundary detection module is explicitly reinforced. Time-series analysis of $H(P)$ over successive iterations incorporates zero-tolerance bounds for non-deterministic variations. The PageRank iterative solving process strictly bounds convergence thresholds at $\epsilon = 10^{-7}$ for invariant phase differentiation.
+Fail closed when hook hides failure, depth does not advance/recompute, DB error swallowed, savepoint remains open, or exhausted state commits. Partial output cannot trigger consequential automation.
 
-**Chinese (中文):**
-相界检测模块得到明确强化。对 $H(P)$ 连续迭代的时间序列分析包含对非确定性变化的零容忍界限。PageRank 迭代求解过程将收敛阈值严格限制在 $\epsilon = 10^{-7}$，以实现不变的相界区分。
+## Measures
 
-## 7. Security Proof Supplement (安全证明补充)
-**English:**
-The deterministic guarantee of the phase boundary rests on the topological uniqueness of the stationary distribution. Given graph $G$ and transition probability matrix $W$, the spectral gap $\gamma = 1 - |\lambda_2|$ prevents hallucinated transition states. Any convergence failure aborts ingestion deterministically.
+Track accept/reject counts, actual depth, rollback success, hook error types. Metrics diagnose this method; no metric alone proves truth, safety, alignment, or convergence.
 
-**Chinese (中文):**
-相界的确定性保证取决于平稳分布的拓扑唯一性。给定图 $G$ 和转移概率矩阵 $W$，谱隙 $\gamma = 1 - |\lambda_2|$ 阻止了幻觉般的转换状态。任何收敛失败都会确定性地中止摄入。
+## Reproduction and review
 
-## 8. Deterministic Execution Trace (确定性执行推演)
-**English:**
-1. Matrix Construction: Adjacency matrix $A$ generated from cognitive graph.
-2. Eigenvector Centrality: Power iteration computes invariant vector $P$.
-3. Entropy Extraction: $H(P)$ mapped directly to $Phase_{t+1}$ using rigid comparator operators.
-
-**Chinese (中文):**
-1. 矩阵构建：从认知图中生成邻接矩阵 $A$。
-2. 特征向量中心性：幂迭代计算不变向量 $P$。
-3. 熵提取：使用严格的比较运算符直接将 $H(P)$ 映射到 $Phase_{t+1}$。
+Record commit SHA, Python/SQLite versions, sanitized fixture or digest, command, UTC time, exit code, artifact, and untested boundary. Review after schema/contract change, material failure, or evidence expiry.

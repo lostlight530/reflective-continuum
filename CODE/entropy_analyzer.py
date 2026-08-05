@@ -1,75 +1,53 @@
+"""Validated PageRank and Shannon entropy utilities."""
+from __future__ import annotations
 import math
-import typing
+from collections.abc import Iterable
 
-def compute_pagerank(
-    nodes: typing.List[str],
-    edges: typing.List[typing.Tuple[str, str]],
-    damping: float = 0.85,
-    max_iterations: int = 100,
-    tol: float = 1.0e-6
-) -> typing.Dict[str, float]:
-    """
-    Pure Python, zero-dependency PageRank implementation.
-    Operates on a graph defined by a list of nodes and directed edges (source, target).
-    """
-    N = len(nodes)
-    if N == 0:
+
+def compute_pagerank(nodes: list[str], edges: list[tuple[str, str]], damping: float = 0.85, max_iterations: int = 100, tol: float = 1e-9) -> dict[str, float]:
+    ordered = tuple(sorted(set(nodes)))
+    if len(ordered) != len(nodes):
+        raise ValueError("nodes must be unique")
+    if not 0 < damping < 1 or max_iterations < 1 or tol <= 0:
+        raise ValueError("invalid PageRank configuration")
+    if not ordered:
         return {}
-
-    # Initialize dictionary
-    pr = {node: 1.0 / N for node in nodes}
-
-    # Precompute out-degree for each node
-    out_degree = {node: 0 for node in nodes}
-    in_edges = {node: [] for node in nodes}
-
-    for u, v in edges:
-        if u in out_degree and v in in_edges:
-            out_degree[u] += 1
-            in_edges[v].append(u)
-
-    # Iterative calculation
+    known = set(ordered)
+    clean_edges = sorted(set(edges))
+    if any(source not in known or target not in known for source, target in clean_edges):
+        raise ValueError("edge references an unknown node")
+    count = len(ordered)
+    rank = {node: 1.0 / count for node in ordered}
+    outgoing = {node: 0 for node in ordered}
+    incoming = {node: [] for node in ordered}
+    for source, target in clean_edges:
+        outgoing[source] += 1
+        incoming[target].append(source)
     for _ in range(max_iterations):
-        new_pr = {}
-        diff = 0.0
-
-        # Handle dangling nodes (nodes with 0 out-degree)
-        dangling_sum = sum(pr[node] for node in nodes if out_degree[node] == 0)
-
-        for node in nodes:
-            # Base teleportation + dangling node distribution
-            rank = (1.0 - damping) / N + damping * (dangling_sum / N)
-
-            # Add contributions from incoming edges
-            for incoming_node in in_edges[node]:
-                rank += damping * (pr[incoming_node] / out_degree[incoming_node])
-
-            new_pr[node] = rank
-            diff += abs(new_pr[node] - pr[node])
-
-        pr = new_pr
-
-        if diff < tol:
+        dangling = math.fsum(rank[node] for node in ordered if outgoing[node] == 0)
+        updated = {}
+        for node in ordered:
+            contribution = math.fsum(rank[source] / outgoing[source] for source in incoming[node])
+            updated[node] = (1 - damping) / count + damping * (dangling / count + contribution)
+        delta = math.fsum(abs(updated[node] - rank[node]) for node in ordered)
+        rank = updated
+        if delta <= tol:
             break
+    total = math.fsum(rank.values())
+    return {node: rank[node] / total for node in ordered}
 
-    return pr
 
-def calculate_topological_entropy(pagerank_scores: typing.List[float]) -> float:
-    """
-    Calculates the Shannon Entropy based on PageRank distributions (ADR-005).
-    H(P) = - sum(p * log(p))
-    """
-    entropy = 0.0
-    for score in pagerank_scores:
-        if score > 0:
-            entropy -= score * math.log(score)
-    return entropy
+def calculate_topological_entropy(scores: Iterable[float]) -> float:
+    values = [float(value) for value in scores]
+    if any(not math.isfinite(value) or value < 0 for value in values):
+        raise ValueError("scores must be finite and non-negative")
+    total = math.fsum(values)
+    if total <= 0:
+        return 0.0
+    return -math.fsum((value / total) * math.log(value / total) for value in values if value > 0)
 
-def check_phase_boundary(pagerank_dict: typing.Dict[str, float], threshold: float) -> bool:
-    """
-    Determines if the system must transition to the Gaseous Phase.
-    Returns True if H(P) > threshold.
-    """
-    scores = list(pagerank_dict.values())
-    entropy = calculate_topological_entropy(scores)
-    return entropy > threshold
+
+def check_phase_boundary(pagerank: dict[str, float], threshold: float) -> bool:
+    if not math.isfinite(threshold) or threshold < 0:
+        raise ValueError("threshold must be finite and non-negative")
+    return calculate_topological_entropy(pagerank.values()) > threshold
