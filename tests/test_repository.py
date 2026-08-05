@@ -55,9 +55,9 @@ class RepositoryTests(unittest.TestCase):
             "metacognitive observer",
             "cognitive rollback",
             "gaseous phase",
-            "??????",
+            "\u5143\u8ba4\u77e5\u89c2\u5bdf\u5668",
             "proves cognition",
-            "????",
+            "\u8bc1\u660e\u8ba4\u77e5",
         ):
             self.assertNotIn(obsolete, lowered)
         for link in (
