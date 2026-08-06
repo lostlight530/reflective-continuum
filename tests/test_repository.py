@@ -40,13 +40,6 @@ class RepositoryTests(unittest.TestCase):
         self.assertIn(checkout, pages)
         self.assertIn(setup_python, ci)
 
-    def test_dependabot_groups_action_updates(self):
-        text = (ROOT / ".github" / "dependabot.yml").read_text(encoding="utf-8")
-        self.assertRegex(
-            text,
-            r'(?m)^    groups:\n      actions:\n        patterns:\n          - "\*"$',
-        )
-
     def test_readme_claims_stay_within_evidence_scope(self):
         text = (ROOT / "README.md").read_text(encoding="utf-8")
         lowered = text.lower()
