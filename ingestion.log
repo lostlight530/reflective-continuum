@@ -1,2 +1,4 @@
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
 {"accepted": 2, "results": [{"accepted": true, "id": "sig-001", "reasons": []}, {"accepted": true, "id": "sig-002", "reasons": []}, {"accepted": false, "id": "sig-003", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "sig-004", "reasons": []}, {"accepted": true, "id": "sig-005", "reasons": []}, {"accepted": false, "id": "sig-006", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
