@@ -43,3 +43,6 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0169874732451611, reasons=('reflection_depth_exhausted',))
 Write Status: NOT_EXECUTED
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 3, "results": [{"accepted": true, "id": "sig-metacognition-02", "reasons": []}, {"accepted": true, "id": "sig-alignment-02", "reasons": []}, {"accepted": true, "id": "sig-determinism-01", "reasons": []}], "total": 3}
+[TEST-KNOWN-FAIL] test_verified_action_runtime_pins — .github/workflows/ci.yml 缺失，不可由当前边界创建
