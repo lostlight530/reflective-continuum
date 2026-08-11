@@ -46,3 +46,18 @@ Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
 {"accepted": 3, "results": [{"accepted": true, "id": "sig-metacognition-02", "reasons": []}, {"accepted": true, "id": "sig-alignment-02", "reasons": []}, {"accepted": true, "id": "sig-determinism-01", "reasons": []}], "total": 3}
 [TEST-KNOWN-FAIL] test_verified_action_runtime_pins — .github/workflows/ci.yml 缺失，不可由当前边界创建
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"total": 3, "accepted": 2, "results": [{"id": "sig-csa-agentic-predictions-2026", "accepted": true, "reasons": []}, {"id": "sig-structural-learning-ai-metacognition", "accepted": true, "reasons": []}, {"id": "sig-elementum-ai-determinism", "accepted": false, "reasons": ["reflection_depth_exhausted"]}]}
+HARD_ROLLBACK
+Signal ID: sig-elementum-ai-determinism
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Write Status: NOT_EXECUTED
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+{"total": 3, "accepted": 2, "results": [{"id": "sig-csa-agentic-predictions-2026", "accepted": true, "reasons": []}, {"id": "sig-structural-learning-ai-metacognition", "accepted": true, "reasons": []}, {"id": "sig-elementum-ai-determinism", "accepted": false, "reasons": ["reflection_depth_exhausted"]}]}
+HARD_ROLLBACK
+Signal ID: sig-elementum-ai-determinism
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Write Status: NOT_EXECUTED
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
