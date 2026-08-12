@@ -61,3 +61,53 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Write Status: NOT_EXECUTED
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+Error: FOREIGN KEY constraint failed
+{
+  "total": 3,
+  "accepted": 2,
+  "results": [
+    {
+      "id": "SIG_001_MC",
+      "accepted": true,
+      "reasons": []
+    },
+    {
+      "id": "SIG_002_AS",
+      "accepted": true,
+      "reasons": []
+    },
+    {
+      "id": "SIG_003_AS",
+      "accepted": false,
+      "reasons": [
+        "reflection_depth_exhausted"
+      ]
+    }
+  ]
+}
+Error: FOREIGN KEY constraint failed
+{
+  "total": 3,
+  "accepted": 2,
+  "results": [
+    {
+      "id": "SIG_001_MC",
+      "accepted": true,
+      "reasons": []
+    },
+    {
+      "id": "SIG_002_AS",
+      "accepted": true,
+      "reasons": []
+    },
+    {
+      "id": "SIG_003_AS",
+      "accepted": false,
+      "reasons": [
+        "reflection_depth_exhausted"
+      ]
+    }
+  ]
+}
+335e4bdec52fb80c9f406186bd2b9d8101172ab8927e4460f7a6f5cdaaa7b32a
