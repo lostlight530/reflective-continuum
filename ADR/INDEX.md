@@ -2,6 +2,12 @@
 
 Status: active topology map
 
+## Jules automation boundary
+
+This topology map serves human and independent repository maintenance outside the Jules scheduled automation stream. It documents durable decisions and reference relationships; it is not a Jules task prompt, Jules memory entry, or `AGENTS.md` instruction and does not change existing Jules R1/R2/R3/R4/R5 behavior.
+
+Jules-produced research or audits may later be interpreted against this topology, but that post-hoc review does not mean Jules consumed this index while generating them.
+
 The nine ADRs accepted on 2026-08-05 are **parallel decisions**, not a sequential supersession chain. Numerical order is an identifier/order convention only.
 
 No ADR in this index is declared to supersede another unless its own `Status` section names one explicitly. At this revision every ADR records `Supersedes named ADR: NONE`.
@@ -45,3 +51,5 @@ This index does not invent missing predecessors. Each ADR now states the histori
 ## Reference topology
 
 Background and methodological references are indexed separately in [`../REFERENCES/INDEX.md`](../REFERENCES/INDEX.md). Their presence provides context or source support; it does not make them executable policy or normative ADR dependencies.
+
+This topology repair is independent repository governance. It does not modify Jules automation instructions.
