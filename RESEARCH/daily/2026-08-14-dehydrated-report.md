@@ -5,6 +5,8 @@
 - Database Hash: `7a40d99fa99ffff6331f32c6fe498a614b697fd268113335aa00acb60716566a`
 - Iterations: `100`
 - Distinct Snapshots: `1`
+- Scope: `R1_EXECUTION_REPEATABILITY_OBSERVED_WITHIN_RUN_SCOPE`
+- Non-Claim: One distinct snapshot across this R1 convergence run does not establish repository-wide persistence, semantic health, or cross-task stability.
 
 ## 2. Ingested Signals
 
@@ -15,14 +17,16 @@
 - **Source**: `https://hai.stanford.edu/ai-definitions/what-is-ai-alignment`
 - **Checked At**: `2026-08-14`
 - **Acceptance Status**: `ACCEPTED`
+- **Evidence Boundary**: `ACCEPTED` records R1 control-flow outcome; it is not an independent truth or implementation label.
 
 ### Signal 2
 - **ID**: `sig-agent-safety-gendigital`
-- **Content**: The AI Agent Safety Standards by Gen serve as a unified framework to bring consistency, portability, and accountability to agentic systems. It is built on AARTS and Skill IDs.
+- **Content**: Gen Digital proposes the AI Agent Safety Standards as a framework intended to improve consistency, portability, accountability, identity, and runtime enforcement across agent hosts. AARTS v0.1 is explicitly a draft and Skill ID signing remains an evolving proposal.
 - **Edges**: `[]`
 - **Source**: `https://www.gendigital.com/blog/news/company-news/ai-agent-trust-hub-standards`
 - **Checked At**: `2026-08-14`
 - **Acceptance Status**: `ACCEPTED`
+- **Evidence Boundary**: The source supports what Gen proposes and implements in its framework; it does not establish a universal runtime-safety guarantee for agentic systems or this repository.
 
 ### Signal 3
 - **ID**: `sig-deterministic-ai-zapier`
@@ -31,6 +35,7 @@
 - **Source**: `https://zapier.com/blog/deterministic-ai/`
 - **Checked At**: `2026-08-14`
 - **Acceptance Status**: `REJECTED_FROM_INGESTION`
+- **Evidence Boundary**: Rejection is an R1 policy/control-flow result; it does not by itself falsify the source proposition.
 
 ## 3. Hard Rollback Log
 ```text
@@ -45,10 +50,10 @@ Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 ## 4. Synthesis
 
 ### 中文综合
-今日外部信号来源于斯坦福 HAI、Gen Digital 以及 Zapier 的技术博客。斯坦福 HAI 重新定义了人工智能对齐：确保 AI 系统的目标和行为符合人类期望、价值和意图，强调系统应能在新情况中做“正确的事”。Gen Digital 提出针对 AI Agent 安全的标准（AARTS和Skill IDs），以强化代理系统的运行时安全及溯源。Zapier 的文章探讨了确定性 AI 系统，即 AI 负责意图解释和生成，而决策流则交由确定性逻辑管控，避免系统的非预期变异。这些内容有助于元认知层深化对 AI 对齐及系统执行边界的确权。然而第三条关于确定性 AI 的信号被内省机制拒绝，原因在于达到了反射深度阈值（`reflection_depth_exhausted`），触发了 Hard Rollback。系统整体一致性良好，已成功吸收前两条对齐相关的安全及工程标准。
+今日外部信号来源于斯坦福 HAI、Gen Digital 以及 Zapier 的技术博客。斯坦福 HAI 提供了 AI Alignment 的定义性说明。Gen Digital 提出了由 AARTS 与 Skill IDs 组成的 Agent 安全/信任框架，其中 AARTS v0.1 明确仍是 draft，Skill ID signing 也是持续演进中的 proposal，因此这些材料支持“Gen 正在提出和实现一套可移植的运行时安全/身份框架”，而不支持“已经保证所有 Agent 系统的运行时安全与溯源”。Zapier 的文章描述了将 AI 解释能力与确定性下游逻辑结合的工程模式。第三条信号因 `reflection_depth_exhausted` 被 R1 拒绝并触发 Hard Rollback；这只是摄入控制流结果，不等于该外部命题被证伪。前两条信号被 R1 接受，100 次迭代得到单一快照，支持本次 R1 运行范围内的重复性观察，但不足以证明跨任务持久化或“系统整体一致性”。
 
 ### English Synthesis
-Today's external signals originate from Stanford HAI, Gen Digital, and Zapier's tech blog. Stanford HAI defined AI alignment as ensuring that an AI system's goals and behaviors align with human values, rules, and intentions, focusing on doing the "right thing" even in novel circumstances. Gen Digital proposed a standard framework for AI Agent safety (featuring AARTS and Skill IDs) to guarantee runtime protection and tracing for agentic systems. Zapier's article explored deterministic AI, highlighting hybrid setups where AI handles interpretation while deterministic logic governs downstream execution, mitigating unpredictable deviations. These signals aid the metacognitive layer in clarifying definitions around AI alignment and bounding execution pathways. However, the third signal on deterministic AI was rejected by the internal reflection mechanism due to reaching the maximum reflection depth threshold (`reflection_depth_exhausted`), triggering a Hard Rollback. The overall system convergence remains stable, having successfully ingested the first two alignment and agent safety standards.
+Today's external signals originate from Stanford HAI, Gen Digital, and Zapier's technical blog. Stanford HAI provides a definition-oriented description of AI alignment. Gen Digital proposes an agent safety/trust framework built around AARTS and Skill IDs; Gen explicitly describes AARTS v0.1 as a draft and Skill ID signing as an evolving proposal. The source therefore supports a claim about Gen's proposed/implemented framework direction, not a universal guarantee of runtime protection or tracing for all agentic systems or this repository. Zapier describes an engineering pattern in which AI handles interpretation while deterministic logic governs downstream execution. The third signal was rejected by R1 because of `reflection_depth_exhausted`, triggering a Hard Rollback; that rejection is a control-flow result, not a falsification of the external proposition. The first two signals were accepted. A single distinct snapshot across 100 iterations supports run-local R1 repeatability only and must not be promoted into a claim of cross-task persistence or overall system stability.
 
 ## 5. Phase State & Metrics
 - Phase State: `LIQUID`
@@ -56,3 +61,4 @@ Today's external signals originate from Stanford HAI, Gen Digital, and Zapier's 
 - Accepted Signals: `2`
 - Rejected Signals: `1`
 - Entropy (Rejected Signal): `1.0986122886681096`
+- Persistence Link to R2: `NOT_VERIFIED_FROM_THIS_REPORT`
