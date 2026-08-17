@@ -9,6 +9,23 @@ Reflective Continuum is a standard-library Python reference for versioned graph 
 
 It is not a cognitive system, semantic embedding model, truth engine, safety proof, autonomous researcher, distributed database, or production service. “Liquid”, “gaseous”, “cortex”, “reflection”, “entropy”, and “convergence” are project labels. Claims apply only to declared fixtures, versions, queries, thresholds, and environments.
 
+## Decision and reference topology
+
+The engineering decisions that narrow this specification are indexed in [`ADR/INDEX.md`](ADR/INDEX.md). ADR numbers are identifiers, not a sequential supersession chain.
+
+| Specification surface | Governing ADRs |
+|---|---|
+| Runtime dependency and explicit-contract boundary | [ADR-001](ADR/ADR-001.md), [ADR-007](ADR/ADR-007.md) |
+| Versioned persistence and transaction behavior | [ADR-004](ADR/ADR-004.md) |
+| Structural / lexical / rank delta separation | [ADR-003](ADR/ADR-003.md) |
+| Entropy and phase-label interpretation | [ADR-005](ADR/ADR-005.md) |
+| Bounded reflection and rollback loop | [ADR-002](ADR/ADR-002.md) |
+| External-signal provenance before synthesis | [ADR-006](ADR/ADR-006.md) |
+| Task ownership and explicit output boundary | [ADR-008](ADR/ADR-008.md) |
+| Evaluation and completion-claim scope | [ADR-009](ADR/ADR-009.md) |
+
+Background and methodological sources are indexed in [`REFERENCES/INDEX.md`](REFERENCES/INDEX.md). They are non-normative context unless a specific requirement is separately adopted by this specification or an ADR.
+
 ## Runtime and persistence
 
 CI verifies Python 3.12 and 3.14. SQLite must provide FTS5. Every connection enables and verifies `PRAGMA foreign_keys=ON`.
