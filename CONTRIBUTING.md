@@ -2,6 +2,14 @@
 
 Reflective Continuum accepts small changes that strengthen versioned storage, bounded analysis, provenance, and reproducibility.
 
+## Jules automation boundary
+
+This contribution guide governs human and independent-maintainer changes to the repository. It is outside the existing Jules scheduled automation stream and is not a Jules task prompt.
+
+Do not assume Jules R1/R2/R3/R4/R5 tasks consume or enforce this file. Existing Jules automation remains governed by its own task prompts, repository memory, and any explicit Jules instruction surface. This maintenance intentionally does not create or modify `AGENTS.md`, Jules prompts, or Jules memory.
+
+The rules below may be used to review or correct Jules-generated artifacts after generation, but that post-hoc audit does not mean the automation itself followed them.
+
 Before coding, identify the governing ADR/method, define inputs/outputs/errors/migration, add a regression test for executable behavior, and preserve separately owned README, homepage, `.nojekyll`, RESEARCH, and license paths unless the change explicitly owns them. Database schema changes require a migration and compatibility note; never silently reinterpret existing rows.
 
 Use Python 3.12 or 3.14 for executable-path verification:
@@ -52,7 +60,7 @@ Do not merge synthetic and operational transition evidence.
 
 ## Daily → Weekly inheritance
 
-Weekly artifacts preserve the Daily evidence history.
+When this independent review framework is applied to Jules-produced artifacts, Weekly artifacts preserve the Daily evidence history.
 
 - a later successful test run does not erase an earlier Daily error
 - rejected signals remain rejected in aggregate summaries
@@ -60,6 +68,8 @@ Weekly artifacts preserve the Daily evidence history.
 - Weekly reports may aggregate or downgrade Daily evidence but may not strengthen it without a new explicit evidence record
 
 Repeated sources should be labelled as revalidation, control signals, new claims from an existing source, or duplicates when novelty matters.
+
+These inheritance rules are reviewer-side governance, not a claim that Jules automation consumes this file.
 
 ## Corrections
 
@@ -79,3 +89,4 @@ Evidence-only pull requests should additionally state:
 - whether historical artifacts were preserved
 - what claim strength changed
 - unresolved state or topology debt
+- whether the change affects Jules automation instructions; default is `NO` unless a Jules instruction surface is explicitly modified
