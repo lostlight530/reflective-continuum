@@ -145,3 +145,11 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Graph Write Status: NOT_EXECUTED
 Next Action: Terminate ingestion for sig-003, continue with pipeline reporting, and exclude sig-003 from the Knowledge Graph.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "arxiv_2605_08942v1", "reasons": []}, {"accepted": true, "id": "arxiv_2602_02605v2", "reasons": []}, {"accepted": false, "id": "arxiv_2607_11881v1", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+Signal ID: arxiv_2607_11881v1
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Graph Written: False
+Next Action: Do not retry. Log as REJECTED_FROM_INGESTION and reflect in dehydrated report.
