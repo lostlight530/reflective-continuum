@@ -3,6 +3,14 @@
 - Retrieval date: 2026-08-17
 - Rule: primary/official sources bound implementation and claim language; they do not certify this repository
 
+## Jules automation boundary
+
+This baseline belongs to the independent repository-governance and post-hoc audit layer outside the Jules scheduled automation stream.
+
+It is not a Jules task prompt, Jules memory entry, or repository-level Jules instruction file. It does not modify, override, or guarantee the behavior of existing Jules R1/R2/R3/R4/R5 tasks. Jules-generated artifacts may be audited against this baseline after generation by a human or independent maintainer, but compliance must not be assumed unless the relevant Jules instruction surface explicitly incorporates the same rule.
+
+This maintenance intentionally does not create or modify `AGENTS.md`, Jules task prompts, or Jules repository memory. No claim is made that Jules reads this file as automation policy.
+
 ## Runtime and storage
 
 - [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) identifies the current 3.14 documentation line used by this baseline. CI also retains 3.12 as the older supported compatibility line; support status must be rechecked when this matrix changes.
@@ -73,12 +81,14 @@ A drift label belongs to the data and transition set actually inspected.
 
 ## Daily-to-Weekly inheritance
 
-Weekly reports preserve Daily uncertainty and failure history.
+Weekly reports preserve Daily uncertainty and failure history when this independent audit framework is applied.
 
 - a later 27/27 test snapshot does not erase an earlier Daily error
 - `Missing dates: NONE` does not mean every field was computed
 - rejected signals remain visible in the weekly state
 - Weekly summaries may aggregate or downgrade Daily evidence but may not strengthen an uncertain Daily observation without a new, explicit evidence record
+
+These are post-hoc governance rules for maintainers and independent reviewers, not claims about what Jules automatically enforces during task execution.
 
 ## Source reuse and novelty
 
