@@ -153,3 +153,13 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Graph Written: False
 Next Action: Do not retry. Log as REJECTED_FROM_INGESTION and reflect in dehydrated report.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{'total': 3, 'accepted': 2, 'results': [{'id': 'signal_001', 'accepted': True, 'reasons': []}, {'id': 'signal_002', 'accepted': True, 'reasons': []}, {'id': 'signal_003', 'accepted': False, 'reasons': ['reflection_depth_exhausted']}]}
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_001", "reasons": []}, {"accepted": true, "id": "signal_002", "reasons": []}, {"accepted": false, "id": "signal_003", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+Signal ID: signal_003
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: NOT_EXECUTED
+Next Action: Continue with bounded daily status (SUCCESS_WITH_REJECTED_SIGNAL)
