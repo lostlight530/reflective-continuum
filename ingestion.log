@@ -163,3 +163,11 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Knowledge Graph Injection: NOT_EXECUTED
 Next Action: Continue with bounded daily status (SUCCESS_WITH_REJECTED_SIGNAL)
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "AI_AGENT_SEC_01", "reasons": []}, {"accepted": true, "id": "LLM_METACOG_01", "reasons": []}, {"accepted": false, "id": "OKTA_AI_AGENT_SEC_01", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+Signal ID: OKTA_AI_AGENT_SEC_01
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Write Status: NOT_EXECUTED
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
