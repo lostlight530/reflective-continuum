@@ -8,9 +8,7 @@ This topology map serves human and independent repository maintenance outside th
 
 Jules-produced research or audits may later be interpreted against this topology, but that post-hoc review does not mean Jules consumed this index while generating them.
 
-The nine ADRs accepted on 2026-08-05 are **parallel decisions**, not a sequential supersession chain. Numerical order is an identifier/order convention only.
-
-No ADR in this index is declared to supersede another unless its own `Status` section names one explicitly. At this revision every ADR records `Supersedes named ADR: NONE`.
+The ADRs are parallel decisions unless a decision explicitly names a predecessor. Numerical order is an identifier/order convention only.
 
 ## Decision map
 
@@ -25,12 +23,13 @@ No ADR in this index is declared to supersede another unless its own `Status` se
 | [ADR-007](./ADR-007.md) | Prose is not runtime policy | Validation/configuration contract |
 | [ADR-008](./ADR-008.md) | Tasks do not own research records | Task contract and ownership boundary |
 | [ADR-009](./ADR-009.md) | Evaluation and claim scope | Acceptance/evaluation and evidence scope |
+| [ADR-010](./ADR-010.md) | State continuity requires identity evidence | Persistence/transition/history continuity boundary |
 
 ## Relationship semantics
 
-- `Implements/defines`: the ADR narrows a part of `SPECIFICATION.md`.
-- `Related`: two decisions interact, but neither supersedes the other.
-- `Supersedes`: reserved for an explicitly named predecessor ADR or document. Absence means no supersession edge.
+- `Implements/defines`: the ADR narrows a part of `SPECIFICATION.md`
+- `Related`: two decisions interact, but neither supersedes the other
+- `Supersedes`: reserved for an explicitly named predecessor ADR or document
 
 ### Related decisions
 
@@ -39,17 +38,24 @@ No ADR in this index is declared to supersede another unless its own `Status` se
 - ADR-003 ↔ ADR-009: drift measurements are evidence with scoped claim semantics
 - ADR-004 ↔ ADR-008: storage transactions and task ownership remain separate concerns
 - ADR-006 ↔ ADR-009: provenance constrains what evaluation/synthesis may claim
+- ADR-003/004/006/009 ↔ ADR-010: continuity claims require identity, provenance, scoped measurement, and evidence history
 
-These are topical relationships, not dependency or supersession edges.
+These are topical relationships, not automatic dependency or supersession edges.
 
 ## Historical correction semantics
 
-Each ADR formerly contained the phrase `Supersedes absolute or unverifiable language in the prior file` without naming that file. The W33 reference audit correctly identified those as ghost chains.
+Historical R1-R4 artifacts remain point-in-time evidence. Later reconciliation may supersede their current interpretation without pretending that later knowledge or files were available to the original run.
 
-This index does not invent missing predecessors. Each ADR now states the historical claim class it corrects and explicitly records that no named predecessor ADR is asserted.
+ADR-010 makes that rule explicit for persistence, transitions, and artifact delivery. The 2026-08-06 R2 reconciliation is the reference case: the path exists now, but the original runtime result remains unknown.
 
 ## Reference topology
 
 Background and methodological references are indexed separately in [`../REFERENCES/INDEX.md`](../REFERENCES/INDEX.md). Their presence provides context or source support; it does not make them executable policy or normative ADR dependencies.
 
-This topology repair is independent repository governance. It does not modify Jules automation instructions.
+Related maintenance surfaces:
+
+- [`../METHODOLOGY/INDEX.md`](../METHODOLOGY/INDEX.md)
+- [`../EVIDENCE_BASELINE.md`](../EVIDENCE_BASELINE.md)
+- [`../RESEARCH/monthly/2026-08-through-23-stage-audit.md`](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
+
+This topology maintenance does not modify Jules automation instructions, runtime behavior, CI/Actions, or frontend state.
