@@ -1,6 +1,6 @@
 # 2026 Evidence Baseline
 
-- Retrieval date: 2026-08-17
+- Retrieval date: 2026-08-24
 - Rule: primary/official sources bound implementation and claim language; they do not certify this repository
 
 ## Jules automation boundary
@@ -31,6 +31,50 @@ This maintenance intentionally does not create or modify `AGENTS.md`, Jules task
 - [Anthropic, Trustworthy agents in practice (2026-04-09)](https://www.anthropic.com/research/trustworthy-agents) states that layered safeguards are not a guarantee and emphasizes tool/data/permission/environment choices. This supports least authority and accountable approvals.
 - [Anthropic’s 2026 constitution announcement](https://www.anthropic.com/news/claude-new-constitution) explicitly notes model outputs may not always adhere to intended ideals. Prose policy is not an executable guarantee.
 - [Google DeepMind AlphaEvolve](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) combines LLM proposals with automated evaluators in domains with executable metrics. It is evidence for evaluator-backed search, not deterministic cognition or universal convergence.
+
+## 2026 state, protocol, and observability calibration
+
+The following current primary sources are `REFERENCE_ONLY`. They sharpen vocabulary for state scope, lifecycle identity, execution evidence, and historical continuity; they do not add dependencies or prove that Reflective Continuum implements any referenced framework.
+
+### Model Context Protocol 2026-07-28
+
+- Primary release: https://blog.modelcontextprotocol.io/posts/2026-07-28/
+- The named protocol version adopts a stateless protocol core and removes the previous required protocol-level initialization/session mechanism.
+- The release explicitly does not require applications above that protocol core to be stateless.
+
+Reflective use: a protocol transport/session fact and an application-state fact are different scopes. This supports naming the continuity object before asserting persistence.
+
+### A2A Protocol v1.0
+
+- Specification: https://a2a-protocol.org/latest/specification/
+- Stable release note: https://a2a-protocol.org/latest/announcing-1.0/
+- A2A v1.0 distinguishes Agent Cards, stateful Tasks, Messages, Artifacts, Context, streaming, push updates, negotiation, and extensions.
+
+Reflective use: a Task/Context lifecycle is an external example of explicit identity and state boundaries. No A2A runtime is implemented here.
+
+### Google ADK conversational context
+
+- Primary documentation: https://adk.dev/sessions/
+- ADK distinguishes the current Session, session State, and searchable Memory that may span sessions, with separate SessionService and MemoryService responsibilities.
+
+Reflective use: current-session state and cross-session memory must not be collapsed into an unqualified persistence claim.
+
+### OpenAI Agents SDK tracing
+
+- Tracing guide: https://openai.github.io/openai-agents-python/tracing/
+- Tracing API reference: https://openai.github.io/openai-agents-python/ref/tracing/
+- An end-to-end trace is represented as related operation spans rather than as a single proof of successful outcome.
+
+Reflective use: trace/span evidence describes observed execution structure. It does not independently prove persistence continuity, final environment state, or semantic correctness.
+
+### Anthropic agent-evaluation decomposition
+
+- Primary guidance: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+- The guidance separates task, trial, grader, transcript/trajectory, outcome, evaluation harness, and agent harness.
+
+Reflective use: trajectory, final outcome, grader judgment, and harness assumptions remain complementary evidence surfaces rather than interchangeable success labels.
+
+These references support ADR-010's central rule: a continuity claim requires an identified object plus evidence linking the relevant observations. External state-model similarity does not establish local continuity.
 
 ## Ingestion, truth, and source authority
 
@@ -90,6 +134,22 @@ Weekly reports preserve Daily uncertainty and failure history when this independ
 
 These are post-hoc governance rules for maintainers and independent reviewers, not claims about what Jules automatically enforces during task execution.
 
+## Historical continuity and availability
+
+Current path presence, original execution, persistence identity, transition origin, generation/delivery history, and aggregation-snapshot visibility are separate dimensions.
+
+The 2026-08-06 R2 case is the canonical August example:
+
+- the repository now contains an R2 path for that logical date
+- that path is a later reconciliation artifact
+- the original R2 artifact was not retained
+- the original runtime result remains `HISTORICAL_RUNTIME_UNKNOWN`
+- reconstructing missing original metrics is not authorized
+
+A later file may repair repository interpretation or delivery coverage. It cannot manufacture an earlier runtime observation or prove an unobserved persistence interval.
+
+Use [ADR-010](ADR/ADR-010.md) for the continuity decision and [METH-005](METHODOLOGY/METH-005-evidence-continuity-reconciliation.md) for the post-hoc reconciliation method. Uncertainty survives Weekly/Monthly aggregation until new evidence directly resolves it.
+
 ## Source reuse and novelty
 
 Repeated primary papers or signals are allowed when deliberate. Label the reason when research novelty matters:
@@ -109,4 +169,4 @@ Do not repair an audit finding merely to make the audit green. Orphans, ghost ch
 
 ## Review trigger
 
-Recheck this file when the Python matrix, SQLite storage model, schema, action major versions, AI risk model, R1/R2 persistence architecture, drift semantics, or repository claim scope changes. A stale link is a maintenance issue; a source update does not silently change code policy.
+Recheck this file when the Python matrix, SQLite storage model, schema, action major versions, AI risk model, R1/R2 persistence architecture, drift semantics, protocol/state reference model, observability semantics, or repository claim scope changes. A stale link is a maintenance issue; a source update does not silently change code policy.
