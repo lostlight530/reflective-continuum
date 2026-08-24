@@ -1,31 +1,46 @@
-# Phase boundary detection
+# Graph-derived entropy boundary evaluation
 
-- Method version: 2026-08-05
+- Method version: 2026-08-24
+- Implementation anchor: `CODE/entropy_analyzer.py`
 
 ## Objective
 
-Produce reviewable evidence for phase boundary detection without treating project metaphors as cognitive or safety facts.
+Evaluate the repository's configured graph-entropy boundary for one declared graph without interpreting the result as cognition, safety, semantic truth, or global convergence.
 
 ## Inputs
 
-version-scoped nodes/edges, PageRank configuration, entropy threshold with owner and calibration. Inputs are untrusted until type, range, provenance, version, and authority checks pass.
+- unique node IDs
+- edges whose endpoints belong to the declared node set
+- PageRank damping / iteration / tolerance configuration
+- non-negative entropy threshold
+- graph version/store identity when the result is tied to persisted state
 
 ## Procedure
 
-validate graph; collapse duplicate edges; iterate PageRank; normalize; compute Shannon entropy in nats; compare to predeclared threshold; retain convergence tolerance and iterations. Record each material choice and stop on invalid state.
+1. Validate node uniqueness and PageRank configuration.
+2. Reject edges referencing unknown nodes.
+3. Collapse duplicate edges as implemented.
+4. Compute normalized PageRank.
+5. Compute Shannon entropy in nats over the normalized rank values.
+6. Compare the entropy with the declared threshold through `check_phase_boundary()`.
+7. Record the graph/version identity, rank distribution or reproducible snapshot identity, entropy value, threshold, and boolean boundary result.
 
 ## Outputs
 
-rank distribution, entropy, threshold, boundary boolean, scope/limitations. Distinguish observation, source support, proposal, and uncertainty.
+- normalized PageRank mapping
+- Shannon entropy in nats
+- declared threshold
+- boundary boolean
+- graph/version/store scope
 
-## Failure conditions
+## Failure / unknown conditions
 
-Fail closed when unknown node, duplicate node id, invalid numeric config, uncalibrated/post-hoc threshold, or cognitive/safety conclusion. Partial output cannot trigger consequential automation.
+Do not report a valid boundary result when graph identity is ambiguous, nodes are duplicated, an edge references an unknown node, configuration is invalid, or the threshold is missing from a threshold-dependent claim.
 
-## Measures
+## Evidence boundary
 
-Track rank sum, iteration delta, threshold crossing rate, calibration drift. Metrics diagnose this method; no metric alone proves truth, safety, alignment, or convergence.
+A threshold crossing means only:
 
-## Reproduction and review
+`GRAPH_DERIVED_ENTROPY > DECLARED_THRESHOLD`.
 
-Record commit SHA, Python/SQLite versions, sanitized fixture or digest, command, UTC time, exit code, artifact, and untested boundary. Review after schema/contract change, material failure, or evidence expiry.
+It does not prove instability, cognition, alignment, semantic drift, or a physical phase transition.
