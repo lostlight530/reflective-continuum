@@ -3,59 +3,63 @@
 - Retrieval date: 2026-08-24
 - Rule: primary/official sources bound implementation and claim language; they do not certify this repository
 
-## Jules automation boundary
+This baseline records public evidence semantics for the repository. It does not encode private prompts, hidden reasoning, unpublished maintenance strategy, or future artifact-production instructions.
 
-This baseline belongs to the independent repository-governance and post-hoc audit layer outside the Jules scheduled automation stream.
+## Repository implementation anchor
 
-It is not a Jules task prompt, Jules memory entry, or repository-level Jules instruction file. It does not modify, override, or guarantee the behavior of existing Jules R1/R2/R3/R4/R5 tasks. Jules-generated artifacts may be audited against this baseline after generation by a human or independent maintainer, but compliance must not be assumed unless the relevant Jules instruction surface explicitly incorporates the same rule.
+Current evidence claims are interpreted through the implementation that actually exists:
 
-This maintenance intentionally does not create or modify `AGENTS.md`, Jules task prompts, or Jules repository memory. No claim is made that Jules reads this file as automation policy.
+- `CODE/continuum_db.py` — versioned SQLite graph, foreign keys, external-content FTS5, savepoints, lexical search, snapshot digest
+- `CODE/entropy_analyzer.py` — PageRank and Shannon entropy over graph-rank values
+- `CODE/drift_detector.py` — structural delta, top-FTS-result change, rank delta
+- `CODE/reflective_validator.py` — explicit local validation rules and standard-library import-root checking
+- `CODE/cortex_observer.py` — transactional observation and bounded reflector loop
+- `CODE/tasks/cortex_selfcheck.py` — connection-local database selfcheck
+- `CODE/tasks/semantic_drift_audit.py` — declared-version structural and lexical-result comparison for caller-selected queries
 
-## Runtime and storage
+External papers, standards, protocols, or SDK documentation remain `REFERENCE_ONLY` unless a corresponding repository implementation surface exists.
 
-- [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) identifies the current 3.14 documentation line used by this baseline. Persisted August artifacts also record Python 3.12 environments. Compatibility is revision- and evidence-specific and must be claimed only from commands/tests actually executed for the relevant revision; no CI/test matrix is asserted by this baseline.
-- [SQLite foreign-key documentation](https://www.sqlite.org/foreignkeys.html) states that applications must enable foreign-key enforcement per connection. `GraphDB` enables and verifies it within its declared runtime contract.
-- [SQLite FTS5 external-content documentation](https://www.sqlite.org/fts5.html#external_content_tables) explains that the application must keep the content table and FTS index consistent, commonly with triggers. This supports explicit insert/update/delete triggers and avoiding replace-style hidden deletes.
-- [SQLite in-memory database documentation](https://www.sqlite.org/inmemorydb.html) states that a bare `:memory:` database is private to the connection that opened it, every bare `:memory:` connection creates an independent database, and that database ceases to exist when the connection closes.
+## Runtime and storage references
 
-## Automation and supply-chain references
+- [SQLite foreign-key documentation](https://www.sqlite.org/foreignkeys.html) states that applications must enable foreign-key enforcement per connection. `GraphDB` enables and verifies it on the connection it opens.
+- [SQLite FTS5 external-content documentation](https://www.sqlite.org/fts5.html#external_content_tables) explains that the application must keep the content table and FTS index synchronized. `GraphDB` uses insert/delete/update triggers for this purpose.
+- [SQLite in-memory database documentation](https://www.sqlite.org/inmemorydb.html) states that a bare `:memory:` database is private to the connection that opened it and disappears when the connection closes.
 
-- [GitHub secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) recommends immutable references and least privilege for GitHub Actions where Actions are used. This maintenance does not add or modify verification workflows or merge gates.
-- [SLSA v1.2](https://slsa.dev/spec/v1.2/) informs provenance vocabulary, but this repository does not claim an SLSA build level.
+Python-version compatibility is revision-specific. A version may be described as verified only when relevant executable behavior was actually run in that environment and the result was retained for the reviewed revision.
 
 ## AI/agent claim boundaries
 
 - [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence), updated 2026-04-08, is a voluntary generative-AI risk profile. It motivates lifecycle risk records; it does not validate a local “cognitive” architecture.
-- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) covers goal hijacking, tool misuse, privilege, supply chain, unexpected execution, and memory/context poisoning. This library exposes no agent tools; callers still own these controls.
-- [OpenAI’s 2026 third-party evaluation playbook](https://openai.com/index/trustworthy-third-party-evaluations-foundations/) explains that harness, tools, retries, scoring, budgets, and validity checks affect measured capability. Therefore every result is scoped to its evaluation system.
-- [Anthropic, Trustworthy agents in practice (2026-04-09)](https://www.anthropic.com/research/trustworthy-agents) states that layered safeguards are not a guarantee and emphasizes tool/data/permission/environment choices. This supports least authority and accountable approvals.
-- [Anthropic’s 2026 constitution announcement](https://www.anthropic.com/news/claude-new-constitution) explicitly notes model outputs may not always adhere to intended ideals. Prose policy is not an executable guarantee.
-- [Google DeepMind AlphaEvolve](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) combines LLM proposals with automated evaluators in domains with executable metrics. It is evidence for evaluator-backed search, not deterministic cognition or universal convergence.
+- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) describes agentic risk classes. This repository is not a full agent tool/runtime boundary.
+- [OpenAI’s 2026 third-party evaluation playbook](https://openai.com/index/trustworthy-third-party-evaluations-foundations/) emphasizes harness, tools, retries, scoring, budgets, and validity checks. Results remain scoped to the tested system.
+- [Anthropic, Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents) treats layered safeguards as engineering controls rather than guarantees.
+- [Anthropic’s 2026 constitution announcement](https://www.anthropic.com/news/claude-new-constitution) notes that model outputs may not always adhere to intended ideals. Prose policy is not an executable guarantee.
+- [Google DeepMind AlphaEvolve](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) is a design reference for evaluator-backed search, not deterministic cognition or universal convergence.
 
 ## 2026 state, protocol, and observability calibration
 
-The following current primary sources are `REFERENCE_ONLY`. They sharpen vocabulary for state scope, lifecycle identity, execution evidence, and historical continuity; they do not add dependencies or prove that Reflective Continuum implements any referenced framework.
+The following sources are `REFERENCE_ONLY`. They sharpen state and evidence vocabulary but do not add dependencies or prove that Reflective Continuum implements the referenced framework.
 
 ### Model Context Protocol 2026-07-28
 
 - Primary release: https://blog.modelcontextprotocol.io/posts/2026-07-28/
 - The named protocol version adopts a stateless protocol core and removes the previous required protocol-level initialization/session mechanism.
-- The release explicitly does not require applications above that protocol core to be stateless.
+- The release does not require applications above that protocol core to be stateless.
 
-Reflective use: a protocol transport/session fact and an application-state fact are different scopes. This supports naming the continuity object before asserting persistence.
+Reflective use: protocol/session scope and application-state scope are different objects.
 
 ### A2A Protocol v1.0
 
 - Specification: https://a2a-protocol.org/latest/specification/
 - Stable release note: https://a2a-protocol.org/latest/announcing-1.0/
-- A2A v1.0 distinguishes Agent Cards, stateful Tasks, Messages, Artifacts, Context, streaming, push updates, negotiation, and extensions.
+- A2A distinguishes Agent Cards, Tasks, Messages, Artifacts, Context, streaming/push mechanisms, negotiation, and extensions.
 
-Reflective use: a Task/Context lifecycle is an external example of explicit identity and state boundaries. No A2A runtime is implemented here.
+Reflective use: external example of explicit lifecycle identity. No A2A runtime is implemented here.
 
 ### Google ADK conversational context
 
 - Primary documentation: https://adk.dev/sessions/
-- ADK distinguishes the current Session, session State, and searchable Memory that may span sessions, with separate SessionService and MemoryService responsibilities.
+- ADK distinguishes Session, session State, and searchable Memory that may span sessions.
 
 Reflective use: current-session state and cross-session memory must not be collapsed into an unqualified persistence claim.
 
@@ -63,94 +67,149 @@ Reflective use: current-session state and cross-session memory must not be colla
 
 - Tracing guide: https://openai.github.io/openai-agents-python/tracing/
 - Tracing API reference: https://openai.github.io/openai-agents-python/ref/tracing/
-- An end-to-end trace is represented as related operation spans rather than as a single proof of successful outcome.
+- A trace is represented as related operation spans rather than as a single proof of successful outcome.
 
-Reflective use: trace/span evidence describes observed execution structure. It does not independently prove persistence continuity, final environment state, or semantic correctness.
+Reflective use: trace/span evidence describes recorded execution structure; it does not independently prove persistence continuity, final environment state, or semantic correctness.
 
 ### Anthropic agent-evaluation decomposition
 
 - Primary guidance: https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
 - The guidance separates task, trial, grader, transcript/trajectory, outcome, evaluation harness, and agent harness.
 
-Reflective use: trajectory, final outcome, grader judgment, and harness assumptions remain complementary evidence surfaces rather than interchangeable success labels.
-
-These references support ADR-010's central rule: a continuity claim requires an identified object plus evidence linking the relevant observations. External state-model similarity does not establish local continuity.
+Reflective use: trajectory, final outcome, grader judgment, and harness assumptions remain complementary evidence surfaces.
 
 ## Ingestion, truth, and source authority
 
 Reflective Continuum separates four independent axes:
 
-1. `INGESTION_OUTCOME`: whether a signal passed the repository ingestion/reflection path.
-2. `SOURCE_CREDIBILITY`: whether the source is primary research, an institutional publication, a vendor/blog source, secondary material, or unverified.
-3. `SOURCE_CLAIM_SUPPORT`: whether the source actually supports the exact proposition persisted in the signal.
-4. `EPISTEMIC_SUPPORT`: how strongly that proposition is supported under the source's assumptions and scope.
+1. `INGESTION_OUTCOME`: whether a signal passed the repository ingestion/reflection path
+2. `SOURCE_CREDIBILITY`: primary research, institutional publication, vendor/blog, secondary material, or unverified
+3. `SOURCE_CLAIM_SUPPORT`: whether the source supports the exact persisted proposition
+4. `EPISTEMIC_SUPPORT`: how strongly that proposition is supported under the source's assumptions and scope
 
-`ACCEPTED` is an ingestion result. It does not mean `TRUE`, `AUTHORITATIVE`, `IMPLEMENTED`, or `REPRODUCED`.
+`ACCEPTED` is a local ingestion/control-flow result. It does not mean `TRUE`, `AUTHORITATIVE`, `IMPLEMENTED`, or `REPRODUCED`.
 
-`REJECTED_FROM_INGESTION` is also an ingestion result. It does not mean the source proposition is false. A rejected signal remains useful audit evidence when its source and rejection reason are preserved.
-
-Primary/current material should be preferred for material factual, implementation, or scientific claims. Secondary/contextual material remains usable for explicitly bounded secondary/contextual claims.
+`REJECTED_FROM_INGESTION` does not mean the source proposition is false.
 
 If a source is reachable but does not support the proposition attributed to it, use `SOURCE_CLAIM_MISMATCH`.
 
 ### August reference case: 2026-08-23
 
-The R1 signal citing Wikipedia `AI_alignment` states that maintaining deterministic boundaries is essential for safety. The cited page supports AI-alignment and robust safety-constraint concepts but does not support that deterministic-boundary proposition as written. That signal therefore remains `SOURCE_CLAIM_MISMATCH` for reuse unless independent evidence supports the exact claim.
+The R1 signal citing Wikipedia `AI_alignment` states that maintaining deterministic boundaries is essential for safety. The cited page supports alignment/safety-constraint concepts but does not support that deterministic-boundary proposition as written.
+
+Current state:
+
+`SOURCE_CLAIM_MISMATCH`.
 
 ## Database-state semantics
 
-Database observations are scoped to the database path and connection actually inspected.
+Database observations are scoped to the database identity actually inspected.
 
-For a bare SQLite `:memory:` database:
+For bare SQLite `:memory:`:
 
 - each independent connection receives a distinct database
 - another task/process/connection must not be assumed to observe the same state
-- closing the owning connection destroys that in-memory database
+- closing the owning connection destroys that database
 
-Therefore an R1 statement such as `written to graph` and a later R2 observation such as `Nodes=0 / Edges=0` do not, by themselves, prove either successful durable persistence or failed ingestion unless the same persistent database identity/path is verified.
+Therefore an R1 statement such as `written to graph` and a later R2 observation such as `Nodes=0 / Edges=0` do not by themselves prove successful durable persistence or failed ingestion unless the same store identity is established.
 
-Use `PERSISTENCE_LINK_NOT_VERIFIED` when the R1→R2 storage relationship is unknown.
+Use:
 
-A repeated graph/snapshot hash demonstrates run-local repeatability only for the declared fixture/revision unless durable storage identity is independently established. Matching hashes are not memory-continuity evidence by themselves.
+`PERSISTENCE_LINK_NOT_VERIFIED`.
+
+A repeated snapshot digest demonstrates identity/repeatability of the represented graph snapshot for its declared fixture/store/revision. It is not memory-continuity evidence by itself.
+
+## Selfcheck semantics
+
+`CODE/tasks/cortex_selfcheck.py` checks the database connection it opens.
+
+Its named surfaces are:
+
+- foreign-key setting
+- FTS5 accessibility
+- `PRAGMA integrity_check`
+- rule-engine fixture acceptance
+- node/edge counts
+- initialization success
+
+With the default `:memory:` argument, these are observations of a fresh connection-local store.
+
+A healthy selfcheck does not establish:
+
+- cross-run persistence
+- successful earlier Daily ingestion
+- source truth
+- semantic correctness
+- absence of historical failures
+
+## Search and drift semantics
+
+Reflective's implemented search is lexical FTS5 search, not embedding search.
+
+`compute_semantic_delta()` compares the identity of the **top FTS5 result** for the same query across two declared versions.
+
+Therefore use:
+
+`LEXICAL_TOP_RESULT_CHANGED`
+
+rather than an unqualified claim that semantic meaning changed.
+
+`semantic_drift_audit.py` explicitly records these limitations:
+
+- `FTS5 lexical ranking`
+- `caller-selected queries`
+
+Structural delta, lexical top-result delta, and PageRank/rank delta are different evidence surfaces.
+
+`verify_self_consistency()` delegates to the generic rule engine. It does not independently establish that an arbitrary drift report satisfies a dedicated drift schema.
+
+## Entropy and phase semantics
+
+`calculate_topological_entropy()` computes Shannon entropy in nats over normalized non-negative input scores, commonly the current PageRank distribution.
+
+A higher/lower value describes that mathematical distribution only.
+
+`check_phase_boundary()` is a threshold comparison. It does not prove cognition, instability, safety, semantic drift, or convergence.
+
+`LIQUID` and `GASEOUS` are local operational labels used by the observation loop.
 
 ## Health and empty-state semantics
 
 Module-local checks and system-level state are different.
 
-- successful import/init may be reported as module-local success
-- rule-engine fixture success may be reported as rule-engine-local success
+- successful import/init may be module-local success
+- rule-engine fixture success is rule-engine-local success
 - integrity/foreign-key/FTS checks establish only their named contract
 - `Nodes=0 / Edges=0` does not prove persistence health, successful Daily ingestion, or semantic correctness
 
-When the database is empty and the cause is not established, use `INDETERMINATE_EMPTY_STATE`. Do not collapse empty state into global `HEALTHY` or global `FAILED` without additional evidence.
+When the database is empty and the cause is not established, use:
+
+`INDETERMINATE_EMPTY_STATE`.
 
 ## Drift and transition semantics
 
 A drift label belongs to the data and transition set actually inspected.
 
-- `STABLE` must not imply that uncomputed operational transitions were stable.
-- If no drift is detected only inside the available weekly audit surface, prefer `NO_DRIFT_DETECTED_WITHIN_AUDIT_SCOPE`.
-- Synthetic/test transitions and operational/runtime transitions are separate evidence classes.
-- Synthetic transitions must never be counted as observed production transitions.
-- If event origin cannot be separated, operational transition count remains `NOT_COMPUTED`.
+- `STABLE` must not imply that uncomputed operational transitions were stable
+- if no drift is detected only inside the available audit surface, prefer `NO_DRIFT_DETECTED_WITHIN_AUDIT_SCOPE`
+- synthetic/test transitions and operational/runtime transitions are separate evidence classes
+- if transition origin cannot be separated, operational transition count remains `NOT_COMPUTED`
 
 ## Daily-to-Weekly inheritance
 
-Weekly reports preserve Daily uncertainty and failure history when this independent audit framework is applied.
+Weekly summaries preserve Daily uncertainty and failure history unless new evidence directly resolves it.
 
-- a weekly task's own passing snapshot does not erase an earlier Daily error/failure
+- a Weekly task's own passing snapshot does not erase an earlier Daily error/failure
 - `Missing dates: NONE` does not mean every field was computed
-- rejected signals remain visible in the weekly state
-- Weekly summaries may aggregate or downgrade Daily evidence but may not strengthen an uncertain Daily observation without a new, explicit evidence record
+- rejected signals remain part of the historical state
+- a Weekly summary may aggregate or downgrade Daily evidence but may not strengthen an uncertain Daily observation without new evidence
 
-August R2 history that must remain visible:
+August R2 history that remains visible:
 
 - 2026-08-07 through 2026-08-10: each persisted `26 passed / 1 error`
 - 2026-08-17 through 2026-08-23: each persisted `26 passed / 1 failed`
 
-W32/W33/W34 R3 test snapshots describe their own weekly execution surfaces. They do not reconstruct or replace those Daily R2 states.
-
-These are post-hoc governance rules for maintainers and independent reviewers, not claims about what Jules automatically enforces during task execution.
+W32/W33/W34 R3 snapshots describe their own execution surfaces. They do not reconstruct or replace those Daily R2 states.
 
 ## Historical continuity and availability
 
@@ -162,15 +221,15 @@ The 2026-08-06 R2 case is the canonical August example:
 - that path is a later reconciliation artifact
 - the original R2 artifact was not retained
 - the original runtime result remains `HISTORICAL_RUNTIME_UNKNOWN`
-- reconstructing missing original metrics is not authorized
+- missing original metrics are not reconstructed
 
-A later file may repair repository interpretation or delivery coverage. It cannot manufacture an earlier runtime observation or prove an unobserved persistence interval.
+A later file may repair current interpretation or delivery coverage. It cannot manufacture an earlier runtime observation or prove an unobserved persistence interval.
 
-Use [ADR-010](ADR/ADR-010.md) for the continuity decision and [METH-005](METHODOLOGY/METH-005-evidence-continuity-reconciliation.md) for the post-hoc reconciliation method. Uncertainty survives Weekly/Monthly aggregation until new evidence directly resolves it.
+Use [ADR-010](ADR/ADR-010.md) for the continuity decision and [METH-005](METHODOLOGY/METH-005-evidence-continuity-reconciliation.md) for the reconciliation method.
 
 ## Source reuse and novelty
 
-Repeated primary papers or signals are allowed when deliberate. Label the reason when research novelty matters:
+Repeated primary papers or signals are allowed when deliberate. Label the reason when novelty matters:
 
 - `REVALIDATED_SOURCE`
 - `REPEATED_CONTROL_SIGNAL`
@@ -183,14 +242,22 @@ Repeated ingestion must not be presented as independent corroboration merely bec
 
 A Weekly R4 topology audit is a point-in-time observation. Later documentation changes can resolve an orphan or mapping without making the earlier audit false.
 
-The W33/W34 audits recorded the PIONEERS files as `UNRESOLVED_ORPHAN` in their audit snapshots. The current branch's [`REFERENCES/INDEX.md`](REFERENCES/INDEX.md), `SPECIFICATION.md`, and `ADR/INDEX.md` now connect those files as non-normative references. Current interpretation: `DOCUMENTATION_ORPHAN_RESOLVED_WITHOUT_NORMATIVE_PROMOTION`.
+The W33/W34 audits recorded the PIONEERS files as `UNRESOLVED_ORPHAN` in their audit snapshots. The current reference topology connects those files as non-normative references.
+
+Current interpretation:
+
+`DOCUMENTATION_ORPHAN_RESOLVED_WITHOUT_NORMATIVE_PROMOTION`.
 
 ## Correction policy
 
-Historical R1–R4 artifacts are execution evidence. When a claim is materially over-strong but the original record remains useful, prefer an explicit calibration/erratum that states precedence, corrected interpretation, and unresolved uncertainty.
+Historical R1–R4 artifacts are point-in-time evidence.
 
-Do not repair an audit finding merely to make the historical audit green. Record the historical state and the later repair as separate times.
+When a claim is materially over-strong but the original record remains useful, prefer explicit calibration that states:
 
-## Review trigger
+- original state
+- current interpretation
+- new evidence
+- unresolved uncertainty
+- precedence scope
 
-Recheck this file when Python/SQLite support evidence, storage model, schema, external source authority, AI risk model, R1/R2 persistence architecture, drift semantics, protocol/state reference model, observability semantics, or repository claim scope changes. A stale link is a maintenance issue; a source update does not silently change code policy.
+Do not alter a historical audit merely to make the earlier snapshot appear clean.
