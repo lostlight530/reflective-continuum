@@ -1,112 +1,215 @@
 # 2026 Evidence Baseline
 
-- Retrieval date: 2026-08-17
-- Rule: primary/official sources bound implementation and claim language; they do not certify this repository
+- Retrieval date: 2026-08-24
+- Rule: external evidence can bound a repository claim; it does not certify a local implementation by itself
 
-## Jules automation boundary
+## Repository implementation anchors
 
-This baseline belongs to the independent repository-governance and post-hoc audit layer outside the Jules scheduled automation stream.
+Current claims are interpreted through the code that actually exists:
 
-It is not a Jules task prompt, Jules memory entry, or repository-level Jules instruction file. It does not modify, override, or guarantee the behavior of existing Jules R1/R2/R3/R4/R5 tasks. Jules-generated artifacts may be audited against this baseline after generation by a human or independent maintainer, but compliance must not be assumed unless the relevant Jules instruction surface explicitly incorporates the same rule.
+- `CODE/continuum_db.py` — versioned SQLite graph storage, per-connection foreign keys, external-content FTS5, savepoints, lexical search, snapshot digest
+- `CODE/entropy_analyzer.py` — PageRank and Shannon entropy over normalized graph-rank values
+- `CODE/drift_detector.py` — structural delta, top-FTS-result change, PageRank-score delta
+- `CODE/reflective_validator.py` — explicit local validation rules and AST-based standard-library import-root checking
+- `CODE/cortex_observer.py` — savepoint-scoped tentative update, validation, entropy boundary, bounded reflector loop, commit/rejection rollback
+- `CODE/tasks/cortex_selfcheck.py` — named checks for one opened database
+- `CODE/tasks/semantic_drift_audit.py` — selected-version structural and lexical-result comparison for caller-selected queries
+- `CODE/tasks/convergence_drill.py` — repeated rebuild of one fixed local SQLite fixture
+- `CODE/tasks/insight_morpher.py` — caller-provided JSON signal ingestion through `CortexObserver`
 
-This maintenance intentionally does not create or modify `AGENTS.md`, Jules task prompts, or Jules repository memory. No claim is made that Jules reads this file as automation policy.
+External papers, protocols, standards, or SDKs remain `REFERENCE_ONLY` unless a corresponding implementation surface exists.
 
-## Runtime and storage
+## Storage evidence
 
-- [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) identifies the current 3.14 documentation line used by this baseline. CI also retains 3.12 as the older supported compatibility line; support status must be rechecked when this matrix changes.
-- [SQLite foreign-key documentation](https://www.sqlite.org/foreignkeys.html) states that applications must enable foreign-key enforcement per connection. `GraphDB` enables and verifies it.
-- [SQLite FTS5 external-content documentation](https://www.sqlite.org/fts5.html#external_content_tables) explains that the application must keep the content table and FTS index consistent, commonly with triggers. This supports explicit insert/update/delete triggers and avoiding replace-style hidden deletes.
-- [SQLite in-memory database documentation](https://www.sqlite.org/inmemorydb.html) states that a bare `:memory:` database is private to the connection that opened it, every bare `:memory:` connection creates an independent database, and that database ceases to exist when the connection closes.
+SQLite documentation establishes several facts relevant to the local implementation:
 
-## Automation and supply chain
+- foreign-key enforcement is connection-scoped and must be enabled by the application
+- an external-content FTS5 index must be kept synchronized with its content table
+- a bare `:memory:` database belongs to the connection that opened it and disappears when that connection closes
 
-- [GitHub secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) says a full-length commit SHA is the immutable action reference and recommends least `GITHUB_TOKEN` permissions. Workflows pin official actions and separate read-only build from Pages deployment authority.
-- [SLSA v1.2](https://slsa.dev/spec/v1.2/) informs provenance vocabulary, but this repository does not claim an SLSA build level.
+`GraphDB` enables/verifies foreign keys and uses explicit FTS5 synchronization triggers.
 
-## AI/agent claim boundaries
+Therefore:
 
-- [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence), updated 2026-04-08, is a voluntary generative-AI risk profile. It motivates lifecycle risk records; it does not validate a local “cognitive” architecture.
-- [OWASP Top 10 for Agentic Applications 2026](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/) covers goal hijacking, tool misuse, privilege, supply chain, unexpected execution, and memory/context poisoning. This library exposes no agent tools; callers still own these controls.
-- [OpenAI’s 2026 third-party evaluation playbook](https://openai.com/index/trustworthy-third-party-evaluations-foundations/) explains that harness, tools, retries, scoring, budgets, and validity checks affect measured capability. Therefore every result is scoped to its evaluation system.
-- [Anthropic, Trustworthy agents in practice (2026-04-09)](https://www.anthropic.com/research/trustworthy-agents) states that layered safeguards are not a guarantee and emphasizes tool/data/permission/environment choices. This supports least authority and accountable approvals.
-- [Anthropic’s 2026 constitution announcement](https://www.anthropic.com/news/claude-new-constitution) explicitly notes model outputs may not always adhere to intended ideals. Prose policy is not an executable guarantee.
-- [Google DeepMind AlphaEvolve](https://deepmind.google/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/) combines LLM proposals with automated evaluators in domains with executable metrics. It is evidence for evaluator-backed search, not deterministic cognition or universal convergence.
+- one connection's successful write/read is evidence about that connection/store
+- another default `:memory:` task is a different store unless shared identity is established
+- `Nodes=0 / Edges=0` in R2 is not proof that a separate R1 ingestion failed
+- repeated snapshot digest alone is not durable-memory evidence
 
-## Ingestion, truth, and source authority
+Use `PERSISTENCE_LINK_NOT_VERIFIED` when the store identity linking two observations is absent.
 
-Reflective Continuum separates three independent axes:
+## Selfcheck evidence
 
-1. `INGESTION_OUTCOME`: whether a signal passed the repository ingestion/reflection path.
-2. `SOURCE_CREDIBILITY`: whether the source is primary research, an institutional publication, a vendor/blog source, secondary material, or unverified.
-3. `EPISTEMIC_SUPPORT`: what exact proposition the source supports under its assumptions.
+`cortex_selfcheck.py` observes:
 
-`ACCEPTED` is an ingestion result. It does not mean `TRUE`, `AUTHORITATIVE`, `IMPLEMENTED`, or `REPRODUCED`.
+- foreign-key setting
+- FTS5 accessibility
+- SQLite `integrity_check`
+- rule-engine fixture acceptance
+- node/edge counts
+- initialization success
 
-`REJECTED_FROM_INGESTION` is also an ingestion result. It does not mean the source proposition is false. A rejected signal remains useful audit evidence when its source and rejection reason are preserved.
+With its default `:memory:` input, the result concerns a fresh connection-local store.
 
-## Database-state semantics
+A healthy selfcheck does not establish cross-run persistence, earlier Daily ingestion success, source truth, semantic correctness, or absence of historical failures.
 
-Database observations are scoped to the database path and connection actually inspected.
+## Repeatability evidence
 
-For a bare SQLite `:memory:` database:
+`convergence_drill.py` is explicitly a repeatability drill, not a convergence proof.
 
-- each independent connection receives a distinct database
-- another task/process/connection must not be assumed to observe the same state
-- closing the owning connection destroys that in-memory database
+Each iteration:
 
-Therefore an R1 statement such as `written to graph` and a later R2 observation such as `Nodes=0 / Edges=0` do not, by themselves, prove either successful durable persistence or failed ingestion unless the same persistent database identity/path is verified.
+1. opens a fresh default `GraphDB()`
+2. inserts the same fixed two-node fixture
+3. computes a snapshot digest
+4. closes the store
 
-Use `PERSISTENCE_LINK_NOT_VERIFIED` when the R1→R2 storage relationship is unknown.
+One distinct digest across repeated iterations means the same fixture serialized to the same snapshot identity under that implementation.
 
-## Health and empty-state semantics
+Current interpretation:
 
-Module-local checks and system-level state are different.
+`RUN_LOCAL_REPEATABILITY_ONLY`.
 
-- successful import/init may be reported as module-local success
-- rule-engine fixture success may be reported as rule-engine-local success
-- integrity/foreign-key/FTS checks establish only their named contract
-- `Nodes=0 / Edges=0` does not prove persistence health, successful Daily ingestion, or semantic correctness
+It does not establish persistent memory or convergence of an adaptive system.
 
-When the database is empty and the cause is not established, use `INDETERMINATE_EMPTY_STATE`. Do not collapse empty state into global `HEALTHY` or global `FAILED` without additional evidence.
+## Signal-ingestion evidence
 
-## Drift and transition semantics
+`insight_morpher.py` validates caller-provided JSON signal shape and submits each signal to `CortexObserver`.
 
-A drift label belongs to the data and transition set actually inspected.
+Its result reports local acceptance/rejection.
 
-- `STABLE` must not imply that uncomputed operational transitions were stable.
-- If no drift is detected only inside the available weekly audit surface, prefer `NO_DRIFT_DETECTED_WITHIN_AUDIT_SCOPE`.
-- Synthetic/test transitions and operational/runtime transitions are separate evidence classes.
-- Synthetic transitions must never be counted as observed production transitions.
-- If event origin cannot be separated, operational transition count remains `NOT_COMPUTED`.
+Keep separate:
 
-## Daily-to-Weekly inheritance
+- `INGESTION_OUTCOME`
+- `SOURCE_CREDIBILITY`
+- `SOURCE_CLAIM_SUPPORT`
+- `PERSISTENCE_LINK`
 
-Weekly reports preserve Daily uncertainty and failure history when this independent audit framework is applied.
+`ACCEPTED` does not mean `TRUE` or `AUTHORITATIVE`.
 
-- a later 27/27 test snapshot does not erase an earlier Daily error
-- `Missing dates: NONE` does not mean every field was computed
-- rejected signals remain visible in the weekly state
-- Weekly summaries may aggregate or downgrade Daily evidence but may not strengthen an uncertain Daily observation without a new, explicit evidence record
+`REJECTED_FROM_INGESTION` does not mean the external proposition is false.
 
-These are post-hoc governance rules for maintainers and independent reviewers, not claims about what Jules automatically enforces during task execution.
+The default CLI creates a new in-memory store, so its accepted signals do not establish durable persistence after task completion.
 
-## Source reuse and novelty
+## Search and drift evidence
 
-Repeated primary papers or signals are allowed when deliberate. Label the reason when research novelty matters:
+Reflective search is FTS5 lexical search, not embedding search.
 
-- `REVALIDATED_SOURCE`
-- `REPEATED_CONTROL_SIGNAL`
-- `NEW_CLAIM_FROM_EXISTING_SOURCE`
-- `DUPLICATE_NO_NEW_EVIDENCE`
+`compute_semantic_delta()` asks whether the **top FTS5 lexical result** for the same query changes between two versions.
 
-Repeated ingestion must not be presented as independent corroboration merely because it occurred on another date.
+Current interpretation label:
 
-## Correction policy
+`LEXICAL_TOP_RESULT_CHANGED`.
 
-Historical R1–R4 artifacts are execution evidence. When a claim is materially over-strong but the original record remains useful, prefer an explicit calibration/erratum that states precedence, corrected interpretation, and unresolved uncertainty.
+It is not a general semantic-equivalence measurement.
 
-Do not repair an audit finding merely to make the audit green. Orphans, ghost chains, missing mappings, and uncomputed state stay unresolved until a separate intentional architecture task addresses them.
+`semantic_drift_audit.py` itself records:
 
-## Review trigger
+- `FTS5 lexical ranking`
+- `caller-selected queries`
 
-Recheck this file when the Python matrix, SQLite storage model, schema, action major versions, AI risk model, R1/R2 persistence architecture, drift semantics, or repository claim scope changes. A stale link is a maintenance issue; a source update does not silently change code policy.
+Structural delta, lexical top-result delta, and PageRank-score delta are separate evidence surfaces.
+
+## Entropy and phase evidence
+
+`calculate_topological_entropy()` computes Shannon entropy in nats over normalized finite non-negative scores, typically a PageRank distribution.
+
+`check_phase_boundary()` is only an entropy-threshold comparison.
+
+`LIQUID` and `GASEOUS` are local observer labels.
+
+None of these facts independently establishes cognition, semantic drift, safety, alignment, or global convergence.
+
+## Transaction and rollback evidence
+
+`CortexObserver` performs tentative graph mutation inside a `GraphDB` savepoint.
+
+Validation failure or reflection-depth exhaustion follows the local rejection path and rolls the savepoint back.
+
+This supports rollback of the tentative SQLite changes in that savepoint only.
+
+It does not establish rollback of external services, messages, files, or other side effects outside the store.
+
+## Source authority and claim support
+
+Use separate axes:
+
+1. `SOURCE_CREDIBILITY`
+2. `SOURCE_IDENTITY`
+3. `SOURCE_CLAIM_SUPPORT`
+4. local `INGESTION_OUTCOME`
+5. broader `EPISTEMIC_SUPPORT`
+
+If a source is reachable but does not support the proposition attributed to it, use:
+
+`SOURCE_CLAIM_MISMATCH`.
+
+### 2026-08-23 reference case
+
+The R1 signal citing Wikipedia `AI_alignment` attributes the stronger proposition that maintaining deterministic boundaries is essential for safety.
+
+The cited page does not support that exact proposition as written.
+
+Current state:
+
+`SOURCE_CLAIM_MISMATCH`.
+
+Local ingestion acceptance cannot repair the citation mismatch.
+
+## Historical Daily/Weekly evidence
+
+A Weekly result does not erase Daily results.
+
+Preserve:
+
+- 2026-08-06 original R2 runtime: `HISTORICAL_RUNTIME_UNKNOWN`
+- 2026-08-07 through 2026-08-10: each R2 `26 passed / 1 error`
+- 2026-08-17 through 2026-08-23: each R2 `26 passed / 1 failed`
+
+`Missing dates: NONE` does not mean all evidence dimensions were computed.
+
+A Weekly `STABLE` label does not cover operational transitions when those transitions are `NOT_COMPUTED`.
+
+Use:
+
+`NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE`
+
+for the bounded W34 interpretation.
+
+## Continuity and availability
+
+Keep separate when materially different:
+
+- logical date/period
+- original execution state
+- generation/delivery state
+- aggregation-snapshot visibility
+- current repository presence
+- database/store/run identity
+- evidence completeness
+
+A later reconciliation can repair current interpretation or path coverage. It cannot manufacture an earlier runtime result.
+
+A repeated digest can show represented-content repeatability; durable persistence still requires object/store identity through the claimed interval.
+
+## External architecture references
+
+Current external references such as MCP 2026-07-28, A2A v1.0, Google ADK state/memory documentation, OpenAI Agents SDK tracing, and Anthropic agent-evaluation guidance are used only to sharpen vocabulary around state scope, trajectory/outcome, and lifecycle identity.
+
+They do not establish that Reflective Continuum implements those runtimes.
+
+## Current evidence summary
+
+The strongest repository-wide interpretation through the current August stage is:
+
+- storage behavior: implemented and connection/store scoped
+- graph entropy: implemented mathematical statistic
+- drift: implemented as structural / lexical-top-result / rank surfaces
+- observer reflection/rollback: implemented as a bounded local transaction loop
+- selfcheck: task-local named checks
+- convergence drill: fixed-fixture repeatability only
+- signal ingestion: local acceptance/rejection only
+- durable R1↔R2 persistence: not verified
+- 2026-08-23 cited proposition: source mismatch
+- historical Daily failures/errors: preserved
+- formal August R5 closure: open
