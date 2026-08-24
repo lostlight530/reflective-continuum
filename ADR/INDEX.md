@@ -1,61 +1,90 @@
-# Architecture Decision Index
+# Reflective Continuum Architecture Decision Index
 
-Status: active topology map
+Status: architecture and implementation-boundary map
 
-## Jules automation boundary
-
-This topology map serves human and independent repository maintenance outside the Jules scheduled automation stream. It documents durable decisions and reference relationships; it is not a Jules task prompt, Jules memory entry, or `AGENTS.md` instruction and does not change existing Jules R1/R2/R3/R4/R5 behavior.
-
-Jules-produced research or audits may later be interpreted against this topology, but that post-hoc review does not mean Jules consumed this index while generating them.
-
-The ADRs are parallel decisions unless a decision explicitly names a predecessor. Numerical order is an identifier/order convention only.
+ADR numbering is an identifier sequence. A decision supersedes another only when explicitly stated.
 
 ## Decision map
 
-| ADR | Decision | Primary specification surface |
+| ADR | Current architectural meaning | Concrete repository surface |
 |---|---|---|
-| [ADR-001](./ADR-001.md) | Standard-library runtime and explicit contracts | Runtime, security/ownership, verification boundary |
-| [ADR-002](./ADR-002.md) | Bounded reflection is a real loop | Validation and observation |
-| [ADR-003](./ADR-003.md) | Separate structural, lexical, and rank drift | Search and delta contracts |
-| [ADR-004](./ADR-004.md) | Transactional versioned graph schema | Runtime/persistence and transaction contract |
-| [ADR-005](./ADR-005.md) | Entropy is a graph statistic, not cognition | Analysis contract |
-| [ADR-006](./ADR-006.md) | Provenance before synthesis | Task/input provenance and claim boundary |
-| [ADR-007](./ADR-007.md) | Prose is not runtime policy | Validation/configuration contract |
-| [ADR-008](./ADR-008.md) | Tasks do not own research records | Task contract and ownership boundary |
-| [ADR-009](./ADR-009.md) | Evaluation and claim scope | Acceptance/evaluation and evidence scope |
-| [ADR-010](./ADR-010.md) | State continuity requires identity evidence | Persistence/transition/history continuity boundary |
+| [ADR-001](./ADR-001.md) | Standard-library runtime with explicit local contracts | `CODE/**` core modules |
+| [ADR-002](./ADR-002.md) | Bounded reflection is a transactional observer loop | `cortex_observer.py`, `continuum_db.py`, `reflective_validator.py` |
+| [ADR-003](./ADR-003.md) | Structural, lexical top-result, and rank deltas are distinct | `drift_detector.py` |
+| [ADR-004](./ADR-004.md) | Versioned SQLite graph storage has connection/store scope | `continuum_db.py` |
+| [ADR-005](./ADR-005.md) | PageRank-derived Shannon entropy is a graph statistic | `entropy_analyzer.py` |
+| [ADR-006](./ADR-006.md) | Ingestion outcome and source support are independent | `tasks/insight_morpher.py`, `cortex_observer.py`, research evidence |
+| [ADR-007](./ADR-007.md) | Executable policy lives in `RuleConfig`/`RuleEngine`, not prose | `reflective_validator.py` |
+| [ADR-008](./ADR-008.md) | Task wrappers operate only on explicit inputs/outputs | `CODE/tasks/**` |
+| [ADR-009](./ADR-009.md) | Evaluation claims stay inside the exact evidence surface | tasks, storage, analysis, research artifacts |
+| [ADR-010](./ADR-010.md) | State continuity requires explicit object identity | storage/task/research history |
 
-## Relationship semantics
+## Implementation map
 
-- `Implements/defines`: the ADR narrows a part of `SPECIFICATION.md`
-- `Related`: two decisions interact, but neither supersedes the other
-- `Supersedes`: reserved for an explicitly named predecessor ADR or document
+### Storage
 
-### Related decisions
+`CODE/continuum_db.py`
 
-- ADR-001 ↔ ADR-007: standard-library/runtime boundary and separation of prose from executable policy
-- ADR-002 ↔ ADR-005: bounded reflection uses the configured entropy/boundary statistic but does not turn that statistic into cognition
-- ADR-003 ↔ ADR-009: drift measurements are evidence with scoped claim semantics
-- ADR-004 ↔ ADR-008: storage transactions and task ownership remain separate concerns
-- ADR-006 ↔ ADR-009: provenance constrains what evaluation/synthesis may claim
-- ADR-003/004/006/009 ↔ ADR-010: continuity claims require identity, provenance, scoped measurement, and evidence history
+- versioned nodes/edges
+- per-connection foreign-key enforcement
+- FTS5 external-content index and triggers
+- savepoints
+- lexical search
+- snapshot digest
 
-These are topical relationships, not automatic dependency or supersession edges.
+### Graph analysis
 
-## Historical correction semantics
+`CODE/entropy_analyzer.py`
 
-Historical R1-R4 artifacts remain point-in-time evidence. Later reconciliation may supersede their current interpretation without pretending that later knowledge or files were available to the original run.
+- PageRank
+- Shannon entropy in nats
+- local entropy-threshold comparison
 
-ADR-010 makes that rule explicit for persistence, transitions, and artifact delivery. The 2026-08-06 R2 reconciliation is the reference case: the path exists now, but the original runtime result remains unknown.
+`CODE/drift_detector.py`
 
-## Reference topology
+- structural delta
+- top FTS5 lexical-result change
+- PageRank-score delta
 
-Background and methodological references are indexed separately in [`../REFERENCES/INDEX.md`](../REFERENCES/INDEX.md). Their presence provides context or source support; it does not make them executable policy or normative ADR dependencies.
+### Validation and transactional observation
 
-Related maintenance surfaces:
+`CODE/reflective_validator.py`
 
-- [`../METHODOLOGY/INDEX.md`](../METHODOLOGY/INDEX.md)
-- [`../EVIDENCE_BASELINE.md`](../EVIDENCE_BASELINE.md)
-- [`../RESEARCH/monthly/2026-08-through-23-stage-audit.md`](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
+- explicit `RuleConfig`
+- node/content validation
+- AST-based stdlib import-root check
 
-This topology maintenance does not modify Jules automation instructions, runtime behavior, CI/Actions, or frontend state.
+`CODE/cortex_observer.py`
+
+- one-savepoint tentative graph update
+- snapshot validation
+- entropy boundary
+- bounded reflector hook
+- commit/reject/rollback semantics
+
+### Task wrappers
+
+`CODE/tasks/**`
+
+- connection-local selfcheck
+- selected-version lexical/structural drift audit
+- fixed-fixture repeatability drill
+- caller-provided signal ingestion
+
+## Cross-layer rules
+
+1. Code defines implemented behavior; project vocabulary does not add capability.
+2. FTS5 lexical-result change is not general semantic change.
+3. Graph-derived entropy is not cognition or safety.
+4. Local ingestion acceptance is not source truth.
+5. A default `:memory:` store is not durable cross-task memory.
+6. A repeated snapshot digest is not persistence through time without store identity.
+7. Weekly/Monthly summaries do not erase Daily failures/errors or historical runtime gaps.
+8. External protocols/papers remain reference material unless a local implementation exists.
+
+## Related navigation
+
+- [Engineering specification](../SPECIFICATION.md)
+- [Methodology index](../METHODOLOGY/INDEX.md)
+- [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [August stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
