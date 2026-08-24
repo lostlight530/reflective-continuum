@@ -6,301 +6,254 @@ Formal R5 monthly status: `OPEN`
 
 Evidence cutoff: 2026-08-23 Asia/Shanghai
 
-This is an independent post-hoc evidence ledger. Historical R1–R4 artifacts remain point-in-time records. Where this file narrows their interpretation, the historical text is preserved rather than silently rewritten.
+Historical R1–R4 artifacts remain point-in-time records. This ledger records current bounded interpretation without rewriting those original artifacts.
 
-## 1. Coverage ledger
+## 1. Coverage and task identity
 
-### R1/R2 Daily
+Current repository inventory contains R1 and R2 paths for every logical date from 2026-08-01 through 2026-08-23.
 
-Current repository path inventory contains an R1 dehydrated report and an R2 cortex-selfcheck path for each date from 2026-08-01 through 2026-08-23.
+- R1 paths: `23/23`
+- R2 paths: `23/23`
+- current path inventory: `COMPLETE`
 
-- logical dates: 23
-- current R1 paths: 23/23
-- current R2 paths: 23/23
-- path inventory: `COMPLETE`
+Path inventory is not the same as original execution-history completeness.
 
-This does **not** mean original execution evidence is complete for all 46 paths.
+The 2026-08-06 R2 path is a later reconciliation record. The original R2 artifact was not retained, so its historical runtime result remains `HISTORICAL_RUNTIME_UNKNOWN`.
 
-The 2026-08-06 R2 path is a later historical reconciliation artifact. It records that the original 2026-08-06 R2 artifact was not retained, the historical runtime result is unknown, and metrics cannot be reconstructed. Current path completeness therefore coexists with a real historical-evidence gap.
+Repository-native periodic identities:
 
-### Native task identity
-
-Repository-native task naming is retained:
-
-- `dehydrated-report` = R1 Daily research / ingestion record
+- `dehydrated-report` = R1 Daily research/ingestion record
 - `cortex-selfcheck` = R2 Daily selfcheck
-- R3 = Weekly alignment report
-- R4 = Weekly reference topology audit
-- R5 = Monthly phase/evolution layer
+- R3 = Weekly alignment/evidence report
+- R4 = Weekly reference-topology audit
+- R5 = Monthly layer
 
-This audit does not infer task ownership from directory names alone.
+W31 through W34 R3/R4 material is currently present. Formal August R5 remains open at this cutoff.
 
-### R3/R4 Weekly
+## 2. Daily evidence reconciliation
 
-Current repository state contains W31, W32, W33, and W34 alignment/reference layers, plus the later W33 evidence calibration.
+### 2026-08-01 through 2026-08-04
 
-Formal August R5 closure does not yet exist because the natural month was open at the evidence cutoff.
+R1 records non-empty graph/ingestion outcomes while R2 records `Nodes=0 / Edges=0`.
 
-## 2. Daily evidence ledger
+No evidence establishes that both tasks observed the same database identity.
 
-### 2026-08-01 through 2026-08-04 — R1/R2 state-scope divergence
+Current interpretation:
 
-R2 repeatedly observes an empty database (`Nodes=0 / Edges=0`) and records `INDETERMINATE_EMPTY_STATE`, while same-day R1 reports non-empty graph/ingestion/convergence results.
+- R1 result: local/run-scoped evidence
+- R2 empty state: R2-store-scoped evidence
+- R1↔R2 continuity: `PERSISTENCE_LINK_NOT_VERIFIED`
 
-These records are not mutually exclusive because no evidence establishes that the R1 graph and R2 database are the same storage instance.
+Historical language such as `Zero-Entropy state locked` or broad convergence/stability wording is therefore not a durable-memory or global-system claim.
 
-Calibrated status:
+### 2026-08-05 — fixed-fixture repeatability
 
-- R1 execution result: retained as run-local evidence
-- R2 empty-state observation: retained as R2-local evidence
-- R1↔R2 persistence link: `PERSISTENCE_LINK_NOT_VERIFIED`
+The retained drill evidence supports one repeated snapshot for a fixed local SQLite fixture.
 
-Early R1 phrases such as `Zero-Entropy state locked`, `Convergence achieved`, or equivalent system-wide language are superseded in current interpretation by the exact run-local fixture/signal evidence. They do not prove durable memory, global stability, alignment, or safety.
+The current implementation of `convergence_drill.py` creates a fresh default `GraphDB()` on each iteration and rebuilds the same fixture.
 
-### 2026-08-05 — repeatability is not persistence
+Current interpretation:
 
-R1 records 100 iterations over a fixed local SQLite fixture with one distinct snapshot and preserves a rejected signal as `NOT_EXECUTED` for graph write.
+`RUN_LOCAL_REPEATABILITY_ONLY`.
 
-This supports `RUN_LOCAL_REPEATABILITY_ONLY`. It does not prove that the subsequent R2 selfcheck observes the same database or that state persisted across tasks.
+This is not persistence or a convergence theorem.
 
-### 2026-08-06 — original R2 historical gap
+### 2026-08-06 — original R2 gap
 
-The current R2 path is a later reconciliation record created on 2026-08-10.
-
-- current path: `PRESENT`
+- current R2 path: `PRESENT`
 - original R2 artifact: `NOT_RETAINED`
-- historical R2 runtime result: `HISTORICAL_RUNTIME_UNKNOWN`
-- reconstructed metrics: `NOT_AUTHORIZED`
+- original runtime result: `HISTORICAL_RUNTIME_UNKNOWN`
+- original metrics reconstruction: unsupported
 
-The R1 artifact for 2026-08-06 is a separate original record and does not reconstruct R2.
+The same-day R1 record does not reconstruct the missing R2 runtime.
 
-### 2026-08-07 through 2026-08-10 — Daily R2 errors preserved
+### 2026-08-07 through 2026-08-10
 
-Each R2 selfcheck records:
+Each R2 record preserves:
 
 - total: 27
 - passed: 26
 - failed: 0
 - errors: 1
 
-The database remains empty in the recorded selfchecks.
+These four Daily error states remain historical evidence. Later passing observations do not erase them.
 
-These errors are part of August truth. Later R2 or R3 passing snapshots do not erase them.
+### 2026-08-10 through 2026-08-11
 
-R1 can simultaneously record a successful or successful-with-rejected-signal ingestion run because R1 and R2 are distinct task/evidence surfaces.
+Repeated snapshot language was historically promoted toward “stable memory”. The available evidence establishes only the represented fixture/snapshot repeatability.
 
-### 2026-08-10 through 2026-08-11 — “stable memory” wording narrowed
+Current interpretation:
 
-R1 repeatable snapshot language on these dates was interpreted as stable memory/storage. The evidence establishes only repeatability of the declared run/fixture.
+`RUN_LOCAL_REPEATABILITY_OBSERVED`.
 
-Calibrated wording:
+### 2026-08-12 through 2026-08-13
 
-`RUN_LOCAL_REPEATABILITY_OBSERVED`
+R2 explicitly identifies `Database Path: :memory:`.
 
-not durable memory persistence.
+A bare SQLite `:memory:` database is connection-local. Its empty state therefore does not prove a separate R1 ingestion failed, and an R1 write does not imply this R2 connection should observe the same state.
 
-### 2026-08-11 — good empty-state boundary
+Current continuity state:
 
-R2 explicitly avoids inferring overall health or actual ingest status from the empty database. This is the preferred interpretation for similar August R2 records.
+`PERSISTENCE_LINK_NOT_VERIFIED`.
 
-### 2026-08-12 through 2026-08-13 — explicit in-memory DB scope
+### 2026-08-14 — evidence-boundary maturity
 
-R2 explicitly records `Database Path: :memory:`.
+The R1 artifact explicitly separates:
 
-A bare SQLite `:memory:` database is connection-local. Therefore:
+- run-local repeatability
+- local ingestion acceptance
+- source truth
+- R1→R2 persistence
 
-- its zero-node state is not evidence that a separate R1 ingestion failed
-- an R1 graph write is not evidence that this R2 instance should observe the same state
-- cross-task, cross-process, or cross-day continuity remains `PERSISTENCE_LINK_NOT_VERIFIED`
-
-### 2026-08-14 — evidence-boundary maturity pivot
-
-R1 explicitly records the correct modern boundary:
-
-- repeatability is run-local
-- `ACCEPTED` is not a truth label
-- `REJECTED_FROM_INGESTION` is not falsification
-- R1→R2 persistence is `NOT_VERIFIED_FROM_THIS_REPORT`
-
-This is the preferred interpretive model for earlier August records; it does not retroactively rewrite them.
+This is the preferred current interpretation for earlier August material without retroactively rewriting it.
 
 ### 2026-08-15 through 2026-08-16
 
-R2 records passing selfcheck snapshots with an empty database. R1 records separate ingestion/convergence outcomes.
+R2 records passing selfcheck snapshots over empty stores while R1 records separate ingestion outcomes.
 
-No persistence identity link is established between them.
+No shared-store identity links those observations.
 
-### 2026-08-17 through 2026-08-23 — persistent Daily R2 failure
+### 2026-08-17 through 2026-08-23
 
-Every R2 selfcheck in this seven-day interval records:
+Every R2 record in this interval preserves:
 
 - total: 27
 - passed: 26
 - failed: 1
 - errors: 0
 
-This is a repeated historical failure state and must survive Weekly/Monthly aggregation.
+This seven-day failed-test history survives Weekly/Monthly interpretation.
 
-At least 2026-08-19 and 2026-08-20 explicitly identify the R2 database as `:memory:`; other August artifacts also expose the same in-memory scope. The failed selfcheck and empty database remain task-local observations, not proof of R1 ingestion failure.
+At least 2026-08-19 and 2026-08-20 explicitly identify `:memory:` stores; these remain connection-local task observations.
 
-### 2026-08-19 — repeated hash is not continuity
+### 2026-08-19 — repeated digest
 
-R1 reproduces a graph/snapshot hash also observed in another August run. A repeated digest can support deterministic rebuilding of the same fixture/revision. It does not by itself identify a persistent graph surviving between days.
+A digest repeated across runs can show that the same represented fixture/content was rebuilt under the same digest contract.
 
-Calibrated status: `RUN_LOCAL_REPEATABILITY_ONLY` unless durable object identity is separately evidenced.
+Without durable object/store identity it remains:
+
+`RUN_LOCAL_REPEATABILITY_ONLY`.
 
 ### 2026-08-20 — deterministic-boundary overclaim
 
-R1 concludes that the whole ingestion process confirmed deterministic boundaries / complied with boundary conditions after a bounded set of signals and one run.
+The recorded signals and local control-flow results support that run only.
 
-Calibrated interpretation:
-
-- the recorded signals and local control-flow outcomes are evidence for that run
-- entropy values are signal/run-local graph statistics
-- no universal deterministic-boundary, overall-system, safety, or long-term convergence conclusion follows
+Graph-derived entropy and local acceptance do not establish a universal deterministic boundary, safety property, or long-term convergence result.
 
 ### 2026-08-23 — source-to-claim mismatch
 
-One R1 signal cites Wikipedia `AI_alignment` but attributes the proposition that maintaining deterministic boundaries is essential for safety.
+One R1 signal cites Wikipedia `AI_alignment` for the proposition that maintaining deterministic boundaries is essential for safety.
 
-Independent source review supports the page's general AI-alignment / safety-constraint concepts but not that deterministic-boundary proposition as written.
+The cited source supports general AI-alignment/safety-constraint discussion but not that exact deterministic-boundary proposition.
 
-Current support state:
+Current state:
 
-`SOURCE_CLAIM_MISMATCH`
+`SOURCE_CLAIM_MISMATCH`.
 
-This does not mean the proposition is false. It means the cited source cannot be reused as support for that exact claim without independent evidence.
-
-The same R1 report's language that the knowledge graph is steadily accumulating also remains run-local; same-day R2 observes an empty selfcheck database with one failed test, and no shared persistent graph identity is established.
+Local ingestion acceptance does not upgrade the unsupported source proposition.
 
 ## 3. Weekly reconciliation
 
 ### W31
 
-The R3 weekly task records its own 9/9 passing test snapshot. That is an R3 execution result, not a reconstruction of all R2 Daily health or persistence states.
-
-W31 also records synthetic transitions while operational transitions are `NOT_COMPUTED`; synthetic counts are not production-transition evidence.
+R3's own passing snapshot describes the R3 execution surface only. Synthetic transitions remain distinct from operational transitions, which were not computed.
 
 ### W32
 
-W32 correctly preserves:
-
-- five R1 report-level rollback/rejection dates
-- the original 2026-08-06 R2 artifact gap
-- the fact that a later reconciliation cannot manufacture the missing runtime result
-
-Its R3 27/27 test snapshot remains R3-local. It does not erase the 2026-08-07 through 2026-08-09 R2 `1 error` results.
+W32 preserves the 2026-08-06 R2 historical gap and several R1 rejection/rollback records. Its own R3 result does not erase Daily R2 errors.
 
 ### W33
 
-The later W33 evidence calibration correctly establishes:
+Current calibration keeps these distinctions:
 
-- ingestion outcome ≠ source truth
-- R1↔R2 persistence link not verified
-- empty DB ≠ global health
-- R3 27/27 ≠ all R2 Daily runs passed
-- the 2026-08-10 R2 error remains historical truth
-- repeated primary sources are not automatically independent novelty
-
-This calibrated interpretation remains authoritative over a broader reading of the original W33 labels.
+- ingestion outcome != source truth
+- R1↔R2 persistence not verified
+- empty DB != global health
+- Weekly pass != all Daily R2 runs passed
+- repeated source != independent novelty
 
 ### W34
 
-W34 R3 itself records `26 passed / 1 failed`, which is consistent with the repeated R2 failure pattern in the week.
+W34 R3 records `26 passed / 1 failed`.
 
-However:
+`Drift Status: STABLE` is bounded to the available R3 audit surface because operational transitions are `NOT_COMPUTED`.
 
-- `Drift Status: STABLE` remains scoped to the R3 audit surface because operational transitions are `NOT_COMPUTED`
-- use `NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE` for current interpretation
-- Daily ingestion statuses and rejected signals must remain independent from the R3 test result
-- the 2026-08-23 source-to-claim mismatch is not repaired by R1 ingestion acceptance
+Current wording:
+
+`NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE`.
+
+This does not override the Daily failure history or the 2026-08-23 source mismatch.
 
 ## 4. Reference-topology history
 
-W31–W33 R4 reports identified missing SPEC↔ADR mapping, ghost-chain wording, and PIONEERS reference orphans.
+Earlier R4 reports identified SPEC↔ADR mapping gaps and PIONEERS reference orphans. Those were valid point-in-time topology findings.
 
-Those were valid audit-snapshot observations at the time.
+Current branch documentation connects the reference files as non-normative context and maps the active ADRs to the specification.
 
-Current branch state now contains:
+Current state:
 
-- explicit SPEC↔ADR mapping
-- ADRs declaring no unnamed predecessor rather than a ghost `prior file`
-- `REFERENCES/INDEX.md` connecting all four PIONEERS files as non-normative context
+`DOCUMENTATION_TOPOLOGY_REPAIRED_WITHOUT_NORMATIVE_PROMOTION`.
 
-Current topology state:
+The historical R4 findings remain historically valid.
 
-`DOCUMENTATION_TOPOLOGY_REPAIRED_WITHOUT_NORMATIVE_PROMOTION`
+## 5. Current architecture interpretation
 
-The historical R4 reports remain unchanged; later repair does not make their point-in-time findings false.
+### Storage
 
-## 5. Architecture findings
+`GraphDB` is versioned SQLite storage with per-connection foreign keys, FTS5 triggers, savepoints, lexical search, and snapshot digest.
 
-### A. Continuity is an identity claim
+A default `:memory:` store is connection-local.
 
-A value observed at two times is not sufficient to prove continuity through the interval. Persistence, transition, and artifact lifecycle claims require an identity link. ADR-010 and METH-005 formalize this rule.
+### Drift
 
-### B. Empty state is not global health
+The implemented drift surfaces are:
 
-`Nodes=0 / Edges=0`, successful initialization, or a clean local check may be valid local observations. They do not independently establish durable ingestion, cross-task persistence, semantic correctness, or system-wide health.
+- structural node delta
+- top FTS5 lexical-result change
+- PageRank-score delta
 
-### C. Repeatability is not memory persistence
+The historically named `compute_semantic_delta()` is not a general semantic-equivalence measurement.
 
-A fixed-fixture digest recurring within or across runs can establish bounded repeatability. Durable memory requires evidence that both observations refer to the same persistent object/store through the claimed interval.
+### Entropy and phase
 
-### D. Drift needs a declared observation surface
+PageRank-derived Shannon entropy is a graph statistic in nats. `LIQUID` / `GASEOUS` are local observer labels around a configured threshold.
 
-When only available weekly data was inspected, use `NO_DRIFT_DETECTED_WITHIN_AUDIT_SCOPE` rather than a global `STABLE` label. Synthetic and operational transitions remain separate evidence classes.
+### Observation and rollback
 
-### E. Ingestion outcome and source support are separate
+`CortexObserver` performs one savepoint-scoped tentative update, validation, graph measurement, optional bounded reflector loop, and commit/rejection rollback.
 
-`ACCEPTED` / `REJECTED_FROM_INGESTION` describe local control flow. Source authority and whether the source supports the exact persisted proposition are separate axes.
+SQLite rollback is not external-system rollback.
 
-### F. Historical reconciliation is non-retroactive
+### Tasks
 
-A later file can repair repository interpretation or delivery coverage. It cannot manufacture an earlier runtime result. The 2026-08-06 R2 reconciliation is the canonical August example.
+- selfcheck: named checks for one opened store
+- semantic drift audit: selected versions and caller-selected FTS5 queries
+- convergence drill: fixed-fixture repeatability only
+- insight morpher: caller-provided signal ingestion; acceptance is local control-flow evidence
 
-## 6. 2026 external calibration
+## 6. Evidence principles established by this stage
 
-External architecture references are used only as bounded comparisons.
+- path presence != original execution success
+- empty local store != global health
+- repeated digest != durable persistence
+- FTS5 lexical stability != semantic equivalence
+- graph entropy != cognition/safety
+- ingestion acceptance != source truth
+- current successful selfcheck != historical all-pass state
+- Weekly summary != replacement for Daily failure/error evidence
+- continuity requires object/store identity
 
-- Anthropic's 2026 agent-evaluation guidance separates task, trial, grader, transcript/trajectory, outcome, and harness; this supports keeping run trajectory and end-state evidence distinct.
-- OpenAI Agents SDK tracing models an end-to-end trace as related operation spans; this is a useful observability reference, not evidence that Reflective Continuum implements an agent tracing runtime.
-- Google ADK explicitly distinguishes Session, current-session State, and searchable cross-session Memory; this supports the repository's insistence that storage scope and identity be named before a continuity claim.
-- A2A v1.0 defines stateful Tasks and explicit Context/Agent Card semantics; this is a reference for typed lifecycle boundaries only.
-- MCP 2026-07-28 separates a stateless protocol core from application-owned state; this reinforces protocol state ≠ durable application state.
-
-Local status for all: `REFERENCE_ONLY`.
-
-## 7. Stage conclusion
-
-The strongest supported summary for 2026-08-01 through 2026-08-23 is:
+## 7. Current stage conclusion
 
 `CURRENT_PATH_COVERAGE_COMPLETE_WITH_PRESERVED_HISTORICAL_FAILURES_AND_UNVERIFIED_PERSISTENCE`
 
-with:
+This includes:
 
-- one original R2 historical artifact gap on 2026-08-06
-- four consecutive R2 error days on 2026-08-07 through 2026-08-10
-- seven consecutive R2 failed-test days on 2026-08-17 through 2026-08-23
-- R1↔R2 persistence linkage not verified
-- a material 2026-08-23 `SOURCE_CLAIM_MISMATCH`
-- formal August R5 still open
+- 2026-08-06 original R2 runtime gap
+- 2026-08-07 through 2026-08-10 four R2 error days
+- 2026-08-17 through 2026-08-23 seven R2 failed-test days
+- R1↔R2 persistence link not verified
+- 2026-08-23 `SOURCE_CLAIM_MISMATCH`
+- formal August R5 still `OPEN`
 
-This is not `all executions complete`, `global stability proven`, `durable memory proven`, or `alignment proven`.
-
-## 8. Carry-forward
-
-- finish the natural-month Daily lifecycle without backfilling future evidence
-- let scheduled R5 close the actual full month
-- retain the 2026-08-06 R2 historical gap unless genuine original evidence is recovered
-- require explicit storage/run identity before upgrading persistence or continuity claims
-- keep Daily error/failure and rejected-signal history visible in future monthly aggregation
-- require source-to-proposition checks when reusing R1 signals for architectural conclusions
-
-## 9. Boundary
-
-Documentation and independent evidence interpretation only.
-
-No Jules prompt/memory/cadence change, no runtime code change, no CI/Actions change, no frontend change, and no new production control is authorized.
-
-No tests were run for this documentation/evidence reconciliation.
+This is not a claim of global stability, durable memory, alignment, or final August completion.
