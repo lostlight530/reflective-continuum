@@ -13,14 +13,14 @@ This maintenance intentionally does not create or modify `AGENTS.md`, Jules task
 
 ## Runtime and storage
 
-- [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) identifies the current 3.14 documentation line used by this baseline. CI also retains 3.12 as the older supported compatibility line; support status must be rechecked when this matrix changes.
-- [SQLite foreign-key documentation](https://www.sqlite.org/foreignkeys.html) states that applications must enable foreign-key enforcement per connection. `GraphDB` enables and verifies it.
+- [Python 3.14 documentation](https://docs.python.org/3.14/whatsnew/) identifies the current 3.14 documentation line used by this baseline. Persisted August artifacts also record Python 3.12 environments. Compatibility is revision- and evidence-specific and must be claimed only from commands/tests actually executed for the relevant revision; no CI/test matrix is asserted by this baseline.
+- [SQLite foreign-key documentation](https://www.sqlite.org/foreignkeys.html) states that applications must enable foreign-key enforcement per connection. `GraphDB` enables and verifies it within its declared runtime contract.
 - [SQLite FTS5 external-content documentation](https://www.sqlite.org/fts5.html#external_content_tables) explains that the application must keep the content table and FTS index consistent, commonly with triggers. This supports explicit insert/update/delete triggers and avoiding replace-style hidden deletes.
 - [SQLite in-memory database documentation](https://www.sqlite.org/inmemorydb.html) states that a bare `:memory:` database is private to the connection that opened it, every bare `:memory:` connection creates an independent database, and that database ceases to exist when the connection closes.
 
-## Automation and supply chain
+## Automation and supply-chain references
 
-- [GitHub secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) says a full-length commit SHA is the immutable action reference and recommends least `GITHUB_TOKEN` permissions. Workflows pin official actions and separate read-only build from Pages deployment authority.
+- [GitHub secure use reference](https://docs.github.com/en/actions/reference/security/secure-use) recommends immutable references and least privilege for GitHub Actions where Actions are used. This maintenance does not add or modify verification workflows or merge gates.
 - [SLSA v1.2](https://slsa.dev/spec/v1.2/) informs provenance vocabulary, but this repository does not claim an SLSA build level.
 
 ## AI/agent claim boundaries
@@ -78,15 +78,24 @@ These references support ADR-010's central rule: a continuity claim requires an 
 
 ## Ingestion, truth, and source authority
 
-Reflective Continuum separates three independent axes:
+Reflective Continuum separates four independent axes:
 
 1. `INGESTION_OUTCOME`: whether a signal passed the repository ingestion/reflection path.
 2. `SOURCE_CREDIBILITY`: whether the source is primary research, an institutional publication, a vendor/blog source, secondary material, or unverified.
-3. `EPISTEMIC_SUPPORT`: what exact proposition the source supports under its assumptions.
+3. `SOURCE_CLAIM_SUPPORT`: whether the source actually supports the exact proposition persisted in the signal.
+4. `EPISTEMIC_SUPPORT`: how strongly that proposition is supported under the source's assumptions and scope.
 
 `ACCEPTED` is an ingestion result. It does not mean `TRUE`, `AUTHORITATIVE`, `IMPLEMENTED`, or `REPRODUCED`.
 
 `REJECTED_FROM_INGESTION` is also an ingestion result. It does not mean the source proposition is false. A rejected signal remains useful audit evidence when its source and rejection reason are preserved.
+
+Primary/current material should be preferred for material factual, implementation, or scientific claims. Secondary/contextual material remains usable for explicitly bounded secondary/contextual claims.
+
+If a source is reachable but does not support the proposition attributed to it, use `SOURCE_CLAIM_MISMATCH`.
+
+### August reference case: 2026-08-23
+
+The R1 signal citing Wikipedia `AI_alignment` states that maintaining deterministic boundaries is essential for safety. The cited page supports AI-alignment and robust safety-constraint concepts but does not support that deterministic-boundary proposition as written. That signal therefore remains `SOURCE_CLAIM_MISMATCH` for reuse unless independent evidence supports the exact claim.
 
 ## Database-state semantics
 
@@ -101,6 +110,8 @@ For a bare SQLite `:memory:` database:
 Therefore an R1 statement such as `written to graph` and a later R2 observation such as `Nodes=0 / Edges=0` do not, by themselves, prove either successful durable persistence or failed ingestion unless the same persistent database identity/path is verified.
 
 Use `PERSISTENCE_LINK_NOT_VERIFIED` when the R1→R2 storage relationship is unknown.
+
+A repeated graph/snapshot hash demonstrates run-local repeatability only for the declared fixture/revision unless durable storage identity is independently established. Matching hashes are not memory-continuity evidence by themselves.
 
 ## Health and empty-state semantics
 
@@ -127,10 +138,17 @@ A drift label belongs to the data and transition set actually inspected.
 
 Weekly reports preserve Daily uncertainty and failure history when this independent audit framework is applied.
 
-- a later 27/27 test snapshot does not erase an earlier Daily error
+- a weekly task's own passing snapshot does not erase an earlier Daily error/failure
 - `Missing dates: NONE` does not mean every field was computed
 - rejected signals remain visible in the weekly state
 - Weekly summaries may aggregate or downgrade Daily evidence but may not strengthen an uncertain Daily observation without a new, explicit evidence record
+
+August R2 history that must remain visible:
+
+- 2026-08-07 through 2026-08-10: each persisted `26 passed / 1 error`
+- 2026-08-17 through 2026-08-23: each persisted `26 passed / 1 failed`
+
+W32/W33/W34 R3 test snapshots describe their own weekly execution surfaces. They do not reconstruct or replace those Daily R2 states.
 
 These are post-hoc governance rules for maintainers and independent reviewers, not claims about what Jules automatically enforces during task execution.
 
@@ -161,12 +179,18 @@ Repeated primary papers or signals are allowed when deliberate. Label the reason
 
 Repeated ingestion must not be presented as independent corroboration merely because it occurred on another date.
 
+## Reference-topology snapshot semantics
+
+A Weekly R4 topology audit is a point-in-time observation. Later documentation changes can resolve an orphan or mapping without making the earlier audit false.
+
+The W33/W34 audits recorded the PIONEERS files as `UNRESOLVED_ORPHAN` in their audit snapshots. The current branch's [`REFERENCES/INDEX.md`](REFERENCES/INDEX.md), `SPECIFICATION.md`, and `ADR/INDEX.md` now connect those files as non-normative references. Current interpretation: `DOCUMENTATION_ORPHAN_RESOLVED_WITHOUT_NORMATIVE_PROMOTION`.
+
 ## Correction policy
 
 Historical R1–R4 artifacts are execution evidence. When a claim is materially over-strong but the original record remains useful, prefer an explicit calibration/erratum that states precedence, corrected interpretation, and unresolved uncertainty.
 
-Do not repair an audit finding merely to make the audit green. Orphans, ghost chains, missing mappings, and uncomputed state stay unresolved until a separate intentional architecture task addresses them.
+Do not repair an audit finding merely to make the historical audit green. Record the historical state and the later repair as separate times.
 
 ## Review trigger
 
-Recheck this file when the Python matrix, SQLite storage model, schema, action major versions, AI risk model, R1/R2 persistence architecture, drift semantics, protocol/state reference model, observability semantics, or repository claim scope changes. A stale link is a maintenance issue; a source update does not silently change code policy.
+Recheck this file when Python/SQLite support evidence, storage model, schema, external source authority, AI risk model, R1/R2 persistence architecture, drift semantics, protocol/state reference model, observability semantics, or repository claim scope changes. A stale link is a maintenance issue; a source update does not silently change code policy.
