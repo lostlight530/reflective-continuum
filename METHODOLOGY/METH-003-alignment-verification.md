@@ -29,7 +29,7 @@ An evidence bundle supporting, contesting, or leaving the claim unresolved. Keep
 - `SOURCE_CLAIM_SUPPORT`
 - `EXECUTION_RESULT`
 - `PERSISTENCE_LINK`
-- `UNTETSTED_BOUNDARY` / unresolved evidence
+- `UNTESTED_BOUNDARY` / unresolved evidence
 
 `ACCEPTED` does not mean a source claim is true. `REJECTED_FROM_INGESTION` does not mean it is false.
 
