@@ -211,3 +211,11 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Write Status: NOT_EXECUTED
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"total": 3, "accepted": 2, "results": [{"id": "sig-agent-safety-osunlp", "accepted": true, "reasons": []}, {"id": "sig-metacognition-cognitive-mirror", "accepted": true, "reasons": []}, {"id": "sig-metacognition-neurosymbolic", "accepted": false, "reasons": ["reflection_depth_exhausted"]}]}
+HARD_ROLLBACK
+Signal ID: sig-metacognition-neurosymbolic
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: NOT_EXECUTED
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
