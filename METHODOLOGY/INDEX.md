@@ -1,6 +1,7 @@
 # Reflective Continuum Methodology Index
 
-Status: procedure and evidence-surface map
+Status: procedure and evidence-surface map  
+Current calibration: 2026-08-27
 
 `METHODOLOGY/**` explains how concrete repository properties are measured or interpreted. A methodology does not create a runtime capability.
 
@@ -33,14 +34,24 @@ Each methodology identifies:
 - ingestion acceptance != source truth
 - SQLite rollback != external-system rollback
 - fixed-fixture repeatability != durable persistence
+- same logical date != shared database identity
+- R1 accepted signal + R2 empty store != persistence proof or data-loss proof
 - current path presence != historical runtime success
 - Weekly/Monthly snapshot != replacement for Daily error/failure history
 
 METH-005 operationalizes ADR-010's identity requirement for continuity claims.
+
+## Periodic evidence relation
+
+- R1/R2 Daily records remain independent task observations unless a common store identity is retained.
+- R3/R4 Weekly synthesis may aggregate or downgrade, never erase failures or manufacture continuity.
+- R5 stage/monthly synthesis must declare a cutoff and preserve unresolved state.
+- At the 2026-08-27 cutoff W35 and formal August R5 are still open.
 
 ## Related navigation
 
 - [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
-- [August stage audit](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)
+- [August stage audit through 2026-08-27](../RESEARCH/monthly/2026-08-through-27-stage-audit.md)
+- [Prior cutoff audit through 2026-08-23](../RESEARCH/monthly/2026-08-through-23-stage-audit.md)

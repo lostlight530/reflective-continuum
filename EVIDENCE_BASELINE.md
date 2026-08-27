@@ -1,6 +1,6 @@
 # 2026 Evidence Baseline
 
-- Retrieval date: 2026-08-24
+- Retrieval/calibration date: 2026-08-27
 - Rule: external evidence can bound a repository claim; it does not certify a local implementation by itself
 
 ## Repository implementation anchors
@@ -17,164 +17,168 @@ Current claims are interpreted through the code that actually exists:
 - `CODE/tasks/convergence_drill.py` — repeated rebuild of one fixed local SQLite fixture
 - `CODE/tasks/insight_morpher.py` — caller-provided JSON signal ingestion through `CortexObserver`
 
-External papers, protocols, standards, or SDKs remain `REFERENCE_ONLY` unless a corresponding implementation surface exists.
+External papers, protocols, standards, SDKs, or generated research remain `REFERENCE_ONLY` unless a corresponding implementation surface exists.
 
-## Storage evidence
+## Storage identity and persistence evidence
 
-SQLite documentation establishes several facts relevant to the local implementation:
-
-- foreign-key enforcement is connection-scoped and must be enabled by the application
-- an external-content FTS5 index must be kept synchronized with its content table
-- a bare `:memory:` database belongs to the connection that opened it and disappears when that connection closes
-
-`GraphDB` enables/verifies foreign keys and uses explicit FTS5 synchronization triggers.
+A bare SQLite `:memory:` database belongs to the connection that opened it and disappears when that connection closes.
 
 Therefore:
 
 - one connection's successful write/read is evidence about that connection/store
 - another default `:memory:` task is a different store unless shared identity is established
 - `Nodes=0 / Edges=0` in R2 is not proof that a separate R1 ingestion failed
+- R1 acceptance does not imply R2 must observe the same node
+- same logical date is not a persistence identity
 - repeated snapshot digest alone is not durable-memory evidence
 
-Use `PERSISTENCE_LINK_NOT_VERIFIED` when the store identity linking two observations is absent.
+Use:
+
+`PERSISTENCE_LINK_NOT_VERIFIED`
+
+or, for same-day R1/R2 comparisons:
+
+`SAME_DAY_OBSERVATIONS / SHARED_STORE_IDENTITY_NOT_ESTABLISHED`.
+
+A continuity claim must identify the store/process/connection/path/URI whose state is said to persist.
 
 ## Selfcheck evidence
 
-`cortex_selfcheck.py` observes:
+`cortex_selfcheck.py` observes the database it actually opens, including named initialization/integrity/rule-engine surfaces and node/edge counts.
 
-- foreign-key setting
-- FTS5 accessibility
-- SQLite `integrity_check`
-- rule-engine fixture acceptance
-- node/edge counts
-- initialization success
+With default `:memory:` behavior, a result concerns a fresh connection-local store.
 
-With its default `:memory:` input, the result concerns a fresh connection-local store.
+A successful named check does not establish cross-run persistence, earlier R1 ingestion success, source truth, semantic correctness, or absence of historical failures.
 
-A healthy selfcheck does not establish cross-run persistence, earlier Daily ingestion success, source truth, semantic correctness, or absence of historical failures.
+An empty store is interpreted as:
+
+`INDETERMINATE_EMPTY_STATE`
+
+unless stronger state identity and history resolve why it is empty.
 
 ## Repeatability evidence
 
-`convergence_drill.py` is explicitly a repeatability drill, not a convergence proof.
+`convergence_drill.py` is a fixed-fixture repeatability drill, not a convergence proof.
 
-Each iteration:
+Each iteration rebuilds the same local fixture in a fresh default store and computes a snapshot digest.
 
-1. opens a fresh default `GraphDB()`
-2. inserts the same fixed two-node fixture
-3. computes a snapshot digest
-4. closes the store
-
-One distinct digest across repeated iterations means the same fixture serialized to the same snapshot identity under that implementation.
+One distinct digest across repeated iterations means the same represented fixture serialized to the same snapshot identity under that implementation.
 
 Current interpretation:
 
 `RUN_LOCAL_REPEATABILITY_ONLY`.
 
-It does not establish persistent memory or convergence of an adaptive system.
+Historical R1 labels such as `Convergence State: SUCCESS...` are read through this executable boundary. They do not establish convergence of an adaptive system across time.
 
 ## Signal-ingestion evidence
 
-`insight_morpher.py` validates caller-provided JSON signal shape and submits each signal to `CortexObserver`.
-
-Its result reports local acceptance/rejection.
+`insight_morpher.py` validates caller-provided JSON signal shape and submits signals to `CortexObserver`.
 
 Keep separate:
 
 - `INGESTION_OUTCOME`
+- `SOURCE_IDENTITY`
 - `SOURCE_CREDIBILITY`
 - `SOURCE_CLAIM_SUPPORT`
 - `PERSISTENCE_LINK`
 
-`ACCEPTED` does not mean `TRUE` or `AUTHORITATIVE`.
+`ACCEPTED != TRUE`.
 
-`REJECTED_FROM_INGESTION` does not mean the external proposition is false.
+`REJECTED_FROM_INGESTION != FALSE`.
 
-The default CLI creates a new in-memory store, so its accepted signals do not establish durable persistence after task completion.
+A local savepoint rollback establishes rollback of tentative SQLite changes in that savepoint only. It does not establish rollback of external files, messages, services, or world-state effects.
 
 ## Search and drift evidence
 
 Reflective search is FTS5 lexical search, not embedding search.
 
-`compute_semantic_delta()` asks whether the **top FTS5 lexical result** for the same query changes between two versions.
+The historically named `compute_semantic_delta()` asks whether the **top FTS5 lexical result** for the same query changes between two versions.
 
-Current interpretation label:
+Current interpretation:
 
 `LEXICAL_TOP_RESULT_CHANGED`.
 
-It is not a general semantic-equivalence measurement.
-
-`semantic_drift_audit.py` itself records:
-
-- `FTS5 lexical ranking`
-- `caller-selected queries`
-
 Structural delta, lexical top-result delta, and PageRank-score delta are separate evidence surfaces.
+
+An unchanged top lexical result is not semantic equivalence. A rank shift is not correctness or instability proof.
 
 ## Entropy and phase evidence
 
 `calculate_topological_entropy()` computes Shannon entropy in nats over normalized finite non-negative scores, typically a PageRank distribution.
 
-`check_phase_boundary()` is only an entropy-threshold comparison.
+`LIQUID` and `GASEOUS` are local control labels around a configured threshold.
 
-`LIQUID` and `GASEOUS` are local observer labels.
-
-None of these facts independently establishes cognition, semantic drift, safety, alignment, or global convergence.
-
-## Transaction and rollback evidence
-
-`CortexObserver` performs tentative graph mutation inside a `GraphDB` savepoint.
-
-Validation failure or reflection-depth exhaustion follows the local rejection path and rolls the savepoint back.
-
-This supports rollback of the tentative SQLite changes in that savepoint only.
-
-It does not establish rollback of external services, messages, files, or other side effects outside the store.
+These values do not independently establish cognition, source truth, safety, alignment, durable memory, or global convergence.
 
 ## Source authority and claim support
 
-Use separate axes:
-
-1. `SOURCE_CREDIBILITY`
-2. `SOURCE_IDENTITY`
-3. `SOURCE_CLAIM_SUPPORT`
-4. local `INGESTION_OUTCOME`
-5. broader `EPISTEMIC_SUPPORT`
+Source access, source identity, source authority, exact claim support, local ingestion outcome, and broader research interpretation remain separate dimensions.
 
 If a source is reachable but does not support the proposition attributed to it, use:
 
 `SOURCE_CLAIM_MISMATCH`.
 
-### 2026-08-23 reference case
+The 2026-08-23 Wikipedia `AI_alignment` deterministic-boundary proposition remains the explicit August reference case. Later use of the same reachable page does not upgrade that unsupported proposition or create independent corroboration.
 
-The R1 signal citing Wikipedia `AI_alignment` attributes the stronger proposition that maintaining deterministic boundaries is essential for safety.
-
-The cited page does not support that exact proposition as written.
-
-Current state:
-
-`SOURCE_CLAIM_MISMATCH`.
-
-Local ingestion acceptance cannot repair the citation mismatch.
-
-## Historical Daily/Weekly evidence
-
-A Weekly result does not erase Daily results.
+## Historical Daily evidence through 2026-08-27
 
 Preserve:
 
 - 2026-08-06 original R2 runtime: `HISTORICAL_RUNTIME_UNKNOWN`
 - 2026-08-07 through 2026-08-10: each R2 `26 passed / 1 error`
 - 2026-08-17 through 2026-08-23: each R2 `26 passed / 1 failed`
+- 2026-08-24 through 2026-08-27: each R2 `26 passed / 1 failed`, `Nodes=0`, `Edges=0`, incremental drift `NOT_COMPUTED`
 
-`Missing dates: NONE` does not mean all evidence dimensions were computed.
+Thus the retained failed-test run now extends continuously from 2026-08-17 through 2026-08-27.
 
-A Weekly `STABLE` label does not cover operational transitions when those transitions are `NOT_COMPUTED`.
+Later success, path completeness, or R1 ingestion acceptance does not erase this history.
 
-Use:
+## Daily → Weekly → Monthly SOP
 
-`NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE`
+### R1 Daily
 
-for the bounded W34 interpretation.
+Interpret separately:
+
+1. fixed-fixture repeatability result
+2. signal/source identity
+3. local ingestion acceptance/rejection
+4. rollback reason where rejected
+5. local graph-derived entropy/phase
+6. source-claim support
+7. persistence identity only when actually evidenced
+
+### R2 Daily
+
+Interpret separately:
+
+1. opened store identity/path when available
+2. module/init status
+3. named database/rule-engine checks
+4. node/edge counts for that store
+5. complete test totals including failures/errors
+6. drift as `NOT_COMPUTED` when not computed
+7. empty state as `INDETERMINATE_EMPTY_STATE`
+
+### R3/R4 Weekly
+
+Weekly synthesis may aggregate or downgrade Daily evidence but cannot:
+
+- erase Daily failed/error days
+- convert ingestion acceptance into source truth
+- convert repeated digest into durable persistence
+- infer R1↔R2 continuity without shared store identity
+- promote lexical stability into semantic stability
+- convert `NOT_COMPUTED` transitions into a no-drift theorem
+
+W34 `STABLE` remains bounded as:
+
+`NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE`.
+
+At the 2026-08-27 cutoff W35 is in progress; no final W35 result is inferred.
+
+### R5 Monthly
+
+Formal August R5 closure remains `OPEN` until the natural monthly lifecycle has actual retained evidence. A stage audit cannot manufacture 2026-08-28 through 2026-08-31 evidence.
 
 ## Continuity and availability
 
@@ -190,26 +194,24 @@ Keep separate when materially different:
 
 A later reconciliation can repair current interpretation or path coverage. It cannot manufacture an earlier runtime result.
 
-A repeated digest can show represented-content repeatability; durable persistence still requires object/store identity through the claimed interval.
-
 ## External architecture references
 
-Current external references such as MCP 2026-07-28, A2A v1.0, Google ADK state/memory documentation, OpenAI Agents SDK tracing, and Anthropic agent-evaluation guidance are used only to sharpen vocabulary around state scope, trajectory/outcome, and lifecycle identity.
-
-They do not establish that Reflective Continuum implements those runtimes.
+MCP, A2A, ADK state/memory documentation, agent tracing, and evaluation literature are used only to sharpen vocabulary around state scope, trajectory/outcome, and lifecycle identity unless local implementation exists.
 
 ## Current evidence summary
 
-The strongest repository-wide interpretation through the current August stage is:
+The strongest repository-wide interpretation through 2026-08-27 is:
 
 - storage behavior: implemented and connection/store scoped
 - graph entropy: implemented mathematical statistic
-- drift: implemented as structural / lexical-top-result / rank surfaces
-- observer reflection/rollback: implemented as a bounded local transaction loop
+- drift: structural / lexical-top-result / rank surfaces
+- observer reflection/rollback: bounded local transaction loop
 - selfcheck: task-local named checks
 - convergence drill: fixed-fixture repeatability only
 - signal ingestion: local acceptance/rejection only
 - durable R1↔R2 persistence: not verified
-- 2026-08-23 cited proposition: source mismatch
-- historical Daily failures/errors: preserved
+- retained R2 failures: preserved through 2026-08-27
+- source mismatch history: preserved
 - formal August R5 closure: open
+
+Canonical current stage record: `RESEARCH/monthly/2026-08-through-27-stage-audit.md`.
