@@ -1,183 +1,121 @@
 # Reflective Continuum Engineering Specification
 
-- Version: 2026.08
-- Review calibration: 2026-08-24
+- Version: 2026.08-r2
+- Review calibration: 2026-08-27
 - Status: implemented reference contract with evidence-scoped interpretation
 
 ## Purpose and non-goals
 
-Reflective Continuum is a standard-library Python reference for:
-
-- versioned graph storage in SQLite
-- synchronized FTS5 lexical search
-- transactional node/edge updates through savepoints
-- structural, lexical-result, and PageRank-score deltas
-- PageRank-derived Shannon entropy
-- explicit content validation
-- bounded reflection hooks around transactional ingestion
-- small task wrappers for selfcheck, drift audit, convergence drills, and insight transformation
+Reflective Continuum is a standard-library Python reference for versioned SQLite graph storage, FTS5 lexical search, savepoint-scoped updates, graph-derived metrics, explicit validation, bounded reflection hooks, and small task wrappers.
 
 It is not a cognitive system, semantic embedding model, truth engine, safety proof, autonomous researcher, distributed database, or production service.
 
-“Liquid”, “gaseous”, “cortex”, “reflection”, “entropy”, “semantic drift”, and “convergence” are project labels whose meaning is limited by the concrete implementation described below.
-
-This specification records public repository architecture only. It does not encode private prompts, hidden reasoning, unpublished maintenance strategy, or future artifact-production instructions.
+“Liquid”, “gaseous”, “cortex”, “reflection”, “entropy”, “semantic drift”, and “convergence” are project labels whose meaning is limited by the concrete implementation below.
 
 ## Repository realization map
 
-### `CODE/continuum_db.py` — versioned graph/store boundary
+### `CODE/continuum_db.py`
 
-`GraphDB` implements the current storage core.
+`GraphDB` implements versioned SQLite storage.
 
-- default database argument is `:memory:`
-- SQLite foreign-key enforcement is enabled and verified per connection
-- `nodes` is keyed by `(node_id, version)`
-- `edges` is keyed by `(source_id, target_id, relationship, version)`
-- edge endpoints reference nodes at the same version
-- FTS5 uses an external-content table synchronized through insert/delete/update triggers
-- node conflict handling uses `ON CONFLICT ... DO UPDATE`, avoiding replace-style hidden delete semantics
-- explicit savepoints provide fork/commit/rollback behavior
-- snapshot digests hash sorted node/edge content for one declared version
+- default database argument: `:memory:`
+- foreign keys: enabled and verified per connection
+- node key: `(node_id, version)`
+- edge key: `(source_id, target_id, relationship, version)`
+- FTS5: external-content index with synchronization triggers
+- explicit savepoints: fork/commit/rollback behavior
+- snapshot digest: sorted content identity for one declared version
 
-A bare `:memory:` database is connection-local and disappears with that connection. Therefore a default selfcheck or task-local observation over `:memory:` cannot prove cross-task, cross-process, or cross-day persistence.
+A bare `:memory:` database is connection-local. A default task observation cannot prove cross-task, cross-process, or cross-day persistence.
 
-### `CODE/entropy_analyzer.py` — graph-metric boundary
+### `CODE/entropy_analyzer.py`
 
-The analysis module implements:
+Implements PageRank, normalized rank output, Shannon entropy in nats, and a configured entropy-threshold comparison.
 
-- validated PageRank over a declared node/edge graph
-- normalized rank output
-- Shannon entropy in nats over normalized non-negative score values
-- a threshold comparison through `check_phase_boundary`
+The resulting entropy is a graph statistic, not semantic truth, cognition, safety, or global system disorder.
 
-The entropy value is a mathematical summary of the supplied rank distribution. It is not a measure of semantic truth, safety, cognition, or global system disorder.
+### `CODE/drift_detector.py`
 
-### `CODE/drift_detector.py` — delta boundary
+Keeps three comparisons separate:
 
-The drift module keeps three different comparisons separate:
+- structural node delta
+- historically named `compute_semantic_delta()` = **top FTS5 lexical-result identity change** for the same query
+- PageRank-score delta above a supplied threshold
 
-- `compute_structural_delta` — node additions/removals/content modifications between two declared versions
-- `compute_semantic_delta` — whether the **top FTS5 lexical result** changes for the same caller-provided query
-- `compute_rank_delta` — nodes whose PageRank score moves beyond a caller-provided threshold
+The lexical result is not an embedding/general semantic-equivalence measure.
 
-The function named `compute_semantic_delta` is therefore a lexical top-result change detector, not an embedding-based or general semantic-equivalence detector.
+### `CODE/reflective_validator.py`
 
-`verify_self_consistency` delegates to the generic `RuleEngine` validation surface. It must not be cited as a dedicated proof that an arbitrary drift report is self-consistent unless the supplied object actually satisfies the rule engine's declared input schema.
+`RuleConfig` and `RuleEngine` define executable local validation policy. ADR prose does not become runtime configuration.
 
-### `CODE/reflective_validator.py` — executable rule boundary
+The standard-library import-root check is not a sandbox or behavioral proof.
 
-`RuleConfig` defines executable local limits such as reflection depth, entropy threshold, and maximum content length.
+### `CODE/cortex_observer.py`
 
-`RuleEngine` validates state-delta structure and can check Python content for standard-library-only imports using the current interpreter's AST and `sys.stdlib_module_names`.
+`CortexObserver.process_input()` validates an input, opens a savepoint, mutates the local graph tentatively, recomputes validation/metrics, optionally invokes a bounded reflector, and commits or rolls back the local savepoint.
 
-ADR prose is retained for architecture explanation; it is not parsed into runtime constants.
+`ProcessResult.accepted` means only that this local control-flow/transaction path accepted the input under the current rules and opened store.
 
-### `CODE/cortex_observer.py` — transactional observation boundary
+It does not establish external truth, source authority, safety, durable persistence, or convergence.
 
-`CortexObserver.process_input`:
+### `CODE/tasks/**`
 
-1. validates the incoming node/content object
-2. opens one savepoint
-3. inserts/updates the node and requested edges
-4. re-validates the version snapshot
-5. computes PageRank and entropy
-6. returns immediately when the configured boundary is not exceeded
-7. otherwise enters a bounded reflector loop
-8. recomputes validation and graph metrics after each reflector step
-9. rolls back the savepoint when policy rejection or reflection-depth exhaustion occurs
-
-`ProcessResult.accepted` means the local validation/transaction path accepted the input under the current executable rules. It does **not** mean the input is externally true, authoritative, safe, or durably persisted beyond the database identity actually used.
-
-### `CODE/tasks/**` — bounded task wrappers
-
-Current task modules include:
+Current bounded wrappers include:
 
 - `cortex_selfcheck.py`
 - `semantic_drift_audit.py`
 - `convergence_drill.py`
 - `insight_morpher.py`
 
-`cortex_selfcheck.py` checks the specific database connection it opens: foreign-key state, FTS5 availability, SQLite integrity result, rule-engine fixture acceptance, and node/edge counts. Its default `:memory:` database is a fresh connection-local store.
-
-`semantic_drift_audit.py` compares declared versions and caller-selected queries. Its own limitations explicitly identify `FTS5 lexical ranking` and `caller-selected queries`.
-
-Task output is evidence about the task's declared inputs and checked properties only.
-
-## Decision and reference topology
-
-The engineering decisions that narrow this specification are indexed in [`ADR/INDEX.md`](ADR/INDEX.md). ADR numbers are identifiers, not a sequential supersession chain.
-
-| Specification surface | Governing ADRs |
-|---|---|
-| Runtime dependency and explicit-contract boundary | [ADR-001](ADR/ADR-001.md), [ADR-007](ADR/ADR-007.md) |
-| Versioned persistence and transaction behavior | [ADR-004](ADR/ADR-004.md) |
-| Structural / lexical / rank delta separation | [ADR-003](ADR/ADR-003.md) |
-| Entropy and phase-label interpretation | [ADR-005](ADR/ADR-005.md) |
-| Bounded reflection and rollback loop | [ADR-002](ADR/ADR-002.md) |
-| External-signal provenance before synthesis | [ADR-006](ADR/ADR-006.md) |
-| Task ownership and explicit output boundary | [ADR-008](ADR/ADR-008.md) |
-| Evaluation and completion-claim scope | [ADR-009](ADR/ADR-009.md) |
-| State, persistence, transition, and historical continuity | [ADR-010](ADR/ADR-010.md) |
-
-Background and methodological sources are indexed in [`REFERENCES/INDEX.md`](REFERENCES/INDEX.md). They are non-normative context unless a specific requirement is separately adopted by this specification or an ADR.
+A task result is evidence about its declared inputs/store and checked properties only.
 
 ## Runtime and persistence contract
 
-Runtime code uses the Python standard library. Python-version compatibility is claimed only for a revision/environment with retained execution evidence for that version.
+Runtime code uses the Python standard library. SQLite must provide FTS5.
 
-SQLite must provide FTS5. Every `GraphDB` connection enables and verifies `PRAGMA foreign_keys=ON`.
+A continuity claim MUST identify the store whose state is said to persist. Useful identity evidence may include:
 
-Existing databases with an incompatible historical schema require an explicit migration before they can be assumed to satisfy the current versioned edge/node contract.
-
-A continuity claim MUST identify the store whose state is said to persist.
-
-Useful identities may include:
-
-- filesystem database path
-- SQLite URI/shared-memory identity where explicitly used
-- connection/run/task identity
+- filesystem DB path
+- explicit SQLite URI/shared-memory identity
+- connection/process/run/task identity
 - graph version
-- snapshot digest plus the store/revision that produced it
+- snapshot digest together with the store/revision that produced it
 
-A repeated digest without shared durable-store identity demonstrates repeatability of the represented snapshot, not persistence through time.
+A repeated digest without shared durable-store identity demonstrates represented-content repeatability, not persistence through time.
 
 ## Transaction contract
 
-Savepoint names match `[A-Za-z_][A-Za-z0-9_]{0,63}` and are quoted.
+Savepoints are local SQLite transaction boundaries. Rejection/rollback applies to tentative graph changes inside that savepoint.
 
-Rollback releases the savepoint after rollback. The context manager releases a successful savepoint and re-raises unexpected failures after rollback.
+It does not establish rollback of external services, messages, files, or world-state side effects.
 
-Database integrity/programming exceptions are not converted into successful `ProcessResult` states.
+Unexpected database/programming failures propagate rather than becoming successful `ProcessResult` states.
 
 ## Search and delta contracts
 
-FTS5 search treats caller text as a quoted lexical phrase, accepts an optional version, limits results to `1..100`, and orders by BM25 score then identifiers.
+FTS5 search is lexical and caller-query scoped.
 
-It does not measure general semantic equivalence.
+- structural delta → added/removed/content-modified node IDs
+- lexical top-result delta → whether top FTS5 result identity changes
+- rank delta → PageRank score shifts above caller threshold
 
-Structural delta returns sorted added/removed/content-modified node identifiers between two versions.
-
-The current “semantic delta” reports whether the top lexical FTS5 result changed for the same declared query.
-
-Rank delta reports nodes whose absolute score shift exceeds a caller-declared non-negative threshold.
-
-Synthetic/test transitions and operational/runtime transitions are distinct evidence classes. A transition count with unresolved origin MUST NOT be promoted to an operational-transition claim.
+Synthetic/test transitions and operational transitions are distinct evidence classes. An unresolved transition origin is not promoted into an operational-transition claim.
 
 ## Analysis contract
 
-PageRank requires unique known nodes, validated configuration, and known edge endpoints; duplicate edges are collapsed.
+PageRank requires a declared valid graph. Entropy normalizes finite non-negative scores and reports nats.
 
-Entropy normalizes finite non-negative scores and reports nats. A boundary check is a threshold comparison over that graph-derived quantity.
+A phase threshold is a local policy condition, not a physical/cognitive phase theorem.
 
-A repeated snapshot/hash demonstrates repeatability only for the declared fixture/store/revision that produced it. Matching hashes alone do not prove cross-run, cross-task, or cross-day memory continuity.
+`convergence_drill.py` rebuilds a fixed local fixture and compares snapshot digests. Its strongest supported interpretation is:
 
-## Validation and observation contract
+`FIXED_FIXTURE_REPEATABILITY_OBSERVED`.
 
-`RuleConfig` is executable policy. ADR prose is not runtime configuration.
+Not:
 
-`RuleEngine.verify_stdlib_only()` establishes only that the parsed import roots are members of the current interpreter's standard-library module set. It is not a security sandbox or behavioral validator for the Python program.
+`SYSTEM_CONVERGENCE_PROVED`.
 
-`CortexObserver.process_input()` returns `ProcessResult` for accepted or policy-rejected input and propagates unexpected database/programming failures.
+## Validation and source contract
 
 Keep these states separate:
 
@@ -185,39 +123,28 @@ Keep these states separate:
 - database initialization/integrity
 - local validation acceptance
 - transaction commit/rollback
-- source/claim support
+- source identity/authority
+- exact source-claim support
 - durable persistence continuity
 - higher-level research conclusion
 
-## External-signal and source contract
+`ACCEPTED != TRUE`.
 
-A research signal has at least two independent statuses:
+`REJECTED_FROM_INGESTION != FALSE`.
 
-1. repository ingestion/control-flow outcome
-2. source/claim support
-
-`ACCEPTED` does not mean `TRUE` or `AUTHORITATIVE`.
-
-`REJECTED_FROM_INGESTION` does not mean `FALSE`.
-
-The exact proposition attributed to an external source must be supportable by that source at the declared authority level. If the source is reachable but does not support the proposition as recorded, use `SOURCE_CLAIM_MISMATCH`.
-
-Secondary/contextual material may support explicitly secondary/contextual claims. Primary/current material should be preferred for material factual, implementation, or scientific claims.
+If a reachable source does not support the proposition attributed to it, current interpretation uses `SOURCE_CLAIM_MISMATCH` regardless of ingestion outcome.
 
 ## State continuity contract
 
-A continuity claim names the object whose state is said to continue and the evidence linking both observations.
+A continuity claim names the object whose state is said to continue and evidence linking both observations.
 
-Depending on the claim, this may require:
+Same logical date is not enough.
 
-- database/store identity
-- connection/run/session/task identity
-- graph/schema/revision identity
-- transition origin
-- artifact generation/delivery history
-- aggregation snapshot identity
+In particular, if R1 reports accepted signals and R2 reports `Nodes=0 / Edges=0`, do not infer either persistence or data loss until a shared database/store identity is established.
 
-Current path presence is not historical execution evidence. A later reconciliation file is not an original run artifact. A successful current selfcheck does not erase a historical error/failure or prove an unobserved persistence interval.
+Current required label:
+
+`SAME_DAY_OBSERVATIONS / SHARED_STORE_IDENTITY_NOT_ESTABLISHED`.
 
 When linkage is absent, use states such as:
 
@@ -225,27 +152,74 @@ When linkage is absent, use states such as:
 - `TRANSITION_ORIGIN_NOT_COMPUTED`
 - `HISTORICAL_RUNTIME_UNKNOWN`
 
-## Task contract
+## Daily / Weekly / Monthly research SOP
 
-Tasks are importable libraries plus bounded command-line wrappers. They do not own `RESEARCH/**` history and do not silently convert task output into research truth.
+Historical research artifacts remain point-in-time records. This SOP governs current interpretation and future canonical reconciliation; it does not rewrite old artifacts.
 
-Default task output is structured JSON on stdout where implemented. Tasks that accept an explicit output path write only to that caller-supplied destination.
+### R1 Daily
 
-Periodic `RESEARCH/**` artifacts are separately owned research records.
+A current R1 interpretation records separately:
 
-## Evidence boundary
+1. fixed-fixture repeatability result
+2. signal and source identity
+3. local ingestion acceptance/rejection
+4. rollback reason where rejected
+5. graph-derived entropy/phase as local metrics
+6. exact source-claim support as a separate evidence judgment
+7. persistence identity only when actually evidenced
 
-A claim is accepted only to the extent supported by evidence actually produced for the relevant revision/configuration.
+Do not use `Convergence State` as a global convergence claim.
 
-Examples:
+### R2 Daily
 
-- a selfcheck observing foreign keys, FTS5, integrity, and rule-engine fixture acceptance supports those named checks for the database it opened
-- a 100-iteration fixed fixture producing one snapshot digest supports run-local repeatability for that fixture
-- a lexical drift audit supports the selected queries and versions it records
-- a current successful task does not erase an earlier Daily error/failure
-- a source-ingestion success does not prove the source claim is correct
+A current R2 interpretation records separately:
 
-File presence, historical prose, and a later aggregate are not substitutes for the exact execution/source evidence needed by the claim.
+1. opened-store identity/path when available
+2. module/init status
+3. named DB/rule checks actually performed
+4. node/edge counts for that store
+5. complete test totals including failed/errors
+6. drift as `NOT_COMPUTED` when not computed
+7. empty DB as `INDETERMINATE_EMPTY_STATE`
+
+A selfcheck with 26 passing and 1 failed check is not an all-pass selfcheck.
+
+### R3/R4 Weekly
+
+Weekly synthesis may aggregate, preserve, or downgrade Daily evidence but cannot:
+
+- erase Daily failed/error days
+- convert R1 acceptance into source truth
+- convert repeated digest into durable memory
+- infer R1↔R2 persistence without shared store identity
+- promote lexical stability into semantic stability
+- convert `NOT_COMPUTED` operational transitions into a no-drift theorem
+
+Historical W34 `STABLE` remains bounded as:
+
+`NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE`.
+
+At the 2026-08-27 cutoff W35 is still in progress; no final W35 result is inferred.
+
+### R5 Monthly
+
+A partial stage audit may reconcile evidence to its cutoff. Formal monthly closure requires actual natural-month evidence and must not create future-day history.
+
+Formal August R5 status at 2026-08-27: `OPEN`.
+
+## Historical August evidence boundary
+
+Preserve at minimum:
+
+- 2026-08-06 original R2 runtime unknown
+- 2026-08-07 through 2026-08-10: `26 passed / 1 error`
+- 2026-08-17 through 2026-08-27: `26 passed / 1 failed`
+- R1↔R2 persistence link not verified
+- 2026-08-23 source-claim mismatch
+
+Later successful tasks or complete path inventory do not erase these records.
+
+Current stage authority: `RESEARCH/monthly/2026-08-through-27-stage-audit.md`.
 
 ## Security and ownership
 
@@ -253,6 +227,4 @@ Callers own database-file permissions, authentication, authorization, isolation,
 
 FTS query limits and standard-library-only import checks do not provide a security sandbox.
 
-Separately owned README, homepage, `.nojekyll`, `RESEARCH/**`, references, and license surfaces remain outside incidental runtime maintenance.
-
-This specification changes no runtime code, presentation behavior, dependency set, deployment state, or artifact-production configuration.
+This specification changes no runtime implementation, dependency set, presentation behavior, deployment state, or private automation/control strategy.
