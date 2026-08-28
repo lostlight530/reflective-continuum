@@ -1,6 +1,7 @@
 # Reflective Continuum maintenance contract
 
-Status: `CANONICAL_PUBLIC_MAINTENANCE_CONTRACT`  
+Status: `CANONICAL_PUBLIC_MAINTENANCE_CONTRACT`
+
 Effective: 2026-08-28
 
 ## Cadence and independent evidence
