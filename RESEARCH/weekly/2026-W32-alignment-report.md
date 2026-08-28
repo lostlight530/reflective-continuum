@@ -1,5 +1,15 @@
 # R3 Weekly Alignment Report: 2026-W32
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `WEEKLY_ALIGNMENT_RESULT_RETAINED`
+> - Current disposition: `NOT_ALL_GREEN / PERSISTENCE_LINK_NOT_VERIFIED`
+> - Reason: 26 passed / 1 error days survive weekly aggregation; repeated digests prove fixture repeatability only.
+> - Evidence boundary: no durable R1↔R2 continuity, semantic stability, or general alignment is established.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## Semantic Drift
 - **Drift Status:** STABLE
 - **Drifted Nodes:** NONE

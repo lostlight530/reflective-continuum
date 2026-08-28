@@ -197,3 +197,22 @@ No new August Daily record establishes durable cross-task memory, semantic truth
 `DAILY_R1_R2_COVERAGE_27_OF_27_WITH_R2_FAILURES_PRESERVED_SHARED_STORE_IDENTITY_UNVERIFIED_AND_MONTH_OPEN`
 
 This conclusion preserves both local R1 outcomes and R2 empty/failure observations without manufacturing a shared persistence story.
+
+## 10. Complete 27-day state matrix
+
+The table is a current interpretation index, not a replay. Detailed values remain in the paired R1/R2 files.
+
+| Date | R1 | R2 test state | Store/health disposition |
+| --- | --- | --- | --- |
+| 08-01–08-05 | retained local outcome | retained | `PERSISTENCE_LINK_NOT_VERIFIED` |
+| 08-06 | retained local outcome | runtime unknown | `HISTORICAL_RUNTIME_UNKNOWN` |
+| 08-07–08-10 | retained local outcome | `26 passed / 1 error` daily | `NOT_ALL_GREEN; FAILURE_IDENTITY_NOT_RETAINED` |
+| 08-11–08-13 | retained local outcome | retained | `PERSISTENCE_LINK_NOT_VERIFIED` |
+| 08-14 | external framework reference | retained | `NO_GENERAL_SAFETY_GUARANTEE` |
+| 08-15 | accepted and rejected outcomes | retained | `SUCCESS_WITH_REJECTED_SIGNAL` is composite, not health |
+| 08-16 | retained local outcome | retained | `PERSISTENCE_LINK_NOT_VERIFIED` |
+| 08-17–08-22 | retained local outcome | `26 passed / 1 failed` daily | `NOT_ALL_GREEN; EMPTY_STATE_INDETERMINATE` |
+| 08-23 | source/claim mismatch | `26 passed / 1 failed` | `SOURCE_CLAIM_MISMATCH; EMPTY_STATE_INDETERMINATE` |
+| 08-24–08-27 | accepted/rejected local outcomes | `26 passed / 1 failed` daily | `SHARED_STORE_IDENTITY_NOT_ESTABLISHED; EMPTY_STATE_INDETERMINATE` |
+
+Across the entire ledger: `CHECK_PROGRAM_EXECUTED != CHECKED_SYSTEM_HEALTHY`, `MAJORITY_TESTS_PASSED != ALL_GREEN`, `EMPTY_STATE != HEALTHY`, `INGESTION_ACCEPTED != SOURCE_TRUE`, and `SAME_DATE != SAME_STORE`. W35 remains `WEEK_IN_PROGRESS / NO_WEEKLY_CLOSURE`; August remains `MONTH_OPEN`; 08-28–08-31 are not inferred.

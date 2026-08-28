@@ -1,5 +1,15 @@
 # R3 Weekly Alignment Report: 2026-W31
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `WEEKLY_ALIGNMENT_RESULT_RETAINED`
+> - Current disposition: `SUPERSEDED_FOR_CURRENT_INTERPRETATION`
+> - Reason: local fixed-fixture, lexical, structural, and rank observations cannot establish general stability, health, or alignment.
+> - Evidence boundary: Daily test errors and missing shared-store identity remain inherited.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## Semantic Drift
 - **Drift Status:** DRIFT_DETECTED
 - **Drifted Nodes:** safety
