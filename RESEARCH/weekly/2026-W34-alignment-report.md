@@ -1,5 +1,15 @@
 # R3 Weekly Alignment Report: 2026-W34
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `STABLE_WITHIN_RECORDED_AUDIT`
+> - Current disposition: `NO_DRIFT_DETECTED_WITHIN_R3_AVAILABLE_AUDIT_SCOPE / NOT_ALL_GREEN`
+> - Reason: the week includes repeated 26 passed / 1 failed R2 results and empty-store uncertainty.
+> - Evidence boundary: available structural/lexical/rank checks do not prove health, conversion, persistence, safety, or semantic stability.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## Drift Status
 - **Drift Status:** STABLE
 - **Drifted Nodes:** NONE

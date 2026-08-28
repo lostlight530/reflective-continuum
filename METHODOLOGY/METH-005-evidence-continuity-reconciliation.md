@@ -99,6 +99,17 @@ Current status:
 
 `SOURCE_CLAIM_MISMATCH`.
 
+## Outputs
+
+- preserved original artifact plus current disposition
+- explicit store/source/test/transition identity state
+- unresolved conflict, missing evidence, and canonical authority
+- replay status for any post-hoc annotation
+
+## Failure conditions
+
+Reconciliation fails when it invents a shared store, erases a failed/error result, converts ingestion into source truth, backfills a future date, or treats path presence as execution evidence.
+
 ## Evidence boundary
 
 This methodology reconciles documentary/state evidence. It does not create missing execution, a shared database, source truth, or durable persistence.

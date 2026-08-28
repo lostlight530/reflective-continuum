@@ -1,5 +1,15 @@
 # Cortex Selfcheck Report
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `26 passed / 1 failed`
+> - Current disposition: `INDETERMINATE_EMPTY_STATE / NOT_ALL_GREEN`
+> - Reason: successful program execution and a majority pass do not establish checked-system health.
+> - Evidence boundary: Nodes=0/Edges=0 applies only to the opened store; R1/R2 shared-store identity was not retained.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## Module Health
 - continuum_db: SUCCESS
 - cortex_observer: SUCCESS

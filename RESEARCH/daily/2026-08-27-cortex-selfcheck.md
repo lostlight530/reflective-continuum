@@ -1,5 +1,15 @@
 # 2026-08-27 Cortex Selfcheck Report
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `26 passed / 1 failed; Nodes=0 / Edges=0`
+> - Current disposition: `INDETERMINATE_EMPTY_STATE / NOT_ALL_GREEN`
+> - Reason: an empty opened store and one failed test cannot be promoted to health.
+> - Evidence boundary: possible causes include no valid ingestion, a new/wrong store, write failure, or separate temporary connections; none is selected without store evidence.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## Module Health
 - `CODE.continuum_db`: Success
 - `CODE.cortex_observer`: Success

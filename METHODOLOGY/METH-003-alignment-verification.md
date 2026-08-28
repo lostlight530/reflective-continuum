@@ -34,6 +34,10 @@ Determine what an exact evidence surface supports without collapsing ingestion, 
 - local implementation/observation state where relevant
 - unresolved/untested dimensions
 
+## Failure conditions
+
+The procedure fails closed when the compared versions, query, PageRank configuration, threshold, or retained output is missing, or when a structural/lexical/rank result is promoted into semantic truth, safety, or general alignment.
+
 ## Required distinctions
 
 - `ACCEPTED` != source truth

@@ -65,9 +65,9 @@ Databases created with the earlier edge schema require an explicit migration bef
 
 ## Verification | 验证
 
-CI runs on Python 3.12 and 3.14 and requires SQLite with FTS5. From the repository root, run:
+The commands below are local verification entry points and require SQLite with FTS5. The repository currently has no GitHub Actions workflow that runs Python tests; its workflow deploys the static Pages surface. A Pages deployment is not evidence for runtime behavior, research claims, or document semantics. From the repository root, run:
 
-CI 使用 Python 3.12 与 3.14，并要求 SQLite 支持 FTS5。在仓库根目录执行：
+以下命令是本地验证入口，并要求 SQLite 支持 FTS5。仓库当前没有运行 Python 测试的 GitHub Actions 工作流；现有 workflow 只部署静态 Pages。Pages 发布不能作为 runtime、研究结论或文档语义的验证证据。在仓库根目录执行：
 
 ```text
 python -m compileall -q CODE tests scope_guard.py
@@ -92,3 +92,4 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 - [Evidence baseline](EVIDENCE_BASELINE.md) | 证据基线
 - [Reproducibility](REPRODUCIBILITY.md) | 可复现性
 - [Security policy](SECURITY.md) | 安全策略
+- [Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md) | 长期维护契约

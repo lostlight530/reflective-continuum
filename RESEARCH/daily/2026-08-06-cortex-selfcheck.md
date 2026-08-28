@@ -1,5 +1,15 @@
 # Cortex Selfcheck — Historical Gap Reconciliation
 
+> **Post-hoc calibration — 2026-08-28**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `HISTORICAL_RUNTIME_UNKNOWN`
+> - Current disposition: `NOT_VERIFIED`
+> - Reason: path reconstruction does not supply the missing original runtime execution.
+> - Evidence boundary: establishes record continuity only, not selfcheck health or store state.
+> - Canonical authority: [`2026-08-through-27-stage-audit.md`](../monthly/2026-08-through-27-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## Record Identity
 - **Logical Date:** 2026-08-06
 - **Task:** R2 Daily Cortex Selfcheck
