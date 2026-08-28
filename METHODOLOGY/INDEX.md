@@ -50,6 +50,22 @@ METH-005 operationalizes ADR-010's identity requirement for continuity claims.
 
 ## Related navigation
 
+## Inputs
+
+The five stable Methodology paths, their implementation anchors, and current maintenance/evidence authority.
+
+## Procedure
+
+Compare index membership with repository files and audit every method's inputs, procedure, outputs, failure conditions, and evidence boundary.
+
+## Outputs
+
+A canonical five-method map with explicit implementation or documentary/reference status.
+
+## Failure conditions
+
+Fail review when a path is missing/unindexed, an identifier is reused, or a method claims capability beyond the named public implementation.
+
 - [ADR index](../ADR/INDEX.md)
 - [Engineering specification](../SPECIFICATION.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)

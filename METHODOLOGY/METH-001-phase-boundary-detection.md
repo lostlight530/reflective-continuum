@@ -33,7 +33,7 @@ Evaluate the repository's configured graph-entropy boundary for one declared gra
 - boundary boolean
 - graph/version/store scope
 
-## Failure / unknown conditions
+## Failure conditions
 
 Do not report a valid boundary result when graph identity is ambiguous, nodes are duplicated, an edge references an unknown node, configuration is invalid, or the threshold is missing from a threshold-dependent claim.
 

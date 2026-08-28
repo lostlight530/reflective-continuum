@@ -56,6 +56,26 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 
 ## Related navigation
 
+## Status
+
+Accepted canonical membership index for 10 ADRs.
+
+## Context
+
+Stable ADR paths are required for historical research references and structural review.
+
+## Decision
+
+Membership is defined by the ten entries above; numbering and paths are not reused.
+
+## Consequences
+
+Adding, retiring, or superseding an ADR requires synchronized index and authority-link review.
+
+## Verification
+
+Compare indexed paths with repository files and review each ADR's implementation and evidence boundary; path agreement does not prove semantics.
+
 - [Engineering specification](../SPECIFICATION.md)
 - [Methodology index](../METHODOLOGY/INDEX.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
