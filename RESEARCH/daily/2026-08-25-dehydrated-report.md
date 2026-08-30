@@ -1,5 +1,15 @@
 # R1 Dehydrated Report: 2026-08-25
 
+> **Post-hoc calibration — 2026-08-31**
+>
+> - Original record: `PRESERVED`
+> - Original execution state: `SUCCESS_WITH_REJECTED_SIGNAL`
+> - Current disposition: `LOCAL_REPEATABILITY_AND_INGESTION_OUTCOME_ONLY`
+> - Reason: the synthesis phrase “system remaining healthy and continuously updating” is not supported by a named durable store, R1↔R2 continuity evidence, or a health contract.
+> - Evidence boundary: two local signals were accepted, one was rejected and rolled back; source truth, durable persistence, and system health remain separate.
+> - Canonical authority: [`../monthly/2026-08-through-30-stage-audit.md`](../monthly/2026-08-through-30-stage-audit.md)
+> - Execution replayed for this annotation: `NO`
+
 ## 1. Convergence State
 Status: SUCCESS_WITH_REJECTED_SIGNAL
 Hash: ea5dfec213700471f6b1afa4a3ffb386f8099bff01c7de6af01e50b3a220a1da
