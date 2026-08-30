@@ -8,6 +8,8 @@ Effective: 2026-08-28
 
 R1 and R2 are independent Daily surfaces. R3/R4 Weekly inherit Daily observations; R5 Monthly closes only after the natural month ends. Source authority, claim support, ingestion outcome, store identity, and test result are five separate evidence classes. None substitutes for another.
 
+A 30-day provisional audit may summarize 30 retained logical dates, but it is not a natural-month closure. Keep `MONTH_OPEN` until the final calendar date is retained or explicitly classified as missing after it becomes due.
+
 Retain source/version/retrieval time; accepted/rejected signal and rollback reason; database path/URI/connection identity; nodes/edges; passed/failed/errors/skipped; failure identity; and whether drift was computed. `INDETERMINATE_EMPTY_STATE`, failed/error tests, rollback, and rejected signals survive aggregation. Shared persistence requires a named common store plus evidence that both tasks opened it.
 
 Semantic drift is limited to implemented structural deltas, FTS5 top-result identity, and PageRank score deltas. Entropy is PageRank-derived Shannon entropy. Convergence is fixed-fixture repeatability. Reflection/rollback is local to a SQLite savepoint. These surfaces do not establish cognition, safety, semantic truth, global stability, alignment, or durable cross-task memory.
