@@ -259,3 +259,12 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Knowledge Graph Injection: NOT_EXECUTED
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"total": 3, "accepted": 2, "results": [{"id": "arxiv-2606-28739", "accepted": true, "reasons": []}, {"id": "arxiv-2606-26057", "accepted": true, "reasons": []}, {"id": "arxiv-2605-17292", "accepted": false, "reasons": ["reflection_depth_exhausted"]}]}
+
+HARD_ROLLBACK
+Signal ID: arxiv-2605-17292
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Graph Written: False
+Next Action: REJECTED_FROM_INGESTION
