@@ -268,3 +268,12 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Graph Written: False
 Next Action: REJECTED_FROM_INGESTION
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "AI_Alignment_1", "reasons": []}, {"accepted": true, "id": "Metacognition_1", "reasons": []}, {"accepted": false, "id": "Agent_Safety_1", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+[HARD_ROLLBACK]
+Signal ID: Agent_Safety_1
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: False
+Action: REJECTED_FROM_INGESTION
