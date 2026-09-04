@@ -293,3 +293,4 @@ HARD_ROLLBACK
 - Observer 输出: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 - 是否写入图谱: 否
 - 后续动作: REJECTED_FROM_INGESTION, 停止重试
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
