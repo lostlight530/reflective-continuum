@@ -294,3 +294,11 @@ HARD_ROLLBACK
 - 是否写入图谱: 否
 - 后续动作: REJECTED_FROM_INGESTION, 停止重试
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "arxiv-2608-02660", "reasons": []}, {"accepted": true, "id": "arxiv-2608-12372", "reasons": []}, {"accepted": false, "id": "arxiv-2608-27910", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+Signal ID: arxiv-2608-27910
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: NOT_EXECUTED
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
