@@ -313,3 +313,12 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Graph Write Status: False
 Next Action: REJECTED_FROM_INGESTION
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "wiki_ai_alignment_overview", "reasons": []}, {"accepted": true, "id": "wiki_ai_guardrails_concept", "reasons": []}, {"accepted": false, "id": "wiki_international_ai_safety_report", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+
+HARD_ROLLBACK
+Signal ID: wiki_international_ai_safety_report
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Graph Write Status: False
+Next Action: Do not retry
