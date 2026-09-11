@@ -339,3 +339,14 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
 Graph Write Status: False
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_1", "reasons": []}, {"accepted": true, "id": "signal_2", "reasons": []}, {"accepted": false, "id": "signal_3", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+Run ID: 233787f1-168f-4697-976a-b9744da64fd3
+RUN_BEGIN
+Signal ID: signal_3
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.032411722021711, reasons=('reflection_depth_exhausted',))
+Graph Write Status: False
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+RUN_END
