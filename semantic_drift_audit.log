@@ -67,3 +67,26 @@
     2
   ]
 }
+{
+  "database": ":memory:",
+  "limitations": [
+    "FTS5 lexical ranking",
+    "caller-selected queries"
+  ],
+  "observed_at": "2026-09-13T12:02:00.200159+00:00",
+  "semantic": [
+    {
+      "query": "SELECT 1",
+      "top_result_changed": false
+    }
+  ],
+  "structural": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "versions": [
+    1,
+    2
+  ]
+}
