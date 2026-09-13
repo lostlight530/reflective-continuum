@@ -111,7 +111,9 @@ RUN_END
 - 2026-09-13: SUCCESS_WITH_REJECTED_SIGNAL
 
 ## 缺失日期
-2026-09-13
+NONE
+
+Maintenance correction (2026-09-13): the previous missing-date value listed `2026-09-13`, but this report's own Hard Rollback and Daily Convergence sections both contain 2026-09-13 evidence. Current missing Daily dates are therefore `NONE`. The prior value remains recoverable in Git history.
 
 ## 数据来源边界
 - https://labs.cloudsecurityalliance.org/research/csa-research-note-alignment-readiness-gap-asi-risk-20260618/
