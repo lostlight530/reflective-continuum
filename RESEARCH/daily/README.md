@@ -19,4 +19,4 @@ SAME_DATE != SAME_STORE
 
 `ACCEPTED` describes local control flow; `REJECTED_FROM_INGESTION` describes policy/transaction outcome. Neither establishes external truth. Same date or digest does not prove shared persistence; retain path/URI/connection/store identity.
 
-R3/R4 Weekly may inherit or downgrade Daily evidence, never erase it. R5 Monthly closes only after the natural month ends. See the [August ledger](../monthly/2026-08-through-27-stage-audit.md) and [maintenance contract](../../GOVERNANCE/MAINTENANCE.md).
+R3/R4 Weekly may inherit or downgrade Daily evidence, never erase it. R5 Monthly closes only after the natural month ends. See the [August ledger](../../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) and [maintenance contract](../../GOVERNANCE/MAINTENANCE.md).
