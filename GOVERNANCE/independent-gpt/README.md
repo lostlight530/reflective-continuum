@@ -18,7 +18,7 @@ At audit start record the current date, default branch, `main` SHA, relevant ope
 3. Current evidence baseline, methodologies, ADRs, and repository-native reviewer / governance documents for subject-specific authority.
 4. Current `RESEARCH/` Daily / Weekly / Monthly artifacts for repository-visible research execution evidence.
 5. `historical-audits/INDEX.md` and referenced records for corrections, period audits, maintenance, and reconciliation history.
-6. Git history, PR chronology, and revision-matched execution evidence when store identity, timing, producer identity, or historical state is disputed.
+6. Git history, PR chronology, and revision-matched execution or GitHub Actions evidence when store identity, timing, producer identity, or historical state is disputed.
 
 ## Evidence boundaries
 
