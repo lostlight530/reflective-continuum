@@ -18,7 +18,7 @@ Semantic drift is limited to implemented structural deltas, FTS5 top-result iden
 
 Post-hoc calibration preserves the original body and adds disposition, reason, evidence boundary, authority, and replay status. Weekly may aggregate, preserve, or downgrade but cannot erase Daily failures. Monthly cannot create future dates. ADR/Methodology identifiers remain stable; update text when its implementation mapping, input/output, procedure, failure condition, or evidence boundary changes.
 
-Jules-generated records are historical inputs, not self-authenticating conclusions. Public code and local targeted checks establish only their tested surfaces; independent review calibrates claims; a human merges. This contract does not authorize changes to `CODE/**`, dependencies, frontend, `.github/**`, CI, or private control planes.
+Jules-generated records are historical inputs, not self-authenticating conclusions. Public code and local targeted checks establish only their tested surfaces; independent review calibrates claims; a human merges. This contract does not authorize changes to `CODE/**`, dependencies, frontend, `.github/**`, GitHub Actions or other repository runner/deployment surfaces, or private control planes.
 
 ## Done, rollback, escalation
 
