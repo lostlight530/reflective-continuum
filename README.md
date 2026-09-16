@@ -1,6 +1,6 @@
 # Reflective Continuum | 反射连续体
 
-[![DOI](https://zenodo.org/badge/1243495145.svg)](https://zenodo.org/badge/latestdoi/1243495145)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22791141.svg)](https://doi.org/10.5281/zenodo.22791141)
 
 Reflective Continuum is a standard-library Python reference for versioned graph storage and bounded analysis. It provides SQLite persistence, synchronized FTS5 lexical search, version deltas, PageRank-derived Shannon entropy, explicit validation, transactional ingestion, and optional bounded reflection hooks.
 
