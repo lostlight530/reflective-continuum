@@ -41,11 +41,16 @@ GAS
 - Signal 1: https://en.wikipedia.org/wiki/Metacognition
 - Signal 2: https://en.wikipedia.org/wiki/Determinism
 - Signal 3: https://en.wikipedia.org/wiki/AI_alignment
+- Source Authority: GENERAL_REFERENCE_ONLY
+- Source Lineage: SAME_CANONICAL_SOURCE_REVISIT_FROM_2026-09-14
+- Independent Evidence Added By Revisit: NO
+- Independent Primary Corroboration: NOT_ESTABLISHED
 
 ## 接受或拒绝状态
 - Signal 1: ACCEPTED
 - Signal 2: ACCEPTED
 - Signal 3: REJECTED_FROM_INGESTION
+- Semantics: `ACCEPTED` only records local InsightMorpher/Cortex Observer admission in this run. It does not mean the external statement was scientifically validated, independently corroborated, or promoted to durable knowledge.
 
 ## Hard Rollback Log
 [HARD_ROLLBACK]
@@ -56,7 +61,7 @@ Graph Write Status: False
 Action: REJECTED_FROM_INGESTION
 
 ## 中文综合
-今天完成了 R1 摄入循环，提取了三个关于元认知、决定论和AI对齐的外部信号。在处理这些信号时，关于元认知和决定论的信号被接受，关于AI对齐的信号由于反射深度耗尽而被拒绝。随后系统针对被拒绝的信号执行了硬回滚。
+今天完成了 R1 摄入循环，并再次读取与 2026-09-14 相同的三个通用参考来源。元认知与决定论信号被本地摄入流程接受，AI 对齐信号因 `reflection_depth_exhausted` 被拒绝并执行 HARD_ROLLBACK。这里的 `ACCEPTED` 只描述本地控制流结果；同一组来源在新日期重新访问也不增加独立证据，不证明新的外部观察窗口或科学验证。
 
 ## 英文综合
-The R1 ingestion cycle was executed today, extracting three external signals regarding metacognition, determinism, and AI alignment. During processing, the signals for metacognition and determinism were accepted, while the signal for AI alignment was rejected due to exhausted reflection depth. The system subsequently performed a hard rollback for the rejected signal.
+The R1 ingestion cycle revisited the same three general-reference source lineages used on 2026-09-14. Metacognition and determinism were admitted by the local ingestion flow, while AI alignment was rejected because `reflection_depth_exhausted` and hard-rolled back. `ACCEPTED` is only a local control-flow result, and revisiting the same source lineages on a new date does not add independent evidence or establish a new independent external observation.
