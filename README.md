@@ -1,5 +1,7 @@
 # Reflective Continuum | 反射连续体
 
+[![DOI](https://zenodo.org/badge/1243495145.svg)](https://zenodo.org/badge/latestdoi/1243495145)
+
 Reflective Continuum is a standard-library Python reference for versioned graph storage and bounded analysis. It provides SQLite persistence, synchronized FTS5 lexical search, version deltas, PageRank-derived Shannon entropy, explicit validation, transactional ingestion, and optional bounded reflection hooks.
 
 Reflective Continuum 是一个基于 Python 标准库的版本化图存储与有界分析参考实现。它提供 SQLite 持久化、同步的 FTS5 词法搜索、版本差异、由 PageRank 派生的 Shannon 熵、显式校验、事务式写入，以及可选的有界反射钩子。
