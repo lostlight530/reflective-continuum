@@ -30,11 +30,14 @@ SUCCESS_WITH_REJECTED_SIGNAL
 - signal_metacognition_01: https://en.wikipedia.org/wiki/Metacognition
 - signal_determinism_01: https://en.wikipedia.org/wiki/Determinism
 - signal_ai_alignment_01: https://en.wikipedia.org/wiki/AI_alignment
+- Source Authority: GENERAL_REFERENCE_ONLY
+- Independent Primary Corroboration: NOT_ESTABLISHED
 
 ## 接受或拒绝状态
 - signal_metacognition_01: ACCEPTED
 - signal_determinism_01: ACCEPTED
 - signal_ai_alignment_01: REJECTED_FROM_INGESTION
+- Semantics: `ACCEPTED` only records local InsightMorpher/Cortex Observer admission in this run. It does not mean the external statement was scientifically validated, independently corroborated, or promoted to durable knowledge.
 
 ## Hard Rollback Log
 ```
@@ -50,10 +53,10 @@ RUN_END
 ```
 
 ## 中文综合
-今日共收集三条外部信号，覆盖元认知、确定性及AI对齐等核心领域。其中关于元认知与确定性的两条信号成功通过验证并被系统接受。第三条关于AI对齐的信号因反射深度耗尽而被拒绝（HARD_ROLLBACK）。
+今日共收集三条外部参考信号，覆盖元认知、确定性及 AI 对齐。元认知与确定性两条信号被本地 InsightMorpher/Cortex Observer 摄入流程接受；这只表示本次本地控制流允许其进入后续状态，不构成对外部命题真实性、科学有效性或独立证据强度的验证。AI 对齐信号因 `reflection_depth_exhausted` 被拒绝并执行 HARD_ROLLBACK，未写入图谱。
 
 ## 英文综合
-Today, three external signals covering metacognition, determinism, and AI alignment were collected. Two signals concerning metacognition and determinism successfully passed validation and were accepted by the system. The third signal regarding AI alignment was rejected due to exhausted reflection depth, triggering a HARD_ROLLBACK.
+Three external reference signals covering metacognition, determinism, and AI alignment were collected. The metacognition and determinism signals were admitted by the local InsightMorpher/Cortex Observer ingestion flow; this is a local control-flow result, not scientific validation or independent corroboration of the external claims. The AI-alignment signal was rejected because `reflection_depth_exhausted` and was hard-rolled back without a graph write.
 
 ## Phase State
 LIQUID
