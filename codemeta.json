@@ -1,0 +1,24 @@
+{
+  "@context": "https://w3id.org/codemeta/3.1",
+  "@type": "SoftwareSourceCode",
+  "name": "Reflective Continuum",
+  "description": "A standard-library Python reference for versioned graph storage, lexical retrieval, bounded graph analysis, transactional ingestion, and explicit evidence and validation boundaries.",
+  "codeRepository": "https://github.com/lostlight530/reflective-continuum",
+  "license": "https://spdx.org/licenses/MIT.html",
+  "author": {
+    "@type": "Person",
+    "name": "lostlight530",
+    "url": "https://github.com/lostlight530"
+  },
+  "applicationCategory": "Research Software",
+  "isAccessibleForFree": true,
+  "programmingLanguage": "Python",
+  "keywords": [
+    "research software",
+    "graph storage",
+    "sqlite",
+    "lexical retrieval",
+    "pagerank",
+    "reproducibility"
+  ]
+}
