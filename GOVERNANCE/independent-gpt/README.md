@@ -2,9 +2,9 @@
 
 Status: current public recovery kernel  
 Calibration: 2026-09-17  
-Scope: repository-local maintenance recovery, independent review, reconciliation, and bounded repair
+Scope: repository-local maintenance recovery, independent review handoff, reconciliation, and bounded repair
 
-This directory is the public handoff point for a memoryless Independent GPT reviewer. It is deliberately smaller than the repository's native research system and does not replace research, implementation, evidence, or private Jules task controls.
+This directory is the public handoff point for a memoryless Independent GPT reviewer. It is deliberately smaller than the repository's native research system and does not replace research, implementation, evidence, reviewer-state semantics, or private Jules task controls.
 
 ## Recovery order
 
@@ -17,9 +17,10 @@ At start record the current date, default branch, current `main` SHA, relevant o
 1. Current implementation and current repository structure only as needed to understand maintenance ownership.
 2. `GOVERNANCE/MAINTENANCE.md` — canonical public maintenance contract.
 3. `GOVERNANCE/README.md` — governance/control-plane router.
-4. Current repository-native maintenance/reviewer documents that directly own the subject.
-5. Current `RESEARCH/` and historical records only as evidence inputs when they are needed to test a maintenance claim; they are not default edit targets for this maintenance task.
-6. Git history, PR chronology, revision-matched execution evidence, and Actions evidence when timing, ownership, producer identity, or delivery state is disputed.
+4. `GOVERNANCE/INDEPENDENT_REVIEW.md` — non-operative reviewer-side interpretation state machine. It can establish review dispositions such as `CALIBRATION_REQUIRED`, but it does not itself authorize writes or delivery.
+5. Current repository-native maintenance/reviewer documents that directly own the subject.
+6. Current `RESEARCH/` and historical records only as evidence inputs when they are needed to test a maintenance claim; they are not default edit targets for this maintenance task.
+7. Git history, PR chronology, revision-matched execution evidence, and Actions evidence when timing, ownership, producer identity, or delivery state is disputed.
 
 ## Task identity and idempotency
 
@@ -38,11 +39,19 @@ Never write merely to test whether writes are possible.
 
 ## Evidence boundaries
 
-Keep repository fact, runner evidence, external evidence, historical evidence, and inference separate. A current file's existence does not prove an earlier execution. Later success does not erase earlier failure. A correction does not rewrite history. Unknown remains unknown.
+Keep repository fact, runner evidence, external evidence, historical evidence, review disposition, and inference separate. A current file's existence does not prove an earlier execution. Later success does not erase earlier failure. A correction does not rewrite history. Unknown remains unknown.
 
 Native Jules records remain native Jules records. Independent GPT may use them as repository-visible evidence but does not expose or reconstruct private Jules prompts, hidden memory, credentials, or unrelated operator context.
 
 A passing test, checker, or workflow is evidence only for the exact revision/environment/surface it actually checked. Contract review is not checker execution. Unrun validation is `NOT_EXECUTED`.
+
+`GOVERNANCE/INDEPENDENT_REVIEW.md` and this recovery kernel have different jobs:
+
+```text
+review state != maintenance action
+CALIBRATED != repair delivered
+ACCEPTED_FOR_REPOSITORY_KNOWLEDGE != merged
+```
 
 ## Maintenance decision
 
@@ -79,6 +88,7 @@ A durable handoff should make it possible to recover:
 - maintenance scope and owning files;
 - relevant logical period if any;
 - overlapping PR/branch state;
+- review disposition when one exists;
 - checks actually run and checks not run;
 - confirmed defect or `NO_CHANGE_REQUIRED` basis;
 - unresolved items and negative evidence;
