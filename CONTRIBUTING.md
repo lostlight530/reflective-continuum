@@ -1,101 +1,79 @@
 # Contributing
 
-Reflective Continuum accepts bounded changes that strengthen repository correctness, maintenance discipline, reproducibility, and inspectable evidence without silently expanding capability claims.
+Reflective Continuum welcomes bounded contributions to its graph-state implementation, tests, ADRs, methodology, evidence documentation, reproducibility rules, and repository infrastructure.
 
-## Authority and maintenance boundary
+## Start from the owning surface
 
-Before changing anything, recover current repository truth from the latest merged `main`. Identify the owning implementation or contract, relevant open pull requests, active maintenance branches, and the exact base revision used for the work.
+Before changing anything, identify what currently owns the behavior or interpretation:
 
-Repository maintenance is governed by `GOVERNANCE/MAINTENANCE.md`. Memoryless Independent GPT recovery is governed by `GOVERNANCE/independent-gpt/README.md`. Private Jules task prompts and repository memory are producer-side controls and are not reconstructed or copied into public files unless the maintainer explicitly publishes them.
+- `CODE/` and `tests/` own executable behavior and regression evidence;
+- `ADR/` records architectural decisions and consequences;
+- methodology/evidence documents own interpretation and research boundaries;
+- `REPRODUCIBILITY.md` owns revision, environment, database, and replay requirements;
+- root metadata, `.github/`, security, citation, and release files are repository infrastructure;
+- historical research and audit material remains point-in-time evidence unless a correction explicitly owns it.
 
-This repository currently has no public `AGENTS.md`. Do not infer one from private automation, prior chats, or model memory.
+## Implementation changes
 
-A maintenance/review task may read research, implementation, evidence, ADR, methodology, and historical records when needed to establish repository truth. Those surfaces are not automatically edit targets. Change them only when the current owning contract explicitly makes them part of the repair.
+For executable behavior:
 
-## Change ownership
+1. reproduce the defect or define the new contract at a named revision;
+2. identify storage identity, schema/version, inputs, outputs, and failure behavior;
+3. add or update proportionate regression coverage;
+4. document migrations or compatibility effects when persistent state changes;
+5. update the owning ADR or method only when the architectural or methodological contract actually changes.
 
-For any proposed change:
+Runtime code is standard-library only. A proposed dependency needs a technical reason, security/license review, update policy, and rollback path.
 
-1. identify the owning file or implementation surface;
-2. distinguish current state from historical point-in-time evidence;
-3. preserve failure, unknown, missing, rejected, provisional, and blocked states;
-4. avoid parallel fixes when another live PR or branch owns the same surface or logical period;
-5. keep the aggregate diff bounded to the justified repair.
+## Evidence and state claims
 
-Do not create activity-only commits. When no confirmed maintenance defect exists, the correct maintenance outcome is `NO_CHANGE_REQUIRED`.
-
-## Jules and Independent GPT
-
-Jules-produced artifacts are repository inputs, not self-authenticating conclusions. Independent GPT review may calibrate maintenance interpretation, detect drift, and prepare bounded repairs, but it does not prove what Jules privately consumed or intended.
-
-Keep these planes distinct:
+Reflective Continuum deliberately separates local state observations from stronger semantic claims.
 
 ```text
-Jules producer execution != Independent GPT review
-Independent GPT review != GitHub Actions
-workflow definition != workflow execution
-current path presence != earlier execution
-later success != earlier success
-correction != history rewrite
+connection-local state != cross-run persistence
+snapshot digest != semantic equivalence
+repeatability drill != long-horizon convergence
+local ingestion acceptance != source truth
+lexical top-result stability != semantic stability
+archived publication != later main revision
 ```
 
-No public contribution should disclose private prompts, credentials, hidden memory, or unrelated operator context.
+When a result depends on a database, identify the database path/URI or other storage identity and the revision/environment used to observe it. Preserve unknown, rejected, failed, missing, and not-computed states instead of strengthening them for readability.
 
-## Executable changes
+## Verification
 
-Before changing executable behavior, identify the governing ADR/method, define inputs/outputs/errors/migration, add a regression test, and preserve separately owned paths unless the change explicitly owns them. Database schema changes require a migration and compatibility note; never silently reinterpret existing rows.
+Use checks relevant to the changed surface. Current targeted entry points include:
 
-Use the repository-supported Python environment for executable-path verification. Current targeted commands include:
-
-```text
+```bash
 python -m unittest discover -s tests -v
 python -m CODE.tasks.cortex_selfcheck
 python -m CODE.tasks.convergence_drill --iterations 100
 ```
 
-Run only checks supported by the actual environment. Record exact commands and outcomes. A documentation-only or governance-only change may intentionally leave runtime checks unrun; report those checks as `NOT_EXECUTED`, never as passed.
+Record exact commands and observed results in the pull request. A check that was not run is not a pass.
 
-Runtime code is standard-library only. A proposed dependency needs owner, threat/license review, alternative analysis, lock/update policy, and rollback.
+For database changes, include the relevant schema/state assumptions and use copies or temporary fixtures for destructive or migration testing. Never include private production data in public artifacts.
 
-## Evidence and state claims
+## Documentation, ADRs, and corrections
 
-A state claim must name the storage identity and observation boundary that support it.
+Prefer the smallest current owning document. Do not rewrite historical Daily/Weekly/Monthly or archived audit material merely because current terminology or interpretation has improved. Correct current documentation forward while preserving the earlier record's recoverable meaning.
 
-- Do not infer that two tasks use the same database merely because both use `GraphDB`.
-- A bare SQLite `:memory:` database is connection-local; cross-task persistence must be independently established.
-- `Nodes=0 / Edges=0` is not a global health verdict when cause and persistence path are unresolved.
-- Import/init success, rule-engine success, integrity checks, persistence success, and semantic correctness are separate claims.
-- Use `INDETERMINATE_EMPTY_STATE` when an empty database has multiple plausible causes that have not been discriminated.
-- Use `PERSISTENCE_LINK_NOT_VERIFIED` when an R1 graph-write statement cannot be tied to the exact storage inspected by R2.
-
-`ACCEPTED` and `REJECTED_FROM_INGESTION` describe repository control flow, not truth value. Source class/authority, exact proposition support, ingestion result, graph-write result, and later persistence observation remain separate evidence dimensions.
-
-Synthetic/test transitions and operational transitions remain separate. If event origin cannot be established, retain `NOT_COMPUTED` rather than inventing an operational count. `STABLE` must be scoped to the exact audited surface.
-
-## Historical and periodic records
-
-Historical research and archived audit records are point-in-time evidence. Do not silently rewrite them to make them agree with later knowledge. Corrections belong in the current owning maintenance/control source or an explicit successor when the owning source cannot safely carry the correction.
-
-Weekly/Monthly aggregation must not erase Daily failures, rejected signals, missing fields, or unresolved identity. A later successful run does not retroactively prove an earlier unobserved run.
-
-## AI-assisted work
-
-AI-assisted work follows `AI_USE_DISCLOSURE.md`. Generated output is untrusted until reviewed against repository truth and, when material, primary sources. Model agreement is not independent evidence.
+AI assistance may support drafting or consistency review, but generated text is not independent evidence. Contributors remain responsible for code, claims, citations, and verification.
 
 ## Pull requests
 
-A repair PR must state:
+Use the repository pull-request template and include:
 
-- exact base `main` revision and current head;
-- owning maintenance/implementation scope;
-- overlapping PR/branch check;
-- changed files and deliberately unchanged boundaries;
-- commands/checkers/workflows actually executed and their outcomes;
-- checks not executed;
-- security/privacy/retention impact when applicable;
-- rollback boundary;
-- unresolved evidence or coordination state.
+- the problem and bounded change;
+- affected implementation, storage, ADR/method, evidence, or metadata surfaces;
+- verification actually performed;
+- checks or environments not exercised;
+- compatibility, migration, and historical impact;
+- security/privacy implications;
+- a practical rollback.
 
-Before delivery, refresh current `main`, recheck overlap, inspect the aggregate `main...branch` diff, open one Draft PR, and stop for maintainer review unless a different repository-native workflow explicitly applies.
+## Security, privacy, license, and attribution
 
-Do not push directly to `main`, force-push history, auto-merge, or claim universal health from a local check.
+Follow `SECURITY.md` for sensitive reports. Do not publish credentials, private data, or exploit details requiring coordinated disclosure.
+
+Contributions to repository-owned work are submitted under the current `LICENSE`. Third-party material retains its own attribution and licensing, and Git/PR history remains the source of contribution attribution.
