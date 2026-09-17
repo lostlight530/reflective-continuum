@@ -4,6 +4,8 @@
   "name": "Reflective Continuum",
   "description": "A standard-library Python reference for versioned graph storage, lexical retrieval, bounded graph analysis, transactional ingestion, and explicit evidence and validation boundaries.",
   "codeRepository": "https://github.com/lostlight530/reflective-continuum",
+  "identifier": "https://doi.org/10.5281/zenodo.22791141",
+  "datePublished": "2026-09-16",
   "license": "https://spdx.org/licenses/MIT.html",
   "author": {
     "@type": "Person",

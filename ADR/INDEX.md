@@ -1,7 +1,7 @@
 # Reflective Continuum Architecture Decision Index
 
 Status: architecture and implementation-boundary map  
-Current calibration: 2026-08-27
+Current calibration: 2026-09-17
 
 ADR numbering is an identifier sequence. A decision supersedes another only when explicitly stated.
 
@@ -14,7 +14,7 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 | [ADR-003](./ADR-003.md) | Structural, lexical top-result, and rank deltas are distinct | `drift_detector.py` |
 | [ADR-004](./ADR-004.md) | Versioned SQLite graph storage has connection/store scope | `continuum_db.py` |
 | [ADR-005](./ADR-005.md) | PageRank-derived Shannon entropy is a graph statistic | `entropy_analyzer.py` |
-| [ADR-006](./ADR-006.md) | Ingestion outcome and source support are independent | `tasks/insight_morpher.py`, `cortex_observer.py`, research evidence |
+| [ADR-006](./ADR-006.md) | Ingestion outcome and source support are independent | `tasks/insight_morpher.py`, `cortex_observer.py`, retained research evidence |
 | [ADR-007](./ADR-007.md) | Executable policy lives in `RuleConfig`/`RuleEngine`, not prose | `reflective_validator.py` |
 | [ADR-008](./ADR-008.md) | Task wrappers operate only on explicit inputs/outputs | `CODE/tasks/**` |
 | [ADR-009](./ADR-009.md) | Evaluation claims stay inside the exact evidence surface | tasks, storage, analysis, research artifacts |
@@ -42,6 +42,17 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 
 `CODE/tasks/**`: connection-local selfcheck, selected-version lexical/structural drift audit, fixed-fixture repeatability drill, caller-provided signal ingestion.
 
+## Repository knowledge layers
+
+- `SPECIFICATION.md` describes current engineering behavior and compatibility boundaries.
+- `ADR/**` records durable decisions and non-capability boundaries.
+- `METHODOLOGY/**` records measurement and interpretation procedures.
+- `EVIDENCE_BASELINE.md` is a dated 2026-08-27 calibration and remains point-in-time evidence.
+- `REPRODUCIBILITY.md` owns current revision/environment/store/fixture/run provenance requirements.
+- retained research/audit records are historical evidence for their declared cutoff.
+- `GOVERNANCE/**` owns public maintenance/review rules, not graph/runtime semantics.
+- `CITATION.cff`, `codemeta.json`, and `RELEASE_POLICY.md` identify scholarly publication/release surfaces; they do not prove runtime or scientific validity.
+
 ## Cross-layer rules
 
 1. Code defines implemented behavior; project vocabulary does not add capability.
@@ -51,10 +62,9 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 5. A default `:memory:` store is not durable cross-task memory.
 6. A repeated snapshot digest is not persistence through time without store identity.
 7. Same-day R1 acceptance and R2 empty state do not establish persistence or data loss without shared store identity.
-8. Weekly/Monthly summaries do not erase Daily failures/errors or historical runtime gaps.
+8. Periodic summaries do not erase Daily failures/errors or historical runtime gaps.
 9. External protocols/papers remain reference material unless a local implementation exists.
-
-## Related navigation
+10. An archived DOI identifies a publication object; it does not identify every later `main` revision, database state, or successful replay.
 
 ## Status
 
@@ -76,8 +86,15 @@ Adding, retiring, or superseding an ADR requires synchronized index and authorit
 
 Compare indexed paths with repository files and review each ADR's implementation and evidence boundary; path agreement does not prove semantics.
 
+## Current navigation
+
 - [Engineering specification](../SPECIFICATION.md)
 - [Methodology index](../METHODOLOGY/INDEX.md)
 - [Evidence baseline](../EVIDENCE_BASELINE.md)
+- [Reproducibility](../REPRODUCIBILITY.md)
+- [Release policy](../RELEASE_POLICY.md)
+
+## Historical calibration references
+
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)

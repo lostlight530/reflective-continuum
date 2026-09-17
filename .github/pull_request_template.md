@@ -1,48 +1,54 @@
-## Outcome and exact scope
+## Summary
 
-- Base `main` SHA:
-- Head SHA:
-- Owning surface / logical period:
-- Overlapping PR/branch check:
+What problem does this change address, and what changed?
 
-## Change classification
-- [ ] implementation repair
-- [ ] maintenance / governance repair
-- [ ] evidence / documentation correction
-- [ ] other bounded repository change
+## Change type
 
-## Evidence classification
-- [ ] repository observation
-- [ ] revision-matched execution / runner evidence
-- [ ] primary-source support
-- [ ] proposal/hypothesis explicitly labelled
-- [ ] unknown / unresolved state retained where evidence is insufficient
+- [ ] implementation / bug fix
+- [ ] tests / validation
+- [ ] ADR / methodology / evidence
+- [ ] storage / schema / migration
+- [ ] repository infrastructure / metadata
+- [ ] maintenance / governance
 
-## Changed and deliberately unchanged boundaries
+## Affected surfaces
 
-## Verification actually executed
+List the code, database/state, ADR/method, evidence, documentation, or metadata affected. Note related surfaces intentionally left unchanged.
 
-List exact commands/checkers/workflows and results. Do not treat contract review as execution.
+## State and evidence impact
 
-## Verification not executed
+Describe the storage identity, schema/version, inputs, observations, and interpretation affected when relevant.
 
-Use `NOT_EXECUTED` for checks that were not run.
+Keep connection-local state, cross-run persistence, repeatability, source support, and semantic claims separate.
 
-## Concurrency and delivery
-- [ ] Fresh `main` and open PR/branch state were rechecked before delivery
-- [ ] Aggregate `main...branch` diff was reviewed
-- [ ] No activity-only change was created where `NO_CHANGE_REQUIRED` was appropriate
-- [ ] No direct `main` write, force-push, or auto-merge is requested by this PR
+## Verification performed
 
-## Security, privacy, permissions, and retention
+List exact commands/checks actually run and their observed results.
 
-## Historical / evidence boundary
-- [ ] Historical point-in-time records were not silently rewritten
-- [ ] Failure, missing, rejected, provisional, blocked, and unknown states were preserved
-- [ ] Private Jules prompts / hidden memory / credentials were not exposed
+## Known limits / verification not performed
+
+List material checks, environments, storage identities, or evidence questions not exercised or unresolved.
+
+## Compatibility, migration, and historical impact
+
+Describe schema/data migration, compatibility, reproducibility, or point-in-time evidence impact. Preserve historical records when a forward correction is sufficient.
+
+## Security and privacy
+
+Describe impact on database contents, external inputs, permissions, public exposure, dependencies, or sensitive data. Follow `SECURITY.md` for sensitive reports.
+
+## Publication / metadata impact
+
+State whether README, citation metadata, release metadata, or other public discovery surfaces must remain synchronized.
 
 ## Rollback
 
-## Maintainer review
+Describe the smallest safe rollback.
 
-Final doctrine and merge authority remains with the maintainer.
+## Review checklist
+
+- [ ] The diff is limited to the stated purpose.
+- [ ] Tests/checks described as passing were actually executed.
+- [ ] State identity and evidence scope are explicit where material.
+- [ ] Historical evidence was not silently rewritten to match later state.
+- [ ] No credentials, private data, caches, or unrelated generated/local state is included.

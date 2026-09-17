@@ -88,10 +88,15 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 
 本仓库不是认知系统、语义嵌入模型、真理引擎、安全证明、自主研究者、分布式数据库、认证授权服务或生产服务。数据库权限、隔离、备份、加密、保留策略、配额、不可信输入控制与事件响应均由调用者负责。
 
-## Governing evidence | 规范与证据
+## Governing knowledge and evidence | 长期知识、规范与证据
 
 - [Engineering specification](SPECIFICATION.md) | 工程规范
-- [Evidence baseline](EVIDENCE_BASELINE.md) | 证据基线
-- [Reproducibility](REPRODUCIBILITY.md) | 可复现性
+- [ADR index](ADR/INDEX.md) | 长期架构决策与实现边界
+- [Methodology index](METHODOLOGY/INDEX.md) | 测量、解释与证据连续性方法
+- [Evidence baseline](EVIDENCE_BASELINE.md) | 有日期边界的证据基线，不是实时周期状态页
+- [Reproducibility](REPRODUCIBILITY.md) | Git revision / environment / store / fixture / command / result 边界
+- [Release policy](RELEASE_POLICY.md) | 软件出版、归档对象与 later `main` 的边界
 - [Security policy](SECURITY.md) | 安全策略
-- [Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md) | 长期维护契约
+- [Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md) | 当前维护规则；不定义图运行时语义
+
+The ADR and Methodology indexes are durable current navigation surfaces. Dated evidence/audit records remain point-in-time evidence for their own cutoffs and are not silently promoted into current runtime state.
