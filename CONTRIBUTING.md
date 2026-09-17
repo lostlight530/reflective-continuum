@@ -1,18 +1,51 @@
 # Contributing
 
-Reflective Continuum accepts small changes that strengthen versioned storage, bounded analysis, provenance, and reproducibility.
+Reflective Continuum accepts bounded changes that strengthen repository correctness, maintenance discipline, reproducibility, and inspectable evidence without silently expanding capability claims.
 
-## Jules automation boundary
+## Authority and maintenance boundary
 
-This contribution guide governs human and independent-maintainer changes to the repository. It is outside the existing Jules scheduled automation stream and is not a Jules task prompt.
+Before changing anything, recover current repository truth from the latest merged `main`. Identify the owning implementation or contract, relevant open pull requests, active maintenance branches, and the exact base revision used for the work.
 
-Do not assume Jules R1/R2/R3/R4/R5 tasks consume or enforce this file. Existing Jules automation remains governed by its own task prompts, repository memory, and any explicit Jules instruction surface. This maintenance intentionally does not create or modify `AGENTS.md`, Jules prompts, or Jules memory.
+Repository maintenance is governed by `GOVERNANCE/MAINTENANCE.md`. Memoryless Independent GPT recovery is governed by `GOVERNANCE/independent-gpt/README.md`. Private Jules task prompts and repository memory are producer-side controls and are not reconstructed or copied into public files unless the maintainer explicitly publishes them.
 
-The rules below may be used to review or correct Jules-generated artifacts after generation, but that post-hoc audit does not mean the automation itself followed them.
+This repository currently has no public `AGENTS.md`. Do not infer one from private automation, prior chats, or model memory.
 
-Before coding, identify the governing ADR/method, define inputs/outputs/errors/migration, add a regression test for executable behavior, and preserve separately owned README, homepage, `.nojekyll`, RESEARCH, and license paths unless the change explicitly owns them. Database schema changes require a migration and compatibility note; never silently reinterpret existing rows.
+A maintenance/review task may read research, implementation, evidence, ADR, methodology, and historical records when needed to establish repository truth. Those surfaces are not automatically edit targets. Change them only when the current owning contract explicitly makes them part of the repair.
 
-Use Python 3.12 or 3.14 for executable-path verification:
+## Change ownership
+
+For any proposed change:
+
+1. identify the owning file or implementation surface;
+2. distinguish current state from historical point-in-time evidence;
+3. preserve failure, unknown, missing, rejected, provisional, and blocked states;
+4. avoid parallel fixes when another live PR or branch owns the same surface or logical period;
+5. keep the aggregate diff bounded to the justified repair.
+
+Do not create activity-only commits. When no confirmed maintenance defect exists, the correct maintenance outcome is `NO_CHANGE_REQUIRED`.
+
+## Jules and Independent GPT
+
+Jules-produced artifacts are repository inputs, not self-authenticating conclusions. Independent GPT review may calibrate maintenance interpretation, detect drift, and prepare bounded repairs, but it does not prove what Jules privately consumed or intended.
+
+Keep these planes distinct:
+
+```text
+Jules producer execution != Independent GPT review
+Independent GPT review != GitHub Actions
+workflow definition != workflow execution
+current path presence != earlier execution
+later success != earlier success
+correction != history rewrite
+```
+
+No public contribution should disclose private prompts, credentials, hidden memory, or unrelated operator context.
+
+## Executable changes
+
+Before changing executable behavior, identify the governing ADR/method, define inputs/outputs/errors/migration, add a regression test, and preserve separately owned paths unless the change explicitly owns them. Database schema changes require a migration and compatibility note; never silently reinterpret existing rows.
+
+Use the repository-supported Python environment for executable-path verification. Current targeted commands include:
 
 ```text
 python -m unittest discover -s tests -v
@@ -20,11 +53,11 @@ python -m CODE.tasks.cortex_selfcheck
 python -m CODE.tasks.convergence_drill --iterations 100
 ```
 
-A documentation-only or evidence-only change may intentionally leave runtime checks unrun. In that case, report them as unrun rather than passed.
+Run only checks supported by the actual environment. Record exact commands and outcomes. A documentation-only or governance-only change may intentionally leave runtime checks unrun; report those checks as `NOT_EXECUTED`, never as passed.
 
-Runtime code is standard-library only. A proposed dependency needs owner, threat/license review, alternative analysis, lock/update policy, and rollback. AI-assisted work follows `AI_USE_DISCLOSURE.md`; generated output is untrusted until reviewed.
+Runtime code is standard-library only. A proposed dependency needs owner, threat/license review, alternative analysis, lock/update policy, and rollback.
 
-## State and persistence claims
+## Evidence and state claims
 
 A state claim must name the storage identity and observation boundary that support it.
 
@@ -35,58 +68,34 @@ A state claim must name the storage identity and observation boundary that suppo
 - Use `INDETERMINATE_EMPTY_STATE` when an empty database has multiple plausible causes that have not been discriminated.
 - Use `PERSISTENCE_LINK_NOT_VERIFIED` when an R1 graph-write statement cannot be tied to the exact storage inspected by R2.
 
-## Ingestion and evidence claims
+`ACCEPTED` and `REJECTED_FROM_INGESTION` describe repository control flow, not truth value. Source class/authority, exact proposition support, ingestion result, graph-write result, and later persistence observation remain separate evidence dimensions.
 
-`ACCEPTED` and `REJECTED_FROM_INGESTION` describe repository control flow, not truth value.
+Synthetic/test transitions and operational transitions remain separate. If event origin cannot be established, retain `NOT_COMPUTED` rather than inventing an operational count. `STABLE` must be scoped to the exact audited surface.
 
-For every material external signal, distinguish:
+## Historical and periodic records
 
-1. source class and authority
-2. exact proposition supported by the source
-3. ingestion result
-4. graph-write result
-5. later persistence observation, if any
+Historical research and archived audit records are point-in-time evidence. Do not silently rewrite them to make them agree with later knowledge. Corrections belong in the current owning maintenance/control source or an explicit successor when the owning source cannot safely carry the correction.
 
-A vendor framework or manifesto may support “the organization proposes X”; it does not automatically establish that X is a general law or a guarantee. A position paper remains a proposal/position unless stronger evidence is independently established.
+Weekly/Monthly aggregation must not erase Daily failures, rejected signals, missing fields, or unresolved identity. A later successful run does not retroactively prove an earlier unobserved run.
 
-## Drift and transition claims
+## AI-assisted work
 
-Do not merge synthetic and operational transition evidence.
-
-- test-generated/synthetic transitions stay synthetic
-- runtime transitions require operational provenance
-- if event origin cannot be separated, operational count stays `NOT_COMPUTED`
-- `STABLE` must be scoped to the audited data; prefer `NO_DRIFT_DETECTED_WITHIN_AUDIT_SCOPE` when important dimensions remain uncomputed
-
-## Daily → Weekly inheritance
-
-When this independent review framework is applied to Jules-produced artifacts, Weekly artifacts preserve the Daily evidence history.
-
-- a later successful test run does not erase an earlier Daily error
-- rejected signals remain rejected in aggregate summaries
-- missing or uncomputed fields remain visible
-- Weekly reports may aggregate or downgrade Daily evidence but may not strengthen it without a new explicit evidence record
-
-Repeated sources should be labelled as revalidation, control signals, new claims from an existing source, or duplicates when novelty matters.
-
-These inheritance rules are reviewer-side governance, not a claim that Jules automation consumes this file.
-
-## Corrections
-
-Do not silently rewrite historical R1–R4 records solely to make them consistent with later knowledge. If the original artifact is part of the execution history, add a calibration or erratum that identifies the affected claim, corrected interpretation, precedence, and remaining uncertainty.
-
-Do not modify `SPECIFICATION.md`, `ADR/**`, `METHODOLOGY/**`, or `REFERENCES/**` merely to eliminate an audit finding. Architectural repair must be a separate intentional change with its own evidence and review.
+AI-assisted work follows `AI_USE_DISCLOSURE.md`. Generated output is untrusted until reviewed against repository truth and, when material, primary sources. Model agreement is not independent evidence.
 
 ## Pull requests
 
-Pull requests must state exact revision, commands/results when commands were run, unrun checks, security/privacy/retention impact, and rollback where applicable. Failed or unavailable required checks prevent completion claims.
+A repair PR must state:
 
-Evidence-only pull requests should additionally state:
+- exact base `main` revision and current head;
+- owning maintenance/implementation scope;
+- overlapping PR/branch check;
+- changed files and deliberately unchanged boundaries;
+- commands/checkers/workflows actually executed and their outcomes;
+- checks not executed;
+- security/privacy/retention impact when applicable;
+- rollback boundary;
+- unresolved evidence or coordination state.
 
-- evidence window
-- source classes checked
-- storage/persistence assumptions
-- whether historical artifacts were preserved
-- what claim strength changed
-- unresolved state or topology debt
-- whether the change affects Jules automation instructions; default is `NO` unless a Jules instruction surface is explicitly modified
+Before delivery, refresh current `main`, recheck overlap, inspect the aggregate `main...branch` diff, open one Draft PR, and stop for maintainer review unless a different repository-native workflow explicitly applies.
+
+Do not push directly to `main`, force-push history, auto-merge, or claim universal health from a local check.
