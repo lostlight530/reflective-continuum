@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `DEFINITION / IMPLEMENTATION CONTRACT`
+> - **Role:** Primary current specification for Reflective Continuum implementation semantics and evidence boundaries
+> - **Authority:** Highest repository-native prose authority for current implementation behavior, subordinate to direct current-code behavior when a conflict is observed
+> - **Current meaning:** Use this file to recover the real mechanics behind reflection, drift, database/search behavior, persistence identity, rollback scope, task wrappers, and output contracts
+> - **Evidence / implementation boundary:** Specification presence does not prove a run occurred, a historical artifact consumed the current code, or an external semantic claim is true
+> - **Cross-document relation:** ADRs explain design rationale; Methodology defines procedures; Reproducibility defines revision/store/replay identity; References are non-normative external context
+> - **Update trigger:** Update whenever current implementation or machine contracts materially change or prose no longer describes them accurately
+> - **Preservation rule:** Existing subject history and dated examples retain their original time boundary. This pass clarifies current interpretation and corrects only confirmed current-authority drift
+
 # Reflective Continuum Engineering Specification
 
 - Version: 2026.08-r2
