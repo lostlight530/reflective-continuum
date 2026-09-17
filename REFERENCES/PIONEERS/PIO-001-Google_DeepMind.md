@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `EXTENSION / NON-NORMATIVE REFERENCE`
+> - **Role:** Active external reference map for **Google DeepMind**
+> - **Authority:** Non-normative research context: useful for tracing external ideas and comparisons but not an implementation or capability authority
+> - **Current meaning:** External mechanisms remain external. Similarity, inspiration, or interpretive mapping must not be promoted into a claim that Reflective Continuum implements the cited system
+> - **Evidence / implementation boundary:** Paper/company statements, analogy, and source prestige do not establish local reflection, semantic search, persistence, rollback, or convergence behavior
+> - **Cross-document relation:** Current Specification/code and ADR/Methodology outrank this reference map for repository facts; external facts require proposition-specific source support
+> - **Update trigger:** Update for source-identity correction, materially changed external interpretation, broken current reference, or explicit new comparison—not for routine style modernization
+> - **Preservation rule:** Existing subject prose remains part of the repository record. This pass narrows current interpretation without erasing earlier framing or source history
+
 # Google DeepMind: evaluator-backed search
 
 - Reviewed: 2026-08-05

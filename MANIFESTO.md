@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `DEFINITION / VISION`
+> - **Role:** Repository manifesto and philosophical framing for reflective-system goals
+> - **Authority:** Vision and design-orientation authority only; not implementation, evidence, or capability authority
+> - **Current meaning:** Use the manifesto to understand intended research direction and conceptual motivation while resolving concrete behavior through Specification, code, ADRs, and Methodology
+> - **Evidence / implementation boundary:** Philosophical language such as reflection, continuity, adaptation, or self-correction must not be read as proof of autonomous cognition, semantic understanding, durable memory, or convergence
+> - **Cross-document relation:** Specification/code own current mechanics; ADR/Methodology own decisions and methods; reference files provide external context; dated evidence owns observations
+> - **Update trigger:** Update only when durable project doctrine or research direction changes, not when a runtime detail or periodic result changes
+> - **Preservation rule:** Existing subject prose remains part of the repository record. This pass narrows current interpretation without erasing earlier framing or source history
+
 # Reflective Continuum Manifesto
 
 Reflection is an engineering discipline of making state, assumptions, transformations, and failures observable. It is not a claim that software possesses consciousness or can certify its own correctness.
