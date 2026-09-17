@@ -1,6 +1,6 @@
 # Evidence continuity and historical reconciliation
 
-- Method version: 2026-08-24
+- Method version: 2026-09-18
 - Governing decision: ADR-010
 
 ## Objective
@@ -71,6 +71,8 @@ Local `ACCEPTED` / `REJECTED_FROM_INGESTION` remain separate control-flow states
 
 ## August reference cases
 
+The cases below are historical examples at their own August 2026 dates. They do not define current September runtime or periodic status.
+
 ### 2026-08-06 R2
 
 - current path: `PRESENT`
@@ -87,9 +89,9 @@ R1 reports local graph writes while multiple R2 records observe empty databases,
 ### Historical R2 results
 
 - 2026-08-07 through 2026-08-10: `26 passed / 1 error`
-- 2026-08-17 through 2026-08-23: `26 passed / 1 failed`
+- 2026-08-17 through 2026-08-27: `26 passed / 1 failed`
 
-Later Weekly results do not erase those Daily states.
+The second range is the current retained historical interpretation through the 2026-08-27 evidence cutoff. Later Weekly results and later successful tasks do not erase those Daily states, and this methodology does not infer post-cutoff results from the range.
 
 ### 2026-08-23 source support
 
@@ -113,3 +115,5 @@ Reconciliation fails when it invents a shared store, erases a failed/error resul
 ## Evidence boundary
 
 This methodology reconciles documentary/state evidence. It does not create missing execution, a shared database, source truth, or durable persistence.
+
+Historical reference ranges inside this methodology remain point-in-time examples rather than a live status dashboard.
