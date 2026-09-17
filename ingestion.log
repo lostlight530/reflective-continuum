@@ -403,3 +403,14 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Graph Write Status: False
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+RUN_BEGIN
+Run ID: auto
+{"total": 3, "accepted": 2, "results": [{"id": "signal_metacognition_01", "accepted": true, "reasons": []}, {"id": "signal_alignment_01", "accepted": true, "reasons": []}, {"id": "signal_safety_01", "accepted": false, "reasons": ["reflection_depth_exhausted"]}]}
+HARD_ROLLBACK
+Signal ID: signal_safety_01
+Reason: reflection_depth_exhausted
+Observer Status: REJECTED
+Graph Write Status: False
+Subsequent Action: Skip and proceed
+RUN_END
