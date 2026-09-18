@@ -1,13 +1,13 @@
 > [!NOTE]
 > **Current architecture interpretation — 2026-09-18**
 > - **Subject class:** `DEFINITION / VISION`
-> - **Role:** Repository manifesto and philosophical framing for reflective-system goals
-> - **Authority:** Vision and design-orientation authority only; not implementation, evidence, or capability authority
-> - **Current meaning:** Use the manifesto to understand intended research direction and conceptual motivation while resolving concrete behavior through Specification, code, ADRs, and Methodology
-> - **Evidence / implementation boundary:** Philosophical language such as reflection, continuity, adaptation, or self-correction must not be read as proof of autonomous cognition, semantic understanding, durable memory, or convergence
-> - **Cross-document relation:** Specification/code own current mechanics; ADR/Methodology own decisions and methods; reference files provide external context; dated evidence owns observations
-> - **Update trigger:** Update only when durable project doctrine or research direction changes, not when a runtime detail or periodic result changes
-> - **Preservation rule:** Existing subject prose remains part of the repository record. This pass narrows current interpretation without erasing earlier framing or source history
+> - **Role:** Durable project doctrine and philosophical frame: **Reflective Continuum Manifesto**
+> - **Authority:** Vision/design-orientation authority only; not implementation, execution or scientific-evidence authority
+> - **Current meaning:** Use this file to understand intended research direction while resolving concrete capability through current Specification/code, ADRs and Methodology
+> - **Evidence / implementation boundary:** Reflection, continuity, adaptation or self-correction language must not be read as proof of autonomous cognition, semantic understanding, durable memory, convergence or safety
+> - **Cross-document relation:** Specification/code own mechanics; ADR/Methodology own decisions and methods; References provide external context; dated evidence owns observed behavior
+> - **Update trigger:** Update only when durable project doctrine changes, not because a runtime detail or periodic result changes
+> - **Preservation rule:** Philosophical framing remains intact while current capability interpretation stays bounded by implementation evidence
 
 # Reflective Continuum Manifesto
 

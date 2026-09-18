@@ -1,13 +1,13 @@
 > [!NOTE]
 > **Current architecture interpretation — 2026-09-18**
 > - **Subject class:** `EXTENSION / NON-NORMATIVE REFERENCE`
-> - **Role:** Active external reference map for **Anthropic OpenAI**
-> - **Authority:** Non-normative research context: useful for tracing external ideas and comparisons but not an implementation or capability authority
-> - **Current meaning:** External mechanisms remain external. Similarity, inspiration, or interpretive mapping must not be promoted into a claim that Reflective Continuum implements the cited system
-> - **Evidence / implementation boundary:** Paper/company statements, analogy, and source prestige do not establish local reflection, semantic search, persistence, rollback, or convergence behavior
-> - **Cross-document relation:** Current Specification/code and ADR/Methodology outrank this reference map for repository facts; external facts require proposition-specific source support
-> - **Update trigger:** Update for source-identity correction, materially changed external interpretation, broken current reference, or explicit new comparison—not for routine style modernization
-> - **Preservation rule:** Existing subject prose remains part of the repository record. This pass narrows current interpretation without erasing earlier framing or source history
+> - **Role:** Active external reference map: **Anthropic and OpenAI: agent evaluation and control boundaries**
+> - **Authority:** Non-normative research context for the external mechanisms and interpretations actually cited here; not local implementation authority
+> - **Current meaning:** Use this file to recover external conceptual pressure and comparison boundaries. Similarity, inspiration or shared vocabulary must not be promoted into a claim that Reflective Continuum implements the external system
+> - **Evidence / implementation boundary:** External papers, vendor statements and source prestige do not establish local semantic search, reflection, persistence, rollback, convergence, alignment or safety
+> - **Cross-document relation:** Current Specification/code and ADR/Methodology outrank this reference map for repository facts; external factual claims remain proposition-specific and source-bounded
+> - **Update trigger:** Update for source-identity correction, materially changed interpretation, broken current reference or a deliberate new comparison—not routine prose modernization
+> - **Preservation rule:** Existing source history and interpretation remain in place; later narrowing does not erase the earlier reference record
 
 # Anthropic and OpenAI: agent evaluation and control boundaries
 

@@ -1,13 +1,13 @@
 > [!NOTE]
 > **Current architecture interpretation — 2026-09-18**
 > - **Subject class:** `METHOD / PROVENANCE CONTRACT`
-> - **Role:** Current reproducibility contract for revision, environment, database/store identity, fixtures, snapshots, replay, and result comparison
-> - **Authority:** Repository-native authority for distinguishing addressability from actual reproduction
-> - **Current meaning:** Keep Git revision, environment, store/database identity, fixture identity, snapshot digest, execution result, and publication identity separate
-> - **Evidence / implementation boundary:** A digest, database file, DOI, current path, or successful later run cannot prove earlier execution, semantic equivalence, or cross-run reproduction
-> - **Cross-document relation:** Specification defines behavior; Methodology defines procedures; dated evidence records executions; publication metadata identifies archives without inheriting runtime validity
-> - **Update trigger:** Update when replay identity, storage identity, comparison criteria, or reproduction vocabulary changes
-> - **Preservation rule:** Existing subject prose remains part of the repository record. This pass narrows current interpretation without erasing earlier framing or source history
+> - **Role:** Current reproducibility contract: **Reproducibility**
+> - **Authority:** Repository-native authority for separating Git revision, environment, store/database identity, fixture identity, snapshot digest, execution result and publication identity
+> - **Current meaning:** Reproduction requires revision-matched execution and comparison evidence; addressability, stored bytes or a later successful run are supporting identities rather than substitutes
+> - **Evidence / implementation boundary:** Digest equality, database presence, DOI, current path presence or later success cannot prove earlier execution, semantic equivalence or cross-run reproduction
+> - **Cross-document relation:** Specification owns behavior; Methodology owns procedures; dated evidence owns observed runs; publication metadata identifies archives without inheriting runtime validity
+> - **Update trigger:** Update when replay identity, store identity, comparison criteria or reproduction vocabulary materially changes
+> - **Preservation rule:** Historical run states remain historical even when later revisions become more reproducible
 
 # Reproducibility
 
