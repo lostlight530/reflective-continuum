@@ -33,3 +33,13 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failed: 1
 - Errors: 0
 - Skipped: 0
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** FAILED_TEST_PROVENANCE_GAP
+- **Original Daily Execution Preserved:** YES
+- The record reports `26 passed / 1 failed / 0 errors`, but it does not retain the failed test identity, assertion, traceback, or command-level failure detail.
+- Therefore the failure is real count-level evidence, while its cause remains `UNKNOWN_FROM_THIS_ARTIFACT`.
+- The five module `SUCCESS` lines do not erase the failed test, and the failed test does not prove a specific module defect without retained provenance.
+- `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`.
+- **Aggregation Rule:** `FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT`; `MODULE_SUCCESS != FULL_TEST_SUCCESS`.

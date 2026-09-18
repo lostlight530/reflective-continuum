@@ -32,3 +32,12 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failed: 0
 - Errors: 0
 - Skipped: 0
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** EMPTY_STATE_HEALTH_SCOPE_CALIBRATION
+- **Original Daily Execution Preserved:** YES
+- `Status: Healthy (Accepted)` is bounded to the recorded Rule Engine surface.
+- This file simultaneously records `Nodes=0 / Edges=0` and `Context: INDETERMINATE_EMPTY_STATE`; the latter controls any interpretation of persistence/graph health.
+- Do not infer that the selfcheck observed the same persistent store used by the same-day dehydrated/ingestion report unless a common store identity is explicitly recorded.
+- **Aggregation Rule:** `SAME_DATE != SAME_STORE`; `EMPTY_STATE != HEALTHY_STATE`.
