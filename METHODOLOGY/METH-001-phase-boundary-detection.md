@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `METHOD`
+> - **Role:** Current methodology: **Graph-derived entropy boundary evaluation**
+> - **Authority:** Repository-native method authority for the exact procedure, observation rule, assumptions and limits stated by this file
+> - **Current meaning:** Treat the named method as a repeatable interpretation/checking contract. Method definition does not imply execution on the current revision, and historical examples do not become current state by proximity
+> - **Evidence / implementation boundary:** FTS lexical change is not semantic truth; reflector callback behavior is not autonomous cognition; SQLite savepoint rollback is local transaction rollback; persistence and convergence require explicit store/run evidence rather than terminology alone
+> - **Cross-document relation:** Specification/runtime code bound mechanics; ADRs explain durable choices; dated evidence records observations; Reproducibility owns revision/store/replay identity
+> - **Update trigger:** Update when procedure, threshold, implementation mapping, historical evidence range or failure/reconciliation semantics materially changes
+> - **Preservation rule:** Existing method procedure and examples remain in place; current clarification does not rewrite earlier execution evidence
+
 # Graph-derived entropy boundary evaluation
 
 - Method version: 2026-08-24

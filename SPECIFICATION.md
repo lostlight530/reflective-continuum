@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `DEFINITION / IMPLEMENTATION CONTRACT`
+> - **Role:** Current implementation specification: **Reflective Continuum Engineering Specification**
+> - **Authority:** Highest repository-native prose authority for current Reflective Continuum implementation semantics, subordinate to directly observed current code/machine behavior
+> - **Current meaning:** Use this file to recover the real mechanics behind graph/state storage, FTS retrieval, reflection hooks, drift reporting, rollback scope, persistence identity and task wrappers
+> - **Evidence / implementation boundary:** Specification presence does not prove a run occurred, semantic understanding exists, persistence spans sessions by default, rollback covers external side effects, or historical artifacts consumed current code
+> - **Cross-document relation:** ADRs explain durable decisions; Methodology defines procedures; Reproducibility defines revision/store/replay identity; Pioneers files remain external context
+> - **Update trigger:** Update whenever implementation or machine contracts materially change, or prose ceases to match current mechanics
+> - **Preservation rule:** Existing specification history remains in place; current correction moves interpretation forward without backdating execution
+
 # Reflective Continuum Engineering Specification
 
 - Version: 2026.08-r2

@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `DEFINITION / VISION`
+> - **Role:** Durable project doctrine and philosophical frame: **Reflective Continuum Manifesto**
+> - **Authority:** Vision/design-orientation authority only; not implementation, execution or scientific-evidence authority
+> - **Current meaning:** Use this file to understand intended research direction while resolving concrete capability through current Specification/code, ADRs and Methodology
+> - **Evidence / implementation boundary:** Reflection, continuity, adaptation or self-correction language must not be read as proof of autonomous cognition, semantic understanding, durable memory, convergence or safety
+> - **Cross-document relation:** Specification/code own mechanics; ADR/Methodology own decisions and methods; References provide external context; dated evidence owns observed behavior
+> - **Update trigger:** Update only when durable project doctrine changes, not because a runtime detail or periodic result changes
+> - **Preservation rule:** Philosophical framing remains intact while current capability interpretation stays bounded by implementation evidence
+
 # Reflective Continuum Manifesto
 
 Reflection is an engineering discipline of making state, assumptions, transformations, and failures observable. It is not a claim that software possesses consciousness or can certify its own correctness.

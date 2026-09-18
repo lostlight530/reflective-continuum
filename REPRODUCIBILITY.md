@@ -1,3 +1,14 @@
+> [!NOTE]
+> **Current architecture interpretation — 2026-09-18**
+> - **Subject class:** `METHOD / PROVENANCE CONTRACT`
+> - **Role:** Current reproducibility contract: **Reproducibility**
+> - **Authority:** Repository-native authority for separating Git revision, environment, store/database identity, fixture identity, snapshot digest, execution result and publication identity
+> - **Current meaning:** Reproduction requires revision-matched execution and comparison evidence; addressability, stored bytes or a later successful run are supporting identities rather than substitutes
+> - **Evidence / implementation boundary:** Digest equality, database presence, DOI, current path presence or later success cannot prove earlier execution, semantic equivalence or cross-run reproduction
+> - **Cross-document relation:** Specification owns behavior; Methodology owns procedures; dated evidence owns observed runs; publication metadata identifies archives without inheriting runtime validity
+> - **Update trigger:** Update when replay identity, store identity, comparison criteria or reproduction vocabulary materially changes
+> - **Preservation rule:** Historical run states remain historical even when later revisions become more reproducible
+
 # Reproducibility
 
 Record commit SHA, Python and SQLite versions, operating system, database schema version, sanitized fixture or digest, query/version/threshold, command array, UTC times, exit code, artifact digest, and untested boundary. Never retain credentials or unnecessary content.
