@@ -53,3 +53,15 @@ Context: INDETERMINATE_EMPTY_STATE
 - 持久化路径错误
 - 写入失败
 - 当前数据库路径并非预期路径
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** PARALLEL_EVIDENCE_SURFACE_CALIBRATION
+- **Original Daily Execution Preserved:** YES
+- This record contains two simultaneously valid evidence surfaces:
+  - module-level failures for `drift_detector` and `entropy_analyzer`;
+  - a separately passing `27 / 27` test surface.
+- The passing tests do not erase the module failures, and the module failures do not imply the executed unit-test surface failed.
+- `Status: true` for the Rule Engine must not be expanded into a whole-system health claim.
+- `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`.
+- **Aggregation Rule:** `MODULE_FAILURE + TEST_PASS CAN_COEXIST`; `TEST_PASS != GLOBAL_HEALTH`.

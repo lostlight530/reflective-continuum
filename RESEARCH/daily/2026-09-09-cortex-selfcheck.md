@@ -32,3 +32,12 @@
 - Failed: 0
 - Errors: 0
 - Skipped: 0
+
+## MAINTENANCE_NOTE_2026-09-19
+
+- **Maintenance Type:** EMPTY_STATE_HEALTH_SCOPE_CALIBRATION
+- **Original Daily Execution Preserved:** YES
+- `Status: True (Healthy)` applies only to the recorded Rule Engine check and must not be interpreted as proof that the graph/persistence state is healthy.
+- The same file records `Nodes: 0`, `Edges: 0`, and `Context: INDETERMINATE_EMPTY_STATE`.
+- Therefore the empty DB state remains causally unresolved and may reflect no ingestion, initialization, path mismatch, write failure, or another store.
+- **Aggregation Rule:** `RULE_ENGINE_HEALTHY != PERSISTENT_GRAPH_HEALTHY`; `EMPTY_STATE != HEALTHY_STATE`.
