@@ -1,13 +1,13 @@
 > [!NOTE]
 > **Current architecture interpretation — 2026-09-18**
 > - **Subject class:** `METHOD`
-> - **Role:** Current methodology for **reflective morphing protocol**
-> - **Authority:** Repository-native method authority for the procedure, measurement, reconciliation rule, assumptions, and failure semantics explicitly defined here
-> - **Current meaning:** Treat the procedure as a method contract, not evidence that it ran at the current revision. Historical R2/failure ranges remain historical ranges rather than present-state guarantees
-> - **Evidence / implementation boundary:** Detection, drift, alignment, rollback, or reconciliation vocabulary is bounded by implemented mechanics: lexical search is not semantic proof, savepoints are not external rollback, and repeated digests are not convergence evidence
-> - **Cross-document relation:** Specification/runtime code bound mechanics; ADRs explain decisions; Evidence Baseline and periodic artifacts provide dated observations without redefining the method
-> - **Update trigger:** Update when mechanics, thresholds, evidence ranges, or reconciliation semantics materially change
-> - **Preservation rule:** Existing subject history and dated examples retain their original time boundary. This pass clarifies current interpretation and corrects only confirmed current-authority drift
+> - **Role:** Current methodology: **Transactional bounded observer loop**
+> - **Authority:** Repository-native method authority for the exact procedure, observation rule, assumptions and limits stated by this file
+> - **Current meaning:** Treat the named method as a repeatable interpretation/checking contract. Method definition does not imply execution on the current revision, and historical examples do not become current state by proximity
+> - **Evidence / implementation boundary:** FTS lexical change is not semantic truth; reflector callback behavior is not autonomous cognition; SQLite savepoint rollback is local transaction rollback; persistence and convergence require explicit store/run evidence rather than terminology alone
+> - **Cross-document relation:** Specification/runtime code bound mechanics; ADRs explain durable choices; dated evidence records observations; Reproducibility owns revision/store/replay identity
+> - **Update trigger:** Update when procedure, threshold, implementation mapping, historical evidence range or failure/reconciliation semantics materially changes
+> - **Preservation rule:** Existing method procedure and examples remain in place; current clarification does not rewrite earlier execution evidence
 
 # Transactional bounded observer loop
 
