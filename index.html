@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zero-Entropy Continuum | 零熵连续体</title>
+<title>Reflective Continuum | 反射连续体</title>
 <style>
 :root {
   --bg-color: #000000;
@@ -547,16 +547,16 @@ h2 {
 <div class="container">
 
 <div class="boot-seq">
-  <div class="boot-line">> BOOT_SEQUENCE: ZERO_ENTROPY_CONTINUUM_INIT</div>
+  <div class="boot-line">> BOOT_SEQUENCE: REFLECTIVE_CONTINUUM_INIT</div>
   <div class="boot-line">> STATUS: STATIC_REFERENCE</div>
-  <div class="boot-line">> REPOSITORIES: 5 | RUNTIME: PYTHON_STDLIB_SQLITE | LIVE_CHECK: NOT_RUN</div>
+  <div class="boot-line">> STORE: VERSIONED_SQLITE_GRAPH | RUNTIME: PYTHON_STDLIB_SQLITE | LIVE_CHECK: NOT_RUN</div>
   <div class="boot-line">> ARCHITECTURE: BOUNDED_GRAPH_OBSERVATION</div>
   <div class="boot-line cursor-blink">> READY_</div>
 </div>
 
 <h1>
-  <span lang="en">Zero-Entropy Continuum</span>
-  <span lang="zh">零熵连续体</span>
+  <span lang="en">Reflective Continuum</span>
+  <span lang="zh">反射连续体</span>
 </h1>
 
 <div style="text-align: center; margin-bottom: 40px; opacity: 0.9; font-size: 1.05rem; border-bottom: 1px dashed rgba(0, 255, 65, 0.3); padding-bottom: 30px; line-height: 1.8;">
@@ -565,17 +565,47 @@ h2 {
     <span lang="zh">别人做的是让 AI 更聪明，<br>我们做的是让确定性够用</span>
   </div>
   <div style="opacity: 0.8;">
-    <span lang="en"><code>reflective-continuum</code> is the final mirror of the five-repository system.<br>Its Python reference observes declared graph versions through local tasks.<br>Observation records are bounded evidence, not a closed proof of the whole system.</span>
-    <span lang="zh"><code>reflective-continuum</code> 是五仓系统的最后镜面<br>其 Python 参考实现通过局部任务观察明确的图版本<br>观测记录是有边界的证据，不是整个系统已经证明闭合</span>
+    <span lang="en"><code>reflective-continuum</code> is a standard-library Python reference for versioned graph storage and bounded analysis.<br>It provides SQLite persistence, synchronized FTS5 lexical search, version deltas, PageRank-derived Shannon entropy, explicit validation, transactional ingestion and optional bounded reflection hooks.</span>
+    <span lang="zh"><code>reflective-continuum</code> 是基于 Python 标准库的版本化图存储与有界分析参考实现<br>提供 SQLite 持久化 同步 FTS5 词法搜索 版本差异 PageRank 派生 Shannon 熵 显式校验 事务式写入与可选有界反射钩子</span>
   </div>
 </div>
 
 
 
+
 <h2>
-  <span lang="en">Continuum Architecture</span>
-  <span lang="zh">连续体架构</span>
+  <span lang="en">Current Reference Surface</span>
+  <span lang="zh">当前参考实现</span>
 </h2>
+
+<div class="arch-diagram" style="text-align: center; margin-bottom: 28px; font-family: var(--font-main);">
+  <div class="arch-flow" style="display: inline-block; text-align: left; padding: 20px; border: 1px solid rgba(0, 255, 65, 0.28); background: rgba(0, 0, 0, 0.5); line-height: 1.9;">
+    <div><strong>01</strong> · <span lang="en">Versioned SQLite graph store</span><span lang="zh">版本化 SQLite 图存储</span></div>
+    <div><strong>02</strong> · <span lang="en">Synchronized external-content FTS5 lexical retrieval</span><span lang="zh">同步 external-content FTS5 词法检索</span></div>
+    <div><strong>03</strong> · <span lang="en">Structural delta + lexical-result identity delta + PageRank-score delta</span><span lang="zh">结构差异 + 词法结果身份差异 + PageRank 分数差异</span></div>
+    <div><strong>04</strong> · <span lang="en">PageRank-derived Shannon entropy in nats under local policy</span><span lang="zh">局部策略下由 PageRank 派生的 Shannon 熵 单位 nats</span></div>
+    <div><strong>05</strong> · <span lang="en">Savepoint-scoped transactional ingestion with explicit validation</span><span lang="zh">基于 savepoint 的事务式写入与显式校验</span></div>
+    <div><strong>06</strong> · <span lang="en">Optional bounded reflection hooks with local commit or rollback</span><span lang="zh">可选有界反射钩子与局部提交或回滚</span></div>
+  </div>
+</div>
+
+<div class="philosophy-block">
+  <span lang="en"><strong>Boundary:</strong> accepted means only that the local control-flow and transaction path accepted the input under current rules and the opened store It does not establish external truth source authority safety durable persistence or convergence</span>
+  <span lang="zh"><strong>边界:</strong> accepted 只表示当前规则与已打开 store 下的局部控制流和事务路径接受该输入 不代表外部真理 来源权威 安全 持久化或收敛</span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 0 46px;font-family:var(--font-main);font-size:0.78rem;">
+  <a href="https://github.com/lostlight530/reflective-continuum" target="_blank" rel="noopener noreferrer" style="color:var(--text-color);">GitHub ↗</a>
+  <a href="https://github.com/lostlight530/reflective-continuum/blob/main/README.md" target="_blank" rel="noopener noreferrer" style="color:var(--text-color);">README ↗</a>
+  <a href="https://github.com/lostlight530/reflective-continuum/blob/main/SPECIFICATION.md" target="_blank" rel="noopener noreferrer" style="color:var(--text-color);">Specification ↗</a>
+  <a href="https://github.com/lostlight530/reflective-continuum/blob/main/REPRODUCIBILITY.md" target="_blank" rel="noopener noreferrer" style="color:var(--text-color);">Reproducibility ↗</a>
+</div>
+
+<h2>
+  <span lang="en">Historical Five-Repository Continuum</span>
+  <span lang="zh">历史五仓连续体</span>
+</h2>
+
 
 <div class="arch-diagram" style="text-align: center; margin-bottom: 40px; font-family: var(--font-main);">
   <div class="arch-flow" style="display: inline-block; text-align: left; padding: 20px; border: 1px solid rgba(0, 255, 65, 0.2); background: rgba(0, 0, 0, 0.5);">
@@ -592,9 +622,14 @@ h2 {
 </div>
 
 <h2>
-  <span lang="en">Phase Roles</span>
-  <span lang="zh">五仓相态</span>
+  <span lang="en">Historical Phase Roles</span>
+  <span lang="zh">历史五仓相态</span>
 </h2>
+
+<div class="philosophy-block">
+  <span lang="en">The phase model below is preserved as project lineage It is not the current repository implementation contract and does not define a mandatory cross-repository execution flow</span>
+  <span lang="zh">下方相态模型作为项目沿革保留 它不是当前仓库实现合同 也不定义跨仓强制执行流</span>
+</div>
 
 <div class="phase-grid">
 
