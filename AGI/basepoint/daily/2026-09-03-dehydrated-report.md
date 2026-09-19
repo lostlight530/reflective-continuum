@@ -63,3 +63,14 @@ Origin Continuity: PRESERVED
 - The run mixes community/editorial, vendor-blog and conference-poster sources; source authority therefore differs by signal and must not be flattened into one evidence tier.
 - Local ingestion acceptance is a control-flow outcome, not external claim verification.
 - The rejected ICML signal remains rejected from ingestion with no graph write; its rejection does not refute the underlying research claim.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: MIXED_SOURCE_QUALITY
+Reference Continuity: PRESERVED
+
+- Recorded selfcheck evidence remains bounded to the named execution surfaces.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

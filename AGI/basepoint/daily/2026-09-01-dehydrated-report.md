@@ -60,3 +60,14 @@ Origin Continuity: PRESERVED
 - Wikipedia-derived material is retained as general reference context, not primary scientific validation.
 - Local `ACCEPTED` / `REJECTED_FROM_INGESTION` records describe InsightMorpher control flow; they do not validate or invalidate the external proposition itself.
 - The rejected signal was not written to the graph. The convergence hash is a local execution observation, not evidence of external claim truth.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: REFERENCE_SIGNAL_ONLY
+Reference Continuity: PRESERVED
+
+- Recorded selfcheck evidence remains bounded to the named execution surfaces.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

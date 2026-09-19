@@ -49,3 +49,14 @@ Origin Continuity: PRESERVED
 - The three arXiv records are external research sources; their claims remain bounded to the cited papers and are not reproduced by this ingestion run.
 - `ACCEPTED` means accepted by the local observer pipeline, not independently verified scientific truth.
 - The rejected signal remains a hard rollback with no graph write; repeated local convergence does not upgrade paper-level evidence.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: EXTERNAL_RESEARCH_SIGNAL
+Reference Continuity: PRESERVED
+
+- Recorded selfcheck evidence remains bounded to the named execution surfaces.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

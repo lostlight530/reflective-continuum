@@ -36,3 +36,14 @@ Origin Continuity: PRESERVED
 - Module success, Rule Engine success, DB state and unit-test success are separate evidence surfaces.
 - `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`; it does not establish a healthy or clean persistent graph.
 - Same-date R1 activity does not prove this selfcheck observed the same persistent store. Carry forward: `SAME_DATE != SAME_STORE`.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: EMPTY_STATE_BOUNDED
+Reference Continuity: PRESERVED
+
+- Recorded selfcheck evidence remains bounded to the named execution surfaces.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

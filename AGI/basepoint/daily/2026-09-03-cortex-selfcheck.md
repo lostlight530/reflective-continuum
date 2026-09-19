@@ -41,3 +41,14 @@ Origin Continuity: PRESERVED
 - Module, Rule Engine, DB and test results are separate evidence surfaces.
 - The empty DB remains causally unresolved under `INDETERMINATE_EMPTY_STATE`.
 - A same-day successful R1 report does not prove shared persistence with this R2 execution.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: EMPTY_STATE_BOUNDED
+Reference Continuity: PRESERVED
+
+- Recorded selfcheck evidence remains bounded to the named execution surfaces.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

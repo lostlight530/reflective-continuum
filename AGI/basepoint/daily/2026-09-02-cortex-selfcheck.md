@@ -41,3 +41,14 @@ Origin Continuity: PRESERVED
 - The five module checks and 27/27 tests are bounded execution results only.
 - `Nodes=0 / Edges=0` plus `INDETERMINATE_EMPTY_STATE` prevents a persistent-graph health conclusion.
 - R1 ingestion and R2 selfcheck remain independent evidence planes unless a common persistent-store identity is recorded.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: EMPTY_STATE_BOUNDED
+Reference Continuity: PRESERVED
+
+- Recorded selfcheck evidence remains bounded to the named execution surfaces.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.
