@@ -32,3 +32,10 @@ Not archived here:
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `RESEARCH/monthly/2026-09-10-ten-day-cadence-reconciliation.md` |
 
 Empty archive classes are intentionally left empty. The old paths remain recoverable through Git history. This archive does not supersede current repository authority or the current maintenance record.
+
+
+## Successor maintenance records
+
+- `05-maintenance-and-reconciliation/2026-09-19--sep-19--maintenance-reconciliation.md` — 2026-09-19 R1/R2 evidence-plane and sibling-concurrency reconciliation
+
+As of 2026-09-19 this is the latest completed independent periodic-maintenance record in the archive. Current GAS contracts, implementation and current repository evidence remain higher authority for present interpretation.
