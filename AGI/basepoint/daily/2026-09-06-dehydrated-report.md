@@ -47,3 +47,14 @@ Origin Continuity: PRESERVED
 - TrueFoundry, MindStudio and FutureAGI are named explanatory/vendor sources; they are useful for ecosystem framing but are not independent primary scientific validation of broad AI-safety claims.
 - `ACCEPTED` and `REJECTED_FROM_INGESTION` describe local observer behavior only.
 - The rejected signal was not written to the graph, and repeated local convergence does not upgrade source authority.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: VENDOR_EXPLAINER_SIGNAL
+Reference Continuity: PRESERVED
+
+- Recorded GAS evidence remains bounded to the named execution surface and retained provenance.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

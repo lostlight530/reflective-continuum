@@ -74,3 +74,14 @@ Origin Continuity: PRESERVED
 - The existing module failures for `drift_detector` and `entropy_analyzer` coexist with a separately passing 27/27 unit-test surface.
 - Rule Engine success and test success do not erase those module-level failures; neither proves whole-system health.
 - `Nodes=0 / Edges=0` remains indeterminate, and same-date R1 activity does not establish shared-store identity.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: PARALLEL_EVIDENCE_SURFACES
+Reference Continuity: PRESERVED
+
+- Recorded GAS evidence remains bounded to the named execution surface and retained provenance.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

@@ -46,3 +46,14 @@ Origin Continuity: PRESERVED
 - Passing module/test surfaces are bounded execution observations.
 - `Nodes=0 / Edges=0` with `INDETERMINATE_EMPTY_STATE` remains unresolved and cannot be labeled persistent-graph health.
 - R1 and R2 remain independent evidence planes without an explicit common-store identity.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: EMPTY_STATE_BOUNDED
+Reference Continuity: PRESERVED
+
+- Rule-engine/module success does not upgrade Nodes=0 / Edges=0 into persistent-graph health; empty-store cause remains indeterminate.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

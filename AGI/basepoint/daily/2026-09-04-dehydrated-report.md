@@ -31,3 +31,14 @@ Origin Continuity: PRESERVED
 - Local convergence succeeded on the fixed fixture, but no qualified external signals were collected.
 - `SOURCE_UNAVAILABLE / BLOCKED / NOT_PERFORMED / NOT_EXECUTED / ANALYSIS_INCONCLUSIVE` remains the controlling research state.
 - Do not convert deterministic local convergence into successful signal ingestion or external research evidence.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: SOURCE_UNAVAILABLE_WINDOW
+Reference Continuity: PRESERVED
+
+- Recorded GAS evidence remains bounded to the named execution surface and retained provenance.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.

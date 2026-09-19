@@ -51,3 +51,14 @@ Origin Continuity: PRESERVED
 - The cited arXiv papers are external research evidence; local acceptance does not independently reproduce their methods or conclusions.
 - The third signal was rejected by the local reflection-depth rule and was not injected into the graph; that does not refute the paper itself.
 - The repeatable hash is bounded to the fixed local SQLite fixture.
+
+
+## AGI_BASEPOINT_CHECKPOINT_2026-09-19
+
+Checkpoint State: CONFIRMED
+Surface State: EXTERNAL_RESEARCH_SIGNAL
+Reference Continuity: PRESERVED
+
+- External-source quality and local ingestion acceptance remain separate; this record does not convert research signals into external truth or repository runtime facts.
+- Same-date R1/R2 records are not treated as proof of a shared persistent store unless a named common store is retained.
+- No whole-system health, external-truth, or retroactive execution claim is introduced by this checkpoint.
