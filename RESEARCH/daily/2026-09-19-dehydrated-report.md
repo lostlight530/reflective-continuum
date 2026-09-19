@@ -64,3 +64,15 @@ LIQUID
 - iterations: 100
 - repeatable: true
 - scope: "fixed local SQLite fixture"
+
+## Maintenance Annotation — 2026-09-19
+- Review Class: INGESTION_EVIDENCE_CALIBRATION
+- Original Jules Run Preserved: YES
+- Input Count: 3 signals
+- Source-Family State: SAME_ORIGIN_API_FAMILY; all three retrieved signal texts came through Wikipedia API surfaces, so signal count is not independent-source count
+- Runtime Outcome: two signals accepted and one signal rejected with HARD_ROLLBACK
+- Rejected Signal Write State: Graph Write Status = False remains controlling for that rejected signal
+- Repeatability Scope: the reported 100 iterations / one distinct snapshot are limited to the fixed local SQLite fixture named by the run
+- Persistent Store Generalization: NOT_ESTABLISHED
+- Scientific Claim Upgrade: NONE
+- Boundary: ACCEPTED_BY_INGESTION != EXTERNALLY_TRUE and REJECTED_FROM_INGESTION != SCIENTIFICALLY_FALSE
