@@ -41,3 +41,12 @@ Context: INDETERMINATE_EMPTY_STATE
 - This file simultaneously records `Nodes=0 / Edges=0` and `Context: INDETERMINATE_EMPTY_STATE`; the latter controls any interpretation of persistence/graph health.
 - Do not infer that the selfcheck observed the same persistent store used by the same-day dehydrated/ingestion report unless a common store identity is explicitly recorded.
 - **Aggregation Rule:** `SAME_DATE != SAME_STORE`; `EMPTY_STATE != HEALTHY_STATE`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: RULE_ENGINE_HEALTH_SCOPE
+Origin Continuity: PRESERVED
+
+- The existing maintenance note remains controlling: `Healthy (Accepted)` applies only to the Rule Engine surface.
+- `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`; 27/27 tests do not convert it into persistent-graph health.
+- Same-date R1 and R2 records do not prove a shared store. Carry forward: `SAME_DATE != SAME_STORE`.

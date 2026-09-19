@@ -53,3 +53,12 @@ This ingestion incorporated three items from Wikipedia related to AI alignment a
 - **iterations**: 100
 - **repeatable**: true
 - **scope**: fixed local SQLite fixture
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: REFERENCE_SIGNAL_ONLY
+Origin Continuity: PRESERVED
+
+- Wikipedia-derived AI alignment/safety material is general reference context rather than primary research evidence.
+- Multiple signals drawn from the same reference lineage do not constitute independent corroboration.
+- Local acceptance/rejection does not validate external truth; the hard-rollback signal was not written to the graph.

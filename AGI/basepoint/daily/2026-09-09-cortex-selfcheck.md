@@ -41,3 +41,12 @@
 - The same file records `Nodes: 0`, `Edges: 0`, and `Context: INDETERMINATE_EMPTY_STATE`.
 - Therefore the empty DB state remains causally unresolved and may reflect no ingestion, initialization, path mismatch, write failure, or another store.
 - **Aggregation Rule:** `RULE_ENGINE_HEALTHY != PERSISTENT_GRAPH_HEALTHY`; `EMPTY_STATE != HEALTHY_STATE`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: RULE_ENGINE_HEALTH_SCOPE
+Origin Continuity: PRESERVED
+
+- `Status: True (Healthy)` is bounded to the Rule Engine check and does not prove persistent graph or whole-system health.
+- `Nodes=0 / Edges=0` plus `INDETERMINATE_EMPTY_STATE` remains controlling for DB interpretation.
+- 27/27 tests do not establish shared-store identity with the same-day R1 run.

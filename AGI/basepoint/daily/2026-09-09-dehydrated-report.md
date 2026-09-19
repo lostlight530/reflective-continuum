@@ -57,3 +57,12 @@ Today's signal ingestion covered three topics: AI safety, AI alignment, and meta
 
 ## Phase State
 LIQUID
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_REFERENCE_LINEAGE
+Origin Continuity: PRESERVED
+
+- The three Wikipedia summary endpoints are reference-level material and belong to a common publisher lineage; they do not create three independent scientific sources.
+- `ACCEPTED` means accepted by the local ingestion control flow, not externally verified.
+- The rejected signal remains a hard rollback with no graph write.

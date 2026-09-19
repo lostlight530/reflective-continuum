@@ -137,3 +137,12 @@ Maintenance correction (2026-09-13): the previous missing-date value listed `202
 - Failed: 0
 - Errors: 0
 - Skipped: 0
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: WEEKLY_ALIGNMENT_WITH_CORRECTION
+Origin Continuity: PRESERVED
+
+- The existing missing-date correction is retained: current W37 path coverage is complete for the reported window, while the earlier mistaken missing-date value remains historical in Git history.
+- `STABLE` is bounded to the drift-audit program and does not prove global graph health, shared persistence, or external-signal validity.
+- The mixed source list contains different authority classes and repeated reference lineages; 27/27 tests and Daily acceptance do not upgrade them into independent scientific corroboration.

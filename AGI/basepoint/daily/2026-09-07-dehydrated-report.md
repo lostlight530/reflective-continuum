@@ -42,3 +42,12 @@ LIQUID
 ```json
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
 ```
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: MIXED_TOOLING_AND_RISK_SIGNAL
+Origin Continuity: PRESERVED
+
+- The run combines a CSA risk note with Anthropic/OpenAI evaluation-framework documentation; these sources support different claim types and must not be flattened into one evidence class.
+- Existence of evaluation tooling does not itself validate the broader statement that deployed systems exhibit a particular failure rate or severity.
+- Local acceptance/rejection is an ingestion-control outcome; the rejected OpenAI Evals signal was not written to the graph.

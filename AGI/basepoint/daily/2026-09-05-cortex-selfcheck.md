@@ -65,3 +65,12 @@ Context: INDETERMINATE_EMPTY_STATE
 - `Status: true` for the Rule Engine must not be expanded into a whole-system health claim.
 - `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`.
 - **Aggregation Rule:** `MODULE_FAILURE + TEST_PASS CAN_COEXIST`; `TEST_PASS != GLOBAL_HEALTH`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: PARALLEL_EVIDENCE_SURFACES
+Origin Continuity: PRESERVED
+
+- The existing module failures for `drift_detector` and `entropy_analyzer` coexist with a separately passing 27/27 unit-test surface.
+- Rule Engine success and test success do not erase those module-level failures; neither proves whole-system health.
+- `Nodes=0 / Edges=0` remains indeterminate, and same-date R1 activity does not establish shared-store identity.

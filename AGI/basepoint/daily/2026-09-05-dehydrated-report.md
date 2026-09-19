@@ -42,3 +42,12 @@ LIQUID
 ```json
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
 ```
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EXTERNAL_RESEARCH_SIGNAL
+Origin Continuity: PRESERVED
+
+- The cited arXiv papers are external research evidence; local acceptance does not independently reproduce their methods or conclusions.
+- The third signal was rejected by the local reflection-depth rule and was not injected into the graph; that does not refute the paper itself.
+- The repeatable hash is bounded to the fixed local SQLite fixture.

@@ -38,3 +38,12 @@ e3bdba97f6180304736a37d76bf6ba862435cdd7ca9d3cdcc597acd581cd049c
 ```json
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
 ```
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: VENDOR_EXPLAINER_SIGNAL
+Origin Continuity: PRESERVED
+
+- TrueFoundry, MindStudio and FutureAGI are named explanatory/vendor sources; they are useful for ecosystem framing but are not independent primary scientific validation of broad AI-safety claims.
+- `ACCEPTED` and `REJECTED_FROM_INGESTION` describe local observer behavior only.
+- The rejected signal was not written to the graph, and repeated local convergence does not upgrade source authority.

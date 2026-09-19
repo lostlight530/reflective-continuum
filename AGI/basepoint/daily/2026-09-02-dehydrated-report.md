@@ -40,3 +40,12 @@ Action: Discarded without retry
 * Total Signals Evaluated: 3
 * Accepted Nodes: 2
 * Entropy (nats): 1.0986122886681096
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EXTERNAL_RESEARCH_SIGNAL
+Origin Continuity: PRESERVED
+
+- The three arXiv records are external research sources; their claims remain bounded to the cited papers and are not reproduced by this ingestion run.
+- `ACCEPTED` means accepted by the local observer pipeline, not independently verified scientific truth.
+- The rejected signal remains a hard rollback with no graph write; repeated local convergence does not upgrade paper-level evidence.

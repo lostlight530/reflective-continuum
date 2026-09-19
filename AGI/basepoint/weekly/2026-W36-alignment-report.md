@@ -46,3 +46,12 @@
 - 2026-09-04: 27/27 Passed
 - 2026-09-05: 27/27 Passed
 - 2026-09-06: 27/27 Passed
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: WEEKLY_ALIGNMENT_BOUNDED
+Origin Continuity: PRESERVED
+
+- `STABLE` is bounded to the semantic-drift audit surface; it is not a whole-system health conclusion.
+- W36 includes a 2026-09-05 selfcheck with two module-level failures while separately recording 27/27 tests; weekly test aggregation must not erase that parallel evidence.
+- Transition metrics remain `NOT_COMPUTED`; Daily Hard Rollbacks remain valid rejected-ingestion events.

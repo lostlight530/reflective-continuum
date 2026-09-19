@@ -67,3 +67,12 @@ LIQUID
 - distinct_snapshots: 1
 - repeatable: true
 - scope: fixed local SQLite fixture
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_REFERENCE_FAMILY
+Origin Continuity: PRESERVED
+
+- The same Wikipedia reference family is reused; this does not add independent scientific support or daily novelty by itself.
+- `ACCEPTED` and hard rollback remain local ingestion outcomes only.
+- The rejected signal was not written to the graph; external truth and graph admission remain separate.

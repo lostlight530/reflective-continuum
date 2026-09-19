@@ -65,3 +65,12 @@ Action: REJECTED_FROM_INGESTION
 
 ## 英文综合
 The R1 ingestion cycle revisited the same three general-reference source lineages used on 2026-09-14. Metacognition and determinism were admitted by the local ingestion flow, while AI alignment was rejected because `reflection_depth_exhausted` and hard-rolled back. `ACCEPTED` is only a local control-flow result, and revisiting the same source lineages on a new date does not add independent evidence or establish a new independent external observation.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_SOURCE_REVISIT
+Origin Continuity: PRESERVED
+
+- This run reuses the same three general-reference sources as 2026-09-14; the revisit does not add independent evidence or establish a new external observation window by itself.
+- Local acceptance/rejection remains control-flow evidence only.
+- Carry forward: `SAME_REFERENCE_REVISIT != NEW_INDEPENDENT_SIGNAL`.

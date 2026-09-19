@@ -59,3 +59,12 @@ LIQUID
 
 ## 实际可计算指标
 {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_REFERENCE_FAMILY
+Origin Continuity: PRESERVED
+
+- The run again uses Wikipedia metacognition/alignment/safety references; this is reference continuity rather than new independent evidence.
+- Local acceptance/rejection does not validate or invalidate the external proposition.
+- The rejected signal remained outside the graph. Carry forward: `REFERENCE_REVISIT != NEW_INDEPENDENT_SIGNAL`.
