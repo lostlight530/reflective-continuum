@@ -51,3 +51,12 @@ RUN_END
 
 ### 英文综合
 Today's signal ingestion drill started successfully. The first two signals were accepted into the graph, covering AI alignment goals and challenges in modern AI systems. The third signal was explicitly rejected due to triggering the reflection depth rule, resulting in no knowledge graph injection. A hard rollback was performed per system requirements. The overall phase state is Liquid and the convergence state is a success with rejected signal due to the partial rejection.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_REFERENCE_LINEAGE
+Origin Continuity: PRESERVED
+
+- The three signals reuse one Wikipedia publisher lineage; source count must not be treated as independent corroboration.
+- `ACCEPTED` / hard rollback describe local ingestion behavior, not external truth validation.
+- The rejected signal was not written to the graph; the local hash remains execution evidence only.

@@ -29,3 +29,12 @@ None at this time.
 
 ## 证据不足项
 Without explicit evidence of graph integration from the trace, references must be strictly classified as `UNRESOLVED_ORPHAN` and noted under 证据不足项. The references index and documentation links do not supply executable node integration evidence.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: POINT_IN_TIME_REFERENCE_TOPOLOGY
+Origin Continuity: PRESERVED
+
+- The orphan classifications are W36 point-in-time documentary topology findings, not runtime integration claims.
+- Later reference reclassification does not rewrite this historical weekly snapshot.
+- `Mapping Missing` and `UNRESOLVED_ORPHAN` are evidence states; no repair is implied to have been executed by this report.

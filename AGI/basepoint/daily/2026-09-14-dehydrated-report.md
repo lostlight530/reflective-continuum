@@ -66,3 +66,12 @@ LIQUID
 - iterations: 100
 - repeatable: true
 - scope: fixed local SQLite fixture
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: REFERENCE_SIGNAL_ONLY
+Origin Continuity: PRESERVED
+
+- Wikipedia metacognition, determinism and AI-alignment pages are general reference sources, not primary scientific validation.
+- Local `ACCEPTED` status already has the correct bounded meaning: it records pipeline admission only.
+- The rejected AI-alignment signal was not written to the graph; source truth and ingestion outcome remain separate.

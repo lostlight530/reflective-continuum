@@ -32,3 +32,12 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failed: 0
 - Errors: 0
 - Skipped: 0
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EMPTY_STATE_BOUNDED
+Origin Continuity: PRESERVED
+
+- Module, Rule Engine, DB and test results are separate evidence surfaces.
+- The empty DB remains causally unresolved under `INDETERMINATE_EMPTY_STATE`.
+- A same-day successful R1 report does not prove shared persistence with this R2 execution.

@@ -54,3 +54,12 @@ Today's ingestion incorporated critical signals regarding metacognition in AI, d
 - **Accepted:** 2
 - **Rejected:** 1
 - **Entropy Nats:** 1.0986122886681096
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: MIXED_SOURCE_QUALITY
+Origin Continuity: PRESERVED
+
+- The run mixes community/editorial, vendor-blog and conference-poster sources; source authority therefore differs by signal and must not be flattened into one evidence tier.
+- Local ingestion acceptance is a control-flow outcome, not external claim verification.
+- The rejected ICML signal remains rejected from ingestion with no graph write; its rejection does not refute the underlying research claim.

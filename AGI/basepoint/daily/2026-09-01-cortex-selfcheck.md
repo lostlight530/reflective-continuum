@@ -27,3 +27,12 @@
 * Failed: 0
 * Errors: 0
 * Skipped: 0
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EMPTY_STATE_BOUNDED
+Origin Continuity: PRESERVED
+
+- Module success, Rule Engine success, DB state and unit-test success are separate evidence surfaces.
+- `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`; it does not establish a healthy or clean persistent graph.
+- Same-date R1 activity does not prove this selfcheck observed the same persistent store. Carry forward: `SAME_DATE != SAME_STORE`.

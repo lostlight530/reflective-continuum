@@ -51,3 +51,12 @@ Action: REJECTED_FROM_INGESTION
   - Total Signals: 3
   - Accepted Signals: 2
   - Rejected Signals: 1
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: REFERENCE_SIGNAL_ONLY
+Origin Continuity: PRESERVED
+
+- Wikipedia-derived material is retained as general reference context, not primary scientific validation.
+- Local `ACCEPTED` / `REJECTED_FROM_INGESTION` records describe InsightMorpher control flow; they do not validate or invalidate the external proposition itself.
+- The rejected signal was not written to the graph. The convergence hash is a local execution observation, not evidence of external claim truth.

@@ -50,3 +50,12 @@
 - REFERENCES/PIONEERS/PIO-002-Google_Paper_Interpretations.md: UNRESOLVED_ORPHAN
 - REFERENCES/PIONEERS/PIO-003-Other_Pioneers.md: UNRESOLVED_ORPHAN
 - REFERENCES/PIONEERS/PIO-004-Anthropic_OpenAI.md: UNRESOLVED_ORPHAN
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: POINT_IN_TIME_REFERENCE_TOPOLOGY
+Origin Continuity: PRESERVED
+
+- `GRAPH_INTEGRATED_REFERENCE`, `UNRESOLVED_ORPHAN`, missing SPEC↔ADR mapping and ghost-chain results are documentary topology findings at W37.
+- Recommended additions are proposals, not executed repairs.
+- Runtime graph integration, reference authority and documentation-link topology remain separate evidence surfaces.

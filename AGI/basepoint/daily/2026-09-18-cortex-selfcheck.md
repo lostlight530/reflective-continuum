@@ -43,3 +43,12 @@ Context: INDETERMINATE_EMPTY_STATE
 - The five module `SUCCESS` lines do not erase the failed test, and the failed test does not prove a specific module defect without retained provenance.
 - `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`.
 - **Aggregation Rule:** `FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT`; `MODULE_SUCCESS != FULL_TEST_SUCCESS`.
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: FAILED_TEST_PROVENANCE_GAP
+Origin Continuity: PRESERVED
+
+- The existing maintenance note remains controlling: `26 passed / 1 failed` is real count-level evidence, but failed-test identity and cause are not retained here.
+- Five module-success lines do not erase the failed test; the failed test does not diagnose a specific module without provenance.
+- `Nodes=0 / Edges=0` remains indeterminate and same-date R1 activity does not establish a shared store.

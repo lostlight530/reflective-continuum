@@ -63,3 +63,12 @@ This ingestion run collected three papers on AI Agent safety and alignment. The 
 
 ## Phase State
 LIQUID
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EXTERNAL_RESEARCH_MIX
+Origin Continuity: PRESERVED
+
+- DOI/SSRN records are external research/discussion sources with differing publication status; they must not be flattened into a single peer-reviewed evidence tier.
+- Local `ACCEPTED` status does not reproduce or independently verify the cited research.
+- The rejected third signal was not written to the graph; its local rejection does not refute the source claim.

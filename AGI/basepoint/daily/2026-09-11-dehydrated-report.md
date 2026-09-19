@@ -58,3 +58,12 @@ Today's ingestion focused on metacognition and AI alignment. The three external 
 
 ## Phase State
 LIQUID
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: SAME_REFERENCE_LINEAGE
+Origin Continuity: PRESERVED
+
+- All three signals come from the same Wikipedia AI-alignment lineage; they are reference context, not three independent scientific sources.
+- Local ingestion acceptance/rejection is a control-flow outcome and does not validate the external propositions.
+- The repeatable hash supports only the recorded local execution fixture; it does not by itself demonstrate stable graph behavior or persistent-store correctness.

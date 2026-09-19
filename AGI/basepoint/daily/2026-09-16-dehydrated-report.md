@@ -70,3 +70,12 @@ LIQUID
   "scope": "fixed local SQLite fixture"
 }
 ```
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: REFERENCE_SIGNAL_ONLY
+Origin Continuity: PRESERVED
+
+- Wikipedia AI-alignment, AI-safety and metacognition pages are general reference context, not primary scientific validation.
+- Local ingestion acceptance/rejection is a control-flow result only and does not verify the external propositions.
+- The hard-rollback signal was not written to the graph; repeated reference use does not create source independence.

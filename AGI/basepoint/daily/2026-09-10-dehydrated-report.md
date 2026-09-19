@@ -54,3 +54,12 @@ Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 - **distinct_snapshots**: 1
 - **repeatable**: true
 - **scope**: fixed local SQLite fixture
+
+## AGI_BASEPOINT_2026-09-19
+
+Basepoint State: EXTERNAL_RESEARCH_SIGNAL
+Origin Continuity: PRESERVED
+
+- The arXiv sources are distinct external research records; any substantive claim remains bounded to the cited paper and is not experimentally reproduced by this run.
+- Local ingestion acceptance is not independent scientific verification.
+- The rejected third signal was not written to the graph; local convergence remains a fixture-level execution observation.
