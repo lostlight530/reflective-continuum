@@ -4,7 +4,7 @@
 
 - Task: R5 Cognitive Architecture Review
 - Target Month: 2026-09
-- Coverage Window: 2026-09-01 through 2026-09-20
+- Coverage Window: 2026-09-01 through 2026-09-21
 - Month Status: OPEN
 - Report Status: PROVISIONAL
 - Recommendation Status: RECOMMENDATION_BLOCKED
@@ -16,7 +16,7 @@
 
 This is the canonical September month-to-date architecture-review path
 
-It reviews only repository-visible evidence through 2026-09-20
+It reviews only repository-visible evidence through 2026-09-21
 
 It does not rewrite SPECIFICATION, MANIFESTO, ADR, METHODOLOGY, REFERENCES, CODE or tests
 
@@ -46,7 +46,7 @@ The repository is not established by current evidence as:
 - a general safety proof
 - a guaranteed durable cognitive memory system
 
-## DAILY ARCHITECTURE EVIDENCE — 2026-09-01 THROUGH 2026-09-20
+## DAILY ARCHITECTURE EVIDENCE — 2026-09-01 THROUGH 2026-09-21
 
 | Date | Architecture-relevant evidence | Boundary |
 | --- | --- | --- |
@@ -70,6 +70,7 @@ The repository is not established by current evidence as:
 | 2026-09-18 | R1 rollback + R2 one failed test | test failure not diagnosed without identity |
 | 2026-09-19 | R1 rollback + R2 one failed test / empty state | sibling concurrency preserved, no data-loss inference |
 | 2026-09-20 | R1 rollback + R2 imports/init success, one failed test, empty state | later pair closes current W38 paths but was not original R3 input |
+| 2026-09-21 | R1 two accepted + one rejected with HARD_ROLLBACK; R2 module/rule checks succeed, Nodes 0 / Edges 0, 26 passed / 1 failed | local ingestion control, empty-store state and test-count evidence coexist; none establishes truth, persistence health or diagnosed defect |
 
 ## MODULE HEALTH REVIEW
 
@@ -251,9 +252,9 @@ These are questions, not approved changes
 
 ~~~text
 Month = OPEN
-Coverage through = 2026-09-20
-Current R1 paths = 20 / 20
-Current R2 paths = 20 / 20
+Coverage through = 2026-09-21
+Current R1 paths = 21 / 21
+Current R2 paths = 21 / 21
 Architecture Review = PROVISIONAL
 Recommendation Status = RECOMMENDATION_BLOCKED
 Final R5 = NOT_DUE
