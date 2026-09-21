@@ -131,11 +131,11 @@ The prior contradictory value remains recoverable from Git history
 
 Monthly use must read the current owning source plus its historical correction semantics
 
-### 2026-09-18 through 2026-09-20 R2
+### 2026-09-18 through 2026-09-21 R2
 
 Each current R2 has one failed test in the reported aggregate for these dates
 
-At least for 9/19, prior maintenance established that the failed test identity/assertion/cause was not present in the artifact
+For 9/19 and 9/21, the reviewed artifacts do not provide failed-test identity/assertion/cause; the month-to-date layer does not infer those missing details for any date
 
 The month-to-date layer does not invent the missing failure identity for any date
 
