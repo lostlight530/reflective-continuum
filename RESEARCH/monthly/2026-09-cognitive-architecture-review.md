@@ -260,6 +260,134 @@ Recommendation Status = RECOMMENDATION_BLOCKED
 Final R5 = NOT_DUE
 ~~~
 
+## CURRENT_ARCHITECTURE_EXTENSION_2026-09-21
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: FORWARD_MONTH_TO_DATE_RECONCILIATION  
+Original 2026-09-21 Daily Files Modified: NO  
+Month State: OPEN  
+W39 State: IN_PROGRESS  
+Final R5: NOT_DUE
+
+### File-by-file review — 2026-09-21 R1
+
+Reviewed file:
+
+`RESEARCH/daily/2026-09-21-dehydrated-report.md`
+
+Recorded state:
+
+- Convergence: SUCCESS_WITH_REJECTED_SIGNAL
+- three external signals from Wikipedia/general-reference pages
+- signal_metacognition: ACCEPTED
+- signal_ai_alignment: ACCEPTED
+- signal_ai_safety: REJECTED_FROM_INGESTION
+- HARD_ROLLBACK recorded for rejected signal
+- Graph Write Status: False for the rejected signal
+- fixed local SQLite fixture: distinct_snapshots 1, iterations 100, repeatable true
+
+Current architecture interpretation:
+
+```text
+OBSERVER_ACCEPTED
+!= EXTERNAL_TRUTH
+
+REJECTED_FROM_INGESTION
+!= SCIENTIFIC_FALSEHOOD
+
+FIXED_FIXTURE_REPEATABLE
+!= DURABLE_CROSS_TASK_PERSISTENCE
+```
+
+The three URLs are one general-reference publisher family and are not treated as three independent scientific corroborations
+
+The R1 file is useful runtime/control-flow evidence for ingestion and rollback behavior only within the recorded local task context
+
+### File-by-file review — 2026-09-21 R2
+
+Reviewed file:
+
+`RESEARCH/daily/2026-09-21-cortex-selfcheck.md`
+
+Recorded state:
+
+- six named modules: SUCCESS
+- Rule Engine flags: true
+- Nodes: 0
+- Edges: 0
+- Incremental Drift: NOT_COMPUTED
+- Context: INDETERMINATE_EMPTY_STATE
+- Test Results: 27 total / 26 passed / 1 failed / 0 errors / 0 skipped
+
+Current architecture interpretation:
+
+```text
+MODULE_IMPORT_INIT_SUCCESS
+!= ARCHITECTURE_HEALTHY
+
+RULE_ENGINE_TRUE
+!= PERSISTENT_GRAPH_HEALTHY
+
+NODES_0_EDGES_0
+!= EMPTY_STATE_HEALTHY
+!= DATA_LOSS
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+!= DIAGNOSED_DEFECT
+```
+
+The current R2 artifact does not contain failed-test identity, assertion, traceback or cause
+
+Therefore the month-to-date layer preserves:
+
+`FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT`
+
+No failure identity is invented
+
+### Cross-file 2026-09-21 interpretation
+
+R1 and R2 are independent Daily surfaces
+
+Same logical date does not prove they opened one named common SQLite store
+
+The simultaneous states:
+
+- R1 accepted two signals and rolled back one
+- R2 observed Nodes 0 / Edges 0
+- R2 module/rule checks succeeded
+- R2 reported one failed test
+
+are not contradictory by themselves
+
+They remain separate evidence planes until common-store/run identity is proven
+
+### W39 status
+
+W39 = IN_PROGRESS
+
+- 2026-09-21 R1 current path: PRESENT
+- 2026-09-21 R2 current path: PRESENT
+- W39 R3 final: NOT_DUE
+- W39 R4 final: NOT_DUE
+- W39 natural-week closure: NOT_CLAIMED
+
+The first W39 Daily pair does not establish weekly architecture stability, persistence, source quality or test-suite health
+
+### 2026-09-22 review-cut boundary
+
+No 2026-09-22 R1/R2 current paths were observed on reviewed current main at this cut
+
+This pass does not classify that absence as a historical missed execution because scheduler due-time state is not reconstructed here
+
+Current label:
+
+`CURRENT_MAIN_PATH_NOT_OBSERVED_AT_REVIEW_CUT`
+
+Historical missing classification:
+
+`NOT_ASSIGNED_BY_THIS_RECONCILIATION`
+
 ## FINALIZATION REQUIREMENTS
 
 The final architecture review may extend this file only after natural month end and after all due September R1/R2/R3/R4 evidence is available or explicitly classified
