@@ -45,10 +45,10 @@ Next Action: REJECTED_FROM_INGESTION
 RUN_END
 
 ## 中文综合
-本次摄入尝试了三条信号：元认知、决定论和AI对齐。前两条信号成功通过验证，但第三条关于AI对齐的信号因反射深度耗尽而被拒绝并执行了Hard Rollback。整体图谱未因拒绝而完全终止，成功接纳了其余可信信号。
+本次摄入尝试了三条信号：元认知、决定论和AI对齐。前两条信号成功通过验证，但第三条关于AI对齐的信号因反射深度耗尽而被拒绝并执行了Hard Rollback。本次局部摄入未因单条拒绝而完全终止，其余两条信号被本地 Observer 接受。该接受状态只表示通过当前本地摄入规则，不证明外部命题真实、独立 corroborated 或科学有效。
 
 ## 英文综合
-This ingestion attempted three signals: Metacognition, Determinism, and AI Alignment. The first two signals passed validation, but the third signal concerning AI Alignment was rejected due to exhausted reflection depth, triggering a Hard Rollback. The overall graph ingestion was not completely aborted, successfully integrating the remaining credible signals.
+This ingestion attempted three signals: Metacognition, Determinism, and AI Alignment. The first two signals passed validation, but the third signal concerning AI Alignment was rejected due to exhausted reflection depth, triggering a Hard Rollback. The local ingestion run was not completely aborted; the other two signals were accepted by the local Observer. This acceptance is a local control-flow result and does not establish external truth, independent corroboration, or scientific validity.
 
 ## Phase State
 LIQUID
