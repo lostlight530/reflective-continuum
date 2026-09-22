@@ -4,7 +4,7 @@
 
 - Task: R5 Cognitive Architecture Review
 - Target Month: 2026-09
-- Coverage Window: 2026-09-01 through 2026-09-21
+- Coverage Window: 2026-09-01 through 2026-09-22
 - Month Status: OPEN
 - Report Status: PROVISIONAL
 - Recommendation Status: RECOMMENDATION_BLOCKED
@@ -16,7 +16,7 @@
 
 This is the canonical September month-to-date architecture-review path
 
-It reviews only repository-visible evidence through 2026-09-21
+It reviews only repository-visible evidence through 2026-09-22
 
 It does not rewrite SPECIFICATION, MANIFESTO, ADR, METHODOLOGY, REFERENCES, CODE or tests
 
@@ -46,7 +46,7 @@ The repository is not established by current evidence as:
 - a general safety proof
 - a guaranteed durable cognitive memory system
 
-## DAILY ARCHITECTURE EVIDENCE — 2026-09-01 THROUGH 2026-09-21
+## DAILY ARCHITECTURE EVIDENCE — 2026-09-01 THROUGH 2026-09-22
 
 | Date | Architecture-relevant evidence | Boundary |
 | --- | --- | --- |
@@ -71,6 +71,7 @@ The repository is not established by current evidence as:
 | 2026-09-19 | R1 rollback + R2 one failed test / empty state | sibling concurrency preserved, no data-loss inference |
 | 2026-09-20 | R1 rollback + R2 imports/init success, one failed test, empty state | later pair closes current W38 paths but was not original R3 input |
 | 2026-09-21 | R1 two accepted + one rejected with HARD_ROLLBACK; R2 module/rule checks succeed, Nodes 0 / Edges 0, 26 passed / 1 failed | local ingestion control, empty-store state and test-count evidence coexist; none establishes truth, persistence health or diagnosed defect |
+| 2026-09-22 | R1 two accepted + one rejected with HARD_ROLLBACK from general-reference Wikipedia payloads; R2 modules/rules pass, Nodes 0 / Edges 0, 26 passed / 1 failed with failure identity not recorded | local control-flow, source authority, empty-store state and test-count evidence remain separate; no truth, persistence-health or diagnosed-defect inference |
 
 ## MODULE HEALTH REVIEW
 
@@ -252,9 +253,9 @@ These are questions, not approved changes
 
 ~~~text
 Month = OPEN
-Coverage through = 2026-09-21
-Current R1 paths = 21 / 21
-Current R2 paths = 21 / 21
+Coverage through = 2026-09-22
+Current R1 paths = 22 / 22
+Current R2 paths = 22 / 22
 Architecture Review = PROVISIONAL
 Recommendation Status = RECOMMENDATION_BLOCKED
 Final R5 = NOT_DUE
@@ -387,6 +388,97 @@ Current label:
 Historical missing classification:
 
 `NOT_ASSIGNED_BY_THIS_RECONCILIATION`
+
+## CURRENT_ARCHITECTURE_EXTENSION_2026-09-22
+
+Maintenance Agent: GPT Web Maintenance Agent  
+Maintenance Type: FORWARD_MONTH_TO_DATE_RECONCILIATION  
+Original 2026-09-22 Daily Files Modified By This R5 Pass: NO  
+Month State: OPEN  
+W39 State: IN_PROGRESS  
+Final R5: NOT_DUE
+
+### 2026-09-22 R1 effect
+
+Reviewed `RESEARCH/daily/2026-09-22-dehydrated-report.md`
+
+Recorded:
+- SUCCESS_WITH_REJECTED_SIGNAL
+- metacognition ACCEPTED
+- determinism ACCEPTED
+- AI alignment REJECTED_FROM_INGESTION
+- HARD_ROLLBACK
+- rejected Graph Write Status false
+- fixed local SQLite fixture repeatable
+
+The pre-merge R1 wording correction already removed an over-strong implication that accepted payloads were credible external truths
+
+Current interpretation:
+
+```text
+LOCAL_OBSERVER_ACCEPTED
+!= EXTERNAL_TRUTH
+!= INDEPENDENT_CORROBORATION
+!= SCIENTIFIC_VALIDITY
+
+HARD_ROLLBACK
+!= SCIENTIFIC_FALSIFICATION
+```
+
+All three source payloads are Wikipedia/general-reference surfaces and remain one weak publisher family for research-authority purposes
+
+### 2026-09-22 R2 effect
+
+Reviewed `RESEARCH/daily/2026-09-22-cortex-selfcheck.md`
+
+Recorded:
+- named modules passed
+- Rule Engine flags true
+- Nodes 0
+- Edges 0
+- Incremental Drift NOT_COMPUTED
+- Context INDETERMINATE_EMPTY_STATE
+- 27 total / 26 passed / 1 failed
+- failed-test identity NOT_RECORDED_IN_THIS_ARTIFACT
+- failure diagnosis NOT_PERFORMED
+
+Current interpretation:
+
+```text
+MODULE_PASS
+!= GLOBAL_SYSTEM_HEALTH
+
+RULE_ENGINE_TRUE
+!= PERSISTENT_GRAPH_HEALTHY
+
+EMPTY_STATE
+!= HEALTHY
+!= DATA_LOSS
+
+FAILED_COUNT_WITHOUT_IDENTITY
+!= DIAGNOSED_DEFECT
+```
+
+### Cross-file boundary
+
+Same logical date still does not prove R1 and R2 opened one common persistent store
+
+```text
+SAME_DATE
+!= SAME_STORE
+```
+
+### W39 current state
+
+Retained W39 Daily pairs:
+- 2026-09-21
+- 2026-09-22
+
+R3 final: NOT_DUE
+R4 final: NOT_DUE
+Natural-week closure: NOT_CLAIMED
+
+No Weekly artifact is created here
 
 ## FINALIZATION REQUIREMENTS
 
