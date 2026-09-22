@@ -441,3 +441,20 @@ This same file may receive a final R5 section only after:
 - Wikipedia payload promoted to primary scientific authority: NO
 - Protected architecture modified: NO
 - Boundary violation: NO
+
+
+## NIGHTLY_FULL_REVIEW_2026-09-22
+
+Scope: every R1/R2 Daily pair from 2026-09-01 through 2026-09-22, W36/W37/W38 R3/R4, W39 open state, and September R5 month-to-date interpretation.
+
+Retained month-wide boundaries:
+- R1 ACCEPTED means local ingestion/control-flow acceptance only; it does not establish external truth, independent corroboration or scientific validity.
+- R1 REJECTED_FROM_INGESTION means local rejection only; it does not establish that the external claim is scientifically false.
+- R2 module import/init success and Rule Engine true do not establish whole-system or persistent-graph health.
+- Nodes=0 / Edges=0 remains INDETERMINATE_EMPTY_STATE where store identity and cause are not established.
+- From 2026-09-18 onward, 26 passed / 1 failed is retained without failed-test identity; FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT.
+- Same-date R1 and R2 do not prove a shared SQLite/persistent-store identity unless explicitly recorded.
+
+Delivery-layer correction: PR #347 was closed unmerged after its branch aggregate tree showed unrelated repository deletions. PR #348 was rebuilt from fresh post-R1 main and merged with only the intended 2026-09-22 R2 file. This is a branch-sync/delivery defect, not an R2 runtime defect, and must never be counted as the unnamed failed test.
+
+Current state: W36/W37/W38 are historical closed weekly surfaces; W39 is IN_PROGRESS; September remains OPEN; R5 final/recommendation remains NOT_DUE or BLOCKED where required. No standalone audit artifact is created.
