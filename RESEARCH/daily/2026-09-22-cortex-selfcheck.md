@@ -37,3 +37,11 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failed: 1
 - Errors: 0
 - Skipped: 0
+
+
+## Failure Evidence Boundary
+- Failed Test Identity: NOT_RECORDED_IN_THIS_ARTIFACT
+- Failed Assertion / Traceback: NOT_RECORDED_IN_THIS_ARTIFACT
+- Failure Diagnosis: NOT_PERFORMED
+- Boundary: FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT
+- Boundary: 26_PASSED_PLUS_1_FAILED != ALL_GREEN
