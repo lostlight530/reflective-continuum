@@ -4,15 +4,14 @@
 
 - Task: R5 Phase Analysis
 - Target Month: 2026-09
-- Coverage Window: 2026-09-01 through 2026-09-21
+- Coverage Window: 2026-09-01 through 2026-09-22
 - Month Status: OPEN
 - Report Status: PROVISIONAL
 - Recommendation Status: RECOMMENDATION_BLOCKED
 - Record Provenance: HUMAN_AUTHORIZED_MONTH_TO_DATE_BASELINE
 - Natural-Month R5 Final: NOT_DUE
-- Reconciliation Cut: 2026-09-22
-- 2026-09-22 R1/R2 Current Paths At Review Cut: NOT_OBSERVED_IN_CURRENT_MAIN
-- 2026-09-22 Historical Missing Classification: NOT_ASSIGNED_BY_THIS_RECONCILIATION
+- Reconciliation Cut: 2026-09-22 post-delivery
+- 2026-09-22 R1/R2 Current Paths: PRESENT
 - Future Dates: 2026-09-23 through 2026-09-30 NOT_YET_DUE
 - Protected Architecture Modification: NO
 
@@ -26,9 +25,9 @@ It does not convert synthetic fixture output into operational cognition
 
 It does not infer phase hours from line counts, report counts or repeated tests
 
-It preserves every retained September logical date through 2026-09-21 and explicitly keeps Daily runtime evidence, source authority, store identity and Weekly aggregation as separate planes
+It preserves every retained September logical date through 2026-09-22 and explicitly keeps Daily runtime evidence, source authority, store identity and Weekly aggregation as separate planes
 
-## DAILY INVENTORY — 2026-09-01 THROUGH 2026-09-21
+## DAILY INVENTORY — 2026-09-01 THROUGH 2026-09-22
 
 | Date | R1 current path | R2 current path | Key point-in-time state | Month-to-date interpretation |
 | --- | --- | --- | --- | --- |
@@ -52,21 +51,23 @@ It preserves every retained September logical date through 2026-09-21 and explic
 | 2026-09-18 | PRESENT | PRESENT | R1 hard rollback, R2 26 passed / 1 failed | failed count and accepted signals remain separate evidence planes |
 | 2026-09-19 | PRESENT | PRESENT | R1 two accepted + one rejected with HARD_ROLLBACK, R2 26 passed / 1 failed and INDETERMINATE_EMPTY_STATE | failure identity remains UNKNOWN_FROM_ARTIFACT |
 | 2026-09-20 | PRESENT | PRESENT | R1 two accepted + one rejected with HARD_ROLLBACK, R2 modules import/init success, Nodes 0 / Edges 0, 26 passed / 1 failed | later pair was not original W38 R3 input, current path coverage now 7/7 |
+| 2026-09-21 | PRESENT | PRESENT | R1 two accepted + one rejected with HARD_ROLLBACK; R2 modules/rules pass, Nodes 0 / Edges 0, 26 passed / 1 failed | first W39 pair; local ingestion result, empty-store state and failed-count evidence remain separate |
+| 2026-09-22 | PRESENT | PRESENT | R1 two accepted + one rejected from general-reference payloads with HARD_ROLLBACK; R2 modules/rules pass, Nodes 0 / Edges 0, 26 passed / 1 failed with no failure identity | second W39 pair; no shared-store, source-truth or diagnosed-defect inference |
 
 ## DAILY COVERAGE ACCOUNTING
 
-Current R1 paths retained through 2026-09-21: 21 / 21
+Current R1 paths retained through 2026-09-22: 22 / 22
 
-Current R2 paths retained through 2026-09-21: 21 / 21
+Current R2 paths retained through 2026-09-22: 22 / 22
 
 Current-path completeness does not authorize these stronger claims:
 
 ~~~text
-21 R1 paths
-!= 21 scientifically validated external observations
+22 R1 paths
+!= 22 scientifically validated external observations
 
-21 R2 paths
-!= 21 healthy persistent-store confirmations
+22 R2 paths
+!= 22 healthy persistent-store confirmations
 
 same-date R1 + R2
 != same store
@@ -131,11 +132,11 @@ The prior contradictory value remains recoverable from Git history
 
 Monthly use must read the current owning source plus its historical correction semantics
 
-### 2026-09-18 through 2026-09-21 R2
+### 2026-09-18 through 2026-09-22 R2
 
 Each current R2 has one failed test in the reported aggregate for these dates
 
-For 9/19 and 9/21, the reviewed artifacts do not provide failed-test identity/assertion/cause; the month-to-date layer does not infer those missing details for any date
+For 9/19, 9/21 and 9/22, the reviewed artifacts do not provide failed-test identity/assertion/cause; the month-to-date layer does not infer those missing details for any date
 
 The month-to-date layer does not invent the missing failure identity for any date
 
@@ -315,9 +316,9 @@ INGESTION_PAYLOAD
 ## MONTH STATUS
 
 ~~~text
-Coverage Window = 2026-09-01..2026-09-21
-R1 Current Paths = 21 / 21
-R2 Current Paths = 21 / 21
+Coverage Window = 2026-09-01..2026-09-22
+R1 Current Paths = 22 / 22
+R2 Current Paths = 22 / 22
 Month Status = OPEN
 Report Status = PROVISIONAL
 Recommendation Status = RECOMMENDATION_BLOCKED
@@ -377,6 +378,46 @@ The first W39 Daily pair does not constitute Weekly closure
 No 2026-09-22 R1/R2 path is observed at this cut
 
 No historical missing classification is assigned by this reconciliation
+
+## 2026-09-22 PHASE / EXECUTION EXTENSION
+
+### R1 point-in-time state
+
+- two accepted signals
+- one rejected signal
+- HARD_ROLLBACK
+- rejected graph write false
+- source payload family: Wikipedia/general-reference
+- fixed-fixture repeatability recorded
+
+This remains control-flow evidence, not scientific source validation
+
+### R2 point-in-time state
+
+- module/rule checks pass
+- Nodes 0 / Edges 0
+- Incremental Drift NOT_COMPUTED
+- INDETERMINATE_EMPTY_STATE
+- tests 27 total / 26 passed / 1 failed
+- failure identity not recorded
+- diagnosis not performed
+
+### Phase-metric effect
+
+2026-09-22 still does not make Liquid/Gas hours, transition origins, MTBT, Coherence Index or durable cross-task persistence computable
+
+No duration is inferred
+
+### W39 status
+
+W39 = IN_PROGRESS
+
+Current Daily pairs retained:
+- 2026-09-21
+- 2026-09-22
+
+R3/R4 final: NOT_DUE
+Natural-week closure: NOT_CLAIMED
 
 ## FINALIZATION TRIGGER
 
