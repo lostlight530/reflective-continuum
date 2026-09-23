@@ -45,3 +45,33 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failure Diagnosis: NOT_PERFORMED
 - Boundary: FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT
 - Boundary: 26_PASSED_PLUS_1_FAILED != ALL_GREEN
+
+
+## Maintenance calibration — 2026-09-23
+
+This n-1 repair preserves the original R2 selfcheck result, including the recorded failure.
+
+Current bounded interpretation:
+
+- named module checks and rule-engine flags are component-level evidence only;
+- `Nodes: 0 / Edges: 0` remains `INDETERMINATE_EMPTY_STATE`;
+- 26 passed plus 1 failed is not an all-green result;
+- because the failed test identity, assertion, and traceback were not recorded in this artifact, the one failure cannot be promoted into a diagnosed repository defect;
+- this R2 artifact does not prove that it opened the same persistent store used by same-date R1.
+
+```text
+MODULE_CHECKS_PASS
+!= WHOLE_SYSTEM_HEALTHY
+
+EMPTY_GRAPH
+!= HEALTHY
+!= DATA_LOSS
+
+FAILED_COUNT_WITHOUT_IDENTITY
+!= DIAGNOSED_DEFECT
+
+SAME_DATE_R1_R2
+!= SAME_STORE
+```
+
+No missing test identity is reconstructed after the fact.
