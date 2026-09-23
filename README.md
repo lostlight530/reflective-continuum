@@ -100,3 +100,24 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 - [Long-term maintenance contract](GOVERNANCE/MAINTENANCE.md) | 当前维护规则；不定义图运行时语义
 
 The ADR and Methodology indexes are durable current navigation surfaces. Dated evidence/audit records remain point-in-time evidence for their own cutoffs and are not silently promoted into current runtime state.
+
+
+## Current periodic evidence note — 2026-09-23
+
+The repository currently retains September R1/R2 Daily evidence through 2026-09-23 and open month-to-date R5 interpretation surfaces.
+
+These periodic artifacts do not change the executable contracts described above.
+
+```text
+DAILY_RESEARCH_PRESENT
+!= NEW_RUNTIME_CAPABILITY
+
+MONTH_TO_DATE_R5
+!= NATURAL_MONTH_FINAL
+
+EMPTY_GRAPH_OBSERVED
+!= HEALTHY
+!= DATA_LOSS
+```
+
+Current behavior remains governed by implementation and explicit repository contracts.

@@ -459,6 +459,37 @@ Delivery-layer correction: PR #347 was closed unmerged after its branch aggregat
 
 Current state: W36/W37/W38 are historical closed weekly surfaces; W39 is IN_PROGRESS; September remains OPEN; R5 final/recommendation remains NOT_DUE or BLOCKED where required. No standalone audit artifact is created.
 
+
+## CURRENT_PHASE_EXTENSION_2026-09-23
+
+Maintenance type: A2 current-state reconciliation.
+
+Current main now retains both 2026-09-23 R1 and R2 Daily paths.
+
+2026-09-23 R1 records two locally accepted signals and one rejected signal with HARD_ROLLBACK. 2026-09-23 R2 records module/init success, an indeterminate empty graph, and 27 tests with 26 passed / 1 failed.
+
+Current interpretation remains bounded:
+
+```text
+R1_LOCAL_ACCEPTANCE
+!= EXTERNAL_TRUTH
+
+R2_EMPTY_STATE
+!= HEALTHY
+!= DATA_LOSS
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+
+FAILED_COUNT_WITHOUT_IDENTITY
+!= DIAGNOSED_DEFECT
+
+SAME_DATE_R1_R2
+!= SAME_PERSISTENT_STORE
+```
+
+Current retained Daily coverage through 2026-09-23 is 23/23 for R1 and 23/23 for R2. W39 remains IN_PROGRESS. September remains OPEN. Final R5 remains NOT_DUE / recommendation remains blocked where the existing contract requires evidence not yet established.
+
 ## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
 
 ### A1 / N-1 cutoff — 2026-09-22
@@ -467,3 +498,10 @@ Current state: W36/W37/W38 are historical closed weekly surfaces; W39 is IN_PROG
 - Preserve local ACCEPTED/REJECTED/HARD_ROLLBACK semantics, source-authority limits, failed-test counts, unknown failure identity, and SAME_DATE != SAME_STORE.
 - Nodes=0 / Edges=0 remains INDETERMINATE_EMPTY_STATE unless shared-store identity and cause are independently established.
 - September remains OPEN; R5 final remains NOT_DUE.
+
+### A2 / N cutoff — 2026-09-23
+
+- Current September inventory includes the 2026-09-23 R1/R2 pair, but that later pair does not identify earlier unnamed failures or prove shared persistence.
+- Current month-to-date completeness does not convert local control-flow acceptance into external truth, nor failed-count evidence into diagnosed defect.
+- W39 remains IN_PROGRESS and September remains OPEN.
+- This note extends current interpretation only; the A1 point-in-time evidence remains intact.
