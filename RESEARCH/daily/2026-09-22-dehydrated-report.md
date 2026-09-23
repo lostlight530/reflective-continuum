@@ -62,3 +62,23 @@ LIQUID
   "scope": "fixed local SQLite fixture"
 }
 ```
+
+
+## Dual-view maintenance annotation — 2026-09-23
+
+### View 1 — N-1 / 2026-09-22 R1 calibration
+
+Local ACCEPTED/REJECTED/HARD_ROLLBACK outcomes remain control-flow evidence. Wikipedia payloads are general-reference material, not independent scientific corroboration. The fixed SQLite fixture repeatability result is fixture-scoped.
+
+### View 2 — N / 2026-09-23 current interpretation
+
+Later R1/R2 delivery does not retroactively establish shared-store identity, external truth, or durable cognitive memory for this 9/22 run. Current architecture/monthly interpretation may narrow meaning, but not rewrite the original execution.
+
+```text
+N_MINUS_1_R1_RUNTIME_EVIDENCE
++
+N_CURRENT_INTERPRETATION
+!= EXTERNAL_TRUTH
+!= SHARED_STORE_PROVEN
+!= HISTORY_REWRITE
+```

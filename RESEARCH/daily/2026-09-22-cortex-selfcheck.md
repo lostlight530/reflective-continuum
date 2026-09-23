@@ -45,3 +45,23 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failure Diagnosis: NOT_PERFORMED
 - Boundary: FAILED_COUNT_WITHOUT_IDENTITY != DIAGNOSED_DEFECT
 - Boundary: 26_PASSED_PLUS_1_FAILED != ALL_GREEN
+
+
+## Dual-view maintenance annotation — 2026-09-23
+
+### View 1 — N-1 / 2026-09-22 R2 calibration
+
+Module checks and rule flags are component evidence only. `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`. `26 passed / 1 failed` is not all-green, and the unnamed failure cannot be promoted into a diagnosed defect.
+
+### View 2 — N / 2026-09-23 current interpretation
+
+Later 2026-09-23 selfcheck evidence does not identify the missing 9/22 failed-test identity or prove that same-date R1/R2 used one store. Current month-to-date completeness stays separate from this record's unresolved evidence.
+
+```text
+N_MINUS_1_SELFCHECK_EVIDENCE
++
+N_CURRENT_INTERPRETATION
+!= ALL_GREEN
+!= RETROACTIVE_FAILURE_DIAGNOSIS
+!= SAME_STORE
+```
