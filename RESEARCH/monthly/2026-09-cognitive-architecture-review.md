@@ -521,6 +521,33 @@ Delivery-layer correction: PR #347 was closed unmerged after its branch aggregat
 
 Current state: W36/W37/W38 are historical closed weekly surfaces; W39 is IN_PROGRESS; September remains OPEN; R5 final/recommendation remains NOT_DUE or BLOCKED where required. No standalone audit artifact is created.
 
+
+## CURRENT_ARCHITECTURE_EXTENSION_2026-09-23
+
+Maintenance type: A2 current-state reconciliation.
+
+2026-09-23 adds another retained R1/R2 pair but does not justify architecture promotion.
+
+Architecture-relevant bounded evidence:
+
+- R1 continues to demonstrate local transactional accept/reject/rollback behavior only.
+- R2 continues to show that component checks can coexist with an indeterminate empty graph and a non-zero failed-test count.
+- no named shared persistent-store identity between R1 and R2 is established by same-date delivery.
+- no external source payload accepted by R1 becomes scientific truth through ingestion.
+
+```text
+DAILY_PAIR_PRESENT
+!= SHARED_STORE_PROVEN
+
+TRANSACTIONAL_CONTROL_FLOW
+!= DURABLE_COGNITIVE_MEMORY_PROVEN
+
+COMPONENT_CHECKS
+!= ARCHITECTURE_HEALTH_CERTIFICATION
+```
+
+Current month-to-date architecture review therefore remains PROVISIONAL, month OPEN, W39 IN_PROGRESS, and final architecture recommendation NOT_DUE / BLOCKED pending the repository's normal closure conditions.
+
 ## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
 
 ### A1 / N-1 cutoff — 2026-09-22
@@ -529,3 +556,10 @@ Current state: W36/W37/W38 are historical closed weekly surfaces; W39 is IN_PROG
 - Preserve test-pass/architecture-health, local-control-flow/source-truth, empty-state/health, and same-date/shared-store separations.
 - No Daily or Weekly cadence result authorizes architecture promotion by itself.
 - Natural-month architecture recommendation remains blocked/not due while September is open.
+
+### A2 / N cutoff — 2026-09-23
+
+- 2026-09-23 R1/R2 extends the current evidence cut only; it does not retroactively repair prior evidence gaps or establish a shared persistent store.
+- Current architecture interpretation remains bounded to repository-visible evidence; no protected architecture change is authorized.
+- September remains OPEN and final R5 architecture recommendation remains NOT_DUE / BLOCKED as applicable.
+- A2 is additive to A1 and does not rewrite the 2026-09-22 review.
