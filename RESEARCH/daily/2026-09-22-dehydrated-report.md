@@ -62,3 +62,30 @@ LIQUID
   "scope": "fixed local SQLite fixture"
 }
 ```
+
+## Maintenance calibration — 2026-09-23
+
+This n-1 repair preserves the 2026-09-22 R1 execution record and tightens its evidence semantics.
+
+- Wikipedia payloads are general-reference source material, not independent scientific corroboration.
+- `ACCEPTED` is a local Cortex Observer control-flow result only.
+- `REJECTED_FROM_INGESTION` is a local rejection outcome only; it does not scientifically falsify the external statement.
+- `HARD_ROLLBACK` proves the recorded rejected write was not applied in this run; it does not prove global persistent-store health.
+- the fixed local SQLite repeatability metric is fixture-scoped and does not establish continuity with any R2 store.
+
+```text
+LOCAL_OBSERVER_ACCEPTED
+!= EXTERNAL_TRUTH
+!= SCIENTIFIC_VALIDATION
+
+REJECTED_FROM_INGESTION
+!= EXTERNAL_CLAIM_FALSE
+
+HARD_ROLLBACK_RECORDED
+!= GLOBAL_STORE_HEALTHY
+
+FIXED_FIXTURE_REPEATABLE
+!= SHARED_PERSISTENT_STORE_PROVEN
+```
+
+No new ingestion run is created by this calibration.
