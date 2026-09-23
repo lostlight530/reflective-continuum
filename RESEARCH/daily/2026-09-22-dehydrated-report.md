@@ -63,29 +63,22 @@ LIQUID
 }
 ```
 
-## Maintenance calibration — 2026-09-23
 
-This n-1 repair preserves the 2026-09-22 R1 execution record and tightens its evidence semantics.
+## Dual-view maintenance annotation — 2026-09-23
 
-- Wikipedia payloads are general-reference source material, not independent scientific corroboration.
-- `ACCEPTED` is a local Cortex Observer control-flow result only.
-- `REJECTED_FROM_INGESTION` is a local rejection outcome only; it does not scientifically falsify the external statement.
-- `HARD_ROLLBACK` proves the recorded rejected write was not applied in this run; it does not prove global persistent-store health.
-- the fixed local SQLite repeatability metric is fixture-scoped and does not establish continuity with any R2 store.
+### View 1 — N-1 / 2026-09-22 R1 calibration
+
+Local ACCEPTED/REJECTED/HARD_ROLLBACK outcomes remain control-flow evidence. Wikipedia payloads are general-reference material, not independent scientific corroboration. The fixed SQLite fixture repeatability result is fixture-scoped.
+
+### View 2 — N / 2026-09-23 current interpretation
+
+Later R1/R2 delivery does not retroactively establish shared-store identity, external truth, or durable cognitive memory for this 9/22 run. Current architecture/monthly interpretation may narrow meaning, but not rewrite the original execution.
 
 ```text
-LOCAL_OBSERVER_ACCEPTED
+N_MINUS_1_R1_RUNTIME_EVIDENCE
++
+N_CURRENT_INTERPRETATION
 != EXTERNAL_TRUTH
-!= SCIENTIFIC_VALIDATION
-
-REJECTED_FROM_INGESTION
-!= EXTERNAL_CLAIM_FALSE
-
-HARD_ROLLBACK_RECORDED
-!= GLOBAL_STORE_HEALTHY
-
-FIXED_FIXTURE_REPEATABLE
-!= SHARED_PERSISTENT_STORE_PROVEN
+!= SHARED_STORE_PROVEN
+!= HISTORY_REWRITE
 ```
-
-No new ingestion run is created by this calibration.
