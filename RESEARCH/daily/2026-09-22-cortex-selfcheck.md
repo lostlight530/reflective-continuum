@@ -47,31 +47,21 @@ Context: INDETERMINATE_EMPTY_STATE
 - Boundary: 26_PASSED_PLUS_1_FAILED != ALL_GREEN
 
 
-## Maintenance calibration — 2026-09-23
+## Dual-view maintenance annotation — 2026-09-23
 
-This n-1 repair preserves the original R2 selfcheck result, including the recorded failure.
+### View 1 — N-1 / 2026-09-22 R2 calibration
 
-Current bounded interpretation:
+Module checks and rule flags are component evidence only. `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`. `26 passed / 1 failed` is not all-green, and the unnamed failure cannot be promoted into a diagnosed defect.
 
-- named module checks and rule-engine flags are component-level evidence only;
-- `Nodes: 0 / Edges: 0` remains `INDETERMINATE_EMPTY_STATE`;
-- 26 passed plus 1 failed is not an all-green result;
-- because the failed test identity, assertion, and traceback were not recorded in this artifact, the one failure cannot be promoted into a diagnosed repository defect;
-- this R2 artifact does not prove that it opened the same persistent store used by same-date R1.
+### View 2 — N / 2026-09-23 current interpretation
+
+Later 2026-09-23 selfcheck evidence does not identify the missing 9/22 failed-test identity or prove that same-date R1/R2 used one store. Current month-to-date completeness stays separate from this record's unresolved evidence.
 
 ```text
-MODULE_CHECKS_PASS
-!= WHOLE_SYSTEM_HEALTHY
-
-EMPTY_GRAPH
-!= HEALTHY
-!= DATA_LOSS
-
-FAILED_COUNT_WITHOUT_IDENTITY
-!= DIAGNOSED_DEFECT
-
-SAME_DATE_R1_R2
+N_MINUS_1_SELFCHECK_EVIDENCE
++
+N_CURRENT_INTERPRETATION
+!= ALL_GREEN
+!= RETROACTIVE_FAILURE_DIAGNOSIS
 != SAME_STORE
 ```
-
-No missing test identity is reconstructed after the fact.
