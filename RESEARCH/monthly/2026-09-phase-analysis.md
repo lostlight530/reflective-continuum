@@ -458,3 +458,12 @@ Retained month-wide boundaries:
 Delivery-layer correction: PR #347 was closed unmerged after its branch aggregate tree showed unrelated repository deletions. PR #348 was rebuilt from fresh post-R1 main and merged with only the intended 2026-09-22 R2 file. This is a branch-sync/delivery defect, not an R2 runtime defect, and must never be counted as the unnamed failed test.
 
 Current state: W36/W37/W38 are historical closed weekly surfaces; W39 is IN_PROGRESS; September remains OPEN; R5 final/recommendation remains NOT_DUE or BLOCKED where required. No standalone audit artifact is created.
+
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-23
+
+### A1 / N-1 cutoff — 2026-09-22
+
+- Review scope: all September R1/R2 Daily pairs through 2026-09-22, W36/W37/W38 R3/R4, W39 open state, and the month-to-date R5 evidence surface.
+- Preserve local ACCEPTED/REJECTED/HARD_ROLLBACK semantics, source-authority limits, failed-test counts, unknown failure identity, and SAME_DATE != SAME_STORE.
+- Nodes=0 / Edges=0 remains INDETERMINATE_EMPTY_STATE unless shared-store identity and cause are independently established.
+- September remains OPEN; R5 final remains NOT_DUE.
