@@ -121,3 +121,20 @@ EMPTY_GRAPH_OBSERVED
 ```
 
 Current behavior remains governed by implementation and explicit repository contracts.
+## Current periodic evidence note — 2026-09-24
+
+The merged A1 review preserves the complete September R1/R2 and Weekly/Monthly evidence history through 2026-09-23. Current main now also retains the 2026-09-24 R1/R2 pair.
+
+```text
+DAILY_PAIR_PRESENT
+!= NEW_RUNTIME_CAPABILITY
+R1_LOCAL_ACCEPTANCE
+!= EXTERNAL_TRUTH
+R2_EMPTY_TASK_LOCAL_STORE
+!= HEALTHY
+!= DATA_LOSS
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+```
+
+Current behavior remains governed by implementation and explicit contracts, not by the existence of periodic reports.
