@@ -572,3 +572,24 @@ Current month-to-date architecture review therefore remains PROVISIONAL, month O
 - The 2026-09-23 R1/R2 pair extends current inventory but does not establish durable cognitive memory, shared persistence, or architecture stability.
 - No Daily or Weekly cadence result authorizes protected architecture change or natural-month recommendation.
 - September remains OPEN; final R5 architecture recommendation remains NOT_DUE / BLOCKED where required.
+### A2 / N cutoff — 2026-09-24 current architecture reconciliation
+
+The A1 full-period review through 2026-09-23 remains intact. Current main now adds the 2026-09-24 R1/R2 pair.
+
+Architecture-relevant current evidence:
+- R1 retains two locally accepted signals and one rejected signal with `reflection_depth_exhausted`, HARD_ROLLBACK, rejected graph write false, and final observer phase `LIQUID`.
+- Those R1 outcomes remain local control-flow/transactional evidence; accepted payloads are not promoted to external scientific truth.
+- R2 explicitly opens a task-local `:memory:` database; `Nodes=0 / Edges=0` is scoped to that selfcheck store.
+- Same-day R1/R2 shared persistent-store identity remains NOT_ESTABLISHED.
+- R2 module labels are `PRODUCER_REPORTED_PASS`; the retained report does not independently preserve per-module trace for all five labels.
+- `27 total / 26 passed / 1 failed` remains non-all-green; failed-test identity and cause remain unknown from the artifact.
+- No protected architecture change is authorized by this Daily pair.
+
+```text
+TRANSACTIONAL_CONTROL_FLOW
+!= DURABLE_COGNITIVE_MEMORY_PROVEN
+TASK_LOCAL_EMPTY_STORE
+!= ARCHITECTURE_HEALTH_CERTIFICATION
+```
+
+W39 remains IN_PROGRESS. September remains OPEN. Final R5 architecture recommendation remains NOT_DUE / BLOCKED where required.
