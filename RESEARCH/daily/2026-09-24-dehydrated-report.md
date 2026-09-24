@@ -53,7 +53,7 @@ Subsequent Action: Signal Discarded
 The ingestion focused on metacognition, AI alignment, and AI safety. The metacognition and AI alignment signals were accepted by the system. However, the AI safety signal was rejected due to triggering the reflection_depth_exhausted constraint, resulting in a Hard Rollback.
 
 ## Phase State
-GAS
+LIQUID
 
 ## 实际可计算指标
 {
