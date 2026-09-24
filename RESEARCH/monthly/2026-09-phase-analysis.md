@@ -505,3 +505,12 @@ Current retained Daily coverage through 2026-09-23 is 23/23 for R1 and 23/23 for
 - Current month-to-date completeness does not convert local control-flow acceptance into external truth, nor failed-count evidence into diagnosed defect.
 - W39 remains IN_PROGRESS and September remains OPEN.
 - This note extends current interpretation only; the A1 point-in-time evidence remains intact.
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-24
+
+### A1 / N-1 cutoff — full September review through 2026-09-23
+
+- Review scope: all September R1/R2 Daily pairs from 2026-09-01 through 2026-09-23, W36/W37/W38 R3/R4, W39 open state, delivery corrections, and the current phase-analysis owner.
+- Preserve ACCEPTED / REJECTED_FROM_INGESTION / HARD_ROLLBACK task-time semantics, source-authority limits, failed-test counts, unknown failure identity, and `SAME_DATE != SAME_STORE`.
+- Daily phase labels and file counts do not make Liquid/Gas durations, MTBT, transition origins, Coherence Index, or durable cross-task persistence computable.
+- `Nodes=0 / Edges=0` remains indeterminate unless store identity and cause are directly established.
+- September remains OPEN; R5 final remains NOT_DUE and recommendation remains blocked where the existing contract requires unavailable evidence.

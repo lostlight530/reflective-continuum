@@ -563,3 +563,12 @@ Current month-to-date architecture review therefore remains PROVISIONAL, month O
 - Current architecture interpretation remains bounded to repository-visible evidence; no protected architecture change is authorized.
 - September remains OPEN and final R5 architecture recommendation remains NOT_DUE / BLOCKED as applicable.
 - A2 is additive to A1 and does not rewrite the 2026-09-22 review.
+## SEPTEMBER_DUAL_CUTOFF_MAINTENANCE_2026-09-24
+
+### A1 / N-1 cutoff — full September review through 2026-09-23
+
+- Review scope: all September R1/R2 Daily pairs from 2026-09-01 through 2026-09-23, W36/W37/W38 R3/R4, W39 open state, delivery corrections, and the current architecture-review owner.
+- Preserve local-control-flow / external-truth separation, test-pass / architecture-health separation, empty-state indeterminacy, unknown failed-test identity, same-date / same-store separation, and historical branch-delivery defects as delivery evidence only.
+- The 2026-09-23 R1/R2 pair extends current inventory but does not establish durable cognitive memory, shared persistence, or architecture stability.
+- No Daily or Weekly cadence result authorizes protected architecture change or natural-month recommendation.
+- September remains OPEN; final R5 architecture recommendation remains NOT_DUE / BLOCKED where required.
