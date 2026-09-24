@@ -514,3 +514,24 @@ Current retained Daily coverage through 2026-09-23 is 23/23 for R1 and 23/23 for
 - Daily phase labels and file counts do not make Liquid/Gas durations, MTBT, transition origins, Coherence Index, or durable cross-task persistence computable.
 - `Nodes=0 / Edges=0` remains indeterminate unless store identity and cause are directly established.
 - September remains OPEN; R5 final remains NOT_DUE and recommendation remains blocked where the existing contract requires unavailable evidence.
+### A2 / N cutoff — 2026-09-24 current phase reconciliation
+
+The A1 full-period review through 2026-09-23 remains preserved. Current main now includes the 2026-09-24 R1/R2 pair.
+
+Current bounded phase/execution interpretation:
+- 2026-09-24 R1 final observer phase is `LIQUID`; the rejected metacognition signal is rolled back and not written to the graph.
+- HARD_ROLLBACK does not establish that the external claim is scientifically false.
+- R2's empty state is task-local `:memory:` evidence and does not prove shared persistence with R1.
+- 26/27 passing tests do not establish all-green status; failure identity remains unrecorded.
+- Daily phase labels still do not make Liquid/Gas duration, transition origins, MTBT, Coherence Index, or durable cross-task persistence computable.
+
+```text
+FINAL_PHASE_LIQUID
+!= MONTHLY_PHASE_DURATION
+SAME_DATE_R1_R2
+!= SAME_PERSISTENT_STORE
+FAILED_COUNT_WITHOUT_IDENTITY
+!= DIAGNOSED_DEFECT
+```
+
+W39 remains IN_PROGRESS and September remains OPEN. Final R5 remains NOT_DUE.
