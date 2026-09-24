@@ -72,3 +72,25 @@ LIQUID
   "scope": "fixed local SQLite fixture"
 }
 ```
+## Full-period maintenance annotation — 2026-09-24
+
+### A1 / N-1 view — September R1 history through 2026-09-23
+
+- Review scope: every retained September R1 Daily from 2026-09-01 through 2026-09-23, all due R3/R4 Weekly surfaces, W39 open state, and both month-to-date R5 owners.
+- This run's ACCEPTED / REJECTED_FROM_INGESTION / HARD_ROLLBACK outcomes remain local control-flow evidence.
+- The Wikipedia payload family remains general-reference input material; local acceptance is not external truth or independent corroboration.
+- The rejected signal's false graph write and `reflection_depth_exhausted` remain the task-time result.
+- Fixed local SQLite repeatability remains fixture-scoped.
+
+### Current interpretation at the 2026-09-24 review cut
+
+Later R1/R2 artifacts do not prove that this run shared a persistent store with another task, and do not promote accepted payloads into scientific truth.
+
+```text
+LOCAL_ACCEPTANCE
+!= EXTERNAL_TRUTH
+HARD_ROLLBACK
+!= SCIENTIFIC_FALSIFICATION
+SAME_DATE_OR_LATER_FILES
+!= SHARED_STORE_PROVEN
+```
