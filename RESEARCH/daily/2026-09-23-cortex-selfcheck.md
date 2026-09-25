@@ -55,3 +55,22 @@ COMPONENT_CHECK_SUCCESS
 FAILED_COUNT_WITHOUT_IDENTITY
 != DIAGNOSED_DEFECT
 ```
+
+## 中秋加班维护补充 — A1 / 2026-09-24
+
+这是后续关系维护, 不改变 2026-09-23 自检当时记录的模块状态、空图状态和测试计数.
+
+本轮以 2026-09-24 为 N 日, 在中秋加班维护中重新核对 9 月 1 日至 9 月 23 日 R1/R2 Daily、到期 R3/R4 和月内 R5 之间的关系. 对本文件最重要的仍是不要把 `Nodes=0 / Edges=0` 简化为健康, 也不要因为后来某日图状态恢复或文件更完整, 就反推 9 月 23 日存在同一个持久化 store.
+
+`26 passed / 1 failed` 继续是非全绿结果. 后续维护能够补充当前解释, 但不能凭后来成功猜测这个 unnamed failure 的身份或原因. 同日、同路径、同 blob、同模块名都不足以证明 shared persistent state 或 independent execution.
+
+这次维护允许给旧文件增加更充分的边界说明, 但只有真实关系变化才写, 不把节日维护变成批量模板覆盖.
+
+```text
+MID_AUTUMN_REVIEW
++
+LATER_STATE
+!= SAME_STORE_PROOF
+!= EARLIER_ALL_GREEN
+!= FAILURE_CAUSE_IDENTIFIED
+```
