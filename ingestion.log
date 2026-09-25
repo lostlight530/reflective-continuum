@@ -491,3 +491,14 @@ Observer Output: {"accepted": false, "id": "signal_ai_safety_df569ab9", "reasons
 Graph Write Status: False
 Subsequent Action: Signal Discarded
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_ai_alignment", "reasons": []}, {"accepted": true, "id": "signal_metacognition", "reasons": []}, {"accepted": false, "id": "signal_determinism", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+HARD_ROLLBACK
+Run ID: 911bde12-a54b-4f6f-b06f-83affac6eed8
+Signal ID: signal_determinism
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Graph Write Status: False
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+RUN_END
