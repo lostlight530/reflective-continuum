@@ -611,3 +611,24 @@ R2_TASK_LOCAL_STORE
 MONTH_OPEN
 != FINAL_ARCHITECTURE_JUDGMENT
 ```
+
+
+## 2026-09-25 A1 — September full-coverage maintenance through 2026-09-24
+
+Base revision: `9299ade594e20f750dc0e659850a3b402bc0b97c`. Cutoff: 2026-09-24 Asia/Shanghai.
+
+Coverage decision summary:
+- All retained September R1/R2 Daily pairs through 2026-09-24, due R3/R4 Weekly surfaces, delivery corrections, and month-to-date R5 owners were re-read.
+- 2026-09-01..2026-09-23 retain prior decisions and negative states. Same date, same path, or identical blob does not establish shared store or independent execution.
+- 2026-09-24 is `APPEND_RELATION`: R1 transactional outcomes remain local control-flow evidence; R2 explicitly uses a task-local `:memory:` store. `Nodes=0 / Edges=0` remains task-local evidence, not architecture health or data-loss proof.
+- `27 total / 26 passed / 1 failed` remains non-all-green. Failed-test identity/cause remains unknown from the retained artifact.
+- W39 remains `NOT_DUE` for closure. September remains OPEN; final R5 recommendation remains `NOT_DUE` or blocked where required.
+
+```text
+SAME_DATE
+!= SAME_STORE
+IDENTICAL_BLOB
+!= SAME_EXECUTION
+CHECK_PROGRAM_EXECUTED
+!= CHECKED_SYSTEM_HEALTHY
+```
