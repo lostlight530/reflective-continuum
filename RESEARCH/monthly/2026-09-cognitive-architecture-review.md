@@ -593,3 +593,21 @@ TASK_LOCAL_EMPTY_STORE
 ```
 
 W39 remains IN_PROGRESS. September remains OPEN. Final R5 architecture recommendation remains NOT_DUE / BLOCKED where required.
+
+## 中秋加班维护补充 — A2 / N = 2026-09-24
+
+本段在 A1 已合并之后保存 2026-09-24 的月内 cognitive-architecture relational cut. 它不把后来日期的状态倒灌为 N 日已经成立的 runtime fact.
+
+截至 9 月 24 日, R1 的 accepted/rejected transactional outcomes 与 R2 的 task-local `:memory:` empty store 仍然属于不同证据面. Same date 不证明 same persistent store, module-level pass 不等于 whole-system healthy, `27 total / 26 passed / 1 failed` 继续是非全绿结果. Failed-test identity 没有在该 artifact 中被保留, 因此不能在月度层猜测.
+
+A1 对 9 月 1 日至 9 月 23 日的空状态、失败计数和 storage-identity 边界继续成立. W39 仍在进行, September 仍为 OPEN, final R5 recommendation 在 N 日仍不应被提前封存.
+
+```text
+R1_TRANSACTIONAL_EVIDENCE
++
+R2_TASK_LOCAL_STORE
+!= SHARED_PERSISTENT_STORE_PROOF
+
+MONTH_OPEN
+!= FINAL_ARCHITECTURE_JUDGMENT
+```
