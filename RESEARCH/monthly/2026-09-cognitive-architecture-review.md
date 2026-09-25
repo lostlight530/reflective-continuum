@@ -632,3 +632,26 @@ IDENTICAL_BLOB
 CHECK_PROGRAM_EXECUTED
 != CHECKED_SYSTEM_HEALTHY
 ```
+
+
+## 2026-09-25 A2 — current September relational version
+
+Base revision after merged A1: `b4ef0daa8250099fbf6831fa4e04da5f26ac7d3d`. N-day review date: 2026-09-25.
+
+Current month evolution:
+- The merged A1 cutoff through 2026-09-24 remains intact.
+- Current main does not expose a retained 2026-09-25 R1/R2 pair at this review cut. This is a current-path observation only and is not converted into `TASK_NOT_EXECUTED`.
+- The latest retained pair remains 2026-09-24. Its local transactional R1 evidence and task-local R2 `:memory:` evidence remain on separate evidence planes.
+- No new evidence establishes shared persistence, architecture health, failed-test identity, or durable cross-task memory.
+- W39 remains IN_PROGRESS. September remains OPEN. Final R5 remains `NOT_DUE` or blocked where current evidence requires it.
+
+A2 evolution: `NO_MATERIAL_CHANGE` to the current GAS architecture interpretation at this cut.
+
+```text
+CURRENT_PATH_NOT_OBSERVED_FOR_2026_09_25
+!= TASK_NOT_EXECUTED
+NO_NEW_R1_R2_PAIR
+!= ARCHITECTURE_FAILURE_PROVEN
+SAME_DATE
+!= SAME_STORE
+```
