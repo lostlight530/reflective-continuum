@@ -798,3 +798,157 @@ SAME_DATE
 - New month-final or durable-governance credit: NONE.
 - Historical thin A1 remains merged point-in-time evidence; this successor adds depth rather than rewriting it.
 - Required next step: merge A1 successor, fresh-read main, then construct A2 successor from the merged state.
+
+## SUCCESSOR_A2_CURRENT_MONTH_RELATION_2026-09-26_FOR_LOGICAL_2026-09-25
+
+- Maintenance task type: TEN_REPOSITORY_MONTHLY_A2_SUCCESSOR
+- Logical maintenance date: 2026-09-25
+- Current-month relation window: 2026-09-01 through 2026-09-25
+- Historical thin A2 PR retained: #364
+- Required predecessor successor A1: #367
+- Owner family: R1/R2 Daily + R3/R4 Weekly + R5 Monthly
+- This successor is forward reconciliation, not a rewrite of the historical thin A2 observation.
+- Later 2026-09-26 state is excluded from the logical A2 relation.
+- History rewrite: NO
+
+### Historical cut preserved
+
+- Thin A2 #364 observed no retained 2026-09-25 R1/R2 pair at its exact cut and correctly recorded NO_MATERIAL_CHANGE without inferring task non-execution.
+- That point-in-time statement remains valid for its exact base revision and observation cut.
+- This successor does not edit the old PR, old merge, or its recorded absence/current-state conclusion.
+- Later arrival is recorded as later evidence with its own delivery chronology.
+
+### Later N-day input now visible
+
+- The Jules 2026-09-25 R1 and R2 artifacts later arrived and are now merged with their original heads preserved. R1 records ingestion/logging including an InsightMorpher evaluation and HARD_ROLLBACK event; R2 records the selfcheck report and actual test aggregate.
+- Governing boundary: Later same-date artifacts extend current month state only. SAME_DATE != SAME_STORE, rollback/control-flow evidence != scientific truth, and test aggregates do not invent persistence or failure diagnosis not recorded by the source.
+- Later delivery date and logical research/execution date remain separate.
+- Jules producer/head provenance is preserved; replacement delivery mechanics do not substitute authorship/execution identity.
+- Current path presence is now true, but that fact is not projected backward into the earlier thin A2 cut.
+
+### Current-month relational ledger
+
+#### 2026-09-01
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-02
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-03
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-04
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-05
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-06
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-07
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-08
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-09
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-10
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-11
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-12
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-13
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-14
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-15
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-16
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-17
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-18
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-19
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-20
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-21
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-22
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-23
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-24
+- Relation source: inherited from merged successor A1 #367.
+- Decision: RETAIN_A1_DECISION / NO_SILENT_REWRITE.
+- Month effect: preserved historical evidence and existing corrections continue unchanged.
+#### 2026-09-25
+- Relation source: LATER_ARRIVING_N_DAY_INPUT_NOW_MERGED.
+- Decision: APPEND_RELATION / FORWARD_RECONCILIATION.
+- Month effect: The Jules 2026-09-25 R1 and R2 artifacts later arrived and are now merged with their original heads preserved. R1 records ingestion/logging including an InsightMorpher evaluation and HARD_ROLLBACK event; R2 records the selfcheck report and actual test aggregate.
+
+### Relation integrity checks
+
+- Later same-date artifacts extend current month state only. SAME_DATE != SAME_STORE, rollback/control-flow evidence != scientific truth, and test aggregates do not invent persistence or failure diagnosis not recorded by the source.
+- Later path presence != earlier path availability.
+- Later merge != earlier task-time input availability.
+- Current-month relation != natural-month final.
+- Current document presence != runtime/scientific validation.
+- Existing negative/unknown/missing fields remain first-class results.
+- W39 remains OPEN/IN_PROGRESS at logical 2026-09-25.
+- September remains OPEN; natural-month finalization is NOT_DUE.
+- 2026-09-26 state is LATER_EVIDENCE and outside this logical A2.
+
+### A2 successor disposition
+
+- A1 predecessor merged before A2: YES.
+- 2026-09-01..24 relation: inherited from successor A1.
+- 2026-09-25 later-arriving input: INTEGRATED_FORWARD.
+- Historical thin A2 absence observation preserved: YES.
+- Earlier history rewritten: NO.
+- New runtime/scientific-validation/reproduction credit: NONE beyond source-declared bounded execution where already recorded.
+- New month-final/durable-governance credit: NONE.
+- Current September relation: UPDATED_THROUGH_LOGICAL_2026-09-25.
+- Successor maintenance status: COMPLETE_FOR_A2.
