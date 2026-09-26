@@ -1,7 +1,10 @@
 # R1 Daily Report
 
 ## Convergence 状态
-SUCCESS
+FIXED_FIXTURE_REPEATABILITY_OBSERVED
+
+- Original convergence-drill command result: SUCCESS
+- Scope: fixed local SQLite fixture only
 
 ## 实际 Hash
 57501e5c6808b3e14852a4ea21dc7873abf9409032a06f9b740c973e83f62cf7
@@ -36,6 +39,8 @@ SUCCESS
 - signal_2: ACCEPTED
 - signal_3: REJECTED_FROM_INGESTION
 
+Boundary: ACCEPTED records the local observer/transaction outcome in this R1 run. It does not establish source truth, durable persistence, cross-task continuity, or a shared store with R2.
+
 ## Hard Rollback Log
 ```
 HARD_ROLLBACK
@@ -50,10 +55,20 @@ RUN_END
 ```
 
 ## 中文综合
-今日共收集到三条信号。成功摄入了两条分别关于 AI Alignment 和 AI Safety 的信号，它们已写入知识图谱中。关于 Deterministic Algorithm 的第三条信号因为超出反射深度限制被图谱拒绝，触发了 Hard Rollback 操作。系统总体按预期运行。
+今日共收集到三条信号。R1 运行记录显示，AI Alignment 与 AI Safety 两条信号在本次打开的本地 store 中被 ACCEPTED。Deterministic Algorithm 信号因 reflection_depth_exhausted 被 REJECTED_FROM_INGESTION，并记录了本地 savepoint rollback 结果。当前证据不证明这些接受结果跨任务持久化，也不证明 R1 与 R2 使用同一持久化 store。
 
 ## 英文综合
-Three signals were collected today. The system successfully ingested two signals regarding AI Alignment and AI Safety, which have been written to the knowledge graph. The third signal concerning Deterministic Algorithm was rejected by the graph due to reflection depth exhaustion, triggering a Hard Rollback. The system performed exactly as expected.
+Three signals were collected. The retained R1 evidence reports that the AI Alignment and AI Safety signals were ACCEPTED in the local store opened by this run. The Deterministic Algorithm signal was REJECTED_FROM_INGESTION because of reflection_depth_exhausted, with a local savepoint rollback recorded. This evidence does not establish cross-task persistence, shared-store identity with R2, or broader system health.
+
+## Evidence Boundary / External Independent Reconciliation — 2026-09-26
+- Store identity: NOT_RETAINED
+- Cross-task persistence: PERSISTENCE_LINK_NOT_VERIFIED
+- R1↔R2 shared store identity: NOT_ESTABLISHED
+- Fixed-fixture repeatability: OBSERVED for the declared local fixture
+- ACCEPTED != SOURCE_TRUE
+- REJECTED_FROM_INGESTION != SOURCE_FALSE
+- HARD_ROLLBACK applies to the local SQLite savepoint path evidenced by the observer result; it does not prove rollback of external side effects
+- No runtime command was re-executed by this reconciliation; original run evidence is preserved and interpretation is narrowed only
 
 ## Phase State
 LIQUID
