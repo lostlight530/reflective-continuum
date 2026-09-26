@@ -1000,3 +1000,29 @@ SAME_DATE
 - Historical rewrite required: NO.
 - New persistence/scientific-validation/source-independence credit: NONE.
 - Next: merge A1, fresh-read main, compile 2026-09-26 A2.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-09-26
+
+- Logical maintenance date: 2026-09-26
+- Exact A1-merged base main: `af3ce51605377103432cb8a3ba0075e327c650d1`
+- Current-month relation window: 2026-09-01 through 2026-09-26
+- A1 coverage through 2026-09-25: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — GAS
+- R1 2026-09-26 is present and records fixed-fixture repeatability, bounded accept/reject outcomes, and a local rollback event.
+- R1 store identity is not retained; cross-task persistence and shared R1/R2 store identity remain unverified.
+- R2 2026-09-26 is present: module checks report SUCCESS, DB state is Nodes=0 / Edges=0, Incremental Drift is NOT_COMPUTED.
+- Test aggregate is 27 total / 26 passed / 1 failed; failed-test identity and traceback are not retained in the report, so the failure cause remains UNKNOWN.
+
+### Relation boundary
+- SAME_DATE != SAME_STORE.
+- fixed-fixture repeatability != system convergence.
+- ACCEPTED != SOURCE_TRUE; local rollback != durable external rollback proof.
+- module SUCCESS != full test-suite PASS.
+- W39 and September remain OPEN; natural-month close is NOT_DUE.
+
+### A2 disposition
+- 2026-09-26 GAS relation: INTEGRATED_WITH_STORE_AND_VALIDATION_BOUNDARIES.
+- Historical rewrite: NO.
+- Current September relation: UPDATED_THROUGH_2026-09-26.
