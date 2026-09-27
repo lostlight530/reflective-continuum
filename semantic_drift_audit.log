@@ -159,3 +159,95 @@
     2
   ]
 }
+{
+  "database": ":memory:",
+  "limitations": [
+    "FTS5 lexical ranking",
+    "caller-selected queries"
+  ],
+  "observed_at": "2026-09-27T12:04:26.487868+00:00",
+  "semantic": [
+    {
+      "query": "test",
+      "top_result_changed": false
+    }
+  ],
+  "structural": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "versions": [
+    1,
+    2
+  ]
+}
+{
+  "database": ":memory:",
+  "limitations": [
+    "FTS5 lexical ranking",
+    "caller-selected queries"
+  ],
+  "observed_at": "2026-09-27T12:04:46.769125+00:00",
+  "semantic": [
+    {
+      "query": "alignment",
+      "top_result_changed": false
+    }
+  ],
+  "structural": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "versions": [
+    1,
+    2
+  ]
+}
+{
+  "database": ":memory:",
+  "limitations": [
+    "FTS5 lexical ranking",
+    "caller-selected queries"
+  ],
+  "observed_at": "2026-09-27T12:06:15.667631+00:00",
+  "semantic": [
+    {
+      "query": "alignment",
+      "top_result_changed": false
+    }
+  ],
+  "structural": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "versions": [
+    1,
+    2
+  ]
+}
+{
+  "database": ":memory:",
+  "limitations": [
+    "FTS5 lexical ranking",
+    "caller-selected queries"
+  ],
+  "observed_at": "2026-09-27T12:11:37.973897+00:00",
+  "semantic": [
+    {
+      "query": "alignment",
+      "top_result_changed": false
+    }
+  ],
+  "structural": {
+    "added": [],
+    "modified": [],
+    "removed": []
+  },
+  "versions": [
+    1,
+    2
+  ]
+}
