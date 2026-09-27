@@ -1026,3 +1026,28 @@ SAME_DATE
 - 2026-09-26 GAS relation: INTEGRATED_WITH_STORE_AND_VALIDATION_BOUNDARIES.
 - Historical rewrite: NO.
 - Current September relation: UPDATED_THROUGH_2026-09-26.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-27
+
+- Logical maintenance date: 2026-09-27
+- Cutoff: 2026-09-26
+- Exact base main: `d648527be49e07365f497f64887c07059e36dd94`
+- Scope: September R1/R2, due weekly relations and current monthly owner; 2026-09-27 R1/R2/R3/R4 are reserved for A2.
+- Earlier September decisions remain preserved.
+
+### Coverage decisions
+- 2026-09-01 through 2026-09-25: REVIEWED / RETAIN_EXISTING_DECISIONS
+- 2026-09-26 R1: REVIEWED / FIXED_FIXTURE_REPEATABILITY_OBSERVED / LOCAL_ROLLBACK_SCOPE_PRESERVED
+- 2026-09-26 R2: REVIEWED / TASK_LOCAL_EVIDENCE / NO_SHARED_STORE_INFERENCE
+- No later weekly result is backdated into the 2026-09-26 cut.
+
+### Boundary
+- SAME_DATE != SAME_STORE.
+- FIXED_FIXTURE_REPEATABILITY != GENERAL_CONVERGENCE.
+- empty/task-local state != HEALTHY != DATA_LOSS.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- 2026-09-26 GAS: NO_FOLLOW_UP.
+- Historical rewrite required: NO.
+- New persistence/health/convergence/source-independence credit: NONE.
