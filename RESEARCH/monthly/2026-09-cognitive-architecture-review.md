@@ -1051,3 +1051,28 @@ SAME_DATE
 - 2026-09-26 GAS: NO_FOLLOW_UP.
 - Historical rewrite required: NO.
 - New persistence/health/convergence/source-independence credit: NONE.
+
+## A2_CURRENT_MONTH_RELATION_2026-09-27
+
+- Logical maintenance date: 2026-09-27
+- Exact A1-merged base main: `baa3d433235bdb2ba8a0b9437ab608a86f823e2a`
+- Current-month relation window: 2026-09-01 through 2026-09-27
+- A1 coverage through 2026-09-26: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — GAS
+- 2026-09-27 R1 is present with fixed-fixture repeatability and a local SQLite hard-rollback boundary; local acceptance/rejection is not source truth and rollback does not cover external side effects.
+- 2026-09-27 R2 is present with task-local empty-state observation and retained test failure; same-day R1/R2 presence does not establish a shared persistent store.
+- W39 R3 is present. Script-reported `STABLE` is explicitly scoped to the executed `:memory:` semantic audit, FTS5 lexical ranking and caller-selected queries. Test aggregate remains 189 total / 182 passed / 7 failed; 182/189 != full PASS and exact failure causes remain UNKNOWN in the weekly artifact.
+- W39 R4 is present and records the reference-topology state: REFERENCES/INDEX.md is an unresolved orphan relative to core navigation; ghost-chain claims are preserved as audit findings. R4 does not auto-repair protected references/spec/ADR files.
+
+### Relation boundary
+- SAME_DATE != SAME_STORE.
+- lexical/caller-query stability != persistent GAS-store stability != repository health.
+- local rollback != external side-effect rollback.
+- topology audit finding != automatic protected-file mutation.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A2 disposition
+- 2026-09-27 GAS relation: R1_R2_R3_R4_INTEGRATED_WITH_SCOPE_BOUNDARIES.
+- New persistence/health/general-convergence/source-independence credit: NONE.
+- Historical rewrite: NO.
