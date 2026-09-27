@@ -1,6 +1,8 @@
 ## Drift 状态
 STABLE
 
+Scope: `STABLE` is limited to the executed in-memory semantic audit (`database: :memory:`), FTS5 lexical ranking, and caller-selected queries recorded in `semantic_drift_audit.log`. It does **not** establish persistent GAS-store stability, shared R1/R2 state, repository-wide health, or absence of untested drift.
+
 ## Drifted Nodes
 None
 
@@ -128,3 +130,4 @@ None
 - Failed: 7
 - Errors: 0
 - Skipped: 0
+- Interpretation: `182/189 != full PASS`. The retained aggregate does not identify the seven failed tests, so their exact failure causes remain `UNKNOWN` in this weekly artifact.
