@@ -1,5 +1,10 @@
+# R1 Daily Report
+
 ## Convergence 状态
-SUCCESS
+FIXED_FIXTURE_REPEATABILITY_OBSERVED
+
+- Original convergence-drill command result: SUCCESS
+- Scope: fixed local SQLite fixture only
 
 ## 实际 Hash
 e33d4392-b16c-4d97-aca5-8dcadb5c863e
@@ -36,6 +41,8 @@ e33d4392-b16c-4d97-aca5-8dcadb5c863e
 - Signal 2: ACCEPTED
 - Signal 3: REJECTED_FROM_INGESTION
 
+Boundary: ACCEPTED records the local observer/transaction outcome in this R1 run. It does not establish source truth, durable persistence, cross-task continuity, or a shared store with R2.
+
 ## Hard Rollback Log
 HARD_ROLLBACK
 Run ID: e33d4392-b16c-4d97-aca5-8dcadb5c863e
@@ -48,10 +55,21 @@ Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 RUN_END
 
 ## 中文综合
-今日完成了收敛演练及外部信号的摄入。信号1与信号2成功进入图谱，但信号3由于反射深度耗尽而被拒绝并执行了 Hard Rollback。由于状态机器反馈明确，目前系统拒绝不合理信号并能够正确记录回滚。
+今日收集三条信号。本次 R1 运行记录显示，signal_1 与 signal_2 在本次打开的本地 store 中得到 ACCEPTED；signal_3 因 reflection_depth_exhausted 被 REJECTED_FROM_INGESTION，并记录了本地 rollback 结果。当前证据不证明这些 ACCEPTED 结果跨任务持久化，也不证明 R1 与 R2 使用同一持久化 store；来源内容本身的真实性也不由 ACCEPTED 状态证明。
 
 ## 英文综合
-The convergence drill and ingestion of external signals were completed today. Signal 1 and Signal 2 were successfully ingested, whereas Signal 3 was rejected due to exhausted reflection depth, triggering a Hard Rollback. The mechanism correctly rejects invalid signals and accurately records rollback procedures.
+Three signals were collected. The retained R1 evidence reports that signal_1 and signal_2 were ACCEPTED in the local store opened by this run. signal_3 was REJECTED_FROM_INGESTION because of reflection_depth_exhausted, with a local rollback result recorded. This evidence does not establish source truth, cross-task persistence, shared-store identity with R2, or broader system health.
+
+## Evidence Boundary
+- Store identity: NOT_RETAINED
+- Cross-task persistence: PERSISTENCE_LINK_NOT_VERIFIED
+- R1↔R2 shared store identity: NOT_ESTABLISHED
+- Fixed-fixture repeatability: OBSERVED for the declared local fixture
+- Source authority: Wikipedia secondary summaries; no independent corroboration was retained in this report
+- ACCEPTED != SOURCE_TRUE
+- REJECTED_FROM_INGESTION != SOURCE_FALSE
+- HARD_ROLLBACK is bounded to the local transaction/savepoint behavior evidenced by this run; it does not prove rollback of external side effects
+- No additional runtime replay was performed by this review; the producer execution record is preserved and only its interpretation is narrowed
 
 ## Phase State
 LIQUID
