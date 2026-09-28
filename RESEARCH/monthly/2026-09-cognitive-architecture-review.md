@@ -1103,3 +1103,31 @@ SAME_DATE
 - Historical rewrite required: NO.
 - 2026-09-28 R1/R2 consumed by A1: NO.
 - New persistence/health/convergence/source-independence credit: NONE.
+## A2_CURRENT_MONTH_RELATION_2026-09-28
+
+- Logical maintenance date: 2026-09-28
+- Exact A1-merged base main: `2458da405f637c9c58c4fb52a74689e645a49b47`
+- Current-month relation window: 2026-09-01 through 2026-09-28
+- A1 coverage through 2026-09-27: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — GAS
+- 2026-09-28 R1 is present after evidence-scope correction.
+- R1 convergence wording is bounded to FIXED_FIXTURE_REPEATABILITY_OBSERVED for a 100-iteration fixed local SQLite fixture; the UUID is retained as a Run ID rather than mislabelled as a snapshot hash.
+- R1 locally accepted 2 signals and rejected 1 with reflection_depth_exhausted; Hard Rollback remains bounded to the recorded local SQLite transaction/savepoint path.
+- Local ingestion acceptance/rejection does not establish source truth or falsehood, cross-task persistence, general convergence, or repository-wide health.
+- 2026-09-28 R2 is present from a current-main rebuild after R1 merged.
+- R2 module loading is a module/init observation only. nodes=0 / edges=0 remains INDETERMINATE_EMPTY_STATE.
+- Test aggregate is 27 total / 26 passed / 1 failed. 26/27 != full PASS; failed-test identity and exact cause remain UNKNOWN in the retained artifact; errors/skipped are NOT_REPORTED, not zero.
+
+### Current-cut boundary
+- SAME_DATE != SAME_STORE.
+- FIXED_FIXTURE_REPEATABILITY != GENERAL_CONVERGENCE.
+- MODULES_LOADED != REPOSITORY_HEALTH.
+- EMPTY_TASK_LOCAL_STORE != HEALTHY != DATA_LOSS.
+- Any other 2026-09-28 periodic GAS task not present at this review cut is NOT_YET_OBSERVED_AT_THIS_CHECK, not missing/failed.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A2 disposition
+- 2026-09-28 GAS relation: CORRECTED_R1_R2_INTEGRATED_WITH_TASK_LOCAL_BOUNDARIES.
+- Historical rewrite: NO.
+- New persistence/health/convergence/source-independence credit: NONE.
