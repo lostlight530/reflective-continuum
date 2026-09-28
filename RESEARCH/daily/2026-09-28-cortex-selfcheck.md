@@ -1,5 +1,5 @@
-## Module Health
-All modules loaded successfully without initialization exceptions.
+## Module Load Status
+All listed modules loaded successfully without initialization exceptions. This is a module/init observation only, not repository-wide health.
 - continuum_db: OK
 - cortex_observer: OK
 - drift_detector: OK
@@ -31,3 +31,11 @@ Context: INDETERMINATE_EMPTY_STATE
 - Failed: 1
 - Errors: NOT_REPORTED
 - Skipped: NOT_REPORTED
+
+
+## Test Interpretation
+- Aggregate: 27 total / 26 passed / 1 failed.
+- `26/27 != full PASS`.
+- Failed-test identity and exact failure cause are not retained in this artifact and remain `UNKNOWN`.
+- Errors and skipped counts are `NOT_REPORTED`, not zero.
+- `nodes: 0 / edges: 0` remains `INDETERMINATE_EMPTY_STATE`; no persistence, health, or data-loss conclusion is inferred without shared store identity.
