@@ -1076,3 +1076,30 @@ SAME_DATE
 - 2026-09-27 GAS relation: R1_R2_R3_R4_INTEGRATED_WITH_SCOPE_BOUNDARIES.
 - New persistence/health/general-convergence/source-independence credit: NONE.
 - Historical rewrite: NO.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-28
+
+- Logical maintenance date: 2026-09-28
+- Cutoff: 2026-09-27
+- Exact base main: `87e4447c43a70c6233ab11410e487987361a6cfc`
+- 2026-09-28 R1/R2 artifacts are already visible on current main but excluded from A1 by logical-date contract and reserved for A2.
+
+### Coverage decisions
+- 2026-09-01 through 2026-09-26: REVIEWED / RETAIN_MERGED_OWNER_DECISIONS.
+- 2026-09-27 R1: REVIEWED / RETAIN_FIXED_FIXTURE_AND_LOCAL_ROLLBACK_BOUNDARY.
+- 2026-09-27 R2: REVIEWED / RETAIN_TASK_LOCAL_EMPTY_STATE_AND_PARTIAL_TEST_BOUNDARY.
+- W39 R3: REVIEWED / RETAIN_STABLE_ONLY_WITHIN_DECLARED_IN_MEMORY_CALLER_QUERY_SCOPE.
+- W39 R4: REVIEWED / RETAIN_REFERENCE_TOPOLOGY_FINDINGS_WITHOUT_AUTO_REPAIR.
+
+### Boundary
+- SAME_DATE != SAME_STORE.
+- lexical/caller-query stability != persistent-store stability or repository health.
+- local rollback != external-side-effect rollback.
+- current 2026-09-28 path presence != A1 evidence eligibility.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- Coverage through N-1 = 2026-09-27: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- 2026-09-28 R1/R2 consumed by A1: NO.
+- New persistence/health/convergence/source-independence credit: NONE.
