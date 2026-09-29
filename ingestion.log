@@ -535,3 +535,14 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Graph Write Status: False
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "bf406a85-2748-4267-807d-232cbd3bd3fd", "reasons": []}, {"accepted": true, "id": "4a0eaf10-1191-4f14-ac1b-0f11ca0f4cc5", "reasons": []}, {"accepted": false, "id": "ea421b93-9947-4083-94c9-94b6e6940825", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+HARD_ROLLBACK
+Run ID: 2f38aac9-6296-49b9-9ebb-d43154d84719
+RUN_BEGIN
+Signal ID: ea421b93-9947-4083-94c9-94b6e6940825
+Reason: reflection_depth_exhausted
+Observer Output: {"accepted": false, "id": "ea421b93-9947-4083-94c9-94b6e6940825", "reasons": ["reflection_depth_exhausted"]}
+Graph Written: False
+Action: REJECTED_FROM_INGESTION
+RUN_END
