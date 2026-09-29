@@ -1131,3 +1131,30 @@ SAME_DATE
 - 2026-09-28 GAS relation: CORRECTED_R1_R2_INTEGRATED_WITH_TASK_LOCAL_BOUNDARIES.
 - Historical rewrite: NO.
 - New persistence/health/convergence/source-independence credit: NONE.
+
+## A1_MONTH_TO_DATE_REVALIDATION_2026-09-29
+
+- Logical maintenance date: 2026-09-29
+- Cutoff: 2026-09-28
+- Exact base main: `379cd4addb1389cd643821917c53eaffbb3f7002`
+- 2026-09-29 R1/R2 artifacts are visible on current main but excluded from A1 and reserved for A2.
+
+### Coverage decisions
+- Through 2026-09-27: REVIEWED / RETAIN_EXISTING_OWNER_DECISIONS.
+- 2026-09-28 corrected R1 relation: REVIEWED / RETAIN_FIXED_FIXTURE_REPEATABILITY_BOUNDARY.
+- 2026-09-28 current-main R2 rebuild: REVIEWED / RETAIN_PARTIAL_TEST_AND_INDETERMINATE_EMPTY_STATE_BOUNDARY.
+- Run identity remains distinct from snapshot hash; local ingestion accept/reject remains distinct from source truth/falsehood.
+
+### Boundary
+- FIXED_FIXTURE_REPEATABILITY != GENERAL_CONVERGENCE.
+- MODULES_LOADED != REPOSITORY_HEALTH.
+- EMPTY_TASK_LOCAL_STORE != HEALTHY != DATA_LOSS.
+- SAME_DATE != SAME_STORE.
+- current 2026-09-29 path presence != A1 evidence eligibility.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
+
+### A1 disposition
+- Coverage through N-1 = 2026-09-28: VERIFIED_IN_CURRENT_OWNER_CHAIN.
+- Historical rewrite required: NO.
+- 2026-09-29 R1/R2 consumed by A1: NO.
+- New persistence/health/convergence/source-independence credit: NONE.
