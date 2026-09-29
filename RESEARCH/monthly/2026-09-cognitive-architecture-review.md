@@ -1158,3 +1158,36 @@ SAME_DATE
 - Historical rewrite required: NO.
 - 2026-09-29 R1/R2 consumed by A1: NO.
 - New persistence/health/convergence/source-independence credit: NONE.
+
+## A2_CURRENT_MONTH_RELATION_2026-09-29
+
+- Logical maintenance date: 2026-09-29
+- Exact A1-merged base main: `e8871f41fb3be5e550bda7ccef1da4a330d1c537`
+- Current-month relation window: 2026-09-01 through 2026-09-29.
+- A1 coverage through 2026-09-28: INHERITED_FROM_MERGED_A1.
+
+### N-day integration — GAS
+- 2026-09-29 R1 and R2 are present.
+- R1 records one fixed local SQLite fixture with `distinct_snapshots: 1`, `iterations: 100`, `repeatable: true`; the governing interpretation is FIXED_FIXTURE_REPEATABILITY_OBSERVED, not general system convergence.
+- The UUID `2f38aac9-6296-49b9-9ebb-d43154d84719` is the recorded Run ID. It is not treated as a content/snapshot hash; no snapshot digest is retained in the Daily.
+- R1 accepted two signals locally and rejected one with `reflection_depth_exhausted`. `Graph Written: False` supports a rejected/no-write local ingestion path; it does not establish removal of a previously persisted knowledge-graph object or rollback of external side effects.
+- `SUCCESS_WITH_REJECTED_SIGNAL` is bounded to task-local completion with one rejected input; it is not repository-wide health or convergence.
+- R2 records Module Health=True and Rule Engine=True only as task-local module/init observations. DB state remains nodes=0 / edges=0 / INDETERMINATE_EMPTY_STATE; Incremental Drift remains NOT_COMPUTED.
+- R2 test aggregate is 27 total / 26 passed / 1 failed; errors/skipped are NOT_REPORTED. 26/27 != full PASS.
+- R1 and R2 are same-date artifacts but no shared persistent-store identity is established; R1 ingestion evidence and R2 empty-state evidence therefore must not be collapsed into a persistence conclusion.
+
+### Forward correction
+- FIXED_FIXTURE_REPEATABILITY != GENERAL_CONVERGENCE.
+- RUN_ID_UUID != SNAPSHOT_HASH.
+- LOCAL_ACCEPTED != SOURCE_TRUTH; LOCAL_REJECTED != SOURCE_FALSEHOOD.
+- GRAPH_WRITTEN_FALSE != PERSISTED_GRAPH_OBJECT_ROLLED_BACK.
+- MODULE_HEALTH_TRUE != REPOSITORY_HEALTH.
+- SAME_DATE != SAME_STORE.
+- EMPTY_TASK_LOCAL_STATE != HEALTHY != DATA_LOSS.
+- This A2 corrects interpretation forward without rewriting the merged R1/R2 Daily bodies.
+
+### A2 disposition
+- 2026-09-29 GAS relation: R1_R2_INTEGRATED_WITH_REPEATABILITY_STORE_AND_PARTIAL_TEST_BOUNDARIES.
+- Historical rewrite: NO.
+- New persistence/health/convergence/source-independence credit: NONE.
+- September remains OPEN / NATURAL_MONTH_CLOSE_NOT_DUE.
