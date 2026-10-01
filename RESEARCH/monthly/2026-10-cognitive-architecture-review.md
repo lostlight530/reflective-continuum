@@ -42,3 +42,37 @@ DAILY_TASK_EXISTS
 ```
 
 A1 result: MONTH_OPEN_BASELINE_INITIALIZED.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-01
+
+- Logical maintenance date: 2026-10-01
+- Exact A1-merged base main: `b64cb06b9928bfdac9b4c49778ef07c8a639af46`
+- R1 native input: `RESEARCH/daily/2026-10-01-dehydrated-report.md` plus `ingestion.log` / merged via PR #396
+- R2 native input: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` / merged via PR #397
+- R1 and R2 producer executions: retained as separate evidence surfaces
+- Same logical date: YES
+- Named shared persistent-store identity established by this maintenance pass: NO
+- W40 R3/R4 final: NOT_DUE
+- October R5 final: NOT_DUE
+
+### Evidence boundary
+
+```text
+R1_EXECUTION
+!= R2_EXECUTION
+
+SAME_DATE
+!= SAME_PERSISTENT_STORE
+
+CHECK_PROGRAM_EXECUTED
+!= CHECKED_SYSTEM_HEALTHY
+```
+
+### A2 disposition
+
+- October day-1 GAS relation: INTEGRATED_WITH_EVIDENCE_PLANE_SEPARATION
+- Month version: OPEN
+- Historical rewrite: NO
+- Extra audit executed: NO
+- New graph-health, convergence, runtime-independence, or persistent-state credit: NONE
