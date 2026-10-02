@@ -76,3 +76,48 @@ CHECK_PROGRAM_EXECUTED
 - Historical rewrite: NO
 - Extra audit executed: NO
 - New graph-health, convergence, runtime-independence, or persistent-state credit: NONE
+
+
+## A1_FULL_COVERAGE_2026-10-02
+
+- Logical maintenance date: 2026-10-02
+- Exact base main: `24dd14d965b42b886a5805d831f080444ae1afd7`
+- Coverage window: 2026-10-01
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- N-day 2026-10-02 R1/R2 artifacts already present on base: EXCLUDED_FROM_A1
+- A1 rule: REVIEWED != MODIFIED
+- Extra audit executed: NO
+- Runtime/test replay: NOT_PERFORMED
+- Historical rewrite: NO
+
+### Coverage decisions
+
+| In-scope October-1 surface | Decision | Preserved boundary |
+| --- | --- | --- |
+| `RESEARCH/daily/2026-10-01-dehydrated-report.md` and its `ingestion.log` evidence | REVIEWED / NO_FOLLOW_UP | ACCEPTED / REJECTED_FROM_INGESTION / HARD_ROLLBACK remain local control-flow evidence |
+| `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` | REVIEWED / NO_FOLLOW_UP | `Nodes=0 / Edges=0` remains `INDETERMINATE_EMPTY_STATE`; cause is not inferred |
+| October monthly relational owner through the 2026-10-01 A2 section | REVIEWED / NO_FOLLOW_UP | same date does not establish shared persistent-store identity |
+| retained 27-total / 26-passed / 1-failed test result | REVIEWED / NO_FOLLOW_UP | non-all-green count is preserved; unnamed failure is not diagnosed by maintenance |
+
+### A1 disposition
+
+- Coverage completeness: COMPLETE_FOR_2026-10-01
+- Decision completeness: COMPLETE_FOR_2026-10-01
+- Original Daily mutation required: NO
+- W40 R3/R4 final: NOT_DUE
+- October R5 natural-month final: NOT_DUE
+- New graph-health/runtime/shared-store credit: NONE
+
+```text
+LOCAL_ACCEPTANCE
+!= EXTERNAL_TRUTH
+
+SAME_DATE
+!= SAME_PERSISTENT_STORE
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+!= DIAGNOSED_DEFECT
+```
+
+A1 result: VERIFIED_FULL_COVERAGE_THROUGH_2026-10-01.
