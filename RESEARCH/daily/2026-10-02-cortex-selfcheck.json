@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "foreign_keys": true,
+    "fts5": true,
+    "initialization": true,
+    "integrity": true,
+    "rule_engine": true
+  },
+  "counts": {
+    "edges": 0,
+    "nodes": 0
+  },
+  "database": ":memory:",
+  "error_type": null,
+  "healthy": true,
+  "observed_at": "2026-10-02T10:12:41.772648+00:00"
+}
