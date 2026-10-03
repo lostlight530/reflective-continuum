@@ -293,3 +293,47 @@ EMPTY_TASK_LOCAL_STATE
 - W40 settlement: NOT_DUE
 - Monthly architecture-health verdict: NOT_AUTHORIZED
 - New persistent-state/runtime-independence/graph-health credit: NONE
+
+
+## A1_SUCCESSOR_FULL_COVERAGE_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact successor base main: `655ca368f90ca77536b1d63ef442d46aa18916c8`
+- Coverage window: 2026-10-01 through 2026-10-02
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- Predecessor same-day A1/A2: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Current-main movement after predecessor A2: LATE_NATIVE_2026_10_03_DELIVERY_PRESENT
+- Current late native evidence: `PR #407 R1 and PR #408 R2 / 2026-10-03 Daily artifacts`
+- A1 cutoff handling: N_DAY_NOT_CONSUMED_IN_A1_COVERAGE
+- Historical rewrite: NO
+- Extra audit or runtime/test replay: NOT_PERFORMED
+
+### Successor coverage decision
+
+- 2026-10-01 through 2026-10-02 prior A1 decisions: RECHECKED / NO_FOLLOW_UP
+- R1/R2 2026-10-03 native delivery is N-day input and is deferred to A2.
+- Earlier A2 statement that the 2026-10-03 native path was not observed remains valid for its earlier review cut.
+- Later path presence does not establish earlier availability or earlier execution visibility.
+
+```text
+EARLIER_A2_NOT_OBSERVED
++
+LATER_NATIVE_DELIVERY_PRESENT
+=
+TIME_SCOPED_RECONCILIATION_REQUIRED_BY_A2
+
+LATER_PATH_PRESENT
+!= EARLIER_PATH_AVAILABLE
+
+A1_N_MINUS_1_CUTOFF
+!= N_DAY_RELATIONAL_UPDATE
+```
+
+### Successor A1 disposition
+
+- N-1 coverage completeness: RECONFIRMED_THROUGH_2026-10-02
+- N-1 decision completeness: RECONFIRMED_THROUGH_2026-10-02
+- N-day native artifact mutation by A1: NO
+- W40 settlement: NOT_DUE
+- October natural-month final: NOT_DUE
+- A2 dependency: MUST_FRESH_READ_THIS_A1_MERGED_MAIN_AND_CONSUME_LATE_NATIVE_INPUT
