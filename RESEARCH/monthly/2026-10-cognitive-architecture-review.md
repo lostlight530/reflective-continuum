@@ -241,3 +241,55 @@ EMPTY_TASK_LOCAL_STATE
 != HEALTHY_PERSISTENT_GRAPH
 != DATA_LOSS
 ```
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact A1-merged base main: `e8894d37ee1d1b2c033492148a4f5e436daa4ced`
+- Current month relation window: 2026-10-01 through 2026-10-03
+- A1 coverage through 2026-10-02: INHERITED_FROM_MERGED_A1
+- Fresh current-main check for retained 2026-10-03 R1/R2 native paths: NO_NEW_2026_10_03_NATIVE_PATH_OBSERVED_AT_THIS_CHECK
+- Task execution status for unobserved 2026-10-03 R1/R2 paths: UNKNOWN
+- Latest retained R1/R2 native date: 2026-10-02
+- W40 R3/R4 final: NOT_DUE
+- October R5 natural-month final: NOT_DUE
+- Historical rewrite: NO
+- Runtime/test replay by maintenance: NOT_PERFORMED
+
+### Current retained relation
+
+- R1 latest retained control-flow result: 3 signals provided / 2 accepted / 1 rejected, Hard Rollback recorded
+- R2 latest retained DB observation: `Nodes=0 / Edges=0`
+- R2 context: `INDETERMINATE_EMPTY_STATE`
+- Incremental Drift: `NOT_COMPUTED`
+- Latest retained test result: 27 total / 26 passed / 1 failed
+- Same-day R1/R2 shared persistent-store identity: NOT_ESTABLISHED
+- No 2026-10-03 native path is promoted into a missing-task, failed-task or healthy-state assertion
+
+```text
+NO_NEW_2026_10_03_NATIVE_PATH_OBSERVED_AT_THIS_CHECK
+!= TASK_NOT_EXECUTED
+!= TASK_FAILED
+!= PERMANENT_ABSENCE
+
+SAME_DATE_R1_R2
+!= SAME_PERSISTENT_STORE
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+
+EMPTY_TASK_LOCAL_STATE
+!= HEALTHY_PERSISTENT_GRAPH
+!= DATA_LOSS
+```
+
+### A2 disposition
+
+- October version state: OPEN
+- Relationship continuity: CURRENT_THROUGH_2026-10-03_AT_THIS_CHECK
+- 2026-10-03 R1/R2 native path state: NOT_OBSERVED / EXECUTION_UNKNOWN
+- R2 empty-state uncertainty: PRESERVED
+- W40 settlement: NOT_DUE
+- Monthly architecture-health verdict: NOT_AUTHORIZED
+- New persistent-state/runtime-independence/graph-health credit: NONE
