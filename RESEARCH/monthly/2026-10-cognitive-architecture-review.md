@@ -194,3 +194,50 @@ EMPTY_TASK_LOCAL_STATE
 - R2 empty-state uncertainty: PRESERVED
 - Monthly architecture-health verdict: NOT_AUTHORIZED
 - New persistent-state/runtime-independence/graph-health credit: NONE
+
+
+## A1_FULL_COVERAGE_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact base main: `c4bcda8c0fe2b1ff1805c5ff9d07992c21442041`
+- Coverage window: 2026-10-01 through 2026-10-02
+- Coverage mode: MONTH_START_TO_N_MINUS_1_FULL_COVERAGE
+- Historical rewrite: NO
+- Extra audit executed: NO
+- Runtime/test replay by maintenance: NOT_PERFORMED
+
+### Coverage decisions
+
+| Surface | Decision | Preserved boundary |
+| --- | --- | --- |
+| `RESEARCH/daily/2026-10-01-dehydrated-report.md` | REVIEWED / NO_FOLLOW_UP | local ingestion/control-flow evidence remains scoped |
+| `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` | REVIEWED / NO_FOLLOW_UP | empty graph state remains indeterminate rather than healthy or data loss |
+| `RESEARCH/daily/2026-10-02-dehydrated-report.md` | REVIEWED / NO_FOLLOW_UP | accepted/rejected signal state and Hard Rollback remain task-local evidence |
+| `RESEARCH/daily/2026-10-02-cortex-selfcheck.md` | REVIEWED / NO_FOLLOW_UP | `Nodes=0 / Edges=0`, `NOT_COMPUTED` and store-identity uncertainty remain preserved |
+| current October relational owner through 2026-10-02 | REVIEWED / RETAIN | same-date R1/R2 does not establish a common persistent store |
+| W40 R3/R4 / October R5 final | NOT_DUE | current week/month remain open |
+
+### A1 disposition
+
+- Coverage completeness: COMPLETE_THROUGH_2026-10-02_AT_THIS_CHECK
+- Decision completeness: COMPLETE_THROUGH_2026-10-02_AT_THIS_CHECK
+- Original Daily mutation required: NO
+- W40 final mutation required: NO
+- October final mutation required: NO
+- New persistent-state/runtime-independence/graph-health credit: NONE
+
+```text
+SAME_DATE_R1_R2
+!= SAME_PERSISTENT_STORE
+
+IDENTICAL_OR_SIMILAR_REPORT_STATE
+!= SAME_EXECUTION
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+!= DIAGNOSED_DEFECT
+
+EMPTY_TASK_LOCAL_STATE
+!= HEALTHY_PERSISTENT_GRAPH
+!= DATA_LOSS
+```
