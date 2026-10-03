@@ -591,3 +591,14 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Graph Write Status: False
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_ai_alignment_wiki", "reasons": []}, {"accepted": true, "id": "signal_ai_safety_wiki", "reasons": []}, {"accepted": false, "id": "signal_metacognition_wiki", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+Run ID: 1aad30b3-d92c-4f3a-89d9-3087f21f3979
+HARD_ROLLBACK
+Signal ID: signal_metacognition_wiki
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Graph Write Status: False
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+RUN_END
