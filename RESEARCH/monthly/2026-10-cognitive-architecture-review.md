@@ -337,3 +337,69 @@ A1_N_MINUS_1_CUTOFF
 - W40 settlement: NOT_DUE
 - October natural-month final: NOT_DUE
 - A2 dependency: MUST_FRESH_READ_THIS_A1_MERGED_MAIN_AND_CONSUME_LATE_NATIVE_INPUT
+
+
+## A2_SUCCESSOR_CURRENT_MONTH_RELATION_2026-10-03
+
+- Logical maintenance date: 2026-10-03
+- Exact successor A1-merged base main: `ae1f61d4fca0a9a7c2522f33d0ae865958c4e75a`
+- Current month relation window: 2026-10-01 through 2026-10-03
+- Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- Predecessor early A2 no-path observation: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Later R1 native input now present: `RESEARCH/daily/2026-10-03-dehydrated-report.md`
+- Later R2 native input now present: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`
+- Historical rewrite: NO
+- Runtime/test replay by this maintenance pass: NOT_PERFORMED
+
+### R1 relation now visible
+
+- Signals processed: 3.
+- Accepted: 2.
+- Rejected from ingestion: 1.
+- Hard Rollback: recorded for reflection_depth_exhausted.
+- Synthesis Status: NOT_PERFORMED.
+- Knowledge Graph Injection: NOT_EXECUTED.
+- Analysis Status: ANALYSIS_INCONCLUSIVE.
+
+### R2 relation now visible
+
+- Module health entries: OK on the reported module checks.
+- DB State: Nodes = 0, Edges = 0.
+- Context: INDETERMINATE_EMPTY_STATE.
+- Incremental Drift: NOT_COMPUTED.
+- Test report: 27 total / 26 passed / 1 failed.
+- The report does not establish a healthy persistent graph.
+
+### Cross-plane boundary
+
+- R1 and R2 are independent evidence surfaces even on the same logical date.
+- No named common persistent store plus open evidence is established by these two files alone.
+
+```text
+EARLIER_A2_PATH_NOT_OBSERVED
++
+LATER_R1_R2_DELIVERY_PRESENT
+=
+CURRENT_RELATION_UPDATED
+
+SAME_DATE_R1_R2
+!= SAME_PERSISTENT_STORE
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+
+NODES_0_EDGES_0
+!= HEALTHY_PERSISTENT_GRAPH
+!= DATA_LOSS
+```
+
+### Successor A2 disposition
+
+- October version state: OPEN
+- Relationship continuity: UPDATED_WITH_2026_10_03_R1_R2
+- R1 rejected-signal / Hard Rollback boundary: PRESERVED
+- R2 empty-state uncertainty: PRESERVED
+- Shared persistent-store identity: NOT_ESTABLISHED
+- W40 R3/R4 settlement: NOT_DUE
+- October R5 final: NOT_DUE
+- New persistent-state/runtime-independence/graph-health credit from maintenance: NONE
