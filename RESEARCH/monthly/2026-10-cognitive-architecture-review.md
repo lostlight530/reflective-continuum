@@ -403,3 +403,162 @@ NODES_0_EDGES_0
 - W40 R3/R4 settlement: NOT_DUE
 - October R5 final: NOT_DUE
 - New persistent-state/runtime-independence/graph-health credit from maintenance: NONE
+
+## A1 FULL COVERAGE — 2026-10-04
+
+- Repository: `lostlight530/reflective-continuum`
+- Plane: `A1 / FULL_COVERAGE_MAINTENANCE`
+- Logical maintenance date: `2026-10-04`
+- Base main: `7638e3f41fa5e72974aa1af7c2a7cd1ebcb79f9a`
+- Coverage window: `2026-10-01..2026-10-03`
+- N-day excluded from A1: `2026-10-04`
+- Owner: `RESEARCH/monthly/2026-10-cognitive-architecture-review.md`
+- System: Reflective GAS
+- Historical rewrite: `NO`
+- Native replay: `NO`
+- Extra runtime/test execution: `NOT_PERFORMED`
+- New evidence credit: `NONE`
+
+### Retained maintenance chronology
+
+- 2026-10-01 A1 #398 initialized the October relational owner; A2 #399 integrated the first R1/R2 relation.
+- 2026-10-02 native R1 #400 and R2 #401 merged; A1 #402 / A2 #403 reviewed them; D30 #404 remained retrospective audit evidence.
+- 2026-10-03 A1 #405 / A2 #406 preceded late native R1 #407 and R2 #408; successor A1 #409 / A2 #410 reconciled later visibility.
+- R1 and R2 remain independent evidence surfaces even on the same logical date.
+- Each review cut remains independently interpretable.
+- Later current-main visibility does not backdate earlier task-time visibility.
+- Merged evidence remains bounded by the owning artifact.
+- Closed-unmerged delivery history is not promoted into current-main truth.
+
+### 2026-10-01 coverage
+
+- R1 Daily: PRESENT.
+- R2 Daily: PRESENT.
+- A1 #398 / A2 #399: MERGED.
+- R1 acceptance/rejection evidence remains task-local.
+- R2 empty-state evidence remains state-local.
+- Shared persistent-store identity is not inferred.
+- A1 decision: RETAIN.
+- Coverage status: COMPLETE_FOR_DATE.
+- New graph-health credit: NONE.
+- New persistence credit: NONE.
+
+### 2026-10-02 coverage
+
+- R1 #400: MERGED.
+- R2 #401: MERGED.
+- A1 #402 / A2 #403: MERGED.
+- D30 #404: MERGED_AS_RETROSPECTIVE_AUDIT.
+- R2 empty-state uncertainty remains preserved.
+- 26 passed / 1 failed is not normalized to all-green.
+- A1 decision: RETAIN / AUDIT_SEPARATE.
+- Coverage status: COMPLETE_FOR_DATE.
+- New runtime-independence credit: NONE.
+- New architecture-health credit: NONE.
+
+### 2026-10-03 coverage
+
+- Early A1 #405 / A2 #406: MERGED.
+- Late R1 #407 and R2 #408: MERGED.
+- Successor A1 #409 / A2 #410: MERGED.
+- Earlier no-path observation remains valid for its earlier cut.
+- Later R1/R2 presence does not establish earlier availability.
+- Hard Rollback evidence remains a rejection event, not a repository failure.
+- A1 decision: RETAIN_CURRENT_RELATION.
+- Coverage status: COMPLETE_FOR_DATE.
+- Shared persistent-store identity: NOT_ESTABLISHED.
+- New graph-health credit: NONE.
+
+### Artifact-class review
+
+- Native Daily artifacts: REVIEWED / RETAIN.
+- Weekly artifacts: REVIEWED_IF_DUE / RETAIN.
+- Rolling Monthly owner: REVIEWED / APPEND_ONLY.
+- Prior-month monthly surface: PRIOR_MONTH_CONTEXT_ONLY.
+- D30 audit: RETROSPECTIVE_AUDIT_PLANE.
+- Prior A1 sections: POINT_IN_TIME_HISTORY.
+- Prior A2 sections: POINT_IN_TIME_HISTORY.
+- Closed-unmerged PRs: DELIVERY_HISTORY_ONLY.
+- 2026-10-04 native/weekly artifacts: BOUNDARY_ONLY / DEFER_TO_A2.
+
+### 2026-10-04 boundary only
+
+- R1 Daily 2026-10-04 #411: MERGED.
+- R2 Daily 2026-10-04 #412: MERGED.
+- Original R4 Draft #413: CLOSED_UNMERGED.
+- R4 current owner #415: MERGED.
+- R3 W40 #414: MERGED after its 10/4 evidence was corrected on-branch before merge.
+- R1 records two accepted signals and one rejected signal with HARD_ROLLBACK.
+- R2 records Nodes=0 / Edges=0 with `INDETERMINATE_EMPTY_STATE`.
+- N-day evidence is not consumed into A1.
+- N-day evidence is reserved for A2 after A1 merges.
+
+### Evidence invariants
+
+- `LATER_PATH_PRESENT != ORIGINAL_INPUT_AVAILABLE`
+- `CURRENT_PATH_COMPLETE != HISTORICAL_EXECUTION_COMPLETE`
+- `LATER_SUCCESS != EARLIER_SUCCESS`
+- `CURRENT_REPOSITORY_STATE != TASK_TIME_STATE`
+- `MERGED_ARTIFACT != SUCCESSFUL_EXECUTION`
+- `MERGED_MONTHLY_ARTIFACT != NATURAL_MONTH_CLOSE`
+- `DUE_DATE != EXECUTION`
+- `SCHEDULED != EXECUTED`
+- `SAME_DATE != SAME_STATE`
+- `SOURCE_CODE != EXECUTED_BEHAVIOR`
+- `TEST_SOURCE != TEST_EXECUTION`
+- `NATIVE_TASK_DELIVERY != A1_MAINTENANCE`
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`
+- `A2_RELATIONAL_VERSION != PERIODIC_AUDIT`
+- `PERIODIC_AUDIT != DURABLE_GOVERNANCE`
+
+### Repository-specific boundaries
+
+- `SAME_DATE_R1_R2 != SAME_PERSISTENT_STORE`.
+- `NODES_0_EDGES_0 != HEALTHY_PERSISTENT_GRAPH`.
+- `NODES_0_EDGES_0 != DATA_LOSS`.
+- `26_PASSED_PLUS_1_FAILED != ALL_GREEN`.
+- R3 lexical/in-memory stability does not establish persistent-store stability.
+- R4 topology review does not mutate SPEC/ADR authority.
+- October R5 natural-month final remains not due.
+
+### Completeness checklist
+
+- 2026-10-01 represented: YES.
+- 2026-10-02 represented: YES.
+- 2026-10-03 represented: YES.
+- N-1 coverage complete: YES.
+- 2026-10-04 excluded from A1 consumption: YES.
+- Historical task-time states preserved: YES.
+- D30 kept separate where present: YES.
+- Closed-unmerged history not promoted: YES.
+- Duplicate evidence credit: NO.
+- Runtime execution invented: NO.
+- Test execution invented: NO.
+- Architecture-health claim invented: NO.
+- Weekly closure invented: NO.
+- Natural-month closure invented: NO.
+- Governance promotion performed: NO.
+- Parallel owner created: NO.
+- A2 allowed before A1 merge: NO.
+
+### A1 disposition
+
+- Coverage completeness: `COMPLETE_THROUGH_2026-10-03_AT_THIS_CHECK`.
+- Decision completeness: `COMPLETE_THROUGH_2026-10-03_AT_THIS_CHECK`.
+- October owner state: `OPEN`.
+- October natural-month final: `NOT_DUE`.
+- New native credit: `NONE`.
+- New runtime credit: `NONE`.
+- New audit credit: `NONE`.
+- New governance credit: `NONE`.
+- A2 dependency: `MUST_MERGE_THIS_A1_THEN_FRESH_READ_MAIN`.
+
+```text
+OCTOBER_1_TO_3_FULL_COVERAGE
++
+HISTORICAL_STATE_PRESERVED
++
+N_DAY_2026_10_04_EXCLUDED
+=
+A1_COMPLETE_FOR_2026_10_04
+```
