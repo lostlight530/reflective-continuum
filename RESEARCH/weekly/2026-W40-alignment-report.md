@@ -88,7 +88,17 @@ RUN_END
 ```
 
 ### 2026-10-04
-(No HARD_ROLLBACK found for this date)
+```
+RUN_BEGIN
+Run ID: ef97298d-7ce9-4b1f-8105-95d0602ce24a
+HARD_ROLLBACK
+Signal ID: signal_ai_alignment
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Graph Write Status: False
+Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
+RUN_END
+```
 
 ## Daily Convergence
 - 2026-09-28: FIXED_FIXTURE_REPEATABILITY_OBSERVED
@@ -97,10 +107,10 @@ RUN_END
 - 2026-10-01: repeatable: true
 - 2026-10-02: SUCCESS
 - 2026-10-03: {"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
-- 2026-10-04: MISSING_LOG_DATA
+- 2026-10-04: SUCCESS (distinct_snapshots: 1, iterations: 100, repeatable: true, scope: fixed local SQLite fixture)
 
 ## 缺失日期
-- 2026-10-04
+- None
 
 ## 数据来源边界
 - https://en.wikipedia.org/api/rest_v1/page/summary/AI_safety
