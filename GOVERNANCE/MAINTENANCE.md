@@ -24,9 +24,9 @@ A passing test suite is revision/environment-scoped evidence for the tests that 
 
 ## Maintenance identity and concurrency
 
-A maintenance run is identified by repository, task/surface, logical period when applicable, producer, base `main` revision, and run identifier when one exists. Before any write, recover the current default branch, latest merged `main`, relevant open pull requests, active maintenance branches, and recent merged changes.
+A maintenance run is identified by repository, task/surface, logical period when applicable, producer, base `main` revision, observed branch/ref when availability is branch-relative, and run identifier when one exists. Before any write, recover the current default branch, latest merged `main`, relevant open pull requests, active maintenance branches, and recent merged changes.
 
-If another open PR or active branch owns the same maintenance surface or logical period, coordinate instead of manufacturing a parallel repair. A later `main` revision invalidates earlier delivery assumptions until the aggregate diff is rechecked.
+If another open PR or active branch owns the same maintenance surface or logical period, coordinate instead of manufacturing a parallel repair. Sibling branches sharing one base revision remain separate evidence snapshots after divergence. A later `main` revision invalidates earlier delivery assumptions until the aggregate diff is rechecked.
 
 Use writes only for confirmed maintenance changes. Never create or mutate a branch merely to test write permission.
 
@@ -65,3 +65,26 @@ For a justified repair:
 Done requires aligned maintenance links/indexes, preserved negative evidence, a clean aggregate diff against current `main`, explicit executed/unexecuted validation, and no hidden scope expansion.
 
 Final doctrine and merge authority remains with the maintainer.
+
+
+## Branch/ref evidence boundary — 2026-10-04 special calibration
+
+When a Weekly or downstream task evaluates same-period Daily inputs, capture branch/ref visibility separately from eventual repository state.
+
+Required distinction when material:
+
+```text
+BASE_REVISION
+BRANCH_OR_REF
+VISIBLE_PATHS_AT_SNAPSHOT
+SIBLING_BRANCH_PATHS
+EVENTUAL_MAIN_PATHS
+STORE_IDENTITY
+RUN_IDENTITY
+```
+
+None of these fields substitutes for another.
+
+A later merge can justify a successor/reconciliation. It cannot turn an earlier branch-relative absence into an earlier observed input.
+
+This maintenance rule does not authorize rewriting R1/R2/R3/R4 history or promoting a path-presence check into runtime/store validation.
