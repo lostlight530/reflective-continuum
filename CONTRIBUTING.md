@@ -1,5 +1,9 @@
 # Contributing
 
+## Open research contributions
+
+For research-method or positioning changes, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Native graph, store, methodology, ADR, reproducibility, evidence, and historical contracts remain authoritative.
+
 Reflective Continuum welcomes bounded contributions to its graph-state implementation, tests, ADRs, methodology, evidence documentation, reproducibility rules, and repository infrastructure.
 
 ## Start from the owning surface
