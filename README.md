@@ -138,3 +138,32 @@ R2_EMPTY_TASK_LOCAL_STORE
 ```
 
 Current behavior remains governed by implementation and explicit contracts, not by the existence of periodic reports.
+
+
+## Current periodic evidence note — 2026-10-04 special closeout
+
+The 2026-W40 R1/R2/R3/R4 sequence supplies a new repository-native calibration for evidence identity without changing executable contracts.
+
+```text
+SIBLING_BRANCH_PATH_PRESENT
+!= OBSERVED_BRANCH_INPUT_VISIBLE
+
+EVENTUAL_MAIN_PATH_PRESENT
+!= EARLIER_BRANCH_SNAPSHOT_COMPLETE
+
+SAME_LOGICAL_DATE
+!= SAME_GIT_SNAPSHOT
+!= SAME_PERSISTENT_STORE
+
+R1_ACCEPTED_SIGNAL
+!= EXTERNAL_TRUTH
+
+R2_INDETERMINATE_EMPTY_STATE
+!= HEALTHY
+!= DATA_LOSS
+
+26_PASSED_PLUS_1_FAILED
+!= ALL_GREEN
+```
+
+The durable ADR/Methodology update records the identity boundary. It does not add runtime capability, establish shared persistence, or erase the 2026-10-04 rejected-signal/test-failure evidence.
