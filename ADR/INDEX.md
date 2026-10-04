@@ -1,7 +1,7 @@
 # Reflective Continuum Architecture Decision Index
 
 Status: architecture and implementation-boundary map  
-Current calibration: 2026-09-17
+Current calibration: 2026-10-04
 
 ADR numbering is an identifier sequence. A decision supersedes another only when explicitly stated.
 
@@ -18,7 +18,7 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 | [ADR-007](./ADR-007.md) | Executable policy lives in `RuleConfig`/`RuleEngine`, not prose | `reflective_validator.py` |
 | [ADR-008](./ADR-008.md) | Task wrappers operate only on explicit inputs/outputs | `CODE/tasks/**` |
 | [ADR-009](./ADR-009.md) | Evaluation claims stay inside the exact evidence surface | tasks, storage, analysis, research artifacts |
-| [ADR-010](./ADR-010.md) | State continuity requires explicit object identity | storage/task/research history |
+| [ADR-010](./ADR-010.md) | State continuity requires explicit store/run/revision/ref identity | storage/task/research history |
 
 ## Implementation map
 
@@ -65,6 +65,7 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 8. Periodic summaries do not erase Daily failures/errors or historical runtime gaps.
 9. External protocols/papers remain reference material unless a local implementation exists.
 10. An archived DOI identifies a publication object; it does not identify every later `main` revision, database state, or successful replay.
+11. A Git base revision, branch/ref snapshot, eventual merged main, and persistent database/store identity are separate continuity surfaces.
 
 ## Status
 
@@ -98,3 +99,14 @@ Compare indexed paths with repository files and review each ADR's implementation
 
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
+
+
+## 2026-10-04 special calibration
+
+ADR-010 now explicitly covers repository snapshot identity where evidence availability depends on branch/ref state.
+
+```text
+same base revision != same branch snapshot
+same branch snapshot != same persistent store
+later main visibility != earlier task input visibility
+```
