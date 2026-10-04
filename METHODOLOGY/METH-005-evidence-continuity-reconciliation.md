@@ -1,5 +1,5 @@
 > [!NOTE]
-> **Current architecture interpretation — 2026-09-18**
+> **Current architecture interpretation — 2026-10-04**
 > - **Subject class:** `METHOD`
 > - **Role:** Current methodology: **Evidence continuity and historical reconciliation**
 > - **Authority:** Repository-native method authority for the exact procedure, observation rule, assumptions and limits stated by this file
@@ -11,7 +11,7 @@
 
 # Evidence continuity and historical reconciliation
 
-- Method version: 2026-09-18
+- Method version: 2026-10-04
 - Governing decision: ADR-010
 
 ## Objective
@@ -21,6 +21,8 @@ Determine whether two observations can legitimately be treated as evidence about
 ## Inputs
 
 - logical date / ISO period
+- exact Git base revision
+- exact branch/ref identity when repository visibility is material
 - original execution status and timestamp when available
 - artifact path and current repository presence
 - generation / commit / delivery evidence when material
@@ -37,14 +39,15 @@ Determine whether two observations can legitimately be treated as evidence about
 2. Identify the object whose continuity/support is asserted.
 3. Record both endpoint observations and their time/revision boundaries.
 4. Establish an identity link; matching values/digests alone are insufficient.
-5. Separate current path presence from original execution evidence.
-6. Separate fixed-fixture repeatability from durable persistence.
-7. Separate synthetic/test transitions from operational transitions.
-8. Separate local ingestion outcome from external source support.
-9. Preserve errors, failures, rejected signals, `NOT_COMPUTED`, and historical-runtime gaps.
-10. If later evidence resolves only delivery/path presence, update only that dimension.
-11. If a cited source does not support the stored proposition, record `SOURCE_CLAIM_MISMATCH`.
-12. Use reconciliation rather than silently making corrected knowledge appear contemporaneous with the original run.
+5. When repository-path availability is part of the claim, establish the exact branch/ref snapshot; sibling-branch presence is not observed-path availability.
+6. Separate current path presence from original execution evidence.
+7. Separate fixed-fixture repeatability from durable persistence.
+8. Separate synthetic/test transitions from operational transitions.
+9. Separate local ingestion outcome from external source support.
+10. Preserve errors, failures, rejected signals, `NOT_COMPUTED`, and historical-runtime gaps.
+11. If later evidence resolves only delivery/path presence, update only that dimension.
+12. If a cited source does not support the stored proposition, record `SOURCE_CLAIM_MISMATCH`.
+13. Use reconciliation rather than silently making corrected knowledge appear contemporaneous with the original run.
 
 ## Persistence states
 
@@ -66,6 +69,9 @@ A bare SQLite `:memory:` database is connection-local. Cross-task/day continuity
 ## Artifact-history states
 
 - `AVAILABLE_AT_AGGREGATION_SNAPSHOT`
+- `BRANCH_VISIBLE_AT_OBSERVED_REF`
+- `SIBLING_BRANCH_PRESENT_NOT_OBSERVED`
+- `EVENTUALLY_VISIBLE_ON_MAIN`
 - `LATE_AVAILABLE_AFTER_SNAPSHOT`
 - `BLOCKED_AT_EXECUTION`
 - `UNRESOLVED_DELIVERY_HISTORY`
@@ -128,3 +134,38 @@ Reconciliation fails when it invents a shared store, erases a failed/error resul
 This methodology reconciles documentary/state evidence. It does not create missing execution, a shared database, source truth, or durable persistence.
 
 Historical reference ranges inside this methodology remain point-in-time examples rather than a live status dashboard.
+
+
+## 2026-10-04 reference case — branch snapshot versus eventual main
+
+Use the R1/R2/R3 W40 sequence as the current repository-native reference case.
+
+A valid reconstruction records at least:
+
+- R1 branch/ref and base revision;
+- R2 branch/ref and base revision;
+- R3 branch/ref and base revision;
+- which same-day paths were visible from the R3 observed snapshot;
+- later merge state on current `main`;
+- whether a later R3 correction consumed the now-visible evidence;
+- store identity separately from Git identity;
+- test/failure/rejection states separately from path availability.
+
+The allowed interpretation is:
+
+```text
+R1_OR_R2_EXISTS_ON_SIBLING_BRANCH
+!= R3_INPUT_VISIBLE_AT_THAT_SNAPSHOT
+
+R1_OR_R2_LATER_MERGED
+!= R3_EARLIER_SNAPSHOT_COMPLETE
+
+R3_LATER_RECONCILED
+!= ORIGINAL_BRANCH_OBSERVATION_FALSE
+
+SAME_DATE
+!= SAME_STORE
+!= SAME_GIT_SNAPSHOT
+```
+
+Repository-snapshot reconciliation is documentary evidence handling. It does not create a shared database, replay R1/R2, or prove durable persistence.

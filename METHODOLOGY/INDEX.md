@@ -1,7 +1,7 @@
 # Reflective Continuum Methodology Index
 
 Status: procedure and evidence-surface map  
-Current calibration: 2026-09-17
+Current calibration: 2026-10-04
 
 `METHODOLOGY/**` explains how concrete repository properties are measured or interpreted. A methodology does not create a runtime capability.
 
@@ -13,7 +13,7 @@ Current calibration: 2026-09-17
 | [METH-002](./METH-002-reflective-morphing-protocol.md) | Observe one transactional bounded reflection path | `cortex_observer.py`, `continuum_db.py`, `reflective_validator.py` |
 | [METH-003](./METH-003-alignment-verification.md) | Review exact claim/source support | repository evidence + research sources |
 | [METH-004](./METH-004-cognitive-divergence-rollback.md) | Interpret SQLite savepoint rejection/rollback | `cortex_observer.py`, `continuum_db.py` |
-| [METH-005](./METH-005-evidence-continuity-reconciliation.md) | Reconcile persistence/artifact/source continuity by identity | storage + task + retained research history |
+| [METH-005](./METH-005-evidence-continuity-reconciliation.md) | Reconcile store/run/revision/ref/artifact/source continuity by identity | storage + task + retained research history |
 
 ## Method contract
 
@@ -37,6 +37,8 @@ Each methodology identifies:
 - same logical date != shared database identity
 - R1 accepted signal + R2 empty store != persistence proof or data-loss proof
 - current path presence != historical runtime success
+- sibling-branch path presence != observed-branch input visibility
+- eventual main visibility != earlier branch-snapshot visibility
 - periodic snapshot != replacement for Daily error/failure history
 
 METH-005 operationalizes ADR-010's identity requirement for continuity claims.
@@ -57,6 +59,7 @@ Keep these identities separate when a method or result is cited:
 
 ```text
 Git revision
+!= Git branch/ref snapshot
 != Python/SQLite environment
 != database/store identity
 != fixture/input identity
@@ -79,3 +82,10 @@ A repeatable fixed fixture can support repeatability at a recorded revision/envi
 
 - [August stage audit through 2026-08-27](../historical-audits/03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md)
 - [Prior cutoff audit through 2026-08-23](../historical-audits/03-stage-and-period-audits/2026-08-23--august-through-23--stage-audit.md)
+
+
+## 2026-10-04 special calibration
+
+Repository-snapshot identity is now part of continuity reconciliation when one task's evidence depends on whether another artifact was visible from the exact observed branch/ref.
+
+This does not weaken the stronger persistence rule: Git identity and database/store identity remain independent.
