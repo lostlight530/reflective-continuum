@@ -624,3 +624,21 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Graph Write Status: False
 Next Action: Do not retry. Report as REJECTED_FROM_INGESTION.
 RUN_END
+RUN_BEGIN
+Run ID: f27301c6-c973-458e-ab14-70e38d729fc6
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+RUN_END
+RUN_BEGIN
+Run ID: f27301c6-c973-458e-ab14-70e38d729fc6
+RUN_END
+{"accepted": 2, "results": [{"accepted": true, "id": "signal-ai-alignment", "reasons": []}, {"accepted": true, "id": "signal-metacognition", "reasons": []}, {"accepted": false, "id": "signal-determinism", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+
+RUN_BEGIN
+Run ID: f27301c6-c973-458e-ab14-70e38d729fc6
+HARD_ROLLBACK
+Signal ID: signal-determinism
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: False
+Follow-up Action: None
+RUN_END
