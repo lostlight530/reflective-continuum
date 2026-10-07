@@ -642,3 +642,14 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Knowledge Graph Injection: False
 Follow-up Action: None
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "9338cc67-8cde-4c63-ba99-d4a0f36c6e3c", "reasons": []}, {"accepted": true, "id": "d71d77a9-0e41-48d7-9b8e-5996bdcadc30", "reasons": []}, {"accepted": false, "id": "e65a5e29-5c29-4341-aa91-df41b2672ee0", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+Run ID: 02bc9f24-02a4-41e3-b2a6-d017e5260a12
+HARD_ROLLBACK
+Signal ID: e65a5e29-5c29-4341-aa91-df41b2672ee0
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: False
+Follow-up Action: None
+RUN_END
