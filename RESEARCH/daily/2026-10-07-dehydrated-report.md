@@ -1,5 +1,5 @@
 ## Convergence 状态
-SUCCESS
+SUCCESS_WITH_REJECTED_SIGNAL
 
 ## 实际 Hash
 02bc9f24-02a4-41e3-b2a6-d017e5260a12
