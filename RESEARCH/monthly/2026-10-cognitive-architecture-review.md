@@ -1374,3 +1374,182 @@ MERGED_A1
 = CURRENT_MONTH_RELATION_THROUGH_2026_10_06
 CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL
 ```
+
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-07 — REFLECTIVE_GAS
+
+- Repository: `lostlight530/reflective-continuum`
+- Plane: `A1 / FULL-COVERAGE MAINTENANCE`
+- Logical maintenance date: `2026-10-07`
+- Exact base main: `775c733ebb66e99e9ee973422b5e01fd9d698a98`
+- Coverage window: `2026-10-01..2026-10-06`
+- N-day boundary: `2026-10-07`
+- Owner: `RESEARCH/monthly/2026-10-cognitive-architecture-review.md`
+- Native system: Reflective GAS
+- Historical rewrite: NO
+- Native replay: NO
+- Extra runtime/test execution by maintenance: NOT_PERFORMED
+- Natural-month R5 final: NOT_DUE
+- New maintenance evidence credit: NONE
+
+### 1. Fresh-start gate
+- Current main was re-read after the 2026-10-07 R1 and R2 producer PRs merged.
+- Open PR overlap was checked before branch creation.
+- No conflicting open PR touched the October R5 owner.
+- The branch starts from the exact current main recorded above.
+- R1, R2, R3, R4, and R5 remain distinct task identities.
+- Same logical date is not treated as proof of shared persistent storage.
+- Prior A1/A2 and Special blocks remain point-in-time maintenance history.
+- Negative test and rejected-signal evidence remains durable.
+- The existing October cognitive-architecture review remains the single owner.
+
+### 2. Coverage denominator
+- 2026-10-01 R1/R2 month-open relation reviewed.
+- 2026-10-02 D30 and 26/1 test boundary reviewed.
+- 2026-10-03 late R1/R2 chronology reviewed.
+- 2026-10-03 branch-snapshot identity reviewed.
+- 2026-10-04 R1/R2 Daily relation reviewed.
+- 2026-10-04 R3/R4 Weekly relation reviewed.
+- 2026-10-04 Special snapshot-identity relation reviewed.
+- 2026-10-04 Open Research relation reviewed.
+- 2026-10-05 R1 rejected-signal relation reviewed.
+- 2026-10-05 R2 empty-state relation reviewed.
+- 2026-10-06 R1 rejected-signal/HARD_ROLLBACK relation reviewed.
+- 2026-10-06 R2 INDETERMINATE_EMPTY_STATE relation reviewed.
+- 2026-10-06 26 passed / 1 failed relation reviewed.
+- 2026-10-06 R1↔R2 unresolved store identity reviewed.
+- Rolling October R5 owner reviewed as maintenance owner.
+
+### 3. 2026-10-01 decision
+- Decision: `NO_FOLLOW_UP / RETAIN`.
+- R1 and R2 remain separate evidence planes.
+- Same date does not establish same persistent state.
+- No new runtime or test credit is created by inheritance.
+- Coverage for 2026-10-01 remains complete.
+
+### 4. 2026-10-02 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_NEGATIVE_TEST_BOUNDARY`.
+- D30 remains a separate retrospective plane.
+- 26 passed plus 1 failed remains distinct from all-green.
+- Passing modules do not erase the failed test.
+- Coverage for 2026-10-02 remains complete.
+
+### 5. 2026-10-03 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CHRONOLOGY`.
+- Late R1/R2 delivery remains distinct from task-time availability.
+- Same base revision does not establish the same branch snapshot.
+- Successor state does not rewrite predecessor state.
+- Coverage for 2026-10-03 remains complete.
+
+### 6. 2026-10-04 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_RELATIONS`.
+- R1/R2 Daily and R3/R4 Weekly evidence remain distinct.
+- Special snapshot work remains separate from producer credit.
+- Open Research remains below ADR, Methodology, and native evidence authority.
+- Coverage for 2026-10-04 remains complete.
+
+### 7. 2026-10-05 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_CURRENT_RELATION`.
+- R1 remains `SUCCESS_WITH_REJECTED_SIGNAL`.
+- Rejected signal and HARD_ROLLBACK remain retained.
+- R2 remains `INDETERMINATE_EMPTY_STATE`.
+- Incremental Drift remains NOT_COMPUTED where recorded.
+- 26/1 test evidence remains explicit.
+- Coverage for 2026-10-05 remains complete.
+
+### 8. 2026-10-06 decision
+- Decision: `NO_FOLLOW_UP / RETAIN_WITH_UNRESOLVED_STORE_IDENTITY`.
+- R1 remains `SUCCESS_WITH_REJECTED_SIGNAL`.
+- signal-determinism rejection remains retained.
+- HARD_ROLLBACK remains retained.
+- R1 Nodes/Edges remain NOT_COMPUTED in the producer artifact.
+- R2 remains Nodes 0 / Edges 0 / `INDETERMINATE_EMPTY_STATE`.
+- R2 Incremental Drift remains NOT_COMPUTED.
+- R2 test result remains 27 total / 26 passed / 1 failed.
+- R1 accepted signals do not prove R2 persistence.
+- R2 empty state does not prove R1 did not execute.
+- Same date does not establish a shared persistent store.
+- No current evidence justifies correction-in-place of the 10/6 A2 relation.
+- Coverage for 2026-10-06 remains complete.
+
+### 9. Artifact-class matrix
+| Surface | A1 decision | Boundary |
+| --- | --- | --- |
+| R1 Daily 10/1–10/6 | REVIEWED | producer evidence |
+| R2 Daily 10/1–10/6 | REVIEWED | separate evidence plane |
+| R3/R4 Weekly | REVIEWED_IF_DUE | weekly identity preserved |
+| October R5 owner | APPEND_RELATION | maintenance owner, not final |
+| Special snapshot work | REVIEWED_IF_PRESENT | separate plane |
+| Rejected signals / rollback | PRESERVE | no success inflation |
+| Empty graph state | PRESERVE_UNKNOWN | zero nodes is not healthy |
+| Test failures | PRESERVE | no all-green rewrite |
+| Prior A1/A2 | RETAIN | point-in-time maintenance |
+| 2026-10-07 R1/R2 | BOUNDARY_ONLY | excluded from A1 |
+
+### 10. 2026-10-07 N-day exclusion boundary
+- R1 PR #428 is merged on current main.
+- During pre-merge review, its aggregate header originally said `SUCCESS` while the same artifact contained 2 accepted / 1 rejected, HARD_ROLLBACK, NOT_PERFORMED synthesis, and ANALYSIS_INCONCLUSIVE.
+- The producer branch was corrected before merge to `SUCCESS_WITH_REJECTED_SIGNAL`.
+- That correction preserves the rejection rather than rewriting it away.
+- R1 10/7 still contains one rejected AI-safety signal due to reflection_depth_exhausted.
+- R2 PR #429 is merged after R1.
+- R2 10/7 remains Nodes 0 / Edges 0 / `INDETERMINATE_EMPTY_STATE`.
+- R2 10/7 remains 27 total / 26 passed / 1 failed.
+- No shared-store identity is proven by same-date sequencing.
+- These N-day facts establish current-main context only.
+- They are not consumed into the 10/1→10/6 A1 conclusion.
+- A2 may consume them only after this A1 merges and main is freshly re-read.
+- A1 creates no N-day runtime/test/evidence credit.
+
+### 11. Permanent evidence invariants
+- `SAME_DATE != SAME_STORE`
+- `R1_ACCEPTED != R2_PERSISTED`
+- `R2_EMPTY_STATE != R1_NOT_EXECUTED`
+- `NODES_0_EDGES_0 != HEALTHY_PERSISTENT_GRAPH`
+- `26_PASSED_PLUS_1_FAILED != ALL_GREEN`
+- `SUCCESS_WITH_REJECTED_SIGNAL != UNCONDITIONAL_SUCCESS`
+- `HARD_ROLLBACK != SILENT_SUCCESS`
+- `EVENT_STATUS != AGGREGATE_RUN_STATUS`
+- `SAME_BASE_REVISION != SAME_BRANCH_SNAPSHOT`
+- `CURRENT_PATH != HISTORICAL_RUNTIME`
+- `A1_MAINTENANCE != A2_RELATIONAL_VERSION`
+- `CURRENT_MONTH_RELATION != NATURAL_MONTH_FINAL`
+
+### 12. Decision completeness
+- 2026-10-01: REVIEWED.
+- 2026-10-02: REVIEWED.
+- 2026-10-03: REVIEWED.
+- 2026-10-04: REVIEWED.
+- 2026-10-05: REVIEWED.
+- 2026-10-06: REVIEWED.
+- MonthStart→N-1 coverage: COMPLETE.
+- Rejected signal erased: NO.
+- HARD_ROLLBACK erased: NO.
+- Empty graph promoted to HEALTHY: NO.
+- 26/1 promoted to all-green: NO.
+- Shared persistent store inferred: NO.
+- Incremental Drift fabricated: NO.
+- Duplicate runtime/test credit: NO.
+- Natural-month final manufactured: NO.
+- Parallel owner created: NO.
+- 2026-10-07 consumed by A1: NO.
+- A2 allowed before this A1 merge: NO.
+
+### 13. A1 disposition
+- Coverage completeness: `COMPLETE_THROUGH_2026-10-06_AT_THIS_CHECK`.
+- Decision completeness: `COMPLETE_THROUGH_2026-10-06_AT_THIS_CHECK`.
+- October state: `OPEN`.
+- Empty-state uncertainty: `PRESERVED`.
+- Negative test evidence: `PRESERVED`.
+- Required correction-in-place for pre-N history: `NONE_IDENTIFIED`.
+- N-day producer correction: `COMPLETED_BEFORE_NATIVE_MERGE`.
+- New maintenance runtime/test/publication credit: `NONE`.
+- A2 dependency: `MUST_MERGE_THIS_A1_THEN_FRESH_READ_CURRENT_MAIN`.
+
+```text
+OCTOBER_1_TO_6_FULL_COVERAGE
++ REJECTION_AND_ROLLBACK_PRESERVED
++ STORE_IDENTITY_UNRESOLVED
++ N_DAY_2026_10_07_EXCLUDED
+= A1_COMPLETE_FOR_2026_10_07
+```
