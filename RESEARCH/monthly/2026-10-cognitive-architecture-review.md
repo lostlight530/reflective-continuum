@@ -1895,3 +1895,184 @@ INDEPENDENT_RUNTIME_OR_SCIENTIFIC_VERIFICATION
 - Confirm no producer/native or foreign PR inserted between A1 merge and A2 base recovery.
 - A2 may then consume the 2026-10-08 native layer together with this merged A1.
 - A2 must preserve the same source/runtime/history boundaries and must not duplicate prior credit.
+
+## A2 CURRENT-MONTH RELATION — 2026-10-08
+
+- Repository: `lostlight530/reflective-continuum`
+- Plane: `A2 / CURRENT_MONTH_RELATION`
+- Logical maintenance date: `2026-10-08`
+- System: Reflective GAS
+- Month start: `2026-10-01`
+- Current relation window: `2026-10-01..2026-10-08`
+- Exact fresh post-A1 base main: `2026872d5f423287451385ad68d03cfa5bb827d9`
+- Existing owner: `RESEARCH/monthly/2026-10-cognitive-architecture-review.md`
+- A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- Owner policy: `SINGLE_EXISTING_OWNER / APPEND_ONLY`
+- Historical rewrite: `NO`
+- Native replay by maintenance: `NO`
+- Extra external research by maintenance: `NOT_PERFORMED`
+- Extra runtime/test execution by maintenance: `NOT_PERFORMED`
+- New independent-source credit by maintenance: `NONE`
+- Natural-month final: `NOT_DUE`
+
+### Dependency and freshness proof
+
+- This A2 was created only after the ten A1 maintenance PRs merged.
+- Its base is the freshly read canonical main carrying this repository's merged A1.
+- Open PR count at the post-A1 cut was zero.
+- No pre-A1 SHA is reused as the A2 base.
+- Prior A1/A2 blocks remain immutable point-in-time history.
+- N-day producer evidence is integrated once, without replay.
+
+### Inherited A1 relation through 2026-10-07
+
+- MonthStart→N-1 coverage is inherited from merged A1.
+- Dates 2026-10-01 through 2026-10-07 keep their recorded producer and maintenance states.
+- Historical unknown/degraded/blocked/partial states remain preserved.
+- No later success is backfilled into earlier task-time state.
+- No duplicate research, runtime, or source credit is created.
+
+### 2026-10-08 native producer integration
+
+- 2026-10-08 R1 dehydrated report is present on canonical main.
+- R1 aggregate status is SUCCESS_WITH_REJECTED_SIGNAL.
+- R1 records 3 signals: 2 accepted and 1 rejected from ingestion.
+- The rejected signal records HARD_ROLLBACK with reason reflection_depth_exhausted.
+- R1 synthesis remains NOT_PERFORMED; Knowledge Graph Injection remains NOT_EXECUTED; Analysis Status remains ANALYSIS_INCONCLUSIVE.
+- 2026-10-08 R2 selfcheck is present on canonical main after replay onto R1-merged main.
+- R2 reports Nodes=0, Edges=0 with Context=INDETERMINATE_EMPTY_STATE.
+- Incremental Drift remains NOT_COMPUTED.
+- R2 test totals remain 27 total, 26 passed, 1 failed; Errors and Skipped remain NOT_REPORTED.
+- Native evidence is retained at exactly the scope recorded by the producer artifact.
+
+### Current-month coverage matrix
+
+#### 2026-10-01
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-02
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-03
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-04
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-05
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-06
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-07
+- Relation source: inherited from merged A1.
+- Producer state: PRESERVED.
+- Maintenance state: PRESERVED.
+- Duplicate credit: NONE.
+- Historical mutation: NO.
+
+#### 2026-10-08
+- Relation source: fresh post-A1 base plus current producer-native artifacts.
+- Producer state: PRESENT.
+- Integration: COMPLETE_WITH_RECORDED_LIMITS.
+- Duplicate producer credit: NONE.
+- Historical backfill: NONE.
+- Maintenance replay: NONE.
+
+### Evidence boundaries
+
+- SUCCESS_WITH_REJECTED_SIGNAL != UNCONDITIONAL_SUCCESS.
+- ACCEPTED_INGESTION != SYNTHESIS_PERFORMED.
+- ACCEPTED_INGESTION != KNOWLEDGE_GRAPH_PERSISTENCE.
+- R2_EMPTY_DB != R1_NOT_EXECUTED.
+- SEQUENTIAL_MERGE != SHARED_PERSISTENT_STORE_PROOF.
+- NOT_COMPUTED != ZERO_DRIFT.
+- UNKNOWN remains UNKNOWN when no evidence resolves it.
+- Negative or missing evidence is not transformed into positive capability.
+- Maintenance delivery is not a producer-native execution.
+- Same-lineage material is not multiplied into independent corroboration.
+
+### Artifact-class disposition
+
+- Daily producer artifacts through N: RETAIN / INTEGRATE_ONCE.
+- Weekly artifacts: preserve recorded OPEN/FINAL state.
+- Monthly owner: relation update only; month remains OPEN.
+- Prior A1 blocks: RETAIN_AS_AUDIT_HISTORY.
+- Prior A2 blocks: RETAIN_AS_AUDIT_HISTORY.
+- Corrections: retain both original problem and correction provenance.
+- Indexes/registries: change only for current-relation semantics.
+- Independent-GPT maintenance: no native execution credit.
+- Runtime evidence: credit only what the native record explicitly executed.
+- Natural-month final: NOT_DUE.
+
+### Decision-completeness check
+
+- Merged A1 dependency consumed: YES.
+- N-day producer layer consumed once: YES.
+- Current relation covers 2026-10-01 through 2026-10-08: YES.
+- N-1 history rewritten: NO.
+- Missing evidence invented: NO.
+- Duplicate source credit: NO.
+- Duplicate runtime credit: NO.
+- Early weekly final: NO.
+- Early month final: NO.
+- Parallel owner: NO.
+
+### A2 disposition
+
+- Current month relation: `UPDATED_THROUGH_2026-10-08`.
+- A1 dependency: `SATISFIED_FROM_FRESH_MERGED_MAIN`.
+- N-day integration: `COMPLETE_WITH_BOUNDARIES_PRESERVED`.
+- Historical rewrite: `NO`.
+- New independent-source credit: `NONE`.
+- New runtime credit by maintenance: `NONE`.
+- Natural-month closure: `OPEN / NOT_DUE`.
+- Unresolved maintenance defect: `NONE_IDENTIFIED_IN_THIS_PASS`.
+
+```text
+MERGED_A1_THROUGH_2026_10_07
++
+FRESH_POST_A1_MAIN
++
+2026_10_08_NATIVE_LAYER
+=
+CURRENT_MONTH_RELATION_THROUGH_2026_10_08
+
+MAINTENANCE_INTEGRATION
+!=
+NATIVE_REPLAY
+!=
+DUPLICATE_EVIDENCE_CREDIT
+```
+
+### Final handoff
+
+- Preserve this A2 as the 2026-10-08 current-relation timepoint.
+- Future maintenance must begin from then-current main rather than this cached SHA.
+- Future corrections must reconcile forward without erasing this record.
