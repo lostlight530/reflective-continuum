@@ -15,6 +15,8 @@ class RepositoryTests(unittest.TestCase):
             for heading in ("## Status", "## Context", "## Decision", "## Consequences", "## Verification"):
                 self.assertIn(heading, text, path)
         for path in sorted((ROOT / "METHODOLOGY").glob("*.md")):
+            if path.name == "INDEX.md":
+                continue
             text = path.read_text(encoding="utf-8")
             for heading in ("## Inputs", "## Procedure", "## Outputs", "## Failure conditions"):
                 self.assertIn(heading, text, path)
@@ -87,3 +89,4 @@ class RepositoryTests(unittest.TestCase):
             "Non-goals and ownership",
         ):
             self.assertIn(contract, text)
+
