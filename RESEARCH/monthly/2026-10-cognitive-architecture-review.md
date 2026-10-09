@@ -2233,3 +2233,116 @@ DUPLICATE_EVIDENCE_CREDIT
 - Full A1 merge precedes A2; A2 must consume fresh post-A1 main.
 - A1 temporal cutoff excludes all 2026-10-09 facts even when current main already contains them.
 - Disposition: COMPLETE_FOR_RELATIONAL_OWNER_REVIEW / NO_EXTRA_AUDIT / MONTH_OPEN.
+
+
+## A2 CURRENT-MONTH RELATION — 2026-10-09
+
+- Owner: `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` / `lostlight530/reflective-continuum`.
+- N=2026-10-09; MonthStart→N 2026-10-01..2026-10-09.
+- Required A1 #439 merged; exact post-A1 base main `06d27a413c432fe85aae9c4527cdcf09e2c7951d`.
+- Native R1 #437 and R2 #438 consumed as separate evidence paths.
+- Month state OPEN; no R5 natural-month final or graph-health claim.
+- Only monthly relation owner modified; no producer/checker execution by this A2.
+
+### A1 N-1 inherited dates
+
+- 2026-10-01: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-01: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-01: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-01: no new shared-store or runtime independence credit claimed.
+- 2026-10-02: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-02: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-02: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-02: no new shared-store or runtime independence credit claimed.
+- 2026-10-03: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-03: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-03: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-03: no new shared-store or runtime independence credit claimed.
+- 2026-10-04: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-04: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-04: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-04: no new shared-store or runtime independence credit claimed.
+- 2026-10-05: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-05: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-05: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-05: no new shared-store or runtime independence credit claimed.
+- 2026-10-06: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-06: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-06: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-06: no new shared-store or runtime independence credit claimed.
+- 2026-10-07: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-07: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-07: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-07: no new shared-store or runtime independence credit claimed.
+- 2026-10-08: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- 2026-10-08: accepted ingestion is not presumed graph persistence or synthesis.
+- 2026-10-08: R2 empty state or degraded checker outcome does not retroactively negate R1.
+- 2026-10-08: no new shared-store or runtime independence credit claimed.
+
+### Native 10/09 R1–R2 relation and source integrity
+
+- Evidence 01: Native R1 PR #437 merged into main on 2026-10-09.
+- Evidence 02: Native R2 PR #438 merged after R1, with independent selfcheck artifact.
+- Evidence 03: R1 Daily at RESEARCH/daily/2026-10-09-dehydrated-report.md.
+- Evidence 04: R1 ingestion.log appended; source file path distinct from R2 report.
+- Evidence 05: R1 convergence recorded SUCCESS_WITH_REJECTED_SIGNAL, not unconditional success.
+- Evidence 06: R1 actual Run ID 45b20ac5-0c7a-4bc1-b07f-05f8f0c4c47b.
+- Evidence 07: R1 reports exactly three considered source signals.
+- Evidence 08: Signal metacognition cited Wikipedia /Metacognition and was ACCEPTED.
+- Evidence 09: Signal determinism cited Wikipedia /Determinism and was ACCEPTED.
+- Evidence 10: Signal AI alignment cited Wikipedia /AI_alignment and was REJECTED_FROM_INGESTION.
+- Evidence 11: External Wikipedia concepts are source text signals, not independent peer-reviewed experimental corroboration.
+- Evidence 12: R1 rejected signal reason reflection_depth_exhausted.
+- Evidence 13: R1 rejected phase LIQUID at reflection depth 3.
+- Evidence 14: R1 rejected signal observer entropy_nats 1.0986122886681096.
+- Evidence 15: R1 rejection produces explicit HARD_ROLLBACK ledger entry.
+- Evidence 16: R1 rejection log Knowledge Graph Injection False.
+- Evidence 17: R1 rejection log Follow-up Action None.
+- Evidence 18: R1 explicit synthesis status NOT_PERFORMED.
+- Evidence 19: R1 explicit Knowledge Graph Injection status NOT_EXECUTED.
+- Evidence 20: R1 explicit Analysis Status ANALYSIS_INCONCLUSIVE.
+- Evidence 21: R1 totals 3 signals, 2 accepted and 1 rejected.
+- Evidence 22: Acceptance counts alone do not justify synthesizing the rejected signal.
+- Evidence 23: R1 convergence drill success is scoped to the recorded guardrail checks.
+- Evidence 24: R1 run and hash do not prove persisted graph writes.
+- Evidence 25: Native R2 Daily at RESEARCH/daily/2026-10-09-cortex-selfcheck.md.
+- Evidence 26: R2 module health reports 5 module names SUCCESS.
+- Evidence 27: R2 rule engine reports true for its inspected rule check.
+- Evidence 28: R2 DB nodes = 0 and edges = 0 at its own state cut.
+- Evidence 29: R2 Incremental Drift NOT_COMPUTED, not drift=0.
+- Evidence 30: R2 context INDETERMINATE_EMPTY_STATE.
+- Evidence 31: R2 check suite Total=27, Passed=27, Failed=0.
+- Evidence 32: R2 Errors and Skipped = NOT_REPORTED; do not silently set to zero.
+- Evidence 33: R2 test results apply to specified checker suite, not overall cognitive architecture health.
+- Evidence 34: R2 empty database could reflect initial state, storage path differences or ingest absence.
+- Evidence 35: R1 file-based ingestion and R2 DB snapshot have no established shared persistent-store ID.
+- Evidence 36: Same logical date and merge sequence do not establish same process or storage path.
+- Evidence 37: R2 empty DB cannot prove R1's ingestion did not run.
+- Evidence 38: R2 module PASS cannot prove R1 actually persisted two accepted signals.
+- Evidence 39: R1 disallowed synthesis status cannot be upgraded by R2 unit-test PASS.
+- Evidence 40: R1 is an ingestion control result; R2 is a separate checker result.
+- Evidence 41: Provenance of R1 source pages is external concept description only.
+- Evidence 42: Published sources are not evidence of independent live model behavior.
+- Evidence 43: Prior 10/08 R1 also rejected one signal; temporal repetition not a shared-store experiment.
+- Evidence 44: Prior 10/08 R2 26/27 is a separate historical reported check outcome.
+- Evidence 45: Improvement from 26/27 to 27/27 only compares stated suites; no controlled regression proof.
+- Evidence 46: October cognitive architecture owner remains OPEN and original natural R5 final NOT_DUE.
+- Evidence 47: Month owner does not infer full KG health from report presence.
+- Evidence 48: 2026-10-09 A1 maintenance #439 is merged on exact base of this A2.
+- Evidence 49: No repository-native R1 or R2 script execution was performed by this A2.
+- Evidence 50: No new runtime/window/source credit is added by this governance relation.
+- Evidence 51: Both native reports are retained without overwriting prior ingestion.log/history.
+- Evidence 52: Current relation through 2026-10-09 preserves explicit split of runner evidence planes.
+- Evidence 53: Any later store-identity verification should be a new evidence object, not history rewrite.
+
+### Verification boundary and handoff
+
+- R1 ingest evidence is recorded by R1; R2 health evidence is recorded by R2.
+- Merged chronology is not a same-database identity witness.
+- No external source concept is promoted into proven local memory integrity.
+- Any red/unknown status is preserved rather than normalized to green.
+- R1 HARD_ROLLBACK does not imply all signals rejected.
+- R2 27/27 within specified suite is not a scientific or system-wide validation.
+- No hidden synthesis or KG injection is imputed to a Daily reporter.
+- Temporal changes require new dated evidence, not edits to R1/R2 original Dailies.
+- N-day relation UPDATED_THROUGH_2026-10-09; no extra experiment, checker or credit.
