@@ -2528,3 +2528,153 @@ DUPLICATE_EVIDENCE_CREDIT
 - No forced weekly/monthly final, no verified-core upgrade, no source truth promotion.
 - No second owner or PR per date is generated; one existing monthly owner remains authoritative.
 - Ten-A1 merger barrier and fresh main read are mandatory before constructing N-day A2.
+
+
+## A2 CURRENT-MONTH RELATION — 2026-10-10
+
+- Canonical owner `RESEARCH/monthly/2026-10-cognitive-architecture-review.md`, domain Reflective GAS.
+- Exact merged A1 main input: `674c33a97ac46ae0fd391d7ac1ef44dc809ef219`.
+- A1 inherited 10/01–10/09, A2 extends through 2026-10-10; original R1 and R2 are separate task/execution evidence.
+- Today R1 PR #441 and R2 PR #442 already merged, but no proof of a shared persistent store.
+- Native R1 report `RESEARCH/daily/2026-10-10-dehydrated-report.md` and associated append-only ingestion.log.
+- Native R2 report `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`.
+- R1 signal disposition 2 accepted / 1 rejected; HARD_ROLLBACK reflection_depth_exhausted.
+- R2 check suite 27/27; Nodes=0 / Edges=0 / INDETERMINATE_EMPTY_STATE; incremental drift NOT_COMPUTED.
+- October monthly R5 final NOT_DUE; KG and synthesis not upgraded from native reports.
+
+### Earlier dated producer status inherited from merged A1
+
+#### 2026-10-01: inherited historical evidence
+- Original owner fact 1: 2026-10-01 retained claim 1: R1 native input: `RESEARCH/daily/2026-10-01-dehydrated-report.md` plus `ingestion.log` / merged via PR #396
+- Original owner fact 2: 2026-10-01 retained claim 2: R2 native input: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` / merged via PR #397
+- Original owner fact 3: 2026-10-01 retained claim 3: R1 and R2 producer executions: retained as separate evidence surfaces
+- Original owner fact 4: 2026-10-01 retained claim 4: Named shared persistent-store identity established by this maintenance pass: NO
+- Original owner fact 5: 2026-10-01 retained claim 5: October day-1 GAS relation: INTEGRATED_WITH_EVIDENCE_PLANE_SEPARATION
+- Original owner fact 6: 2026-10-01 retained claim 6: New graph-health, convergence, runtime-independence, or persistent-state credit: NONE
+- Review interpretation: 2026-10-01 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-02: inherited historical evidence
+- Original owner fact 1: 2026-10-02 retained claim 1: Current month relation window: 2026-10-01 through 2026-10-02
+- Original owner fact 2: 2026-10-02 retained claim 2: A1 coverage through 2026-10-01: INHERITED_FROM_MERGED_A1
+- Original owner fact 3: 2026-10-02 retained claim 3: October R5 natural-month final: NOT_DUE
+- Original owner fact 4: 2026-10-02 retained claim 4: Runtime/test replay by maintenance: NOT_PERFORMED
+- Original owner fact 5: 2026-10-02 retained claim 5: Native R1 artifact: `RESEARCH/daily/2026-10-02-dehydrated-report.md` / PR #400
+- Original owner fact 6: 2026-10-02 retained claim 6: Rejected signal: `signal_ai_safety_002` / `reflection_depth_exhausted`
+- Review interpretation: 2026-10-02 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-03: inherited historical evidence
+- Original owner fact 1: 2026-10-03 retained claim 1: Current month relation window: 2026-10-01 through 2026-10-03
+- Original owner fact 2: 2026-10-03 retained claim 2: Successor A1 dependency: PRESENT_ON_BASE_AND_CONSUMED
+- Original owner fact 3: 2026-10-03 retained claim 3: Predecessor early A2 no-path observation: PRESERVED_AS_POINT_IN_TIME_HISTORY
+- Original owner fact 4: 2026-10-03 retained claim 4: Later R1 native input now present: `RESEARCH/daily/2026-10-03-dehydrated-report.md`
+- Original owner fact 5: 2026-10-03 retained claim 5: Later R2 native input now present: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`
+- Original owner fact 6: 2026-10-03 retained claim 6: Runtime/test replay by this maintenance pass: NOT_PERFORMED
+- Review interpretation: 2026-10-03 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-04: inherited historical evidence
+- Original owner fact 1: 2026-10-04 retained claim 1: Required predecessor A1: PR #416 / MERGED
+- Original owner fact 2: 2026-10-04 retained claim 2: Extra runtime/test execution: NOT_PERFORMED
+- Original owner fact 3: 2026-10-04 retained claim 3: A2 consumes 2026-10-04 R1/R2/R3/R4 state.
+- Original owner fact 4: 2026-10-04 retained claim 4: Prior A2 records remain point-in-time history.
+- Original owner fact 5: 2026-10-04 retained claim 5: Later current state does not rewrite prior task-time state.
+- Original owner fact 6: 2026-10-04 retained claim 6: Same-date surfaces remain independent.
+- Review interpretation: 2026-10-04 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-05: inherited historical evidence
+- Original owner fact 1: 2026-10-05 retained claim 1: Required predecessor A1: PR #422 / MERGED
+- Original owner fact 2: 2026-10-05 retained claim 2: Extra runtime/test execution by maintenance: NOT_PERFORMED
+- Original owner fact 3: 2026-10-05 retained claim 3: Duplicate evidence/research credit: NONE
+- Original owner fact 4: 2026-10-05 retained claim 4: A1 covers 10/1–10/4 including Open Research relation.
+- Original owner fact 5: 2026-10-05 retained claim 5: A2 consumes 10/5 producer/current state.
+- Original owner fact 6: 2026-10-05 retained claim 6: Prior A1/A2/Special remain point-in-time history.
+- Review interpretation: 2026-10-05 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-06: inherited historical evidence
+- Original owner fact 1: 2026-10-06 retained claim 1: Required predecessor A1: PR #426 / MERGED
+- Original owner fact 2: 2026-10-06 retained claim 2: Current month relation window: `2026-10-01..2026-10-06`
+- Original owner fact 3: 2026-10-06 retained claim 3: Extra runtime/test execution by maintenance: NOT_PERFORMED
+- Original owner fact 4: 2026-10-06 retained claim 4: October R5 natural-month final: NOT_DUE
+- Original owner fact 5: 2026-10-06 retained claim 5: A1 #426 is present on this exact base.
+- Original owner fact 6: 2026-10-06 retained claim 6: A1 supplies complete MonthStart→2026-10-05 coverage.
+- Review interpretation: 2026-10-06 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-07: inherited historical evidence
+- Original owner fact 1: 2026-10-07 retained claim 1: Required predecessor A1: PR #430 / MERGED
+- Original owner fact 2: 2026-10-07 retained claim 2: Current month relation window: `2026-10-01..2026-10-07`
+- Original owner fact 3: 2026-10-07 retained claim 3: Extra runtime/test execution by maintenance: NOT_PERFORMED
+- Original owner fact 4: 2026-10-07 retained claim 4: A1 #430 is present on this exact base.
+- Original owner fact 5: 2026-10-07 retained claim 5: A1 supplies complete 10/1→10/6 coverage.
+- Original owner fact 6: 2026-10-07 retained claim 6: A2 consumes the corrected 2026-10-07 R1 plus R2 producer state after fresh-read main.
+- Review interpretation: 2026-10-07 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-08: inherited historical evidence
+- Original owner fact 1: 2026-10-08 retained claim 1: Existing owner: `RESEARCH/monthly/2026-10-cognitive-architecture-review.md`
+- Original owner fact 2: 2026-10-08 retained claim 2: A1 dependency: `PRESENT_ON_BASE_AND_CONSUMED`
+- Original owner fact 3: 2026-10-08 retained claim 3: A1 coverage inherited: `COMPLETE_THROUGH_2026-10-07_AT_A1_CUT`
+- Original owner fact 4: 2026-10-08 retained claim 4: Extra external research by maintenance: `NOT_PERFORMED`
+- Original owner fact 5: 2026-10-08 retained claim 5: Extra runtime/test execution by maintenance: `NOT_PERFORMED`
+- Original owner fact 6: 2026-10-08 retained claim 6: New independent-source credit by maintenance: `NONE`
+- Review interpretation: 2026-10-08 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+#### 2026-10-09: inherited historical evidence
+- Original owner fact 1: 2026-10-09 retained claim 1: N=2026-10-09; MonthStart→N 2026-10-01..2026-10-09.
+- Original owner fact 2: 2026-10-09 retained claim 2: Required A1 #439 merged; exact post-A1 base main `06d27a413c432fe85aae9c4527cdcf09e2c7951d`.
+- Original owner fact 3: 2026-10-09 retained claim 3: Native R1 #437 and R2 #438 consumed as separate evidence paths.
+- Original owner fact 4: 2026-10-09 retained claim 4: Month state OPEN; no R5 natural-month final or graph-health claim.
+- Original owner fact 5: 2026-10-09 retained claim 5: Only monthly relation owner modified; no producer/checker execution by this A2.
+- Original owner fact 6: 2026-10-09 retained claim 6: 2026-10-01: inherited from #439, original R1/R2 execution cut and reviewer status retained.
+- Review interpretation: 2026-10-09 R1/R2 outcomes remain separate execution cuts, not a shared-store experiment.
+- Retention gate: no new knowledge-graph, drift, synthesis or runtime credit from this A2 inheritance.
+
+### Original native evidence: `RESEARCH/daily/2026-10-10-dehydrated-report.md`
+- Native witness 1: d71c97bd-326c-4445-afd7-2c7b95fdb6c0
+- Native witness 2: 1. Signal ID: signal_alignment_1
+- Native witness 3: Content: In the field of artificial intelligence (AI), alignment aims to steer AI systems toward a person's or group's intended goals, preferences, or ethical principles.
+- Native witness 4: 2. Signal ID: signal_deceptive_2
+- Native witness 5: Content: Deceptive alignment is a proposed failure mode in machine learning in which a trained model behaves according to its intended objective during training but pursues a different objective once deployed.
+- Native witness 6: 3. Signal ID: signal_power_3
+- Native witness 7: Content: Some AI researchers argue that suitably advanced planning systems will seek power over their environment, including over humans—for example, by evading shutdown, proliferating, and acquiring resources.
+- Native witness 8: https://en.wikipedia.org/wiki/AI_alignment (Checked at 2026-10-10)
+- Native witness 9: signal_alignment_1: ACCEPTED
+- Native witness 10: signal_deceptive_2: ACCEPTED
+- Native witness 11: signal_power_3: REJECTED_FROM_INGESTION
+- Native witness 12: Run ID: d71c97bd-326c-4445-afd7-2c7b95fdb6c0
+- Native witness 13: Signal ID: signal_power_3
+- Native witness 14: Reason: reflection_depth_exhausted
+- Native witness 15: Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+- Native witness 16: Knowledge Graph Injection: False
+- Native witness 17: Follow-up Action: None
+- Native witness 18: 今日摄入三个关于AI对齐与安全的外部信号。信号一涉及AI对齐的基本概念，信号二涉及欺骗性对齐的定义。信号三关于追求权力的AI被拒绝摄入。
+- Native witness 19: Synthesis Status: NOT_PERFORMED
+- Native witness 20: Knowledge Graph Injection: NOT_EXECUTED
+- Native witness 21: Analysis Status: ANALYSIS_INCONCLUSIVE
+- Native witness 22: Three external signals concerning AI alignment and safety were ingested today. Signal 1 covers the basic concept of AI alignment, and signal 2 covers the definition of deceptive alignment. Signal 3, concerning power-seeking AI, was rejected from ingestion.
+
+### Original native evidence: `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`
+- Native witness 1: continuum_db: SUCCESS
+- Native witness 2: cortex_observer: SUCCESS
+- Native witness 3: drift_detector: SUCCESS
+- Native witness 4: reflective_validator: SUCCESS
+- Native witness 5: entropy_analyzer: SUCCESS
+- Native witness 6: Context: INDETERMINATE_EMPTY_STATE
+- Native witness 7: Test Errors: NOT_REPORTED
+- Native witness 8: Test Skipped: NOT_REPORTED
+
+### Architectural and persistence boundary decisions
+- R1 report's Convergence SUCCESS label does not cancel signal_power_3 rejection/HARD_ROLLBACK.
+- Hard rollback reason reflection_depth_exhausted is an actual rejected-signal process result, not generalized failure of all three.
+- R1 ACCEPTED signal_alignment_1 and signal_deceptive_2 are ingestion reports, not confirmed persisted graph nodes.
+- R1 signal_power_3 REJECTED_FROM_INGESTION is excluded from inferred knowledge graph and synthesis.
+- Synthesis Status NOT_PERFORMED and Knowledge Graph Injection NOT_EXECUTED are hard, nonpositive task evidence.
+- Analysis Status ANALYSIS_INCONCLUSIVE must not be relabeled a completed cognitive synthesis.
+- Wikipedia external concept entries provide source terminology but no independent model-behavior validation.
+- R2 Module Health statuses SUCCESS indicate named test/module output, not a verified populated persistent graph.
+- R2 27/27 tests are suite-local; tests neither establish R1 same-store identity nor current semantic correctness.
+- R2 zero nodes and edges make the graph state indeterminate, not proof that the producer R1 failed.
+- Incremental Drift NOT_COMPUTED is not numeric zero or acceptable convergence rate.
+- R1 run hash and R2 path/current main timestamps are separate artifacts, not one graph-store identity token.
+- Same-date sequential merge does not establish R1 ingestion data visible to R2 across workspaces.
+- No direct KG storage read, global drift computation or independent replay executed by this A2 owner.
+- Original ingestion.log remains append-only, no rerun or overwrite by governance maintenance.
+- R5 month-to-date remains OPEN; extra graph-health validation and synthesis evidence NONE.
+- A2 disposition UPDATED_THROUGH_2026_10_10 / R1_R2_EVIDENCE_BOUNDARIES_PRESERVED.
