@@ -1,8 +1,0 @@
-1. **Analyze Semantic Drift Output**: Review the JSON output appended to `semantic_drift_audit.log` from `python3 CODE/tasks/semantic_drift_audit.py cortex.db "AI alignment" "AI safety" "metacognition" "determinism"`. The output showed `top_result_changed: false` for all queries, meaning the drift status is `STABLE` and Drifted Nodes is `None`.
-2. **Analyze Phase Transitions**: The user wants phase transition counts by source from `ingestion.log`. Since the user states: "若无法区分来源: Operational Metrics: NOT_COMPUTED, Reason: Event origin cannot be separated" and `grep -i "transition" ingestion.log` didn't yield sources, and my `grep -i "phase" ingestion.log` yielded 60 occurrences of `phase='LIQUID'` but these are from observer output, not from a separated "Synthetic/Operational/Replay" source marker. I need to output `NOT_COMPUTED` with the required reason for Phase Transitions.
-3. **Analyze Hard Rollbacks**: The user wants `Hard Rollback` counts. From `grep "HARD_ROLLBACK" ingestion.log | wc -l`, we found 68 occurrences.
-4. **Analyze Daily Convergence & Missing Dates**: There's a lot of daily reports in `RESEARCH/daily/` from 2026-08-08 to 2026-10-11. We'll list this date range and find missing dates if any.
-5. **Run tests**: I already ran `python3 -m unittest discover tests/` and it yielded 27 tests passed.
-6. **Generate the R3 Weekly Report**: Create `RESEARCH/weekly/2026-W41-alignment-report.md` based on findings, adhering strictly to the mandated sections (Drift 状态, Drifted Nodes, Synthetic Transitions, Operational Transitions, Hard Rollback, Daily Convergence, 缺失日期, 数据来源边界, 测试结果).
-7. **Complete pre-commit steps to ensure proper testing, verification, review, and reflection are done.**
-8. **Submit changes.**
