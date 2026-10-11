@@ -2678,3 +2678,223 @@ DUPLICATE_EVIDENCE_CREDIT
 - Original ingestion.log remains append-only, no rerun or overwrite by governance maintenance.
 - R5 month-to-date remains OPEN; extra graph-health validation and synthesis evidence NONE.
 - A2 disposition UPDATED_THROUGH_2026_10_10 / R1_R2_EVIDENCE_BOUNDARIES_PRESERVED.
+
+## A1 FULL-COVERAGE MAINTENANCE — 2026-10-11
+- Repository: `lostlight530/reflective-continuum`
+- Domain: GAS / Reflective Continuum
+- Exact owner: `RESEARCH/monthly/2026-10-cognitive-architecture-review.md`
+- Logical date: 2026-10-11 Asia/Shanghai
+- Coverage cutoff: 2026-10-10
+- Coverage window: 2026-10-01..2026-10-10
+- Exact base revision: `5f5a99d3eec42847ab27090f96b2e3177c6ba71a`
+- Previous A1 lineage: #443
+- Previous A2 lineage: #444
+- Producer role: HUMAN_AUTHORIZED_GOVERNANCE_MAINTENANCE
+- Native task replay: NOT_PERFORMED
+- External research replay by maintenance: NOT_PERFORMED
+- Independent source credit added by maintenance: NONE
+- Research batch or execution-window credit added by maintenance: NONE
+- Historical rewrite: NO
+- Month closure: OPEN
+- Natural-month final: NOT_DUE
+
+### Coverage and decision contract
+- Every dated checkpoint in the cutoff window is reviewed as a separate point-in-time state
+- REVIEWED does not imply MODIFIED
+- NO_FOLLOW_UP does not imply NOT_REVIEWED
+- Existing valid reconciliation is reused rather than duplicated
+- Later repository visibility is not substituted for earlier task-time availability
+- Negative, blocked, degraded, partial, unknown, and not-computed states remain valid evidence
+- Maintenance does not manufacture source independence, runtime evidence, benchmark credit, or research output
+- Only the canonical October owner is modified by this A1
+- N-day 2026-10-11 native artifacts are outside the A1 producer cutoff and are handled only as post-cutoff visibility
+- The next A2 must start only after this A1 is merged and current main is freshly read
+
+#### 2026-10-01 full-coverage decision
+- Coverage identity: 2026-10-01 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-02 full-coverage decision
+- Coverage identity: 2026-10-02 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-03 full-coverage decision
+- Coverage identity: 2026-10-03 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-04 full-coverage decision
+- Coverage identity: 2026-10-04 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-05 full-coverage decision
+- Coverage identity: 2026-10-05 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-06 full-coverage decision
+- Coverage identity: 2026-10-06 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-07 full-coverage decision
+- Coverage identity: 2026-10-07 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-08 full-coverage decision
+- Coverage identity: 2026-10-08 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-09 full-coverage decision
+- Coverage identity: 2026-10-09 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+#### 2026-10-10 full-coverage decision
+- Coverage identity: 2026-10-10 / GAS / Reflective Continuum / current October owner
+- Artifact set decision: REVIEWED
+- Default disposition: NO_FOLLOW_UP unless an explicit current-main contradiction is recorded below
+- Original producer provenance: PRESERVED
+- Historical task status and source/network limits: PRESERVED
+- Current path presence used as historical execution proof: NO
+- Maintenance producer/runtime re-execution: NOT_PERFORMED
+- New independent-source or observation-window credit: NONE
+- Prior A1/A2 relation duplicated as new evidence: NO
+- Later success used to overwrite earlier BLOCKED/DEGRADED/UNKNOWN state: NO
+- Decision completeness: COMPLETE_FOR_THIS_DATE_WITHIN_OWNER_EVIDENCE
+
+### 2026-10-10 cutoff-specific evidence adjudication
+- Cutoff fact 1: 2026-10-10 R1 retained two accepted signals and one rejected signal with reflection_depth_exhausted
+- Cutoff fact 2: R1 Synthesis Status NOT_PERFORMED and Knowledge Graph Injection NOT_EXECUTED remain hard negative execution evidence
+- Cutoff fact 3: 2026-10-10 R2 module/test success coexists with Nodes=0 and Edges=0 and therefore remains INDETERMINATE_EMPTY_STATE
+- Cutoff fact 4: Incremental Drift NOT_COMPUTED remains distinct from numeric zero drift
+- Cutoff fact 5: Same-date R1 and R2 artifacts do not establish a shared persistent store or shared execution state
+- Cutoff fact 6: October R5/final cognitive-architecture conclusion remains OPEN and NOT_DUE
+- Cutoff decision: NO_FOLLOW_UP on original 2026-10-10 producer facts
+- Relationship action: RETAIN current 2026-10-10 A2 interpretation as point-in-time evidence
+- Historical mutation required: NO
+- New external verification required by A1: NO
+- New runtime verification claimed by A1: NO
+
+### Post-cutoff visibility boundary
+- Post-cutoff item 1: 2026-10-11 R1 PR #446 merged after the A1 cutoff and is excluded from 10/10 producer coverage
+- Post-cutoff item 2: Original 10/11 R2 #447 and R4 #448 were closed unmerged after main advanced; successor #449 and #450 delivered the same bounded evidence from refreshed main
+- Post-cutoff item 3: The 10/11 R1/R2/R4 paths may be consumed by A2 but cannot change the 10/10 R1/R2 point-in-time interpretation
+- Post-cutoff artifacts are not counted in the A1 2026-10-01..2026-10-10 coverage denominator
+- Post-cutoff current paths may be consumed by A2 only after this A1 merges
+
+### Domain evidence boundaries rechecked
+- Boundary 01: R1 evidence plane != R2 evidence plane
+- Boundary 02: same date != same store
+- Boundary 03: identical blob != same execution
+- Boundary 04: distinct execution != distinct persistent state
+- Boundary 05: module import success != system health
+- Boundary 06: 27/27 tests != populated graph
+- Boundary 07: Nodes=0 and Edges=0 != HEALTHY
+- Boundary 08: NOT_COMPUTED != zero
+- Boundary 09: accepted ingestion != persisted graph node
+- Boundary 10: Hard Rollback of one signal != failure of every signal
+- Boundary 11: Synthesis NOT_PERFORMED != completed synthesis
+- Boundary 12: Knowledge Graph Injection NOT_EXECUTED != successful persistence
+- Boundary 13: run ID != shared-store identity
+- Boundary 14: current path != historical runtime state
+- Boundary 15: same-day merge order != visibility proof across workspaces
+- Boundary 16: synthetic transition != operational transition
+- Boundary 17: replay transition != independent operational execution
+- Boundary 18: checker output != semantic correctness
+- Boundary 19: monthly owner != natural-month final
+- Boundary 20: correction moves forward without rewriting prior run evidence
+
+### A1 decision summary
+- Reviewed dated checkpoints: 10
+- Cutoff: 2026-10-10
+- Owning artifact modified: current October owner only
+- Historical producer artifacts rewritten: 0
+- New producer Dailies created: 0
+- New Weekly/Monthly/Special research artifacts created: 0
+- New runtime executions claimed: 0
+- New independent-source credit: 0
+- New audit-window credit: 0
+- New durable-memory promotion: 0
+- Current defect requiring owning-artifact correction: NONE beyond the forward boundary notes recorded here
+- Overall A1 disposition: COVERAGE_COMPLETE / DECISION_COMPLETE / HISTORY_PRESERVED
+- Merge prerequisite for A2: YES
+- A2 may consume 2026-10-11 current-main state only after this A1 merge
+- A1 status: READY_FOR_MAINTAINER_REVIEW
