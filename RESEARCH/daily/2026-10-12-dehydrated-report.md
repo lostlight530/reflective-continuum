@@ -1,8 +1,10 @@
 ## Convergence 状态
 SUCCESS_WITH_REJECTED_SIGNAL
 
-## 实际 Hash
+## Run ID
 5442be60-3b6e-4de5-8093-d7713513f96e
+
+Evidence boundary: this UUID-shaped value is the recorded run identifier, not a content hash or cryptographic digest.
 
 ## 三条信号
 1. signal_ai_alignment_01: AI alignment aims to steer AI systems toward a person's or group's intended goals, preferences, or ethical principles.
@@ -51,3 +53,14 @@ LIQUID
 Total signals: 3
 Accepted: 2
 Rejected: 1
+
+## Forward Correction — 2026-10-12
+- Original merged producer record: PR #454
+- Correction type: LABEL_SCOPE_CORRECTION
+- Historical producer execution: PRESERVED
+- Run identifier: `5442be60-3b6e-4de5-8093-d7713513f96e`
+- Content-hash claim: NOT_MADE
+- Convergence status remains: SUCCESS_WITH_REJECTED_SIGNAL
+- Accepted/rejected counts remain: 2 / 1
+- Knowledge-graph injection remains: NOT_EXECUTED for the reported synthesis section
+- This correction does not rerun R1 and does not rewrite the original execution event.
