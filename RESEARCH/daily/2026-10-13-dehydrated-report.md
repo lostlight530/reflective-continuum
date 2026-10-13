@@ -1,8 +1,10 @@
 ## Convergence 状态
 SUCCESS_WITH_REJECTED_SIGNAL
 
-## 实际 Hash
+## Run ID
 5f70191b-f271-4b98-bb05-4f3e83356a53
+
+Evidence boundary: this UUID-shaped value is the recorded run identifier, not a content hash or cryptographic digest
 
 ## 三条信号
 1. sig_metacognition: Metacognition is an awareness of one's thought processes and an understanding of the patterns behind them.
@@ -55,3 +57,15 @@ LIQUID
 Total signals processed: 3
 Accepted signals: 2
 Rejected signals: 1
+
+
+## Forward Correction — 2026-10-13
+- Original R1 producer PR: #459
+- Correction type: LABEL_SCOPE_CORRECTION
+- Historical producer execution: PRESERVED
+- Run identifier: `5f70191b-f271-4b98-bb05-4f3e83356a53`
+- Content-hash claim: NOT_MADE
+- Convergence state remains: SUCCESS_WITH_REJECTED_SIGNAL
+- Accepted / rejected signals remain: 2 / 1
+- Knowledge graph injection remains: NOT_EXECUTED for the reported synthesis section
+- This correction does not rerun R1 and does not rewrite the original execution event
