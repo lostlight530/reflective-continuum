@@ -3833,3 +3833,172 @@ DUPLICATE_EVIDENCE_CREDIT
 - Monthly final seal: 0
 - Relation-through advanced to: 2026-10-13
 - Status: A2_RELATION_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED
+
+## FINAL A1 RECONCILIATION — 2026-10-13
+- Repository: lostlight530/reflective-continuum
+- Canonical owner: RESEARCH/monthly/2026-10-cognitive-architecture-review.md
+- Coverage: 2026-10-01..2026-10-12
+- Cutoff: N-1
+- Purpose: rerun after native-original-file completion
+- Historical rewrite: NO
+- Producer replay: NO
+- Month: OPEN
+
+### Date-by-date retained state
+
+#### 2026-10-01
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-02
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-03
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-04
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-05
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-06
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-07
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-08
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-09
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-10
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-11
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+#### 2026-10-12
+- Existing producer/stage/weekly/monthly state: REVIEWED
+- Point-in-time execution semantics: RETAINED
+- Later current-main availability used as earlier proof: NO
+- Later success overwrites earlier negative state: NO
+- Missing/blocked/unknown remains legal evidence: YES
+- Independent-source credit added by this reconciliation: 0
+- Runtime/scientific replay by this reconciliation: 0
+- Decision: RETAIN / NO_HISTORY_REWRITE
+
+### Native original-file adjudication
+- O1: R1 #459 closed-unmerged remains preserved as original failed delivery state
+- O2: R1 successor #461 corrected Run ID labeling and merged without rerunning producer semantics
+- O3: R2 #460 original file required store-identity and health-boundary completion; correction #464 merged into the original R2 artifact
+- O4: #464 preserves INDETERMINATE_EMPTY_STATE, named-store uncertainty, SAME_DATE != SAME_STORE and test-scope limits
+- O5: Final A1 cutoff remains 10/12; all 10/13 R1/R2/correction evidence is post-cutoff visibility only
+
+### Post-cutoff control
+- 2026-10-13 native/correction artifacts are visible but excluded from A1 coverage semantics
+- Post-cutoff correction cannot be backdated into 10/12 producer truth
+- Original merged artifacts remain inspectable
+- Forward corrections remain separate dated evidence
+- Current main is not substituted for historical task-time state
+
+### Evidence discipline
+- Task exists != task executed
+- Current path != historical execution
+- Same date != same store unless proven
+- Relation-through != stage identity
+- Stage absence != scheduler failure
+- Test pass != exhaustive correctness
+- Paper != implementation
+- Implementation != validation
+- Correction != history rewrite
+- Engineering repair != scientific validation
+- Unknown remains unknown
+- No synthetic Stage I is created
+
+### Final A1 disposition
+- Covered days: 12
+- Native original-file review incorporated: YES
+- Historical rewrites: 0
+- New research credit: 0
+- New runtime/scientific credit: 0
+- Month final seal: 0
+- Status: FINAL_A1_COMPLETE / READY_FOR_MERGE_THEN_FRESH_READ
