@@ -46,3 +46,11 @@ CURRENT_RESULT: D14_CANDIDATE_ONLY / NO_GRAPH_HEALTH_CLAIM / MONTH_OPEN
 NEXT_AUDIT_DEPENDENCY: D30 2026-10-30
 Native R1 #467 correction to UUID/run-hash label and R2 #468 are kept as originals; no new experiment credited
 AUDIT_REPLAY: NOT_PERFORMED; HISTORICAL_REWRITE: NONE
+## Dual-view D14 reconciliation — 2026-10-14
+- Earlier D14 record: PR #471, historical-audits/2026-10/2026-10-14-d14-pattern-formation-audit.md, MERGED
+- This D14 follow-up view: PR #472, historical-audits/2026-10/2026-10-14-d14-pattern-formation.md, MERGED
+- Both audit views share one 2026-10-14 cutoff, one A1 #469 / A2 #470 evidence lineage, and one D14 pattern-formation duty
+- Periodic audit credit: ONE, not two independent system runs, scientific checks, or R1/R2 reproductions
+- Separate R1 report validity and R2 persistent-store identity remain unresolved; duplicate audit documents do not corroborate either
+- Both originals stay inspectable, with no historic overwrite or deletion; this is a later dated reconciliation
+- At D30 inspect both sources as complementary evidence views of the same D14 event
