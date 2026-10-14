@@ -4430,3 +4430,167 @@ DUPLICATE_EVIDENCE_CREDIT
 - No graph-health, runtime, independent external source or conformance credit
 - 2026-10-14 R1 #467 and R2 #468 excluded from N−1, reserved for A2
 - A2 awaits merge of every A1 and fresh main read
+
+## A2 2026-10-14 R1/R2 monthly evidence relation
+- Fresh after-A1 main: f794bc228fe60eefe7d7642ddf281094459907d8
+- Inherited A1 #469 and native R1 #467, R2 #468
+- Date coverage: 2026-10-01..2026-10-14
+- R1 producer successes do not establish R2 shared store or actual graph injection
+- 2026-10-14 R2 empty state remains indeterminate, not healthy
+- No runtime/scientific rerun or historical rewrite
+### 2026-10-01 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-01-dehydrated-report.md
+- R1 blob: - R1 source SHA: 032da79e77e12d350a7644682768ea85da99c7ef
+- Native R2: RESEARCH/daily/2026-10-01-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-02 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-02-dehydrated-report.md
+- R1 blob: - R1 source SHA: 10e8962cda344f5e70ce09d19719a31e0eb30bf8
+- Native R2: RESEARCH/daily/2026-10-02-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-03 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-03-dehydrated-report.md
+- R1 blob: - R1 source SHA: d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea
+- Native R2: RESEARCH/daily/2026-10-03-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-04 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-04-dehydrated-report.md
+- R1 blob: - R1 source SHA: 06f754048910ebe97727f7846e83c42c46105d17
+- Native R2: RESEARCH/daily/2026-10-04-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-05 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-05-dehydrated-report.md
+- R1 blob: - R1 source SHA: bd0f0757b545314a58aee6cc2590c031a990c8a7
+- Native R2: RESEARCH/daily/2026-10-05-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-06 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-06-dehydrated-report.md
+- R1 blob: - R1 source SHA: ca6e5cc558adafaae484c7c42466385e7b9e356f
+- Native R2: RESEARCH/daily/2026-10-06-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-07 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-07-dehydrated-report.md
+- R1 blob: - R1 source SHA: c17f5a35ab84885c075f1230cefb39a9b54e3660
+- Native R2: RESEARCH/daily/2026-10-07-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-08 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-08-dehydrated-report.md
+- R1 blob: - R1 source SHA: d604969e0fd1d47c827512d194f83a798f8d71c5
+- Native R2: RESEARCH/daily/2026-10-08-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-09 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-09-dehydrated-report.md
+- R1 blob: - R1 source SHA: 96662ee6cdc49962e7a63b68e38f05ab38e0f238
+- Native R2: RESEARCH/daily/2026-10-09-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-10 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-10-dehydrated-report.md
+- R1 blob: - R1 source SHA: b8ee911a8bbcd1a20dafa20440c1a3c8770124ca
+- Native R2: RESEARCH/daily/2026-10-10-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-11 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-11-dehydrated-report.md
+- R1 blob: - R1 source SHA: b5d65dba8c8c3061e2acf1dda724a72d9272f398
+- Native R2: RESEARCH/daily/2026-10-11-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - Evidence token Run ID:: PRESENT
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-12 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-12-dehydrated-report.md
+- R1 blob: - R1 source SHA: 092b1e5e6c86a3cb1cdf8786728cc6411efcc527
+- Native R2: RESEARCH/daily/2026-10-12-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - R1 observed section 2: ## Run ID
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-13 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-13-dehydrated-report.md
+- R1 blob: - R1 source SHA: c151b273f54e97824c8848a888b69b4ba8929056
+- Native R2: RESEARCH/daily/2026-10-13-cortex-selfcheck.md
+- R2 presence / blob: - R2 tree presence: PRESENT
+- Rejection token: - Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Synthesis status: - Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Injection status: - Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- R1 identifier: - R1 observed section 2: ## Run ID
+- R2 store status: store identity NOT_PROVEN by R1 delivery
+
+### 2026-10-14 producer-store separation
+- Native R1: RESEARCH/daily/2026-10-14-dehydrated-report.md
+- R1 blob: 2fe91a00152dea66b6f32d852bea36bd97b83246
+- Native R2: RESEARCH/daily/2026-10-14-cortex-selfcheck.md
+- R2 presence / blob: 1757e5347af76d59a7cf06ff31895b8c1188bd79
+- Rejection token: REJECTED_FROM_INGESTION
+- Synthesis status: NOT_PERFORMED
+- Injection status: NOT_EXECUTED
+- R1 identifier: UUID run identifier, not content hash
+- R2 store status: Nodes=0, Edges=0; INDETERMINATE_EMPTY_STATE
+### A2 decision
+- Keep source identity, execution logs and shared-store uncertainty separate
+- Month OPEN, not final; no synthetic Stage or independent proof
