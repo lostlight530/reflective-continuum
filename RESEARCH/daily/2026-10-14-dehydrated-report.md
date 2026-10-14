@@ -1,11 +1,13 @@
 ## Convergence 状态
+- Aggregate Status: SUCCESS_WITH_REJECTED_SIGNAL (partial ingestion, not complete synthesis)
 - Iterations: 100
 - Distinct Snapshots: 1
 - Repeatable: true
 - Scope: fixed local SQLite fixture
 
-## 实际 Hash
-Run ID: ed1e3137-37f5-42ac-ac4a-cff46e6a4c76
+## Run ID / Hash Evidence Boundary
+- Content Hash: NOT_VERIFIED (no digest or hash algorithm captured)
+- UUID Run ID (not a hash): ed1e3137-37f5-42ac-ac4a-cff46e6a4c76
 
 ## 三条信号
 1. **signal_metacognition_001**
@@ -63,3 +65,11 @@ LIQUID
 - Total Signals: 3
 - Accepted: 2
 - Rejected: 1
+## Forward evidence correction — 2026-10-14
+- Historical R1 execution log and rejection outcome: PRESERVED
+- R1 execution identity: `ed1e3137-37f5-42ac-ac4a-cff46e6a4c76`, not a SHA or other content checksum
+- Repeatability claim is limited to 100 trials and one distinct snapshot in the fixed local SQLite fixture
+- Two accepted signals and one rejected signal; no claim of complete ingestion or successful synthesis
+- Hard rollback reason remains `reflection_depth_exhausted`; the reported no-injection fact is not revised
+- R2 same-day report tests a separate observed empty DB and does not prove shared persistent store identity
+- No rerun, no independent execution window, no new source verification, and no fabricated digest in this correction
