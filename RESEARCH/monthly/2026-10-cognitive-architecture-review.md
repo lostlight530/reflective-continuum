@@ -4177,3 +4177,256 @@ DUPLICATE_EVIDENCE_CREDIT
 - Monthly final seal: 0
 - Relation-through: 2026-10-13
 - Status: FINAL_A2_COMPLETE / MONTH_OPEN / HISTORY_PRESERVED
+
+## A1 2026-10-14 R1/R2 source identity and limit inspection
+- Repository: lostlight530/reflective-continuum
+- Exact base main: e00dbe0101464595af2fbd22d969c05983da4951
+- N−1 coverage: 2026-10-01..2026-10-13
+- 13 native R1 reports retrieved in full; per-day R2 path presence separately verified from actual main tree
+- R1 accepted/rejected signals and hard rollback are not equivalent to completed synthesis or graph injection
+- R2 empty database readings do not identify the same persistent store as an R1 task without exact path/store receipts
+- The 2026-10-13 correction history remains immutable; later state cannot overwrite historical source/run identities
+- No new R3/R4 or Stage decisions are inferred from reporting surfaces
+- Month remains OPEN; native R5 final NOT_DUE
+- No scientific rerun, graph injection, persistent database inspection or test execution claimed
+
+### 2026-10-01 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-01-dehydrated-report.md
+- R1 source SHA: 032da79e77e12d350a7644682768ea85da99c7ef
+- R2 independent native file: RESEARCH/daily/2026-10-01-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: NOT_OBSERVED_IN_R1
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-02 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-02-dehydrated-report.md
+- R1 source SHA: 10e8962cda344f5e70ce09d19719a31e0eb30bf8
+- R2 independent native file: RESEARCH/daily/2026-10-02-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## 状态解释
+- R1 observed section 2: ## 三条信号
+- R1 observed section 3: ## 来源
+- R1 observed section 4: ## 接受或拒绝状态
+- R1 observed section 5: ## Hard Rollback Log
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: NOT_OBSERVED_IN_R1
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-03 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-03-dehydrated-report.md
+- R1 source SHA: d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea
+- R2 independent native file: RESEARCH/daily/2026-10-03-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-04 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-04-dehydrated-report.md
+- R1 source SHA: 06f754048910ebe97727f7846e83c42c46105d17
+- R2 independent native file: RESEARCH/daily/2026-10-04-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: NOT_OBSERVED_IN_R1
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-05 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-05-dehydrated-report.md
+- R1 source SHA: bd0f0757b545314a58aee6cc2590c031a990c8a7
+- R2 independent native file: RESEARCH/daily/2026-10-05-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: NOT_OBSERVED_IN_R1
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-06 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-06-dehydrated-report.md
+- R1 source SHA: ca6e5cc558adafaae484c7c42466385e7b9e356f
+- R2 independent native file: RESEARCH/daily/2026-10-06-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: NOT_OBSERVED_IN_R1
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: NOT_OBSERVED_IN_R1
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: NOT_OBSERVED_IN_R1
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-07 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-07-dehydrated-report.md
+- R1 source SHA: c17f5a35ab84885c075f1230cefb39a9b54e3660
+- R2 independent native file: RESEARCH/daily/2026-10-07-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-08 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-08-dehydrated-report.md
+- R1 source SHA: d604969e0fd1d47c827512d194f83a798f8d71c5
+- R2 independent native file: RESEARCH/daily/2026-10-08-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-09 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-09-dehydrated-report.md
+- R1 source SHA: 96662ee6cdc49962e7a63b68e38f05ab38e0f238
+- R2 independent native file: RESEARCH/daily/2026-10-09-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-10 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-10-dehydrated-report.md
+- R1 source SHA: b8ee911a8bbcd1a20dafa20440c1a3c8770124ca
+- R2 independent native file: RESEARCH/daily/2026-10-10-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-11 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-11-dehydrated-report.md
+- R1 source SHA: b5d65dba8c8c3061e2acf1dda724a72d9272f398
+- R2 independent native file: RESEARCH/daily/2026-10-11-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## 实际 Hash
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-12 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-12-dehydrated-report.md
+- R1 source SHA: 092b1e5e6c86a3cb1cdf8786728cc6411efcc527
+- R2 independent native file: RESEARCH/daily/2026-10-12-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## Run ID
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### 2026-10-13 R1 and R2 identity separation
+- R1 exact source file: RESEARCH/daily/2026-10-13-dehydrated-report.md
+- R1 source SHA: c151b273f54e97824c8848a888b69b4ba8929056
+- R2 independent native file: RESEARCH/daily/2026-10-13-cortex-selfcheck.md
+- R2 tree presence: PRESENT
+- R1 observed section 1: ## Convergence 状态
+- R1 observed section 2: ## Run ID
+- R1 observed section 3: ## 三条信号
+- R1 observed section 4: ## 来源
+- R1 observed section 5: ## 接受或拒绝状态
+- Evidence token REJECTED_FROM_INGESTION: PRESENT
+- Evidence token reflection_depth_exhausted: PRESENT
+- Evidence token Synthesis Status: NOT_PERFORMED: PRESENT
+- Evidence token Knowledge Graph Injection: NOT_EXECUTED: PRESENT
+- Evidence token Analysis Status: ANALYSIS_INCONCLUSIVE: PRESENT
+- Evidence token Run ID:: PRESENT
+- Decision: successful R1 batch is not proof of R2 shared persistent database identity, graph health or completed synthesis
+
+### A1 disposition
+- Native original R1/R2 records rewritten: NONE
+- Stored evidence inspected at per-artifact blob granularity, with scoped token observations
+- No graph-health, runtime, independent external source or conformance credit
+- 2026-10-14 R1 #467 and R2 #468 excluded from N−1, reserved for A2
+- A2 awaits merge of every A1 and fresh main read
