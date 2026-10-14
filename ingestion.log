@@ -718,3 +718,14 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Knowledge Graph Injection: False
 Follow-up Action: None
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_metacognition_001", "reasons": []}, {"accepted": true, "id": "signal_determinism_001", "reasons": []}, {"accepted": false, "id": "signal_ai_alignment_001", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+Run ID: ed1e3137-37f5-42ac-ac4a-cff46e6a4c76
+HARD_ROLLBACK
+Signal ID: signal_ai_alignment_001
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: False
+Follow-up Action: None
+RUN_END
