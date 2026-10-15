@@ -729,3 +729,13 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Knowledge Graph Injection: False
 Follow-up Action: None
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+RUN_BEGIN
+Run ID: 9660c14a-6150-4a4b-b04d-5e79ca83c3ba
+HARD_ROLLBACK
+Signal ID: signal_metacognition_1
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: False
+Follow-up Action: None
+RUN_END
