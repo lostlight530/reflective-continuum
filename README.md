@@ -169,3 +169,7 @@ R2_INDETERMINATE_EMPTY_STATE
 ```
 
 The durable ADR/Methodology update records the identity boundary. It does not add runtime capability, establish shared persistence, or erase the 2026-10-04 rejected-signal/test-failure evidence.
+
+## Archived checkpoint — 2026-10-14
+
+[v2026.10-fourteen-day-evidence-checkpoint](https://github.com/lostlight530/reflective-continuum/releases/tag/v2026.10-fourteen-day-evidence-checkpoint) is archived as [10.5281/zenodo.23365567](https://doi.org/10.5281/zenodo.23365567). For the software-family concept DOI, earlier versions and exact-checkpoint citation, see [Release and Archival Policy](RELEASE_POLICY.md).
