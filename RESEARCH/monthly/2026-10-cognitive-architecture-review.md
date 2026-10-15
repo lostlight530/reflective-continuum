@@ -4594,3 +4594,179 @@ DUPLICATE_EVIDENCE_CREDIT
 ### A2 decision
 - Keep source identity, execution logs and shared-store uncertainty separate
 - Month OPEN, not final; no synthetic Stage or independent proof
+
+## A1 2026-10-15 | GAS R1/R2 October 01–14 ingestion-versus-store audit
+- A1 authority: main 3d0f3cb7a5b1822cb66d4f98744915ff7a2f0b9d; owner original blob 328a174c1283183b2f13c4ff170f40b3b40ae4eb.
+- R1 and R2 are separate native daily execution records, not independent confirmations of a shared graph store.
+- October 15 excluded from A1; new native evidence reserved for A2 after ten A1 merges.
+- R1 source signal classification must not be converted into actual graph injection where report says NOT_EXECUTED.
+- R2 selfcheck modules passing cannot imply nonempty or persistent knowledge graph when nodes=0 and edges=0.
+- Historical R2 INDETERMINATE_EMPTY_STATE is not HEALTHY and not itself definitive DB corruption.
+- R2 result lines vary across dates (26/27 or 27/27); do not harmonize old failures into successes.
+- Earlier October monthly review and D14 source corrections preserved without producer-file overwrite.
+
+### 2026-10-01 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-01-dehydrated-report.md`; current main source blob `032da79e77e12d350a7644682768ea85da99c7ef`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`; current main source blob `4cef741f0b59c60f1360c8dcfac5387c71d56394`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-01: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-01 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-01 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-01 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-01 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-02 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-02-dehydrated-report.md`; current main source blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`; current main source blob `7c1617a59b2360e847d04365c11d1a1423c3981a`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-02: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-02 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-02 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-02 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-02 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-03 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-03-dehydrated-report.md`; current main source blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`; current main source blob `d4eb48d90f908794ade985e8577f3c82f26e2d74`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-03: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-03 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-03 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-03 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-03 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-04 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-04-dehydrated-report.md`; current main source blob `06f754048910ebe97727f7846e83c42c46105d17`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`; current main source blob `44ad371f641d2854937361a3d295948ebdf3daf7`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-04: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-04 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-04 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-04 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-04 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-05 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-05-dehydrated-report.md`; current main source blob `bd0f0757b545314a58aee6cc2590c031a990c8a7`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`; current main source blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-05: not captured by sampled report-field check; maintain test failures under original date.
+- 2026-10-05 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-05 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-05 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-05 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-06 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-06-dehydrated-report.md`; current main source blob `ca6e5cc558adafaae484c7c42466385e7b9e356f`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`; current main source blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-06: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-06 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-06 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-06 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-06 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-07 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-07-dehydrated-report.md`; current main source blob `c17f5a35ab84885c075f1230cefb39a9b54e3660`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`; current main source blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-07: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-07 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-07 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-07 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-07 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-08 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-08-dehydrated-report.md`; current main source blob `d604969e0fd1d47c827512d194f83a798f8d71c5`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`; current main source blob `6fe4ac75864f05555c333ad4bda140ad34014640`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-08: 26 passed / 1 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-08 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-08 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-08 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-08 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-09 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-09-dehydrated-report.md`; current main source blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`; current main source blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-09: 27 passed / 0 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-09 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-09 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-09 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-09 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-10 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-10-dehydrated-report.md`; current main source blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`; current main source blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-10: not captured by sampled report-field check; maintain test failures under original date.
+- 2026-10-10 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-10 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-10 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-10 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-11 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-11-dehydrated-report.md`; current main source blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`; current main source blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-11: 27 passed / 0 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-11 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-11 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-11 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-11 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-12 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-12-dehydrated-report.md`; current main source blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`; current main source blob `e62e93d18ba9340972f601ce790eaa7c971beb38`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-12: 27 passed / 0 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-12 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-12 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-12 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-12 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-13 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-13-dehydrated-report.md`; current main source blob `c151b273f54e97824c8848a888b69b4ba8929056`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`; current main source blob `3c910367c6c999168624534538bceca43e55ec97`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-13: 27 passed / 0 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-13 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-13 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-13 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-13 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### 2026-10-14 | R1 signal identity versus R2 graph-state authority
+- R1 original producer path: `RESEARCH/daily/2026-10-14-dehydrated-report.md`; current main source blob `2fe91a00152dea66b6f32d852bea36bd97b83246`.
+- R1 evidence unit: dehydrated report, source-set observations and ingestion decisions; not equivalent to a durable graph write.
+- R2 original selfcheck path: `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`; current main source blob `1757e5347af76d59a7cf06ff31895b8c1188bd79`.
+- R2 reported graph: nodes=0, edges=0 and INDETERMINATE_EMPTY_STATE, not positive healthy-store proof.
+- R2 native selfcheck sampled test field 2026-10-14: 27 passed / 0 failed in native selfcheck; maintain test failures under original date.
+- 2026-10-14 producer intersection: R1 status does not establish R2 store identity or shared writable database location.
+- 2026-10-14 injection/causal boundary: absence of demonstrated graph injection remains unproven even where ingestion accepted source signals.
+- 2026-10-14 monthly disposition: two distinct source revisions under the same logical date; keep rejection/rollback and empty-store ambiguity.
+- 2026-10-14 nonpromotion: no new synthesis, runtime replay, host update or model-graph quality credit provided by this A1.
+
+### Weekly/monthly and A1-to-A2 gate
+- W40 alignment and reference-audit files are separate weekly products, retained unmodified.
+- W41 alignment and reference-audit files likewise remain separate, not a surrogate for daily R2 persistence.
+- W42 is current partial-week state, not a closed weekly report at A1 cutoff.
+- Month owner remains OPEN, including unresolved graph-store path identity and any earlier failed module checks.
+- R1 2026-10-14 synthesis remains NOT_PERFORMED and knowledge-graph injection NOT_EXECUTED.
+- No original ingestion.log, selfcheck, weekly report or R1/R2 producer file modified by A1.
+- This maintenance did not rerun import tests, DB queries, graph calculations or reject/rollback behavior.
+- A2 must read fresh main after all ten A1 merges and admit newly merged October 15 producer results.
+- A1 acceptance needs actual git diff, PR merged state and new owner blob, not just this text.
+
