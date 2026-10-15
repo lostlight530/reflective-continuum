@@ -4770,3 +4770,198 @@ DUPLICATE_EVIDENCE_CREDIT
 - A2 must read fresh main after all ten A1 merges and admit newly merged October 15 producer results.
 - A1 acceptance needs actual git diff, PR merged state and new owner blob, not just this text.
 
+## A2 2026-10-15 | GAS R1/R2 native source, graph-store and weekly October relation
+- All A1 merged; main refreshed b32a10dffae1171198aa6979aa5391cbb7c20beb; inherited October 1–14 A1 owner blob 05d8d189b146fbf23c2b776ebefccae1cc70c3f3, A1 PR #477.
+- October 15 R1 PR #475 records SUCCESS_WITH_REJECTED_SIGNAL, two accepted and one rejected signal, but synthesis NOT_PERFORMED, KG injection NOT_EXECUTED.
+- October 15 R2 PR #476 retains 0 nodes, 0 edges, INDETERMINATE_EMPTY_STATE, NOT_COMPUTED drift; selfcheck 27/27 is a bounded module test result.
+- R1 signal ingestion and R2 DB path / store identity are separately attributable; same logical day does not imply same persisted store.
+- R1 UUID-like run identifier is not a content hash; source acceptance is not evidence of durable graph injection.
+- Prior early October R2 26 passed, 1 failed days must remain distinct from newer 27/27 successes.
+- Weekly R3 alignment/phase and R4 source-reference topology reports W40/W41 retained; W42 final week NOT_DUE.
+- Monthly R5 current owner remains OPEN, with unresolved graph-state interpretation and no synthetic recovery.
+- Maintenance did not rerun any model import, graph DB, rollback, injection or runtime validations.
+
+### 2026-10-01 | W40 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-01-dehydrated-report.md`, current blob `032da79e77e12d350a7644682768ea85da99c7ef`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`, current blob `4cef741f0b59c60f1360c8dcfac5387c71d56394`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-01 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-01 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-01 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W40 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-01 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-01 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-02 | W40 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-02-dehydrated-report.md`, current blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`, current blob `7c1617a59b2360e847d04365c11d1a1423c3981a`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-02 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-02 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-02 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W40 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-02 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-02 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-03 | W40 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-03-dehydrated-report.md`, current blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`, current blob `d4eb48d90f908794ade985e8577f3c82f26e2d74`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-03 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-03 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-03 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W40 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-03 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-03 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-04 | W40 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-04-dehydrated-report.md`, current blob `06f754048910ebe97727f7846e83c42c46105d17`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`, current blob `44ad371f641d2854937361a3d295948ebdf3daf7`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-04 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-04 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-04 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W40 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-04 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-04 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-05 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-05-dehydrated-report.md`, current blob `bd0f0757b545314a58aee6cc2590c031a990c8a7`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`, current blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-05 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-05 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-05 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-05 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-05 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-06 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-06-dehydrated-report.md`, current blob `ca6e5cc558adafaae484c7c42466385e7b9e356f`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`, current blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-06 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-06 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-06 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-06 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-06 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-07 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-07-dehydrated-report.md`, current blob `c17f5a35ab84885c075f1230cefb39a9b54e3660`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`, current blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-07 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-07 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-07 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-07 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-07 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-08 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-08-dehydrated-report.md`, current blob `d604969e0fd1d47c827512d194f83a798f8d71c5`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`, current blob `6fe4ac75864f05555c333ad4bda140ad34014640`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-08 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-08 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-08 R2 test boundary: early selfcheck may contain bounded failed module checks; never normalize to healthy.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-08 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-08 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-09 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-09-dehydrated-report.md`, current blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`, current blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-09 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-09 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-09 R2 test boundary: source-selfcheck reports do not independently demonstrate graph ingestion durability.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-09 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-09 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-10 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-10-dehydrated-report.md`, current blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`, current blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-10 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-10 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-10 R2 test boundary: source-selfcheck reports do not independently demonstrate graph ingestion durability.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-10 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-10 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-11 | W41 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-11-dehydrated-report.md`, current blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`, current blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-11 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-11 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-11 R2 test boundary: source-selfcheck reports do not independently demonstrate graph ingestion durability.
+- W41 weekly aggregate: retain original R3 and R4 weekly report identities and status.
+- 2026-10-11 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-11 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-12 | W42 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-12-dehydrated-report.md`, current blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`, current blob `e62e93d18ba9340972f601ce790eaa7c971beb38`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-12 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-12 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-12 R2 test boundary: source-selfcheck reports do not independently demonstrate graph ingestion durability.
+- W42 weekly aggregate: OPEN; neither R3/R4 final nor month R5 final is due.
+- 2026-10-12 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-12 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-13 | W42 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-13-dehydrated-report.md`, current blob `c151b273f54e97824c8848a888b69b4ba8929056`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`, current blob `3c910367c6c999168624534538bceca43e55ec97`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-13 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-13 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-13 R2 test boundary: source-selfcheck reports do not independently demonstrate graph ingestion durability.
+- W42 weekly aggregate: OPEN; neither R3/R4 final nor month R5 final is due.
+- 2026-10-13 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-13 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-14 | W42 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-14-dehydrated-report.md`, current blob `2fe91a00152dea66b6f32d852bea36bd97b83246`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`, current blob `1757e5347af76d59a7cf06ff31895b8c1188bd79`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-14 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-14 synthesis and injection: no positive independent synthesis/injection confirmation from this month maintenance.
+- 2026-10-14 R2 test boundary: source-selfcheck reports do not independently demonstrate graph ingestion durability.
+- W42 weekly aggregate: OPEN; neither R3/R4 final nor month R5 final is due.
+- 2026-10-14 month relation: prior A1 N−1 original/source identity inherited without source rewrite.
+- 2026-10-14 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### 2026-10-15 | W42 R1 ingestion / R2 store evidence
+- Native R1 source: `RESEARCH/daily/2026-10-15-dehydrated-report.md`, current blob `e5e0420106de615931142f31dac144676263a14c`; source signal convergence claim is separate from graph-state confirmation.
+- Native R2 source: `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`, current blob `4268c0bf46022034b35be15b95f4c51283d42252`; graph nodes=0 and edges=0 consistently recorded as INDETERMINATE_EMPTY_STATE.
+- 2026-10-15 graph identity: R1 acceptance or rejection cannot establish a shared, persisted, correctly addressed R2 database.
+- 2026-10-15 synthesis and injection: original R1 explicitly reports NOT_PERFORMED and NOT_EXECUTED.
+- 2026-10-15 R2 test boundary: producer reports 27/27 imported-module selfchecks, while empty-store ambiguity persists.
+- W42 weekly aggregate: OPEN; neither R3/R4 final nor month R5 final is due.
+- 2026-10-15 month relation: Oct15 native R1/R2 added after A1 full-ten merges.
+- 2026-10-15 execution credit: maintenance reran no R1, R2, database or graph tests; preserve original producer-only conclusions.
+
+### Original W40 alignment-report evidence
+- Original weekly native file `RESEARCH/weekly/2026-W40-alignment-report.md` retained at blob `a054f913c3c5be71629c7625744eb6957094559d`.
+- R3 alignment phase relation is an independent weekly producer artifact, not a replay of R2 graph-store state.
+- Do not infer successful R1-to-R2 persistence merely because weekly output exists.
+- Original file was left intact; this A2 records the source relationship only.
+
+### Original W40 reference-audit evidence
+- Original weekly native file `RESEARCH/weekly/2026-W40-reference-audit.md` retained at blob `e8eee2552d27f29c2e9fbd513f879cbaa1087d8d`.
+- R4 citation/reference topology is an independent weekly producer artifact, not a replay of R2 graph-store state.
+- Do not infer successful R1-to-R2 persistence merely because weekly output exists.
+- Original file was left intact; this A2 records the source relationship only.
+
+### Original W41 alignment-report evidence
+- Original weekly native file `RESEARCH/weekly/2026-W41-alignment-report.md` retained at blob `2575a4870ad459b71f992e1d2209cfc4fc9706a5`.
+- R3 alignment phase relation is an independent weekly producer artifact, not a replay of R2 graph-store state.
+- Do not infer successful R1-to-R2 persistence merely because weekly output exists.
+- Original file was left intact; this A2 records the source relationship only.
+
+### Original W41 reference-audit evidence
+- Original weekly native file `RESEARCH/weekly/2026-W41-reference-audit.md` retained at blob `97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba`.
+- R4 citation/reference topology is an independent weekly producer artifact, not a replay of R2 graph-store state.
+- Do not infer successful R1-to-R2 persistence merely because weekly output exists.
+- Original file was left intact; this A2 records the source relationship only.
+
+### October R5, unresolved store status and gate
+- October 15 R1 source blob `e5e0420106de615931142f31dac144676263a14c`; October 15 R2 source blob `4268c0bf46022034b35be15b95f4c51283d42252`.
+- R2 zero-node/zero-edge state cannot distinguish uninitialized DB, unexpected path, write failure or no valid ingestion without stronger evidence.
+- Local graph injection success remains unproven despite 27/27 bounded selfchecks on October 15.
+- R1 rejection/rollback and source evidence retain their original task-time chronology.
+- W42 is a partial week; R5 monthly final is not due and remains OPEN.
+- Prior A1 source file judgments preserved; no original R1/R2/weekly files rewritten by A2.
+- No independent executed graph runtime or scientific validation, and no host architecture modification.
+- GitHub PR acceptance and final refreshed main must be verified before marking maintenance A2 completed.
+
