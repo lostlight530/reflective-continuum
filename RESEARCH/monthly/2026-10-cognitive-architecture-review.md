@@ -4965,3 +4965,20 @@ DUPLICATE_EVIDENCE_CREDIT
 - No independent executed graph runtime or scientific validation, and no host architecture modification.
 - GitHub PR acceptance and final refreshed main must be verified before marking maintenance A2 completed.
 
+## 2026-10-15 forward correction — R2 in-memory selfcheck versus persisted graph identity
+- Correction class: `SOURCE_AND_RUNTIME_SCOPE_RECONCILIATION`; this is independent static code inspection plus actual GitHub source blobs, **not** a new Python execution or correction of historical native R1/R2 outputs.
+- Main at inspection: `941e08e071ccfdfd20b9ef11c61258507b07090a`; original R1 blob `e5e0420106de615931142f31dac144676263a14c`, R2 blob `4268c0bf46022034b35be15b95f4c51283d42252`.
+- Implementation evidence: `CODE/continuum_db.py` at blob `d284ceba7313288c751762c74ce7f21bd407bcdd`: `GraphDB(db_path=':memory:')` by default, using a new SQLite connection per instance.
+- Selfcheck entrypoint evidence: `CODE/tasks/cortex_selfcheck.py` at blob `5b20e4159b24071ebb484d802cfabfd75f701ce0`: `selfcheck(db_path=':memory:')` and CLI flag `--database` with default `:memory:`.
+- Its `healthy` Boolean is `all(checks.values())`: SQLite FK/FTS5/integrity/rule-engine/initialization checks; **neither non-empty graph nor R1→R2 persistence is a success criterion**.
+- Existing unit test `tests/test_tasks.py` blob `f5ed61e5295c02b4d1d2b456f207f2536d054d29` explicitly expects a healthy default selfcheck with `nodes=0, edges=0`.
+- Therefore the October 15 native `nodes: 0, edges: 0`, `27/27` report is compatible with a healthy *ephemeral fixture*. It cannot establish persistent graph emptiness, data loss or actual R1 ingestion failure.
+- Original R1 states 2 accepted, 1 rejected, Hard Rollback for rejected signal, synthesis `NOT_PERFORMED`, graph injection `NOT_EXECUTED`; its acceptance count cannot be treated as persisted graph writes.
+- Original R2 does not record a resolved persistent DB path matching a durable R1 connection, and no shared database identity/test artifact was found in the two native October 15 reports.
+- Corrected classification: `MODULE_CHECKS_PRODUCER_REPORTED`, `SELF_CHECK_DEFAULT_EPHEMERAL`, `PERSISTENT_GRAPH_IDENTITY_UNVERIFIED`, `R1_TO_R2_SHARED_STORE_UNVERIFIED`; do not label `PERSISTENT_STORE_CORRUPT` or `PERSISTENCE_PASS`.
+- Next admissible R2-native proof should identify explicit `--database` target (or sanitized SQLite URI), version scope, data file/URI identity, query/row-count time, and linkage to R1's actual ingestion writer. Disclose use of `:memory:` rather than implying persistent evidence.
+- Repo-local reproducibility command supported by source: `python -m CODE.tasks.cortex_selfcheck --database /path/to/known.sqlite` (execute in an authorized environment against the intended DB; it was **not run** in this audit).
+- Same file path alone is not sufficient: path must refer to actual intended persistent state and same version/transaction boundary. Version or count differences require a separately timestamped reconciliation.
+- Avoid changing code/healthy semantics in this maintenance correction; they are meaningful for bounded infrastructure health, but cannot certify application-data persistence.
+- Repository main and GitHub Actions/Pages checks are not proof of R1→R2 durable graph ingestion.
+- Disposition: `STATIC_CAUSE_CLARIFIED`, `PERSISTENCE_NOT_VERIFIED`, `NATIVE_HISTORICAL_ARTIFACTS_UNMODIFIED`, `MONTH_OPEN`. W42/October R5 may inherit the bounded finding but must not promote an untested durable graph.
