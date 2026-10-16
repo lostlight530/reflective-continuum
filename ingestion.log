@@ -739,3 +739,13 @@ Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=
 Knowledge Graph Injection: False
 Follow-up Action: None
 RUN_END
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "sig-001", "reasons": []}, {"accepted": true, "id": "sig-002", "reasons": []}, {"accepted": false, "id": "sig-003", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+Run ID: d260d753-56ec-42bd-be9c-b473b98de9db
+HARD_ROLLBACK
+Signal ID: sig-003
+Rejection Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(phase='cortex_ingestion', reflection_depth=0, entropy_nats=0.0)
+Knowledge Graph Injection: NOT_EXECUTED
+Follow-up Action: None
