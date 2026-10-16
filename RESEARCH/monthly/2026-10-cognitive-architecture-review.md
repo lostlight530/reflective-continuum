@@ -4982,3 +4982,159 @@ DUPLICATE_EVIDENCE_CREDIT
 - Avoid changing code/healthy semantics in this maintenance correction; they are meaningful for bounded infrastructure health, but cannot certify application-data persistence.
 - Repository main and GitHub Actions/Pages checks are not proof of R1→R2 durable graph ingestion.
 - Disposition: `STATIC_CAUSE_CLARIFIED`, `PERSISTENCE_NOT_VERIFIED`, `NATIVE_HISTORICAL_ARTIFACTS_UNMODIFIED`, `MONTH_OPEN`. W42/October R5 may inherit the bounded finding but must not promote an untested durable graph.
+
+## 2026-10-16 A1 | GAS October 1–15 producer R1/R2 evidence and failure boundary
+
+- Reviewed main `adb2aa77c392a9b5f4879418aa4e541094767429`; A1 cutoff 2026-10-15 before same-day Oct16 native R1/R2 intake
+- Inspected original R1 and R2 report content for all 15 dates and original Git object identity
+- R1 ingestion success/rollback/rejection and R2 module selfcheck each have independent scopes; avoid one false system health metric
+- 26/27 reported check result Oct01..08 and later 27/27 Oct09..15 are separate observations, not proof of data persistence recovery
+- Original persistent R1 writer and R2 default in-memory selfcheck cannot be inferred to share the same SQLite database
+- Negative and partial outcomes are valid; no historical source body overwritten; weekly and monthly final states remain bound to their natural windows
+### 2026-10-01 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-01-dehydrated-report.md`, SHA `032da79e77e12d350a7644682768ea85da99c7ef`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`, SHA `4cef741f0b59c60f1360c8dcfac5387c71d56394`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 text asserts accepted signals entered graph; R2 sampled selfcheck database is empty, but independent store identity absent
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-02 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-02-dehydrated-report.md`, SHA `10e8962cda344f5e70ce09d19719a31e0eb30bf8`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`, SHA `7c1617a59b2360e847d04365c11d1a1423c3981a`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 SUCCESS wording must be read beside hard rollback, not construed full synthesis
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-03 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-03-dehydrated-report.md`, SHA `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`, SHA `d4eb48d90f908794ade985e8577f3c82f26e2d74`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: Fixed fixture repeatability with one distinct snapshot is not durable state equivalence
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-04 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-04-dehydrated-report.md`, SHA `06f754048910ebe97727f7846e83c42c46105d17`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`, SHA `44ad371f641d2854937361a3d295948ebdf3daf7`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 producer SUCCESS and rollback coexist; no cross-run proof of graph persistence
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-05 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-05-dehydrated-report.md`, SHA `bd0f0757b545314a58aee6cc2590c031a990c8a7`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`, SHA `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 explicitly SUCCESS_WITH_REJECTED_SIGNAL; R2 has one failing test, incomplete module health
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-06 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-06-dehydrated-report.md`, SHA `ca6e5cc558adafaae484c7c42466385e7b9e356f`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`, SHA `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 accepted2/rejected1, HBR; R2 26/27 and unknown empty state
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-07 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-07-dehydrated-report.md`, SHA `c17f5a35ab84885c075f1230cefb39a9b54e3660`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`, SHA `0b12cdd1bbd9bc683c7829bda048521dfb2be702`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 synthesis NOT_PERFORMED and graph injection NOT_EXECUTED, R2 still 26/27
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-08 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-08-dehydrated-report.md`, SHA `d604969e0fd1d47c827512d194f83a798f8d71c5`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`, SHA `6fe4ac75864f05555c333ad4bda140ad34014640`
+- R2 bounded health tests: 26 of 27 reported passed, 1 failed
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 repeated rejection, R2 26/27; previous file content remains original
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-09 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-09-dehydrated-report.md`, SHA `96662ee6cdc49962e7a63b68e38f05ab38e0f238`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`, SHA `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R2 changes to 27/27, yet incremental drift NOT_COMPUTED; not proof of recovered shared graph
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-10 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-10-dehydrated-report.md`, SHA `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`, SHA `4b63feedb2474542b2daaf147acfc0e17bddd7bb`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 SUCCESS label coexists with rejected signal and no synthesis; semantic normalizer must not falsely upgrade
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-11 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-11-dehydrated-report.md`, SHA `b5d65dba8c8c3061e2acf1dda724a72d9272f398`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`, SHA `1d19d939fa08ecf16370d69d00d60fc3357b43f1`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: Fixture 100 iterations with one distinct snapshot is bounded determinism, not general semantic learning
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-12 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-12-dehydrated-report.md`, SHA `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`, SHA `e62e93d18ba9340972f601ce790eaa7c971beb38`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 explicitly 2 accepted / 1 rejected; rollback prevents complete synthesis
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-13 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-13-dehydrated-report.md`, SHA `c151b273f54e97824c8848a888b69b4ba8929056`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`, SHA `3c910367c6c999168624534538bceca43e55ec97`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 partial rejection and R2 27/27, actual shared state remains unknown
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-14 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-14-dehydrated-report.md`, SHA `2fe91a00152dea66b6f32d852bea36bd97b83246`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`, SHA `1757e5347af76d59a7cf06ff31895b8c1188bd79`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: Explicit aggregate success-with-rejection, no synthesis, R2 27/27 ephemeral fixture scope
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+### 2026-10-15 | R1 ingestion → R2 selfcheck
+- Original R1 input and report `RESEARCH/daily/2026-10-15-dehydrated-report.md`, SHA `e5e0420106de615931142f31dac144676263a14c`
+- R1 rollback-state evidence: hard rollback/rejected signal retained as source fact, independent persistent effect not proven
+- Original R2 selfcheck `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`, SHA `4268c0bf46022034b35be15b95f4c51283d42252`
+- R2 bounded health tests: 27 of 27 reported passed in source, not persistent graph health
+- R2 DB/drift interpretation: EMPTY_STATE_INDETERMINATE / INCREMENTAL_DRIFT_NOT_COMPUTED; no shared R1→R2 storage identity proven
+- Original-date source distinction: R1 two accepted and one rejected, R2 27/27; artifact doesn't independently establish R1→R2 persisted graph
+- A1 actual disposition: PRESERVE original native negative outcome, no retrospective repair or fabricated persistent graph
+- Count rule: R1 accepted is not an R2 SQLite durable write; R2 module checks are not semantic ingestion correctness
+
+### Week and monthly input relationship
+- Original RESEARCH/weekly/2026-W40-alignment-report.md at Git blob `a054f913c3c5be71629c7625744eb6957094559d`; weekly producer files remain separate evidence surfaces
+- Original RESEARCH/weekly/2026-W40-reference-audit.md at Git blob `e8eee2552d27f29c2e9fbd513f879cbaa1087d8d`; weekly producer files remain separate evidence surfaces
+- Original RESEARCH/weekly/2026-W41-alignment-report.md at Git blob `2575a4870ad459b71f992e1d2209cfc4fc9706a5`; weekly producer files remain separate evidence surfaces
+- Original RESEARCH/weekly/2026-W41-reference-audit.md at Git blob `97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba`; weekly producer files remain separate evidence surfaces
+- W42 Oct12–18 currently OPEN, future final weekly settlement NOT_DUE; October cognitive architecture final not due
+- Existing Oct15 forward correction concerning :memory: selfcheck remains authoritative for the bounded implementation cause; do not invent corrupt persisted graph
+- Current Oct16 R1/R2 delivery belongs to successor A2 if main-visible; separate task-time source identities preserved
+- No database/runtime replay executed by this A1; current scope is repository source and historical evidence audit
+- A1 full 15-date original native relation established without modified native R1/R2 files
+- Status: A1_15_DATE_ORIGINAL_R1_R2 / MODULE_HEALTH_NOT_PERSISTENCE / MONTH_OPEN / PR_MERGE_GATE
