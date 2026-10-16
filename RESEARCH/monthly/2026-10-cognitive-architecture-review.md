@@ -5138,3 +5138,172 @@ DUPLICATE_EVIDENCE_CREDIT
 - No database/runtime replay executed by this A1; current scope is repository source and historical evidence audit
 - A1 full 15-date original native relation established without modified native R1/R2 files
 - Status: A1_15_DATE_ORIGINAL_R1_R2 / MODULE_HEALTH_NOT_PERSISTENCE / MONTH_OPEN / PR_MERGE_GATE
+
+## A2 2026-10-16 | Reflective monthly architecture current relation 2026-10
+
+- Fresh merged A1 #483 base `45ea6c6f0bda7e1cd0022e0560681a98c186272a`; existing R5 Monthly architecture owner remains OPEN, no natural close
+- Combined sixteen actual native R1/R2 dates into a single current month evidence graph, preserving all original producer artifact bytes
+- R1 partial accepted signals and HARD_ROLLBACK are distinct from eventual synthesis/injection; original Synthesis Status NOT_PERFORMED and Knowledge Graph Injection NOT_EXECUTED
+- R2 initial Oct1..8 reported 26/27 module assertions, Oct9..16 27/27; changing test count is a scoped health observation, not proof of repaired persistent state
+- R2 empty default :memory: database fixture has 0 nodes and 0 edges and INDETERMINATE_EMPTY_STATE, drift NOT_COMPUTED, not evidence of shared R1→R2 persistence
+- W41 R3 semantic audit STABLE only over executed audit queries; this cannot be inferred to mean all nodes or repository-wide knowledge graph no drift
+- W41 R4 topology references use GRAPH_INTEGRATED_REFERENCE statuses; documentary references do not prove current in-memory DB is populated
+- Month evidence categories: source text proposition vs accepted signal vs rejected signal vs candidate graph write vs completed synthesis vs health test vs persistent graph state
+- This A2 is repository source/time and claim-relation review; no SQLite database job, KG merge or execution replay was done
+- Below each day's status is retained at original source time rather than normalized into a fictitious global success percentage:
+### 2026-10-01 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-01-dehydrated-report.md`, blob `032da79e77e12d350a7644682768ea85da99c7ef`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`, blob `4cef741f0b59c60f1360c8dcfac5387c71d56394`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: One fixed convergence snapshot is insufficient to establish broad dynamic stability
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W40 prior weekly evidence
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-02 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-02-dehydrated-report.md`, blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`, blob `7c1617a59b2360e847d04365c11d1a1423c3981a`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: R1 SUCCESS wording must be interpreted beside rejected signal and hard rollback
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W40 prior weekly evidence
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-03 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-03-dehydrated-report.md`, blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`, blob `d4eb48d90f908794ade985e8577f3c82f26e2d74`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: Fixed local SQLite fixture replay is reproducibility within its own input, not a persistent production result
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W40 prior weekly evidence
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-04 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-04-dehydrated-report.md`, blob `06f754048910ebe97727f7846e83c42c46105d17`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`, blob `44ad371f641d2854937361a3d295948ebdf3daf7`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: HARD_ROLLBACK for rejected signal prevents full three-signal synthesis
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W40 prior weekly evidence
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-05 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-05-dehydrated-report.md`, blob `bd0f0757b545314a58aee6cc2590c031a990c8a7`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`, blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: R2 selfcheck 26/27 limits module health, R1 still partial ingestion
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-06 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-06-dehydrated-report.md`, blob `ca6e5cc558adafaae484c7c42466385e7b9e356f`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`, blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: Accepted2/rejected1 and 26/27 selfcheck require separate success denominators
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-07 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-07-dehydrated-report.md`, blob `c17f5a35ab84885c075f1230cefb39a9b54e3660`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`, blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: R1 synthesis NOT_PERFORMED and graph injection NOT_EXECUTED retained
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-08 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-08-dehydrated-report.md`, blob `d604969e0fd1d47c827512d194f83a798f8d71c5`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`, blob `6fe4ac75864f05555c333ad4bda140ad34014640`
+- R2 unit/system checks: 26/27 passed with one failing module check
+- R1→R2 source relation: R2 26/27 with empty-state indeterminate graph, no documented successful persistent transition
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: TEST_FAILURE_AND_ROLLBACK_PRESERVED
+### 2026-10-09 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-09-dehydrated-report.md`, blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`, blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R2 now 27/27 test assertions but incremental drift NOT_COMPUTED
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-10 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-10-dehydrated-report.md`, blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`, blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R1 generic SUCCESS cannot erase rejected sig3 or imply complete write
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-11 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-11-dehydrated-report.md`, blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`, blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: 100 repeated fixed-fixture comparisons with one distinct snapshot not a measure of learning generalization
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W41 audit with query-scoped STABLE, not global
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-12 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-12-dehydrated-report.md`, blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`, blob `e62e93d18ba9340972f601ce790eaa7c971beb38`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R1 partial ingestion and R2 27/27 cannot prove shared database commit
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W42 still OPEN, R3/R4 natural end not due
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-13 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-13-dehydrated-report.md`, blob `c151b273f54e97824c8848a888b69b4ba8929056`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`, blob `3c910367c6c999168624534538bceca43e55ec97`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R1 rejected third signal, R2 module tests pass but persistent KG unknown
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W42 still OPEN, R3/R4 natural end not due
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-14 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-14-dehydrated-report.md`, blob `2fe91a00152dea66b6f32d852bea36bd97b83246`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`, blob `1757e5347af76d59a7cf06ff31895b8c1188bd79`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R1 aggregate SUCCESS_WITH_REJECTED_SIGNAL, no synthesis; R2 tests still fixture-only
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W42 still OPEN, R3/R4 natural end not due
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-15 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-15-dehydrated-report.md`, blob `e5e0420106de615931142f31dac144676263a14c`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`, blob `4268c0bf46022034b35be15b95f4c51283d42252`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R1 2/1 and R2 27/27, declared :memory: selfcheck graph not durable graph
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W42 still OPEN, R3/R4 natural end not due
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+### 2026-10-16 | cognitive ingestion ↔ selfcheck evidence relation
+- R1 original ingestion `RESEARCH/daily/2026-10-16-dehydrated-report.md`, blob `12c0f21afd7e53c51955c7b7a69416cbe15a69a8`
+- R1 admitted/rejected scope: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- R2 original health `RESEARCH/daily/2026-10-16-cortex-selfcheck.md`, blob `224b9352213935d06d6a3cd003f4a1924d4fa76f`
+- R2 unit/system checks: 27/27 reported passed on bounded default selfcheck fixture
+- R1→R2 source relation: R1 2 accepted 1 rejected, HARD_ROLLBACK; R2 27/27 and 0-node fixture with drift NOT_COMPUTED
+- Graph state boundary: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- Natural cadence: W42 still OPEN, R3/R4 natural end not due
+- A2 decision: MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS
+
+### Week identity, storage and monthly knowledge-state conclusion
+- W41 alignment `RESEARCH/weekly/2026-W41-alignment-report.md` blob `2575a4870ad459b71f992e1d2209cfc4fc9706a5` reports STABLE with four caller-selected lexical/semantic query comparisons, not universal semantic guarantee
+- W41 reference audit `RESEARCH/weekly/2026-W41-reference-audit.md` blob `97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba` records reference-collection topology; reference integration is not proof of R1 persistent graph state
+- Historical W40 R3/R4 files remain accepted in original week only and do not imply new W42 work
+- W42 Oct12–18 not yet natural Sunday, so R3/R4 FINAL is NOT_DUE, R5 October monthly final OPEN
+- A repeated 100-iteration fixed-fixture convergence result does not entail actual agent metacognitive convergence on arbitrary text or time
+- Local R2 selfcheck with all 27 assertions passed after Oct9 does not establish that independent real R1 accepted signals were durably written
+- Original third-signal rejection remains a real negative; that signal cannot be counted as accepted/injected in cross-period conclusion
+- A1's Oct15 forward correction regarding SQLite :memory: must be preserved, without speculating database corruption or shared persistent writes
+- No actual R1/R2 native file, weekly audit or source reference was edited by this A2; only existing monthly owner receives explicit current version
+- A2 disposition: OCT_2026_OPEN / 16_R1_R2_NATIVE_PAIRS / NO_COMPLETE_SYNTHESIS / NO_VERIFIED_PERSISTENT_GRAPH_TRANSFER
