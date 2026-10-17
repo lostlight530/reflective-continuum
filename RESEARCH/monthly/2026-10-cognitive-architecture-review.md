@@ -5307,3 +5307,152 @@ DUPLICATE_EVIDENCE_CREDIT
 - A1's Oct15 forward correction regarding SQLite :memory: must be preserved, without speculating database corruption or shared persistent writes
 - No actual R1/R2 native file, weekly audit or source reference was edited by this A2; only existing monthly owner receives explicit current version
 - A2 disposition: OCT_2026_OPEN / 16_R1_R2_NATIVE_PAIRS / NO_COMPLETE_SYNTHESIS / NO_VERIFIED_PERSISTENT_GRAPH_TRANSFER
+
+## 2026-10-17 A1 | GAS full October 01–16 R1/R2 source-time and persistence review
+
+- Latest exact main `4a692156994c9710c35ced1a14a42c81928da11f`, A1 period October 01–16; October 17 R1/R2 native deliveries are successor A2 sources
+- R1 acceptance/rejection and R2 bounded module selfcheck are separate evidentiary claims, not a shared durable graph state
+- R1 HARD_ROLLBACK for rejected signals stays negative; synthesis NOT_PERFORMED and knowledge-graph injection NOT_EXECUTED are not a completed pipeline
+- R2 local default :memory: fixture with zero nodes/edges does not establish shared SQLite store with R1 writer
+- Early 26/27 and later 27/27 tests are reported scoped health checks, not database durability proof
+- W40/W41 original R3/R4 weekly reports remain historical; W42 natural weekly FINAL and R5 monthly closure NOT_DUE
+- This maintenance action reads existing fused native owner evidence and remote object identities; does not actually execute R1/R2 or inspect a live shared DB
+
+### Original per-day acceptance and independent selfcheck identity
+#### 2026-10-01 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-01-dehydrated-report.md`, blob `032da79e77e12d350a7644682768ea85da99c7ef`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`, blob `4cef741f0b59c60f1360c8dcfac5387c71d56394`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: One fixed convergence snapshot is insufficient to establish broad dynamic stability
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-02 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-02-dehydrated-report.md`, blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`, blob `7c1617a59b2360e847d04365c11d1a1423c3981a`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: R1 SUCCESS wording must be interpreted beside rejected signal and hard rollback
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-03 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-03-dehydrated-report.md`, blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`, blob `d4eb48d90f908794ade985e8577f3c82f26e2d74`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: Fixed local SQLite fixture replay is reproducibility within its own input, not a persistent production result
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-04 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-04-dehydrated-report.md`, blob `06f754048910ebe97727f7846e83c42c46105d17`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`, blob `44ad371f641d2854937361a3d295948ebdf3daf7`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: HARD_ROLLBACK for rejected signal prevents full three-signal synthesis
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-05 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-05-dehydrated-report.md`, blob `bd0f0757b545314a58aee6cc2590c031a990c8a7`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`, blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: R2 selfcheck 26/27 limits module health, R1 still partial ingestion
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-06 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-06-dehydrated-report.md`, blob `ca6e5cc558adafaae484c7c42466385e7b9e356f`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`, blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: Accepted2/rejected1 and 26/27 selfcheck require separate success denominators
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-07 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-07-dehydrated-report.md`, blob `c17f5a35ab84885c075f1230cefb39a9b54e3660`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`, blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: R1 synthesis NOT_PERFORMED and graph injection NOT_EXECUTED retained
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-08 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-08-dehydrated-report.md`, blob `d604969e0fd1d47c827512d194f83a798f8d71c5`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`, blob `6fe4ac75864f05555c333ad4bda140ad34014640`
+- Bounded checker output: 26/27 passed with one failing module check
+- Same-day relation: R2 26/27 with empty-state indeterminate graph, no documented successful persistent transition
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `TEST_FAILURE_AND_ROLLBACK_PRESERVED` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-09 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-09-dehydrated-report.md`, blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`, blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R2 now 27/27 test assertions but incremental drift NOT_COMPUTED
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-10 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-10-dehydrated-report.md`, blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`, blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R1 generic SUCCESS cannot erase rejected sig3 or imply complete write
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-11 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-11-dehydrated-report.md`, blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`, blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: 100 repeated fixed-fixture comparisons with one distinct snapshot not a measure of learning generalization
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-12 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-12-dehydrated-report.md`, blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`, blob `e62e93d18ba9340972f601ce790eaa7c971beb38`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R1 partial ingestion and R2 27/27 cannot prove shared database commit
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-13 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-13-dehydrated-report.md`, blob `c151b273f54e97824c8848a888b69b4ba8929056`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`, blob `3c910367c6c999168624534538bceca43e55ec97`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R1 rejected third signal, R2 module tests pass but persistent KG unknown
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-14 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-14-dehydrated-report.md`, blob `2fe91a00152dea66b6f32d852bea36bd97b83246`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`, blob `1757e5347af76d59a7cf06ff31895b8c1188bd79`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R1 aggregate SUCCESS_WITH_REJECTED_SIGNAL, no synthesis; R2 tests still fixture-only
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-15 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-15-dehydrated-report.md`, blob `e5e0420106de615931142f31dac144676263a14c`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`, blob `4268c0bf46022034b35be15b95f4c51283d42252`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R1 2/1 and R2 27/27, declared :memory: selfcheck graph not durable graph
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+#### 2026-10-16 | R1 source admission ≠ R2 persistence
+- Original R1 report: `RESEARCH/daily/2026-10-16-dehydrated-report.md`, blob `12c0f21afd7e53c51955c7b7a69416cbe15a69a8`
+- R1 observed admission and rollback: source reports two accepted and one rejected signal with HARD_ROLLBACK, not full synthesis
+- Original R2 selfcheck: `RESEARCH/daily/2026-10-16-cortex-selfcheck.md`, blob `224b9352213935d06d6a3cd003f4a1924d4fa76f`
+- Bounded checker output: 27/27 reported passed on bounded default selfcheck fixture
+- Same-day relation: R1 2 accepted 1 rejected, HARD_ROLLBACK; R2 27/27 and 0-node fixture with drift NOT_COMPUTED
+- Graph-store authority: R2 sample 0 nodes/0 edges where displayed; actual shared writer DB identity unverified
+- A1 disposition: `MODULE_CHECKS_PASS_NOT_PERSISTENCE_OR_SYNTHESIS` retained as source-time bounded result, not promoted to durable graph proof
+
+### Monthly topology and state rules
+- W41 R3 STABLE only within stated query comparisons, not global semantic graph convergence
+- W41 R4 linked/reference graph topology is not independent persisted graph materialization
+- October R5 remains a single OPEN month-to-date state rather than duplicate native monthly executions
+- R1/R2 source reports intentionally untouched; negative evidence and network status stay at original occurrence time
+- No independent Python/SQLite replay, GitHub Actions run, or live graph telemetry was performed by this maintenance cycle
+- A2 only after all ten A1 merges and fresh main; Oct17 current-native R1/R2 is not retrospectively admitted to A1 cutoff
+- A1 status SIXTEEN_R1_R2_ORIGINAL_OBJECT_PAIRS / PERSISTENCE_UNVERIFIED / MONTH_OPEN
