@@ -5456,3 +5456,142 @@ DUPLICATE_EVIDENCE_CREDIT
 - No independent Python/SQLite replay, GitHub Actions run, or live graph telemetry was performed by this maintenance cycle
 - A2 only after all ten A1 merges and fresh main; Oct17 current-native R1/R2 is not retrospectively admitted to A1 cutoff
 - A1 status SIXTEEN_R1_R2_ORIGINAL_OBJECT_PAIRS / PERSISTENCE_UNVERIFIED / MONTH_OPEN
+
+## 2026-10-17 A2 | GAS unified October through-day-17 state
+
+- A1 #487 merged main e68615dddb698df8e1008148b32acb558d4b1dc3; this is the same OPEN October R5 owner, not a natural monthly final
+- Native Oct17 R1 reports 2 accepted and 1 rejected with HARD_ROLLBACK; synthesis NOT_PERFORMED and injection NOT_EXECUTED
+- Native Oct17 R2 reports 27/27 scoped checks, empty :memory: database, zero nodes/edges, drift NOT_COMPUTED
+- The ingestion writer and R2 default ephemeral fixture do not share a proven persistent database identity
+- W40/W41 R3 and R4 historical audits remain separate; W42 ending Oct18 is NOT_DUE as of Oct17
+- Daily source report, acceptance, R2 assertion count, semantic graph drift and durable persistence are different evidentiary layers
+
+### Original date-by-date R1 and R2 relationships
+#### 2026-10-01 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-01-dehydrated-report.md / Git blob 032da79e77e12d350a7644682768ea85da99c7ef
+- Native R2 selfcheck: RESEARCH/daily/2026-10-01-cortex-selfcheck.md / Git blob 4cef741f0b59c60f1360c8dcfac5387c71d56394
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W40 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-02 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-02-dehydrated-report.md / Git blob 10e8962cda344f5e70ce09d19719a31e0eb30bf8
+- Native R2 selfcheck: RESEARCH/daily/2026-10-02-cortex-selfcheck.md / Git blob 7c1617a59b2360e847d04365c11d1a1423c3981a
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W40 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-03 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-03-dehydrated-report.md / Git blob d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea
+- Native R2 selfcheck: RESEARCH/daily/2026-10-03-cortex-selfcheck.md / Git blob d4eb48d90f908794ade985e8577f3c82f26e2d74
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W40 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-04 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-04-dehydrated-report.md / Git blob 06f754048910ebe97727f7846e83c42c46105d17
+- Native R2 selfcheck: RESEARCH/daily/2026-10-04-cortex-selfcheck.md / Git blob 44ad371f641d2854937361a3d295948ebdf3daf7
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W40 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-05 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-05-dehydrated-report.md / Git blob bd0f0757b545314a58aee6cc2590c031a990c8a7
+- Native R2 selfcheck: RESEARCH/daily/2026-10-05-cortex-selfcheck.md / Git blob bbbbe15a0d3e335cfb477ec1b73b73918a60623f
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-06 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-06-dehydrated-report.md / Git blob ca6e5cc558adafaae484c7c42466385e7b9e356f
+- Native R2 selfcheck: RESEARCH/daily/2026-10-06-cortex-selfcheck.md / Git blob 5efa4bd6be58adbba8ee8b68fddd0bd0626342fe
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-07 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-07-dehydrated-report.md / Git blob c17f5a35ab84885c075f1230cefb39a9b54e3660
+- Native R2 selfcheck: RESEARCH/daily/2026-10-07-cortex-selfcheck.md / Git blob 0b12cdd1bbd9bc683c7829bda048521dfb2be702
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-08 | earlier 26/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-08-dehydrated-report.md / Git blob d604969e0fd1d47c827512d194f83a798f8d71c5
+- Native R2 selfcheck: RESEARCH/daily/2026-10-08-cortex-selfcheck.md / Git blob 6fe4ac75864f05555c333ad4bda140ad34014640
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: earlier 26/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-09 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-09-dehydrated-report.md / Git blob 96662ee6cdc49962e7a63b68e38f05ab38e0f238
+- Native R2 selfcheck: RESEARCH/daily/2026-10-09-cortex-selfcheck.md / Git blob 4bb85f31d9b8cead4d53b28acff68b1aee954ed3
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-10 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-10-dehydrated-report.md / Git blob b8ee911a8bbcd1a20dafa20440c1a3c8770124ca
+- Native R2 selfcheck: RESEARCH/daily/2026-10-10-cortex-selfcheck.md / Git blob 4b63feedb2474542b2daaf147acfc0e17bddd7bb
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-11 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-11-dehydrated-report.md / Git blob b5d65dba8c8c3061e2acf1dda724a72d9272f398
+- Native R2 selfcheck: RESEARCH/daily/2026-10-11-cortex-selfcheck.md / Git blob 1d19d939fa08ecf16370d69d00d60fc3357b43f1
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W41 historical
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-12 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-12-dehydrated-report.md / Git blob 092b1e5e6c86a3cb1cdf8786728cc6411efcc527
+- Native R2 selfcheck: RESEARCH/daily/2026-10-12-cortex-selfcheck.md / Git blob e62e93d18ba9340972f601ce790eaa7c971beb38
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W42 open, final not due
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-13 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-13-dehydrated-report.md / Git blob c151b273f54e97824c8848a888b69b4ba8929056
+- Native R2 selfcheck: RESEARCH/daily/2026-10-13-cortex-selfcheck.md / Git blob 3c910367c6c999168624534538bceca43e55ec97
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W42 open, final not due
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-14 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-14-dehydrated-report.md / Git blob 2fe91a00152dea66b6f32d852bea36bd97b83246
+- Native R2 selfcheck: RESEARCH/daily/2026-10-14-cortex-selfcheck.md / Git blob 1757e5347af76d59a7cf06ff31895b8c1188bd79
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W42 open, final not due
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-15 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-15-dehydrated-report.md / Git blob e5e0420106de615931142f31dac144676263a14c
+- Native R2 selfcheck: RESEARCH/daily/2026-10-15-cortex-selfcheck.md / Git blob 4268c0bf46022034b35be15b95f4c51283d42252
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W42 open, final not due
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-16 | later 27/27 bounded selfcheck interval
+- Native R1 report: RESEARCH/daily/2026-10-16-dehydrated-report.md / Git blob 12c0f21afd7e53c51955c7b7a69416cbe15a69a8
+- Native R2 selfcheck: RESEARCH/daily/2026-10-16-cortex-selfcheck.md / Git blob 224b9352213935d06d6a3cd003f4a1924d4fa76f
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W42 open, final not due
+- Evidence limit: later 27/27 bounded selfcheck interval; no new independent runtime verification
+#### 2026-10-17 | Oct17 rejection and 27/27 scoped checks
+- Native R1 report: RESEARCH/daily/2026-10-17-dehydrated-report.md / Git blob 892352813b1268fbae37f1b0117dfa9437a1a64c
+- Native R2 selfcheck: RESEARCH/daily/2026-10-17-cortex-selfcheck.md / Git blob 1e045734dd6a0c24fb3bb8966b7da3153bb0cc64
+- Original R1 rollback/rejection and accepted signals must be counted separately from synthesis completion
+- A same-day R2 module-health result does not validate R1 persistent graph effects
+- Weekly linkage: W42 open, final not due
+- Evidence limit: one refused source, no injection and an empty independently initialized graph; no new independent runtime verification
+
+### Final within-month boundary
+- Two admitted R1 source snippets on Oct17 are not independently witnessed durable graph nodes
+- Rejected metacognition signal is a genuine negative datum, not a successful knowledge-graph insertion
+- Current :memory: selfcheck has zero nodes and zero edges; it is not proof of absence of other database data
+- W41 lexical/semantic STABLE applies only to its selected queries; R4 reference topology is not a live persistency receipt
+- Original Daily paths and historical months are unchanged; append-only October relational owner
+- No current shared SQLite writer/reader replay, third-party factual validation, or repository CI performed
+- Status OPEN_OCTOBER / SEVENTEEN_R1_R2_PAIRS / NO_VERIFIED_DURABLE_TRANSFER
