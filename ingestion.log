@@ -749,3 +749,13 @@ Rejection Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(phase='cortex_ingestion', reflection_depth=0, entropy_nats=0.0)
 Knowledge Graph Injection: NOT_EXECUTED
 Follow-up Action: None
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_ai_alignment_1", "reasons": []}, {"accepted": true, "id": "signal_determinism_1", "reasons": []}, {"accepted": false, "id": "signal_metacognition_1", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+Run ID: 9aca971f-e38d-4c37-bad1-df126fc11989
+HARD_ROLLBACK
+Signal ID: signal_metacognition_1
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(phase='cortex_evaluation', reflection_depth=0, entropy_nats=0.0)
+Knowledge Graph Injection: NOT_EXECUTED
+Follow-up Action: None
