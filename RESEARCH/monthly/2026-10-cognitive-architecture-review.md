@@ -5595,3 +5595,171 @@ DUPLICATE_EVIDENCE_CREDIT
 - Original Daily paths and historical months are unchanged; append-only October relational owner
 - No current shared SQLite writer/reader replay, third-party factual validation, or repository CI performed
 - Status OPEN_OCTOBER / SEVENTEEN_R1_R2_PAIRS / NO_VERIFIED_DURABLE_TRANSFER
+
+## 2026-10-18 A1 | GAS original October 01–17 complete source and scope verification
+- Evidence origin: git main `dee205b1413aa35eac45e748e65b85a777177eb0`; owner `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` blob `197b17c873bedc35fd260931883062bbb6d2c7ed`
+- Independent GPT maintenance read/record, not new Jules native execution; cutoff inclusive 2026-10-17
+- Four distinct dimensions remain: repository object custody, producer-reported execution, independently run validation, external correctness
+- Later file existence and Oct18 weekly jobs do not change source-time completion or missed dependencies
+- Historical owner sections, formula boundaries, corrected references, test denominators and original PR history are not overwritten
+
+### Exact 17-day native research inventory
+#### 2026-10-01 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-01-dehydrated-report.md`: blob `032da79e77e12d350a7644682768ea85da99c7ef`, 2480 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-01 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-01 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`: blob `4cef741f0b59c60f1360c8dcfac5387c71d56394`, 491 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-01 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-01 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-01 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-02 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-02-dehydrated-report.md`: blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8`, 2301 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-02 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-02 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`: blob `7c1617a59b2360e847d04365c11d1a1423c3981a`, 377 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-02 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-02 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-02 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-03 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-03-dehydrated-report.md`: blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`, 2499 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-03 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-03 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`: blob `d4eb48d90f908794ade985e8577f3c82f26e2d74`, 501 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-03 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-03 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-03 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-04 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-04-dehydrated-report.md`: blob `06f754048910ebe97727f7846e83c42c46105d17`, 2131 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-04 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-04 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`: blob `44ad371f641d2854937361a3d295948ebdf3daf7`, 532 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-04 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-04 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-04 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-05 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-05-dehydrated-report.md`: blob `bd0f0757b545314a58aee6cc2590c031a990c8a7`, 1681 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-05 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-05 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`: blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`, 437 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-05 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-05 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-05 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-06 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-06-dehydrated-report.md`: blob `ca6e5cc558adafaae484c7c42466385e7b9e356f`, 2679 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-06 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-06 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`: blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`, 540 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-06 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-06 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-06 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-07 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-07-dehydrated-report.md`: blob `c17f5a35ab84885c075f1230cefb39a9b54e3660`, 2343 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-07 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-07 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`: blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702`, 541 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-07 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-07 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-07 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-08 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-08-dehydrated-report.md`: blob `d604969e0fd1d47c827512d194f83a798f8d71c5`, 2227 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-08 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-08 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`: blob `6fe4ac75864f05555c333ad4bda140ad34014640`, 656 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-08 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-08 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-08 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-09 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-09-dehydrated-report.md`: blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238`, 1980 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-09 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-09 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`: blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`, 500 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-09 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-09 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-09 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-10 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-10-dehydrated-report.md`: blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`, 2208 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-10 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-10 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`: blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb`, 533 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-10 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-10 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-10 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-11 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-11-dehydrated-report.md`: blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398`, 2686 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-11 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-11 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`: blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1`, 422 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-11 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-11 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-11 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-12 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-12-dehydrated-report.md`: blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`, 2522 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-12 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-12 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`: blob `e62e93d18ba9340972f601ce790eaa7c971beb38`, 681 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-12 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-12 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-12 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-13 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-13-dehydrated-report.md`: blob `c151b273f54e97824c8848a888b69b4ba8929056`, 2582 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-13 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-13 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`: blob `3c910367c6c999168624534538bceca43e55ec97`, 1511 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-13 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-13 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-13 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-14 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-14-dehydrated-report.md`: blob `2fe91a00152dea66b6f32d852bea36bd97b83246`, 3389 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-14 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-14 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`: blob `1757e5347af76d59a7cf06ff31895b8c1188bd79`, 473 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-14 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-14 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-14 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-15 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-15-dehydrated-report.md`: blob `e5e0420106de615931142f31dac144676263a14c`, 1898 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-15 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-15 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`: blob `4268c0bf46022034b35be15b95f4c51283d42252`, 450 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-15 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-15 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-15 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-16 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-16-dehydrated-report.md`: blob `12c0f21afd7e53c51955c7b7a69416cbe15a69a8`, 1847 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-16 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-16 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-16-cortex-selfcheck.md`: blob `224b9352213935d06d6a3cd003f4a1924d4fa76f`, 471 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-16 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-16 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-16 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+#### 2026-10-17 | R1 ingestion + R2 selfcheck source-clock
+- `RESEARCH/daily/2026-10-17-dehydrated-report.md`: blob `892352813b1268fbae37f1b0117dfa9437a1a64c`, 1764 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-17 R1 semantics: source acceptance, signal rejection, HARD_ROLLBACK, attempted synthesis and database injection are separate state variables; success label alone proves no persistent graph
+  - 2026-10-17 source relation: source URL/extract and declared run ID remain producer assertions, not independently rerun evidence; do not merge signal count with verified knowledge graph node count
+- `RESEARCH/daily/2026-10-17-cortex-selfcheck.md`: blob `1e045734dd6a0c24fb3bb8966b7da3153bb0cc64`, 497 bytes; prior month-owner exact-blob link: PRESENT
+  - 2026-10-17 R2 semantics: module health and rule-engine check are bounded; same-day checks do not certify persistent or shared SQLite graph unless matching store identity is witnessed
+  - 2026-10-17 source relation: R1/R2 file custody present is not causal read-after-write proof; previously observed empty graph is retained as INDETERMINATE when underlying store mismatch cannot be excluded
+- 2026-10-17 review: ALL_EXPECTED_DATED_PATHS_PRESENT; no historical original-run upgrade
+
+### Weekly, monthly and adjacent audit obligations
+- `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` Git blob `197b17c873bedc35fd260931883062bbb6d2c7ed` / 328536 bytes; time gate PRE_OCT18_HISTORICAL_WEEKLY_OR_MONTH_OWNER
+  - Relation: original weekly scope bounded by dated input files and producer reports; do not infer missing test output as PASS
+- `RESEARCH/weekly/2026-W40-alignment-report.md` Git blob `a054f913c3c5be71629c7625744eb6957094559d` / 4004 bytes; time gate PRE_OCT18_HISTORICAL_WEEKLY_OR_MONTH_OWNER
+  - Relation: original weekly scope bounded by dated input files and producer reports; do not infer missing test output as PASS
+- `RESEARCH/weekly/2026-W40-reference-audit.md` Git blob `e8eee2552d27f29c2e9fbd513f879cbaa1087d8d` / 1397 bytes; time gate PRE_OCT18_HISTORICAL_WEEKLY_OR_MONTH_OWNER
+  - Relation: original weekly scope bounded by dated input files and producer reports; do not infer missing test output as PASS
+- `RESEARCH/weekly/2026-W41-alignment-report.md` Git blob `2575a4870ad459b71f992e1d2209cfc4fc9706a5` / 2353 bytes; time gate PRE_OCT18_HISTORICAL_WEEKLY_OR_MONTH_OWNER
+  - Relation: original weekly scope bounded by dated input files and producer reports; do not infer missing test output as PASS
+- `RESEARCH/weekly/2026-W41-reference-audit.md` Git blob `97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba` / 2464 bytes; time gate PRE_OCT18_HISTORICAL_WEEKLY_OR_MONTH_OWNER
+  - Relation: original weekly scope bounded by dated input files and producer reports; do not infer missing test output as PASS
+- `RESEARCH/weekly/2026-W42-alignment-report.md` Git blob `b8bf89d18c16ec2953f5ef947be20b1016f56596` / 4534 bytes; time gate OCT18_SOURCE_NOT_A1_INPUT
+  - Relation: exclude from 17-day A1 primary denominator, admit only after new A2 refresh
+- `RESEARCH/weekly/2026-W42-reference-audit.md` Git blob `3aa52e5e66e6e6e6a2ff193342ed816d11ade8bd` / 1773 bytes; time gate OCT18_SOURCE_NOT_A1_INPUT
+  - Relation: exclude from 17-day A1 primary denominator, admit only after new A2 refresh
+
+### Coverage outcome
+- Checked daily artifact identity paths: 34/34; exact SHA in prior monthly owner: 34; missing: 0
+- A1 source provenance is traceable through file path, Git blob, source date and extant month owner; it is not proof all native assertions are factually accurate
+- No code tests were rerun, no source publisher live validation performed, no graphs or simulation replayed in this maintenance
+- Original Jules owner, native schedule and special audit semantics unchanged; no repository code files altered
+- A1 result: OBJECT_IDENTITY_COVERAGE_WITH_SOURCE_CLOCK_LIMITS; A2 inheritance only after all ten A1 merges
