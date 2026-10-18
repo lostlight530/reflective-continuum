@@ -5595,3 +5595,178 @@ DUPLICATE_EVIDENCE_CREDIT
 - Original Daily paths and historical months are unchanged; append-only October relational owner
 - No current shared SQLite writer/reader replay, third-party factual validation, or repository CI performed
 - Status OPEN_OCTOBER / SEVENTEEN_R1_R2_PAIRS / NO_VERIFIED_DURABLE_TRANSFER
+
+## 2026-10-18 A1 | full October 01–17 original source, contract and PR decision review
+- Stage: independent maintenance A1, cutoff=2026-10-17 Asia/Shanghai; exact current-main SHA=dee205b1413aa35eac45e748e65b85a777177eb0
+- Original canonical monthly owner blob=197b17c873bedc35fd260931883062bbb6d2c7ed; this pass appends only, without rewriting earlier dated findings
+- Evidence grain: source date, task slot, repository blob, producer-reported stdout, PR merge and external theorem/runtime are different
+- PREVIOUS_MONTH_A1_A2 retained as historical source; this new A1 does not issue independent research credit
+- October 18 already-merged native files are intentionally excluded from A1 before second-round admission
+### Seventeen native logical dates and completeness (file identity, not proven execution)
+- 2026-10-01: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-02: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-03: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-04: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-05: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-06: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-07: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-08: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-09: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-10: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-11: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-12: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-13: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-14: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-15: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-16: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+- 2026-10-17: expected 2 exact owner paths; present 2; missing NONE; current presence != original execution proof
+### Artifact-by-artifact current main blob and inherited-owner trace
+- `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` | blob=4cef741f0b59c60f1360c8dcfac5387c71d56394 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-01-dehydrated-report.md` | blob=032da79e77e12d350a7644682768ea85da99c7ef | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-02-cortex-selfcheck.json` | blob=6d63b07ae6356ba0d28ed5a44d193c4416efc8ed | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=NOT_ANCHORED_IN_PRIOR_VERSION | decision APPEND_RELATION_ONLY; historical text unchanged
+- `RESEARCH/daily/2026-10-02-cortex-selfcheck.md` | blob=7c1617a59b2360e847d04365c11d1a1423c3981a | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-02-dehydrated-report.md` | blob=10e8962cda344f5e70ce09d19719a31e0eb30bf8 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-03-cortex-selfcheck.md` | blob=d4eb48d90f908794ade985e8577f3c82f26e2d74 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-03-dehydrated-report.md` | blob=d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-04-cortex-selfcheck.md` | blob=44ad371f641d2854937361a3d295948ebdf3daf7 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-04-dehydrated-report.md` | blob=06f754048910ebe97727f7846e83c42c46105d17 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-05-cortex-selfcheck.md` | blob=bbbbe15a0d3e335cfb477ec1b73b73918a60623f | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-05-dehydrated-report.md` | blob=bd0f0757b545314a58aee6cc2590c031a990c8a7 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-06-cortex-selfcheck.md` | blob=5efa4bd6be58adbba8ee8b68fddd0bd0626342fe | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-06-dehydrated-report.md` | blob=ca6e5cc558adafaae484c7c42466385e7b9e356f | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-07-cortex-selfcheck.md` | blob=0b12cdd1bbd9bc683c7829bda048521dfb2be702 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-07-dehydrated-report.md` | blob=c17f5a35ab84885c075f1230cefb39a9b54e3660 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-08-cortex-selfcheck.md` | blob=6fe4ac75864f05555c333ad4bda140ad34014640 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-08-dehydrated-report.md` | blob=d604969e0fd1d47c827512d194f83a798f8d71c5 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-09-cortex-selfcheck.md` | blob=4bb85f31d9b8cead4d53b28acff68b1aee954ed3 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-09-dehydrated-report.md` | blob=96662ee6cdc49962e7a63b68e38f05ab38e0f238 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-10-cortex-selfcheck.md` | blob=4b63feedb2474542b2daaf147acfc0e17bddd7bb | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-10-dehydrated-report.md` | blob=b8ee911a8bbcd1a20dafa20440c1a3c8770124ca | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-11-cortex-selfcheck.md` | blob=1d19d939fa08ecf16370d69d00d60fc3357b43f1 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-11-dehydrated-report.md` | blob=b5d65dba8c8c3061e2acf1dda724a72d9272f398 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-12-cortex-selfcheck.md` | blob=e62e93d18ba9340972f601ce790eaa7c971beb38 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-12-dehydrated-report.md` | blob=092b1e5e6c86a3cb1cdf8786728cc6411efcc527 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-13-cortex-selfcheck.md` | blob=3c910367c6c999168624534538bceca43e55ec97 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-13-dehydrated-report.md` | blob=c151b273f54e97824c8848a888b69b4ba8929056 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-14-cortex-selfcheck.md` | blob=1757e5347af76d59a7cf06ff31895b8c1188bd79 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-14-dehydrated-report.md` | blob=2fe91a00152dea66b6f32d852bea36bd97b83246 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-15-cortex-selfcheck.md` | blob=4268c0bf46022034b35be15b95f4c51283d42252 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-15-dehydrated-report.md` | blob=e5e0420106de615931142f31dac144676263a14c | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-16-cortex-selfcheck.md` | blob=224b9352213935d06d6a3cd003f4a1924d4fa76f | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-16-dehydrated-report.md` | blob=12c0f21afd7e53c51955c7b7a69416cbe15a69a8 | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-17-cortex-selfcheck.md` | blob=1e045734dd6a0c24fb3bb8966b7da3153bb0cc64 | GAS R2: component unit tests distinct from durable persisted graph witness | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/daily/2026-10-17-dehydrated-report.md` | blob=892352813b1268fbae37f1b0117dfa9437a1a64c | GAS R1: signal acceptance, rejection, rollback and synthesis are distinct statuses | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` | blob=197b17c873bedc35fd260931883062bbb6d2c7ed | MONTH OWNER: derived current relation, not additional execution | predecessor-month-owner blob=NOT_ANCHORED_IN_PRIOR_VERSION | decision APPEND_RELATION_ONLY; historical text unchanged
+- `RESEARCH/weekly/2026-W40-alignment-report.md` | blob=a054f913c3c5be71629c7625744eb6957094559d | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/weekly/2026-W40-reference-audit.md` | blob=e8eee2552d27f29c2e9fbd513f879cbaa1087d8d | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/weekly/2026-W41-alignment-report.md` | blob=2575a4870ad459b71f992e1d2209cfc4fc9706a5 | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+- `RESEARCH/weekly/2026-W41-reference-audit.md` | blob=97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba | WEEKLY: scoped settlement requires original daily source lineage | predecessor-month-owner blob=ANCHOR_MATCH | decision NO_FOLLOW_UP; historical text unchanged
+### Original GitHub PR identity census (UTC PR creation clock; includes multiple workload families)
+- PR #396 | created=2026-10-01T08:20:09Z | merged=2026-10-01T08:55:44Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Ingestion: 2026-10-01
+- PR #397 | created=2026-10-01T10:34:11Z | merged=2026-10-01T12:46:25Z | DAILY_NATIVE_OR_RESEARCH | chore: R2 daily cortex self-check
+- PR #398 | created=2026-10-01T13:25:34Z | merged=2026-10-01T13:25:39Z | MAINT_OR_REPAIR | A1: initialize October relational owner — GAS
+- PR #399 | created=2026-10-01T13:25:47Z | merged=2026-10-01T13:25:51Z | MAINT_OR_REPAIR | A2: integrate October 1 GAS task state
+- PR #400 | created=2026-10-02T08:39:06Z | merged=2026-10-02T13:07:16Z | DAILY_NATIVE_OR_RESEARCH | Generate R1 Daily Dehydrated Report (2026-10-02)
+- PR #401 | created=2026-10-02T10:17:30Z | merged=2026-10-02T13:08:11Z | DAILY_NATIVE_OR_RESEARCH | Generate daily R2 Cortex self-check report for 2026-10-02
+- PR #402 | created=2026-10-02T13:15:42Z | merged=2026-10-02T13:15:57Z | MAINT_OR_REPAIR | October A1: full R1/R2 review through 2026-10-01
+- PR #403 | created=2026-10-02T13:26:35Z | merged=2026-10-02T13:26:50Z | MAINT_OR_REPAIR | October A2: reconcile R1/R2 through 2026-10-02
+- PR #404 | created=2026-10-02T13:53:38Z | merged=2026-10-02T14:26:46Z | OTHER | September D30 Independent GPT audit — Reflective / GAS
+- PR #405 | created=2026-10-03T04:48:14Z | merged=2026-10-03T04:48:17Z | MAINT_OR_REPAIR | October A1: full GAS review through 2026-10-02
+- PR #406 | created=2026-10-03T04:48:46Z | merged=2026-10-03T04:48:49Z | MAINT_OR_REPAIR | October A2: reconcile GAS through 2026-10-03
+- PR #407 | created=2026-10-03T08:19:24Z | merged=2026-10-03T12:36:45Z | DAILY_NATIVE_OR_RESEARCH | Automated Daily R1 Signal Ingestion and Reporting
+- PR #408 | created=2026-10-03T10:11:24Z | merged=2026-10-03T12:37:36Z | DAILY_NATIVE_OR_RESEARCH | Create daily cortex selfcheck report
+- PR #409 | created=2026-10-03T12:45:10Z | merged=2026-10-03T12:45:30Z | MAINT_OR_REPAIR | October A1 successor: recheck GAS through 2026-10-02
+- PR #410 | created=2026-10-03T12:52:45Z | merged=2026-10-03T12:53:03Z | MAINT_OR_REPAIR | October A2 successor: reconcile GAS R1/R2 current month
+- PR #411 | created=2026-10-04T05:06:44Z | merged=2026-10-04T08:43:49Z | DAILY_NATIVE_OR_RESEARCH | Daily R1 Execution 2026-10-04
+- PR #412 | created=2026-10-04T06:04:44Z | merged=2026-10-04T08:43:55Z | DAILY_NATIVE_OR_RESEARCH | R2 Daily Cortex Selfcheck Report
+- PR #413 | created=2026-10-04T07:07:48Z | merged=NOT_MERGED | WEEKLY_NATIVE | docs: R4 Reference Topology Audit 2026-W40
+- PR #414 | created=2026-10-04T08:16:17Z | merged=2026-10-04T08:51:25Z | WEEKLY_NATIVE | Generate R3 weekly alignment report (2026-W40)
+- PR #415 | created=2026-10-04T08:49:46Z | merged=2026-10-04T08:50:17Z | WEEKLY_NATIVE | docs: R4 Reference Topology Audit 2026-W40
+- PR #416 | created=2026-10-04T09:11:40Z | merged=2026-10-04T09:11:46Z | MAINT_OR_REPAIR | October A1: full GAS review through 2026-10-03
+- PR #417 | created=2026-10-04T09:23:53Z | merged=2026-10-04T09:23:59Z | MAINT_OR_REPAIR | October A2: reconcile GAS through 2026-10-04
+- PR #418 | created=2026-10-04T09:48:42Z | merged=2026-10-04T09:48:48Z | OTHER | special: close repository-snapshot continuity semantics
+- PR #419 | created=2026-10-04T10:18:52Z | merged=2026-10-04T12:01:44Z | DAILY_NATIVE_OR_RESEARCH | docs: establish open research production framework
+- PR #420 | created=2026-10-05T05:26:26Z | merged=2026-10-05T05:27:40Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Signal Ingestion and Reporting
+- PR #421 | created=2026-10-05T06:10:49Z | merged=2026-10-05T13:41:06Z | DAILY_NATIVE_OR_RESEARCH | chore(tasks): Execute Daily R2 Cortex Selfcheck
+- PR #422 | created=2026-10-05T13:47:21Z | merged=2026-10-05T13:47:29Z | MAINT_OR_REPAIR | October A1: full Reflective GAS + open-research review through 2026-10-04
+- PR #423 | created=2026-10-05T13:54:11Z | merged=2026-10-05T13:54:19Z | MAINT_OR_REPAIR | October A2: reconcile Reflective GAS + open-research through 2026-10-05
+- PR #424 | created=2026-10-06T05:07:33Z | merged=2026-10-06T05:17:07Z | DAILY_NATIVE_OR_RESEARCH | chore: execute R1 daily signal ingestion
+- PR #425 | created=2026-10-06T06:13:47Z | merged=2026-10-06T08:15:20Z | DAILY_NATIVE_OR_RESEARCH | docs(r2): Add Daily Cortex Selfcheck Report for 2026-10-06
+- PR #426 | created=2026-10-06T08:36:27Z | merged=2026-10-06T08:43:27Z | MAINT_OR_REPAIR | October A1: full Reflective GAS review through 2026-10-05
+- PR #427 | created=2026-10-06T08:48:01Z | merged=2026-10-06T08:53:53Z | MAINT_OR_REPAIR | October A2: reconcile Reflective GAS through 2026-10-06
+- PR #428 | created=2026-10-07T05:32:00Z | merged=2026-10-07T07:10:29Z | DAILY_NATIVE_OR_RESEARCH | feat(r1): complete R1 daily signal ingestion and dehydration
+- PR #429 | created=2026-10-07T06:31:23Z | merged=2026-10-07T07:10:49Z | DAILY_NATIVE_OR_RESEARCH | Daily R2 Cortex Selfcheck Report - 2026-10-07
+- PR #430 | created=2026-10-07T07:16:01Z | merged=2026-10-07T07:19:44Z | MAINT_OR_REPAIR | October A1: full Reflective GAS review through 2026-10-06
+- PR #431 | created=2026-10-07T07:23:36Z | merged=2026-10-07T07:28:36Z | MAINT_OR_REPAIR | October A2: reconcile Reflective GAS through 2026-10-07
+- PR #432 | created=2026-10-08T05:13:08Z | merged=2026-10-08T07:25:40Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Signal Ingestion Drill (2026-10-08)
+- PR #433 | created=2026-10-08T06:32:59Z | merged=2026-10-08T07:27:06Z | DAILY_NATIVE_OR_RESEARCH | R2 Daily Cortex Selfcheck Report
+- PR #434 | created=2026-10-08T07:30:11Z | merged=2026-10-08T07:36:06Z | MAINT_OR_REPAIR | October A1: full Reflective GAS review through 2026-10-07
+- PR #435 | created=2026-10-08T07:39:34Z | merged=2026-10-08T07:46:14Z | MAINT_OR_REPAIR | October A2: reconcile Reflective GAS through 2026-10-08
+- PR #436 | created=2026-10-08T15:11:05Z | merged=2026-10-08T15:28:40Z | OTHER | repair: separate methodology routing from entries — thanks to the new Codex cloud workflow
+- PR #437 | created=2026-10-09T05:13:23Z | merged=2026-10-09T07:56:10Z | DAILY_NATIVE_OR_RESEARCH | Perform Daily R1 Ingestion and Report Dehydration
+- PR #438 | created=2026-10-09T06:32:56Z | merged=2026-10-09T07:56:16Z | DAILY_NATIVE_OR_RESEARCH | R2 cortex selfcheck
+- PR #439 | created=2026-10-09T08:36:24Z | merged=2026-10-09T08:40:39Z | MAINT_OR_REPAIR | October A1: Reflective historical full coverage
+- PR #440 | created=2026-10-09T08:53:34Z | merged=2026-10-09T08:56:31Z | MAINT_OR_REPAIR | October A2: Reflective GAS relation through 2026-10-09
+- PR #441 | created=2026-10-10T05:15:43Z | merged=2026-10-10T07:27:28Z | DAILY_NATIVE_OR_RESEARCH | Execute R1 Daily Automation Task
+- PR #442 | created=2026-10-10T06:34:16Z | merged=2026-10-10T07:25:23Z | DAILY_NATIVE_OR_RESEARCH | Run R2 Cortex Selfcheck for 2026-10-10
+- PR #443 | created=2026-10-10T08:52:35Z | merged=2026-10-10T08:54:29Z | MAINT_OR_REPAIR | October 10 A1: Reflective GAS review through October 9
+- PR #444 | created=2026-10-10T09:04:05Z | merged=2026-10-10T09:06:13Z | MAINT_OR_REPAIR | October 10 A2: Reflective GAS relation through October 10
+- PR #445 | created=2026-10-10T15:06:02Z | merged=2026-10-10T15:08:11Z | MAINT_OR_REPAIR | docs: reconcile concept DOI and three archived release identities
+- PR #446 | created=2026-10-11T05:30:02Z | merged=2026-10-11T07:36:52Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Ingestion
+- PR #447 | created=2026-10-11T06:25:58Z | merged=NOT_MERGED | DAILY_NATIVE_OR_RESEARCH | Run R2 Daily Cortex Self-check
+- PR #448 | created=2026-10-11T07:32:43Z | merged=NOT_MERGED | WEEKLY_NATIVE | Generate R4 reference topology audit report for 2026-W41
+- PR #449 | created=2026-10-11T07:37:20Z | merged=2026-10-11T07:37:26Z | DAILY_NATIVE_OR_RESEARCH | R2 Daily Cortex Self-check recovery on current main
+- PR #450 | created=2026-10-11T07:37:54Z | merged=2026-10-11T07:38:04Z | WEEKLY_NATIVE | R4 reference topology audit recovery on refreshed main
+- PR #451 | created=2026-10-11T07:52:24Z | merged=2026-10-11T07:53:59Z | MAINT_OR_REPAIR | October 11 A1: Reflective GAS full review through October 10
+- PR #452 | created=2026-10-11T08:00:28Z | merged=2026-10-11T08:02:05Z | MAINT_OR_REPAIR | October 11 A2: Reflective GAS relation through October 11
+- PR #453 | created=2026-10-11T08:08:40Z | merged=2026-10-11T08:15:43Z | WEEKLY_NATIVE | Generate 2026-W41 weekly alignment report
+- PR #454 | created=2026-10-12T05:08:13Z | merged=2026-10-12T10:39:31Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Signal Ingestion & Dehydrated Report
+- PR #455 | created=2026-10-12T06:21:28Z | merged=2026-10-12T10:36:58Z | DAILY_NATIVE_OR_RESEARCH | Generate R2 Daily Cortex Self-Check Report for 2026-10-12
+- PR #456 | created=2026-10-12T10:59:37Z | merged=2026-10-12T10:59:53Z | DAILY_NATIVE_OR_RESEARCH | correct: scope 2026-10-12 R1 run identifier
+- PR #457 | created=2026-10-12T11:03:03Z | merged=2026-10-12T11:06:08Z | MAINT_OR_REPAIR | A1 2026-10-12: October maintenance through 2026-10-11
+- PR #458 | created=2026-10-12T11:08:15Z | merged=2026-10-12T11:10:58Z | MAINT_OR_REPAIR | A2 2026-10-12: October maintenance through 2026-10-12
+- PR #459 | created=2026-10-13T05:28:32Z | merged=2026-10-13T08:11:07Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Ingestion & Dehydrated Report (2026-10-13)
+- PR #460 | created=2026-10-13T06:07:39Z | merged=2026-10-13T07:20:18Z | DAILY_NATIVE_OR_RESEARCH | R2 Cortex Self-check
+- PR #461 | created=2026-10-13T08:12:03Z | merged=2026-10-13T08:13:23Z | DAILY_NATIVE_OR_RESEARCH | R1 2026-10-13 successor: corrected run-id evidence label
+- PR #462 | created=2026-10-13T08:16:28Z | merged=2026-10-13T08:19:10Z | MAINT_OR_REPAIR | A1 2026-10-13: October maintenance through 2026-10-12
+- PR #463 | created=2026-10-13T08:21:31Z | merged=2026-10-13T08:24:18Z | MAINT_OR_REPAIR | A2 2026-10-13: October maintenance through 2026-10-13
+- PR #464 | created=2026-10-13T08:30:51Z | merged=2026-10-13T08:32:36Z | DAILY_NATIVE_OR_RESEARCH | correct: complete 2026-10-13 R2 store boundaries
+- PR #465 | created=2026-10-13T08:35:13Z | merged=2026-10-13T08:38:31Z | MAINT_OR_REPAIR | Final A1 2026-10-13: reconcile through 2026-10-12
+- PR #466 | created=2026-10-13T08:41:27Z | merged=2026-10-13T08:44:56Z | MAINT_OR_REPAIR | Final A2 2026-10-13: current month through 2026-10-13
+- PR #467 | created=2026-10-14T05:15:05Z | merged=2026-10-14T07:41:40Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Ingestion 2026-10-14
+- PR #468 | created=2026-10-14T06:08:42Z | merged=2026-10-14T07:17:29Z | DAILY_NATIVE_OR_RESEARCH | Run Daily R2 Cortex Selfcheck for 2026-10-14
+- PR #469 | created=2026-10-14T08:01:29Z | merged=2026-10-14T08:04:52Z | MAINT_OR_REPAIR | A1 2026-10-14: R1/R2 execution/store identity audit through Oct 13
+- PR #470 | created=2026-10-14T08:40:48Z | merged=2026-10-14T08:58:37Z | MAINT_OR_REPAIR | A2 2026-10-14: R1-R2 store identity and incomplete synthesis
+- PR #471 | created=2026-10-14T09:09:27Z | merged=2026-10-14T09:12:10Z | MAINT_OR_REPAIR | D14 2026-10-14: independent pattern formation audit
+- PR #472 | created=2026-10-14T09:11:08Z | merged=2026-10-14T09:17:00Z | MAINT_OR_REPAIR | D14 2026-10-14: R1/R2 store and rejection pattern audit
+- PR #473 | created=2026-10-14T09:23:08Z | merged=2026-10-14T09:24:28Z | MAINT_OR_REPAIR | reconcile(d14): preserve dual views, single audit identity
+- PR #474 | created=2026-10-15T01:57:46Z | merged=2026-10-15T02:09:33Z | DAILY_NATIVE_OR_RESEARCH | docs(open-science): align archived checkpoint, citation and research reuse
+- PR #475 | created=2026-10-15T05:25:37Z | merged=2026-10-15T06:58:05Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Signal Ingestion and Dehydrated Report
+- PR #476 | created=2026-10-15T06:13:32Z | merged=2026-10-15T06:51:42Z | DAILY_NATIVE_OR_RESEARCH | Added 2026-10-15 R2 daily cortex self-check report
+- PR #477 | created=2026-10-15T10:24:38Z | merged=2026-10-15T10:47:25Z | MAINT_OR_REPAIR | A1 2026-10-15: R1/R2 native October 1–14 store/ingestion reconciliation
+- PR #478 | created=2026-10-15T10:54:18Z | merged=2026-10-15T11:12:17Z | MAINT_OR_REPAIR | A2 2026-10-15: R1/R2 GAS full October ingestion and store identity
+- PR #479 | created=2026-10-15T11:47:46Z | merged=2026-10-15T11:49:26Z | DAILY_NATIVE_OR_RESEARCH | Forward correction: R2 in-memory selfcheck is not persisted graph verification
+- PR #480 | created=2026-10-15T15:42:34Z | merged=2026-10-15T15:51:22Z | MAINT_OR_REPAIR | docs(open-science): strengthen research handoff through Windows maintenance
+- PR #481 | created=2026-10-16T05:36:35Z | merged=2026-10-16T09:02:02Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Ingestion 2026-10-16
+- PR #482 | created=2026-10-16T06:26:23Z | merged=2026-10-16T09:00:48Z | DAILY_NATIVE_OR_RESEARCH | R2 Cortex Selfcheck 2026-10-16
+- PR #483 | created=2026-10-16T09:50:27Z | merged=2026-10-16T09:50:42Z | MAINT_OR_REPAIR | A1 Oct16 Reflective: R1/R2 15-day actual negative and fixture evidence
+- PR #484 | created=2026-10-16T10:32:52Z | merged=2026-10-16T10:33:06Z | MAINT_OR_REPAIR | A2 Oct16 Reflective: 16 R1/R2 native days, weekly fixture and graph-state boundaries
+- PR #485 | created=2026-10-17T05:23:38Z | merged=2026-10-17T05:44:58Z | DAILY_NATIVE_OR_RESEARCH | R1 Daily Ingestion 2026-10-17
+- PR #486 | created=2026-10-17T06:11:55Z | merged=2026-10-17T07:45:16Z | DAILY_NATIVE_OR_RESEARCH | R2 Daily Cortex Selfcheck Report
+- PR #487 | created=2026-10-17T12:00:09Z | merged=2026-10-17T12:00:16Z | MAINT_OR_REPAIR | A1 Oct17 GAS: 16 R1/R2 provenance pairs and nonpersistent graph limits
+- PR #488 | created=2026-10-17T12:17:07Z | merged=2026-10-17T12:17:18Z | MAINT_OR_REPAIR | A2 Oct17 GAS: 17 R1/R2 native pair boundaries and persistent-state uncertainty
+### Inherited scientific constraints, negative evidence and current A1 decision
+- Daily R1 accepted signal or SUCCESS_WITH_REJECTED_SIGNAL does not prove knowledge graph insertion or complete synthesis
+- Hard rollback record records the observed local decision; it is not a durable state reversion receipt without storage evidence
+- R2 unit test 27/27 is component-health evidence with a bounded fixture and denominator, not a persisted graph witness
+- R2 zero nodes / zero edges is an INDETERMINATE_EMPTY_STATE, not scientific proof of a globally empty knowledge graph
+- R3 weekly stable lexical query result is restricted to caller-selected FTS5 queries, not global semantic drift absence
+- R4 reference-topology files are documentary structure checks; do not count them as functional graph edge validation
+- W42 R3 #492 forward correction belongs to Oct18, so it must be admitted at A2 only, not backdated to Oct17
+- Weekly accumulated rollback/convergence counts must not be treated as W42-only without exact provenance denominator
+- No actual shared persistent database writer-reader replay or independently executed graph test is performed in this A1
+- Original-path scope=40 current-main blobs; previous-owner direct blob anchors=38; missing expected native paths=0
+- GitHub PRs created during Oct01–Oct17 UTC=93; PR delivery count != independent source/research-window count
+- Historical native documents and established corrections modified: ZERO; only the October owner receives this dated evidence ledger
+- External paper verification, production runtime testing and full local test suite in this A1: NOT_EXECUTED
+- A1 state: COMPLETE_FOR_ENUMERATED_LOGICAL_DATE_PATHS / BOUNDED_SOURCE_TIME_AND_PR_REVIEW / MONTH_OPEN / NO_HISTORICAL_REWRITE
