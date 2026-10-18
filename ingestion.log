@@ -759,3 +759,14 @@ Reason: reflection_depth_exhausted
 Observer Output: ProcessResult(phase='cortex_evaluation', reflection_depth=0, entropy_nats=0.0)
 Knowledge Graph Injection: NOT_EXECUTED
 Follow-up Action: None
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+{"accepted": 2, "results": [{"accepted": true, "id": "signal_metacognition", "reasons": []}, {"accepted": true, "id": "signal_determinism", "reasons": []}, {"accepted": false, "id": "signal_ai_alignment", "reasons": ["reflection_depth_exhausted"]}], "total": 3}
+RUN_BEGIN
+Run ID: c3c44333-2db2-491b-a136-e25fdd633c9f
+HARD_ROLLBACK
+Signal ID: signal_ai_alignment
+Reason: reflection_depth_exhausted
+Observer Output: ProcessResult(accepted=False, phase='LIQUID', reflection_depth=3, entropy_nats=1.0986122886681096, reasons=('reflection_depth_exhausted',))
+Knowledge Graph Injection: False
+Follow-up Action: None
+RUN_END
