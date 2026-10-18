@@ -5763,3 +5763,181 @@ DUPLICATE_EVIDENCE_CREDIT
 - No code tests were rerun, no source publisher live validation performed, no graphs or simulation replayed in this maintenance
 - Original Jules owner, native schedule and special audit semantics unchanged; no repository code files altered
 - A1 result: OBJECT_IDENTITY_COVERAGE_WITH_SOURCE_CLOCK_LIMITS; A2 inheritance only after all ten A1 merges
+
+## 2026-10-18 A2 | GAS complete 18-day cognition / persistence evidence chain
+- A1 merged current main: 528e2bf553b9e2861a8cf092120da1542e23c011, canonical owner previous Git blob: 68ad46fde12b08b98f84edcaa2d9fe5010ded5d8
+- R1 ingestion output, R2 selfcheck, R3 weekly alignment, R4 references and long-term persistent knowledge are not interchangeable
+- Oct18 R3 source report was corrected before merge; local lexical query stability is not a global semantic or graph-storage receipt
+- R2 27/27 tests and 0 graph nodes/edges coexist; zero-node graph is INDETERMINATE_EMPTY_STATE, not independently valid persisted cognition
+- A2 inherits all original daily and A1 source clocks; no synthetic transitions are classified as zero without event origin signatures
+
+### Daily R1 rejection / R2 bounded selfcheck relations
+#### 2026-10-01 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-01-dehydrated-report.md | blob=032da79e77e12d350a7644682768ea85da99c7ef | bytes=2480
+- R2 module/graph original: RESEARCH/daily/2026-10-01-cortex-selfcheck.md | blob=4cef741f0b59c60f1360c8dcfac5387c71d56394 | bytes=491
+- 2026-10-01 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-01 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-01 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-01 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-01 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-02 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-02-dehydrated-report.md | blob=10e8962cda344f5e70ce09d19719a31e0eb30bf8 | bytes=2301
+- R2 module/graph original: RESEARCH/daily/2026-10-02-cortex-selfcheck.md | blob=7c1617a59b2360e847d04365c11d1a1423c3981a | bytes=377
+- 2026-10-02 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-02 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-02 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-02 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-02 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-03 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-03-dehydrated-report.md | blob=d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea | bytes=2499
+- R2 module/graph original: RESEARCH/daily/2026-10-03-cortex-selfcheck.md | blob=d4eb48d90f908794ade985e8577f3c82f26e2d74 | bytes=501
+- 2026-10-03 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-03 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-03 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-03 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-03 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-04 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-04-dehydrated-report.md | blob=06f754048910ebe97727f7846e83c42c46105d17 | bytes=2131
+- R2 module/graph original: RESEARCH/daily/2026-10-04-cortex-selfcheck.md | blob=44ad371f641d2854937361a3d295948ebdf3daf7 | bytes=532
+- 2026-10-04 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-04 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-04 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-04 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-04 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-05 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-05-dehydrated-report.md | blob=bd0f0757b545314a58aee6cc2590c031a990c8a7 | bytes=1681
+- R2 module/graph original: RESEARCH/daily/2026-10-05-cortex-selfcheck.md | blob=bbbbe15a0d3e335cfb477ec1b73b73918a60623f | bytes=437
+- 2026-10-05 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-05 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-05 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-05 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-05 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-06 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-06-dehydrated-report.md | blob=ca6e5cc558adafaae484c7c42466385e7b9e356f | bytes=2679
+- R2 module/graph original: RESEARCH/daily/2026-10-06-cortex-selfcheck.md | blob=5efa4bd6be58adbba8ee8b68fddd0bd0626342fe | bytes=540
+- 2026-10-06 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-06 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-06 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-06 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-06 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-07 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-07-dehydrated-report.md | blob=c17f5a35ab84885c075f1230cefb39a9b54e3660 | bytes=2343
+- R2 module/graph original: RESEARCH/daily/2026-10-07-cortex-selfcheck.md | blob=0b12cdd1bbd9bc683c7829bda048521dfb2be702 | bytes=541
+- 2026-10-07 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-07 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-07 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-07 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-07 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-08 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-08-dehydrated-report.md | blob=d604969e0fd1d47c827512d194f83a798f8d71c5 | bytes=2227
+- R2 module/graph original: RESEARCH/daily/2026-10-08-cortex-selfcheck.md | blob=6fe4ac75864f05555c333ad4bda140ad34014640 | bytes=656
+- 2026-10-08 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-08 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-08 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-08 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-08 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-09 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-09-dehydrated-report.md | blob=96662ee6cdc49962e7a63b68e38f05ab38e0f238 | bytes=1980
+- R2 module/graph original: RESEARCH/daily/2026-10-09-cortex-selfcheck.md | blob=4bb85f31d9b8cead4d53b28acff68b1aee954ed3 | bytes=500
+- 2026-10-09 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-09 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-09 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-09 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-09 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-10 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-10-dehydrated-report.md | blob=b8ee911a8bbcd1a20dafa20440c1a3c8770124ca | bytes=2208
+- R2 module/graph original: RESEARCH/daily/2026-10-10-cortex-selfcheck.md | blob=4b63feedb2474542b2daaf147acfc0e17bddd7bb | bytes=533
+- 2026-10-10 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-10 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-10 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-10 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-10 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-11 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-11-dehydrated-report.md | blob=b5d65dba8c8c3061e2acf1dda724a72d9272f398 | bytes=2686
+- R2 module/graph original: RESEARCH/daily/2026-10-11-cortex-selfcheck.md | blob=1d19d939fa08ecf16370d69d00d60fc3357b43f1 | bytes=422
+- 2026-10-11 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-11 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-11 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-11 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-11 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-12 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-12-dehydrated-report.md | blob=092b1e5e6c86a3cb1cdf8786728cc6411efcc527 | bytes=2522
+- R2 module/graph original: RESEARCH/daily/2026-10-12-cortex-selfcheck.md | blob=e62e93d18ba9340972f601ce790eaa7c971beb38 | bytes=681
+- 2026-10-12 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-12 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-12 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-12 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-12 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-13 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-13-dehydrated-report.md | blob=c151b273f54e97824c8848a888b69b4ba8929056 | bytes=2582
+- R2 module/graph original: RESEARCH/daily/2026-10-13-cortex-selfcheck.md | blob=3c910367c6c999168624534538bceca43e55ec97 | bytes=1511
+- 2026-10-13 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-13 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-13 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-13 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-13 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-14 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-14-dehydrated-report.md | blob=2fe91a00152dea66b6f32d852bea36bd97b83246 | bytes=3389
+- R2 module/graph original: RESEARCH/daily/2026-10-14-cortex-selfcheck.md | blob=1757e5347af76d59a7cf06ff31895b8c1188bd79 | bytes=473
+- 2026-10-14 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-14 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-14 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-14 derived status: AGGREGATE_STATUS_FIELD_NOT_IDENTICAL_TO_OTHER_DAYS
+- 2026-10-14 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-15 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-15-dehydrated-report.md | blob=e5e0420106de615931142f31dac144676263a14c | bytes=1898
+- R2 module/graph original: RESEARCH/daily/2026-10-15-cortex-selfcheck.md | blob=4268c0bf46022034b35be15b95f4c51283d42252 | bytes=450
+- 2026-10-15 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-15 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-15 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-15 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-15 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-16 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-16-dehydrated-report.md | blob=12c0f21afd7e53c51955c7b7a69416cbe15a69a8 | bytes=1847
+- R2 module/graph original: RESEARCH/daily/2026-10-16-cortex-selfcheck.md | blob=224b9352213935d06d6a3cd003f4a1924d4fa76f | bytes=471
+- 2026-10-16 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-16 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-16 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-16 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-16 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-17 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-17-dehydrated-report.md | blob=892352813b1268fbae37f1b0117dfa9437a1a64c | bytes=1764
+- R2 module/graph original: RESEARCH/daily/2026-10-17-cortex-selfcheck.md | blob=1e045734dd6a0c24fb3bb8966b7da3153bb0cc64 | bytes=497
+- 2026-10-17 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-17 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-17 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-17 derived status: HISTORICAL_A1_RETAINED_NO_NEW_VALIDATION
+- 2026-10-17 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+#### 2026-10-18 | observed data and selfcheck are different evidence
+- R1 ingestion original: RESEARCH/daily/2026-10-18-dehydrated-report.md | blob=1ccb9cdacc610a862439ed3e6092c404e450e550 | bytes=2948
+- R2 module/graph original: RESEARCH/daily/2026-10-18-cortex-selfcheck.md | blob=87bd94f0e6693732c08f81967aa763aa3621189d | bytes=433
+- 2026-10-18 accepted/rejected signal taxonomy: attempt, accepted snippet, rejection, rollback and graph injection require distinct receipts
+- 2026-10-18 cross-module relation: R2 schema/module health does not independently re-run R1 ingestion, inspect external claims or verify a shared persistent database
+- 2026-10-18 store identity gate: no current graph-node adoption may be inferred solely from both files existing on main
+- 2026-10-18 derived status: W42_R3_AND_R4_NATIVE_RELATIONS_ADMITTED
+- 2026-10-18 maintenance evidence credit: Git blob custody only, no new independently run R1/R2/SQLite test
+
+### W40–W42 source and independent reference topology
+- Weekly RESEARCH/weekly/2026-W40-alignment-report.md @ a054f913c3c5be71629c7625744eb6957094559d / 4004 bytes; original producer scope remains authoritative
+  - R3 numeric convergence/transition count must keep its own window/origin denominator; R4 reference graph is not runtime graph verification
+- Weekly RESEARCH/weekly/2026-W40-reference-audit.md @ e8eee2552d27f29c2e9fbd513f879cbaa1087d8d / 1397 bytes; original producer scope remains authoritative
+  - R3 numeric convergence/transition count must keep its own window/origin denominator; R4 reference graph is not runtime graph verification
+- Weekly RESEARCH/weekly/2026-W41-alignment-report.md @ 2575a4870ad459b71f992e1d2209cfc4fc9706a5 / 2353 bytes; original producer scope remains authoritative
+  - R3 numeric convergence/transition count must keep its own window/origin denominator; R4 reference graph is not runtime graph verification
+- Weekly RESEARCH/weekly/2026-W41-reference-audit.md @ 97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba / 2464 bytes; original producer scope remains authoritative
+  - R3 numeric convergence/transition count must keep its own window/origin denominator; R4 reference graph is not runtime graph verification
+- Weekly RESEARCH/weekly/2026-W42-alignment-report.md @ b8bf89d18c16ec2953f5ef947be20b1016f56596 / 4534 bytes; original producer scope remains authoritative
+  - R3 numeric convergence/transition count must keep its own window/origin denominator; R4 reference graph is not runtime graph verification
+- Weekly RESEARCH/weekly/2026-W42-reference-audit.md @ 3aa52e5e66e6e6e6a2ff193342ed816d11ade8bd / 1773 bytes; original producer scope remains authoritative
+  - R3 numeric convergence/transition count must keep its own window/origin denominator; R4 reference graph is not runtime graph verification
+
+### A2 reconciliation and state gates
+- R3 W42 corrected report limits hard rollback date count to 7 W42 Daily file presences and recognizes 19 cross-period original dates as separate
+- Synthetic and operational transition quantities remain NOT_COMPUTED where source event origin cannot be separated
+- R3 FTS5 top-result stable on four selected lexical queries cannot certify general semantic convergence
+- Oct18 R1 rejected-input hard rollback has no proven matching persisted graph update; R2 remained INDETERMINATE_EMPTY_STATE
+- Source-date identities found: 36/36; current Git path coverage is not independently established runtime continuity
+- 2026-10 Monthly cognition review remains OPEN, not final naturally completed
+- Previous A1, native research content, audit log and existing corrections retained; no new run, reference publication or theorem credited
+- Actual code/test/SQLite store verification from this maintenance: NOT_EXECUTED
+- A2 result: W42_GAP_AWARE_BOUNDED_ALIGNMENT / FULL_18_DAY_SOURCE_RELATION / NO_VERIFIED_PERSISTENT_TRANSFER
