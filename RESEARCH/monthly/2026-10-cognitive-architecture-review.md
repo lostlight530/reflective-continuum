@@ -5941,3 +5941,143 @@ DUPLICATE_EVIDENCE_CREDIT
 - Previous A1, native research content, audit log and existing corrections retained; no new run, reference publication or theorem credited
 - Actual code/test/SQLite store verification from this maintenance: NOT_EXECUTED
 - A2 result: W42_GAP_AWARE_BOUNDED_ALIGNMENT / FULL_18_DAY_SOURCE_RELATION / NO_VERIFIED_PERSISTENT_TRANSFER
+
+
+## 2026-10-19 A1 independent evidence successor | reflective 2026-10-01..18
+- Run ID: GPT6-A1-OCT19-REFLECTIVE-80aeb450c386
+- Producer: GPT-6 OpenAI cloud external independent reviewer. This is not original Jules research or tests.
+- Base main SHA: 80aeb450c3867ce00c1d949d737d5c0a5794744e; pre-append owner blob: f468e3ac75799abdb39f82aab5d3e451112c337c.
+- Cutoff: October 1–18 inclusive; October 19 native source objects reserved for A2.
+- Original A1 historical versions retained; this is a new source-time reconciliation after the Oct19 native PRs were merged.
+- Source denominator: 36 dated Daily artifacts, 6 W40–42 weekly artifacts, 4 contract/registry/index objects.
+- Verification: exact current-main git tree SHA + size and inherited owner path/SHA references; no native executable checker or runtime loop replay.
+- Current October month owner remains OPEN; original month-end final NOT_DUE.
+- This A1 neither modifies primary Jules artifacts nor creates an experiment, independent source-window or durable governance rule.
+
+### Exact current-main artifacts and independent source custody decisions
+- CONTRACT_OR_INDEX | `GOVERNANCE/MAINTENANCE.md` | git_blob=`d005dbcf054389c81867743fd98d90a5b642428b` | 6807 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository contract and log are not a new monthly run.
+- CONTRACT_OR_INDEX | `ingestion.log` | git_blob=`ed64875bfa831098fbab752ddbb07ee861801998` | 54762 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository contract and log are not a new monthly run.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` | git_blob=`4cef741f0b59c60f1360c8dcfac5387c71d56394` | 491 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-01-cortex-selfcheck.md ; current main source blob  4cef741f0b59c60f1360c8dcfac5387c71d56394 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-01-dehydrated-report.md` | git_blob=`032da79e77e12d350a7644682768ea85da99c7ef` | 2480 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-01-dehydrated-report.md ; current main source blob  032da79e77e12d350a7644682768ea85da99c7ef .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-02-cortex-selfcheck.md` | git_blob=`7c1617a59b2360e847d04365c11d1a1423c3981a` | 377 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-02-cortex-selfcheck.md ; current main source blob  7c1617a59b2360e847d04365c11d1a1423c3981a .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-02-dehydrated-report.md` | git_blob=`10e8962cda344f5e70ce09d19719a31e0eb30bf8` | 2301 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-02-dehydrated-report.md ; current main source blob  10e8962cda344f5e70ce09d19719a31e0eb30bf8 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-03-cortex-selfcheck.md` | git_blob=`d4eb48d90f908794ade985e8577f3c82f26e2d74` | 501 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-03-cortex-selfcheck.md ; current main source blob  d4eb48d90f908794ade985e8577f3c82f26e2d74 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-03-dehydrated-report.md` | git_blob=`d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea` | 2499 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-03-dehydrated-report.md ; current main source blob  d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-04-cortex-selfcheck.md` | git_blob=`44ad371f641d2854937361a3d295948ebdf3daf7` | 532 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-04-cortex-selfcheck.md ; current main source blob  44ad371f641d2854937361a3d295948ebdf3daf7 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-04-dehydrated-report.md` | git_blob=`06f754048910ebe97727f7846e83c42c46105d17` | 2131 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-04-dehydrated-report.md ; current main source blob  06f754048910ebe97727f7846e83c42c46105d17 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-05-cortex-selfcheck.md` | git_blob=`bbbbe15a0d3e335cfb477ec1b73b73918a60623f` | 437 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-05-cortex-selfcheck.md ; current main source blob  bbbbe15a0d3e335cfb477ec1b73b73918a60623f .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-05-dehydrated-report.md` | git_blob=`bd0f0757b545314a58aee6cc2590c031a990c8a7` | 1681 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-05-dehydrated-report.md ; current main source blob  bd0f0757b545314a58aee6cc2590c031a990c8a7 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-06-cortex-selfcheck.md` | git_blob=`5efa4bd6be58adbba8ee8b68fddd0bd0626342fe` | 540 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-06-cortex-selfcheck.md ; current main source blob  5efa4bd6be58adbba8ee8b68fddd0bd0626342fe .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-06-dehydrated-report.md` | git_blob=`ca6e5cc558adafaae484c7c42466385e7b9e356f` | 2679 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-06-dehydrated-report.md ; current main source blob  ca6e5cc558adafaae484c7c42466385e7b9e356f .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-07-cortex-selfcheck.md` | git_blob=`0b12cdd1bbd9bc683c7829bda048521dfb2be702` | 541 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-07-cortex-selfcheck.md ; current main source blob  0b12cdd1bbd9bc683c7829bda048521dfb2be702 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-07-dehydrated-report.md` | git_blob=`c17f5a35ab84885c075f1230cefb39a9b54e3660` | 2343 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-07-dehydrated-report.md ; current main source blob  c17f5a35ab84885c075f1230cefb39a9b54e3660 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-08-cortex-selfcheck.md` | git_blob=`6fe4ac75864f05555c333ad4bda140ad34014640` | 656 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-08-cortex-selfcheck.md ; current main source blob  6fe4ac75864f05555c333ad4bda140ad34014640 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-08-dehydrated-report.md` | git_blob=`d604969e0fd1d47c827512d194f83a798f8d71c5` | 2227 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-08-dehydrated-report.md ; current main source blob  d604969e0fd1d47c827512d194f83a798f8d71c5 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-09-cortex-selfcheck.md` | git_blob=`4bb85f31d9b8cead4d53b28acff68b1aee954ed3` | 500 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-09-cortex-selfcheck.md ; current main source blob  4bb85f31d9b8cead4d53b28acff68b1aee954ed3 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-09-dehydrated-report.md` | git_blob=`96662ee6cdc49962e7a63b68e38f05ab38e0f238` | 1980 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-09-dehydrated-report.md ; current main source blob  96662ee6cdc49962e7a63b68e38f05ab38e0f238 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-10-cortex-selfcheck.md` | git_blob=`4b63feedb2474542b2daaf147acfc0e17bddd7bb` | 533 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-10-cortex-selfcheck.md ; current main source blob  4b63feedb2474542b2daaf147acfc0e17bddd7bb .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-10-dehydrated-report.md` | git_blob=`b8ee911a8bbcd1a20dafa20440c1a3c8770124ca` | 2208 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-10-dehydrated-report.md ; current main source blob  b8ee911a8bbcd1a20dafa20440c1a3c8770124ca .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-11-cortex-selfcheck.md` | git_blob=`1d19d939fa08ecf16370d69d00d60fc3357b43f1` | 422 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-11-cortex-selfcheck.md ; current main source blob  1d19d939fa08ecf16370d69d00d60fc3357b43f1 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-11-dehydrated-report.md` | git_blob=`b5d65dba8c8c3061e2acf1dda724a72d9272f398` | 2686 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-11-dehydrated-report.md ; current main source blob  b5d65dba8c8c3061e2acf1dda724a72d9272f398 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-12-cortex-selfcheck.md` | git_blob=`e62e93d18ba9340972f601ce790eaa7c971beb38` | 681 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-12-cortex-selfcheck.md ; current main source blob  e62e93d18ba9340972f601ce790eaa7c971beb38 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-12-dehydrated-report.md` | git_blob=`092b1e5e6c86a3cb1cdf8786728cc6411efcc527` | 2522 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-12-dehydrated-report.md ; current main source blob  092b1e5e6c86a3cb1cdf8786728cc6411efcc527 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-13-cortex-selfcheck.md` | git_blob=`3c910367c6c999168624534538bceca43e55ec97` | 1511 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-13-cortex-selfcheck.md ; current main source blob  3c910367c6c999168624534538bceca43e55ec97 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-13-dehydrated-report.md` | git_blob=`c151b273f54e97824c8848a888b69b4ba8929056` | 2582 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-13-dehydrated-report.md ; current main source blob  c151b273f54e97824c8848a888b69b4ba8929056 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-14-cortex-selfcheck.md` | git_blob=`1757e5347af76d59a7cf06ff31895b8c1188bd79` | 473 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original selfcheck path:  RESEARCH/daily/2026-10-14-cortex-selfcheck.md ; current main source blob  1757e5347af76d59a7cf06ff31895b8c1188bd79 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-14-dehydrated-report.md` | git_blob=`2fe91a00152dea66b6f32d852bea36bd97b83246` | 3389 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original producer path:  RESEARCH/daily/2026-10-14-dehydrated-report.md ; current main source blob  2fe91a00152dea66b6f32d852bea36bd97b83246 .; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-15-cortex-selfcheck.md` | git_blob=`4268c0bf46022034b35be15b95f4c51283d42252` | 450 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Native R2 source:  RESEARCH/daily/2026-10-15-cortex-selfcheck.md , current blob  4268c0bf46022034b35be15b95f4c51283d42252 ; graph nodes=0 and edges=0 con; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-15-dehydrated-report.md` | git_blob=`e5e0420106de615931142f31dac144676263a14c` | 1898 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Native R1 source:  RESEARCH/daily/2026-10-15-dehydrated-report.md , current blob  e5e0420106de615931142f31dac144676263a14c ; source signal convergence cl; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-16-cortex-selfcheck.md` | git_blob=`224b9352213935d06d6a3cd003f4a1924d4fa76f` | 471 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 original health  RESEARCH/daily/2026-10-16-cortex-selfcheck.md , blob  224b9352213935d06d6a3cd003f4a1924d4fa76f; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-16-dehydrated-report.md` | git_blob=`12c0f21afd7e53c51955c7b7a69416cbe15a69a8` | 1847 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 original ingestion  RESEARCH/daily/2026-10-16-dehydrated-report.md , blob  12c0f21afd7e53c51955c7b7a69416cbe15a69a8; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-17-cortex-selfcheck.md` | git_blob=`1e045734dd6a0c24fb3bb8966b7da3153bb0cc64` | 497 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Native R2 selfcheck: RESEARCH/daily/2026-10-17-cortex-selfcheck.md / Git blob 1e045734dd6a0c24fb3bb8966b7da3153bb0cc64; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-17-dehydrated-report.md` | git_blob=`892352813b1268fbae37f1b0117dfa9437a1a64c` | 1764 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Native R1 report: RESEARCH/daily/2026-10-17-dehydrated-report.md / Git blob 892352813b1268fbae37f1b0117dfa9437a1a64c; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-18-cortex-selfcheck.md` | git_blob=`87bd94f0e6693732c08f81967aa763aa3621189d` | 433 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R2 module/graph original: RESEARCH/daily/2026-10-18-cortex-selfcheck.md   blob=87bd94f0e6693732c08f81967aa763aa3621189d   bytes=433; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/2026-10-18-dehydrated-report.md` | git_blob=`1ccb9cdacc610a862439ed3e6092c404e450e550` | 2948 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - R1 ingestion original: RESEARCH/daily/2026-10-18-dehydrated-report.md   blob=1ccb9cdacc610a862439ed3e6092c404e450e550   bytes=2948; disposition=SOURCE_IDENTITY_RETAINED; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R1_R2_DAILY | `RESEARCH/daily/README.md` | git_blob=`29e0b9869fcbb7dab9dd0d0e7e45442633af4ac5` | 1659 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=R1 ingestion and R2 DB/opened-store evidence must not be equated.
+- GAS_R3_R4_WEEKLY | `RESEARCH/weekly/2026-W40-alignment-report.md` | git_blob=`a054f913c3c5be71629c7625744eb6957094559d` | 4004 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original weekly native file  RESEARCH/weekly/2026-W40-alignment-report.md  retained at blob  a054f913c3c5be71629c7625744eb6957094559d .; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly alignment and reference audit are not evidence of same SQLite store.
+- GAS_R3_R4_WEEKLY | `RESEARCH/weekly/2026-W40-reference-audit.md` | git_blob=`e8eee2552d27f29c2e9fbd513f879cbaa1087d8d` | 1397 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original weekly native file  RESEARCH/weekly/2026-W40-reference-audit.md  retained at blob  e8eee2552d27f29c2e9fbd513f879cbaa1087d8d .; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly alignment and reference audit are not evidence of same SQLite store.
+- GAS_R3_R4_WEEKLY | `RESEARCH/weekly/2026-W41-alignment-report.md` | git_blob=`2575a4870ad459b71f992e1d2209cfc4fc9706a5` | 2353 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original weekly native file  RESEARCH/weekly/2026-W41-alignment-report.md  retained at blob  2575a4870ad459b71f992e1d2209cfc4fc9706a5 .; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly alignment and reference audit are not evidence of same SQLite store.
+- GAS_R3_R4_WEEKLY | `RESEARCH/weekly/2026-W41-reference-audit.md` | git_blob=`97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba` | 2464 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: - Original weekly native file  RESEARCH/weekly/2026-W41-reference-audit.md  retained at blob  97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba .; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly alignment and reference audit are not evidence of same SQLite store.
+- GAS_R3_R4_WEEKLY | `RESEARCH/weekly/2026-W42-alignment-report.md` | git_blob=`b8bf89d18c16ec2953f5ef947be20b1016f56596` | 4534 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: -  RESEARCH/weekly/2026-W42-alignment-report.md  Git blob  b8bf89d18c16ec2953f5ef947be20b1016f56596  / 4534 bytes; time gate OCT18_SOURCE_NOT_A1_INPUT; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly alignment and reference audit are not evidence of same SQLite store.
+- GAS_R3_R4_WEEKLY | `RESEARCH/weekly/2026-W42-reference-audit.md` | git_blob=`3aa52e5e66e6e6e6a2ff193342ed816d11ade8bd` | 1773 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: -  RESEARCH/weekly/2026-W42-reference-audit.md  Git blob  3aa52e5e66e6e6e6a2ff193342ed816d11ade8bd  / 1773 bytes; time gate OCT18_SOURCE_NOT_A1_INPUT; disposition=SOURCE_IDENTITY_RETAINED; relation=weekly alignment and reference audit are not evidence of same SQLite store.
+- CONTRACT_OR_INDEX | `semantic_drift_audit.log` | git_blob=`372f9e46a403f2e629d6887c76e37d7aa9baa739` | 5910 bytes; exact path and immutable content identity observed.
+  - Inherited evidence: NO_EXACT_PRIOR_OWNER_SHA_REFERENCE; requires independent semantic caution; disposition=UNKNOWN_NO_EXACT_PRIOR_ANCHOR; relation=repository contract and log are not a new monthly run.
+
+### Distinct date/producer relation decisions
+- 2026-10-01: 2026-10-01-cortex-selfcheck.md@4cef741f0b59 ; 2026-10-01-dehydrated-report.md@032da79e77e1; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-02: 2026-10-02-cortex-selfcheck.md@7c1617a59b23 ; 2026-10-02-dehydrated-report.md@10e8962cda34; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-03: 2026-10-03-cortex-selfcheck.md@d4eb48d90f90 ; 2026-10-03-dehydrated-report.md@d3b3dd21dd56; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-04: 2026-10-04-cortex-selfcheck.md@44ad371f641d ; 2026-10-04-dehydrated-report.md@06f754048910; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-05: 2026-10-05-cortex-selfcheck.md@bbbbe15a0d3e ; 2026-10-05-dehydrated-report.md@bd0f0757b545; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-06: 2026-10-06-cortex-selfcheck.md@5efa4bd6be58 ; 2026-10-06-dehydrated-report.md@ca6e5cc558ad; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-07: 2026-10-07-cortex-selfcheck.md@0b12cdd1bbd9 ; 2026-10-07-dehydrated-report.md@c17f5a35ab84; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-08: 2026-10-08-cortex-selfcheck.md@6fe4ac75864f ; 2026-10-08-dehydrated-report.md@d604969e0fd1; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-09: 2026-10-09-cortex-selfcheck.md@4bb85f31d9b8 ; 2026-10-09-dehydrated-report.md@96662ee6cdc4; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-10: 2026-10-10-cortex-selfcheck.md@4b63feedb247 ; 2026-10-10-dehydrated-report.md@b8ee911a8bbc; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-11: 2026-10-11-cortex-selfcheck.md@1d19d939fa08 ; 2026-10-11-dehydrated-report.md@b5d65dba8c8c; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-12: 2026-10-12-cortex-selfcheck.md@e62e93d18ba9 ; 2026-10-12-dehydrated-report.md@092b1e5e6c86; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-13: 2026-10-13-cortex-selfcheck.md@3c910367c6c9 ; 2026-10-13-dehydrated-report.md@c151b273f54e; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-14: 2026-10-14-cortex-selfcheck.md@1757e5347af7 ; 2026-10-14-dehydrated-report.md@2fe91a00152d; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-15: 2026-10-15-cortex-selfcheck.md@4268c0bf4602 ; 2026-10-15-dehydrated-report.md@e5e0420106de; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-16: 2026-10-16-cortex-selfcheck.md@224b93522139 ; 2026-10-16-dehydrated-report.md@12c0f21afd7e; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-17: 2026-10-17-cortex-selfcheck.md@1e045734dd6a ; 2026-10-17-dehydrated-report.md@892352813b12; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+- 2026-10-18: 2026-10-18-cortex-selfcheck.md@87bd94f0e669 ; 2026-10-18-dehydrated-report.md@1ccb9cdacc61; R1 and R2 are distinct Daily artifacts; date equality does not prove same store; original evidence state retained.
+
+### Cross-window decision and forward handoff
+- Oct19 Reflective native R1 #496 and R2 #497 are now merged; R2 empty graph remains INDETERMINATE_EMPTY_STATE and no cross-store linkage was verified.
+- R2 reported 27 passed/0 failed does not establish graph health; DB identity was NOT_RETAINED and incremental drift NOT_COMPUTED.
+- W40–W42 original weekly revisions remain history; later monthly accumulation cannot assign fresh native execution credit.
+- No source-missing historical state may be upgraded by a current tree inventory.
+- The exact source owner/anchor, Git blob identity and agent execution plane remain independent evidence.
+- A1 source content was not all replayed through the native checker; any prior owner interpretations are inherited, not independently reproved.
+- All dated Daily files, original Weekly records, current indices and previously merged corrections remain byte-identical.
+- Natural-month closure and D7/D10/D14/D30 audits are independent; neither is completed by this source-custody census.
+- There is no host runtime, implementation proof or independent external theorem revalidation credited by this maintenance.
+- A1 bounded result: 36 dated Daily objects / 6 weekly objects / 4 supporting current-main artifacts; 42 exact previous-owner path/SHA links identified.
+- A2 must wait for all ten A1 successors merged and fresh-read of every main SHA.
+- Maintenance Provenance: INDEPENDENT_GPT_MAINTENANCE; canonical owner-level Record Provenance unchanged.
