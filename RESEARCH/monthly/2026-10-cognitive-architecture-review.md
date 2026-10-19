@@ -6081,3 +6081,138 @@ DUPLICATE_EVIDENCE_CREDIT
 - A1 bounded result: 36 dated Daily objects / 6 weekly objects / 4 supporting current-main artifacts; 42 exact previous-owner path/SHA links identified.
 - A2 must wait for all ten A1 successors merged and fresh-read of every main SHA.
 - Maintenance Provenance: INDEPENDENT_GPT_MAINTENANCE; canonical owner-level Record Provenance unchanged.
+
+
+
+## GPT6-A2-SUCCESSOR-2026-10-19 | 19-day R1/R2 + W40–W42 evidence relation
+- Post-A1 #498 exact current main: `414a5083c5da43147f0277e5778fb46855019d1e`; canonical R5 owner preappend SHA `a61b74c5e7177bed98cbf11609a461c28cb50c13`.
+- Review role GPT-6 cloud model / Independent GPT Maintainer, not Jules-native R1/R2 task executor.
+- A1 Oct01–18 fully inherited; A2 Oct01–19 includes merged Jules R1 #496 and R2 #497 with original run/evidence scope.
+- Original R2 current Nodes 0 / Edges 0, INDETERMINATE_EMPTY_STATE, Incremental Drift NOT_COMPUTED, DB_IDENTITY_NOT_RETAINED, SAME_STORE_UNVERIFIED.
+- R1 ingestion success/rollback does not prove R2 shared SQLite persistence, external source truth, healthy knowledge graph, operational convergence or code/runtime PASS.
+- Historical W42 R3/R4 reference alignment and retrospective corrections retained as source-time evidence; no new R5 natural-month final.
+### Exact current 19×2 Daily source owner objects
+- DATE 2026-10-01 | `RESEARCH/daily/2026-10-01-dehydrated-report.md` | blob=032da79e77e12d350a7644682768ea85da99c7ef | bytes=2480 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-01 | `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` | blob=4cef741f0b59c60f1360c8dcfac5387c71d56394 | bytes=491 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-02 | `RESEARCH/daily/2026-10-02-dehydrated-report.md` | blob=10e8962cda344f5e70ce09d19719a31e0eb30bf8 | bytes=2301 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-02 | `RESEARCH/daily/2026-10-02-cortex-selfcheck.md` | blob=7c1617a59b2360e847d04365c11d1a1423c3981a | bytes=377 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-03 | `RESEARCH/daily/2026-10-03-dehydrated-report.md` | blob=d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea | bytes=2499 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-03 | `RESEARCH/daily/2026-10-03-cortex-selfcheck.md` | blob=d4eb48d90f908794ade985e8577f3c82f26e2d74 | bytes=501 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-04 | `RESEARCH/daily/2026-10-04-dehydrated-report.md` | blob=06f754048910ebe97727f7846e83c42c46105d17 | bytes=2131 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-04 | `RESEARCH/daily/2026-10-04-cortex-selfcheck.md` | blob=44ad371f641d2854937361a3d295948ebdf3daf7 | bytes=532 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-05 | `RESEARCH/daily/2026-10-05-dehydrated-report.md` | blob=bd0f0757b545314a58aee6cc2590c031a990c8a7 | bytes=1681 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-05 | `RESEARCH/daily/2026-10-05-cortex-selfcheck.md` | blob=bbbbe15a0d3e335cfb477ec1b73b73918a60623f | bytes=437 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-06 | `RESEARCH/daily/2026-10-06-dehydrated-report.md` | blob=ca6e5cc558adafaae484c7c42466385e7b9e356f | bytes=2679 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-06 | `RESEARCH/daily/2026-10-06-cortex-selfcheck.md` | blob=5efa4bd6be58adbba8ee8b68fddd0bd0626342fe | bytes=540 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-07 | `RESEARCH/daily/2026-10-07-dehydrated-report.md` | blob=c17f5a35ab84885c075f1230cefb39a9b54e3660 | bytes=2343 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-07 | `RESEARCH/daily/2026-10-07-cortex-selfcheck.md` | blob=0b12cdd1bbd9bc683c7829bda048521dfb2be702 | bytes=541 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-08 | `RESEARCH/daily/2026-10-08-dehydrated-report.md` | blob=d604969e0fd1d47c827512d194f83a798f8d71c5 | bytes=2227 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-08 | `RESEARCH/daily/2026-10-08-cortex-selfcheck.md` | blob=6fe4ac75864f05555c333ad4bda140ad34014640 | bytes=656 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-09 | `RESEARCH/daily/2026-10-09-dehydrated-report.md` | blob=96662ee6cdc49962e7a63b68e38f05ab38e0f238 | bytes=1980 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-09 | `RESEARCH/daily/2026-10-09-cortex-selfcheck.md` | blob=4bb85f31d9b8cead4d53b28acff68b1aee954ed3 | bytes=500 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-10 | `RESEARCH/daily/2026-10-10-dehydrated-report.md` | blob=b8ee911a8bbcd1a20dafa20440c1a3c8770124ca | bytes=2208 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-10 | `RESEARCH/daily/2026-10-10-cortex-selfcheck.md` | blob=4b63feedb2474542b2daaf147acfc0e17bddd7bb | bytes=533 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-11 | `RESEARCH/daily/2026-10-11-dehydrated-report.md` | blob=b5d65dba8c8c3061e2acf1dda724a72d9272f398 | bytes=2686 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-11 | `RESEARCH/daily/2026-10-11-cortex-selfcheck.md` | blob=1d19d939fa08ecf16370d69d00d60fc3357b43f1 | bytes=422 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-12 | `RESEARCH/daily/2026-10-12-dehydrated-report.md` | blob=092b1e5e6c86a3cb1cdf8786728cc6411efcc527 | bytes=2522 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-12 | `RESEARCH/daily/2026-10-12-cortex-selfcheck.md` | blob=e62e93d18ba9340972f601ce790eaa7c971beb38 | bytes=681 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-13 | `RESEARCH/daily/2026-10-13-dehydrated-report.md` | blob=c151b273f54e97824c8848a888b69b4ba8929056 | bytes=2582 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-13 | `RESEARCH/daily/2026-10-13-cortex-selfcheck.md` | blob=3c910367c6c999168624534538bceca43e55ec97 | bytes=1511 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-14 | `RESEARCH/daily/2026-10-14-dehydrated-report.md` | blob=2fe91a00152dea66b6f32d852bea36bd97b83246 | bytes=3389 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-14 | `RESEARCH/daily/2026-10-14-cortex-selfcheck.md` | blob=1757e5347af76d59a7cf06ff31895b8c1188bd79 | bytes=473 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-15 | `RESEARCH/daily/2026-10-15-dehydrated-report.md` | blob=e5e0420106de615931142f31dac144676263a14c | bytes=1898 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-15 | `RESEARCH/daily/2026-10-15-cortex-selfcheck.md` | blob=4268c0bf46022034b35be15b95f4c51283d42252 | bytes=450 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-16 | `RESEARCH/daily/2026-10-16-dehydrated-report.md` | blob=12c0f21afd7e53c51955c7b7a69416cbe15a69a8 | bytes=1847 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-16 | `RESEARCH/daily/2026-10-16-cortex-selfcheck.md` | blob=224b9352213935d06d6a3cd003f4a1924d4fa76f | bytes=471 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-17 | `RESEARCH/daily/2026-10-17-dehydrated-report.md` | blob=892352813b1268fbae37f1b0117dfa9437a1a64c | bytes=1764 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-17 | `RESEARCH/daily/2026-10-17-cortex-selfcheck.md` | blob=1e045734dd6a0c24fb3bb8966b7da3153bb0cc64 | bytes=497 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-18 | `RESEARCH/daily/2026-10-18-dehydrated-report.md` | blob=1ccb9cdacc610a862439ed3e6092c404e450e550 | bytes=2948 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-18 | `RESEARCH/daily/2026-10-18-cortex-selfcheck.md` | blob=87bd94f0e6693732c08f81967aa763aa3621189d | bytes=433 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-19 | `RESEARCH/daily/2026-10-19-dehydrated-report.md` | blob=b62a081bed1a33d717a592efb7d0cebb4499e329 | bytes=2449 | role=R1 daily ingestion, rollback and bounded source eligibility | A2=ORIGINAL_TASK_SCOPE_INHERITED
+- DATE 2026-10-19 | `RESEARCH/daily/2026-10-19-cortex-selfcheck.md` | blob=801e3b7be8d8cf03c6693c8127e5509bc891fe9a | bytes=1705 | role=R2 local module/database selfcheck and drift decision | A2=ORIGINAL_TASK_SCOPE_INHERITED
+### Cross-day R1→R2 evidence admission gate
+- PAIR 2026-10-01: R1=032da79e77e12d350a76, R2=4cef741f0b59c60f1360; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-02: R1=10e8962cda344f5e70ce, R2=7c1617a59b2360e847d0; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-03: R1=d3b3dd21dd56d92afa3b, R2=d4eb48d90f908794ade9; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-04: R1=06f754048910ebe97727, R2=44ad371f641d28549373; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-05: R1=bd0f0757b545314a58ae, R2=bbbbe15a0d3e335cfb47; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-06: R1=ca6e5cc558adafaae484, R2=5efa4bd6be58adbba8ee; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-07: R1=c17f5a35ab84885c075f, R2=0b12cdd1bbd9bc683c78; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-08: R1=d604969e0fd1d47c8275, R2=6fe4ac75864f05555c33; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-09: R1=96662ee6cdc49962e7a6, R2=4bb85f31d9b8cead4d53; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-10: R1=b8ee911a8bbcd1a20daf, R2=4b63feedb2474542b2da; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-11: R1=b5d65dba8c8c3061e2ac, R2=1d19d939fa08ecf16370; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-12: R1=092b1e5e6c86a3cb1cdf, R2=e62e93d18ba9340972f6; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-13: R1=c151b273f54e97824c88, R2=3c910367c6c999168624; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-14: R1=2fe91a00152dea66b6f3, R2=1757e5347af76d59a7cf; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-15: R1=e5e0420106de61593114, R2=4268c0bf46022034b35b; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-16: R1=12c0f21afd7e53c51955, R2=224b9352213935d06d6a; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-17: R1=892352813b1268fbae37, R2=1e045734dd6a0c24fb3b; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-18: R1=1ccb9cdacc610a862439, R2=87bd94f0e6693732c08f; same date is not proof of same opened store URI/path; historical original per-task store status preserved without inferred runtime link.
+- PAIR 2026-10-19: R1=b62a081bed1a33d717a5, R2=801e3b7be8d8cf03c669; same date is not proof of same opened store URI/path; DB_IDENTITY_NOT_RETAINED / drift NOT_COMPUTED.
+### W40–W42 weekly actual relation and same-window limits
+- WEEKLY `RESEARCH/weekly/2026-W40-alignment-report.md` | sha=a054f913c3c5be71629c7625744eb6957094559d | bytes=4004 | R3 original numeric/transition denominator or R4 reference graph is not independent persisted R1/R2 source truth.
+- WEEKLY `RESEARCH/weekly/2026-W40-reference-audit.md` | sha=e8eee2552d27f29c2e9fbd513f879cbaa1087d8d | bytes=1397 | R3 original numeric/transition denominator or R4 reference graph is not independent persisted R1/R2 source truth.
+- WEEKLY `RESEARCH/weekly/2026-W41-alignment-report.md` | sha=2575a4870ad459b71f992e1d2209cfc4fc9706a5 | bytes=2353 | R3 original numeric/transition denominator or R4 reference graph is not independent persisted R1/R2 source truth.
+- WEEKLY `RESEARCH/weekly/2026-W41-reference-audit.md` | sha=97e7c5bfa39e1c2b6c8832b11712c2e334c2b3ba | bytes=2464 | R3 original numeric/transition denominator or R4 reference graph is not independent persisted R1/R2 source truth.
+- WEEKLY `RESEARCH/weekly/2026-W42-alignment-report.md` | sha=b8bf89d18c16ec2953f5ef947be20b1016f56596 | bytes=4534 | R3 original numeric/transition denominator or R4 reference graph is not independent persisted R1/R2 source truth.
+- WEEKLY `RESEARCH/weekly/2026-W42-reference-audit.md` | sha=3aa52e5e66e6e6e6a2ff193342ed816d11ade8bd | bytes=1773 | R3 original numeric/transition denominator or R4 reference graph is not independent persisted R1/R2 source truth.
+### Existing reference contract and code/test boundary (not new execution)
+- CONTRACT `ADR/ADR-001.md` | git blob=334443e076c43d537841ebae1bd0c0393c0a0a0a | bytes=3598 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-002.md` | git blob=3a4baf190456edcbf4e1c3e4d21decfea0cc5486 | bytes=3470 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-003.md` | git blob=8fe801237faf22863c7e971297509cfd05150e5d | bytes=3461 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-004.md` | git blob=157564ff08bee507bc010776eea1c9596785064b | bytes=3724 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-005.md` | git blob=e415fd343c204a9b8955ecf882329fc523540f75 | bytes=3265 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-006.md` | git blob=06ee5ccedb33321ef236f3137a6bbbb83ef20488 | bytes=3389 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-007.md` | git blob=461db4db666485a1aef61448b3919eb066a8dfa6 | bytes=3211 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-008.md` | git blob=be0cbcaa6499d2d0cd12f8c14338a85464a3d7dc | bytes=3381 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-009.md` | git blob=6107a48a178717770e63ea4fb5926fad9367af6b | bytes=4063 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/ADR-010.md` | git blob=815a19917d39bdaa15c5d53a22480df7d7e8d5f4 | bytes=5770 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `ADR/INDEX.md` | git blob=427a6a95e68958d7fdcb971bde711796c7e05057 | bytes=5669 | role=ADR historical evidence policy; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/__init__.py` | git blob=14ac737c97ade25288d6a50693d4228cf9e4c77e | bytes=338 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/continuum_db.py` | git blob=d284ceba7313288c751762c74ce7f21bd407bcdd | bytes=7240 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/cortex_observer.py` | git blob=1f9f57e6f2995797cd884e6c025542b4cd924a54 | bytes=4638 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/drift_detector.py` | git blob=39ccd4a4b9c22a5a093a0e907c27501b1c1d230f | bytes=1926 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/entropy_analyzer.py` | git blob=16a22defc7d6c2ff85efbd1b7edeb880e0828632 | bytes=2377 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/reflective_validator.py` | git blob=546f530b68f29342db1eee3a00224de6172cad55 | bytes=2942 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/tasks/__init__.py` | git blob=58e079f1b3ad294aea663967f078573cef56a4d8 | bytes=46 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/tasks/convergence_drill.py` | git blob=af18b9f5b6c6e6e601632a8c952f1b19c1b93ea5 | bytes=1245 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/tasks/cortex_selfcheck.py` | git blob=5b20e4159b24071ebb484d802cfabfd75f701ce0 | bytes=1929 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/tasks/insight_morpher.py` | git blob=62c4fec144c7d2e213bb3b3631aa38257c4b3ae4 | bytes=2609 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `CODE/tasks/semantic_drift_audit.py` | git blob=2ff955a97a82cd7b26274f7def7c5b1b5a955070 | bytes=1783 | role=code or reference local task module; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `METHODOLOGY/INDEX.md` | git blob=2bcbf1131d88b3d8e95dc73355ce58ccb299e5ce | bytes=4187 | role=methodology source and limits; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `METHODOLOGY/METH-001-phase-boundary-detection.md` | git blob=bb1030bd90baa1120605446ee9b408997e4bb8fa | bytes=2994 | role=methodology source and limits; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `METHODOLOGY/METH-002-reflective-morphing-protocol.md` | git blob=e40191ca58b2c8a89da39b10d790234b305e5d40 | bytes=3206 | role=methodology source and limits; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `METHODOLOGY/METH-003-alignment-verification.md` | git blob=f6c3e9dc4a384e3ee94407478f36f2b4b1c5fe76 | bytes=3531 | role=methodology source and limits; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `METHODOLOGY/METH-004-cognitive-divergence-rollback.md` | git blob=5b61666cc6c97eef3d16136f3c8d5ecdf509cbb1 | bytes=3238 | role=methodology source and limits; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `METHODOLOGY/METH-005-evidence-continuity-reconciliation.md` | git blob=597025bce8de86125e6d0db41e340097635b3f02 | bytes=7596 | role=methodology source and limits; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/__init__.py` | git blob=c2e5fec80d744a72c36002d3213d8ab88d4f4995 | bytes=42 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_analysis.py` | git blob=6d8cdcf02216b3752a0cf3852c5d498a1fff702b | bytes=1255 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_architecture.py` | git blob=7a28ae1a71ab647db9d7f43ce39fa19260e16304 | bytes=611 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_core.py` | git blob=44dd32d17e68cbf19dc4a53abaf17f1ac069392f | bytes=883 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_database.py` | git blob=0c325c912eb7a5da8196c883721cd40ea2bb77d4 | bytes=1575 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_observer.py` | git blob=20bb88617ebc13332e8eb56e864bd224a0a99dc9 | bytes=1382 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_repository.py` | git blob=9be10993c52cf3ab4a5647706688694f200c2198 | bytes=3859 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_scope_guard.py` | git blob=6c72752f95bf49ce04192b613e402c9ee24487e4 | bytes=1236 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_tasks.py` | git blob=f5ed61e5295c02b4d1d2b456f207f2536d054d29 | bytes=1137 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+- CONTRACT `tests/test_validator.py` | git blob=9bbe7156a0e4a631d628b5e64593cbb0e9928aa3 | bytes=942 | role=test contract, source not runner receipt; code/test reference alone cannot prove current Native R1/R2 execution.
+### N-day producer-state sample from current main
+- OBS RESEARCH/daily/2026-10-19-dehydrated-report.md: Total Signals Processed: 3.
+- OBS RESEARCH/daily/2026-10-19-dehydrated-report.md: Accepted: 2.
+- OBS RESEARCH/daily/2026-10-19-dehydrated-report.md: Rejected: 1.
+- OBS RESEARCH/daily/2026-10-19-dehydrated-report.md: Synthesis Status: NOT_PERFORMED.
+- OBS RESEARCH/daily/2026-10-19-dehydrated-report.md: Knowledge Graph Injection: NOT_EXECUTED.
+- OBS RESEARCH/daily/2026-10-19-dehydrated-report.md: Synthesis Status: NOT_PERFORMED.
+- OBS RESEARCH/daily/2026-10-19-cortex-selfcheck.md: Nodes: 0.
+- OBS RESEARCH/daily/2026-10-19-cortex-selfcheck.md: Edges: 0.
+- OBS RESEARCH/daily/2026-10-19-cortex-selfcheck.md: Context: INDETERMINATE_EMPTY_STATE.
+- OBS RESEARCH/daily/2026-10-19-cortex-selfcheck.md: NOT_COMPUTED.
+- OBS RESEARCH/daily/2026-10-19-cortex-selfcheck.md: Total: 27.
+- OBS RESEARCH/daily/2026-10-19-cortex-selfcheck.md: Passed: 27.
+- R1 Oct19: rejected signal with HARD_ROLLBACK, synthesis NOT_PERFORMED, graph injection NOT_EXECUTED; native PR #496 merged.
+- R2 Oct19: 27 passed/0 failed producer-reported module tests, Errors/Skipped NOT_REPORTED, opened DB identity UNKNOWN; native PR #497 corrected and merged.
+- No October 19 source-time same-store assertion; no extra SQLite run, PageRank/FTS semantic convergence, published cognitive theorem or independent research.
+- R5 Monthly 2026-10 OPEN / NOT_NATURAL_MONTH_FINAL; per-file current Git custody 38/38 does not constitute runtime graph continuity.
+- Native checker/test suite, real database persistence and external source comparison NOT_EXECUTED by GPT independent reviewer.
+- A2 disposition: A1_INHERITED / OCT19_R1_R2_BOUNDED / SOURCE_CUSTODY_38_OF_38 / EMPTY_STORE_UNCERTAIN / MONTH_OPEN.
+NATIVE_MODIFICATION_NOTE: append only R5 month owner; original Jules R1/R2, R3/R4, CODE, logs and tests unchanged.
