@@ -6216,3 +6216,16 @@ DUPLICATE_EVIDENCE_CREDIT
 - Native checker/test suite, real database persistence and external source comparison NOT_EXECUTED by GPT independent reviewer.
 - A2 disposition: A1_INHERITED / OCT19_R1_R2_BOUNDED / SOURCE_CUSTODY_38_OF_38 / EMPTY_STORE_UNCERTAIN / MONTH_OPEN.
 NATIVE_MODIFICATION_NOTE: append only R5 month owner; original Jules R1/R2, R3/R4, CODE, logs and tests unchanged.
+
+
+## A2_CURRENT_MONTH_RELATION_2026-10-20 — ten-A1 gated successor
+
+- Source main after all ten A1 merged: `56afe55770e71df5180a769de65b294e87463095`
+- N−1 A1 source custody `historical-audits/2026-10/2026-10-20-a1-source-custody.md` blob `5a5a23ed84b374ff02c021a80ddc0427e00fffbb` has 19 original R1/R2 pairs
+- N-day current relation `historical-audits/2026-10/2026-10-20-a2-month-relation.md` has 20 original pairs (40 exact source Git objects) after Oct20 Jules PR #500/#501
+- 2026-10-20 R1: two accepted inputs / one rejected / HARD_ROLLBACK, Synthesis NOT_PERFORMED, Graph Injection NOT_EXECUTED, no implication of durable store
+- 2026-10-20 R2: 0 nodes / 0 edges, INDETERMINATE_EMPTY_STATE and module-test success only; shared store identity and graph durability unverified
+- Both Jules producers remain owners, original report/history untouched; the R2 branch coordination merge only changed Git ancestry
+- R5 October month still OPEN / NOT_NATURAL_MONTH_FINAL, new A2 research or experiment credit 0
+- SQLite persistence, exact DB open path, cross-task replay, native full suite and publisher-level verification NOT_EXECUTED
+- Current disposition: A2_40_OBJECT_RELATION / R1_PARTIAL_R2_EMPTY / A1_INHERITED / NO_GRAPH_HEALTH_PROMOTION
