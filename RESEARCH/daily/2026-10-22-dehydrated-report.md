@@ -48,15 +48,15 @@ These are **research candidates read from primary sources** for a future native 
 
 **反例:** 论文具有可信原始来源不等于本地 Observer 接受；昨天同一过程的执行成功不等于今天运行；同日 R1 与 R2 文件存在不等于相同 SQLite store
 
-Synthesis Status: RESEARCH_CANDIDATES_REVIEWED / NATIVE_SYNTHESIS_NOT_PERFORMED  
-Knowledge Graph Injection: NOT_EXECUTED  
+Synthesis Status: RESEARCH_CANDIDATES_REVIEWED / NATIVE_SYNTHESIS_NOT_PERFORMED
+Knowledge Graph Injection: NOT_EXECUTED
 Analysis Status: INCONCLUSIVE
 
 ## English Synthesis
 Three source identities were reviewed for later investigation, but the native convergence drill and `InsightMorpher` were not executed. No accepted/rejected receipt, rollback, persistent graph state, entropy or phase transition was observed for the 2026-10-22 R1 identity.
 
-Synthesis Status: NOT_PERFORMED  
-Knowledge Graph Injection: NOT_EXECUTED  
+Synthesis Status: NOT_PERFORMED
+Knowledge Graph Injection: NOT_EXECUTED
 Analysis Status: INCONCLUSIVE
 
 ## Phase State
