@@ -71,6 +71,12 @@
 - Boolean rule states: NOT_COMPUTED
 - No hypothetical PASS or FAIL derived from prior day
 
+## Incremental Drift
+
+- Incremental Drift: NOT_COMPUTED
+- Comparable current and prior native snapshots: NOT_AVAILABLE
+- No drift-free or clean state is inferred from missing observations
+
 ## Test / Drift Summary
 - Native tests: NOT_EXECUTED
 - Total/Passed/Failed: NOT_COMPUTED
