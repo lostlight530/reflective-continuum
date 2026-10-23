@@ -58,6 +58,13 @@
 - Limitation: the disposable temporary database was not GAS cortex.db, nor a native R1/R2 common store
 - This is standalone Python experimental evidence ONLY; native R2 module health remains UNKNOWN
 
+## DB State
+
+- DB State: NOT_OBSERVED / DATABASE_NOT_OPENED
+- Context: NOT_ASSESSED_DATABASE_NOT_OPENED
+- The `INDETERMINATE_EMPTY_STATE` label is not asserted because no native empty database state was observed
+- No Nodes=0 or Edges=0 values are asserted as observations
+
 ## Rule Engine
 - Native rule engine invoked: NO
 - Rule Engine Status: NOT_EXECUTED
