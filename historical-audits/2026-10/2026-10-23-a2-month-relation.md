@@ -6,7 +6,7 @@
 - Prior A2 relation retained unchanged: `historical-audits/2026-10/2026-10-21-a2-month-relation.md` at blob `3f095d1b1b13cccc19423cba4ca220dd4188282d`
 - Fixed month identity: `2026-10`; current relation through 2026-10-23
 - R1/R2 source objects mapped: 46; inherited/A1 source identities: 42; N−1 inputs: 2; N-day inputs: 2
-- Live tree SHA equals fresh main; all selected paths exist and source-table SHAs match current main
+- Fresh `main` commit `0c37b6edd305ec92502cbf125158849bf1ddc106` records root tree `ee22d658a365b88e01ae8f9ba8d9f152d84fde78`; all 46 mapped source paths, blob SHAs, and byte sizes match the recursive tree for that commit.
 
 ## Complete R1/R2 source-to-current mapping
 
@@ -81,3 +81,9 @@ W43 R3/R4 remain NOT_DUE; October R5 remains OPEN / NOT_DUE. No monthly seal is 
 ## Result
 
 `A2_MONTH_VERSION_2026-10 / N_DAY_R1_R2_ADMITTED / NATIVE_EXECUTION_NOT_EXECUTED_PRESERVED / MONTH_OPEN`
+
+## 2026-10-23 post-merge correction — Git object identity
+
+- Superseded wording: “Live tree SHA equals fresh main; all selected paths exist and source-table SHAs match current main”. The original version remains in Git history.
+- Correction: a commit SHA identifies a Git commit object; a tree SHA identifies a separate tree object. The recorded base commit and root-tree SHA are distinct, and the mapped source rows were verified against that root tree.
+- Scope: wording precision only. Source identities, mapping counts, owner states, historical task-time classifications, research credit, and month-closure state are unchanged.
