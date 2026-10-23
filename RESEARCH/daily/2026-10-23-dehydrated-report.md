@@ -71,6 +71,28 @@
 - NEXT_RETEST_CONDITION: rebuild exact full worktree, execute real convergence drill and InsightMorpher CLI, capture submit/accept/reject/run/store receipts
 - Result: EVIDENCE_ONLY / NATIVE_R1_NOT_EXECUTED / NO_GRAPH_INFERENCE
 
+## R1 Required Output Contract — Explicit Fail-Closed State
+
+- Convergence Status: NOT_EXECUTED
+- Convergence command: `PYTHONPATH=. python3 CODE/tasks/convergence_drill.py | tee -a ingestion.log`
+- Convergence exit/stdout/stderr: NOT_EXECUTED / NOT_OBSERVED / NOT_OBSERVED
+- Actual Hash: NOT_COMPUTED
+- Three-signal contract: NOT_SATISFIED; two source identities were reviewed as research candidates, but zero canonical three-signal payloads were assembled or submitted
+- Source Status: SOURCES_REVIEWED_BUT_NATIVE_INGESTION_NOT_EXECUTED
+- Ingestion Status: BLOCKED
+- Accepted Signals: NOT_COMPUTED
+- Rejected Signals: NOT_COMPUTED
+- Hard Rollback Log: NOT_EXECUTED; no rejection was observed, and none is inferred
+- Chinese Synthesis: NOT_PERFORMED
+- English Synthesis: NOT_PERFORMED
+- Synthesis Status: NOT_PERFORMED
+- Knowledge Graph Injection: NOT_EXECUTED
+- Phase State: NOT_COMPUTED
+- Actual Computable Metrics: NOT_COMPUTED
+- Analysis Status: ANALYSIS_INCONCLUSIVE
+- Reason: the exact-revision full native worktree and runnable GAS environment were unavailable; this is not evidence that the convergence drill failed
+- No `ingestion.log` append, signal acceptance, graph mutation, rollback event, or phase transition is claimed
+
 ## Preservation
 - R3/R4 W43 weekly NOT_DUE and R5 October monthly NOT_DUE
 - Historical R1/R2/Weekly/Monthly unchanged; no permission to rewrite prior dates
