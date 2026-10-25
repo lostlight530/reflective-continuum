@@ -49,6 +49,34 @@
 - Causal limit: standalone in-memory SQLite is NOT the GAS persistence implementation, does not test production migrations, and does not prove a native ingestion or restore failure
 - Independence: one synthetic execution only; R2 cites the same receipt without claiming a second run
 
+### Reproducible standalone fixture source
+The complete Python source used to produce the one synthetic receipt (SHA-256 efbbd7870462aed96bf3498b269d1c714cf3209d12cebb5829e8a6daf7433b5e) is retained here so a later reviewer can replay it independently:
+
+~~~python
+import sqlite3, json
+a = sqlite3.connect(":memory:")
+a.execute("CREATE TABLE observations(k TEXT PRIMARY KEY, v TEXT)")
+a.execute("INSERT INTO observations VALUES ('evidence', 'present')")
+a.commit()
+same_connection_count = a.execute("SELECT COUNT(*) FROM observations").fetchone()[0]
+b = sqlite3.connect(":memory:")
+try:
+    b.execute("SELECT COUNT(*) FROM observations")
+    isolated = False
+except sqlite3.OperationalError as exc:
+    isolated = str(exc) == "no such table: observations"
+a.close()
+c = sqlite3.connect(":memory:")
+try:
+    c.execute("SELECT COUNT(*) FROM observations")
+    reopened_empty = False
+except sqlite3.OperationalError as exc:
+    reopened_empty = str(exc) == "no such table: observations"
+print(json.dumps({"same_connection_count": same_connection_count, "second_connection_isolated": isolated, "reopened_store_has_no_old_table": reopened_empty}, sort_keys=True))
+~~~
+
+Independent shell replay from the same ephemeral fixture path on 2026-10-25 returned exit code 0, identical stdout, empty process stderr and Python 3.13.5 / SQLite 3.46.1. This re-run confirms deterministic reproduction of the same synthetic setup, but it is not a distinct experiment condition or native GAS run. A separate Python-tool initialization diagnostic was observed on the first invocation; that diagnostic is outside the subprocess stderr and is not silently reclassified as a native GAS failure. The diagnostic neither changes the fixture subprocess exit code nor proves runner-wide health.
+
 ## Graph/phase and rollback
 - GAS store URI/path/connection incarnation: UNKNOWN
 - Nodes / edges: NOT_COMPUTED / NOT_COMPUTED
