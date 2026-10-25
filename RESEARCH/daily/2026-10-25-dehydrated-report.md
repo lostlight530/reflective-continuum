@@ -111,3 +111,74 @@ Independent shell replay from the same ephemeral fixture path on 2026-10-25 retu
 - The existing standalone SQLite fixture above remains `SYNTHETIC_STORE_IDENTITY_CONTROL` only; there is **zero native R1 ingestion count** here. Any later real run requires a new run identity and forward receipt, not rewriting the original `BLOCKED` observation.
 
 **Write boundary:** correction is appended to the original R1 research report only. No `CODE/**`, tests, `ingestion.log`, database, legacy record, weekly/monthly or workflow mutation. It neither proves an operational GAS failure nor upgrades the unrelated SDK advisory into a local incident.
+
+## R1 three-source provenance and safe-input projection (2026-10-25T03:04:20.607Z)
+
+**Record class:** POST_MERGE_INPUT_PREPARATION / SOURCE_SCOPED_SCHEMA_REPLAY; NOT A NEW GAS INGESTION RUN. The original R1 `BLOCKED / NOT_EXECUTED` and standalone SQLite fixture observations remain unchanged and historically authoritative for their own timestamps.
+
+### Three individually sourced external leads (no local incident assumption)
+- **1 — MCP transport isolation:** original maintainer GHSA-jm63-cq47-j5jp, issued 2026-10-15. Narrow external finding: affected shared HTTP server/transport use can cross-route messages. Not evidence of a GAS exploit.
+- **2 — Pending approvals:** OpenAI Agents Python SDK `v0.24.0`, original 2026-10-15 release notes. Narrow external finding: pending-approval automatic compaction deferral bug fix. Not evidence GAS uses that SDK.
+- **3 — Held-write speculation:** SpecAgent authors' arXiv `2610.21463v1`, submitted 2026-10-15. Narrow research description: read-only weak-model drafts hold state-changing actions for a strong-model semantic review. Benchmarks are **author-reported**, not independently reproduced.
+- Original source bodies were inspected on 2026-10-25. Three different primary publishers, three different original objects, **not three replications** of a shared claim. Source status: `3 DISTINCT PRIMARY SOURCE LEADS`; local applicability, substantive cross-source corroboration and accepted ingestion: `UNKNOWN / NOT_COMPUTED`.
+- All graph edges are `[]`: there is no source-authorized cross-signal relationship to assert. Dates are source checks, not signal event dates or GAS execution timestamps.
+
+### Complete source-side ledger (not legal direct morpher input)
+```json
+[
+  {
+    "id": "r1_20261025_mcp_transport_isolation",
+    "content": "Maintainer GHSA-jm63-cq47-j5jp reports cross-client routing with affected shared HTTP MCP server or transport instances in @modelcontextprotocol/server 2.0.0-2.2.0; the 2.3.0 fix requires separate instances per request or session. External vendor finding, not a GAS incident.",
+    "edges": [],
+    "source": "https://github.com/modelcontextprotocol/typescript-sdk/security/advisories/GHSA-jm63-cq47-j5jp",
+    "checked_at": "2026-10-25T03:00:51Z"
+  },
+  {
+    "id": "r1_20261025_agents_approval_compaction",
+    "content": "OpenAI Agents Python SDK v0.24.0 release note includes a bug fix to defer automatic compaction when approvals are pending; this is a version-specific implementation statement, not a measured GAS behavior.",
+    "edges": [],
+    "source": "https://github.com/openai/openai-agents-python/releases/tag/v0.24.0",
+    "checked_at": "2026-10-25T03:00:51Z"
+  },
+  {
+    "id": "r1_20261025_specagent_held_writes",
+    "content": "SpecAgent arXiv:2610.21463v1 authors describe a weak model performing read-only tools while holding its first state-changing action for strong-model semantic verification; author-reported benchmarks, not independent GAS results.",
+    "edges": [],
+    "source": "https://arxiv.org/abs/2610.21463v1",
+    "checked_at": "2026-10-25T03:00:51Z"
+  }
+]
+```
+
+### Exact allowed projection for current `InsightMorpher._signal()`
+The first-party parser in `CODE/tasks/insight_morpher.py`, Git blob `62c4fec144c7d2e213bb3b3631aa38257c4b3ae4`, permits only `id, content, edges, version`. It **rejects** `source` and `checked_at` as extra keys. Therefore do not send the provenance ledger unmodified to the morpher. Project only `id/content/edges` into an independent JSON input while preserving this ledger and exact IDs.
+
+```json
+[
+  {
+    "id": "r1_20261025_mcp_transport_isolation",
+    "content": "Maintainer GHSA-jm63-cq47-j5jp reports cross-client routing with affected shared HTTP MCP server or transport instances in @modelcontextprotocol/server 2.0.0-2.2.0; the 2.3.0 fix requires separate instances per request or session. External vendor finding, not a GAS incident.",
+    "edges": []
+  },
+  {
+    "id": "r1_20261025_agents_approval_compaction",
+    "content": "OpenAI Agents Python SDK v0.24.0 release note includes a bug fix to defer automatic compaction when approvals are pending; this is a version-specific implementation statement, not a measured GAS behavior.",
+    "edges": []
+  },
+  {
+    "id": "r1_20261025_specagent_held_writes",
+    "content": "SpecAgent arXiv:2610.21463v1 authors describe a weak model performing read-only tools while holding its first state-changing action for strong-model semantic verification; author-reported benchmarks, not independent GAS results.",
+    "edges": []
+  }
+]
+```
+
+### Source-provenance ↔ projected-input custody and actual bounded validation
+- Each `id` is identical in both sets and remains unique; projection drops only `source` and `checked_at` from the **parser input**, not the persisted research source record.
+- Canonical serializer: Python `json.dumps(records, sort_keys=True, ensure_ascii=False, separators=(',', ':'))`, SHA-256 of the UTF-8 bytes.
+- `SHA256(canonical source ledger)`: `3713708be920201ed5b6ac1cb80fde673494cdb3413700ce01220283a5a294f0`.
+- `SHA256(canonical projected input)`: `8d2f035c121f5c2a51adc389b865e1a4dfa36e3079a613340b6a77762d64738e`.
+- Isolated local schema replay: `python /mnt/data/gas_20261025_provenance_projection_check.py`, exit `0` on 2026-10-25, Python method-body logic transcribed from the exact GitHub source (not imported from a complete checkout). Results: `3/3 source records rejected due to extra keys`, `3/3 projections satisfy parser fields/types`, `3/3 unique source URLs and IDs`. Diagnostic script SHA-256 `51032900607b84a5d9905d7a94f77e3c8b91e41b2b816ca77774e532d3c44e78`. This is **schema projection validation only**, not Observer invocation, database mutation, true `ACCEPTED` statuses, actual three-signal task completion, or fixed-fixture convergence.
+- **Native R1 still BLOCKED:** required `PYTHONPATH=. python3 CODE/tasks/convergence_drill.py | tee -a ingestion.log` not run; `InsightMorpher.morph_from_file` not called on the actual repository; `ingestion.log` unchanged; acceptance/rejection, hard rollback, phase, entropy, graph counts and source-to-store continuity `NOT_EXECUTED / NOT_COMPUTED / UNKNOWN`. `Synthesis Status: NOT_PERFORMED`; `Analysis Status: ANALYSIS_INCONCLUSIVE`.
+- Next gate: exact checkout and named runner; run convergence drill once, stop on any divergence; submit projected input with a separately named retained source ledger; log all outputs append-only; do not retry rejected signals. The default `InsightMorpher()` creates `:memory:` storage and cannot by itself establish R1↔R2 persistent identity.
+- Scope: appended evidence to the existing R1 canonical report, **no separate Daily**, no `CODE/**`, parser tests, `ingestion.log`, database, prior day, weekly, monthly or workflow touched. The standalone projection generated no operational graph write.
