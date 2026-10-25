@@ -97,3 +97,17 @@ Independent shell replay from the same ephemeral fixture path on 2026-10-25 retu
 - Only today's exact R1 and R2 research reports are proposed in this Draft branch
 - No ingestion.log, semantic_drift_audit.log, database, tests, prior archive or weekly/monthly work modified
 - One synthetic fixture is NOT a second independent native run and not evidence of graph health
+
+## Forward correction — native R1 entrypoint and store gate (2026-10-25T02:50:57.510Z)
+
+**Correction class:** POST_MERGE_SOURCE_IDENTITY_CORRECTION. This appended section is a later snapshot; the original R1 `BLOCKED / NOT_EXECUTED` and its standalone one-fixture diagnostic remain unchanged above.
+
+- Correction reference: `reflective-continuum/main@b41be4416fb9d2793fee495d5d60e1c03bb7df79` = merged #515 main-visible. The original `Delivery: PROPOSED_DRAFT_PENDING_HUMAN_REVIEW` label describes the earlier Draft stage only.
+- **Entrypoint correction:** the preceding “Intended entry” names `CODE/tasks/signal_ingestion.py` as a possible command; the inspected current revision has **no such file**. Available implementation is `CODE/tasks/insight_morpher.py`, exporting `InsightMorpher.morph_from_file(path)` and a CLI requiring a signals JSON path. `CODE/tasks/convergence_drill.py` is a **separate** fixed-fixture repeatability drill, not signal ingestion. Current source identity is verified; neither script was invoked by this correction.
+- Relevant source blob identities: `CODE/tasks/insight_morpher.py` = `62c4fec144c7d2e213bb3b3631aa38257c4b3ae4`; `CODE/tasks/convergence_drill.py` = `af18b9f5b6c6e6e601632a8c952f1b19c1b93ea5`; `CODE/continuum_db.py` = `d284ceba7313288c751762c74ce7f21bd407bcdd`.
+- The actual R1 task contract in `RESEARCH/daily/README.md` calls for fixed-fixture repeatability, source-support classification, ingestion outcomes, rollback reason, phase/entropy, and store identity. This R1 has one externally cited MCP advisory only, no three independently sourced signals or actual ingestion receipt. The duplicate use of that advisory elsewhere is not an additional independent R1 source.
+- `InsightMorpher()` defaults to `GraphDB(":memory:")`; that new connection cannot be presumed identical to a later `selfcheck()` store. Exact ingestion acceptance/rejection, append-only `ingestion.log` changes, durable reload, rollback, current graph, entropy and phase are `NOT_EXECUTED / NOT_COMPUTED / UNKNOWN`.
+- **Correct next execution:** obtain a complete source-authenticated checkout; separately execute the contractual fixed-fixture drill and a source-justified validated JSON batch through `InsightMorpher.morph_from_file` (with explicit input provenance and invocation), capture command/exit/stdout/stderr and any log/store/rollback effects. Use a named persisted DB only when actually configured and observed; note that the current CLI creates its own default `:memory:` instance.
+- The existing standalone SQLite fixture above remains `SYNTHETIC_STORE_IDENTITY_CONTROL` only; there is **zero native R1 ingestion count** here. Any later real run requires a new run identity and forward receipt, not rewriting the original `BLOCKED` observation.
+
+**Write boundary:** correction is appended to the original R1 research report only. No `CODE/**`, tests, `ingestion.log`, database, legacy record, weekly/monthly or workflow mutation. It neither proves an operational GAS failure nor upgrades the unrelated SDK advisory into a local incident.
