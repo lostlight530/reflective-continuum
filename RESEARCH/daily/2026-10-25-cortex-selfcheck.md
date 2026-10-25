@@ -65,3 +65,17 @@
 - Full native health: UNKNOWN
 - Source or local synthetic result is not an operational PASS
 - Only dated R1/R2 files changed; prior daily, logs, persistent stores, Actions, weekly/monthly and protected contracts stay untouched
+
+## Forward correction — R2 empty-graph health interpretation (2026-10-25T02:51:20.581Z)
+
+**Correction class:** POST_MERGE_IMPLEMENTATION_VS_OPERATIONAL_HEALTH_CALIBRATION. This is a later source inspection, not another R2 invocation or a replacement for original `NOT_EXECUTED` above.
+
+- Correction source revision: `reflective-continuum/main@b41be4416fb9d2793fee495d5d60e1c03bb7df79`, after original #515 merge; exact implementation blob `CODE/tasks/cortex_selfcheck.py` = `5b20e4159b24071ebb484d802cfabfd75f701ce0`, `CODE/continuum_db.py` = `d284ceba7313288c751762c74ce7f21bd407bcdd`, test blob `tests/test_tasks.py` = `f5ed61e5295c02b4d1d2b456f207f2536d054d29`.
+- Verified code semantics: `selfcheck(db_path=":memory:")` opens a fresh `GraphDB`, checks initialization, FK, FTS5, SQLite integrity and basic rule validation; it reads node and edge counts. Its `healthy` field is computed from `all(checks.values())`, **not** from nonempty counts, shared persistence, ingestion or a semantic drift test.
+- Verified test semantics: `tests/test_tasks.py::test_selfcheck_uses_observed_values` explicitly expects `healthy == True` while `counts == {"nodes":0,"edges":0}` for the default empty fixture. That expectation is a unit test of the module's narrow boolean, **not** proof of an operationally healthy populated graph.
+- **Interpretation correction:** `MODULE_CHECKS_TRUE` with an empty `:memory:` graph must remain `INDETERMINATE_EMPTY_STATE` for the R2 Daily observational contract, per `RESEARCH/daily/README.md`: `EMPTY_STATE != HEALTHY` and `SAME_DATE != SAME_STORE`. The source-defined `healthy` boolean and Daily graph/continuity health are separate predicates.
+- Status for **this** 2026-10-25 R2: original native `PYTHONPATH=. python3 CODE/tasks/cortex_selfcheck.py` = `NOT_EXECUTED`; repository-native `python3 -m unittest discover tests/` = `NOT_EXECUTED`; true test totals, observed graph totals, actual drift, store/connection identity, source-inherited R1 persistence, and operational graph health remain `NOT_COMPUTED / UNKNOWN`.
+- Next admissible run: obtain exact complete worktree, run the real R2 module and tests independently from R1; retain command/exit/stdout/stderr, exact DB locator and run identity, counts, failures and mismatch details, graph state and drift result if separately computed. A `:memory:` locator or matching logical date alone proves no shared persistent history.
+- **No code-change conclusion:** this correction clarifies current semantics without redesigning `CODE/tasks/cortex_selfcheck.py`, changing tests, or claiming the implementation's narrow boolean itself is a graph health certificate. A separately authorized code contract change, if ever justified, requires distinct tests and reviewed scope.
+
+**Forward custody:** original R2 evidence remains as authored; the current `main` path is now merged, but that does not convert the earlier source-only blocked run into one successfully executed native selfcheck.
