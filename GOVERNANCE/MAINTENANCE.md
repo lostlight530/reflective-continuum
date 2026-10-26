@@ -22,6 +22,16 @@ Semantic drift is limited to implemented structural deltas, FTS5 top-result iden
 
 A passing test suite is revision/environment-scoped evidence for the tests that ran. It does not establish shared persistence, source truth, non-empty graph state, operational transition provenance, or architecture-wide health.
 
+## 2026-10-26 forward producer-attribution reconciliation
+
+Status: `CURRENT_CONTROL_PLANE_RECONCILIATION / HISTORICAL_A2_PRESERVED`. This later correction of interpretation is not an edit to the original native run or merged A2 snapshot.
+
+- The merged 2026-10-25 month-relation A2 record (`historical-audits/2026-10/2026-10-25-a2-month-relation.md`, blob `2921495d0d2a8aecd4edfee03824d67951e297ac`) globally says `Source Native producer Jules`.
+- Its own October 25 source references are `RESEARCH/daily/2026-10-25-dehydrated-report.md` (blob `28ffa22866eec3606c6268bebea0383b1e0b5cb5`) and `RESEARCH/daily/2026-10-25-cortex-selfcheck.md` (blob `a6cee7e4900d745e6464845343de94ecdc011d6c`). Both explicitly state `Producer: GPT-6 prospective native / NOT Jules`.
+- Correct current interpretation: one global Jules label cannot represent all October native records. Attribute R1 and R2 separately, per original producer identity and exact source revision; preserve genuinely Jules-produced historical records and any Independent GPT maintenance identity.
+- Both October 25 native R1 ingestion and R2 selfcheck remain `NOT_EXECUTED`; actual accepted/rejected counts and same-store proof were not computed. No current graph-health or drift success is inferred from this reconciliation.
+- Preserve the merged A2 as point-in-time evidence rather than silently rewriting it. Carry the corrected attribution into future monthly relation/correction work without increasing independent-run counts.
+
 ## Maintenance identity and concurrency
 
 A maintenance run is identified by repository, task/surface, logical period when applicable, producer, base `main` revision, observed branch/ref when availability is branch-relative, and run identifier when one exists. Before any write, recover the current default branch, latest merged `main`, relevant open pull requests, active maintenance branches, and recent merged changes.
