@@ -6,7 +6,7 @@ Effective: 2026-09-17
 
 ## Scope
 
-This contract governs repository maintenance, Jules-produced maintenance inputs, Independent GPT recovery/review, cadence interpretation, checker ownership, and delivery discipline. It does not authorize a maintenance agent to redesign research content, rewrite historical research artifacts, change `CODE/**`, change dependencies, alter `.github/**` runner/deployment surfaces, or promote private control-plane instructions into the public repository unless a separate repository-native authority explicitly requires that change.
+This contract governs repository maintenance, native producer-generated maintenance inputs, including current GPT Native prospective production and retained historical Jules outputs, Independent GPT recovery/review, cadence interpretation, checker ownership, and delivery discipline. It does not authorize a maintenance agent to redesign research content, rewrite historical research artifacts, change `CODE/**`, change dependencies, alter `.github/**` runner/deployment surfaces, or promote private control-plane instructions into the public repository unless a separate repository-native authority explicitly requires that change.
 
 ## Cadence and independent evidence
 
@@ -36,7 +36,7 @@ Historical research and archived audit artifacts are point-in-time evidence, not
 
 A current owning maintenance source may be corrected when it is internally contradictory, provided the prior value remains recoverable in Git history and the correction is explicitly identified. Do not create parallel reconciliation documents when the owning current maintenance source can be corrected safely and provenance remains preserved.
 
-Jules-generated records are historical inputs, not self-authenticating conclusions. Public code and local targeted checks establish only their tested surfaces; Independent GPT calibrates maintenance interpretation; a human merges. This contract does not authorize direct writes to `main`, history rewriting, force pushes, auto-merge, or silent promotion of research output into executable capability.
+Native producer-generated records are repository inputs, not self-authenticating conclusions. Retained Jules records preserve their original provenance and are not relabeled by later GPT Native or Independent GPT maintenance. Public code and local targeted checks establish only their tested surfaces; Independent GPT calibrates maintenance interpretation; a human merges. This contract does not authorize direct writes to `main`, history rewriting, force pushes, auto-merge, or silent promotion of research output into executable capability.
 
 ## Independent repair decision
 
