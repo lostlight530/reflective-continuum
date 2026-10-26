@@ -7,13 +7,13 @@ Calibration: 2026-09-17
 
 This document defines the reviewer-side state machine for independently evaluating committed Reflective Continuum artifacts and repository claims.
 
-It is distinct from repository runtime, Jules R1/R2/R3/R4/R5 production, GitHub Actions, deployment, and scheduled execution. It is also distinct from the Independent GPT maintenance delivery kernel in `GOVERNANCE/independent-gpt/README.md`:
+It is distinct from repository runtime, GPT Native R1/R2/R3/R4/R5 production and retained historical Jules artifacts, GitHub Actions, deployment, and scheduled execution. It is also distinct from the Independent GPT maintenance delivery kernel in `GOVERNANCE/independent-gpt/README.md`:
 
 - this file defines **review interpretation states**;
 - the Independent GPT kernel defines **maintenance recovery, repair, concurrency, and Draft-PR delivery discipline**;
-- neither becomes runtime authority or proves what Jules privately consumed.
+- neither becomes runtime authority or proves what any producer privately consumed.
 
-This document is not a Jules task prompt, repository-memory entry, public `AGENTS.md`, executable policy, workflow, or CI gate.
+This document is not a producer task prompt, repository-memory entry, public `AGENTS.md`, executable policy, workflow, or CI gate.
 
 The review layer may inspect committed research, specifications, ADRs, references, explicit run evidence, maintenance records, Git/PR chronology, and public sources. It may calibrate current interpretation without changing the historical fact that an artifact was produced.
 
@@ -147,7 +147,7 @@ The public repository stores review outcomes and evidence, not private cognition
 Do not commit, reconstruct, or summarize in revealing detail:
 
 - private task prompts or full private conversation prompts;
-- Jules repository-memory text or other private agent-memory content;
+- Private producer repository-memory text or other private agent-memory content;
 - hidden reasoning traces, chain-of-thought, scratchpads, or internal deliberation;
 - personal context, private correspondence, private account metadata, or non-public relationship information;
 - credentials, tokens, session secrets, private URLs, or confidential third-party material;
@@ -175,7 +175,7 @@ No private prompt, private memory, hidden reasoning, workflow, or CI field is re
 
 ## Automation isolation
 
-This review contract is non-operative. It does not trigger, modify, gate, or replace Jules, Independent GPT execution, GitHub Actions, deployment, runtime code, schedules, or repository memory.
+This review contract is non-operative. It does not trigger, modify, gate, or replace GPT Native production, historical Jules automation, Independent GPT maintenance execution, GitHub Actions, deployment, runtime code, schedules, or repository memory.
 
 Those systems may produce artifacts that are reviewed here later. A review result never becomes evidence that a producer consumed this contract.
 

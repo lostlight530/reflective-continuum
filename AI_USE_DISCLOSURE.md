@@ -4,9 +4,9 @@ AI assistance may draft text/code, suggest tests, translate, discover sources, s
 
 ## Scope and control-plane boundary
 
-This file governs accountable AI-assisted repository work, including Independent GPT maintenance review. It does not reveal or replace private Jules task prompts, hidden memory, credentials, or operator context.
+This file governs accountable AI-assisted repository work, including Independent GPT maintenance review. It does not reveal or replace private producer task prompts, hidden memory, credentials, or operator context.
 
-Jules-generated artifacts may be reviewed after generation, but post-hoc review is not evidence that Jules consumed this file or followed its rules. Private Jules controls remain private unless the maintainer explicitly publishes them.
+Historical Jules-generated artifacts may be reviewed after generation, but post-hoc review is not evidence that Jules consumed this file or followed its rules. GPT Native prospective artifacts are a distinct producer class; their presence does not prove a specific run consumed or followed this file. Private producer-side controls remain private unless the maintainer explicitly publishes them.
 
 The repository currently has no public `AGENTS.md`; AI assistance must not infer one from private automation or prior conversations.
 
