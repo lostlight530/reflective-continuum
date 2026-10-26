@@ -1,0 +1,171 @@
+# A2 | reflective-continuum | 2026-10-26 current October source and native-result relation
+
+- Exact fresh main after ten A1 merged: `fb52cd60946100f4d4cde940407c76fbcdcd632f`.
+- Direct merged 2026-10-26 A1: `historical-audits/2026-10/2026-10-26-a1-source-custody.md` Git blob `6e42d74b5df2912136d3bab4e58f75a228790e57`.
+- Previous merged 2026-10-25 A2 baseline: `1178dcfd562e11b4012dea5d3a6b718a53e3087c`.
+- Logical N=2026-10-26 Asia/Shanghai; MonthStart=2026-10-01…2026-10-26 inclusive.
+- Original source owner: Jules/prospective native GPT as preserved in records; Independent GPT A2 is a separate maintenance/relationship run.
+- Scope: 103 current named source objects; 52 expected dated native source paths; 9 actual source-file changes since previous A2.
+- October remains MONTH_OPEN; Weekly W43 is Oct19–25 and final documentary review was submitted Oct26, not an extra W44 or October seal.
+- Repo-native scanner, Python test suite, benchmark and independent experimental replay by **this A2**: NOT_EXECUTED.
+
+## Updated 2026-10-26 native conclusions and non-inheritance
+- R1 actual ingestion NOT_EXECUTED / graph persistence NOT_OBSERVED; R2 native selfcheck and tests NOT_EXECUTED; SAME_DATE != SAME_STORE; W43 R3 documentary alignment and R4 static Git topology do not prove runnable drift or all-links PASS.
+- A2 maintenance source relation is not scientific PLASMA A2, GAS R2, or any Foundation admission protocol; shared labels cannot promote blocked science to PASS.
+- A Git SHA proves a current file identity; PR merged status proves integration, not exact run-time success or external source verification.
+- Previous A1 N−1 remains a separate merged immutable audit; no rewriting original authorship/history.
+- Duplicate or abandoned same-task PRs from today are historical delivery attempts only and get no extra Native research credit.
+
+## Fixed-date source graph: October source slots, not experimental outcomes
+- 2026-10-01 | 032da79e77e12d35 / 4cef741f0b59c60f | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-02 | 10e8962cda344f5e / 7c1617a59b2360e8 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-03 | d3b3dd21dd56d92a / d4eb48d90f908794 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-04 | 06f754048910ebe9 / 44ad371f641d2854 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-05 | bd0f0757b545314a / bbbbe15a0d3e335c | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-06 | ca6e5cc558adafaa / 5efa4bd6be58adbb | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-07 | c17f5a35ab84885c / 0b12cdd1bbd9bc68 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-08 | d604969e0fd1d47c / 6fe4ac75864f0555 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-09 | 96662ee6cdc49962 / 4bb85f31d9b8cead | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-10 | b8ee911a8bbcd1a2 / 4b63feedb2474542 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-11 | b5d65dba8c8c3061 / 1d19d939fa08ecf1 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-12 | 092b1e5e6c86a3cb / e62e93d18ba93409 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-13 | c151b273f54e9782 / 3c910367c6c99916 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-14 | 2fe91a00152dea66 / 1757e5347af76d59 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-15 | e5e0420106de6159 / 4268c0bf46022034 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-16 | 12c0f21afd7e53c5 / 224b9352213935d0 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-17 | 892352813b1268fb / 1e045734dd6a0c24 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-18 | 1ccb9cdacc610a86 / 87bd94f0e6693732 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-19 | b62a081bed1a33d7 / 801e3b7be8d8cf03 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-20 | 955e31e86eac877b / 4305369654b13edc | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-21 | 8bde28bfc174b230 / e7236612f082fb7d | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-22 | 36873ac15db216d1 / a4b6d43ad8eed925 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-23 | 3687308e110a67d4 / 3fc964a915a15085 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-24 | b4021cc3d34e73e3 / 3ae92d107455b0a6 | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-25 | 28ffa22866eec360 / a6cee7e4900d745e | 2/2 path(s) | A1_INHERITED_WITH_ORIGINAL_BLOCKER
+- 2026-10-26 | caafded72c509acc / d8d669a4f849559a | 2/2 path(s) | N_DAY_EXACT_SOURCE_AUTHOR_STATUS
+
+## Exact current owner/source, methodology and code object ledger
+- 001 | `ADR/ADR-001.md` | blob `334443e076c43d537841ebae1bd0c0393c0a0a0a` | 3598 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 002 | `ADR/ADR-002.md` | blob `3a4baf190456edcbf4e1c3e4d21decfea0cc5486` | 3470 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 003 | `ADR/ADR-003.md` | blob `8fe801237faf22863c7e971297509cfd05150e5d` | 3461 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 004 | `ADR/ADR-004.md` | blob `157564ff08bee507bc010776eea1c9596785064b` | 3724 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 005 | `ADR/ADR-005.md` | blob `e415fd343c204a9b8955ecf882329fc523540f75` | 3265 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 006 | `ADR/ADR-006.md` | blob `06ee5ccedb33321ef236f3137a6bbbb83ef20488` | 3389 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 007 | `ADR/ADR-007.md` | blob `461db4db666485a1aef61448b3919eb066a8dfa6` | 3211 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 008 | `ADR/ADR-008.md` | blob `be0cbcaa6499d2d0cd12f8c14338a85464a3d7dc` | 3381 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 009 | `ADR/ADR-009.md` | blob `6107a48a178717770e63ea4fb5926fad9367af6b` | 4063 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 010 | `ADR/ADR-010.md` | blob `815a19917d39bdaa15c5d53a22480df7d7e8d5f4` | 5770 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 011 | `ADR/INDEX.md` | blob `427a6a95e68958d7fdcb971bde711796c7e05057` | 5669 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 012 | `CODE/__init__.py` | blob `14ac737c97ade25288d6a50693d4228cf9e4c77e` | 338 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 013 | `CODE/continuum_db.py` | blob `d284ceba7313288c751762c74ce7f21bd407bcdd` | 7240 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 014 | `CODE/cortex_observer.py` | blob `1f9f57e6f2995797cd884e6c025542b4cd924a54` | 4638 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 015 | `CODE/drift_detector.py` | blob `39ccd4a4b9c22a5a093a0e907c27501b1c1d230f` | 1926 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 016 | `CODE/entropy_analyzer.py` | blob `16a22defc7d6c2ff85efbd1b7edeb880e0828632` | 2377 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 017 | `CODE/reflective_validator.py` | blob `546f530b68f29342db1eee3a00224de6172cad55` | 2942 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 018 | `CODE/tasks/__init__.py` | blob `58e079f1b3ad294aea663967f078573cef56a4d8` | 46 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 019 | `CODE/tasks/convergence_drill.py` | blob `af18b9f5b6c6e6e601632a8c952f1b19c1b93ea5` | 1245 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 020 | `CODE/tasks/cortex_selfcheck.py` | blob `5b20e4159b24071ebb484d802cfabfd75f701ce0` | 1929 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 021 | `CODE/tasks/insight_morpher.py` | blob `62c4fec144c7d2e213bb3b3631aa38257c4b3ae4` | 2609 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 022 | `CODE/tasks/semantic_drift_audit.py` | blob `2ff955a97a82cd7b26274f7def7c5b1b5a955070` | 1783 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 023 | `EVIDENCE_BASELINE.md` | blob `062a9086b2f5c90dbb831082029bb8a7d8ae26b6` | 8764 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 024 | `METHODOLOGY/INDEX.md` | blob `2bcbf1131d88b3d8e95dc73355ce58ccb299e5ce` | 4187 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 025 | `METHODOLOGY/METH-001-phase-boundary-detection.md` | blob `bb1030bd90baa1120605446ee9b408997e4bb8fa` | 2994 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 026 | `METHODOLOGY/METH-002-reflective-morphing-protocol.md` | blob `e40191ca58b2c8a89da39b10d790234b305e5d40` | 3206 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 027 | `METHODOLOGY/METH-003-alignment-verification.md` | blob `f6c3e9dc4a384e3ee94407478f36f2b4b1c5fe76` | 3531 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 028 | `METHODOLOGY/METH-004-cognitive-divergence-rollback.md` | blob `5b61666cc6c97eef3d16136f3c8d5ecdf509cbb1` | 3238 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 029 | `METHODOLOGY/METH-005-evidence-continuity-reconciliation.md` | blob `597025bce8de86125e6d0db41e340097635b3f02` | 7596 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 030 | `REFERENCES/INDEX.md` | blob `2a602cea093ef3fd5ab3a96ff66fb2c391df4c95` | 2735 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 031 | `REFERENCES/PIONEERS/PIO-001-Google_DeepMind.md` | blob `90572e9f256e754fe6ef9d1f31cd3badf3724bda` | 2689 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 032 | `REFERENCES/PIONEERS/PIO-002-Google_Paper_Interpretations.md` | blob `888ccaf5940a40d812ad624de81e314312e17654` | 2744 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 033 | `REFERENCES/PIONEERS/PIO-003-Other_Pioneers.md` | blob `9e9f0dda67a39e2b8b85b428b91cfca9e32dc92b` | 2791 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 034 | `REFERENCES/PIONEERS/PIO-004-Anthropic_OpenAI.md` | blob `9d7495f8944771930d1eaf2c445d12dc863aa339` | 2959 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 035 | `RESEARCH/daily/2026-10-01-cortex-selfcheck.md` | blob `4cef741f0b59c60f1360c8dcfac5387c71d56394` | 491 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 036 | `RESEARCH/daily/2026-10-01-dehydrated-report.md` | blob `032da79e77e12d350a7644682768ea85da99c7ef` | 2480 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 037 | `RESEARCH/daily/2026-10-02-cortex-selfcheck.json` | blob `6d63b07ae6356ba0d28ed5a44d193c4416efc8ed` | 311 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 038 | `RESEARCH/daily/2026-10-02-cortex-selfcheck.md` | blob `7c1617a59b2360e847d04365c11d1a1423c3981a` | 377 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 039 | `RESEARCH/daily/2026-10-02-dehydrated-report.md` | blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8` | 2301 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 040 | `RESEARCH/daily/2026-10-03-cortex-selfcheck.md` | blob `d4eb48d90f908794ade985e8577f3c82f26e2d74` | 501 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 041 | `RESEARCH/daily/2026-10-03-dehydrated-report.md` | blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea` | 2499 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 042 | `RESEARCH/daily/2026-10-04-cortex-selfcheck.md` | blob `44ad371f641d2854937361a3d295948ebdf3daf7` | 532 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 043 | `RESEARCH/daily/2026-10-04-dehydrated-report.md` | blob `06f754048910ebe97727f7846e83c42c46105d17` | 2131 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 044 | `RESEARCH/daily/2026-10-05-cortex-selfcheck.md` | blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f` | 437 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 045 | `RESEARCH/daily/2026-10-05-dehydrated-report.md` | blob `bd0f0757b545314a58aee6cc2590c031a990c8a7` | 1681 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 046 | `RESEARCH/daily/2026-10-06-cortex-selfcheck.md` | blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe` | 540 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 047 | `RESEARCH/daily/2026-10-06-dehydrated-report.md` | blob `ca6e5cc558adafaae484c7c42466385e7b9e356f` | 2679 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 048 | `RESEARCH/daily/2026-10-07-cortex-selfcheck.md` | blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702` | 541 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 049 | `RESEARCH/daily/2026-10-07-dehydrated-report.md` | blob `c17f5a35ab84885c075f1230cefb39a9b54e3660` | 2343 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 050 | `RESEARCH/daily/2026-10-08-cortex-selfcheck.md` | blob `6fe4ac75864f05555c333ad4bda140ad34014640` | 656 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 051 | `RESEARCH/daily/2026-10-08-dehydrated-report.md` | blob `d604969e0fd1d47c827512d194f83a798f8d71c5` | 2227 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 052 | `RESEARCH/daily/2026-10-09-cortex-selfcheck.md` | blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3` | 500 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 053 | `RESEARCH/daily/2026-10-09-dehydrated-report.md` | blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238` | 1980 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 054 | `RESEARCH/daily/2026-10-10-cortex-selfcheck.md` | blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb` | 533 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 055 | `RESEARCH/daily/2026-10-10-dehydrated-report.md` | blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca` | 2208 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 056 | `RESEARCH/daily/2026-10-11-cortex-selfcheck.md` | blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1` | 422 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 057 | `RESEARCH/daily/2026-10-11-dehydrated-report.md` | blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398` | 2686 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 058 | `RESEARCH/daily/2026-10-12-cortex-selfcheck.md` | blob `e62e93d18ba9340972f601ce790eaa7c971beb38` | 681 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 059 | `RESEARCH/daily/2026-10-12-dehydrated-report.md` | blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527` | 2522 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 060 | `RESEARCH/daily/2026-10-13-cortex-selfcheck.md` | blob `3c910367c6c999168624534538bceca43e55ec97` | 1511 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 061 | `RESEARCH/daily/2026-10-13-dehydrated-report.md` | blob `c151b273f54e97824c8848a888b69b4ba8929056` | 2582 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 062 | `RESEARCH/daily/2026-10-14-cortex-selfcheck.md` | blob `1757e5347af76d59a7cf06ff31895b8c1188bd79` | 473 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 063 | `RESEARCH/daily/2026-10-14-dehydrated-report.md` | blob `2fe91a00152dea66b6f32d852bea36bd97b83246` | 3389 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 064 | `RESEARCH/daily/2026-10-15-cortex-selfcheck.md` | blob `4268c0bf46022034b35be15b95f4c51283d42252` | 450 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 065 | `RESEARCH/daily/2026-10-15-dehydrated-report.md` | blob `e5e0420106de615931142f31dac144676263a14c` | 1898 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 066 | `RESEARCH/daily/2026-10-16-cortex-selfcheck.md` | blob `224b9352213935d06d6a3cd003f4a1924d4fa76f` | 471 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 067 | `RESEARCH/daily/2026-10-16-dehydrated-report.md` | blob `12c0f21afd7e53c51955c7b7a69416cbe15a69a8` | 1847 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 068 | `RESEARCH/daily/2026-10-17-cortex-selfcheck.md` | blob `1e045734dd6a0c24fb3bb8966b7da3153bb0cc64` | 497 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 069 | `RESEARCH/daily/2026-10-17-dehydrated-report.md` | blob `892352813b1268fbae37f1b0117dfa9437a1a64c` | 1764 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 070 | `RESEARCH/daily/2026-10-18-cortex-selfcheck.md` | blob `87bd94f0e6693732c08f81967aa763aa3621189d` | 433 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 071 | `RESEARCH/daily/2026-10-18-dehydrated-report.md` | blob `1ccb9cdacc610a862439ed3e6092c404e450e550` | 2948 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 072 | `RESEARCH/daily/2026-10-19-cortex-selfcheck.md` | blob `801e3b7be8d8cf03c6693c8127e5509bc891fe9a` | 1705 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 073 | `RESEARCH/daily/2026-10-19-dehydrated-report.md` | blob `b62a081bed1a33d717a592efb7d0cebb4499e329` | 2449 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 074 | `RESEARCH/daily/2026-10-20-cortex-selfcheck.md` | blob `4305369654b13edc064cbe7538f7804625ea41b0` | 501 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 075 | `RESEARCH/daily/2026-10-20-dehydrated-report.md` | blob `955e31e86eac877beb6545b2a2e047a16fa57c21` | 1950 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 076 | `RESEARCH/daily/2026-10-21-cortex-selfcheck.md` | blob `e7236612f082fb7d47043830474ee1584f83d6a7` | 4130 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 077 | `RESEARCH/daily/2026-10-21-dehydrated-report.md` | blob `8bde28bfc174b23034db614dbaacf26f1b6ac768` | 6711 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 078 | `RESEARCH/daily/2026-10-22-cortex-selfcheck.md` | blob `a4b6d43ad8eed9258344c0536020e5dec095c86b` | 2982 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 079 | `RESEARCH/daily/2026-10-22-dehydrated-report.md` | blob `36873ac15db216d1a813cdb9952b5033afe2a794` | 5309 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 080 | `RESEARCH/daily/2026-10-23-cortex-selfcheck.md` | blob `3fc964a915a1508525e5e58ed5bf1313c43477ae` | 7547 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 081 | `RESEARCH/daily/2026-10-23-dehydrated-report.md` | blob `3687308e110a67d4f2b9792b1d350a27565e4522` | 6124 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 082 | `RESEARCH/daily/2026-10-24-cortex-selfcheck.md` | blob `3ae92d107455b0a649e4bf865c093d12468f787d` | 3688 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 083 | `RESEARCH/daily/2026-10-24-dehydrated-report.md` | blob `b4021cc3d34e73e316218a7444864dfa86bfe0ca` | 6252 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 084 | `RESEARCH/daily/2026-10-25-cortex-selfcheck.md` | blob `a6cee7e4900d745e6464845343de94ecdc011d6c` | 6852 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 085 | `RESEARCH/daily/2026-10-25-dehydrated-report.md` | blob `28ffa22866eec3606c6268bebea0383b1e0b5cb5` | 16701 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 086 | `RESEARCH/daily/2026-10-26-cortex-selfcheck.md` | blob `d8d669a4f849559a29071ab6a54045a7adb9b4f3` | 3523 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 087 | `RESEARCH/daily/2026-10-26-dehydrated-report.md` | blob `caafded72c509acca574d16b3aea9be1db41a0d6` | 4511 B | DATE_NATIVE_SOURCE; no native runtime PASS inferred
+- 088 | `RESEARCH/weekly/2026-W43-alignment-report.md` | blob `4e7a3ebfa2a51bdc0e1394ace9bd6695d29e7c41` | 6394 B | W43_WEEKLY_SOURCE; no native runtime PASS inferred
+- 089 | `RESEARCH/weekly/2026-W43-reference-audit.md` | blob `953fe566eaf9444f3f2c1dfb5f47e2c835bf90c7` | 5331 B | W43_WEEKLY_SOURCE; no native runtime PASS inferred
+- 090 | `schemas/drift-report.schema.json` | blob `fe0d33bba1f8e04794d31bc1d37ae986a69569bf` | 707 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 091 | `schemas/process-result.schema.json` | blob `369926e9c78302915826c642d5a4d103166fe7fc` | 596 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 092 | `schemas/signal.schema.json` | blob `36b0296e38eeb3601eaec94846d043f0e34bd05c` | 708 B | RUNTIME_METHOD_SOURCE_NOT_TESTED; no native runtime PASS inferred
+- 093 | `SPECIFICATION.md` | blob `892163a913633289b4d05b09169d48e268ddb795` | 10017 B | CUSTODY_OR_CONTEXT; no native runtime PASS inferred
+- 094 | `tests/__init__.py` | blob `c2e5fec80d744a72c36002d3213d8ab88d4f4995` | 42 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 095 | `tests/test_analysis.py` | blob `6d8cdcf02216b3752a0cf3852c5d498a1fff702b` | 1255 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 096 | `tests/test_architecture.py` | blob `7a28ae1a71ab647db9d7f43ce39fa19260e16304` | 611 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 097 | `tests/test_core.py` | blob `44dd32d17e68cbf19dc4a53abaf17f1ac069392f` | 883 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 098 | `tests/test_database.py` | blob `0c325c912eb7a5da8196c883721cd40ea2bb77d4` | 1575 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 099 | `tests/test_observer.py` | blob `20bb88617ebc13332e8eb56e864bd224a0a99dc9` | 1382 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 100 | `tests/test_repository.py` | blob `9be10993c52cf3ab4a5647706688694f200c2198` | 3859 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 101 | `tests/test_scope_guard.py` | blob `6c72752f95bf49ce04192b613e402c9ee24487e4` | 1236 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 102 | `tests/test_tasks.py` | blob `f5ed61e5295c02b4d1d2b456f207f2536d054d29` | 1137 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+- 103 | `tests/test_validator.py` | blob `9bbe7156a0e4a631d628b5e64593cbb0e9928aa3` | 942 B | TEST_SOURCE_NOT_RUN; no native runtime PASS inferred
+
+## Post-prior-A2 exact Git change ledger
+- Δ01 | `AI_USE_DISCLOSURE.md` | modified, +2/-2 | current main change only; source/publisher timing retained
+- Δ02 | `GOVERNANCE/INDEPENDENT_REVIEW.md` | modified, +5/-5 | current main change only; source/publisher timing retained
+- Δ03 | `GOVERNANCE/MAINTENANCE.md` | modified, +12/-2 | current main change only; source/publisher timing retained
+- Δ04 | `GOVERNANCE/README.md` | modified, +3/-3 | current main change only; source/publisher timing retained
+- Δ05 | `RESEARCH/daily/2026-10-26-cortex-selfcheck.md` | added, +59/-0 | current main change only; source/publisher timing retained
+- Δ06 | `RESEARCH/daily/2026-10-26-dehydrated-report.md` | added, +61/-0 | current main change only; source/publisher timing retained
+- Δ07 | `RESEARCH/weekly/2026-W43-alignment-report.md` | added, +68/-0 | current main change only; source/publisher timing retained
+- Δ08 | `RESEARCH/weekly/2026-W43-reference-audit.md` | added, +59/-0 | current main change only; source/publisher timing retained
+- Δ09 | `historical-audits/2026-10/2026-10-26-a1-source-custody.md` | added, +283/-0 | current main change only; source/publisher timing retained
+
+## Process corrections from 2026-10-26 ten-repository execution
+- Before generating a PR, compare open PR `(owner, logical period, task class, base)` across **all** available work; reuse matching Draft instead of parallel branch conflicts.
+- A parallel PR closed without merge must never count as a new source experiment or extra native deliverable; actual current-main blob is the authoritative integrated object.
+- A1 is a ten-repository global merge barrier. A2 opens only after re-fetch of all ten exact main SHAs and merged A1 owner blobs.
+- `POST-A1 MAIN` ≠ `PRE-A1 MAIN` ≠ native task's original source base; preserve all three when doing historical correction.
+- Path coverage, scientific execution, standalone tests, local deployment, external first-party assertions and independent reproduction require separate statuses.
+- The last natural period is OPEN: W43 closure does not close October; W44 must not claim W43's Sunday as Monday evidence.
+- When tools cannot materialize native host/runtime, mark NOT_EXECUTED and retain known scientific blockages rather than infer green from PR merge.
+- Remediate only actually confirmed current-contract drift and preserve old files; this A2 updates the dated owner relation, not scientific code or producer history.
