@@ -6229,3 +6229,16 @@ NATIVE_MODIFICATION_NOTE: append only R5 month owner; original Jules R1/R2, R3/R
 - R5 October month still OPEN / NOT_NATURAL_MONTH_FINAL, new A2 research or experiment credit 0
 - SQLite persistence, exact DB open path, cross-task replay, native full suite and publisher-level verification NOT_EXECUTED
 - Current disposition: A2_40_OBJECT_RELATION / R1_PARTIAL_R2_EMPTY / A1_INHERITED / NO_GRAPH_HEALTH_PROMOTION
+
+
+## Forward relation — 2026-10-28 (Day 28, October remains OPEN)
+
+- This is a dated **derived month-to-date routing and acceptance note**, added to the existing October owner; it is not a second monthly version, an original producer Daily, a native monthly final, or an independent audit execution
+- Source state: merged A1 [#533](https://github.com/lostlight530/reflective-continuum/pull/533) covers October 1–27; merged A2 [#534](https://github.com/lostlight530/reflective-continuum/pull/534) extends the relation through October 28 from the merged A1 main; post-merge [acceptance #536](https://github.com/lostlight530/reflective-continuum/pull/536) retains the result and its evidence boundaries
+- October 28 original/derived boundary: October 28 R1 and R2 both record BLOCKED / NOT_EXECUTED in merged native #532; same date does not establish a common persistent graph store or measured semantic drift. The README current-state router was separately repaired in PR #537 without changing task-time evidence.
+- **A1:** Git source custody and merge `PASS`; complete in-scope content-level per-artifact decisions `PARTIAL / NOT_FULLY_ATTESTED`
+- **A2:** exact merged A1 ancestry and source identity `PASS`; complete Daily→Weekly→Monthly→Special/Stage semantic relations `PARTIAL / NOT_FULLY_ATTESTED`
+- D7 and D10 original independent audit outcomes remain `UNVERIFIED`; D14 is a preserved historical audit node and not a duplicate review credit; October D30 `NOT_DUE` until October 30
+- October natural-month final is `NOT_DUE` until natural closure; later code/path/PR presence does not upgrade earlier `BLOCKED`, `UNKNOWN` or `NOT_EXECUTED` states
+- Prior month-owner blocks above are retained as point-in-time views; no original task-time author, external source, runtime, research-batch count, independent verification, or long-term doctrine is changed by this note
+- `SOURCE_IDENTITY != CONTENT_DECISION != RUNTIME_VERIFICATION`; unresolved audit gates require separately inspectable primary evidence before status promotion
