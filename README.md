@@ -104,6 +104,18 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 The ADR and Methodology indexes are durable current navigation surfaces. Dated evidence/audit records remain point-in-time evidence for their own cutoffs and are not silently promoted into current runtime state.
 
 
+## Current periodic evidence routing — 2026-10-28
+
+- October's [month-to-date cognitive architecture review](RESEARCH/monthly/2026-10-cognitive-architecture-review.md) remains `OPEN`, and the natural-month final R5 is `NOT_DUE`
+- The dated [R1 report](RESEARCH/daily/2026-10-28-dehydrated-report.md) and [R2 selfcheck](RESEARCH/daily/2026-10-28-cortex-selfcheck.md) are retained on current `main` through [native delivery PR #532](https://github.com/lostlight530/reflective-continuum/pull/532), but each records `BLOCKED / NOT_EXECUTED`; this is not successful ingestion or selfcheck
+- Same-date records do not prove a named shared persistent store, valid graph continuity, measured drift, nonzero nodes or a passing current-day test suite
+- The [October 28 A1](https://github.com/lostlight530/reflective-continuum/pull/533), [A2](https://github.com/lostlight530/reflective-continuum/pull/534) and [post-merge audit](https://github.com/lostlight530/reflective-continuum/pull/536) have Git-delivery and inheritance evidence, while the per-artifact semantic review and full-month relationship acceptance remain `PARTIAL`
+- D30 is `NOT_DUE` until October 30; October natural close is distinct
+
+The earlier dated `Current periodic evidence note` sections below are **historical point-in-time checkpoints**, not assertions about the current October 28 run or store. They are kept intact to preserve their original cutoffs.
+
+## Preserved historical periodic checkpoints
+
 ## Current periodic evidence note — 2026-09-23
 
 The repository currently retains September R1/R2 Daily evidence through 2026-09-23 and open month-to-date R5 interpretation surfaces.
