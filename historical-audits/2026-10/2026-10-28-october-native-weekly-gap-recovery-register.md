@@ -43,10 +43,17 @@ Canonical paths: `RESEARCH/daily/YYYY-MM-DD-dehydrated-report.md` (R1), `RESEARC
 - W44 crosses November and is not yet a naturally completed weekly period.
 - `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` exists as an OPEN month owner, not a final R5 proof.
 - Existing October A1/A2 source-custody and relation artifacts remain, but per-content A1 typed decisions and complete A2 Daily→Weekly→Monthly consistency are PARTIAL.
-- D7/D10 UNVERIFIED, D14 historical record present without new replay, D30 NOT_DUE on Oct28. Oct29–31 are future.
+- D7/D10 are checkpoint dates (not required individual files); source/log review is NOT_FULLY_ATTESTED here. D14 historical record present; D30 NOT_DUE on Oct28. Oct29–31 are future.
 
 ## Bounded correction plan
 
 First recover original task-time storage identity and producer/runner receipts. Re-run only with documented durable storage: provide R1 read/write log, persisted object identifier and R2 check against **that exact same store and logical revision**, then issue a newer correction if observable results change. Per-object A1 review must separate legitimate NO_FOLLOW_UP from BLOCKED and missing source. A2 must retain historical transitions; no correction may silently promote the Oct28 fail-closed state.
 
 This register introduces no runtime PASS, no historical rewrite, no second A1/A2 or independent D-audit credit. Human review is required before merge.
+
+## 2026-10-28 SOP reconciliation: audit checkpoint is not file identity
+
+- **D7, D10, D14 and D30 define audit checkpoint dates/windows, not mandatory per-checkpoint Markdown filenames or a replacement daily research task.** The audit contract requires append-only, traceable findings within the owning audit log/record.
+- The unmerged PR previously carried a separate Oct28 `retrospective-d7-d10` draft artifact; it was withdrawn from the current PR diff after correction of this interpretation. Historical Git commits on the draft branch remain traceable. Its temporary existence is not credit for Oct07/Oct10 execution.
+- A missing file named for D7 or D10, by itself, is **not** a missing audit. A missing or insufficient dated *audit-log entry/runner evidence* may be reported only after inspecting the owning log/authority and its genuine due contract. This inventory has not established all that evidence; checkpoint outcome is `NOT_FULLY_ATTESTED`, not `NOT_EXECUTED`.
+- Existing October A1/A2 per-object semantic verification remains `PARTIAL`. This reconciliation does not silently change earlier A1/A2 or D14 records and does not assert a full October closure.
