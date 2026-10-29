@@ -6412,3 +6412,173 @@ NATIVE_MODIFICATION_NOTE: append only R5 month owner; original Jules R1/R2, R3/R
 - Oct29 native current-day is outside A1 and can join A2 only after global 10/10 A1 merged and fresh main.
 - Local native checker, historical store replay, all new JSON and scientific semantics NOT_EXECUTED or NOT_FULLY_ATTESTED.
 - A1 disposition: source-level decisions for 56 daily + 8 weekly, broader repository semantics PARTIAL / unresolved opened-store evidence.
+
+
+## A2_2026_10_29_REFLECTIVE_MONTH_RELATION
+
+- Inherited exact ten-A1-merged main 128520ac64c3a45181eb81a91237d26ea2195d8b and original October A1 blob `9ae240fd1a876ed4864cda767aebdc06e597579e`; N=Oct29, full relation Oct01–29.
+- Original A1 reviewed Oct01–28 native date/source owners, not every repo runtime; those decisions are versioned inheritance, not a new test run.
+- Current original native N owner: `RESEARCH/daily/2026-10-29-dehydrated-report.md`; N lives outside A1 and is incorporated only as new A2 input.
+- No original author or natural month-close promotion; October remains OPEN and all external-runner uncertainty remains explicit.
+- Current relation decisions below inherit A1 content, then preserve logical N provenance and unexecuted validation as separate evidence classes.
+### Dated original native source relationship (A1-to-A2 successor)
+#### 2026-10-01 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-01-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-01 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-02 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-02-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-02 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-03 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-03-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-03 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-04 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-04-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-04 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-05 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-05-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-05 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-06 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-06-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-06 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-07 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-07-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-07 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-08 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-08-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-08 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-09 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-09-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-09 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-10 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-10-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-10 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-11 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-11-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-11 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-12 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-12-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-12 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-13 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-13-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-13 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-14 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-14-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-14 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-15 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-15-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-15 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-16 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-16-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-16-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-16 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-17 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-17-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-17-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-17 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-18 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-18-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-18-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-18 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-19 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-19-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-19-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-19 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-20 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-20-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- Decision: `RESEARCH/daily/2026-10-20-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Boundary: Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- A2 successor: this 2026-10-20 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-21 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-21-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-21-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-21 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-22 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-22-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-22-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-22 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-23 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-23-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-23-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-23 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-24 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-24-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-24-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-24 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-25 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-25-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-25-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-25 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-26 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-26-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-26-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-26 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-27 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-27-cortex-selfcheck.md`: EPHEMERAL_TEST_ONLY.
+- Decision: `RESEARCH/daily/2026-10-27-dehydrated-report.md`: R1 isolated ephemeral-store execution, not original opened DB.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-27 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+#### 2026-10-28 — inherited A1 relation
+- Original: `RESEARCH/daily/2026-10-28-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- Decision: `RESEARCH/daily/2026-10-28-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Boundary: Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- A2 successor: this 2026-10-28 version is not an Oct29 execution; repo source-time outcome held, no independent source or test credit transferred.
+### Oct29 original new source and day-specific relation
+- N01: Oct29 `dehydrated-report.md` is explicitly R1 original ingestion report even though file name can be misunderstood by suffix.
+- N02: Oct29 `cortex-selfcheck.md` is R2, not R1; canonical task IDs in actual document headings take precedence.
+- N03: Oct29 R1 local original ingestion/morpher NOT_EXECUTED, source candidate records NOT_INJECTED, analysis INCONCLUSIVE.
+- N04: Oct29 R2 native selfcheck/tests NOT_EXECUTED; state BLOCKED, stdout/exit/run receipt not captured.
+- N05: R2 requires actual R1 same-day available store and successful native ingestion; R1 path presence is insufficient.
+- N06: W43 R3 is documentary and drift NOT_COMPUTED; R4 static source audit, native link checker NOT_EXECUTED.
+- N07: W42 R4 orphan REFERENCES/INDEX needs exact bounded correction, not retroactive rewrite.
+- N08: Earlier day27 ephemeral SQLite fixture cannot establish persisted reopened-store identity at day29.
+- N09: No graph mutation, durable R5 phase or native code validation supported; October OPEN.
+- N10: Original 27/27 and 26/27 tests are run-specific prior observations, not current test result.
+### Weekly, audit and month closure gate
+- W40, W41, W42, W43 due historical original weekly contexts stay as inherited A1; none rerun here.
+- W44 open Oct26–Nov01 is not a finalized weekly outcome, even if Oct29 native Daily exists.
+- No named D7/D10 missing-file inference; checkpoint original runner evidence must be evaluated independently.
+- D30 Oct30 and natural October month close NOT_DUE as-of Oct29; no premature official monthly report.
+- Parent GitHub merge is code custody but not original source-time external system outcome.
+- Scope: only appended current monthly relation; old native Daily, Weekly, code, protected paths and audit history left unchanged.
+- Validation here: exact GitHub main and blob, content-level original A1 inheritance, PR diff scope; local runtime/independent source verification NOT_EXECUTED.
+- Result: current Oct01–29 source-relation chain documented; full scientific/runtime/content-corpus assurance remains PARTIAL and UNKNOWN where explicitly previously recorded.
