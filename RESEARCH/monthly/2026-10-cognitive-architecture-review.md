@@ -6242,3 +6242,173 @@ NATIVE_MODIFICATION_NOTE: append only R5 month owner; original Jules R1/R2, R3/R
 - October natural-month final is `NOT_DUE` until natural closure; later code/path/PR presence does not upgrade earlier `BLOCKED`, `UNKNOWN` or `NOT_EXECUTED` states
 - Prior month-owner blocks above are retained as point-in-time views; no original task-time author, external source, runtime, research-batch count, independent verification, or long-term doctrine is changed by this note
 - `SOURCE_IDENTITY != CONTENT_DECISION != RUNTIME_VERIFICATION`; unresolved audit gates require separately inspectable primary evidence before status promotion
+
+
+## A1_REFLECTIVE_CONTENT_DECISIONS_2026_10_29
+
+- External A1 Oct01–28, exact main 6ef1f8b5aac883e37e0a3064776dd00fb26b45ef, producer independent maintenance distinct from original Jules/GPT native.
+- Directly read 56 original dated daily Markdown bodies, eight original weekly R3/R4 and October monthly owner; Oct02 separate JSON parity NOT_ATTESTED.
+- Critical source-time split: 21–26/28 exact native scripts blocked, 27 only isolated ephemeral SQLite store test; current opened persistent DB identity unknown.
+- Current file suffix `cortex-selfcheck` versus `dehydrated-report` must not override explicit later R2/R1 source headings.
+- Earlier 26/27 or 27/27 tests are recorded original test output, not current repeat or live database conformance.
+- Weekly R3 selected-query drift, R4 link topology, individual R1 ingestion and R2 selfcheck are distinct authority classes.
+- No original older files changed; October OPEN, natural month final NOT_DUE, W44 not closed.
+### Daily item-level decisions
+### 2026-10-01: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-01-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-02: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-02-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-03: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-03-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-04: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-04-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-05: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-05-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-06: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-06-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-07: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-07-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-08: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`: original test failed=1 of 27 where recorded.
+- `RESEARCH/daily/2026-10-08-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-09: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-09-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-10: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-10-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-11: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-11-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-12: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-12-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-13: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-13-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-14: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-14-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-15: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-15-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-16: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-16-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-16-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-17: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-17-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-17-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-18: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-18-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-18-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-19: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-19-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-19-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-20: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-20-cortex-selfcheck.md`: original test failed=0 of 27 where recorded.
+- `RESEARCH/daily/2026-10-20-dehydrated-report.md`: source-time signal acceptance/rejection and rollback evidence remains run-scoped.
+- Content decision: NO_FOLLOW_UP — 27-case result and ingestion/rejection are distinct, and in-memory store is not persistent state.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-21: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-21-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-21-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-22: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-22-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-22-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-23: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-23-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-23-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-24: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-24-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-24-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-25: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-25-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-25-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-26: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-26-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-26-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-27: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-27-cortex-selfcheck.md`: EPHEMERAL_TEST_ONLY.
+- `RESEARCH/daily/2026-10-27-dehydrated-report.md`: R1 isolated ephemeral-store execution, not original opened DB.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### 2026-10-28: original R1/R2 source custody
+- `RESEARCH/daily/2026-10-28-cortex-selfcheck.md`: NATIVE_EXECUTION_BLOCKED.
+- `RESEARCH/daily/2026-10-28-dehydrated-report.md`: R1 GPT successor BLOCKED / NOT_EXECUTED.
+- Content decision: BOUNDARY_UPDATE — later record heading reverses file-suffix R1/R2 routing; no source-date success transfer.
+- Verification: no current exact native script, SQLite durable store reopening, or independent signal replay; previous original original run author/date unchanged.
+### Weekly item-level decisions
+- 2026-W40 R3 `RESEARCH/weekly/2026-W40-alignment-report.md`: R3 STABLE within :memory: FTS5 selected queries.
+- 2026-W40 R4 `RESEARCH/weekly/2026-W40-reference-audit.md`: R4 link topology checked.
+- 2026-W41 R3 `RESEARCH/weekly/2026-W41-alignment-report.md`: R3 STABLE within cortex.db selected queries.
+- 2026-W41 R4 `RESEARCH/weekly/2026-W41-reference-audit.md`: R4 checked references.
+- 2026-W42 R3 `RESEARCH/weekly/2026-W42-alignment-report.md`: R3 historical bounded source report.
+- 2026-W42 R4 `RESEARCH/weekly/2026-W42-reference-audit.md`: R4 REFERENCES/INDEX orphan noted.
+- 2026-W43 R3 `RESEARCH/weekly/2026-W43-alignment-report.md`: R3 DOCUMENTARY_REVIEW_COMPLETE; OPERATIONAL_DRIFT_NOT_COMPUTED.
+- 2026-W43 R4 `RESEARCH/weekly/2026-W43-reference-audit.md`: R4 STATIC_GIT_INSPECTION; NATIVE_LINK_CHECKER_NOT_EXECUTED.
+### Source-level uncertainty and successor state
+- `:memory:` diagnostic test does not establish persistent store identity; later `cortex.db` requires exact opened path and commit-scoped fixture.
+- A rejected signal plus successful rollback does not imply that input was admitted or graph changed.
+- W42 R4 orphan classification cannot be silently overwritten by later document-route presence.
+- W43 R3 and R4 explicitly distinguish documentary/static audit from executed operational checks.
+- Original October R1/R2 timing and producer identity retained, even when present now on current main.
+- Oct29 native current-day is outside A1 and can join A2 only after global 10/10 A1 merged and fresh main.
+- Local native checker, historical store replay, all new JSON and scientific semantics NOT_EXECUTED or NOT_FULLY_ATTESTED.
+- A1 disposition: source-level decisions for 56 daily + 8 weekly, broader repository semantics PARTIAL / unresolved opened-store evidence.
