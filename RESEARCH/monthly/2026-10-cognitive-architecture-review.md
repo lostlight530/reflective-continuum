@@ -6591,3 +6591,207 @@ NATIVE_MODIFICATION_NOTE: append only R5 month owner; original Jules R1/R2, R3/R
 - **R2 October 30:** `RESEARCH/daily/2026-10-30-cortex-selfcheck.md` @ blob `081606d561e436823047aaefad9e7a6439f9760b`; same merged PR #545. Cortex selfcheck and test suite **NOT_EXECUTED**; modules, SQLite state, independent drift, test totals and shared persistent-store continuity **NOT_OBSERVED / NOT_COMPUTED**.
 - **Historic separation:** September A1/A2 historical maintenance-accounting close does not erase R5 `PROVISIONAL / ANALYSIS_INCONCLUSIVE`, the historical 26/27 test observation, missing transition logs or uncertain common-store identity. The October02 D30 retrospective is a *separate* earlier audit, not October30 D30 proof.
 - **Current month and evidence result:** October `MONTH_OPEN / R5_NATURAL_FINAL_NOT_DUE`; no cognitive architecture/phase recommendation or store-health PASS. Current-day D30 checkpoint **NOT_ATTESTED_BY_THIS_RECORD**. Checked exact GitHub main, source blobs, native reports and month owner; native GAS commands, link validator, test replay, DB connection and original scientific test verification **NOT_EXECUTED**. No changed historic report, `ingestion.log`, database, code or GitHub workflow.
+
+## A2_CURRENT_MONTH_GAS_RELATION_2026_10_30
+
+- Current main ae8d0f7ff33ca821f3b02bf0f135cd3054863a86, merged A1 historical-audits/2026-10/2026-10-30-a1-gas-source-review.md blob 6d52f82e1a813d57a87b56f1860067fcf4cb5ce4
+- Logical period Oct01–30 Asia/Shanghai; GAS R1 ingestion and R2 selfcheck have independent run/store identities
+- A1 examined 58 original Oct01–29 R1/R2 bodies and eight due R3/R4 Weeklies, retaining test failures and native blocked states
+- Oct30 original R1/R2 newly admitted only as source-bound reports, not independent local Python execution
+- October R5 remains OPEN / final NOT_DUE until Oct31 natural month; W44 R3/R4 final NOT_DUE before Nov01
+- SAME_DATE != SAME_STORE, 27/27 local checks != durable shared graph health, and synthetic :memory: graph does not establish persisted GAS state
+- Posthoc source inspection and rollback cannot silently rewrite original task-time graph/ingestion evidence
+
+### Per-original-date R1/R2 state and cross-source consistency
+#### 2026-10-01 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-01-dehydrated-report.md`, original blob `032da79e77e12d350a7644682768ea85da99c7ef`
+- R1 source-time state: R1 body state: R1 run; graph write false; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-01-cortex-selfcheck.md`, original blob `4cef741f0b59c60f1360c8dcfac5387c71d56394`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: not durable; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-02 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-02-dehydrated-report.md`, original blob `10e8962cda344f5e70ce09d19719a31e0eb30bf8`
+- R1 source-time state: R1 body state: R1 run; graph write false; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-02-cortex-selfcheck.md`, original blob `7c1617a59b2360e847d04365c11d1a1423c3981a`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: R2 failed count retained; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-03 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-03-dehydrated-report.md`, original blob `d3b3dd21dd56d92afa3bd6b2487dbe44a1024cea`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-03-cortex-selfcheck.md`, original blob `d4eb48d90f908794ade985e8577f3c82f26e2d74`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: analysis inconclusive; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-04 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-04-dehydrated-report.md`, original blob `06f754048910ebe97727f7846e83c42c46105d17`
+- R1 source-time state: R1 body state: R1 run; graph write false; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-04-cortex-selfcheck.md`, original blob `44ad371f641d2854937361a3d295948ebdf3daf7`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: no exceptions != pass; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-05 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-05-dehydrated-report.md`, original blob `bd0f0757b545314a58aee6cc2590c031a990c8a7`
+- R1 source-time state: R1 body state: R1 run; partial signal acceptance; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-05-cortex-selfcheck.md`, original blob `bbbbe15a0d3e335cfb477ec1b73b73918a60623f`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: two accepted != graph health; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-06 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-06-dehydrated-report.md`, original blob `ca6e5cc558adafaae484c7c42466385e7b9e356f`
+- R1 source-time state: R1 body state: R1 run; graph count not computed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-06-cortex-selfcheck.md`, original blob `5efa4bd6be58adbba8ee8b68fddd0bd0626342fe`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: do not borrow R2 graph count; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-07 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-07-dehydrated-report.md`, original blob `c17f5a35ab84885c075f1230cefb39a9b54e3660`
+- R1 source-time state: R1 body state: R1 run; inconclusive; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-07-cortex-selfcheck.md`, original blob `0b12cdd1bbd9bc683c7829bda048521dfb2be702`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: no synthesis promotion; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-08 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-08-dehydrated-report.md`, original blob `d604969e0fd1d47c827512d194f83a798f8d71c5`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-08-cortex-selfcheck.md`, original blob `6fe4ac75864f05555c333ad4bda140ad34014640`
+- R2 state and shared-store boundary: R2 body state: R2 26/1, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: same date not shared store; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-09 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-09-dehydrated-report.md`, original blob `96662ee6cdc49962e7a63b68e38f05ab38e0f238`
+- R1 source-time state: R1 body state: R1 run; analysis inconclusive; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-09-cortex-selfcheck.md`, original blob `4bb85f31d9b8cead4d53b28acff68b1aee954ed3`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: test pass not graph health; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-10 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-10-dehydrated-report.md`, original blob `b8ee911a8bbcd1a20dafa20440c1a3c8770124ca`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-10-cortex-selfcheck.md`, original blob `4b63feedb2474542b2daaf147acfc0e17bddd7bb`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: zero graph is indeterminate; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-11 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-11-dehydrated-report.md`, original blob `b5d65dba8c8c3061e2acf1dda724a72d9272f398`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-11-cortex-selfcheck.md`, original blob `1d19d939fa08ecf16370d69d00d60fc3357b43f1`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: store continuity unverified; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-12 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-12-dehydrated-report.md`, original blob `092b1e5e6c86a3cb1cdf8786728cc6411efcc527`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-12-cortex-selfcheck.md`, original blob `e62e93d18ba9340972f601ce790eaa7c971beb38`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: no synthesis conclusion; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-13 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-13-dehydrated-report.md`, original blob `c151b273f54e97824c8848a888b69b4ba8929056`
+- R1 source-time state: R1 body state: R1 run; inconclusive; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-13-cortex-selfcheck.md`, original blob `3c910367c6c999168624534538bceca43e55ec97`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, store ID not reported; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: missing store identity; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-14 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-14-dehydrated-report.md`, original blob `2fe91a00152dea66b6f32d852bea36bd97b83246`
+- R1 source-time state: R1 body state: R1 run; rejected signal recorded; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-14-cortex-selfcheck.md`, original blob `1757e5347af76d59a7cf06ff31895b8c1188bd79`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: partial ingestion preserved; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-15 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-15-dehydrated-report.md`, original blob `e5e0420106de615931142f31dac144676263a14c`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-15-cortex-selfcheck.md`, original blob `4268c0bf46022034b35be15b95f4c51283d42252`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: test not persistent graph; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-16 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-16-dehydrated-report.md`, original blob `12c0f21afd7e53c51955c7b7a69416cbe15a69a8`
+- R1 source-time state: R1 body state: R1 run; three signal candidates; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-16-cortex-selfcheck.md`, original blob `224b9352213935d06d6a3cd003f4a1924d4fa76f`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: candidate not ingestion; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-17 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-17-dehydrated-report.md`, original blob `892352813b1268fbae37f1b0117dfa9437a1a64c`
+- R1 source-time state: R1 body state: R1 run; analysis inconclusive; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-17-cortex-selfcheck.md`, original blob `1e045734dd6a0c24fb3bb8966b7da3153bb0cc64`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: module OK is bounded; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-18 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-18-dehydrated-report.md`, original blob `1ccb9cdacc610a862439ed3e6092c404e450e550`
+- R1 source-time state: R1 body state: R1 run; two accepted one rejected; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-18-cortex-selfcheck.md`, original blob `87bd94f0e6693732c08f81967aa763aa3621189d`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: rejection remains; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-19 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-19-dehydrated-report.md`, original blob `b62a081bed1a33d717a592efb7d0cebb4499e329`
+- R1 source-time state: R1 body state: R1 run; two accepted one rejected; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-19-cortex-selfcheck.md`, original blob `801e3b7be8d8cf03c6693c8127e5509bc891fe9a`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: no independent reproduction; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-20 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-20-dehydrated-report.md`, original blob `955e31e86eac877beb6545b2a2e047a16fa57c21`
+- R1 source-time state: R1 body state: R1 run; synthesis not performed; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-20-cortex-selfcheck.md`, original blob `4305369654b13edc064cbe7538f7804625ea41b0`
+- R2 state and shared-store boundary: R2 body state: R2 27/0, empty store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: W43 hard rollback retained; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-21 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-21-dehydrated-report.md`, original blob `8bde28bfc174b23034db614dbaacf26f1b6ac768`
+- R1 source-time state: R1 body state: R1 original blocked, later isolated drill; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-21-cortex-selfcheck.md`, original blob `e7236612f082fb7d47043830474ee1584f83d6a7`
+- R2 state and shared-store boundary: R2 body state: R2 blocked, tests not computed; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: posthoc not native run; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-22 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-22-dehydrated-report.md`, original blob `36873ac15db216d1a813cdb9952b5033afe2a794`
+- R1 source-time state: R1 body state: R1 blocked, original ingestion not run; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-22-cortex-selfcheck.md`, original blob `a4b6d43ad8eed9258344c0536020e5dec095c86b`
+- R2 state and shared-store boundary: R2 body state: R2 blocked, store unknown; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: separate memory SQLite control; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-23 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-23-dehydrated-report.md`, original blob `3687308e110a67d4f2b9792b1d350a27565e4522`
+- R1 source-time state: R1 body state: R1 blocked, candidate source only; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-23-cortex-selfcheck.md`, original blob `3fc964a915a1508525e5e58ed5bf1313c43477ae`
+- R2 state and shared-store boundary: R2 body state: R2 blocked, graph not computed; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: no native run ID; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-24 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-24-dehydrated-report.md`, original blob `b4021cc3d34e73e316218a7444864dfa86bfe0ca`
+- R1 source-time state: R1 body state: R1 blocked, source review; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-24-cortex-selfcheck.md`, original blob `3ae92d107455b0a649e4bf865c093d12468f787d`
+- R2 state and shared-store boundary: R2 body state: R2 blocked, graph not computed; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: scoping not store proof; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-25 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-25-dehydrated-report.md`, original blob `28ffa22866eec3606c6268bebea0383b1e0b5cb5`
+- R1 source-time state: R1 body state: R1 blocked, synthetic SQLite fixture; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-25-cortex-selfcheck.md`, original blob `a6cee7e4900d745e6464845343de94ecdc011d6c`
+- R2 state and shared-store boundary: R2 body state: R2 blocked, no test run; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: fixture not operational; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-26 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-26-dehydrated-report.md`, original blob `caafded72c509acca574d16b3aea9be1db41a0d6`
+- R1 source-time state: R1 body state: R1 blocked, no original ingestion; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-26-cortex-selfcheck.md`, original blob `d8d669a4f849559a29071ab6a54045a7adb9b4f3`
+- R2 state and shared-store boundary: R2 body state: R2 blocked, no native tests; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: prior-day evidence not today; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-27 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-27-dehydrated-report.md`, original blob `fda132a22397d3a4801c624dd51b9fb2cc0ef5da`
+- R1 source-time state: R1 body state: R1 executed ephemeral store; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-27-cortex-selfcheck.md`, original blob `4664d7d374f145f439ccb52a5021c87cd13c93dc`
+- R2 state and shared-store boundary: R2 body state: R2 27/27 on empty temporary store; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: no durable shared store; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-28 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-28-dehydrated-report.md`, original blob `7f7d5d8ec0e941d3f90d42ae6e4c6d4d0825b8cc`
+- R1 source-time state: R1 body state: R1 blocked; no graph effect; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-28-cortex-selfcheck.md`, original blob `adbebbb82d84ab2b812972dfa79b5519eca21474`
+- R2 state and shared-store boundary: R2 body state: R2 blocked; counts not computed; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: source lead not ingestion; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+#### 2026-10-29 — original GAS pair relation
+- R1 exact original: R1: `RESEARCH/daily/2026-10-29-dehydrated-report.md`, original blob `9d658877a5ec8a733831e6ed69803e8dcb71d855`
+- R1 source-time state: R1 body state: R1 blocked; 3 candidate-only sources; no current action replays original ingestion
+- R2 exact original: R2: `RESEARCH/daily/2026-10-29-cortex-selfcheck.md`, original blob `e5125989256d94efb1e70751feffe6d3a6bc0bb5`
+- R2 state and shared-store boundary: R2 body state: R2 blocked; no execution log; reported selfcheck is not shared operational graph
+- New month interpretation: Maintenance finding: shared store not shown; preserve recorded negatives and avoid historical rewrite; later source presence never proves persisted state
+
+### Oct30 original R1 / R2 new input states
+- R1 path RESEARCH/daily/2026-10-30-dehydrated-report.md, blob 97e60222d5b20efc00ec6f22988393e1eceddeaa; - Native R1 Status: BLOCKED / NOT_EXECUTED | - Synthesis Status: NOT_PERFORMED | - Knowledge Graph Injection: NOT_EXECUTED | - Actual convergence invocation: NOT_EXECUTED | - Named opened store path/URI/connection ID: NONE / NOT_AVAILABLE | - Graph nodes/edges, Shannon entropy, phase and drift: NOT_COMPUTED | - R1/R2 same-day store match: NOT_DEMONSTRATED / SAME_DATE != SAME_STORE | - UNCHANGED_BOUNDARY: source -> convergence -> morpher -> observer -> named store are separate gates. | - UNKNOWN_RETAINED: convergence, accepted/rejected outcomes, rollback, store identity, graph, entropy, phase and drift.
+- R2 path RESEARCH/daily/2026-10-30-cortex-selfcheck.md, blob 081606d561e436823047aaefad9e7a6439f9760b; - R2 Status: BLOCKED / NOT_EXECUTED | - Actual selfcheck invocation: NOT_EXECUTED | ## Opened store identity and state boundary | - DB path, URI, connection ID and store incarnation: NOT_AVAILABLE | - SAME_DATE != SAME_STORE; identical source candidates do not demonstrate a shared persistent database. | - NEW_COUNTEREVIDENCE: inaccessible exact checkout and missing named store prevent valid continuity and drift comparisons. | - NEXT_RETEST_CONDITION: run native Python selfcheck and repository tests in any authorized exact-revision execution environment with captured command/environme
+- R1 source candidate collection was not original ingestion; convergence NOT_EXECUTED, morph_from_file NOT_EXECUTED, graph nodes and entropy NOT_COMPUTED
+- R2 selfcheck and test runner NOT_EXECUTED, no database URI/incarnation; SAME_DATE != SAME_STORE and cannot calculate drift or health
+- Original R2 contains a forward correction retracting an earlier claimed curl DNS probe/exit 6; retain correction as negative execution evidence
+
+### Weekly R3/R4 and current R5 evidence
+- W43 R3 original alignment report blob 4e7a3ebfa2a51bdc0e1394ace9bd6695d29e7c41, documentary review complete but operational drift NOT_COMPUTED
+- W43 R4 original reference audit blob 953fe566eaf9444f3f2c1dfb5f47e2c835bf90c7, static Git topology only; native markdown link checker NOT_EXECUTED
+- W40–W42 original weekly references and failure limitations remain prior independent snapshot, not current execution
+- W44 R3/R4 final not naturally due, and R5 October final not due at current date
+- October A1 uses original file read and source-status decisions, no validated shared persistent graph series established
+- Verification actually performed: all-ten A1 merged census, original 58 daily evidence decisions, W43 R3/R4, Oct30 R1/R2, current R5 owner
+- NOT_EXECUTED: native Python convergence, SQLite live-store inspection, R2 tests, markdown link checker, complete source independent replication or GitHub CI
+- Protected: original R1/R2/R3/R4, SPEC/ADR, current database and rollback audit history unchanged
+- Disposition APPEND_RELATION / BLOCKED_NATIVE_EXECUTION_PRESERVED / NO_GRAPH_HEALTH_PROMOTION / OCTOBER_OPEN
