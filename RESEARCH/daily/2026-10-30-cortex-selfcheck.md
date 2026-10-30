@@ -28,7 +28,7 @@
 - DB State: NOT_OBSERVED
 - Incremental Drift: NOT_COMPUTED
 - Current GitHub workflow evidence: .github/workflows/pages.yml only; it is a Pages deployment surface, not a Python test receipt.
-- Cloud tool-container Github DNS probe failed (curl exit 6); this failure is not a selfcheck result or proof of a GitHub Actions job result.
+- Cloud DNS/clone probe: NOT_EXECUTED in this run; no exit code, stderr or stdout was captured for such a probe. GitHub PR access is independent of actual selfcheck execution.
 - No authenticated local computer is required for PR delivery; an exact-revision runnable CLOUD environment and test inputs remain unobserved.
 
 ## Opened store identity and state boundary
@@ -48,8 +48,13 @@
 - UNCHANGED_BOUNDARY: module import, validator, database identity and persistent graph must be observed separately.
 - NEW_COUNTEREVIDENCE: inaccessible exact checkout and missing named store prevent valid continuity and drift comparisons.
 - UNKNOWN_RETAINED: module health, graph integrity, actual nodes/edges, all test outcomes, durable state, phase and drift.
-- NEXT_RETEST_CONDITION: run native Python selfcheck and repository tests on pinned GitHub-hosted runner with captured command/environment/version/exit and independent named database identity; compare with R1 only if store identities can be matched.
+- NEXT_RETEST_CONDITION: run native Python selfcheck and repository tests in any authorized exact-revision execution environment with captured command/environment/version/exit and independent named database identity; compare with R1 only if store identities can be matched. No CI/CD pipeline is required or proposed.
 
 ## Final boundary
 - No history, code, tests, database, ingestion.log, Actions, or governance changes.
 - R2 Native tests: NOT_EXECUTED. October Monthly R5: NOT_DUE.
+
+## Prospective Draft-PR correction — 2026-10-30
+- CORRECTION: Earlier draft text asserted a cloud `curl` DNS probe and exit code 6. That command was **not executed in this run**; no such receipt exists. The lines were replaced above with `NOT_EXECUTED / NO_EXIT_CODE` and the original draft commit remains in the PR Git history for review.
+- RECONCILIATION: User-maintained workflow has no deployed scientific GitHub Actions CI pipeline. Axiom's historical `pipeline-manifest` nomenclature (where applicable) denotes the canonical A1-A4 task dependency chain, not an external CI runner requirement.
+- UNCHANGED: real scanners, selfchecks and tests are `NOT_EXECUTED`; no experimental PASS, graph mutation or formal execution result is claimed.
