@@ -17,7 +17,7 @@
 - Delivery State: PROPOSED_DRAFT_PR / NOT_MERGED_AT_AUTHORING
 - Exact GitHub main executable checkout in authorized runner: NOT_AVAILABLE
 - Workflow directory: .github/workflows/pages.yml; no native Python ingestion job observed.
-- GitHub cloud connector: READ/WRITE_AVAILABLE for files/PR; cloud tool-container GitHub DNS lookup failed (curl exit 6), which is NOT proof any GitHub Actions job failed.
+- GitHub cloud connector: READ/WRITE_AVAILABLE for files/PR; no tool-container DNS or clone probe was actually run for this record. NO_EXIT_CODE / NO_STDERR exists for any such probe.
 
 ## Source-checked research candidates — NOT ingested signals
 The following are three evidence-backed candidate records only. They were NOT passed into InsightMorpher and they do not prove GAS persistence.
@@ -52,7 +52,7 @@ The following are three evidence-backed candidate records only. They were NOT pa
 - Actual convergence invocation: NOT_EXECUTED
 - Actual command stdout/stderr/exit code: NOT_CAPTURED
 - Fixed fixture hash / iteration count / convergence: NOT_COMPUTED
-- Reason: GitHub cloud API supports PR delivery but current repository Pages workflow is not an executed native Python test job; no exact-revision executable cloud checkout or authorized runner was available in this pass.
+- Reason: GitHub cloud API supports PR delivery; no exact-revision Python execution environment was materialized via the available connector. Repository Pages deployment workflow is not a GAS test result; this does not imply that a separate CI pipeline should exist.
 - Hard gate: no successful convergence -> InsightMorpher NOT invoked.
 - COGNITIVE_DIVERGENCE_ALERT: NOT_ISSUED; missing execution is not observed divergence.
 
@@ -74,7 +74,7 @@ The following are three evidence-backed candidate records only. They were NOT pa
 Three verified documentary leads concern held-effect verification, version-specific security fixes, and check/connect destination identity. These are candidates, not accepted graph inputs. Native convergence and ingestion did not execute; no local observer outcome, rollback, entropy, phase change, or persisted state is attributed to the run.
 
 ## Evidence Delta
-- NEW_EVIDENCE: source-bounded candidate set and explicit cloud workflow-versus-runner capability distinction.
+- NEW_EVIDENCE: source-bounded candidate set and explicit distinction between GitHub cloud PR delivery and scientific command execution (the latter NOT_EXECUTED).
 - CORRECTED_INTERPRETATION: GitHub-hosted PR delivery is not a Python convergence test; source candidates cannot be counted as accepted nodes.
 - UNCHANGED_BOUNDARY: source -> convergence -> morpher -> observer -> named store are separate gates.
 - NEW_COUNTEREVIDENCE: paper assumes read-only operations are effect-free, which must be tested at the actual tool-adapter boundary; version-specific security advisories expose identity/authorization mistakes.
@@ -84,3 +84,8 @@ Three verified documentary leads concern held-effect verification, version-speci
 ## Write-boundary check
 - New R1 path only; no old records, ingestion.log, database, code, tests, governance or Pages workflow modified.
 - Native actual command and tests: NOT_EXECUTED.
+
+## Prospective Draft-PR correction — 2026-10-30
+- CORRECTION: Earlier draft text asserted a cloud `curl` DNS probe and exit code 6. That command was **not executed in this run**; no such receipt exists. The lines were replaced above with `NOT_EXECUTED / NO_EXIT_CODE` and the original draft commit remains in the PR Git history for review.
+- RECONCILIATION: User-maintained workflow has no deployed scientific GitHub Actions CI pipeline. Axiom's historical `pipeline-manifest` nomenclature (where applicable) denotes the canonical A1-A4 task dependency chain, not an external CI runner requirement.
+- UNCHANGED: real scanners, selfchecks and tests are `NOT_EXECUTED`; no experimental PASS, graph mutation or formal execution result is claimed.
