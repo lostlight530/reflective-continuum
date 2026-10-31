@@ -75,7 +75,7 @@ Each candidate is a documentary lead only; no signal JSON was passed to InsightM
 - Same-date R2 evidence: NOT_AUTOMATICALLY_LINKED / SAME_DATE != SAME_STORE
 
 ## 中文综合
-当日核验了三条不同证据谱系的候选：依赖失效与记忆读取资格、无效工具结果的判断到动作转移、外部 Sandbox 控制器的身份与状态竞态。它们尚未被 GAS 接收；由于未取得可执行的精确版本工作树，未运行收敛与摄入，未打开持久化存储，不能报告节点变化、相变、语义漂移或恢复成功。
+当日核验了三条不同证据谱系的候选：依赖失效与记忆读取资格、无效工具结果的判断到动作转移、外部 Sandbox 控制器的身份与状态竞态.它们尚未被 GAS 接收；由于未取得可执行的精确版本工作树，未运行收敛与摄入，未打开持久化存储，不能报告节点变化、相变、语义漂移或恢复成功.
 
 ## English synthesis
 Three bounded research leads concern version-dependent memory invalidation, evidence-conditioned stopping, and controller identity/status races. They are not accepted GAS signals. Exact-revision Python execution and persistence were unavailable; no convergence run, ingestion, observer outcome, phase transition, entropy or durable store relation is attributed to this R1.
