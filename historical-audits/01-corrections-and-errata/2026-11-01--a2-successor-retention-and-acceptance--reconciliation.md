@@ -43,8 +43,8 @@
 - Any separate future restoration of audit artifacts requires a contract-specific retention and minimality decision; do not restore automatically
 
 ## Repository-specific evidence boundary
-- 10/31 GAS R1/R2 为 BLOCKED/NOT_EXECUTED；同日文件不证明共同 opened-store identity，节点和漂移指标 NOT_COMPUTED。
-- 11/01 October R5 documentary CLOSED_WITH_OPERATIONAL_EVIDENCE_GAPS 是后续生产审查，不是 10/31 A2 早期 Final，也不是持久存储运行 PASS。
+- 10/31 GAS R1/R2 为 BLOCKED/NOT_EXECUTED；同日文件不证明共同 opened-store identity，节点和漂移指标 NOT_COMPUTED.
+- 11/01 October R5 documentary CLOSED_WITH_OPERATIONAL_EVIDENCE_GAPS 是后续生产审查，不是 10/31 A2 早期 Final，也不是持久存储运行 PASS.
 - `CURRENT_PATH_PRESENT != ORIGINAL_NATIVE_EXECUTION`
 - `HISTORICAL_PR_DELIVERY != CURRENT_MAIN_RETENTION`
 - `LATER_SUCCESS != EARLIER_SUCCESS`
