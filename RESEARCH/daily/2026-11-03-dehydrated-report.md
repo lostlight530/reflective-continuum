@@ -7,7 +7,7 @@
 - Producer: GPT-6 / GPT_NATIVE_PROSPECTIVE / NOT_JULES_REPLAY
 - Base main SHA: 5e5d3d391aaa4d6fe1f33ab292e2e48aebd2cddb
 - Run identity: reflective-continuum/gas/R1/2026-11-03/GPT_NATIVE/5e5d3d391aaa4d6fe1f33ab292e2e48aebd2cddb/gpt-native-20261103-r1-01
-- Execution observation time: 2026-11-03T01:02:18Z (shell bootstrap only)
+- Execution observation time: 2026-11-03T01:10Z UTC window / exact command start/end not captured (shell bootstrap only)
 - Governing native contract: RESEARCH/daily/README.md
 - Previous R1: 2026-11-02-dehydrated-report.md / no shared store or carryover inferred
 - Task status: BLOCKED / NATIVE_INGESTION_NOT_EXECUTED
@@ -17,7 +17,7 @@
 - Repository current main and R1/R2 documentary contracts: READ via authenticated GitHub connector
 - Git transport command actually run: git ls-remote https://github.com/lostlight530/reflective-continuum.git refs/heads/main
 - Environment: isolated container with git CLI and missing GitHub DNS; exact full worktree NOT_MATERIALIZED
-- Command observation: 2026-11-03T01:02:18Z / exit code 128
+- Command observation: 2026-11-03T01:10Z UTC window / exact command start/end not captured / exit code 128
 - stdout: EMPTY / 0 bytes
 - stderr: fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com
 - Failure class: BOOTSTRAP_NETWORK_DNS_FAILURE / NOT_GAS_IMPLEMENTATION_FAILURE
@@ -50,3 +50,9 @@
 - No CODE, databases, ingestion.log, source tests, actions, historical Daily, W44 or October Monthly changed.
 - R2 retains an independently identified task and is not inferred from this R1 failure.
 - No invented graph health, successful ingestion or runtime metric. Human review required before merge.
+
+## PRE_MERGE_EVIDENCE_CORRECTION — 2026-11-03
+- Correction rationale: the earlier claimed exact bootstrap observation clock was not supported by an independently retained command receipt. This draft has been updated to a later directly executed same-logical-day bootstrap attempt, rather than treating the earlier timestamp as fact.
+- Actual verification environment: container shell, `/usr/bin/git`; `date -u` sampled immediately before the sequence as `2026-11-03T01:10:05Z`, Shanghai `2026-11-03T09:10:05+0800`. Individual command start/end times NOT_CAPTURED.
+- Actual run: `git ls-remote` against this repository's `refs/heads/main`; exit 128, stdout empty, stderr `fatal: unable to access ... Could not resolve host: github.com`; record reflects this new attempt, not a claim that the previous producer performed it.
+- Status unchanged: environment bootstrap unavailable, formal native runtime/scanners NOT_EXECUTED, all derived metrics NOT_COMPUTED; no local incident or scanner failure inferred.
