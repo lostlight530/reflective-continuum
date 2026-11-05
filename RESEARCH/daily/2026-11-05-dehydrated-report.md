@@ -92,3 +92,8 @@ These are three **candidate sources**, not three processed signals. Publication 
 - Only `RESEARCH/daily/2026-11-05-dehydrated-report.md` proposed; historical R1, CODE, databases, graph log, tests, Actions, weekly/monthly and governance untouched.
 - Retry only from actual complete native checkout, run the single required `convergence_drill.py` command once, then fetch three source-verifiable signals, invoke `morph_from_file` only on valid input, append unedited logs and publish real hash/Observer receipts.
 - This is a transport-blocked Native diagnostic record, not a successful R1 ingestion.
+
+## SOURCE_VERSION_RECONCILIATION — 2026-11-05
+- CORRECTION / NOT_SILENT_REPLACEMENT: Candidate SRC-R1-20261105-02 above labels 2026-05-09 as its publication date; arXiv's authoritative version history distinguishes **v1 first submitted 2026-05-09T16:36:45Z** from **v2 revised 2026-06-29T23:15:17Z**.
+- Source: https://arxiv.org/abs/2605.09045 ; current full HTML at https://arxiv.org/html/2605.09045 identifies **v2**. The bounded typed-boundary claim comes from the visible v2 author manuscript, with no independent formal proof replay.
+- No fresh R1 convergence, Morpher execution, graph acceptance or metrics are implied by this metadata reconciliation.
