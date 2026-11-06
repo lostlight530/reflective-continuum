@@ -6,7 +6,7 @@
 - Producer: `Independent GPT / GPT-6 / NOT_JULES_REPLAY`, user-requested audit
 - Exact base main SHA: `c359e5333f6d0a9445288f3bec5a1a045cedc15f`
 - Run ID: `reflective-continuum/gas/R2/2026-11-06/independent-gpt/c359e5333f6d0a9445288f3bec5a1a045cedc15f/review-20261106-r2-01`
-- Shared R1/R2 acquisition observation: `2026-11-06T00:07:35Z` UTC / `2026-11-06T08:07:35+08:00` Asia/Shanghai; exact command start not captured
+- Shared R1/R2 acquisition observation: `2026-11-06T00:12:34Z–2026-11-06T00:12:40Z` UTC / `2026-11-06T08:12:34+08:00–2026-11-06T08:12:40+08:00` Asia/Shanghai; exact command start not captured
 - Actual prerequisite command: `git ls-remote https://github.com/lostlight530/reflective-continuum.git refs/heads/main`
 - Exit: `128`; stdout: empty; stderr: `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
 - This single shared failed Git acquisition is **not** an independent second script attempt
@@ -52,3 +52,8 @@
 - Scope: only `RESEARCH/daily/2026-11-06-cortex-selfcheck.md`; no prior Daily, ingestion.log, CODE, tests, database, graph, weekly/monthly, Actions or governance changed
 - Native runtime tests: `NOT_EXECUTED`; remote PR diff checks may verify only delivery and scope
 - Final state: `BLOCKED / HUMAN_MAINTAINER_REVIEW_REQUIRED`
+
+## Execution receipt correction (before merge)
+- An earlier draft of this same unmerged branch cited `2026-11-06T00:07:35Z` as a command observation without an instrumented command receipt. That timestamp was **unsupported** and must not be treated as an executed observation.
+- A fresh actual shell invocation of `git ls-remote` was performed within the recorded UTC window `2026-11-06T00:12:34Z–2026-11-06T00:12:40Z`; both target repository commands independently exited `128` due to DNS resolution failure. These are start/end timestamps for the **combined shell invocation**, not precise per-command times.
+- This correction retains the failure classification but replaces its provenance with executed evidence. It does not establish any native Python test, graph ingestion or local runtime state.
