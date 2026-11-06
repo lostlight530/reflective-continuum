@@ -1,5 +1,7 @@
 # GAS Daily R1 — 2026-11-06 / native ingestion gate BLOCKED
 
+> **CURRENT SAME-DATE RECONCILIATION (2026-11-06T00:40Z UTC):** The `00:12Z` DNS bootstrap failure below was real, but a later GitHub Actions runner successfully performed R1 convergence and exactly-three-source Morpher execution from pinned exact main. Current bounded status: `CONVERGENCE_PASS_100_OF_100_FIXED_FIXTURE / INGESTED_2_OF_3_IN_EPHEMERAL_STORE / ONE_HARD_ROLLBACK_REJECTION`. Morpher returned `exit=1` because it correctly reported one rejection; no success is fabricated. See [run 42138511703](https://github.com/lostlight530/reflective-continuum/actions/runs/42138511703). Old acquisition receipt remains unchanged.
+
 ## Run identity and recorded environment receipt
 - Repository: `reflective-continuum`
 - Canonical task: `reflective/gas/R1`; logical date: `2026-11-06` Asia/Shanghai
@@ -52,3 +54,37 @@
 - An earlier draft of this same unmerged branch cited `2026-11-06T00:07:35Z` as a command observation without an instrumented command receipt. That timestamp was **unsupported** and must not be treated as an executed observation.
 - A fresh actual shell invocation of `git ls-remote` was performed within the recorded UTC window `2026-11-06T00:12:34Z–2026-11-06T00:12:40Z`; both target repository commands independently exited `128` due to DNS resolution failure. These are start/end timestamps for the **combined shell invocation**, not precise per-command times.
 - This correction retains the failure classification but replaces its provenance with executed evidence. It does not establish any native Python test, graph ingestion or local runtime state.
+
+## SAME-DATE R1 NATIVE EXECUTION RECONCILIATION — 2026-11-06T00:40Z UTC
+
+### Real execution identity and source preparation
+- A separate GitHub-hosted `ubuntu-latest` runner successfully checked out exact previous `main` `c359e5333f6d0a9445288f3bec5a1a045cedc15f`, with `Python 3.14.4`.
+- [Evidence run #42138511703](https://github.com/lostlight530/reflective-continuum/actions/runs/42138511703), job `r1-native`, local step time `00:40:22Z` UTC. Its source code is original main; the temporary workflow was introduced only on the Draft PR branch.
+- Three publicly accessible independent **author/paper lineages**, checked on 2026-11-06, not claimed as publications released today:
+  1. `arxiv_2610_16865v2`: Ali Baheri and Peng Wei, *Controller-Agnostic Runtime Safety Certificates for Tool-Using AI Agents via Data-Driven Robust Reachability*, https://arxiv.org/abs/2610.16865 . Candidate: risk-bounded shield requires stated state abstraction, successor coverage and actual controller compliance.
+  2. `arxiv_2605_09045v2`: Royce Moon and Lav R. Varshney, *Containment Verification: AI Safety Guarantees Independent of Alignment*, https://arxiv.org/abs/2605.09045 . Candidate: typed action containment under the paper's modeled boundary, not universal safety.
+  3. `arxiv_2607_02599v1`: Laïla Elkoussy and Julien Perez, *AgentLTL: A Trace-Verification Framework for Measuring, Enforcing, and Training Procedural Compliance in Tool-Using LLM Agents*, https://arxiv.org/abs/2607.02599 . Candidate: deterministic procedural traces and online prefix gates are distinct from final-answer correctness.
+- Each supplied signal had an `id`, bounded `content` and `edges=[]`; source URLs and check date are recorded in this report because the actual `InsightMorpher._signal` input schema deliberately rejects extra `source` / `checked_at` keys. The runner used a temporary JSON payload, did not modify the engine or bypass validation. The three source summaries reflect authors' methods, not replicated research results.
+
+### R1 Step 1 — actual convergence
+- Ran **once**: `PYTHONPATH=. python3 CODE/tasks/convergence_drill.py | tee -a ingestion.log`, with shell `pipefail` on the isolated runner and `ingestion.log` restored before job completion.
+- Program exit `0`, stdout exactly `{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}`.
+- Native result: `CONVERGENCE_REPEATABILITY_PASS_WITHIN_FIXED_FIXTURE`; this is 100 local fixture iterations, **not** a sustained full-graph convergence guarantee. The program does **not** print any complete persistent graph hash; record `PERSISTENT_GRAPH_HASH=NOT_AVAILABLE` instead of inventing one.
+
+### R1 Steps 2–4 — exact Morpher result and rejection
+- Actual call: `PYTHONPATH=. python3 CODE/tasks/insight_morpher.py /tmp/20261106-signals.json`, on the three described signals after convergence gate.
+- The program returned `exit=1` because **one signal was rejected**. This is not an all-success run:
+  - `arxiv_2610_16865v2` — `accepted=true`, reasons `[]`.
+  - `arxiv_2605_09045v2` — `accepted=true`, reasons `[]`.
+  - `arxiv_2607_02599v1` — `accepted=false`, reasons `["reflection_depth_exhausted"]`.
+- Actual aggregate stdout: `{"accepted": 2, "results": [{"accepted": true, "id": "arxiv_2610_16865v2", "reasons": []}, {"accepted": true, "id": "arxiv_2605_09045v2", "reasons": []}, {"accepted": false, "id": "arxiv_2607_02599v1", "reasons": ["reflection_depth_exhausted"]}], "total": 3}`.
+- `HARD_ROLLBACK`: signal `arxiv_2607_02599v1`; reason `reflection_depth_exhausted`; program-reported `accepted=false`; graph write to the process-local store was rejected; retry `NOT_ATTEMPTED`. The runner appended a structured rollback receipt to its temporary `ingestion.log`.
+- **Persistence boundary:** `InsightMorpher` used its default **process-local `:memory:` DB** and did not persist a verified graph to the repository or to R2's DB. In-run accepted count 2 must NOT become `persistent nodes=2`. Actual main durable graph identity, operational nodes/edges, phase delta and rollback counters outside this isolated run remain `UNKNOWN`.
+- The GitHub workflow job is green because it **audited and retained the expected rejection** rather than suppressing a failure. The underlying `morph` command exit is `1`, and its one rejected signal is part of the valid bounded Daily outcome.
+
+### Synthesis / interpretation
+- 中文：真实脚本已运行，固定 SQLite 样本 100 次快照一致；三条独立作者来源的有界候选进入 Morpher，2 条被本次进程接受、1 条因反思深度耗尽被拒绝并记录 HARD_ROLLBACK。这个结果无法证明持久图谱已摄入三条、能持续收敛或全局安全
+- English: The convergence drill repeated one fixed SQLite fixture 100 times with a single observed snapshot identity. Morpher processed three sourced candidates but rejected one due to reflection-depth exhaustion. The accepted count is limited to the ephemeral process, with no evidence of a durable shared graph or operational phase change.
+- Current R1 status: `SUCCESS_WITH_REJECTED_SIGNAL / HARD_ROLLBACK_RECORDED / EPHEMERAL_ONLY`, not `ALL_ACCEPTED` and not `PERSISTENT_INGESTION_VERIFIED`.
+- The previous `BLOCKED` record refers only to the first failed environment, retained for temporal truth. The new native evidence is time-linked and does not retrospectively alter that observation.
+- Durable write intent: the canonical Daily correction plus append-only `ingestion.log` summary copied **from original GitHub Actions log**, not misrepresented as a local native tool invocation. No earlier log lines are modified.
