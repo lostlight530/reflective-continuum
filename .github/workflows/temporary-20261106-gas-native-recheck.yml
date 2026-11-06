@@ -1,4 +1,4 @@
-name: Temporary 2026-11-06 GAS Native Verification
+name: Temporary 2026-11-06 GAS PR-branch final verification
 on:
   push:
     branches: [independent/20261106-gas-native-blocked-gpt6]
@@ -12,7 +12,7 @@ jobs:
       - name: Fresh exact main worktree
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
-          ref: c359e5333f6d0a9445288f3bec5a1a045cedc15f
+          ref: independent/20261106-gas-native-blocked-gpt6
           persist-credentials: false
           clean: true
       - name: Pin runtime and inputs
@@ -76,7 +76,7 @@ jobs:
       - name: Fresh exact main worktree
         uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09
         with:
-          ref: c359e5333f6d0a9445288f3bec5a1a045cedc15f
+          ref: independent/20261106-gas-native-blocked-gpt6
           persist-credentials: false
           clean: true
       - name: Record runtime identity
@@ -89,6 +89,20 @@ jobs:
         run: PYTHONPATH=. python3 CODE/tasks/cortex_selfcheck.py
       - name: R2 native test suite
         run: PYTHONPATH=. python3 -m unittest discover tests/ -v
+      - name: Validate canonical Daily and append-only R1 receipts
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          for name in ("2026-11-06-dehydrated-report.md", "2026-11-06-cortex-selfcheck.md"):
+              file = Path("RESEARCH/daily")/name
+              assert file.is_file(), name
+              text = file.read_text(encoding="utf-8")
+              assert "42138511703" in text and "SAME-DATE" in text, name
+          log = Path("ingestion.log").read_text(encoding="utf-8")
+          assert log.count("2026-11-06;GAS_NATIVE_R1;https://github.com/lostlight530/reflective-continuum/actions/runs/42138511703") == 1
+          assert 'arxiv_2607_02599v1' in log
+          print("GAS_BRANCH_ARTIFACTS=PASS; original R1 rejection and R2 bounded selfcheck retained")
+          PY
       - name: Final read-only boundary
         run: |
           git status --porcelain
