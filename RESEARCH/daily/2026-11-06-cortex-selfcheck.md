@@ -87,3 +87,9 @@
 - Today's R1 `accepted=2/rejected=1` occurred in a separate ephemeral Morpher execution; not a durable state baseline for R2 and not proof of `nodes=2` in this selfcheck.
 - New current bounded status: `NATIVE_R2_FIXTURE_HEALTH_PASS / TESTS_27_OF_27_PASS`, no assertion of globally Healthy/Stable or shared persistent DB.
 - The earlier failed Git acquisition record is preserved, and this is a second actual execution from a different runner/UTC time, not a repaired timestamp for the first.
+
+## PR-BRANCH RETEST AND TEMPORARY CI CORRECTION — 2026-11-06T00:46Z UTC
+- A later branch test of the native workflows and revised Daily/log first failed in [run #42139185438](https://github.com/lostlight530/reflective-continuum/actions/runs/42139185438): `test_verified_action_runtime_pins` rejected the **temporary workflow's actions/checkout SHA**, which was different from this repository's required pinned revision. That failure is about the temporary CI specification, not R2 program health or a failed durable graph.
+- The temporary execution workflow was corrected to the existing repository-mandated `actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1`, without changing any application code or tests.
+- [Subsequent real PR-branch retest #42139341338](https://github.com/lostlight530/reflective-continuum/actions/runs/42139341338) completed successfully, including R1 fixture Morpher verification, R2 native selfcheck, 27-test unit suite, and the check that both 2026-11-06 Daily artifacts and the single append-only R1 log record are present.
+- After these receipts the temporary workflow is to be removed from the PR branch. The existing main workflow policy and protected execution code remain unchanged; failed test evidence remains in GitHub Actions history, not silently erased.
