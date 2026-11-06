@@ -39,7 +39,7 @@
 - R1 and R2 share one failed Git bootstrap receipt, **not** two independent runtime executions and not evidence of a shared database
 
 ## Bounded synthesis / 有界总结
-- 中文：今天确认的是一个上游 ADK 静态修复与当前执行环境的远端 Git 获取失败，不是 GAS 收敛测试或真实信号摄入。没有运行收敛演练、Morpher、Observer 或 GraphDB，节点、边、相变与回滚状态保持未知
+- 中文：今天确认的是一个上游 ADK 静态修复与当前执行环境的远端 Git 获取失败，不是 GAS 收敛测试或真实信号摄入，没有运行收敛演练、Morpher、Observer 或 GraphDB，节点、边、相变与回滚状态保持未知
 - English: A directly inspected issuer patch is a source candidate only. The native acquisition failed before the convergence gate. No GAS ingestion, accepted node, graph persistence, or rollback observation is established
 
 ## Recovery and immutable boundaries
