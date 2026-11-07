@@ -15,36 +15,36 @@
 - Each row records Git identity, not automatic individual semantic sign-off. Unchanged historical objects retain *prior A1* review status, not a fabricated second reading
 | Path | Current blob | Evidence disposition | Prior A1 covered blob |
 |---|---|---|---|
-| `historical-audits/2026-11/2026-11-02-a1-gas-source-custody.md` | `30fb6160a378823aa8e7067f36ab2a08070e145b` | IDENTICAL_BLOB_REUSE_PRIOR | `30fb6160a378823aa8e7067f36ab2a08070e145b` |
-| `historical-audits/2026-11/2026-11-02-a2-gas-month-relations.md` | `7214a11c9386efd15e38c20f87a5689af74c2f3e` | IDENTICAL_BLOB_REUSE_PRIOR | `7214a11c9386efd15e38c20f87a5689af74c2f3e` |
-| `historical-audits/2026-11/2026-11-03-a1-gas-source-custody.md` | `c5f22a30b11f1b18048d1e6284d6aa4f92d9921c` | IDENTICAL_BLOB_REUSE_PRIOR | `c5f22a30b11f1b18048d1e6284d6aa4f92d9921c` |
-| `historical-audits/2026-11/2026-11-03-a2-gas-month-relations.md` | `47164c553ff7b9e2f4034401a39404a1eef70fd2` | IDENTICAL_BLOB_REUSE_PRIOR | `47164c553ff7b9e2f4034401a39404a1eef70fd2` |
-| `historical-audits/2026-11/2026-11-04--2026-11-05-original-a1-a2-acceptance-reconciliation.md` | `88c2d7e7b3709a86b120069f57a06269c4121070` | PREVIOUSLY_UNMAPPED_SCOPE | — |
-| `historical-audits/2026-11/2026-11-04-a1-gas-source-custody.md` | `97f7a17feeca4e574d0cdca0c6364ba651851972` | IDENTICAL_BLOB_REUSE_PRIOR | `97f7a17feeca4e574d0cdca0c6364ba651851972` |
-| `historical-audits/2026-11/2026-11-04-a2-gas-month-relations.md` | `24e37d3fe9dbb1fd74292bdefb4183ebbeb1be1b` | IDENTICAL_BLOB_REUSE_PRIOR | `24e37d3fe9dbb1fd74292bdefb4183ebbeb1be1b` |
-| `historical-audits/2026-11/2026-11-05-a1-gas-source-custody.md` | `f3153c4e21e0908fd790cb93cff6c64ab5e91135` | IDENTICAL_BLOB_REUSE_PRIOR | `f3153c4e21e0908fd790cb93cff6c64ab5e91135` |
-| `historical-audits/2026-11/2026-11-05-a2-gas-month-relations.md` | `2cd5dd0bab39636dd857f25fdb7114a69948a969` | IDENTICAL_BLOB_REUSE_PRIOR | `2cd5dd0bab39636dd857f25fdb7114a69948a969` |
-| `historical-audits/2026-11/2026-11-06-a1-gas-source-custody.md` | `70ee5303d5eeadc3373dae6bc79954b175c2a8e3` | ADDED_N_MINUS_1_INPUT | — |
-| `historical-audits/2026-11/2026-11-06-a2-gas-month-relations.md` | `e86d1c86f9038a0c0283abec36f5ca3b534a038a` | ADDED_N_MINUS_1_INPUT | — |
-| `historical-audits/2026-11/2026-11-06-original-a1a2-semantic-forward-reconciliation.md` | `e98a7af3fda11f86325aee8439b9aa194de1d421` | ADDED_N_MINUS_1_INPUT | — |
-| `ingestion.log` | `15eb74b613c7a389e2108a914cfd1fa3ddb60c24` | PREVIOUSLY_UNMAPPED_SCOPE | — |
-| `RESEARCH/daily/2026-11-01-cortex-selfcheck.md` | `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0` | IDENTICAL_BLOB_REUSE_PRIOR | `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0` |
-| `RESEARCH/daily/2026-11-01-dehydrated-report.md` | `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f` | IDENTICAL_BLOB_REUSE_PRIOR | `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f` |
-| `RESEARCH/daily/2026-11-02-cortex-selfcheck.md` | `96e91be59380aed7aadcdcee7d337dc138d56447` | IDENTICAL_BLOB_REUSE_PRIOR | `96e91be59380aed7aadcdcee7d337dc138d56447` |
-| `RESEARCH/daily/2026-11-02-dehydrated-report.md` | `0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a` | IDENTICAL_BLOB_REUSE_PRIOR | `0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a` |
-| `RESEARCH/daily/2026-11-03-cortex-selfcheck.md` | `275984a759c0050089e83e0e31c3d52ba4f1d7f0` | IDENTICAL_BLOB_REUSE_PRIOR | `275984a759c0050089e83e0e31c3d52ba4f1d7f0` |
-| `RESEARCH/daily/2026-11-03-dehydrated-report.md` | `d0638bdf97f1bc6a3d98918903712c7ab1380d78` | IDENTICAL_BLOB_REUSE_PRIOR | `d0638bdf97f1bc6a3d98918903712c7ab1380d78` |
-| `RESEARCH/daily/2026-11-04-cortex-selfcheck.md` | `fb88bb1d6c3579acc2c8f8d612d87f62bd03118d` | IDENTICAL_BLOB_REUSE_PRIOR | `fb88bb1d6c3579acc2c8f8d612d87f62bd03118d` |
-| `RESEARCH/daily/2026-11-04-dehydrated-report.md` | `a56aea23dec9f85cbaa36d4d00a739287232f09a` | IDENTICAL_BLOB_REUSE_PRIOR | `a56aea23dec9f85cbaa36d4d00a739287232f09a` |
-| `RESEARCH/daily/2026-11-05-cortex-selfcheck.md` | `5a575fb91bc130bb40ec3c174eed70ef8ec5990b` | IDENTICAL_BLOB_REUSE_PRIOR | `5a575fb91bc130bb40ec3c174eed70ef8ec5990b` |
-| `RESEARCH/daily/2026-11-05-dehydrated-report.md` | `0bd935ecb1e8c8b76be5b7614889b3c50bc8317c` | IDENTICAL_BLOB_REUSE_PRIOR | `0bd935ecb1e8c8b76be5b7614889b3c50bc8317c` |
-| `RESEARCH/daily/2026-11-06-cortex-selfcheck.md` | `0e0e3b46655bd13565a37186b9742287541d19ba` | ADDED_N_MINUS_1_INPUT | — |
-| `RESEARCH/daily/2026-11-06-dehydrated-report.md` | `6b5c1947225f8f60e14448e5b30d82c917112e2b` | ADDED_N_MINUS_1_INPUT | — |
-| `RESEARCH/daily/README.md` | `29e0b9869fcbb7dab9dd0d0e7e45442633af4ac5` | PREVIOUSLY_UNMAPPED_SCOPE | — |
-| `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` | `b498f72c222c7096c4028da486777d08a6fe1641` | IDENTICAL_BLOB_REUSE_PRIOR | `b498f72c222c7096c4028da486777d08a6fe1641` |
-| `RESEARCH/weekly/2026-W44-alignment-report.md` | `131f833a8b8f7f29ee9eff6f6f77d84f7da84cee` | IDENTICAL_BLOB_REUSE_PRIOR | `131f833a8b8f7f29ee9eff6f6f77d84f7da84cee` |
-| `RESEARCH/weekly/2026-W44-reference-audit.md` | `6f8cc815caefe09ef9bbe1f8214c71cfd2f5ce3e` | IDENTICAL_BLOB_REUSE_PRIOR | `6f8cc815caefe09ef9bbe1f8214c71cfd2f5ce3e` |
-| `semantic_drift_audit.log` | `372f9e46a403f2e629d6887c76e37d7aa9baa739` | PREVIOUSLY_UNMAPPED_SCOPE | — |
+| `historical-audits/2026-11/2026-11-02-a1-gas-source-custody.md` | `30fb6160a378823aa8e7067f36ab2a08070e145b` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `30fb6160a378823aa8e7067f36ab2a08070e145b` |
+| `historical-audits/2026-11/2026-11-02-a2-gas-month-relations.md` | `7214a11c9386efd15e38c20f87a5689af74c2f3e` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `7214a11c9386efd15e38c20f87a5689af74c2f3e` |
+| `historical-audits/2026-11/2026-11-03-a1-gas-source-custody.md` | `c5f22a30b11f1b18048d1e6284d6aa4f92d9921c` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `c5f22a30b11f1b18048d1e6284d6aa4f92d9921c` |
+| `historical-audits/2026-11/2026-11-03-a2-gas-month-relations.md` | `47164c553ff7b9e2f4034401a39404a1eef70fd2` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `47164c553ff7b9e2f4034401a39404a1eef70fd2` |
+| `historical-audits/2026-11/2026-11-04--2026-11-05-original-a1-a2-acceptance-reconciliation.md` | `88c2d7e7b3709a86b120069f57a06269c4121070` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
+| `historical-audits/2026-11/2026-11-04-a1-gas-source-custody.md` | `97f7a17feeca4e574d0cdca0c6364ba651851972` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `97f7a17feeca4e574d0cdca0c6364ba651851972` |
+| `historical-audits/2026-11/2026-11-04-a2-gas-month-relations.md` | `24e37d3fe9dbb1fd74292bdefb4183ebbeb1be1b` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `24e37d3fe9dbb1fd74292bdefb4183ebbeb1be1b` |
+| `historical-audits/2026-11/2026-11-05-a1-gas-source-custody.md` | `f3153c4e21e0908fd790cb93cff6c64ab5e91135` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `f3153c4e21e0908fd790cb93cff6c64ab5e91135` |
+| `historical-audits/2026-11/2026-11-05-a2-gas-month-relations.md` | `2cd5dd0bab39636dd857f25fdb7114a69948a969` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `2cd5dd0bab39636dd857f25fdb7114a69948a969` |
+| `historical-audits/2026-11/2026-11-06-a1-gas-source-custody.md` | `70ee5303d5eeadc3373dae6bc79954b175c2a8e3` | NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE | — |
+| `historical-audits/2026-11/2026-11-06-a2-gas-month-relations.md` | `e86d1c86f9038a0c0283abec36f5ca3b534a038a` | NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE | — |
+| `historical-audits/2026-11/2026-11-06-original-a1a2-semantic-forward-reconciliation.md` | `e98a7af3fda11f86325aee8439b9aa194de1d421` | NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE | — |
+| `ingestion.log` | `15eb74b613c7a389e2108a914cfd1fa3ddb60c24` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
+| `RESEARCH/daily/2026-11-01-cortex-selfcheck.md` | `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0` |
+| `RESEARCH/daily/2026-11-01-dehydrated-report.md` | `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f` |
+| `RESEARCH/daily/2026-11-02-cortex-selfcheck.md` | `96e91be59380aed7aadcdcee7d337dc138d56447` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `96e91be59380aed7aadcdcee7d337dc138d56447` |
+| `RESEARCH/daily/2026-11-02-dehydrated-report.md` | `0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a` |
+| `RESEARCH/daily/2026-11-03-cortex-selfcheck.md` | `275984a759c0050089e83e0e31c3d52ba4f1d7f0` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `275984a759c0050089e83e0e31c3d52ba4f1d7f0` |
+| `RESEARCH/daily/2026-11-03-dehydrated-report.md` | `d0638bdf97f1bc6a3d98918903712c7ab1380d78` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `d0638bdf97f1bc6a3d98918903712c7ab1380d78` |
+| `RESEARCH/daily/2026-11-04-cortex-selfcheck.md` | `fb88bb1d6c3579acc2c8f8d612d87f62bd03118d` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `fb88bb1d6c3579acc2c8f8d612d87f62bd03118d` |
+| `RESEARCH/daily/2026-11-04-dehydrated-report.md` | `a56aea23dec9f85cbaa36d4d00a739287232f09a` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `a56aea23dec9f85cbaa36d4d00a739287232f09a` |
+| `RESEARCH/daily/2026-11-05-cortex-selfcheck.md` | `5a575fb91bc130bb40ec3c174eed70ef8ec5990b` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `5a575fb91bc130bb40ec3c174eed70ef8ec5990b` |
+| `RESEARCH/daily/2026-11-05-dehydrated-report.md` | `0bd935ecb1e8c8b76be5b7614889b3c50bc8317c` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `0bd935ecb1e8c8b76be5b7614889b3c50bc8317c` |
+| `RESEARCH/daily/2026-11-06-cortex-selfcheck.md` | `0e0e3b46655bd13565a37186b9742287541d19ba` | APPEND_RELATION / NOV06_INPUT_REVIEWED | — |
+| `RESEARCH/daily/2026-11-06-dehydrated-report.md` | `6b5c1947225f8f60e14448e5b30d82c917112e2b` | APPEND_RELATION / NOV06_INPUT_REVIEWED | — |
+| `RESEARCH/daily/README.md` | `29e0b9869fcbb7dab9dd0d0e7e45442633af4ac5` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
+| `RESEARCH/monthly/2026-10-cognitive-architecture-review.md` | `b498f72c222c7096c4028da486777d08a6fe1641` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `b498f72c222c7096c4028da486777d08a6fe1641` |
+| `RESEARCH/weekly/2026-W44-alignment-report.md` | `131f833a8b8f7f29ee9eff6f6f77d84f7da84cee` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `131f833a8b8f7f29ee9eff6f6f77d84f7da84cee` |
+| `RESEARCH/weekly/2026-W44-reference-audit.md` | `6f8cc815caefe09ef9bbe1f8214c71cfd2f5ce3e` | NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW | `6f8cc815caefe09ef9bbe1f8214c71cfd2f5ce3e` |
+| `semantic_drift_audit.log` | `372f9e46a403f2e629d6887c76e37d7aa9baa739` | UNKNOWN / UNMAPPED_NEEDS_VERIFICATION | — |
 
 ## Specific source and counterevidence judgments
 - **01 Nov6 acquisition:** Nov6 R1 and R2 retain one shared DNS checkout failure; a shared failed shell is not two independent runner failures
@@ -76,3 +76,10 @@
 - New independently phrased source-specific judgments written in this record: 17; not an independent 100-line certification
 - A2 must await upstream A1 admissible review/merge; A2 may preserve PARTIAL state but not silently turn it into ACCEPTED
 - Only this new dated historical-audit custody report is written; native source, Jules-era history, registry, workflows, test code and host data are unchanged
+
+## Explicit contract dispositions
+- Per-artifact decision statuses follow the active A1 vocabulary: NO_FOLLOW_UP, APPEND_RELATION, BOUNDARY_UPDATE, UNKNOWN and NOT_DUE; identity-only prior labels above have been normalized
+- Disposition counts (one per path): NO_FOLLOW_UP / PRIOR_SAME_BLOB_REVIEW=21; UNKNOWN / UNMAPPED_NEEDS_VERIFICATION=4; NO_FOLLOW_UP / PREDECESSOR_MAINTENANCE=3; APPEND_RELATION / NOV06_INPUT_REVIEWED=2
+- NO_FOLLOW_UP on an identical predecessor blob **inherits** the preceding 2026-11-06 A1 review rather than claiming an individual re-read; APPEND_RELATION is recorded in this new report only, not in the historical native owning file
+- A BOUNDARY_UPDATE on a rolling owner is a temporal interpretation change in this audit, not permission to rewrite the native monthly owner
+- UNKNOWN retains a true coverage/semantic quality gap; no false full-content review or strict >=100 acceptance is inferred
