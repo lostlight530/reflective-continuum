@@ -16,8 +16,8 @@ def blocked_paths(
     return [
         path
         for path in paths
-        if (path in PROTECTED_FILES and path not in allowed_files)
-        or path.startswith(PROTECTED_PREFIXES)
+        if (path in PROTECTED_FILES or path.startswith(PROTECTED_PREFIXES))
+        and path not in allowed_files
     ]
 
 
