@@ -14,6 +14,7 @@ jobs:
         with:
           ref: gpt-native/2026-11-07-gas-r1-r2
           persist-credentials: false
+          fetch-depth: 0
       - name: Native environment and pinned revision
         run: |
           set -euo pipefail
@@ -69,5 +70,5 @@ jobs:
           assert "HARD_ROLLBACK=NOT_TRIGGERED_IN_THIS_PROCESS" in log
           print("GAS_BRANCH_RECIPTS_OK R1=1 R2=1 LOG_TRANSFER=1")
           PY
-          git fetch --depth=1 origin 2cbbd11710cb45efadb2b7980861740784b0ef6b
+          git merge-base --is-ancestor 2cbbd11710cb45efadb2b7980861740784b0ef6b HEAD
           python3 scope_guard.py --base-ref 2cbbd11710cb45efadb2b7980861740784b0ef6b --allow-file RESEARCH/daily/2026-11-07-dehydrated-report.md --allow-file RESEARCH/daily/2026-11-07-cortex-selfcheck.md --allow-file ingestion.log
