@@ -47,3 +47,11 @@
 - New prospective canonical R2 only. No retroactive change to earlier R2, Jules history, runner source, CODE, tests, graph database or weekly/monthly
 - Temporary GitHub Actions workflow is execution evidence that is removed from final Draft diff; main workflow is unchanged
 - Result remains bounded to the test fixture; Human Maintainer is final review/merge authority
+
+## PR-branch control-plane verification (2026-11-07)
+- First branch check: [Actions #42369624980](https://github.com/lostlight530/reflective-continuum/actions/runs/42369624980) executed the native scripts, both new Daily file existence checks and appended log presence check; it **failed overall** at `scope_guard.py` because the temporary checkout lacked the base...HEAD merge base (Git exit 128). A workflow-only full-history checkout correction was then made.
+- Corrected full-history attempt: [Actions #42369722286](https://github.com/lostlight530/reflective-continuum/actions/runs/42369722286). Source R1 convergence, Morpher, R2 selfcheck and 27 tests **all passed**; both Daily files and the single log transfer were verified as existing on the branch.
+- However, the **branch-wide guard failed again** (exit 1): root `scope_guard.py` flags both canonical `RESEARCH/daily/2026-11-07-*.md` paths as protected even when passed by exact `--allow-file`. Its actual code uses `(path in PROTECTED_FILES and path not in allowed_files) or path.startswith(PROTECTED_PREFIXES)`; the second clause does not consult the allowlist. This is an independently observed code/control-plane mismatch, **not** a R1/R2 runtime or academic claim failure.
+- Strict disposition: `RUNTIME_FIXED_FIXTURE_PASS` / `R2_TESTS_27_PASS` / `DAY_RECORDS_PRESENT` / `SCOPE_GUARD_BLOCKED_FOR_RESEARCH_ALLOWLIST` / `PR_MERGE_NOT_AUTHORIZED`.
+- No `scope_guard.py` source or protected CODE was modified by this Native Production PR. The separately owned control-plane defect requires a distinct reviewed governance fix or explicit maintainer decision, never a silent guard bypass.
+- The temporary verification workflow has been removed from this branch's final tree. GitHub Actions links preserve both successes and failures with their original timestamps.
