@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
-          ref: 2cbbd11710cb45efadb2b7980861740784b0ef6b
+          ref: gpt-native/2026-11-07-gas-r1-r2
           persist-credentials: false
       - name: Native environment and pinned revision
         run: |
@@ -54,3 +54,20 @@ jobs:
           set -euo pipefail
           git status --porcelain
           test -z "$(git status --porcelain)"
+
+      - name: Verify branch R1 R2 files, append-only log and scope
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          r1=Path("RESEARCH/daily/2026-11-07-dehydrated-report.md")
+          r2=Path("RESEARCH/daily/2026-11-07-cortex-selfcheck.md")
+          log=Path("ingestion.log").read_text()
+          assert r1.is_file() and r2.is_file()
+          assert "42369069480" in r1.read_text() and "42369069480" in r2.read_text()
+          assert log.count("GAS_NATIVE_R1;https://github.com/lostlight530/reflective-continuum/actions/runs/42369069480")==1
+          assert "HARD_ROLLBACK=NOT_TRIGGERED_IN_THIS_PROCESS" in log
+          print("GAS_BRANCH_RECIPTS_OK R1=1 R2=1 LOG_TRANSFER=1")
+          PY
+          git fetch --depth=1 origin 2cbbd11710cb45efadb2b7980861740784b0ef6b
+          python3 scope_guard.py --base-ref 2cbbd11710cb45efadb2b7980861740784b0ef6b --allow-file RESEARCH/daily/2026-11-07-dehydrated-report.md --allow-file RESEARCH/daily/2026-11-07-cortex-selfcheck.md --allow-file ingestion.log
