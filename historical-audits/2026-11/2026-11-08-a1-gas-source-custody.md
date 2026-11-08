@@ -77,3 +77,166 @@
 - UNKNOWN_RETAINED: complete archive semantic reread; source cut of mutable index/log; >=100 substantive original line review; independent runtime reproducibility
 - NEXT_RETEST_CONDITION: verify SHA drift under as-of Nov07 commit, review unmapped sources and independently classify original PR substantive diff line count
 - ORIGINAL_A1_ACCEPTANCE: NOT_MET; A2 admission BLOCKED absent contract-satisfying original A1 and fresh main read
+
+
+
+## Nov01–07 full R1/R2 daily evidence adjudication (14 original source texts)
+
+- Independent maintenance fetched all 14 canonical R1 and R2 originals from latest main; the reviewed objects are dated files, not 14 independent database executions
+
+- 112 individually authored source-bound judgments below are counted separately from SHA inventory, inherited status, test-number repetitions and file headers
+
+- `NOT_COMPUTED` remains distinct from observed zero, and `SAME_DATE != SAME_STORE` remains a mandatory gate for every daily comparison
+
+
+
+### Nov01 R1 — `RESEARCH/daily/2026-11-01-dehydrated-report.md`
+- **1/8 source-specific judgment:** The Nov01 R1 original git ls-remote failed DNS before an executable worktree could be acquired, which is not an InsightMorpher runtime error
+- **2/8 source-specific judgment:** The external response-diversity paper was documented as a research lead, not actually ingested as a GAS graph input
+- **3/8 source-specific judgment:** Required convergence_drill.py was NOT_EXECUTED; iteration, repeatability and snapshot counts remain NOT_COMPUTED
+- **4/8 source-specific judgment:** Required InsightMorpher ingestion was NOT_EXECUTED; no accepted/rejected node count is available
+- **5/8 source-specific judgment:** R1 opened no SQLite store, so node/edge health and current graph state cannot be inferred
+- **6/8 source-specific judgment:** No hard rollback was invoked because no Morpher call occurred; NOT_OBSERVED is not verified zero failures
+- **7/8 source-specific judgment:** Source publication entropy and local GAS entropy are not commensurate without an explicit mapping and a common input/denominator
+- **8/8 source-specific judgment:** A valid future run must retain pinned worktree, signal digest, store URI and actual command/exit and DB write receipts
+
+### Nov01 R2 — `RESEARCH/daily/2026-11-01-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** R2 Nov01 is a separate canonical task but shares the failed repository bootstrap precondition; no second native selfcheck run occurred
+- **2/8 source-specific judgment:** Selfcheck source existence and a GitHub Pages status do not prove the Python selfcheck script executed
+- **3/8 source-specific judgment:** Foreign-key, FTS5, integrity and RuleEngine checks were all NOT_EXECUTED, not implicitly successful
+- **4/8 source-specific judgment:** Nodes/edges are NOT_COMPUTED rather than observed zero because no database was opened
+- **5/8 source-specific judgment:** Module import and initialization outcomes for observer, drift detector, validator and entropy remain UNKNOWN
+- **6/8 source-specific judgment:** No comparable persisted R1/R2 store identities exist, making same-date drift computation inadmissible
+- **7/8 source-specific judgment:** An imagined empty-state health verdict would be false because INDETERMINATE_EMPTY_STATE presupposes an actually opened empty database
+- **8/8 source-specific judgment:** Recovery requires exact interpreter, selfcheck/test stdout/stderr/exit and explicit database incarnation before graph comparison
+
+### Nov02 R1 — `RESEARCH/daily/2026-11-02-dehydrated-report.md`
+- **1/8 source-specific judgment:** Nov02 R1 bootstrap returned exit 128 DNS; the failure is acquisition-layer, not a measured Morpher failure
+- **2/8 source-specific judgment:** MemScope arXiv:2610.21170 was opened as a documentary lead but its version suffix was not verified
+- **3/8 source-specific judgment:** Paper claims of localized memory code repair are not equivalent to GAS graph ingestion or graph stability
+- **4/8 source-specific judgment:** Actual convergence command and fixture were not executed on this date
+- **5/8 source-specific judgment:** No InsightMorpher input file, accepted/rejected output or current graph effect receipt exists
+- **6/8 source-specific judgment:** Attempted store identity and persisted phase/drift measurements remain UNKNOWN rather than reported healthy
+- **7/8 source-specific judgment:** Nov01 source report and Nov02 documentary paper are separate source observations without connecting SQLite state
+- **8/8 source-specific judgment:** Source retest needs original manuscript revision and separately executed fixed worktree/ingestion with store URI and input hash
+
+### Nov02 R2 — `RESEARCH/daily/2026-11-02-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** Nov02 R2 used the same transport failure identity as the day's R1; two report files are not two native executions
+- **2/8 source-specific judgment:** No PYTHONPATH cortex_selfcheck.py or unittest test commands were launched
+- **3/8 source-specific judgment:** Module status UNKNOWN must not be converted to a PASSED module simply because code exists in main
+- **4/8 source-specific judgment:** Integrity, foreign keys and FTS were NOT_EXECUTED and no observed empty database result exists
+- **5/8 source-specific judgment:** Test pass/fail/error totals are NOT_COMPUTED, not zero failures under executed tests
+- **6/8 source-specific judgment:** R1 MemScope theory lead is not a store mutation visible to R2
+- **7/8 source-specific judgment:** Same logical date and base SHA cannot prove shared SQLite store, schema revision or previous-day continuity
+- **8/8 source-specific judgment:** Later command execution must be traced as a different run rather than restoring original task-time PASS
+
+### Nov03 R1 — `RESEARCH/daily/2026-11-03-dehydrated-report.md`
+- **1/8 source-specific judgment:** Nov03 R1 recorded an actual `/usr/bin/git ls-remote` DNS failure at the sampled 01:10 UTC environment window
+- **2/8 source-specific judgment:** Exact individual command instants were not instrumented, so time provenance remains a window rather than invented seconds
+- **3/8 source-specific judgment:** Authenticated GitHub file reads succeeded while native transport failed, demonstrating that source access does not imply executable environment
+- **4/8 source-specific judgment:** Convergence drill did not run, so no fixed-fixture repeatability or snapshot hash result can be stated
+- **5/8 source-specific judgment:** InsightMorpher and rollback were not attempted; reported counts must remain NOT_COMPUTED
+- **6/8 source-specific judgment:** No ingestion.log write, persistent SQLite store, graph nodes or edges were observed
+- **7/8 source-specific judgment:** Actual failure classification is network bootstrap, not semantic invalidity of a paper source or rule-engine defect
+- **8/8 source-specific judgment:** Only actual pinned checkout and later executed command receipts could re-evaluate current GAS state; Nov03 original failed attempt remains immutable
+
+### Nov03 R2 — `RESEARCH/daily/2026-11-03-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** Nov03 R2 shares R1 Git bootstrap receipt and explicitly does not claim another independent shell execution
+- **2/8 source-specific judgment:** Source and contract were remotely read but no runnable environment for the selfcheck was created
+- **3/8 source-specific judgment:** Actual selfcheck and unit test commands are NOT_EXECUTED despite their documented entrypoints
+- **4/8 source-specific judgment:** Module-level import/init, SQLite integrity and validation are UNKNOWN, not measured errors or successes
+- **5/8 source-specific judgment:** Graph nodes, edges, components, orphans and phase observations remain NOT_COMPUTED
+- **6/8 source-specific judgment:** R1 and R2 using the same base main SHA does not imply they share a live database
+- **7/8 source-specific judgment:** The error state is one acquisition failure reused across two canonical task reports, not two unrelated system incidents
+- **8/8 source-specific judgment:** R2 future audit must compare selfcheck against a pinned named store and record separately whether R1 opened the same incarnation
+
+### Nov04 R1 — `RESEARCH/daily/2026-11-04-dehydrated-report.md`
+- **1/8 source-specific judgment:** Nov04 assigned logical period was actually investigated on Nov05 UTC, which must not be labeled an execution on Nov04
+- **2/8 source-specific judgment:** Shared R1/R2 git ls-remote at 2026-11-05T10:16:51Z exited 128 on DNS; code was not executed
+- **3/8 source-specific judgment:** GitHub contract/previous-document reads are successful evidence acquisition but cannot satisfy convergence gating
+- **4/8 source-specific judgment:** No native source signal was admitted, so an empty accepted-count field would be a fabricated observation
+- **5/8 source-specific judgment:** InsightMorpher and rollback did not start and no store was opened
+- **6/8 source-specific judgment:** Logical date is a planning/ownership dimension; source-time observed execution is a distinct identity
+- **7/8 source-specific judgment:** W44/October older records are historical context, not newly computed Nov04 graph evidence
+- **8/8 source-specific judgment:** Later backfill can attach correction without claiming this original blocked environment succeeded
+
+### Nov04 R2 — `RESEARCH/daily/2026-11-04-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** Nov04 R2 inherited the same single failed transport attempt rather than independently running a selfcheck
+- **2/8 source-specific judgment:** Actually observed Python 3.13.5/git CLI presence did not include a complete checkout
+- **3/8 source-specific judgment:** Actual selfcheck and unittest were NOT_EXECUTED; neither can be inferred from the GitHub Pages checks
+- **4/8 source-specific judgment:** No SQLite file, URI or incarnation was opened; store state remains UNKNOWN
+- **5/8 source-specific judgment:** Node/edge absence of measurements is not an observed empty-graph zero
+- **6/8 source-specific judgment:** No valid R1/R2 comparable event snapshots or phase transition witnesses were supplied
+- **7/8 source-specific judgment:** The source report's timestamp is an invocation clock sample, not precise per-command start/end telemetry
+- **8/8 source-specific judgment:** Before future drift or module-health claims, fetch/checkout exact revision and execute native commands on one recorded DB identity
+
+### Nov05 R1 — `RESEARCH/daily/2026-11-05-dehydrated-report.md`
+- **1/8 source-specific judgment:** Nov05 attempted git clone --depth 1 from /tmp; it exited 128 because github.com DNS could not resolve
+- **2/8 source-specific judgment:** Reading convergence_drill.py via GitHub connector showed a fixed SQLite fixture and default 100 iterations, not an executed convergence receipt
+- **3/8 source-specific judgment:** Three opened paper candidates STEAD, action containment and AgentLTL are source references, not three accepted Morpher nodes
+- **4/8 source-specific judgment:** Original publication dates August4, May9 and July1 are distinct from the November5 source review date
+- **5/8 source-specific judgment:** Candidate graph edges were empty proposed lists; no committed GAS graph or semantic link was created
+- **6/8 source-specific judgment:** Without a completed convergence precondition, InsightMorpher was correctly NOT_EXECUTED
+- **7/8 source-specific judgment:** Accepted/rejected, rollback, phase and entropy totals all remain NOT_COMPUTED rather than zeros
+- **8/8 source-specific judgment:** An ingestion.log with no Nov05 append is consistent with halted pipeline, not proof of successful empty ingestion
+
+### Nov05 R2 — `RESEARCH/daily/2026-11-05-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** Nov05 R2 again inherited the exact R1 failed clone operation rather than a separate native test run
+- **2/8 source-specific judgment:** Remote cortex_selfcheck.py source blob exposes intended `--database :memory:` default and checks, not checked runtime state
+- **3/8 source-specific judgment:** An in-memory default store cannot establish persistent shared R1/R2 graph continuity without a named file-backed database
+- **4/8 source-specific judgment:** The module health entries for continuum_db, observer, drift_detector, validator and entropy_analyzer remain NOT_EXECUTED/UNKNOWN
+- **5/8 source-specific judgment:** RuleEngine decisions require actual test input and emitted verdict rather than source-level API shape
+- **6/8 source-specific judgment:** Actual nodes and edges remain NOT_COMPUTED because no selfcheck database connection existed
+- **7/8 source-specific judgment:** No observed code import error is not a successful import test; error absence reflects no execution
+- **8/8 source-specific judgment:** Failure of git clone is not failure of unit tests, so test statistics remain unknown until a real runner executes them
+
+### Nov06 R1 — `RESEARCH/daily/2026-11-06-dehydrated-report.md`
+- **1/8 source-specific judgment:** Nov06 original 00:12Z git ls-remote DNS failure is authentic and must remain a failed acquisition event
+- **2/8 source-specific judgment:** Later Actions #42138511703 at 00:40Z executed convergence drill against pinned main in a distinct runtime
+- **3/8 source-specific judgment:** Later fixed local SQLite convergence returned 100/100 repeatability iterations, not a universal graph stability theorem
+- **4/8 source-specific judgment:** Three candidate source identities were supplied to the later Morpher, not a durable imported repository graph
+- **5/8 source-specific judgment:** Later Morpher returned 2 accepted and one reflection_depth_exhausted rejection, so the process exit code 1 is an observed bounded failure branch
+- **6/8 source-specific judgment:** One hard rollback rejection is an actual program-reported event in the pinned runner, unlike the original no-run state
+- **7/8 source-specific judgment:** Local process :memory: store does not certify persisted cross-run graph nodes or later R2 access
+- **8/8 source-specific judgment:** Source code, later runner and producer narrative are three evidence layers; success should not erase the earlier DNS failure
+
+### Nov06 R2 — `RESEARCH/daily/2026-11-06-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** Nov06 R2 original source records 00:12Z failed Git acquisition and not-run selfcheck as its point-in-time state
+- **2/8 source-specific judgment:** Later Actions #42138511703 genuinely executed cortex_selfcheck.py with a fresh in-memory fixture
+- **3/8 source-specific judgment:** The later independent R2 job recorded 27 passed unit tests, not tests on a persistent R1 state
+- **4/8 source-specific judgment:** Fresh :memory: test DB is a different process-local SQLite incarnation from R1 Morpher
+- **5/8 source-specific judgment:** Selfcheck source checks foreign keys, FTS5, integrity and RuleEngine within its own chosen test database
+- **6/8 source-specific judgment:** A zero-node fixture result would be an observation for that fixture only, not evidence that R1's accepted nodes vanished
+- **7/8 source-specific judgment:** Graph drift still cannot be computed without a shared persisted snapshot lineage despite both native commands executing in one Actions run
+- **8/8 source-specific judgment:** Current bounded PASS_WITHIN_FIXTURE does not retroactively repair original acquisition or demonstrate long-running GAS health
+
+### Nov07 R1 — `RESEARCH/daily/2026-11-07-dehydrated-report.md`
+- **1/8 source-specific judgment:** Nov07 first shell clone attempt ended with DNS exit 128; later GitHub Actions #42369069480 is a separately identified successful runner
+- **2/8 source-specific judgment:** 100 convergence iterations yielded one fixed fixture snapshot, a result bounded to that local SQLite fixture
+- **3/8 source-specific judgment:** Morpher received two candidate summaries under exact IDs google_adk_waiting_replay and arxiv_2607_02599v1
+- **4/8 source-specific judgment:** Both candidates were accepted in Nov07 2-source process; acceptance is not a durable store write outside that process
+- **5/8 source-specific judgment:** The same AgentLTL identity rejected on Nov06 but accepted Nov07 under a changed source batch and different process is not evidence of a fix
+- **6/8 source-specific judgment:** R1's InsightMorpher stores data in its own `:memory:` DB; actual persisted file hash and shared store UID remain unavailable
+- **7/8 source-specific judgment:** Hard rollback was NOT_TRIGGERED in this specific 2-signal run, not proven impossible for any other input
+- **8/8 source-specific judgment:** Log transcription after run and original Actions job logs are different evidence receipts and should retain different producers
+
+### Nov07 R2 — `RESEARCH/daily/2026-11-07-cortex-selfcheck.md`
+- **1/8 source-specific judgment:** Nov07 R2 executed from the same pinned source revision as R1 but in a fresh process with its own :memory: database
+- **2/8 source-specific judgment:** Actual selfcheck JSON reported healthy=true, zero nodes and zero edges for R2's empty fixture
+- **3/8 source-specific judgment:** Those zero counts cannot be subtracted from R1's 2 accepted candidates to infer data loss or negative semantic drift
+- **4/8 source-specific judgment:** 27 Python unit tests passed at Python 3.14.4 and fixed code revision, not on a production persistent store
+- **5/8 source-specific judgment:** Source module checks for foreign keys, FTS5 and RuleEngine are verified only for that local R2 fixture
+- **6/8 source-specific judgment:** First branch-wide validation encountered scope_guard protected paths, despite native command successes; the failure was a control-plane issue
+- **7/8 source-specific judgment:** Later branch-head guard still failed until allowlist correction; sequential failures should remain rather than be rewritten as original PASS
+- **8/8 source-specific judgment:** A legitimate longitudinal retest requires R1/R2 to open the same named persistent SQLite URI with comparable snapshots and state hashes
+
+
+
+## Candidate acceptance after complete daily-source review
+
+- Candidate substantive numerator: 14 files × eight unique technical evidence/identity/counterexample assessments = 112 newly written maintenance lines; not 112 graph experiments or test executions
+
+- No live graph state, database identity, hidden successful runner, corrected historic attempt or natural-month final is invented by this maintenance
+
+- The original PR must still be freshly checked for GitHub numerical additions, semantic duplication, Check Runs and merge eligibility before strict PASS is claimed
+
