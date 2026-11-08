@@ -240,3 +240,38 @@
 
 - The original PR must still be freshly checked for GitHub numerical additions, semantic duplication, Check Runs and merge eligibility before strict PASS is claimed
 
+
+
+## Cross-date 25 source-specific relationship findings
+- These judgments relate separately verified Nov01–07 original reports; they do not count different dates/source paths as independent execution or source publishers
+
+1. R1 and R2 have different canonical task identities even on the same date, but a shared failed git clone must not be reported as two independent bootstrap experiments
+2. Nov01–05 report filenames exist on main while native GraphDB commands were not executed, demonstrating `PATH_PRESENT != NATIVE_SUCCESS`
+3. Nov04 logical date and Nov05 actual UTC acquisition show that period assignment cannot substitute for actual execution timestamp
+4. Nov05 theoretical STEAD/containment/AgentLTL lead collection did not pass convergence or Morpher admission; three papers do not mean three accepted nodes
+5. Nov06 later R1 accepted 2/3 and rejected 1/3 while Nov07 later R1 accepted 2/2; denominators and input batches differ
+6. AgentLTL rejected in Nov06 and accepted in Nov07 is not a successful replay recovery or a fix, since each attempt used a separate source batch and process
+7. Nov06 fixed 100-step convergence and Nov07 fixed 100-step convergence are bounded local fixtures, not snapshots of the same persisted graph
+8. Nov06/07 Morpher process-local `:memory:` databases cannot be assumed to survive the end of their individual Python process
+9. Nov06/07 R2 27 tests refer to bounded test-suite implementations and do not prove 27 real graph nodes were checked
+10. Observed R2 zero nodes in a fresh in-memory database and accepted R1 candidates are not contradictory because the stores are not shared
+11. Nov01/02 not-computed graph counts and Nov07 observed zero fixture counts are different evidence states, not a continuous zero-node series
+12. An R1 Morpher exit1 on an intentional rejection branch is evidence of partial input treatment, not general database corruption
+13. An R2 Python selfcheck exit0 in a fresh fixture is not proof of actual user knowledge graph availability
+14. Nov06 initial source report's failed DNS and its later Actions success must remain as two time-indexed pieces of evidence
+15. Nov07 local failed DNS and later Actions runner success represent two environments, not the same executable worktree recovering in place
+16. Current ingestion.log after Nov08 may contain later appends; a report claiming it was produced by Nov06 tee must be reconciled to original Actions log
+17. Historical R1 source candidate presence is not an observed `Observer` decision or a persisted `InsightMorpher` graph mutation
+18. Storage continuity requires named SQLite file path, schema revision, file hash and replay cutoff, not common calendar day or Python version
+19. R3 drift needs comparable persisted snapshots, so a single-day R2 empty fixture cannot serve as baseline or change point
+20. W44 R3/R4 reports are previous closed-week sources, while W45 is not naturally closed before Shanghai Monday
+21. Current November R5 is not due and must not infer a phase transition from synthetic local runs
+22. RuleEngine passing authored tests establishes fixture-level behavior, not real approval binding or protected tool effects
+23. Nov07 initial guard failure after successful native tests is a genuine control-plane verification defect and cannot be masked by test pass
+24. Later scope_guard allowlist correction is a repository governance change and not source-time proof that Nov07 original R1 persisted state
+25. The only legitimate source-period reinterpretation is separate execution identity plus correction; reusing previous Jules history or rewriting early blocked reports is invalid
+
+## Current original A1 quality admission candidate
+- New original-PR semantic review line set: 112 per-file decisions + 25 distinct cross-period comparisons = 137 material analytical lines; excludes all SHA matrix rows, headers and inherited texts
+- The first Draft revision's NOT_MET status remains in original PR Git history. This unmerged original PR has been substantially amended, not supplemented through a successor PR
+- Final contract acceptance awaits fresh GitHub additions, clean diff scope, required CI observations and operator-authorized merge, with source/runtime uncertainty retained
