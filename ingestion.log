@@ -822,3 +822,9 @@ R1_PERSISTENCE_BOUNDARY: process-local :memory:; no durable shared graph has bee
 {"accepted": 2, "results": [{"accepted": true, "id": "github_google_adk_waiting_replay_20261107", "reasons": []}, {"accepted": true, "id": "arxiv_2607_02599v1", "reasons": []}], "total": 2}
 R1_MORPH_COMMAND_EXIT=0;HARD_ROLLBACK=NOT_TRIGGERED_IN_THIS_PROCESS;R1_PROCESS_LOCAL_STORE=:memory:;R2_SEPARATE_PROCESS=:memory:;PERSISTENT_GRAPH_NOT_VERIFIED
 R2_SELF_CHECK_EXIT=0;R2_TESTS_27_PASS;R2_FIXTURE_NODES=0;R2_FIXTURE_EDGES=0;SAME_DATE_NEQ_SAME_STORE
+2026-11-08;GAS_NATIVE_R1;https://github.com/lostlight530/reflective-continuum/actions/runs/42461216981;LOG_TRANSFER_FROM_GITHUB_ACTIONS;MAIN=b76a4294a6b80edf8ce48f7b162781873b3405ca;PYTHON=3.14.4;R1_JOB=gas-r1;R2_JOB=gas-r2;BOTH_EPHEMERAL_SEPARATE_JOBS
+{"distinct_snapshots": 1, "iterations": 100, "repeatable": true, "scope": "fixed local SQLite fixture"}
+R1_INPUT {"path": "/tmp/gpt-native-20261108-gas-signals.json", "ids": ["github_google_adk_unary_finish_20261108", "arxiv_2608_03609v1"], "n": 2}
+{"accepted": 2, "results": [{"accepted": true, "id": "github_google_adk_unary_finish_20261108", "reasons": []}, {"accepted": true, "id": "arxiv_2608_03609v1", "reasons": []}], "total": 2}
+R1_MORPH_COMMAND_EXIT=0;HARD_ROLLBACK=NOT_TRIGGERED_IN_THIS_RUN;R1_PROCESS_LOCAL_STORE=:memory:;PERSISTENT_GRAPH_NOT_VERIFIED
+R2_SELF_CHECK_EXIT=0;R2_TESTS_31_PASS;R2_FIXTURE_NODES=0;R2_FIXTURE_EDGES=0;SAME_DATE_NEQ_SAME_STORE
