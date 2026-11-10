@@ -1,0 +1,81 @@
+name: GPT Native Nov10 GAS Evidence (temporary branch-only)
+on:
+  push:
+    branches:
+      - gpt-native/gas-daily-20261110
+permissions:
+  contents: read
+jobs:
+  gas-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Exact Nov10 baseline main checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: 00bd6f120c66a56bde83fdd72e7560d94c7cae58
+          persist-credentials: false
+      - name: Pinned revision environment
+        run: |
+          set -euo pipefail
+          git rev-parse HEAD
+          python3 --version
+          test -z "$(git status --porcelain)"
+      - name: R1 fixed fixture convergence only
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python3 CODE/tasks/convergence_drill.py
+      - name: R1 two controlled source descriptions into named ephemeral SQLite
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python3 - <<'PY'
+          import hashlib,json,os,pathlib
+          from CODE.tasks.insight_morpher import InsightMorpher
+          p=pathlib.Path(os.environ["RUNNER_TEMP"])/"gas-native-20261110.sqlite3"
+          assert not p.exists(), "fresh runner database required"
+          source=[
+            {"id":"google_adk_eval_f1b1f9_20261110","content":"Google ADK commit f1b1f9d 2026-11-09: eval case session lookup identity aligned with creation identity; first-party code and authored tests reviewed, not executed here.","edges":[]},
+            {"id":"arxiv_2610_28679v2_20261110","content":"VerifierBench arXiv:2610.28679v2 2026-10-30: author-reported executable verifier benchmark and false rejection counterexamples; paper observations, not GAS runtime verification.","edges":[]}
+          ]
+          inp=json.dumps(source,ensure_ascii=False,sort_keys=True)
+          print("NOV10_R1_INPUT_SHA256",hashlib.sha256(inp.encode()).hexdigest())
+          m=InsightMorpher(db_path=str(p))
+          result=m.morph_signals(source)
+          snapshot=m.db.snapshot_digest()
+          counts={"nodes":m.db.conn.execute("select count(*) from nodes").fetchone()[0],"edges":m.db.conn.execute("select count(*) from edges").fetchone()[0]}
+          m.db.close()
+          proof={"database":str(p),"snapshot_digest":snapshot,"counts":counts,"file_sha256":hashlib.sha256(p.read_bytes()).hexdigest()}
+          (pathlib.Path(os.environ["RUNNER_TEMP"])/"gas-nov10-expected.json").write_text(json.dumps(proof),encoding="utf-8")
+          print("NOV10_R1_MORPH_EVIDENCE",json.dumps(result,ensure_ascii=False,sort_keys=True))
+          print("NOV10_R1_GRAPH_EVIDENCE",json.dumps(proof,sort_keys=True))
+          assert result["accepted"]==2 and result["total"]==2 and counts["nodes"]==2
+          PY
+      - name: R2 independent new process checks same exact named file
+        run: |
+          set -euo pipefail
+          GAS_DB="$RUNNER_TEMP/gas-native-20261110.sqlite3"
+          echo "NOV10_R2_DB_PATH=$GAS_DB"
+          PYTHONPATH=. python3 CODE/tasks/cortex_selfcheck.py --database "$GAS_DB"
+          PYTHONPATH=. python3 - <<'PY'
+          import hashlib,os,pathlib,json
+          from CODE.continuum_db import GraphDB
+          root=pathlib.Path(os.environ["RUNNER_TEMP"])
+          p=root/"gas-native-20261110.sqlite3"
+          expected=json.loads((root/"gas-nov10-expected.json").read_text(encoding="utf-8"))
+          with GraphDB(str(p)) as db:
+            ids=db.get_all_nodes()
+            digest=db.snapshot_digest()
+            counts={"nodes":db.conn.execute("select count(*) from nodes").fetchone()[0],"edges":db.conn.execute("select count(*) from edges").fetchone()[0]}
+          actual={"database":str(p),"snapshot_digest":digest,"counts":counts,"file_sha256":hashlib.sha256(p.read_bytes()).hexdigest()}
+          print("NOV10_R2_REOPEN_EVIDENCE",json.dumps({**actual,"node_ids":ids},sort_keys=True))
+          assert actual==expected,"R1/R2 actual store identity mismatch"
+          assert counts["nodes"]==2 and set(ids)=={"google_adk_eval_f1b1f9_20261110","arxiv_2610_28679v2_20261110"}
+          PY
+      - name: R2 native test suite
+        run: |
+          set -euo pipefail
+          PYTHONPATH=. python3 -m unittest discover tests/ -v
+      - name: Final no writes in pinned worktree
+        run: |
+          set -euo pipefail
+          test -z "$(git status --porcelain)"
