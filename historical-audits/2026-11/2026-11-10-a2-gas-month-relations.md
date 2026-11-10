@@ -113,8 +113,16 @@
 - Counterevidence today's two accepted items with no edges are not proof of graph phase, persistent memory or rollback under rejected input
 - Period decision Nov10 newly admitted by merged A1
 - Reviewer status: PRESENT_BODY_READ / NO_SOURCE_OR_GRAPH_MUTATION / NONCOMPARABLE_CROSS_DAY_UNCHANGED
-- MISSING current-main claimed source `RESEARCH/weekly/2026-W45-semantic-drift-review.md`: NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repos; no synthesized evidence
-- MISSING current-main claimed source `RESEARCH/weekly/2026-W45-topology-link-audit.md`: NOT_FOUND: Error code: NOT_FOUND; Error: GitHub API error 404: {"message":"Not Found","documentation_url":"https://docs.github.com/rest/repos/contents#get-repos; no synthesized evidence
+### RESEARCH/weekly/2026-W45-alignment-report.md
+- Correct canonical W45 weekly path, source blob `9d68e752adbf22bd1916d2a15c3d42f99591dd7c`, 61 lines; not the nonexistent alias `RESEARCH/weekly/2026-W45-semantic-drift-review.md`
+- Weekly authored heading # R3 Weekly Semantic Drift and Phase Alignment Audit — 2026-W45; explicit negative/decision tokens PASS | NOT_COMPUTED | UNKNOWN | NOT_EXECUTED
+- Review correction: source path was misnamed in this **unmerged Nov10 A2 draft only**, repaired from current RESEARCH/weekly inventory; the real W45 owner is unchanged
+- Evidence boundary: WEEKLY_REPORT_PRESENT != CROSS_DAY_COMPARABLE_GAS_STORE; R3/R4 may retain unknown or uncomputed drift
+### RESEARCH/weekly/2026-W45-reference-audit.md
+- Correct canonical W45 weekly path, source blob `ba012925faf4527f04be8da2ec801f5714524503`, 61 lines; not the nonexistent alias `RESEARCH/weekly/2026-W45-topology-link-audit.md`
+- Weekly authored heading # R4 Weekly Reference Topology Audit — 2026-W45; explicit negative/decision tokens PASS | NOT_COMPUTED | UNKNOWN | NOT_EXECUTED
+- Review correction: source path was misnamed in this **unmerged Nov10 A2 draft only**, repaired from current RESEARCH/weekly inventory; the real W45 owner is unchanged
+- Evidence boundary: WEEKLY_REPORT_PRESENT != CROSS_DAY_COMPARABLE_GAS_STORE; R3/R4 may retain unknown or uncomputed drift
 
 ## Month-start relationship matrix
 - 2026-11-01 W44: R1 `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f`, R2 `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0`; distinct run/source-store identities, cross-day drift NOT_COMPUTED unless exact comparable pair supplied
@@ -133,3 +141,5 @@
 - No synthetic inference of rollback, recovery, persistence, new graph entropy or novel phase transition
 - Next retest requires persisted authorized SQLite artifact across two jobs/dates and exact byte/snapshot equivalence
 - Next legal window: Nov11 native R1/R2, then independent A1 cutoff through Nov10 merged, then A2 through Nov11
+
+- Pre-merge correction receipt: both W45 canonical weekly filenames were re-read on current main; the initial unmerged lookup failures were PATH_LOOKUP_ERRORS, not missing research outputs
