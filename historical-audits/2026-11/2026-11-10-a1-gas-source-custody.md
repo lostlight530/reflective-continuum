@@ -150,3 +150,36 @@
 - A1 acceptance still depends on this PR's own ≥100 actual GitHub additions and ≥100 meaningful audit lines, independent of current source/PR facts
 - No current phase/dynamic drift numeric calculation performed; not equivalent to zero drift
 - A2 can start only after this A1 merges and its exact main blob is read alongside Nov10 GAS evidence
+
+## Nov01–03 additional direct file-body confirmation (upgrades former inherited-only boundary)
+- These are direct current-main body reads, not an additional GAS invocation; ingestion and selfcheck remain separate run identities
+### Direct 2026-11-01 R1 ingestion provenance
+- `RESEARCH/daily/2026-11-01-dehydrated-report.md`: 66 source lines independently re-fetched on latest A1 pinned main; original execution status not overwritten
+- Document structure: ## Run identity and canonical contract / ## Native runtime acquisition and execution evidence / ## Research source lead — NOT ingested / ## R1 result and evidence delta; observed statuses BLOCKED, NOT_EXECUTED, NOT_COMPUTED, UNKNOWN
+- Store/run identity excerpt: ## Run identity and canonical contract; presence of a textual identity does not prove a comparable store
+- 2026-11-01 reviewer conclusion: submitted signals and accepted/rejected must have original runner receipt, not inferred from a daily report
+### Direct 2026-11-01 R2 selfcheck provenance
+- `RESEARCH/daily/2026-11-01-cortex-selfcheck.md`: 60 source lines independently re-fetched on latest A1 pinned main; original execution status not overwritten
+- Document structure: ## Run identity and task boundary / ## Actual runtime acquisition and selfcheck / ## Opened database and state identity / ## EVIDENCE_DELTA; observed statuses BLOCKED, NOT_EXECUTED, NOT_COMPUTED, UNKNOWN, PASS
+- Store/run identity excerpt: ## Run identity and task boundary; presence of a textual identity does not prove a comparable store
+- 2026-11-01 reviewer conclusion: selfcheck program/result is distinct from same-date R1 and cannot validate persistence without exact shared SQLite path+digest
+### Direct 2026-11-02 R1 ingestion provenance
+- `RESEARCH/daily/2026-11-02-dehydrated-report.md`: 58 source lines independently re-fetched on latest A1 pinned main; original execution status not overwritten
+- Document structure: ## Run identity and canonical contract / ## Native runtime acquisition and execution evidence / ## Research source lead — NOT ingested / ## R1 result and EVIDENCE_DELTA; observed statuses BLOCKED, NOT_EXECUTED, NOT_COMPUTED
+- Store/run identity excerpt: ## Run identity and canonical contract; presence of a textual identity does not prove a comparable store
+- 2026-11-02 reviewer conclusion: submitted signals and accepted/rejected must have original runner receipt, not inferred from a daily report
+### Direct 2026-11-02 R2 selfcheck provenance
+- `RESEARCH/daily/2026-11-02-cortex-selfcheck.md`: 50 source lines independently re-fetched on latest A1 pinned main; original execution status not overwritten
+- Document structure: ## Run identity and task boundary / ## Actual runtime acquisition and selfcheck / ## Opened database and state identity / ## EVIDENCE_DELTA; observed statuses BLOCKED, NOT_EXECUTED, NOT_COMPUTED, UNKNOWN
+- Store/run identity excerpt: ## Run identity and task boundary; presence of a textual identity does not prove a comparable store
+- 2026-11-02 reviewer conclusion: selfcheck program/result is distinct from same-date R1 and cannot validate persistence without exact shared SQLite path+digest
+### Direct 2026-11-03 R1 ingestion provenance
+- `RESEARCH/daily/2026-11-03-dehydrated-report.md`: 59 source lines independently re-fetched on latest A1 pinned main; original execution status not overwritten
+- Document structure: ## Run identity and canonical contract / ## Attempted acquisition and native execution / ## Source and research boundary / ## Evidence Delta; observed statuses BLOCKED, NOT_EXECUTED, NOT_COMPUTED
+- Store/run identity excerpt: ## Run identity and canonical contract; presence of a textual identity does not prove a comparable store
+- 2026-11-03 reviewer conclusion: submitted signals and accepted/rejected must have original runner receipt, not inferred from a daily report
+### Direct 2026-11-03 R2 selfcheck provenance
+- `RESEARCH/daily/2026-11-03-cortex-selfcheck.md`: 57 source lines independently re-fetched on latest A1 pinned main; original execution status not overwritten
+- Document structure: ## Run identity and task boundary / ## Actual acquisition and selfcheck / ## Opened store and comparable state / ## Evidence Delta; observed statuses BLOCKED, NOT_EXECUTED, NOT_COMPUTED, UNKNOWN
+- Store/run identity excerpt: ## Run identity and task boundary; presence of a textual identity does not prove a comparable store
+- 2026-11-03 reviewer conclusion: selfcheck program/result is distinct from same-date R1 and cannot validate persistence without exact shared SQLite path+digest
