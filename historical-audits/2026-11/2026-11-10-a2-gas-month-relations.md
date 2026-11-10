@@ -143,3 +143,42 @@
 - Next legal window: Nov11 native R1/R2, then independent A1 cutoff through Nov10 merged, then A2 through Nov11
 
 - Pre-merge correction receipt: both W45 canonical weekly filenames were re-read on current main; the initial unmerged lookup failures were PATH_LOOKUP_ERRORS, not missing research outputs
+
+## Direct Nov10 formal-test / graph-store limitations — newly re-read source bodies
+- This is **source-file reinspection**, not a replay of the original formal runner; prior successes and initial failures retain independent run IDs
+### RESEARCH/daily/2026-11-10-dehydrated-report.md
+- Source SHA `998c3f5b4744c390a86778758f74943f43626c98`, lines 81; actual file text re-read on A1-merged main
+- Authored sections: # GAS Daily R1 — 2026-11-10 / separately verified temporary-store ingestion after blocked local acquisition / ## Run identity / ## R1.1 — checkout and execution evidence / ## R1.2 — original local input candidates, NOT submitted (later independent runner used 
+- Native status line 1: - Execution identity: 'reflective-continuum/gas/R1/2026-11-10/GPT_NATIVE/00bd6f120c66a56bde83fdd72e7560d94c7cae58/local-acquisition-blocked-01'; this A2 does not assign new runner success
+- Native status line 2: - Initial local attempt status: 'NOT_EXECUTED / WORKTREE_ACQUISITION_FAILED' (preserved); provenance remains author-time
+- Native status line 3: - Separately completed GitHub-hosted R1: 'FIXED_FIXTURE_CONVERGENCE_PASS / MORPH_ACCEPTED_2_OF_2 / SAME_JOB_EPHEMERAL_FILE_PERSISTENCE'; only pinned fixtures count if explicitly scoped
+- Evidence separation: R1 accepted ingestion, R2 store selfcheck, R3 weekly drift and R4 weekly reference check require exact shared store and temporal comparability
+- Counterexample retained: a successful two-process same-file SQLite fixture does not prove inter-job persistence or production graph health
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
+### RESEARCH/daily/2026-11-10-cortex-selfcheck.md
+- Source SHA `937783c42cd86c7c555103977553492ed59f5e8c`, lines 77; actual file text re-read on A1-merged main
+- Authored sections: # GAS Daily R2 — 2026-11-10 / independent same-job named-store reopen and bounded selfcheck / ## Run identity / ## Original local attempt / runtime execution record (later GitHub run below) / ## Selfcheck and test results / ## Store relationship with R1 and th
+- Native status line 1: - Run Identity: 'reflective-continuum/gas/R2/2026-11-10/GPT_NATIVE/00bd6f120c66a56bde83fdd72e7560d94c7cae58/no-named-store-01'; this A2 does not assign new runner success
+- Native status line 2: - Original local attempt status: 'NOT_EXECUTED / INPUT_STORE_MISSING', preserved; provenance remains author-time
+- Native status line 3: - Separately completed GitHub-hosted R2: 'SELF_CHECK_PASS_ON_EXPLICIT_NAMED_EPHEMERAL_STORE / TWO_R1_NODES_REOPENED / UNIT_TESTS_31_PASS / LONGITUDINAL_DRIFT_NOT_COMPUTED'; only pinned fixtures count if explicitly scoped
+- Evidence separation: R1 accepted ingestion, R2 store selfcheck, R3 weekly drift and R4 weekly reference check require exact shared store and temporal comparability
+- Counterexample retained: a successful two-process same-file SQLite fixture does not prove inter-job persistence or production graph health
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
+### RESEARCH/weekly/2026-W45-alignment-report.md
+- Source SHA `9d68e752adbf22bd1916d2a15c3d42f99591dd7c`, lines 61; actual file text re-read on A1-merged main
+- Authored sections: # R3 Weekly Semantic Drift and Phase Alignment Audit — 2026-W45 / ## Contract and identity / ## Exact W45 input coverage / ## GitHub Actions evidence boundary / ## Semantic drift and phase calculations / ## Counterevidence and hypothesis gate
+- Native status line 1: - Run Identity: 'reflective-continuum/gas/R3/2026-W45/GPT_NATIVE/643f11ff66fb3972b0ed1c71a1127841401e5d3d/w45-drift-documentary-01'; this A2 does not assign new runner success
+- Native status line 2: - Task Status: DOCUMENTARY_WEEKLY_INPUT_REVIEW_COMPLETE / OPERATIONAL_DRIFT_NOT_COMPUTED; provenance remains author-time
+- Native status line 3: | Date | R1 canonical path and blob SHA | R2 canonical path and blob SHA | Attributed runtime evidence |; only pinned fixtures count if explicitly scoped
+- Evidence separation: R1 accepted ingestion, R2 store selfcheck, R3 weekly drift and R4 weekly reference check require exact shared store and temporal comparability
+- Counterexample retained: a successful two-process same-file SQLite fixture does not prove inter-job persistence or production graph health
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
+### RESEARCH/weekly/2026-W45-reference-audit.md
+- Source SHA `ba012925faf4527f04be8da2ec801f5714524503`, lines 61; actual file text re-read on A1-merged main
+- Authored sections: # R4 Weekly Reference Topology Audit — 2026-W45 / ## Contract and identity / ## Exact W45 input coverage / ## GitHub Actions evidence boundary / ## Reference validation results and boundaries / ## Reference integrity counterexamples
+- Native status line 1: - Run Identity: 'reflective-continuum/gas/R4/2026-W45/GPT_NATIVE/643f11ff66fb3972b0ed1c71a1127841401e5d3d/w45-reference-documentary-01'; this A2 does not assign new runner success
+- Native status line 2: - Task Status: BOUNDED_REFERENCE_PROVENANCE_REVIEW / GRAPH_TOPOLOGY_UNKNOWN; provenance remains author-time
+- Native status line 3: | Date | R1 canonical path and blob SHA | R2 canonical path and blob SHA | Attributed runtime evidence |; only pinned fixtures count if explicitly scoped
+- Evidence separation: R1 accepted ingestion, R2 store selfcheck, R3 weekly drift and R4 weekly reference check require exact shared store and temporal comparability
+- Counterexample retained: a successful two-process same-file SQLite fixture does not prove inter-job persistence or production graph health
+- Current action: inherit dated execution receipt only / reject unobserved universal claim / preserve negative evidence
