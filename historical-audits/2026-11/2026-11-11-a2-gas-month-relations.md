@@ -163,3 +163,23 @@
 - Do not count synthetic fixture results as an observed long-lived graph across external platform restarts
 - Future Nov12 A1 must include any verified Nov11 native or explicit missing statuses, before independent Nov12 A2 may start
 - Current A2 final judgment: source-level relationship delivered, native Day N absent, graph continuity unknown, month not closed
+
+## 2026-11-11 forward GAS R1/R2 recovery reconciliation — appended after original A2 merge
+
+- **Reconciliation identity:** `reflective-continuum/independent-A2/2026-11-11/POST_ORIGINAL_NATIVE_RECOVERY`; current evidence update only, original author-time statements above preserved.
+- **Historical original A2 fact retained:** [#600](https://github.com/lostlight530/reflective-continuum/pull/600) originally found both Nov11 native GAS R1/R2 absent at its pinned main; `MISSING_AS_OF_ORIGINAL_A2_CUT` is accurate for that earlier inspection.
+- **New subsequent source fact:** authorized GPT Native supplement [#602](https://github.com/lostlight530/reflective-continuum/pull/602) merged canonical [Nov11 R1](../../RESEARCH/daily/2026-11-11-dehydrated-report.md) blob `70e5469d308078d56f927e749e48676d894e9647`, and [Nov11 R2](../../RESEARCH/daily/2026-11-11-cortex-selfcheck.md) blob `3b19a0c0d6a6153f3822868f5cdc482f2e339cc1`.
+- **New execution receipt:** [Actions #43021699973](https://github.com/lostlight530/reflective-continuum/actions/runs/43021699973), job `gas-native`, source checkout `2591cd926a4386c13f7a2e65b8105877d5170d9c`, `completed/success` with actual named R1, R2 and unit steps.
+- **New current main after Native PR:** `054342d3fe04460a202b18bba5599a46fd81091f`; both canonical November 11 R1 and R2 now visible on current main.
+- **R1 observed:** controlled 100-iteration convergence fixture had one distinct snapshot; `InsightMorpher` on explicitly named temporary SQLite file accepted 2/2 source-lead descriptions, not externally verified factual claims.
+- **Exact file store:** `/home/runner/work/_temp/gas-native-20261111.sqlite3`; persisted after R1 connection close and before a separate R2 process, only within this one GitHub-hosted job.
+- **R2 observed:** native `cortex_selfcheck.py` returned scoped `healthy=true`, `nodes=2`, `edges=0`; foreign keys, FTS5, integrity, rule engine and initialization checks true for that store.
+- **Store continuity proof:** R1/R2 observed the same on-disk file SHA-256 `e2ade7b744ed05c174515b8483ca433a401c1ac5c7417c4ada7fe5efb944e741` and semantic snapshot digest `349a370bbc8cc5b7201499bde6c6035186dad977b60cc7c5d132b2c0fc085f0c`.
+- **Additional execution:** 31/31 native unit tests passed on the pinned source; tests are not an external source-truth or production effect receipt.
+- **Source relation:** Nov11 R1 and R2 now provide new per-day source and within-job store proof for the whole-month Nov01–11 relation, without collapsing R1 acceptance, R2 checking, source truth or independent maintenance into one PASS.
+- **Prior sources preserved:** earlier Nov01–10 native statuses, known failures, standalone earlier SQLite stores and closed W45 record remain their own evidence; an ephemeral Nov11 store cannot establish cross-date graph continuity.
+- **Historical acceptance unchanged:** original #600 A2 additions and initial Day-N missing observation are not backfilled by #602 or this forward correction; original Head/merge and later Native execution are different identities.
+- **Current qualification:** `DAY_N_NATIVE_R1_R2_PRESENT_AND_BOUNDED_EXECUTED / SAME_JOB_CROSS_PROCESS_STORE_OBSERVED`; original scheduler attempt, cross-job durable persistence, rolling semantic drift and controlled rollback effect remain `UNKNOWN / NOT_COMPUTED`.
+- **Calendar gate:** W46 and November OPEN, monthly R5 `NOT_DUE`; no production graph-health, general cognition, real service effect or independent Human Review claim.
+- **Next legal review:** Nov12 A1 source cutoff Nov01–11 may now include both merged Nov11 canonical R1/R2; any Nov12 A2 still requires original A1 merger and fresh main source read.
+- **This forward reconciliation itself:** verified actual file/path/Actions evidence, not a replay of the R1/R2 program or original independent A2.
