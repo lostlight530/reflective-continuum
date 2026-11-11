@@ -1,0 +1,68 @@
+name: temporary-gas-native-20261111
+on:
+  push:
+    branches:
+      - native/2026-11-11-gas-recovery
+permissions:
+  contents: read
+jobs:
+  gas-native:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout pinned main
+        uses: actions/checkout@v4
+        with:
+          ref: 2591cd926a4386c13f7a2e65b8105877d5170d9c
+          persist-credentials: false
+      - name: R1 fixed-fixture convergence
+        run: PYTHONPATH=. python3 CODE/tasks/convergence_drill.py --iterations 100
+      - name: R1 named-file real ingestion and source-bound receipt
+        run: |
+          PYTHONPATH=. python3 - <<'PY'
+          from CODE.tasks.insight_morpher import InsightMorpher
+          from CODE.continuum_db import GraphDB
+          from pathlib import Path
+          import hashlib,json,os
+          db=Path(os.environ["RUNNER_TEMP"])/"gas-native-20261111.sqlite3"
+          assert not db.exists(), "must create fresh explicit named store"
+          leads=[
+            {"id":"adk_required_schema_e5ffe9_20261111","content":"First-party Google ADK 2026-11-11 commit e5ffe9c9daed15b952e83d5d778fe89c251f1d48 adds ApiParameter.required to RestApiTool serialization; test source read, SDK not executed.","edges":[]},
+            {"id":"verifierbench_2610_28679v2_20261111","content":"VerifierBench arXiv:2610.28679v2 source updated 2026-10-30 reports executable-verifier positive acceptance failure; author-reported study, paper implementation not executed.","edges":[]}
+          ]
+          canon=json.dumps(leads,sort_keys=True,separators=(",",":"),ensure_ascii=False)
+          m=InsightMorpher(db_path=str(db))
+          result=m.morph_signals(leads)
+          m.db.close()
+          with GraphDB(str(db)) as state:
+            expected={"ids":state.get_all_nodes(),"edges":state.get_all_edges(),"snapshot":state.snapshot_digest(),"nodes":len(state.get_all_nodes()),"edge_count":len(state.get_all_edges())}
+          record={"date":"2026-11-11","db":str(db),"source_sha256":hashlib.sha256(canon.encode()).hexdigest(),"result":result,"store":expected,"file_sha256":hashlib.sha256(db.read_bytes()).hexdigest()}
+          (Path(os.environ["RUNNER_TEMP"])/"gas-native-20261111-expected.json").write_text(json.dumps(record,sort_keys=True),encoding="utf-8")
+          print("R1_EVIDENCE="+json.dumps(record,sort_keys=True))
+          if result["accepted"]!=2 or result["total"]!=2 or expected["nodes"]!=2: raise SystemExit(1)
+          PY
+      - name: R2 independent process named-store selfcheck
+        run: |
+          PYTHONPATH=. python3 CODE/tasks/cortex_selfcheck.py --database "$RUNNER_TEMP/gas-native-20261111.sqlite3"
+          PYTHONPATH=. python3 - <<'PY'
+          from CODE.continuum_db import GraphDB
+          from CODE.tasks.cortex_selfcheck import selfcheck
+          from pathlib import Path
+          import hashlib,json,os
+          root=Path(os.environ["RUNNER_TEMP"])
+          previous=json.loads((root/"gas-native-20261111-expected.json").read_text())
+          store=Path(previous["db"])
+          now=selfcheck(str(store))
+          with GraphDB(str(store)) as db:
+            actual={"ids":db.get_all_nodes(),"edges":db.get_all_edges(),"snapshot":db.snapshot_digest(),"nodes":len(db.get_all_nodes()),"edge_count":len(db.get_all_edges())}
+          filehash=hashlib.sha256(store.read_bytes()).hexdigest()
+          receipt={"selfcheck":now,"source_match":actual==previous["store"],"snapshot":actual,"file_sha256":filehash,"r1_file_sha256":previous["file_sha256"],"byte_identity":filehash==previous["file_sha256"]}
+          print("R2_EVIDENCE="+json.dumps(receipt,sort_keys=True))
+          if not (now["healthy"] and actual==previous["store"] and filehash==previous["file_sha256"] and now["counts"]["nodes"]==2): raise SystemExit(1)
+          PY
+      - name: Native unit tests
+        run: PYTHONPATH=. python3 -m unittest discover tests/ -v
+      - name: Clean checked source
+        run: |
+          git status --porcelain
+          test -z "$(git status --porcelain)"
