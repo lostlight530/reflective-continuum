@@ -5,7 +5,7 @@
 - Producer: `GPT-6 / GPT_NATIVE / HUMAN_AUTHORIZED_SUBSTITUTE / NOT_JULES_REPLAY`
 - Exact cold-start source baseline: `94cb1dcbf5051680f0949ca7aac97d4301a01ba2`
 - R2 run identity: `reflective-continuum/gas/R2/2026-11-12/GPT_NATIVE/94cb1dcbf5051680f0949ca7aac97d4301a01ba2/source-acquisition-block-20261112-r2`
-- Local `date -u` before Git probes: `2026-11-12T01:11:54Z`; full checkout acquisition not possible
+- Verified separate follow-up Git diagnostic: `2026-11-12T01:25:05.988157+00:00` → `2026-11-12T01:25:10.998892+00:00`; original `01:11:54Z` time association was not supported by a retained command receipt
 - Actual shared acquisition probe: `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD`; exit **128**, stdout **EMPTY**, stderr `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
 - This shared bootstrap attempt is **one** acquisition failure also reported by R1, not an R2 selfcheck invocation and not two independent runner windows
 - R2 task status: `BLOCKED_NO_NATIVE_CHECKOUT / SELF_CHECK_NOT_EXECUTED`
@@ -42,3 +42,9 @@
 - Repo check source was reviewed through GitHub connector; actual R2 selfcheck, Python tests and store reopen `NOT_EXECUTED`
 - Scope: only this R2 Daily and peer R1 Daily, no code, `ingestion.log`, `semantic_drift_audit.log`, active store, historical record, scheduler, weekly/monthly or governance write
 - Human review/merge of a bounded negative result does **not** create an R1/R2 PASS or independent storage evidence
+
+
+## FORWARD_PROVENANCE_CORRECTION — same 01:25Z source-acquisition probe, no R2 replay
+- The original unmerged R2 draft gave `01:11:54Z` as a timestamp adjacent to an executed Git probe. A direct command receipt supporting that earlier association was absent: **NOT_VERIFIED**, not a proven execution time
+- A later independently instrumented **Git remote probe**, shared with the R1 review, actually ran `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD` at `2026-11-12T01:25:05.988157+00:00` through `01:25:10.998892+00:00`, returning exit 128, empty stdout and DNS-resolution stderr. Receipt SHA-256 `56fed8ce3107686a49612af920f8a81b96a65ed2878c3525f4406f6e436c2c16` (local JSON, unsigned)
+- This is **one shared acquisition diagnostic**, not an independently executed R2 health check, not two separate Git probes, and not R1→R2 store continuity. `cortex_selfcheck.py`, tests, node/edge measurements, drift and health are `NOT_EXECUTED / NOT_COMPUTED`
