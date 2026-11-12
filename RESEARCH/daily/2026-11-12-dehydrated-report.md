@@ -5,12 +5,12 @@
 - Producer: `GPT-6 / GPT_NATIVE / HUMAN_AUTHORIZED_SUBSTITUTE / NOT_JULES_REPLAY`
 - Exact cold-start merged main: `94cb1dcbf5051680f0949ca7aac97d4301a01ba2`
 - R1 run identity: `reflective-continuum/gas/R1/2026-11-12/GPT_NATIVE/94cb1dcbf5051680f0949ca7aac97d4301a01ba2/source-acquisition-block-20261112-r1`
-- Execution observation: local `date -u` returned `2026-11-12T01:11:54Z` immediately before the remote Git probes. Exact command completion timestamp not separately captured
+- New actually observed Git diagnostic window: `2026-11-12T01:25:05.988157+00:00` → `2026-11-12T01:25:10.998892+00:00`; original unmerged draft's `01:11:54Z` time association is **NOT_VERIFIED**
 - Remote GitHub connector successfully read current canonical README, relevant CODE task scripts, previous Daily R1/R2 and closed W45; connector file access is **not a runnable native checkout**
 - Actual bootstrap command: `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD`
 - Actual exit: **128**; stdout: **EMPTY / 0 bytes**
 - Actual stderr: `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
-- Environment: ephemeral Python 3.13.5, Git command available, **complete current source worktree NOT_AVAILABLE**
+- Verified diagnostic environment: Linux `6.18.57`, Python `3.13.5`, Git `2.47.3`; complete current source worktree **NOT_AVAILABLE**
 - Failure class: `LOCAL_GIT_REMOTE_DNS_BOOTSTRAP_FAILURE`, not a GraphDB, Cortex Observer, Morpher or stored-state failure
 - R1 overall: `BLOCKED_BEFORE_NATIVE_EXECUTION`; R1 real ingestion: `NOT_EXECUTED`; no accepted/rejected output, no database opened
 - R2 is an **independent** same-day task with separate record `RESEARCH/daily/2026-11-12-cortex-selfcheck.md`; shared failure receipt is **not** two independent execution observations
@@ -66,3 +66,11 @@
 - `NEXT_RETEST_CONDITION`: acquire pinned complete current main, run fixed convergence, submit exact verified signal objects, record accepted/rejected IDs and rollback, use an explicit named SQLite store and retain its snapshot/file hashes for separately attributable R2
 - Historical 2026-11-11 operational receipt #43021699973 is **not** reused. W46 R3/R4 and natural November R5 are `NOT_DUE`
 - Write boundary: only this R1 Daily and separate R2 Daily are proposed on one Native PR; `CODE/`, `ingestion.log`, active DB, archives, prior reports, Actions, Weekly, Monthly and governance remain unchanged
+
+
+## FORWARD_PROVENANCE_CORRECTION — 2026-11-12 01:25Z / review diagnostic
+- Earlier unmerged draft associated a `2026-11-12T01:11:54Z` date command with an executed reflective Git probe, but no corresponding command-level receipt was retained. **ORIGINAL_TIME_ASSOCIATION_NOT_VERIFIED**, not evidence of prior R1 execution
+- This review **actually ran** `["git","ls-remote","https://github.com/lostlight530/reflective-continuum.git","HEAD"]` from `2026-11-12T01:25:05.988157+00:00` to `2026-11-12T01:25:10.998892+00:00` on Linux 6.18.57 with Git 2.47.3/Python 3.13.5
+- Observed exit `128`; stdout empty; exact stderr `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
+- Local JSON receipt SHA-256 `56fed8ce3107686a49612af920f8a81b96a65ed2878c3525f4406f6e436c2c16` identifies an unsigned reviewer-side receipt, not archived Actions or a protected proof
+- New diagnostic only proves source-acquisition failure **for this follow-up attempt**; it does not retrospectively validate the original 01:11 claim, exercise `convergence_drill.py`, run `InsightMorpher`, open a SQLite store, calculate metrics or certify R1 success. R1 ingestion remains `NOT_EXECUTED`
