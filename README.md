@@ -2,6 +2,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22791141.svg)](https://doi.org/10.5281/zenodo.22791141)
 
+Latest archived checkpoint: [v2026.11-ten-day-evidence-checkpoint](https://github.com/lostlight530/reflective-continuum/releases/tag/v2026.11-ten-day-evidence-checkpoint) · [Version DOI](https://doi.org/10.5281/zenodo.24112458). The DOI badge above identifies the software-family concept.
+
 [Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md)
 
 Reflective Continuum is a standard-library Python reference for versioned graph storage and bounded analysis. It provides SQLite persistence, synchronized FTS5 lexical search, version deltas, PageRank-derived Shannon entropy, explicit validation, transactional ingestion, and optional bounded reflection hooks.
