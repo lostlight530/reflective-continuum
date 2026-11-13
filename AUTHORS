@@ -1,15 +1,17 @@
 # Authors
 
-> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
-> **中文**：作者、贡献和验证主体须分别标注，不能从署名推断结果被独立复现；这项解释不改变历史失败、缺失或验证状态  
-> **English**: Authorship, contribution, and verification are different identities; attribution is not independent reproduction. This reading note does not alter historical failures, missing evidence, or validation status
-
 
 ## Primary author and maintainer
 
 - lostlight530
   - GitHub: https://github.com/lostlight530
   - Google Developer Program: https://me.developers.google.com/u/lostlight-love-CXX
+
+### 公开署名与验证分离 / Attribution versus validation
+
+中文：作者、代码维护者、历史研究记录生产者和独立复核者不是同一身份，GitHub 署名及软件 DOI 不自动认证图状态正确、持久记忆或外部复现
+
+English: Author, maintainer, historical research producer and independent verifier are distinct identities. GitHub attribution and software DOI do not certify graph correctness, persistent memory or external reproduction
 
 ## Public open-source identity
 
