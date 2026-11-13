@@ -1,5 +1,10 @@
 # 2026 Evidence Baseline
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：这是一份有原始校准时点的基线，不能把后来 GPT Native 产物追认到旧时点；这项解释不改变历史失败、缺失或验证状态  
+> **English**: This is a time-scoped baseline; later GPT Native artifacts cannot be backdated into earlier evidence. This reading note does not alter historical failures, missing evidence, or validation status
+
+
 - Retrieval/calibration date: 2026-08-27
 - Rule: external evidence can bound a repository claim; it does not certify a local implementation by itself
 

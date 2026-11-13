@@ -11,6 +11,11 @@
 
 # Reflective Continuum Manifesto
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：反思、连续性和自我检查是研究方向，不自动证明意识、安全性或长期自治；这项解释不改变历史失败、缺失或验证状态  
+> **English**: Reflection, continuity, and self-checking are research aims, not automatic evidence of consciousness, safety, or durable autonomy. This reading note does not alter historical failures, missing evidence, or validation status
+
+
 Reflection is an engineering discipline of making state, assumptions, transformations, and failures observable. It is not a claim that software possesses consciousness or can certify its own correctness.
 
 We keep versions because history matters. We use transactions because failed changes must be recoverable. We measure graph and search-result change because silent drift is hard to review. We bound loops because “think again” without a stop condition is resource leakage. We record provenance because persuasive language is not evidence.

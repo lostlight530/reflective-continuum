@@ -1,5 +1,10 @@
 # AI Use Disclosure
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：AI 辅助研究披露不等于自动批准，私有生产者任务和模型内部信息不得作为公共证据；这项解释不改变历史失败、缺失或验证状态  
+> **English**: AI disclosure does not grant autonomous approval; private producer tasks and model internals are not public evidence. This reading note does not alter historical failures, missing evidence, or validation status
+
+
 AI assistance may draft text/code, suggest tests, translate, discover sources, summarize runs, or review repository state. The human contributor owns every claim, source, license, permission, security decision, merge decision, and verification result.
 
 ## Scope and control-plane boundary

@@ -1,5 +1,10 @@
 # Contributing
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：变更需保留状态、基线、运行结果和未测边界，不得用新解释覆盖原记录；这项解释不改变历史失败、缺失或验证状态  
+> **English**: Contributions must preserve state, baseline, run outcomes, and untested bounds without overwriting original records. This reading note does not alter historical failures, missing evidence, or validation status
+
+
 ## Open research contributions
 
 For research-method or positioning changes, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Native graph, store, methodology, ADR, reproducibility, evidence, and historical contracts remain authoritative.
