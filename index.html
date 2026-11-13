@@ -590,6 +590,53 @@ body.show-zh .rc-nav [lang="zh"]{display:inline}
 @media(max-width:640px){body{padding-inline:11px}.rc-nav{flex-wrap:wrap;padding:9px;gap:6px;margin-bottom:25px}.rc-brand{font-size:.72rem}.rc-links{max-width:100%;order:3;width:100%;margin-left:0}.rc-links a{padding:7px 9px}.rc-hero{margin-bottom:37px}.rc-hero-copy{padding:5px 0}.rc-hero-copy h1{font-size:clamp(2rem,10vw,3.3rem)}.rc-boot .boot-seq{padding:18px 15px 29px}.signal-box .signal-grid{grid-template-columns:1fr}.phase-grid .phase-card{padding:19px}.rc-history-intro{padding:17px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+
+/* 2026-11-13 · Two-source research homepage: Axiom contracts + Reflective observation.
+   These are independently implemented references, not a deployed integrated runtime. */
+.rc-dual-kicker{font:800 .73rem/1.6 var(--font-main);letter-spacing:.14em;color:#bbffcb;margin:2px 0 12px}
+.rc-dual-header{margin:0 0 23px}
+.rc-dual-header h2{border:0;padding:0;margin:0 0 11px;color:#f0fff3;font-size:clamp(1.45rem,3.3vw,2.35rem);line-height:1.25;letter-spacing:-.035em}
+.rc-dual-header p{font-size:.91rem;line-height:1.9;color:#adcab6;max-width:870px;margin:0}
+.rc-dual-layout{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.rc-dual-card{position:relative;padding:clamp(19px,2.8vw,29px);min-width:0;border:1px solid rgba(140,255,182,.28);border-radius:18px;background:linear-gradient(145deg,rgba(13,32,24,.94),rgba(3,12,11,.91));box-shadow:0 14px 50px rgba(0,0,0,.24)}
+.rc-dual-card.axiom{border-color:rgba(195,138,255,.36);background:linear-gradient(145deg,rgba(33,22,47,.89),rgba(8,10,22,.95))}
+.rc-dual-card::before{content:"";position:absolute;top:-1px;left:25px;right:56%;height:2px;background:#6bf2ac}
+.rc-dual-card.axiom::before{background:#c9a4ff}
+.rc-dual-tag{font:800 .69rem/1.5 var(--font-main);letter-spacing:.12em;color:#91e8b9}
+.rc-dual-card.axiom .rc-dual-tag{color:#d6b1ff}
+.rc-dual-card h3{font-size:clamp(1.3rem,2.5vw,1.8rem);letter-spacing:-.035em;line-height:1.28;color:#eefbf3;margin:11px 0 10px}
+.rc-dual-card.axiom h3{color:#efe2ff}
+.rc-dual-card p{font-size:.87rem;line-height:1.85;color:#bbd5c4;margin:0}
+.rc-dual-card.axiom p{color:#cbbfda}
+.rc-dual-mechanics{list-style:none;margin:19px 0 15px;padding:0}
+.rc-dual-mechanics li{display:grid;grid-template-columns:27px minmax(0,1fr);gap:11px;align-items:start;padding:11px 0;border-top:1px solid rgba(146,198,162,.17);line-height:1.7;font-size:.84rem;color:#e4f5e8;overflow-wrap:anywhere}
+.rc-dual-card.axiom .rc-dual-mechanics li{border-top-color:rgba(180,147,214,.19);color:#e8dcf3}
+.rc-dual-mechanics li b{font:700 .7rem var(--font-main);padding-top:3px;color:#76e4aa}
+.rc-dual-card.axiom .rc-dual-mechanics li b{color:#ca97ff}
+.rc-dual-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:19px}
+.rc-dual-links a{display:inline-flex;align-items:center;min-height:35px;padding:8px 11px;font-size:.75rem;color:#c6ffde;background:rgba(86,228,145,.07);border:1px solid rgba(108,227,154,.29);border-radius:8px;text-decoration:none}
+.rc-dual-card.axiom .rc-dual-links a{background:rgba(170,103,235,.07);border-color:rgba(194,146,243,.28);color:#e6ccff}
+.rc-dual-links a:hover,.rc-dual-links a:focus-visible{background:rgba(119,221,167,.19)}
+.rc-dual-card.axiom .rc-dual-links a:hover{background:rgba(190,133,255,.18)}
+.rc-bridge{margin:17px 0 13px;border:1px dashed rgba(169,213,178,.32);background:rgba(7,16,15,.8);border-radius:14px;padding:20px}
+.rc-bridge-title{font:800 .73rem var(--font-main);letter-spacing:.09em;color:#e6fadd}
+.rc-bridge-flow{display:flex;align-items:stretch;gap:9px;margin:14px 0;flex-wrap:wrap}
+.rc-bridge-node{flex:1 1 205px;padding:14px;border:1px solid rgba(167,208,169,.22);border-radius:10px;color:#e3f9e8;background:rgba(17,35,26,.67);min-width:0}
+.rc-bridge-node.axiom{border-color:rgba(186,144,244,.32);background:rgba(30,22,45,.63)}
+.rc-bridge-node .rc-node-k{display:block;font:800 .65rem var(--font-main);color:#bdeacf;margin-bottom:8px}
+.rc-bridge-node.axiom .rc-node-k{color:#d1b5f8}
+.rc-bridge-node p{font-size:.77rem;line-height:1.7;color:#c0d8c5;margin:0}
+.rc-bridge-connector{flex:0 0 24px;align-self:center;text-align:center;color:#f8d89b;font-size:1.3rem;font-weight:800}
+.rc-bridge-status{padding-top:12px;border-top:1px solid rgba(156,211,173,.16);font-size:.8rem;color:#dbceb0;line-height:1.9}
+.rc-dual-glossary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin-top:13px}
+.rc-dual-term{background:rgba(9,26,18,.62);border:1px solid rgba(119,203,145,.18);border-radius:12px;padding:15px}
+.rc-dual-term h4{color:#def5dd;font-size:.88rem;margin:0 0 9px}
+.rc-dual-term p{font-size:.78rem;line-height:1.8;color:#a9c5af;margin:0}
+.rc-dual-boundary{margin-top:20px;padding:15px 17px;border-left:3px solid #f6d58c;background:rgba(90,65,18,.13);border-radius:0 10px 10px 0;color:#d8caaa;font-size:.83rem;line-height:1.9}
+.rc-dual-boundary strong{color:#ffdf9a}
+@media(max-width:920px){.rc-dual-layout{grid-template-columns:1fr}.rc-dual-glossary{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.rc-dual-glossary{grid-template-columns:1fr}.rc-bridge-flow{flex-direction:column}.rc-bridge-node{flex:1 1 auto}.rc-bridge-connector{transform:rotate(90deg);align-self:center}.rc-dual-card{padding:17px}.rc-bridge{padding:14px}}
+
 </style>
 </head>
 <body>
@@ -603,11 +650,11 @@ body.show-zh .rc-nav [lang="zh"]{display:inline}
 <nav class="rc-nav" id="top" aria-label="Section navigation">
 <a class="rc-brand" href="#top">RC / REFLECTIVE</a>
 <div class="rc-links">
-<a href="#reference"><span lang="en">Current reference</span><span lang="zh">当前参考实现</span></a>
-<a href="#history"><span lang="en">History</span><span lang="zh">历史谱系</span></a>
-<a href="#phases"><span lang="en">Phases</span><span lang="zh">相态</span></a>
-<a href="#entropy"><span lang="en">Entropy</span><span lang="zh">分布熵</span></a>
-<a href="#signals"><span lang="en">Evidence</span><span lang="zh">封存证据</span></a>
+<a href="#dual-core"><span lang="en">Two systems</span><span lang="zh">双仓逻辑</span></a>
+<a href="#axiom-core"><span lang="en">Axiom</span><span lang="zh">Axiom 合同</span></a>
+<a href="#reference"><span lang="en">Reflective</span><span lang="zh">图观测</span></a>
+<a href="#history"><span lang="en">History</span><span lang="zh">历史</span></a>
+<a href="#signals"><span lang="en">Evidence</span><span lang="zh">证据</span></a>
 </div>
 <button class="lang-toggle" type="button" id="rcLanguage" aria-label="Switch language to Chinese">[ZH]</button>
 </nav>
@@ -621,6 +668,8 @@ body.show-zh .rc-nav [lang="zh"]{display:inline}
 </div>
 
 </aside><div class="rc-hero-copy">
+<div class="rc-dual-kicker"><span lang="en">A TWO-REPOSITORY RESEARCH READER</span><span lang="zh">双仓技术研究展示</span></div>
+<p style="color:#d4f1d9;font-size:.91rem;line-height:1.8;margin:0 0 13px"><span lang="en">Axiom-0: contracts & transitions  ·  Reflective: versioned graphs & observation</span><span lang="zh">Axiom-0：合同与状态转换  ·  Reflective：版本图谱与状态观测</span></p>
 <h1>
   <span lang="en">Reflective Continuum</span>
   <span lang="zh">反射连续体</span>
@@ -640,8 +689,66 @@ body.show-zh .rc-nav [lang="zh"]{display:inline}
 
 
 
-<div class="rc-hero-actions"><a href="#reference"><span lang="en">Inspect the local reference</span><span lang="zh">查看局部参考实现</span> ↓</a><a href="#history"><span lang="en">Explore historical material</span><span lang="zh">查看历史资料</span> ↓</a></div></div></header>
-<div class="rc-section-index">01 / CURRENT REFERENCE</div>
+<div class="rc-hero-actions"><a href="#dual-core"><span lang="en">Explore both reference systems</span><span lang="zh">查看两仓核心逻辑</span> ↓</a><a href="#history"><span lang="en">Explore preserved history</span><span lang="zh">查看封存历史</span> ↓</a></div></div></header>
+
+<section class="rc-panel" id="dual-core" aria-labelledby="dual-title">
+ <header class="rc-dual-header">
+ <div class="rc-dual-kicker">01 / TWO INDEPENDENT REFERENCE SYSTEMS</div>
+ <h2 id="dual-title"><span lang="en">Axiom contracts + Reflective graph observation</span><span lang="zh">Axiom 可执行合同 + Reflective 图谱观测</span></h2>
+ <p><span lang="en">Two separate Python reference implementations, presented together to make the relationship between controlled transitions and state observation understandable. This page compares their code and evidence contracts; it does not invoke either runtime or establish cross-repository integration.</span><span lang="zh">这里同时讲清两仓独立的 Python 参考实现，帮助读者理解受控状态转换与图谱状态观测之间的研究关联。本网页只展示代码与证据合同，不调用任何 Runtime，也不宣称两仓已经集成为同一个系统</span></p>
+ </header>
+ <div class="rc-dual-layout">
+  <article class="rc-dual-card axiom" id="axiom-core">
+    <div class="rc-dual-tag">AXIOM-0 · CONTRACT &amp; TRANSITION</div>
+    <h3><span lang="en">Define and validate a transition</span><span lang="zh">定义并验证状态转换</span></h3>
+    <p><span lang="en">A dependency-free Python reference for canonical data identity, numerical comparison and fail-closed local state transitions. Not a database, deployment controller or autonomous agent.</span><span lang="zh">基于 Python 标准库的参考实现：规范化数据身份、数值比较与失败关闭的局部状态转换；不是数据库、部署控制器或自治 Agent</span></p>
+    <ol class="rc-dual-mechanics"><li><b>01</b><div><span lang="en">Canonical JSON and SHA-256: inspectable byte-level digests for JSON-compatible inputs</span><span lang="zh">规范化 JSON 与 SHA-256：相同 JSON 兼容输入生成可比较的规范字节摘要</span></div></li>
+<li><b>02</b><div><span lang="en">Distributions and KL: validate finite nonnegative masses and compute D_KL(P∥Q) in nats</span><span lang="zh">概率分布 + KL 散度：校验有限、非负分布，并计算 D_KL(P∥Q)，单位 nats</span></div></li>
+<li><b>03</b><div><span lang="en">State adaptation: async lock serializes shifts; in-memory state updates only after hooks pass</span><span lang="zh">状态转换：异步 Lock 串行化操作，prepare 与 validate 成功后才更新内存状态</span></div></li>
+<li><b>04</b><div><span lang="en">T-01 → T-10: an event-recorded fixture; T-09 fails closed on the configured KL limit</span><span lang="zh">T-01 → T-10：十阶段事件记录样例，T-09 按调用方阈值失败关闭</span></div></li></ol>
+    <div class="rc-dual-links">
+      <a href="https://github.com/lostlight530/Axiom-0/blob/main/CODE/contracts.py" target="_blank" rel="noopener noreferrer">contracts.py ↗</a>
+      <a href="https://github.com/lostlight530/Axiom-0/blob/main/CODE/liquid_morphing.py" target="_blank" rel="noopener noreferrer">liquid_morphing.py ↗</a>
+      <a href="https://github.com/lostlight530/Axiom-0/blob/main/CODE/nexus_core.py" target="_blank" rel="noopener noreferrer">nexus_core.py ↗</a>
+      <a href="https://github.com/lostlight530/Axiom-0/blob/main/SPECIFICATION.md" target="_blank" rel="noopener noreferrer"><span lang="en">Specification</span><span lang="zh">实现规范</span> ↗</a>
+    </div>
+  </article>
+  <article class="rc-dual-card" id="reflective-core">
+    <div class="rc-dual-tag">REFLECTIVE CONTINUUM · GRAPH &amp; OBSERVATION</div>
+    <h3><span lang="en">Store and observe versioned graph changes</span><span lang="zh">保存并观测版本化图谱变化</span></h3>
+    <p><span lang="en">A standard-library SQLite reference for graph persistence, lexical retrieval, delta reports, PageRank-derived entropy and bounded savepoint transactions—not an autonomous cross-repository memory runtime.</span><span lang="zh">基于 Python 标准库和 SQLite 的参考实现：图谱持久化、词法搜索、差异报告、PageRank 分布熵与有界事务；不是跨仓自治记忆 Runtime</span></p>
+    <ol class="rc-dual-mechanics"><li><b>01</b><div><span lang="en">GraphDB: versioned nodes/edges, SQLite savepoints and per-version snapshot digests</span><span lang="zh">GraphDB：版本化节点与边、SQLite savepoint、指定版本的 Snapshot Digest</span></div></li>
+<li><b>02</b><div><span lang="en">FTS5: query-scoped lexical retrieval, not semantic embeddings</span><span lang="zh">FTS5：同一查询范围内的词法检索，不是语义 Embedding</span></div></li>
+<li><b>03</b><div><span lang="en">Deltas: structural changes, FTS5 top-result identity and PageRank-score shifts</span><span lang="zh">Drift：分开观察结构变化、FTS5 首项身份和 PageRank 分数变化</span></div></li>
+<li><b>04</b><div><span lang="en">Entropy / Observer: PageRank distribution entropy plus locally guarded commit/rollback</span><span lang="zh">Entropy / Observer：PageRank 分布熵，受规则约束的局部写入和回滚</span></div></li></ol>
+    <div class="rc-dual-links">
+      <a href="https://github.com/lostlight530/reflective-continuum/blob/main/CODE/continuum_db.py" target="_blank" rel="noopener noreferrer">continuum_db.py ↗</a>
+      <a href="https://github.com/lostlight530/reflective-continuum/blob/main/CODE/drift_detector.py" target="_blank" rel="noopener noreferrer">drift_detector.py ↗</a>
+      <a href="https://github.com/lostlight530/reflective-continuum/blob/main/CODE/cortex_observer.py" target="_blank" rel="noopener noreferrer">cortex_observer.py ↗</a>
+      <a href="https://github.com/lostlight530/reflective-continuum/blob/main/SPECIFICATION.md" target="_blank" rel="noopener noreferrer"><span lang="en">Specification</span><span lang="zh">实现规范</span> ↗</a>
+    </div>
+  </article>
+ </div>
+ <div class="rc-bridge" aria-label="Conceptual relationship, not deployed integration">
+  <div class="rc-bridge-title"><span lang="en">CONCEPTUAL BRIDGE · NOT AN EXECUTING PIPELINE</span><span lang="zh">概念关联 · 不是正在执行的跨仓管线</span></div>
+  <div class="rc-bridge-flow">
+   <div class="rc-bridge-node axiom"><span class="rc-node-k">AXIOM / CONTRACT</span><p><span lang="en">What input was canonicalized? Which state transition was validated? Which numerical constraint failed?</span><span lang="zh">输入怎样规范化？什么状态变化通过了检查？哪条数值约束导致拒绝？</span></p></div>
+   <div class="rc-bridge-connector" aria-hidden="true">⇢</div>
+   <div class="rc-bridge-node"><span class="rc-node-k">REFLECTIVE / OBSERVATION</span><p><span lang="en">Which named graph/version changed? What did retrieval, graph structure, rank and entropy report?</span><span lang="zh">哪个指定图谱版本发生变化？检索、图结构、排序分数与熵观察到了什么？</span></p></div>
+  </div>
+  <p class="rc-bridge-status"><span lang="en">A potential integration would require a shared event schema, source/revision/store identities, explicit adapter, separately verified persistence and rollback semantics, and integration test evidence. Those are not claimed by this page.</span><span lang="zh">如果未来要真正组合运行，需要共享事件 Schema、来源/提交/数据库身份、显式适配层、独立验证的持久化与回滚语义，以及跨仓集成测试。此处不声明这些条件已经满足</span></p>
+ </div>
+ <div class="rc-dual-kicker">FOUNDATIONAL TERMS / <span lang="en">PLAIN-LANGUAGE REFERENCE</span><span lang="zh">基础术语</span></div>
+ <div class="rc-dual-glossary"><article class="rc-dual-term"><h4>Canonical Digest / 规范化摘要</h4><p><span lang="en">SHA-256 identity of canonical JSON bytes, not semantic correctness</span><span lang="zh">规范化 JSON 字节的 SHA-256 身份，不是语义正确性证明</span></p></article>
+<article class="rc-dual-term"><h4>KL Divergence / KL 散度</h4><p><span lang="en">Difference between two declared distributions P and Q, not a graph-health verdict</span><span lang="zh">比较两个声明的概率分布 P、Q；不自动等于图谱健康度</span></p></article>
+<article class="rc-dual-term"><h4>Versioned Graph / 版本图</h4><p><span lang="en">Nodes and edges tied to declared versions for scoped queries</span><span lang="zh">带版本号的节点和边，可按指定版本重建和查询</span></p></article>
+<article class="rc-dual-term"><h4>PageRank Entropy / 分布熵</h4><p><span lang="en">Shannon entropy over normalized PageRank scores; not KL divergence</span><span lang="zh">对图谱 PageRank 权重归一化后计算 Shannon 熵，不是 KL</span></p></article>
+<article class="rc-dual-term"><h4>Savepoint / 事务保存点</h4><p><span lang="en">Only scopes graph changes inside a SQLite transaction, not external effects</span><span lang="zh">只约束同一 SQLite 事务里的图变更，不能回滚外部副作用</span></p></article>
+<article class="rc-dual-term"><h4>Store Identity / 存储身份</h4><p><span lang="en">Named DB path, version and run context are needed for continuity claims</span><span lang="zh">需要具体数据库路径、版本、运行上下文，才能讨论跨运行连续性</span></p></article></div>
+ <div class="rc-dual-boundary"><strong><span lang="en">Important distinction:</span><span lang="zh">重要边界：</span></strong> <span lang="en">Axiom's KL divergence compares declared P and Q; Reflective's Shannon entropy is calculated from a graph PageRank distribution. These are not interchangeable. The shared phase labels are vocabulary, not evidence of a shared running state machine.</span><span lang="zh">Axiom 的 KL 散度比较声明的 P、Q 分布；Reflective 的 Shannon 熵来自图谱 PageRank 分布，两者不能混成同一指标。即使相态标签相似，也不证明存在共享的运行状态机</span></div>
+</section>
+
+<div class="rc-section-index">02 / REFLECTIVE IMPLEMENTATION DETAILS</div>
 <h2 id="reference">
   <span lang="en">Current Reference Surface</span>
   <span lang="zh">当前参考实现</span>
