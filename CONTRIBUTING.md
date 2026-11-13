@@ -1,5 +1,10 @@
 # Contributing
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：变更需保留状态、基线、运行结果和未测边界，不得用新解释覆盖原记录；这项解释不改变历史失败、缺失或验证状态  
+> **English**: Contributions must preserve state, baseline, run outcomes, and untested bounds without overwriting original records. This reading note does not alter historical failures, missing evidence, or validation status
+
+
 ## Open research contributions
 
 For research-method or positioning changes, start with [`OPEN_RESEARCH.md`](./OPEN_RESEARCH.md). For new bounded research records, use [`RESEARCH_TEMPLATE.md`](./RESEARCH_TEMPLATE.md). Native graph, store, methodology, ADR, reproducibility, evidence, and historical contracts remain authoritative.
@@ -28,6 +33,12 @@ For executable behavior:
 5. update the owning ADR or method only when the architectural or methodological contract actually changes.
 
 Runtime code is standard-library only. A proposed dependency needs a technical reason, security/license review, update policy, and rollback path.
+
+### State continuity evidence review / 连续性证据审查
+
+修改反思系统、Graph 状态或研究展示，需要准确说明同一存储是否被打开、状态是否持久化、检查是否实际运行、失败与回滚如何留下证据；不能从相同日期的报告、旧日志、Graph 可视化或成功代码推出共享 store 与稳定语义状态，阶段原始失败必须保留
+
+For graph-state, reflection or research-display changes, identify whether the same store was opened, what persisted, which checks ran and how failure/rollback was recorded. Same-date reports, old logs, visuals or a success code cannot establish a shared store or stable semantic state. Preserve original failed stages
 
 ## Evidence and state claims
 

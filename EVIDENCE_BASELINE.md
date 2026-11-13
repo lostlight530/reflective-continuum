@@ -1,5 +1,10 @@
 # 2026 Evidence Baseline
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：这是一份有原始校准时点的基线，不能把后来 GPT Native 产物追认到旧时点；这项解释不改变历史失败、缺失或验证状态  
+> **English**: This is a time-scoped baseline; later GPT Native artifacts cannot be backdated into earlier evidence. This reading note does not alter historical failures, missing evidence, or validation status
+
+
 - Retrieval/calibration date: 2026-08-27
 - Rule: external evidence can bound a repository claim; it does not certify a local implementation by itself
 
@@ -197,6 +202,12 @@ A later reconciliation can repair current interpretation or path coverage. It ca
 ## External architecture references
 
 MCP, A2A, ADK state/memory documentation, agent tracing, and evaluation literature are used only to sharpen vocabulary around state scope, trajectory/outcome, and lifecycle identity unless local implementation exists.
+
+### 2026-11-13 阅读校准 / Reading calibration without historical rewrite
+
+本文件的 2026 年历史证据、当时固定输入及失败记录不随后续 Graph 运行和 R1–R5 周期产物自动更新；阶段展示要依据真实 store identity、观察截止点、fixture、Git 修订与可比较结果；旧累计日志仅是历史 trace，不是新的 source-of-truth，也不能将 SAME_DATE 记录升级为共享持久 store 证据
+
+The historical 2026 evidence, original fixtures and failures in this baseline do not automatically update when later Graph runs or R1–R5 records appear. Stage presentation needs actual store identity, cutoff, fixture, Git revision and comparable result. Legacy cumulative logs are historical traces, not a new source of truth; same-day records do not prove one shared persistent store
 
 ## Current evidence summary
 

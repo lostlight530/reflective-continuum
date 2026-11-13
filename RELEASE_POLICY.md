@@ -1,5 +1,10 @@
 # Release and Archival Policy
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：发布版本、当前 Git main 与确切测量／回放证据属于不同语义层；本文的旧结论与历史时间点均保持其原始证据边界  
+> **English**: A release tag, current Git main, and specific measurement or replay receipts have separate meanings. Original conclusions and historical cutoffs retain their own evidence limits
+
+
 This repository treats `main` as the current repository state and release tags as immutable point-in-time snapshots.
 
 ## Policy
@@ -47,6 +52,12 @@ The fourth archived version is [v2026.10-fourteen-day-evidence-checkpoint](https
 - Software-family concept DOI: [10.5281/zenodo.22791141](https://doi.org/10.5281/zenodo.22791141)
 
 Use the version DOI for this exact checkpoint and the concept DOI for the software family. `CITATION.cff` and CodeMeta retain the family identifier and recorded September 16 baseline date. Later changes to `main` belong to subsequent repository state; the checkpoint tag remains unchanged.
+
+### Fixed archive versus ongoing R1–R5 research / 冻结版本与持续科研
+
+**中文**：软件 concept DOI `10.5281/zenodo.22791141` 标识 Reflective 软件家族，version DOI 和 Git tag 标识具体冻结版本；后续 R1–R5 报告、失败记录和 `main` 改动不随旧版本自动归档；复现必须附确切源码、store、fixture、指令、环境与对比结果，软件出版不能代替稳定记忆、持续运行或科学可信性的实际证据
+
+**English**: Concept DOI `10.5281/zenodo.22791141` identifies the Reflective software family, while version DOI and Git tag identify a fixed archived revision. Later R1–R5 reports, failures and `main` changes are not incorporated into an older version. Replay needs exact source, store, fixture, command, environment and comparison. Publication does not prove durable memory, continuous execution or scientific trustworthiness
 
 ## Open-science reuse and research records
 

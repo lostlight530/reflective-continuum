@@ -1,5 +1,10 @@
 # Research Template / 科研记录模板
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：模板仅指导新研究，不对既有 R1–R5 的失败和缺口做追溯性涂改；本文的旧结论与历史时间点均保持其原始证据边界  
+> **English**: Templates apply prospectively and must not retroactively alter R1–R5 failures or gaps. Original conclusions and historical cutoffs retain their own evidence limits
+
+
 Status: prospective research-record template
 Scope: new research records only; durable open-research method is owned by `OPEN_RESEARCH.md`
 
@@ -7,7 +12,7 @@ Scope: new research records only; durable open-research method is owned by `OPEN
 
 English is the canonical/default language of this template. Chinese labels and guidance are provided for accessibility. If bilingual wording diverges, the English instruction governs; repository-native contracts remain authoritative over this template.
 
-英文为本模板的默认与规范语言；中文标签与说明用于辅助理解。若双语表述出现差异，以英文说明为准；仓库原生 contract 对本模板始终具有更高权威。
+英文为本模板的默认与规范语言；中文标签与说明用于辅助理解；若双语表述出现差异，以英文说明为准；仓库原生 contract 对本模板始终具有更高权威；
 
 Historical records are not rewritten by this template
 
@@ -80,6 +85,11 @@ State one question that can be contradicted by evidence
 - Proposed explanation:
 - Support condition:
 - Falsifier:
+
+### Continuity and archive fields / 连续性与归档字段
+
+- 中文：研究记录应注明日期和 R1–R5 task identity、Git revision、graph/store、fixture、输入 digest、实际运行命令、失败／回滚、周月继承和证据空缺；concept DOI、具体 version DOI、执行回执与历史日志各自独立
+- English: Include date and R1–R5 identity, Git revision, graph/store, fixture, input digest, actually executed command, failures/rollback, weekly/monthly inheritance and missing evidence. Concept DOI, specific version DOI, execution receipt and old log are separate identities
 
 ## Evidence or source basis / 证据基础
 
