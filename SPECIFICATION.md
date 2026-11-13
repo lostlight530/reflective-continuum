@@ -150,6 +150,12 @@ Keep these states separate:
 
 If a reachable source does not support the proposition attributed to it, current interpretation uses `SOURCE_CLAIM_MISMATCH` regardless of ingestion outcome.
 
+### 长期状态、失败与研究阶段 / Longitudinal state, failure and research stages
+
+本工程规范定义同一 store／事务／索引的有界语义，但 R1/R2 同日记录不能推定共享数据库，R3/R4 的一致性判断需要真实复查，R5 的月度阶段必须尊重自然月结束与缺口；任何阶段展示都必须附 source revision、store identity、fixture、已执行检查和显式失败，不能把已发布 DOI 或过时日志当作实时运行凭证
+
+This specification defines bounded store, transaction and index semantics, not automatic identity across same-day R1/R2 records. R3/R4 alignment requires observed checks; R5 monthly stages respect natural closure and gaps. Stage views require source revision, store identity, fixture, actually executed checks and explicit failures; DOI publication or old logs are not live runtime receipts
+
 ## State continuity contract
 
 A continuity claim names the object whose state is said to continue and evidence linking both observations.

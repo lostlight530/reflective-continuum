@@ -11,6 +11,10 @@
 
 # Reflective Continuum Manifesto
 
+**中文阅读边界 / Interpretation boundary:** 本宣言是可检视状态、保留失败、验证来源与人类负责的研究愿景，不是意识、自治、安全或自我修复能力的运行证明；实际状态由现行代码、规范、版本绑定实验和 `RESEARCH/` 中有截止点的记录负责
+
+**English:** This manifesto is a research and human-accountability orientation toward observable state, preserved failures and verified sources—not proof of consciousness, autonomy, safety or self-repair. Current code, specifications, revision-bound experiments and dated `RESEARCH/` records own implementation and observations
+
 > **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
 > **中文**：反思、连续性和自我检查是研究方向，不自动证明意识、安全性或长期自治；这项解释不改变历史失败、缺失或验证状态  
 > **English**: Reflection, continuity, and self-checking are research aims, not automatic evidence of consciousness, safety, or durable autonomy. This reading note does not alter historical failures, missing evidence, or validation status

@@ -36,6 +36,12 @@ For a material AI-assisted pull request, record when known and relevant:
 
 Do not send secrets, private graph content, embargoed vulnerabilities, third-party confidential material, credentials, or private prompts to a model unless an explicit authorized workflow requires it.
 
+### 中文 Agent 研究与执行披露 / Research-producer and execution disclosure
+
+对 Jules 历史、GPT Native 当前任务、独立维护审查和 Actions 运行应逐项保留生产者身份、准确 Git revision、store／fixture、工具调用、审批、结果与未测状态；一个维护 PR 或多模型摘要不是对历史语义漂移、R1–R5 健康、持久化成功的自动认证；私有提示词及秘密不得写入公开记录
+
+Retain distinct producer identity, exact revision, store/fixture, tool calls, approval, result and untested state for Jules history, GPT Native tasks, independent maintenance and Actions. Maintenance PRs and multi-model summaries do not certify historical drift, R1–R5 health or persistence. Keep private prompts and secrets outside public records
+
 ## Verification discipline
 
 Generated output is untrusted until reviewed. Verify the aggregate diff, source claims, calculations, migrations, and executable behavior that materially support the change.
