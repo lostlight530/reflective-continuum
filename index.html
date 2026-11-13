@@ -546,7 +546,9 @@ body .container{max-width:1160px;width:100%;padding:0 5px 80px}
 .rc-links a{display:inline-flex;align-items:center;white-space:nowrap;min-height:38px;padding:7px 9px;color:#a8d4b4;text-decoration:none;border-radius:8px;font-size:.73rem}
 .rc-links a:hover,.rc-links a:focus-visible{background:rgba(0,255,65,.12);color:#effff1}
 .rc-nav .lang-toggle{position:static;flex:none;min-height:38px;padding:8px 12px;border-radius:8px;color:#c9ffda;background:rgba(0,255,65,.07)}
-.rc-nav [lang],body.show-zh .rc-nav [lang="zh"]{display:inline}
+.rc-nav [lang="zh"]{display:none}
+body.show-zh .rc-nav [lang="en"]{display:none}
+body.show-zh .rc-nav [lang="zh"]{display:inline}
 .rc-hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(275px,.75fr);grid-template-areas:"copy boot";gap:26px;align-items:stretch;margin-bottom:57px}
 .rc-boot{grid-area:boot;min-width:0}
 .rc-boot .boot-seq{display:flex;flex-direction:column;justify-content:center;gap:9px;height:100%;margin:0;padding:26px 20px 33px;font-size:.77rem;line-height:1.75;border-radius:17px;background:linear-gradient(145deg,rgba(7,39,21,.94),rgba(4,15,9,.95));overflow-wrap:anywhere}
