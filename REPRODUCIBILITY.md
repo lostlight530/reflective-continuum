@@ -11,6 +11,11 @@
 
 # Reproducibility
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：复现需固定修订、数据源、store、fixture、指令与对比结论，不得从成功字样推断可复现性；本文的旧结论与历史时间点均保持其原始证据边界  
+> **English**: Reproduction requires pinned revision, sources, store, fixtures, commands, and comparison, not a success label. Original conclusions and historical cutoffs retain their own evidence limits
+
+
 Record commit SHA, Python and SQLite versions, operating system, database schema version, sanitized fixture or digest, query/version/threshold, command array, UTC times, exit code, artifact digest, and untested boundary. Never retain credentials or unnecessary content.
 
 The convergence drill is intentionally a repeatability test: a fixed local fixture is rebuilt and snapshot digests are compared. It does not test model sampling, distributed scheduling, production databases, semantic truth, or long-term convergence.

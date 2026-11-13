@@ -11,6 +11,11 @@
 
 # Reflective Continuum Engineering Specification
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：本规范描述实际有界图状态、持久化、漂移量测与失败处理，不将意图升级为已观测能力；本文的旧结论与历史时间点均保持其原始证据边界  
+> **English**: This specification describes bounded graph state, persistence, drift metrics and failure handling, not unobserved capabilities. Original conclusions and historical cutoffs retain their own evidence limits
+
+
 - Version: 2026.08-r2
 - Review calibration: 2026-08-27
 - Status: implemented reference contract with evidence-scoped interpretation

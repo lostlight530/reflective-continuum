@@ -1,5 +1,10 @@
 # Security Policy
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：边界检测及报告程序不构成无漏洞、可信或安全自治的保证；本文的旧结论与历史时间点均保持其原始证据边界  
+> **English**: Boundary checks and reporting rules do not certify vulnerability-free, trusted, or autonomous operation. Original conclusions and historical cutoffs retain their own evidence limits
+
+
 Security fixes target current `main`. Historical research is a separately owned record and may not receive retroactive correction.
 
 Report suspected vulnerabilities through GitHub private vulnerability reporting when available, otherwise through the repository owner’s private GitHub profile contact route. Include commit/path, prerequisites, minimal reproduction, impact, and mitigation. Remove credentials and unnecessary personal or database content. Do not open a public exploit issue.

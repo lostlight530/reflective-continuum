@@ -1,5 +1,10 @@
 # Release and Archival Policy
 
+> **Current bilingual reading note / 当前双语阅读说明（2026-11-13）**  
+> **中文**：发布版本、当前 Git main 与确切测量／回放证据属于不同语义层；本文的旧结论与历史时间点均保持其原始证据边界  
+> **English**: A release tag, current Git main, and specific measurement or replay receipts have separate meanings. Original conclusions and historical cutoffs retain their own evidence limits
+
+
 This repository treats `main` as the current repository state and release tags as immutable point-in-time snapshots.
 
 ## Policy
