@@ -50,7 +50,7 @@
 - Cross-date or same-date R1/R2 store relation: NOT_ESTABLISHED
 
 ## Bilingual bounded synthesis
-- 中文：今天核验了原始论文的成对历史实验设计，并真实观察到 Git 源码获取失败。论文中“已执行操作”和“仅计划操作”的差异适合作为 GAS 未来状态连续性反证样例，但今天没有图谱摄入、节点更新或持久化状态测量。
+- 中文：今天核验了原始论文的成对历史实验设计，并真实观察到 Git 源码获取失败;论文中“已执行操作”和“仅计划操作”的差异适合作为 GAS 未来状态连续性反证样例，但今天没有图谱摄入、节点更新或持久化状态测量;
 - English: A first-party paper presents a history-sensitive paired-state benchmark, while the native GAS checkout failed. No graph ingestion, accepted/rejected receipts, persistence or drift measurement occurred in this run.
 
 ## EVIDENCE_DELTA
