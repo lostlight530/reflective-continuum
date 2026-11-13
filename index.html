@@ -535,6 +535,59 @@ h2 {
   }
 }
 
+
+/* 2026-11-13 visual hierarchy: current reference, then bounded historical evidence */
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{padding:0 16px;background:radial-gradient(circle at 73% 0%,rgba(0,255,65,.075),transparent 37rem),#020706}
+body .container{max-width:1160px;width:100%;padding:0 5px 80px}
+.rc-nav{position:sticky;top:8px;z-index:1500;display:flex;align-items:center;gap:12px;padding:12px 14px;margin:8px 0 36px;background:rgba(4,22,13,.96);border:1px solid rgba(103,228,146,.35);border-radius:13px;box-shadow:0 14px 40px rgba(0,0,0,.35);backdrop-filter:blur(15px)}
+.rc-brand{font-size:.85rem;font-weight:800;letter-spacing:.05em;white-space:nowrap;color:#c6ffda;text-decoration:none}
+.rc-links{margin-left:auto;display:flex;gap:3px;overflow-x:auto;scrollbar-width:thin;min-width:0}
+.rc-links a{display:inline-flex;align-items:center;white-space:nowrap;min-height:38px;padding:7px 9px;color:#a8d4b4;text-decoration:none;border-radius:8px;font-size:.73rem}
+.rc-links a:hover,.rc-links a:focus-visible{background:rgba(0,255,65,.12);color:#effff1}
+.rc-nav .lang-toggle{position:static;flex:none;min-height:38px;padding:8px 12px;border-radius:8px;color:#c9ffda;background:rgba(0,255,65,.07)}
+.rc-nav [lang],body.show-zh .rc-nav [lang="zh"]{display:inline}
+.rc-hero{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(275px,.75fr);grid-template-areas:"copy boot";gap:26px;align-items:stretch;margin-bottom:57px}
+.rc-boot{grid-area:boot;min-width:0}
+.rc-boot .boot-seq{display:flex;flex-direction:column;justify-content:center;gap:9px;height:100%;margin:0;padding:26px 20px 33px;font-size:.77rem;line-height:1.75;border-radius:17px;background:linear-gradient(145deg,rgba(7,39,21,.94),rgba(4,15,9,.95));overflow-wrap:anywhere}
+.rc-boot .boot-line{overflow-wrap:anywhere}
+.rc-hero-copy{grid-area:copy;min-width:0;padding:19px 4px}
+.rc-hero-copy h1{text-align:left;font-size:clamp(2.2rem,5vw,4.7rem);margin:0 0 19px;letter-spacing:-.025em;line-height:1.12;border-bottom:0}
+.rc-hero-copy > div[style]{text-align:left!important;border-bottom:0!important;margin:0!important;padding:0!important;opacity:1!important;font-size:1rem!important;color:#b9d5bf}
+.rc-hero-copy > div[style] >div:first-child{color:#f4fff0!important;text-shadow:none!important}
+.rc-hero-copy > div[style] >div:last-child{opacity:1!important;color:#bcdac1}
+.rc-hero-copy code{color:#baffcd;overflow-wrap:anywhere}
+.rc-hero-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:20px}
+.rc-hero-actions a{display:inline-flex;min-height:38px;align-items:center;padding:9px 12px;border:1px solid rgba(116,235,159,.33);border-radius:9px;background:rgba(0,255,65,.07);color:#d5ffe2;text-decoration:none;font-size:.78rem}
+.rc-hero-actions a:last-child{border-color:rgba(255,215,0,.31);color:#f9e6aa;background:rgba(255,215,0,.05)}
+.rc-section-index{display:flex;align-items:center;gap:13px;margin:22px 0 12px;color:#92edb0;font-size:.72rem;letter-spacing:.12em;font-weight:800}
+.rc-section-index:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,rgba(86,222,141,.4),transparent)}
+.container>h2[id]{font-size:clamp(1.45rem,2.7vw,2.1rem);line-height:1.3;letter-spacing:-.035em;color:#c6ffd6;margin:8px 0 24px;border-left:3px solid rgba(73,228,120,.7);padding-left:16px}
+.container>.arch-diagram{border-radius:16px;padding:clamp(13px,2vw,26px);margin:20px 0 23px;overflow-wrap:anywhere}
+.container>.arch-diagram .arch-flow{max-width:100%;line-height:2.1}
+.container>.philosophy-block{border-radius:12px;padding:18px 22px;text-align:left;color:#c1ddc6;line-height:1.9}
+.rc-history-intro{padding:22px;border-radius:15px;border:1px solid rgba(255,215,0,.3);background:linear-gradient(140deg,rgba(64,47,7,.23),rgba(7,19,10,.6));margin:47px 0 29px}
+.rc-history-intro .rc-kicker{font-size:.73rem;letter-spacing:.12em;color:#fce6a6;font-weight:800}
+.rc-history-intro p{line-height:1.8;font-size:.86rem;color:#d4c79d;margin:11px 0 0}
+.rc-history-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}
+.rc-history-links a{border:1px solid rgba(255,215,0,.28);border-radius:8px;text-decoration:none;padding:8px 11px;color:#ffe4a6;font-size:.76rem}
+.phase-grid{gap:16px}
+.phase-grid .phase-card{padding:23px;border-radius:14px!important}
+.phase-grid .phase-desc{color:#bed8c5;font-size:.88rem;line-height:1.83}
+.phase-grid .phase-repo{color:#9ec3ab;opacity:1}
+.entropy-monitor{border-radius:17px!important;padding:clamp(16px,2.5vw,30px)}
+.entropy-state{gap:13px}
+.entropy-state-item{flex:1 1 125px;border-radius:10px}
+.signal-box{border-radius:17px!important;padding:clamp(18px,3vw,32px)}
+.signal-box .signal-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.signal-item{min-width:0;border-radius:12px;padding:17px}
+.signal-value{font-size:clamp(1.3rem,2.5vw,2.1rem);font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.signal-label{opacity:1;color:#baccb9;line-height:1.6}
+.rc-top{display:block;margin:22px 0;color:#acffbf;text-decoration:none;font-size:.8rem}
+@media(max-width:980px){.rc-hero{grid-template-columns:1fr;grid-template-areas:"copy" "boot"}.rc-links{max-width:55vw}}
+@media(max-width:640px){body{padding-inline:11px}.rc-nav{flex-wrap:wrap;padding:9px;gap:6px;margin-bottom:25px}.rc-brand{font-size:.72rem}.rc-links{max-width:100%;order:3;width:100%;margin-left:0}.rc-links a{padding:7px 9px}.rc-hero{margin-bottom:37px}.rc-hero-copy{padding:5px 0}.rc-hero-copy h1{font-size:clamp(2rem,10vw,3.3rem)}.rc-boot .boot-seq{padding:18px 15px 29px}.signal-box .signal-grid{grid-template-columns:1fr}.phase-grid .phase-card{padding:19px}.rc-history-intro{padding:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
 </style>
 </head>
 <body>
@@ -542,12 +595,23 @@ h2 {
 <div class="crt-overlay"></div>
 <div class="crt-scan"></div>
 
-<button class="lang-toggle" onclick="document.body.classList.toggle('show-zh'); this.textContent = document.body.classList.contains('show-zh') ? '[EN]' : '[ZH]'">[ZH]</button>
+
 
 <div class="container">
+<nav class="rc-nav" id="top" aria-label="Section navigation">
+<a class="rc-brand" href="#top">RC / REFLECTIVE</a>
+<div class="rc-links">
+<a href="#reference"><span lang="en">Current reference</span><span lang="zh">当前参考实现</span></a>
+<a href="#history"><span lang="en">History</span><span lang="zh">历史谱系</span></a>
+<a href="#phases"><span lang="en">Phases</span><span lang="zh">相态</span></a>
+<a href="#entropy"><span lang="en">Entropy</span><span lang="zh">分布熵</span></a>
+<a href="#signals"><span lang="en">Evidence</span><span lang="zh">封存证据</span></a>
+</div>
+<button class="lang-toggle" type="button" id="rcLanguage" aria-label="Switch language to Chinese">[ZH]</button>
+</nav>
 
-<div class="boot-seq">
-  <div class="boot-line">> BOOT_SEQUENCE: REFLECTIVE_CONTINUUM_INIT</div>
+<header class="rc-hero"><aside class="rc-boot"><div class="boot-seq">
+  <div class="boot-line">> BOOT_SEQUENCE: REFLECTIVE_CONTINUUM_INIT</div></aside><div class="rc-hero-copy">
   <div class="boot-line">> STATUS: STATIC_REFERENCE</div>
   <div class="boot-line">> STORE: VERSIONED_SQLITE_GRAPH | RUNTIME: PYTHON_STDLIB_SQLITE | LIVE_CHECK: NOT_RUN</div>
   <div class="boot-line">> ARCHITECTURE: BOUNDED_GRAPH_OBSERVATION</div>
@@ -573,7 +637,9 @@ h2 {
 
 
 
-<h2>
+<div class="rc-hero-actions"><a href="#reference"><span lang="en">Inspect the local reference</span><span lang="zh">查看局部参考实现</span> ↓</a><a href="#history"><span lang="en">Explore historical material</span><span lang="zh">查看历史资料</span> ↓</a></div></div></header>
+<div class="rc-section-index">01 / CURRENT REFERENCE</div>
+<h2 id="reference">
   <span lang="en">Current Reference Surface</span>
   <span lang="zh">当前参考实现</span>
 </h2>
@@ -601,7 +667,11 @@ h2 {
   <a href="https://github.com/lostlight530/reflective-continuum/blob/main/REPRODUCIBILITY.md" target="_blank" rel="noopener noreferrer" style="color:var(--text-color);">Reproducibility ↗</a>
 </div>
 
-<h2>
+<div class="rc-history-intro" id="history">
+<div class="rc-kicker"><span lang="en">PRESERVED HISTORICAL RESEARCH · NOT LIVE</span><span lang="zh">保留的历史研究 · 非实时状态</span></div>
+<p><span lang="en">The phase mapping below is preserved lineage rather than a cross-repository execution contract. Frozen traffic totals end on 2026-08-31.</span><span lang="zh">下方相态映射是历史研究谱系，而非正在执行的跨仓合同；历史流量统计封存至 2026-08-31</span></p>
+<div class="rc-history-links"><a href="#history-mapping"><span lang="en">Mapping</span><span lang="zh">映射</span></a><a href="#phases"><span lang="en">Roles</span><span lang="zh">角色</span></a><a href="#entropy"><span lang="en">Entropy</span><span lang="zh">熵</span></a><a href="#signals"><span lang="en">Snapshot</span><span lang="zh">快照</span></a></div></div>
+<div class="rc-section-index">02.1 / HISTORICAL MODEL</div><h2 id="history-mapping">
   <span lang="en">Historical Five-Repository Continuum</span>
   <span lang="zh">历史五仓连续体</span>
 </h2>
@@ -621,7 +691,7 @@ h2 {
   </div>
 </div>
 
-<h2>
+<div class="rc-section-index">02.2 / PHASE HISTORY</div><h2 id="phases">
   <span lang="en">Historical Phase Roles</span>
   <span lang="zh">历史五仓相态</span>
 </h2>
@@ -715,7 +785,7 @@ h2 {
 
 </div>
 
-<h2>
+<div class="rc-section-index">03 / DISTRIBUTION ENTROPY</div><h2 id="entropy">
   <span lang="en">PageRank Distribution Entropy</span>
   <span lang="zh">PageRank 分布熵</span>
 </h2>
@@ -754,7 +824,7 @@ h2 {
   </div>
 </div>
 
-<h2>
+<div class="rc-section-index">04 / FROZEN EVIDENCE</div><h2 id="signals">
   <span lang="en">Sealed Signal Evidence</span>
   <span lang="zh">封档信号证据</span>
 </h2>
@@ -844,6 +914,7 @@ h2 {
   </div>
 </div>
 
+<a href="#top" class="rc-top"><span lang="en">Back to top ↑</span><span lang="zh">返回顶部 ↑</span></a>
 <div class="footer">
   <span lang="en">Graph Observation Reference · Python Standard Library + SQLite · Evidence-Bounded Claims</span>
   <span lang="zh">图观测参考实现 · Python 标准库 + SQLite · 证据范围内的声明</span>
@@ -855,6 +926,13 @@ h2 {
 
 <script>
 (() => {
+  const languageButton = document.getElementById('rcLanguage')
+  languageButton?.addEventListener('click', () => {
+    const zh = document.body.classList.toggle('show-zh')
+    document.documentElement.lang = zh ? 'zh-CN' : 'en'
+    languageButton.textContent = zh ? '[EN]' : '[ZH]'
+    languageButton.setAttribute('aria-label', zh ? 'Switch language to English' : 'Switch language to Chinese')
+  })
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const progress = document.getElementById('pageProgress')
   const phaseGrid = document.querySelector('.phase-grid')
