@@ -34,6 +34,12 @@ For executable behavior:
 
 Runtime code is standard-library only. A proposed dependency needs a technical reason, security/license review, update policy, and rollback path.
 
+### State continuity evidence review / 连续性证据审查
+
+修改反思系统、Graph 状态或研究展示，需要准确说明同一存储是否被打开、状态是否持久化、检查是否实际运行、失败与回滚如何留下证据；不能从相同日期的报告、旧日志、Graph 可视化或成功代码推出共享 store 与稳定语义状态，阶段原始失败必须保留
+
+For graph-state, reflection or research-display changes, identify whether the same store was opened, what persisted, which checks ran and how failure/rollback was recorded. Same-date reports, old logs, visuals or a success code cannot establish a shared store or stable semantic state. Preserve original failed stages
+
 ## Evidence and state claims
 
 Reflective Continuum deliberately separates local state observations from stronger semantic claims.

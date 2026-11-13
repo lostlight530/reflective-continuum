@@ -97,6 +97,12 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 
 本仓库不是认知系统、语义嵌入模型、真理引擎、安全证明、自主研究者、分布式数据库、认证授权服务或生产服务；数据库权限、隔离、备份、加密、保留策略、配额、不可信输入控制与事件响应均由调用者负责；
 
+### Versioned longitudinal evidence / 分版本长期研究证据
+
+**中文**：R1／R2 Daily、R3／R4 Weekly 与 R5 Monthly 的身份继续由各自 canonical `RESEARCH/` 记录负责；当前 GPT Native 生产者和历史 Jules 运行不能混合计算成一个执行序列；Graph/store 身份、输入、固定 fixture、Git SHA、实际检查、时间窗口和 BLOCKED／NOT_EXECUTED／PARTIAL 均须跟随阶段展示；已移出根目录的 `ingestion.log` 与 `semantic_drift_audit.log` 属累计历史 trace，不代表现时 Daily 成功或语义连续性
+
+**English**: R1/R2 Daily, R3/R4 Weekly and R5 Monthly identities remain with their canonical `RESEARCH/` records. Current GPT Native production and historical Jules runs are not one verified execution sequence. Stage displays need graph/store identity, inputs, fixtures, Git SHA, actual checks, observation window and BLOCKED/NOT_EXECUTED/PARTIAL state. The legacy cumulative `ingestion.log` and `semantic_drift_audit.log` do not establish present-day Daily success or semantic continuity
+
 ## Governing knowledge and evidence | 长期知识、规范与证据
 
 - [Engineering specification](SPECIFICATION.md) | 工程规范
@@ -111,9 +117,9 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 The ADR and Methodology indexes are durable current navigation surfaces. Dated evidence/audit records remain point-in-time evidence for their own cutoffs and are not silently promoted into current runtime state.
 
 
-## Current periodic evidence routing — 2026-10-28
+## Dated periodic evidence routing — 2026-10-28 (historical cutoff)
 
-- October's [month-to-date cognitive architecture review](RESEARCH/monthly/2026-10-cognitive-architecture-review.md) remains `OPEN`, and the natural-month final R5 is `NOT_DUE`
+- **Historical as-of 2026-10-28, not today's live state:** October's [month-to-date cognitive architecture review](RESEARCH/monthly/2026-10-cognitive-architecture-review.md) remains `OPEN`, and the natural-month final R5 is `NOT_DUE`
 - The dated [R1 report](RESEARCH/daily/2026-10-28-dehydrated-report.md) and [R2 selfcheck](RESEARCH/daily/2026-10-28-cortex-selfcheck.md) are retained on current `main` through [native delivery PR #532](https://github.com/lostlight530/reflective-continuum/pull/532), but each records `BLOCKED / NOT_EXECUTED`; this is not successful ingestion or selfcheck
 - Same-date records do not prove a named shared persistent store, valid graph continuity, measured drift, nonzero nodes or a passing current-day test suite
 - The [October 28 A1](https://github.com/lostlight530/reflective-continuum/pull/533), [A2](https://github.com/lostlight530/reflective-continuum/pull/534) and [post-merge audit](https://github.com/lostlight530/reflective-continuum/pull/536) have Git-delivery and inheritance evidence, while the per-artifact semantic review and full-month relationship acceptance remain `PARTIAL`

@@ -100,6 +100,12 @@ Raw observations stay separate from interpretation. Unknown/unexecuted states re
 
 These support openness and reuse; they do not establish scientific validity.
 
+### Longitudinal graph observations / 长期图状态观察
+
+**中文**：区分 Graph 真实持久化状态、固定输入 scanner 结果、语义漂移估计、独立审计统计、Pages 显示与 DOI 归档，不能从任一层自动推导其他层；需要列出 store identity、源修订、fixture、日期、断言、回滚和失败路径；新月的状态变化通过后续更正记录表达，不能把后验解释回填为旧时点成功
+
+**English**: Real persisted graph state, fixed-fixture scanner output, estimated drift, independent audit aggregates, Pages presentation and DOI archives are separate evidence classes. Identify store, source revision, fixture, date, claim, rollback and failure path. New-month changes require forward corrections, not retroactive claims that earlier operations succeeded
+
 ## Scholarly metadata discipline
 
 Preserve Canonical Type, One-line Positioning, Primary Domains, Non-goals, accurate subjects, and 5–7 defining keywords before future metadata publication. Avoid classifier-facing marketing copy and keyword stuffing.

@@ -86,6 +86,11 @@ State one question that can be contradicted by evidence
 - Support condition:
 - Falsifier:
 
+### Continuity and archive fields / 连续性与归档字段
+
+- 中文：研究记录应注明日期和 R1–R5 task identity、Git revision、graph/store、fixture、输入 digest、实际运行命令、失败／回滚、周月继承和证据空缺；concept DOI、具体 version DOI、执行回执与历史日志各自独立
+- English: Include date and R1–R5 identity, Git revision, graph/store, fixture, input digest, actually executed command, failures/rollback, weekly/monthly inheritance and missing evidence. Concept DOI, specific version DOI, execution receipt and old log are separate identities
+
 ## Evidence or source basis / 证据基础
 
 For each material source or input record identity, authority, time, supported proposition, limitation, and independence where relevant

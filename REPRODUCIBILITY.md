@@ -22,6 +22,12 @@ The convergence drill is intentionally a repeatability test: a fixed local fixtu
 
 Database tests use temporary or in-memory files. Production reproductions should work on a copy, record `PRAGMA integrity_check`, foreign-key state, schema SQL, journal mode, and backup/restore procedure, and avoid uploading private content.
 
+### 中文复现检查与长期状态边界 / Reproduction and longitudinal-state boundary
+
+复现实验必须绑定特定 Git commit、Python 环境、graph/store 与 fixture、实际执行参数和可比较的结果；相同文件名或同一天的 R1/R2 不等于共享持久化存储；某次成功不代表 R3/R4/R5 自动结算，也不代表旧研究记录已独立复现；版本 DOI 只标识被归档的代码版本而不是实时状态
+
+Reproduction is pinned to the exact Git commit, Python environment, graph/store and fixture, command parameters and comparable outcomes. Same-name or same-day R1/R2 records do not prove shared persistent state. One success does not settle R3/R4/R5 or independently replay history. Version DOI identifies archived software, not live state
+
 ## Archived software publication and exact replay identity
 
 The repository has a public Zenodo software publication identified by DOI `10.5281/zenodo.22791141` and publication date 2026-09-16.
