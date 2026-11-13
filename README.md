@@ -99,7 +99,7 @@ This repository is not a cognitive system, semantic embedding model, truth engin
 
 ### Versioned longitudinal evidence / 分版本长期研究证据
 
-**中文**：R1／R2 Daily、R3／R4 Weekly 与 R5 Monthly 的身份继续由各自 canonical `RESEARCH/` 记录负责；当前 GPT Native 生产者和历史 Jules 运行不能混合计算成一个执行序列；Graph/store 身份、输入、固定 fixture、Git SHA、实际检查、时间窗口和 BLOCKED／NOT_EXECUTED／PARTIAL 均须跟随阶段展示；根目录 `ingestion.log` 与 `semantic_drift_audit.log` 属累计历史 trace；其移入 `RESEARCH/legacy-logs/` 的整理目前仅在 [独立 Draft PR #611](https://github.com/lostlight530/reflective-continuum/pull/611)，合并前不能声称已在 `main` 移动。无论位置如何，旧日志均不代表现时 Daily 成功或语义连续性
+**中文**：R1／R2 Daily、R3／R4 Weekly 与 R5 Monthly 的身份继续由各自 canonical `RESEARCH/` 记录负责；当前 GPT Native 生产者和历史 Jules 运行不能混合计算成一个执行序列；Graph/store 身份、输入、固定 fixture、Git SHA、实际检查、时间窗口和 BLOCKED／NOT_EXECUTED／PARTIAL 均须跟随阶段展示；历史累计 trace `ingestion.log` 与 `semantic_drift_audit.log` 已由 [合并的 PR #611](https://github.com/lostlight530/reflective-continuum/pull/611) 归档到 `RESEARCH/legacy-logs/`；它们仍不能证明现时 Daily 成功或语义连续性
 
 **English**: R1/R2 Daily, R3/R4 Weekly and R5 Monthly identities remain with their canonical `RESEARCH/` records. Current GPT Native production and historical Jules runs are not one verified execution sequence. Stage displays need graph/store identity, inputs, fixtures, Git SHA, actual checks, observation window and BLOCKED/NOT_EXECUTED/PARTIAL state. The legacy cumulative `ingestion.log` and `semantic_drift_audit.log` do not establish present-day Daily success or semantic continuity
 
