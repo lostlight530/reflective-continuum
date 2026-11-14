@@ -8,14 +8,15 @@
 - Exact cold-start main: a3adea12e45c0240ecba217794ff9288759c07dd
 - Run identity: reflective-continuum/gas/R1/2026-11-14/GPT_NATIVE/a3adea12e45c0240ecba217794ff9288759c07dd/guardscope-ingestion-source-acquisition-01
 - Actual acquisition command: git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD
-- UTC start: 2026-11-14T01:14:48.975298578Z
-- UTC end: 2026-11-14T01:14:48.992789982Z
+- UTC start: 2026-11-14T01:29:30.366737768Z
+- UTC end: 2026-11-14T01:29:30.379378627Z
 - Environment: Linux 6.18.57; Python 3.13.5; Git 2.47.3
 - Actual exit: 128
 - stdout: EMPTY, 0 bytes
 - stderr: fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com
 - Category: LOCAL_GIT_REMOTE_DNS_SOURCE_ACQUISITION_FAILURE, not a GAS GraphDB or Morpher execution failure
 - Authenticated GitHub repository and source file read: PERFORMED; complete pinned execution checkout: NOT_AVAILABLE
+- Continuation correction before merge: the earlier 01:14Z timing in this unmerged Draft was not independently substantiated by a retained process receipt; the 01:29Z diagnostic above was actually executed in this container. One run only, also referenced by R2, never two independently run GAS experiments.
 - Task status: BLOCKED_BEFORE_NATIVE_INGESTION. No actual signal submitted or accepted.
 - R2 is independent; if it cites this same Git diagnostic, it is not a second independent execution receipt.
 
@@ -31,7 +32,7 @@
 - Authors: Kentaroh Toyoda, Alex Leung, Bhuvaneswari U
 - Canonical paper identity: arXiv:2611.15223v1, submitted 2026-11-11 (not represented as a November 14 publication)
 - Primary source: https://arxiv.org/abs/2611.15223
-- Original full text inspected: https://arxiv.org/abs/2611.15223 (arXiv-rendered article with methods, action-path/topology and limitations)
+- Original full text inspected: https://arxiv.org/html/2611.15223v1 (exact arXiv HTML sections on 15 action paths, eight topology designs, measurement and limitations); metadata: https://arxiv.org/abs/2611.15223
 - Author code pointer: https://github.com/VulcanLab/guardscope (pointer only; no local clone or execution)
 - Evidence class: E4_AUTHOR_PREPRINT / ORIGINAL_TEXT_READ / AUTHOR_REPORTED_EXPERIMENTS; source identity does not establish independent reproduction
 - Author-reported design: 15 distinct action paths and 8 enforcement topologies; source inspection predicts checkable paths and a workload compares control decision records with kernel-observed actions, classifying checked, bypassed and prevented
