@@ -15,12 +15,13 @@
 ## Shared bootstrap diagnosis — not an independent R2 selfcheck
 - One actual Git acquisition attempt was made for this repository and shared as environmental evidence with R1.
 - Command: git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD
-- UTC start: 2026-11-14T01:14:48.975298578Z
-- UTC end: 2026-11-14T01:14:48.992789982Z
+- UTC start: 2026-11-14T01:29:30.366737768Z
+- UTC end: 2026-11-14T01:29:30.379378627Z
 - Environment: Linux 6.18.57; Python 3.13.5; Git 2.47.3
 - Actual exit: 128; stdout: EMPTY / 0 bytes
 - stderr: fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com
 - Classification: LOCAL_GIT_REMOTE_DNS_SOURCE_ACQUISITION_FAILURE; it neither proves an R2 module defect nor a failed graph invariant
+- Continuation correction before merge: original 01:14Z timing in this unmerged Draft was not independently substantiated by a retained process receipt; the referenced 01:29Z command was actually executed once and is shared with R1 as environment evidence only.
 - Independent R2 native process count: NOT_EXECUTED; same bootstrap diagnostic is not independent execution or validation
 
 ## R2 native selfcheck contract
