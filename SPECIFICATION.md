@@ -250,3 +250,19 @@ Callers own database-file permissions, authentication, authorization, isolation,
 FTS query limits and standard-library-only import checks do not provide a security sandbox.
 
 This specification changes no runtime implementation, dependency set, presentation behavior, deployment state, or private automation/control strategy.
+
+## 2026-11-15 source-grounded measurement and transaction corrections
+
+The statements below follow the source path at `0abc7321f17853fcd6874ad81ee98f6ffb48e899`. This revision of the prose does **not** claim a newly executed test.
+
+**Structural comparison:** `CODE/drift_detector.py::compute_structural_delta` compares rows of the `nodes` table, returning added/removed node IDs and changed node contents. It does not inspect the `edges` table. An edge-only change can therefore produce empty `added`, `removed`, and `modified` lists even though the represented graph changed. A structural-zero result is **node-structure-only**; it cannot certify complete graph equality.
+
+**Lexical comparison:** `compute_semantic_delta` compares only one top FTS5 result ID per version for the quoted caller query. Both sides missing a match return `False` (not changed) despite having no retrieved evidence of semantic equivalence. `compute_rank_delta` compares input mappings with missing keys interpreted as score zero; these scores must already belong to identified comparable graph versions.
+
+**Graph entropy:** `calculate_topological_entropy` returns `0.0` if total score mass is zero; a one-node normalized distribution also has zero Shannon entropy. Such equal scalar outcomes do not mean equivalent graph state. `check_phase_boundary` uses `>`, not `>=`, for its configured threshold.
+
+**Snapshot identity:** `GraphDB.snapshot_digest(version)` hashes sorted node and edge tuples selected *by* version, but the version number is not included inside the serialized payload. If two versions have identical selected content, they can have identical digests; a digest alone cannot identify which version or persisted database supplied it.
+
+**Rollback scope:** `GraphDB.savepoint` rolls back SQLite changes on any propagated `BaseException`, but it cannot automatically roll back `CortexObserver.phase`, `current_depth`, external actions performed by a supplied `reflector`, or a caller's state. `CortexObserver` explicitly resets phase/depth when catching its internal `_RejectedInput`; unexpected exceptions propagate and do not pass through that reset branch. Consequently a failed reflector can leave observer object fields reflecting a pre-failure phase despite database rollback. Never interpret SQLite rollback as an atomic state transition across object + database + external world.
+
+**Falsification fixtures (not run here):** compare identical nodes with only an edge relation changed; compare two absent-result FTS5 searches; compare equal-content versions and their digests; inject an exception from a reflector after entering `GASEOUS`, then inspect database and object phase separately. Retain DB URI/path, version, fixture, source SHA, Python/SQLite/FTS5 environment, command and exact output before reporting observed results.
