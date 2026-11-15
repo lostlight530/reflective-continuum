@@ -257,4 +257,4 @@ The database schema stores an edge's `source_id`, `target_id`, `relationship` an
 
 Any missing store or run identity remains `NOT_ESTABLISHED`. If the database was not opened and a comparison command did not run, report `NOT_COMPUTED` or `NOT_EXECUTED` rather than `STABLE`. Historical failed selfchecks, empty-store results and earlier provisional statements remain unchanged.
 
-This source-bound calibration does not change `CODE/**`, graph fixtures, historical audits, or the separate active ADR/METH specification review.
+This source-bound evidence clarification is consolidated with the same PR's ADR/METH and specification corrections. It does not change `CODE/**`, graph fixtures or historical audits.
