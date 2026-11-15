@@ -56,3 +56,9 @@ Do not claim rollback success from a rejection label alone when the store/result
 ## Evidence boundary
 
 Rollback means the tentative SQLite changes in that savepoint were reverted. It does not prove restoration of external systems, semantic correctness, durable recovery, or cognitive alignment.
+
+## Database atomicity versus observer-state atomicity
+
+For a validation-triggered `_RejectedInput`, the savepoint is rolled back, the handler resets `CortexObserver.phase` and `current_depth`, and a rejected result is returned. For **unexpected exceptions** from the reflector, SQLite operation or programming path, `GraphDB.savepoint` rolls back its tentative database mutation and reraises, but `process_input` does not restore the observer fields in that exception path.
+
+A precise rollback statement must therefore name the object: `SQLITE_SAVEPOINT_MUTATIONS_ROLLED_BACK` does not entail `OBSERVER_FIELDS_RESTORED`, `CALLBACK_SIDE_EFFECTS_COMPENSATED` or `SOURCE_PROPOSITION_FALSE`. A negative test should force a reflector exception after the phase is changed, retain before/after database digest and object state, and confirm the exception is not re-labelled as successful reflection. No such test is claimed executed here.
