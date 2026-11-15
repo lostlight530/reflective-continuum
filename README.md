@@ -11,9 +11,9 @@ Latest archived checkpoint: [v2026.11-ten-day-evidence-checkpoint](https://githu
 
 [Open Research / 开放科研](./OPEN_RESEARCH.md) · [Research Template / 科研模板](./RESEARCH_TEMPLATE.md)
 
-Reflective Continuum is a standard-library Python reference for versioned graph storage and bounded analysis. It provides SQLite persistence, synchronized FTS5 lexical search, version deltas, PageRank-derived Shannon entropy, explicit validation, transactional ingestion, and optional bounded reflection hooks.
+Reflective Continuum is a standard-library Python reference for versioned graph storage and bounded analysis. It provides SQLite graph storage (durable only when an explicit file-backed/shared store is retained; the default `:memory:` is connection-local), synchronized FTS5 lexical search, node-version deltas, PageRank-derived Shannon entropy, explicit validation, savepoint-scoped ingestion, and optional bounded reflection hooks.
 
-Reflective Continuum 是一个基于 Python 标准库的版本化图存储与有界分析参考实现；它提供 SQLite 持久化、同步的 FTS5 词法搜索、版本差异、由 PageRank 派生的 Shannon 熵、显式校验、事务式写入，以及可选的有界反射钩子；
+Reflective Continuum 是一个基于 Python 标准库的版本化图存储与有界分析参考实现；它提供 SQLite 图存储（只有明确保留文件或共享存储身份时才能讨论跨运行持久性，默认 `:memory:` 仅属于当前连接）、同步的 FTS5 词法搜索、节点版本差异、由 PageRank 派生的 Shannon 熵、显式校验、保存点作用域内的写入，以及可选的有界反射钩子；
 
 ## Executable contracts | 可执行合同
 
@@ -31,15 +31,15 @@ Search is quoted lexical phrase matching, optionally scoped to a version, limite
 
 The bounded comparison APIs are:
 
-- Structural delta: sorted added, removed, and content-modified node identifiers between versions.
+- Structural delta: sorted added, removed, and content-modified **node** identifiers between versions; the current `compute_structural_delta` does **not** compare edge rows, so an edge-only graph change can be invisible.
 - Search-result delta: whether the top lexical result changes for the same caller-declared query.
 - Rank delta: nodes whose absolute PageRank score shift exceeds a caller-declared non-negative threshold.
 
 有界比较 API 包括：结构差异返回版本间新增、删除和内容修改的节点；搜索结果差异报告同一指定查询的首个词法结果是否变化；排名差异返回 PageRank 分数绝对变化超过调用者所设非负阈值的节点；
 
-PageRank validates nodes, edges, and configuration, collapses duplicate edges, and normalizes output. Shannon entropy is computed from normalized finite non-negative PageRank scores and reported in nats. A threshold result applies only to the declared graph, configuration, and revision; it does not establish intelligence, instability, truth, or safety.
+PageRank validates nodes, edges, and configuration, collapses duplicate source-target pairs (relationship labels have already been omitted by `get_all_edges`), and normalizes output. This rank is not a multigraph/relationship-aware measure. Shannon entropy is computed from normalized finite non-negative PageRank scores and reported in nats. Empty score mass and a singleton normalized distribution can both yield zero entropy; neither scalar nor a threshold result establishes graph identity, intelligence, instability, truth, or safety.
 
-PageRank 会校验节点、边和配置，折叠重复边并归一化输出；Shannon 熵由有限、非负且归一化的 PageRank 分数计算，单位为 nat；阈值结果只对指定图、配置和版本成立，不能据此断言智能、不稳定性、真理或安全性；
+PageRank 校验节点、边和配置，并对来源/目标相同的边对去重；`get_all_edges` 已丢弃 relationship 标签，因此该排名不刻画多重关系边的语义；Shannon 熵由有限非负分数归一化计算，单位为 nat；空质量和单节点归一化分布均可能得到零熵，单一阈值结果不能证明图身份、智能、不稳定性、真理或安全性；
 
 ### Validation, transactions, and hooks | 校验、事务与钩子
 
@@ -47,9 +47,9 @@ PageRank 会校验节点、边和配置，折叠重复边并归一化输出；Sh
 
 `RuleConfig` 是可执行策略；内容和标识符会被显式校验；Python 源码检查使用 AST 与当前解释器的标准库模块集合；ADR 文本是文档，不是运行时配置；
 
-`CortexObserver.process_input` validates caller data and performs accepted ingestion in one savepoint-backed transaction. Policy rejection returns a structured `ProcessResult`; unexpected database and programming errors propagate. Above the configured entropy threshold, an optional reflection hook runs at most once per configured depth before state is recomputed. Exhausting the configured bound rolls back the transaction.
+`CortexObserver.process_input` validates caller data and performs accepted database ingestion inside one SQLite savepoint. Policy rejection returns a structured `ProcessResult`; unexpected database, reflector and programming exceptions propagate, with tentative SQLite mutations rolled back. **SQLite rollback does not guarantee restoration of the observer object's `phase/current_depth` fields on unexpected exceptions, or compensation of reflector side effects.** Above the configured entropy threshold, an optional reflection hook runs at most once per depth before recomputation. Exhausting the bound rejects and rolls back the local database changes.
 
-`CortexObserver.process_input` 校验调用者数据，并在一个由保存点支持的事务中完成被接受的写入；策略拒绝返回结构化 `ProcessResult`；意外的数据库和编程错误会继续抛出；超过配置的熵阈值后，可选反射钩子在每一层最多执行一次，再重新计算状态；耗尽配置上限会回滚事务；
+`CortexObserver.process_input` 校验调用者数据，并在 SQLite 保存点作用域内写入；策略拒绝返回结构化 `ProcessResult`，意外的数据库、反射回调与程序错误会继续抛出，同时回滚保存点内的 SQLite 改动；**这不保证异常路径上的 `phase/current_depth` 对象字段被恢复，也不会补偿回调已产生的外部副作用**；超过配置熵阈值后每层最多调用一次反射钩子，耗尽深度则拒绝并回滚本地数据库修改；
 
 ## Task entrypoints | 任务入口
 
