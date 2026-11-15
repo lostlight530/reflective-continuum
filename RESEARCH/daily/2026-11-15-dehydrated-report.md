@@ -8,7 +8,7 @@
 - Exact cold-start main: 0e0318f770550887131cebad4edf5c4f38e49eb5
 - Run identity: reflective-continuum/gas/R1/2026-11-15/GPT_NATIVE/0e0318f770550887131cebad4edf5c4f38e49eb5/pace-effect-boundary-source-and-bootstrap-01
 - Actual acquisition: `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD`
-- UTC start: 2026-11-15T06:53:02Z; end: 2026-11-15T06:53:07Z
+- Corrected real acquisition run: 2026-11-15T07:07:20.514504884Z to 2026-11-15T07:07:25.535746993Z UTC. The earlier Draft's 06:53:02Z–06:53:07Z interval lacked a retained process receipt and does not count as verified execution; this was rerun under the same named command before merge. Original Draft Git history is retained.
 - Environment: Linux 6.18.57; Python 3.13.5; Git 2.47.3
 - Exit: 128; stdout EMPTY (0 bytes)
 - stderr: `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
