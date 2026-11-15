@@ -89,3 +89,14 @@ A repeatable fixed fixture can support repeatability at a recorded revision/envi
 Repository-snapshot identity is now part of continuity reconciliation when one task's evidence depends on whether another artifact was visible from the exact observed branch/ref.
 
 This does not weaken the stronger persistence rule: Git identity and database/store identity remain independent.
+
+## 2026-11-15 concrete method counterexamples
+
+The current method members remain unchanged. Source-path comparison at `0abc7321f17853fcd6874ad81ee98f6ffb48e899` identifies four cases where a scalar or status cannot replace its underlying object identity:
+
+- METH-001: zero graph entropy can represent either no probability mass or a singleton distribution; graph size is required.
+- METH-002 / METH-004: SQLite savepoint rollback does not necessarily restore `CortexObserver.phase/current_depth` after unexpected reflector exceptions.
+- METH-003: unchanged lexical top result when both queries miss does not prove semantic equivalence; a node-only structural delta can miss edge-only changes.
+- METH-005: identical sorted-content digests can occur at different version numbers and do not prove continuity of a durable SQLite store.
+
+These are repository-source interpretations, not fresh experiment claims. Each owning method above now contains its relevant negative-case design.
