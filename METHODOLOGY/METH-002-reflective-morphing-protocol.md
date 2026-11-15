@@ -60,3 +60,9 @@ A rejected `ProcessResult` is not a source-falsification result. An exception is
 ## Evidence boundary
 
 This method measures one local transaction/observer path. It does not establish semantic improvement, reflector quality, durable memory, safety, or convergence.
+
+## Cross-surface rollback counterexample
+
+`CortexObserver.process_input` places node/edge writes inside `GraphDB.savepoint`. On expected `_RejectedInput`, it resets `phase` and `current_depth` and returns a rejected `ProcessResult`. On a different exception (for example from a caller-supplied `reflector`), the savepoint context rolls back database changes, but the outer function **only catches `_RejectedInput`**, so the in-memory observer fields are not necessarily reset.
+
+Thus test two independent postconditions: (1) database rows match the pre-savepoint snapshot, and (2) observer fields match the pre-attempt values. Only the first follows automatically from the savepoint implementation. A third postcondition, compensating effects executed by a reflector, is not implemented at all. Do not convert local transaction rollback into an atomic cognitive-state transition or external-effect guarantee.
