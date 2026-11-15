@@ -61,3 +61,9 @@ The procedure fails closed when the compared versions, query, PageRank configura
 ## Evidence boundary
 
 This method bounds evidence strength. It does not make the repository an alignment evaluator or prove a global safety property.
+
+## Typed counterexamples for alignment language
+
+A returned `ProcessResult(accepted=True)` is evidence only that node/content validation and local transaction flow accepted the signal. It is **not** evidence that the proposition described in `content` is supported by a source.
+
+A `compute_semantic_delta(...)=False` result can arise when **both FTS5 searches return no top match**. It therefore does not support a statement of semantic stability, even if both graph versions are otherwise non-identical. Likewise `compute_structural_delta` does not inspect edge-only changes. When evaluating an "alignment" claim, name the proposition and source-support surface independently of these two local signals; retain a `SOURCE_CLAIM_MISMATCH` or `UNRESOLVED` disposition where appropriate.

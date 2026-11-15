@@ -110,3 +110,14 @@ same base revision != same branch snapshot
 same branch snapshot != same persistent store
 later main visibility != earlier task input visibility
 ```
+
+## 2026-11-15 implementation-boundary clarification
+
+The numbered ADR membership is unchanged. Current-source reading sharpens the accepted decisions for graph observation, comparison and state:
+
+- `compute_structural_delta` reports node changes only, not edge-only topology changes (ADR-003).
+- `snapshot_digest(version)` selects by version but does not hash that version value (ADR-004 / ADR-010).
+- Exception-triggered savepoint rollback does not automatically restore in-memory observer fields or external reflector effects (ADR-002 / ADR-004).
+- Entropy and lexical comparison outputs can coincide for materially different graphs or absent query results (ADR-003 / ADR-005 / ADR-009).
+
+No ADR is superseded by this clarification and no new test has been executed; current implementation remains the behavioral authority.

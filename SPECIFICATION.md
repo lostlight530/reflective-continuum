@@ -40,7 +40,7 @@ It is not a cognitive system, semantic embedding model, truth engine, safety pro
 - edge key: `(source_id, target_id, relationship, version)`
 - FTS5: external-content index with synchronization triggers
 - explicit savepoints: fork/commit/rollback behavior
-- snapshot digest: sorted content identity for one declared version
+- snapshot digest: sorted content identity selected by the declared version; the version value is **not** hashed inside the payload and must be retained separately
 
 A bare `:memory:` database is connection-local. A default task observation cannot prove cross-task, cross-process, or cross-day persistence.
 
@@ -101,9 +101,9 @@ A repeated digest without shared durable-store identity demonstrates represented
 
 ## Transaction contract
 
-Savepoints are local SQLite transaction boundaries. Rejection/rollback applies to tentative graph changes inside that savepoint.
+Savepoints are local SQLite transaction boundaries. Rejection/rollback applies to tentative graph changes inside that savepoint. The observer explicitly resets its `phase/current_depth` fields when handling internal `_RejectedInput`, but **does not reset them in the unexpected-exception branch**. Therefore a rolled-back SQLite graph and an in-memory observer still labelled `GASEOUS` may coexist after a failed caller reflector.
 
-It does not establish rollback of external services, messages, files, or world-state side effects.
+It does not establish atomic rollback of observer-object fields, caller hook state, external services, messages, files, or world-state side effects.
 
 Unexpected database/programming failures propagate rather than becoming successful `ProcessResult` states.
 
@@ -111,7 +111,7 @@ Unexpected database/programming failures propagate rather than becoming successf
 
 FTS5 search is lexical and caller-query scoped.
 
-- structural delta → added/removed/content-modified node IDs
+- structural delta → added/removed/content-modified **node** IDs only; edge-only changes are not measured by `compute_structural_delta`
 - lexical top-result delta → whether top FTS5 result identity changes
 - rank delta → PageRank score shifts above caller threshold
 
@@ -119,7 +119,7 @@ Synthetic/test transitions and operational transitions are distinct evidence cla
 
 ## Analysis contract
 
-PageRank requires a declared valid graph. Entropy normalizes finite non-negative scores and reports nats.
+PageRank requires a declared valid graph. `GraphDB.get_all_edges` exposes only source/target pairs; distinct relationship labels between the same endpoints are indistinguishable for `compute_pagerank` and duplicate pairs are collapsed. The iteration loop stops on the declared tolerance or after `max_iterations`; it does not report an independent convergence certificate. Entropy normalizes finite non-negative scores and reports nats, and zero entropy alone cannot distinguish an empty score collection from a singleton normalized distribution.
 
 A phase threshold is a local policy condition, not a physical/cognitive phase theorem.
 
@@ -250,3 +250,19 @@ Callers own database-file permissions, authentication, authorization, isolation,
 FTS query limits and standard-library-only import checks do not provide a security sandbox.
 
 This specification changes no runtime implementation, dependency set, presentation behavior, deployment state, or private automation/control strategy.
+
+## 2026-11-15 source-grounded measurement and transaction corrections
+
+The statements below follow the source path at `0abc7321f17853fcd6874ad81ee98f6ffb48e899`. This revision of the prose does **not** claim a newly executed test.
+
+**Structural comparison:** `CODE/drift_detector.py::compute_structural_delta` compares rows of the `nodes` table, returning added/removed node IDs and changed node contents. It does not inspect the `edges` table. An edge-only change can therefore produce empty `added`, `removed`, and `modified` lists even though the represented graph changed. A structural-zero result is **node-structure-only**; it cannot certify complete graph equality.
+
+**Lexical comparison:** `compute_semantic_delta` compares only one top FTS5 result ID per version for the quoted caller query. Both sides missing a match return `False` (not changed) despite having no retrieved evidence of semantic equivalence. `compute_rank_delta` compares input mappings with missing keys interpreted as score zero; these scores must already belong to identified comparable graph versions.
+
+**Graph entropy:** `calculate_topological_entropy` returns `0.0` if total score mass is zero; a one-node normalized distribution also has zero Shannon entropy. Such equal scalar outcomes do not mean equivalent graph state. `check_phase_boundary` uses `>`, not `>=`, for its configured threshold.
+
+**Snapshot identity:** `GraphDB.snapshot_digest(version)` hashes sorted node and edge tuples selected *by* version, but the version number is not included inside the serialized payload. If two versions have identical selected content, they can have identical digests; a digest alone cannot identify which version or persisted database supplied it.
+
+**Rollback scope:** `GraphDB.savepoint` rolls back SQLite changes on any propagated `BaseException`, but it cannot automatically roll back `CortexObserver.phase`, `current_depth`, external actions performed by a supplied `reflector`, or a caller's state. `CortexObserver` explicitly resets phase/depth when catching its internal `_RejectedInput`; unexpected exceptions propagate and do not pass through that reset branch. Consequently a failed reflector can leave observer object fields reflecting a pre-failure phase despite database rollback. Never interpret SQLite rollback as an atomic state transition across object + database + external world.
+
+**Falsification fixtures (not run here):** compare identical nodes with only an edge relation changed; compare two absent-result FTS5 searches; compare equal-content versions and their digests; inject an exception from a reflector after entering `GASEOUS`, then inspect database and object phase separately. Retain DB URI/path, version, fixture, source SHA, Python/SQLite/FTS5 environment, command and exact output before reporting observed results.

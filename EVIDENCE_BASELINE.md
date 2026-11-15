@@ -226,3 +226,35 @@ The strongest repository-wide interpretation through 2026-08-27 is:
 - formal August R5 closure: open
 
 Canonical current stage record: `RESEARCH/monthly/2026-08-through-27-stage-audit.md`.
+
+## Forward source calibration — graph difference and retrieval scope (2026-11-15)
+
+This is a current-source interpretation of `CODE/drift_detector.py` and `CODE/continuum_db.py`. It is **not** a 2026-08-27 observation, a new R1/R2 execution, or a computed November drift result.
+
+### Versioned structural delta is node-scoped
+
+`compute_structural_delta(conn, v1, v2)` returns `added`, `removed` and `modified` identifiers using queries over `nodes` only. Membership changes compare node IDs across versions, while `modified` detects changed `content` for a node present at both versions. It does not query `edges`.
+
+A returned empty node delta therefore means `NO_NODE_DELTA_DETECTED_BY_THIS_FUNCTION` for the selected versions. It does not establish that relationships, edge labels, graph topology or semantic content are unchanged. This is a material limitation for any R3/R4 report that treats `structural_delta` as graph-wide equality.
+
+The database schema stores an edge's `source_id`, `target_id`, `relationship` and `version`. The public `GraphDB.get_all_edges(version)` currently projects rows into `(source_id, target_id)` tuples, ordered with the relationship key, but does not return that label. Consumers of that projection cannot infer relationship-label equality or count distinct relationship types merely from the returned tuples. A relationship-aware audit must inspect the labeled stored edge rows or use an explicitly implemented and tested higher-level comparison.
+
+### FTS comparison is a selected-query observation
+
+`compute_semantic_delta(conn, query, v1, v2)` constructs an FTS5 phrase query, takes the top `node_id` for each version using `bm25` with a deterministic node-ID tie-break, and returns whether those IDs differ. A `False` result is bounded to one selected lexical phrase and the top-result identity under that database state. It is neither full result-set equality nor semantic equivalence; an empty result on both versions also yields no top-ID change.
+
+`compute_rank_delta(pr1, pr2, threshold)` compares provided PageRank-score dictionaries across their union of keys. It requires a finite nonnegative threshold and reports IDs with differences strictly greater than that threshold. It does not calculate or validate the provenance of those input rank distributions.
+
+### Evidence required before a drift conclusion
+
+| Observation | Necessary identity | Permitted statement |
+| --- | --- | --- |
+| Node delta | Database/store, compared versions, revision, actual command/output | Node membership/content changes seen by this function |
+| Edge analysis | Stored labeled edge rows and compared versions | Relationship change only for explicitly compared labels and endpoints |
+| Lexical top result | Store, version pair, precise query, index state | Selected top lexical result changed or not changed |
+| Rank difference | Source rank dictionaries, version pair and threshold | Provided rank-score delta exceeds threshold |
+| R1-to-R2 continuity | Both run identities and proof both opened the same persistent store | Shared-state claim only within observed identity boundary |
+
+Any missing store or run identity remains `NOT_ESTABLISHED`. If the database was not opened and a comparison command did not run, report `NOT_COMPUTED` or `NOT_EXECUTED` rather than `STABLE`. Historical failed selfchecks, empty-store results and earlier provisional statements remain unchanged.
+
+This source-bound evidence clarification is consolidated with the same PR's ADR/METH and specification corrections. It does not change `CODE/**`, graph fixtures or historical audits.

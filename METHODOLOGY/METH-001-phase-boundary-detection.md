@@ -55,3 +55,19 @@ A threshold crossing means only:
 `GRAPH_DERIVED_ENTROPY > DECLARED_THRESHOLD`.
 
 It does not prove instability, cognition, alignment, semantic drift, or a physical phase transition.
+
+## Entropy degeneracy and strict-threshold interpretation
+
+`compute_pagerank` uses sorted unique node IDs, collapses duplicate edge tuples, handles dangling mass and normalizes the final score map. `calculate_topological_entropy` computes `-sum(p_i * ln(p_i))` after normalization and returns `0.0` for non-positive total mass. Consequently an empty score collection and a singleton nonzero rank distribution both return zero entropy although they represent different graph conditions.
+
+`check_phase_boundary` compares this value with the caller threshold using **strict greater-than**. Equality does not trigger `GASEOUS`; neither low entropy nor a non-trigger proves semantic stability, convergence, safety or persistence. Preserve node count, graph version, edge set, damping/tolerance configuration and score vector alongside the scalar when a research interpretation depends on these distinctions.
+
+A useful unexecuted counterexample pairs an empty graph with a one-node graph, then compares their entropy scalar and their separately computed snapshot data. The scalar alone is insufficient to classify graph equivalence.
+
+## Relationship-projection and termination boundary
+
+`GraphDB.get_all_edges(version)` returns only `(source_id, target_id)`, not the persisted `relationship` label. `compute_pagerank` then computes `sorted(set(edges))`; two distinct persisted relationships with identical endpoints count as **one** directed edge in the current rank graph. Therefore the PageRank/entropy calculation is on a **simple directed projection** of the stored relationship multigraph, not on all stored relation types or multiplicities. Preserve the projection rule when comparing versions.
+
+The iteration stops either when the L1 score delta meets `tol` or when `max_iterations` is exhausted. The public function returns only the normalized mapping, not a `converged` flag or residual. A bounded iteration count must not be described as independently certified convergence. For a negative fixture, vary relationship labels while preserving source/target pairs, and compare stored edge counts with the rank-projection inputs. This is a static source-derived design, not executed here.
+
+`RuleConfig` validates its numeric entropy threshold for negativity, but does not check finiteness at construction; `check_phase_boundary` rejects non-finite thresholds when the value reaches the analysis function. Record the actual rejection point when discussing invalid configurations.
