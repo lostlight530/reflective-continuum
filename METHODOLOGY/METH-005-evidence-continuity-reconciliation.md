@@ -169,3 +169,9 @@ SAME_DATE
 ```
 
 Repository-snapshot reconciliation is documentary evidence handling. It does not create a shared database, replay R1/R2, or prove durable persistence.
+
+## Snapshot-digest version ambiguity
+
+`GraphDB.snapshot_digest(version)` selects nodes and edges for one version but hashes a JSON object containing the selected rows **without the version field itself**. Thus equal content in version 1 and version 2 can yield equal digests even within one database. A content digest is not a version locator, connection identity, or evidence that the graph survived between executions.
+
+For a valid comparison retain the separate tuple `(database identity, connection/run, Git revision, graph version, fixture origin, snapshot digest)`. A second fresh `GraphDB()` holding the same fixed fixture satisfies content repeatability but not persistence linkage. This extends the existing distinction between same logical date, same content and same durable store; it does not manufacture missing historical execution.
