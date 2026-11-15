@@ -48,3 +48,11 @@ later main state != archived publication contents
 When a result depends on exact implementation or database state, retain the Git revision and storage identity in addition to any publication citation. Do not infer an exact archive-to-commit mapping unless the repository or publication metadata explicitly records and verifies it.
 
 Passing results are revision-specific. If reproduction differs, first separate environment drift, schema mismatch, fixture change, nondeterministic external dependency, storage-identity mismatch, and a contract regression. Mark skipped checks explicitly.
+
+## Falsifiable projection/store/exception comparison
+
+For graph metrics, retain both the full persisted edge relation triples and the simple source-target projection supplied to `compute_pagerank`. An edge-only change may alter `snapshot_digest` while producing no node-structural delta, and a relation-label change may leave the projected rank/entropy unchanged.
+
+For a persistent-state claim, record the database URI or path, connection identity, graph version, selected node+edge tuples and digest. The digest excludes the version number from its hashed payload, so matching digest strings alone do not identify the same graph version. A fresh `:memory:` store with a reconstructed fixture remains a new object.
+
+For rollback, distinguish `DB_POST_ROLLBACK_CONTENT` from `OBSERVER_POST_EXCEPTION_FIELDS`; the former is governed by SQLite savepoints and the latter depends on the observer exception handler. The existing tests cover limited successful and rejected paths, but do not by their **presence** establish these additional negative cases. This documentation revision records source hypotheses only; no new local command execution is claimed.
