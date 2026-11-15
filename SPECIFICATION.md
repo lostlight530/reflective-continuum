@@ -40,7 +40,7 @@ It is not a cognitive system, semantic embedding model, truth engine, safety pro
 - edge key: `(source_id, target_id, relationship, version)`
 - FTS5: external-content index with synchronization triggers
 - explicit savepoints: fork/commit/rollback behavior
-- snapshot digest: sorted content identity for one declared version
+- snapshot digest: sorted content identity selected by the declared version; the version value is **not** hashed inside the payload and must be retained separately
 
 A bare `:memory:` database is connection-local. A default task observation cannot prove cross-task, cross-process, or cross-day persistence.
 
@@ -101,9 +101,9 @@ A repeated digest without shared durable-store identity demonstrates represented
 
 ## Transaction contract
 
-Savepoints are local SQLite transaction boundaries. Rejection/rollback applies to tentative graph changes inside that savepoint.
+Savepoints are local SQLite transaction boundaries. Rejection/rollback applies to tentative graph changes inside that savepoint. The observer explicitly resets its `phase/current_depth` fields when handling internal `_RejectedInput`, but **does not reset them in the unexpected-exception branch**. Therefore a rolled-back SQLite graph and an in-memory observer still labelled `GASEOUS` may coexist after a failed caller reflector.
 
-It does not establish rollback of external services, messages, files, or world-state side effects.
+It does not establish atomic rollback of observer-object fields, caller hook state, external services, messages, files, or world-state side effects.
 
 Unexpected database/programming failures propagate rather than becoming successful `ProcessResult` states.
 
@@ -111,7 +111,7 @@ Unexpected database/programming failures propagate rather than becoming successf
 
 FTS5 search is lexical and caller-query scoped.
 
-- structural delta → added/removed/content-modified node IDs
+- structural delta → added/removed/content-modified **node** IDs only; edge-only changes are not measured by `compute_structural_delta`
 - lexical top-result delta → whether top FTS5 result identity changes
 - rank delta → PageRank score shifts above caller threshold
 
@@ -119,7 +119,7 @@ Synthetic/test transitions and operational transitions are distinct evidence cla
 
 ## Analysis contract
 
-PageRank requires a declared valid graph. Entropy normalizes finite non-negative scores and reports nats.
+PageRank requires a declared valid graph. `GraphDB.get_all_edges` exposes only source/target pairs; distinct relationship labels between the same endpoints are indistinguishable for `compute_pagerank` and duplicate pairs are collapsed. The iteration loop stops on the declared tolerance or after `max_iterations`; it does not report an independent convergence certificate. Entropy normalizes finite non-negative scores and reports nats, and zero entropy alone cannot distinguish an empty score collection from a singleton normalized distribution.
 
 A phase threshold is a local policy condition, not a physical/cognitive phase theorem.
 
