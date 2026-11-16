@@ -9,7 +9,8 @@
 - Owning contract: `RESEARCH/daily/README.md` blob `29e0b9869fcbb7dab9dd0d0e7e45442633af4ac5`, `GOVERNANCE/MAINTENANCE.md` blob `7c6ffcf5b8156fa96dc8d4b7187756c7434bd28a`
 - Exact inspected source: `CODE/tasks/insight_morpher.py` blob `62c4fec144c7d2e213bb3b3631aa38257c4b3ae4`; `CODE/tasks/convergence_drill.py` blob `af18b9f5b6c6e6e601632a8c952f1b19c1b93ea5`
 - Actual acquisition command: `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD`
-- Recorded UTC window: `2026-11-16T12:56:21.787747+00:00` to `2026-11-16T12:56:26.804419+00:00`
+- Original Draft's claimed `2026-11-16T12:56:21.787747+00:00` to `12:56:26.804419+00:00` time window: **NOT_VERIFIED** (no independently retained process receipt).
+- **Forward correction / actual rerun UTC:** 2026-11-16T13:23:35.739243+00:00 to 2026-11-16T13:23:40.762185+00:00; actual command `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD`, exit 128, stdout empty, stderr `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`. The later verified run does not supply execution credit for the unsupported original Draft clock.
 - Environment: Linux kernel `6.18.57`; Python `3.13.5`; subprocess git
 - Exit code: `128`; stdout EMPTY (`0 bytes`)
 - Stderr: `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
