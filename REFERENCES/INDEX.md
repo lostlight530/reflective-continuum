@@ -6,6 +6,13 @@ Status: active non-normative reference map
 
 ## Pioneers collection
 
+## 参考身份与本仓可验证事实 / Reference identity versus repository evidence
+
+**中文：** PIO-001 至 PIO-004 是外部机制和研究背景，不是对 `CODE/**` 的产品功能验收；术语相似、论文存在或第三方 API 发布均不能证明 GAS 已复现外部系统，也不能替代具体 Store、Run 与源码版本证据
+
+**English:** PIO-001 through PIO-004 are external background and interpretation aids, not executable authority or validation of `CODE/**`; shared terminology, a published paper or an upstream API release cannot prove local reproduction, state continuity or a revision-matched test
+
+
 | Reference | Role | Normative status | Repository mapping |
 |---|---|---|---|
 | [PIO-001 — Google DeepMind](./PIONEERS/PIO-001-Google_DeepMind.md) | First-party AlphaEvolve context for proposal/evaluator separation | `BACKGROUND_SUPPORTED` | Evaluator-backed search is an analogy only; local fixtures/validators are not an AlphaEvolve implementation |
