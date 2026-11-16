@@ -11,6 +11,28 @@
 
 # Claim and source support review
 
+## 中文专业内容定位 / Chinese technical counterpart
+
+**研究或方法的真实对象 / Object:** 来源支持与 claim 对齐需可复核来源、确切版本与反证，FTS5 命中并不证明语义一致
+
+**Original English title:** Claim and source support review
+
+**可执行证明 / Execution evidence:** 只以已发生的精确版本与 Store/输入/命令收据支持运行声明，外部论文与 references 属于非规范上下文，历史记录不得由后来 main 自动覆盖 / Only exact revision, store, input and command receipts support execution, while external references stay non-normative and historic artifacts retain their original cutoffs
+
+| English section / 原章 | 中文对应说明 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Inputs | 输入 |
+| Procedure | 方法步骤 |
+| Outputs | 输出 |
+| Failure conditions | 失败条件 |
+| Required distinctions | 主题的具体条件与非声明 |
+| Evidence boundary | 证据边界 |
+| Typed counterexamples for alignment language | 主题的具体条件与非声明 |
+
+**审查规则 / Review:** 本节提供中文阅读而不新增方法运行、Graph 测试或跨存储持久化证据 / This bilingual layer adds no method execution, graph test or cross-store continuity proof
+
+
 - Method version: 2026-08-24
 - Scope: repository behavior, research records, and external-source propositions
 

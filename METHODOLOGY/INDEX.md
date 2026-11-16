@@ -7,6 +7,18 @@ Current calibration: 2026-10-04
 
 ## Method map
 
+## 方法、状态与证据速览 / Method, state and evidence guide
+
+| 分界 / Boundary | 本仓可支持 / Supported here | 不能替代 / Does not establish |
+| --- | --- | --- |
+| `METH-001` | PageRank-derived 图熵与图规模共同解释 / Graph entropy interpreted together with graph population | 零熵表示安全、收敛或非空状态 / Safety, convergence or a non-empty graph |
+| `METH-002`, `METH-004` | 单次 SQLite savepoint 事务与局部观察者路径 / One-savepoint transaction and a local observer path | Python 内存状态及外部效果自动回滚 / Automatic rollback of in-memory fields or external effects |
+| `METH-003` | 结构、FTS5 top result、排名差值的限定比较 / Scoped structural, lexical top-result and rank comparisons | 广义语义等价或来源事实正确 / General semantic equivalence or source truth |
+| `METH-005` | 版本、Git ref、真实 Store、运行身份的显式比对 / Explicit revision, Git ref, store and run identity comparison | 同日记录或相同摘要意味着同一持久化数据库 / Same-day artifacts or equal digests prove the same durable store |
+
+**复验边界 / Replay boundary:** Existing November 15 code-inspection negative cases support these documentary interpretations only, not newly executed R1/R2 ingestion, R3 drift, graph-health checks or long-term persistence / 本次没有重跑 Native 或模拟新的 Store 状态
+
+
 | Method | Current meaning | Concrete surface |
 |---|---|---|
 | [METH-001](./METH-001-phase-boundary-detection.md) | Evaluate graph-derived entropy boundary | `CODE/entropy_analyzer.py` |
