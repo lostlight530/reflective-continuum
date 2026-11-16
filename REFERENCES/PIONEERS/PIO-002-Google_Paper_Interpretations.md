@@ -11,6 +11,21 @@
 
 # Interpreting research papers without importing mythology
 
+## 中文专业内容定位 / Chinese technical counterpart
+
+**研究或方法的真实对象 / Object:** 论文解释须从原始研究对象、实验规模、评测协议和局限出发，不导入未经证实的宏大叙事
+
+**Original English title:** Interpreting research papers without importing mythology
+
+**可执行证明 / Execution evidence:** 只以已发生的精确版本与 Store/输入/命令收据支持运行声明，外部论文与 references 属于非规范上下文，历史记录不得由后来 main 自动覆盖 / Only exact revision, store, input and command receipts support execution, while external references stay non-normative and historic artifacts retain their original cutoffs
+
+| English section / 原章 | 中文对应说明 / Chinese section |
+| --- | --- |
+
+
+**审查规则 / Review:** 本节提供中文阅读而不新增方法运行、Graph 测试或跨存储持久化证据 / This bilingual layer adds no method execution, graph test or cross-store continuity proof
+
+
 - Reviewed: 2026-08-05
 - Evidence state: project methodology
 

@@ -11,6 +11,27 @@
 
 # Transactional bounded observer loop
 
+## 中文专业内容定位 / Chinese technical counterpart
+
+**研究或方法的真实对象 / Object:** 反思观察者一次 savepoint 的提议、核验、提交与回退不自动覆盖所有 Python 字段
+
+**Original English title:** Transactional bounded observer loop
+
+**可执行证明 / Execution evidence:** 只以已发生的精确版本与 Store/输入/命令收据支持运行声明，外部论文与 references 属于非规范上下文，历史记录不得由后来 main 自动覆盖 / Only exact revision, store, input and command receipts support execution, while external references stay non-normative and historic artifacts retain their original cutoffs
+
+| English section / 原章 | 中文对应说明 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Inputs | 输入 |
+| Procedure | 方法步骤 |
+| Outputs | 输出 |
+| Failure conditions | 失败条件 |
+| Evidence boundary | 证据边界 |
+| Cross-surface rollback counterexample | 主题的具体条件与非声明 |
+
+**审查规则 / Review:** 本节提供中文阅读而不新增方法运行、Graph 测试或跨存储持久化证据 / This bilingual layer adds no method execution, graph test or cross-store continuity proof
+
+
 - Method version: 2026-08-24
 - Implementation anchors: `CODE/cortex_observer.py`, `CODE/continuum_db.py`, `CODE/reflective_validator.py`
 

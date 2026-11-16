@@ -11,6 +11,33 @@
 
 # Evidence continuity and historical reconciliation
 
+## 中文专业内容定位 / Chinese technical counterpart
+
+**研究或方法的真实对象 / Object:** 历史结果连续性需要 Store、Run、Git ref、快照与源文件身份，内容摘要不可替代持久对象身份
+
+**Original English title:** Evidence continuity and historical reconciliation
+
+**可执行证明 / Execution evidence:** 只以已发生的精确版本与 Store/输入/命令收据支持运行声明，外部论文与 references 属于非规范上下文，历史记录不得由后来 main 自动覆盖 / Only exact revision, store, input and command receipts support execution, while external references stay non-normative and historic artifacts retain their original cutoffs
+
+| English section / 原章 | 中文对应说明 / Chinese section |
+| --- | --- |
+| Objective | 目标 |
+| Inputs | 输入 |
+| Procedure | 方法步骤 |
+| Persistence states | 主题的具体条件与非声明 |
+| Transition states | 主题的具体条件与非声明 |
+| Artifact-history states | 主题的具体条件与非声明 |
+| Source-support states | 主题的具体条件与非声明 |
+| August reference cases | 主题的具体条件与非声明 |
+| Outputs | 输出 |
+| Failure conditions | 失败条件 |
+| Evidence boundary | 证据边界 |
+| 2026-10-04 reference case — branch snapshot versus eventual main | 主题的具体条件与非声明 |
+| Snapshot-digest version ambiguity | 主题的具体条件与非声明 |
+
+**审查规则 / Review:** 本节提供中文阅读而不新增方法运行、Graph 测试或跨存储持久化证据 / This bilingual layer adds no method execution, graph test or cross-store continuity proof
+
+
 - Method version: 2026-10-04
 - Governing decision: ADR-010
 
