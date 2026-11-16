@@ -7,6 +7,16 @@ ADR numbering is an identifier sequence. A decision supersedes another only when
 
 ## Decision map
 
+## 决策身份与执行门禁 / Decision identity and runtime gates
+
+- **存储 / Store:** `ADR-004` 与 `ADR-010` 要求指明 SQLite 连接、路径、存储版本及运行身份，相同 Git SHA 或快照摘要不构成共享 Store 证明 / Matching commits or digests do not prove shared persistence
+- **观察与回滚 / Observer and rollback:** `ADR-002` 仅提供声明范围内的 savepoint 事务，异常后的 Python 字段或外部副作用需另行核验 / A savepoint does not automatically revert all Python state or external effects
+- **漂移 / Drift:** `ADR-003`、`ADR-005` 分开结构差异、FTS5 字面检索及 PageRank 熵，任何单一标量都不能代替真实图状态 / Single scalars cannot replace graph identity or semantic evaluation
+- **证据 / Evidence:** `ADR-006`、`ADR-009` 保持来源支持、摄取结果和本轮真实测试分离 / Source support, accepted ingestion and executed tests are separate evidence classes
+
+**性质 / Class:** Bilingual navigation over existing decisions, no ADR supersession, implementation claim, schema change, store migration or historical rewrite / 本次仅增强双语决策导航
+
+
 | ADR | Current architectural meaning | Concrete repository surface |
 |---|---|---|
 | [ADR-001](./ADR-001.md) | Standard-library runtime with explicit local contracts | `CODE/**` core modules |
