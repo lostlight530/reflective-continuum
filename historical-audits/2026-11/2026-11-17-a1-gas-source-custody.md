@@ -1,0 +1,172 @@
+# ORIGINAL independent A1 2026-11-17 — GAS whole-month R1/R2 and store custody
+
+## Scope, authority and current main
+- Repository: `lostlight530/reflective-continuum`; role independent-maintenance/A1, NOT Native R1/R2 and NOT Periodic Audit
+- MonthStart→N−1 = 2026-11-01..16, Asia/Shanghai; Nov17 Native deliberately excluded from this A1 source cutoff
+- Fresh main: `71b4e784d3eb92a868a218554982c3b968468067`; complete tree truncated=false, 592 Git blobs
+- Prior complete source audit `historical-audits/2026-11/2026-11-16-a1-gas-source-custody.md` @ `f24f9cfd0eede57de84edfbd03599e8abec2fe48`; reopened, preserved old run/source-time and only inherited on exact path+blob match
+- Governing contract: GOVERNANCE/MAINTENANCE.md and GOVERNANCE/independent-gpt/README.md; current RESEARCH/daily/README.md determines R1 and R2 evidence roles
+- Daily denominator: 32/32 exact source paths for 16 logical dates; 30 exact previous A1 source/blob matches, new cutoff files separately judged
+- Weekly source count 6 closed-week R3/R4 documents; W47 not closed, November R5 FINAL and D30 NOT_DUE
+- Only GitHub source/path audits performed, NOT_EXECUTED local GraphDB, InsightMorpher, native Cortex Selfcheck, SQL query, unit tests, graph metrics or real continuous-store replay
+- Required comparator: (run identity, source revision, db path/URI, store incarnation, snapshot content digest, tested input), not just date or quoted source test
+
+## Complete R1 / R2 file-level source judgment
+- **2026-11-01 R2 SOURCE:** `RESEARCH/daily/2026-11-01-cortex-selfcheck.md` @ `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-01 R1 SOURCE:** `RESEARCH/daily/2026-11-01-dehydrated-report.md` @ `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-02 R2 SOURCE:** `RESEARCH/daily/2026-11-02-cortex-selfcheck.md` @ `96e91be59380aed7aadcdcee7d337dc138d56447`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-02 R1 SOURCE:** `RESEARCH/daily/2026-11-02-dehydrated-report.md` @ `0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-03 R2 SOURCE:** `RESEARCH/daily/2026-11-03-cortex-selfcheck.md` @ `275984a759c0050089e83e0e31c3d52ba4f1d7f0`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-03 R1 SOURCE:** `RESEARCH/daily/2026-11-03-dehydrated-report.md` @ `d0638bdf97f1bc6a3d98918903712c7ab1380d78`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-04 R2 SOURCE:** `RESEARCH/daily/2026-11-04-cortex-selfcheck.md` @ `fb88bb1d6c3579acc2c8f8d612d87f62bd03118d`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-04 R1 SOURCE:** `RESEARCH/daily/2026-11-04-dehydrated-report.md` @ `a56aea23dec9f85cbaa36d4d00a739287232f09a`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-05 R2 SOURCE:** `RESEARCH/daily/2026-11-05-cortex-selfcheck.md` @ `5a575fb91bc130bb40ec3c174eed70ef8ec5990b`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-05 R1 SOURCE:** `RESEARCH/daily/2026-11-05-dehydrated-report.md` @ `0bd935ecb1e8c8b76be5b7614889b3c50bc8317c`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-06 R2 SOURCE:** `RESEARCH/daily/2026-11-06-cortex-selfcheck.md` @ `0e0e3b46655bd13565a37186b9742287541d19ba`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-06 R1 SOURCE:** `RESEARCH/daily/2026-11-06-dehydrated-report.md` @ `6b5c1947225f8f60e14448e5b30d82c917112e2b`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-07 R2 SOURCE:** `RESEARCH/daily/2026-11-07-cortex-selfcheck.md` @ `bd3170df865db1ee5004f0cb95a435b301cf0cbf`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-07 R1 SOURCE:** `RESEARCH/daily/2026-11-07-dehydrated-report.md` @ `8facda43ea780dba3e13791fe01bbebeaaac3ecb`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-08 R2 SOURCE:** `RESEARCH/daily/2026-11-08-cortex-selfcheck.md` @ `db63c4ed9ded8c39f755209a143982c22a1f5767`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-08 R1 SOURCE:** `RESEARCH/daily/2026-11-08-dehydrated-report.md` @ `940e8ff8f026c43979956c52ed574f912edaebde`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-09 R2 SOURCE:** `RESEARCH/daily/2026-11-09-cortex-selfcheck.md` @ `02aa24b20ec34e839ce698fdc70ed2486151233c`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-09 R1 SOURCE:** `RESEARCH/daily/2026-11-09-dehydrated-report.md` @ `eb8898fd1d0e684b231978a6022ca5e11f297ac9`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-10 R2 SOURCE:** `RESEARCH/daily/2026-11-10-cortex-selfcheck.md` @ `937783c42cd86c7c555103977553492ed59f5e8c`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-10 R1 SOURCE:** `RESEARCH/daily/2026-11-10-dehydrated-report.md` @ `998c3f5b4744c390a86778758f74943f43626c98`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-11 R2 SOURCE:** `RESEARCH/daily/2026-11-11-cortex-selfcheck.md` @ `3b19a0c0d6a6153f3822868f5cdc482f2e339cc1`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-11 R1 SOURCE:** `RESEARCH/daily/2026-11-11-dehydrated-report.md` @ `70e5469d308078d56f927e749e48676d894e9647`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-12 R2 SOURCE:** `RESEARCH/daily/2026-11-12-cortex-selfcheck.md` @ `059e65cfdd81676cb61862221f96ef6f2aba4bb7`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-12 R1 SOURCE:** `RESEARCH/daily/2026-11-12-dehydrated-report.md` @ `59e0205718e3dfa18c21f4128de373b416e9a1ae`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-13 R2 SOURCE:** `RESEARCH/daily/2026-11-13-cortex-selfcheck.md` @ `d6462948ae833b5c8ae746742b77fc8b605ebe13`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-13 R1 SOURCE:** `RESEARCH/daily/2026-11-13-dehydrated-report.md` @ `8c33602e9fc634c4ac96f730cee1fcdf90d36bac`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-14 R2 SOURCE:** `RESEARCH/daily/2026-11-14-cortex-selfcheck.md` @ `f35129f136c2d3230be29cf5ea5a75be22c93c93`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-14 R1 SOURCE:** `RESEARCH/daily/2026-11-14-dehydrated-report.md` @ `b3b0323b5f16a3577299fbf819b5574a8bef44ba`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: EXACT_PRIOR_A1_BLOB / INHERITED_NO_FOLLOW_UP; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-15 R2 SOURCE:** `RESEARCH/daily/2026-11-15-cortex-selfcheck.md` @ `084d6f3b0768db5fa9ca61010026adc0aeecbc81`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: - Source custody: NOV15_NEW_A1_CUTOFF / FRESH_SOURCE_IDENTITY; no invented execution credit / - Effect/counterexample: A selfcheck name or shared diagnostic is not a separate executed verifier; same-date does not imply same store or valid graph health
+- **2026-11-15 R1 SOURCE:** `RESEARCH/daily/2026-11-15-dehydrated-report.md` @ `42011192355c50f582d9cd68526c778519d19580`
+  - Disposition: EXACT_PREVIOUS_A1_BLOB / INHERITED_NO_FOLLOW_UP; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: - Source custody: NOV15_NEW_A1_CUTOFF / FRESH_SOURCE_IDENTITY; no invented execution credit / - Effect/counterexample: Source ingestion identity is not proven accepted SQLite rows without the exact command, input digest, store path and transaction receipt
+- **2026-11-16 R2 SOURCE:** `RESEARCH/daily/2026-11-16-cortex-selfcheck.md` @ `1c29891b5103f57a8836a9dc537dd2615df88acc`
+  - Disposition: DIRECT_NEW_CUTOFF_SOURCE / NO_RUNTIME_EXECUTION_PROMOTION; Cortex Selfcheck requires its own invocation, test totals and the exact R1 store identity
+  - Reviewed scope: 2026-11-16 no named R1 store; native selfcheck/tests NOT_EXECUTED, health/drift NOT_COMPUTED
+- **2026-11-16 R1 SOURCE:** `RESEARCH/daily/2026-11-16-dehydrated-report.md` @ `0c384a591072f12b802ab56dd90fd6d6729f1c21`
+  - Disposition: DIRECT_NEW_CUTOFF_SOURCE / NO_RUNTIME_EXECUTION_PROMOTION; Ingestion accepted/rejected and named SQLite store evidence are separate from a source-candidate path
+  - Reviewed scope: 2026-11-16 source-only ADK candidate and Git DNS failure; input NOT_EXECUTED, accepted/rejected NOT_COMPUTED
+
+## Weekly closure and non-transferable run/source lineage
+- WEEK SOURCE: `RESEARCH/weekly/2026-W44-alignment-report.md` @ `131f833a8b8f7f29ee9eff6f6f77d84f7da84cee`, exact weekly source identity
+  - Content gate: # R3 Weekly Semantic Drift Audit — 2026-W44 / - Canonical Task: reflective/gas/R3 / - Run Identity: reflective-continuum/gas/R3/2026-W44/GPT_NATIVE/18703df4cb6ebf7d25d882690ace3bf070c75915/gpt-native-2026w44-r3-01 / - Status: DOCUMENTARY_REVIEW_COMPLETE / OPERATIONAL_DRIFT_NOT_COMPUTED / - 2026-10-26: R1 and R2 dated paths present; native R1/R2 NOT_EXECUTED, no operational store or computed drift
+  - Verdict: closed-week documentary/structural comparison only within proven snapshot identity; no unobserved cross-run drift or durable-state claim
+- WEEK SOURCE: `RESEARCH/weekly/2026-W44-reference-audit.md` @ `6f8cc815caefe09ef9bbe1f8214c71cfd2f5ce3e`, exact weekly source identity
+  - Content gate: # R4 Weekly Reference Topology Audit — 2026-W44 / - Canonical Task: reflective/gas/R4 / - Run Identity: reflective-continuum/gas/R4/2026-W44/GPT_NATIVE/18703df4cb6ebf7d25d882690ace3bf070c75915/gpt-native-2026w44-r4-01 / - Canonical W44 Daily R1 and R2 source paths for 2026-10-26, 27, 28, 29, 30, 31 and 2026-11-01 were read from exact current main; 14/14 paths present / - Oct27 R1 explicitly ran on an ephemeral store and reported two locally accepted signals, which are not source truth nor durabl
+  - Verdict: closed-week documentary/structural comparison only within proven snapshot identity; no unobserved cross-run drift or durable-state claim
+- WEEK SOURCE: `RESEARCH/weekly/2026-W45-alignment-report.md` @ `9d68e752adbf22bd1916d2a15c3d42f99591dd7c`, exact weekly source identity
+  - Content gate: # R3 Weekly Semantic Drift and Phase Alignment Audit — 2026-W45 / - Repository: reflective-continuum; Canonical Task: `reflective/gas/R3`; Cadence: Weekly / - Run Identity: `reflective-continuum/gas/R3/2026-W45/GPT_NATIVE/643f11ff66fb3972b0ed1c71a1127841401e5d3d/w45-drift-documentary-01` / - Task Status: DOCUMENTARY_WEEKLY_INPUT_REVIEW_COMPLETE / OPERATIONAL_DRIFT_NOT_COMPUTED / - Exact dependency: independent R1 and R2 reports, not one shared-store pipeline
+  - Verdict: closed-week documentary/structural comparison only within proven snapshot identity; no unobserved cross-run drift or durable-state claim
+- WEEK SOURCE: `RESEARCH/weekly/2026-W45-reference-audit.md` @ `ba012925faf4527f04be8da2ec801f5714524503`, exact weekly source identity
+  - Content gate: # R4 Weekly Reference Topology Audit — 2026-W45 / - Repository: reflective-continuum; Canonical Task: `reflective/gas/R4`; Cadence: Weekly / - Run Identity: `reflective-continuum/gas/R4/2026-W45/GPT_NATIVE/643f11ff66fb3972b0ed1c71a1127841401e5d3d/w45-reference-documentary-01` / - Canonical Daily files: fourteen observed (7 R1 plus 7 R2); document presence != original task execution or persistent store visibility / - Exact source blobs read from merged main at 643f11ff66fb3972b0ed1c71a1127841401e
+  - Verdict: closed-week documentary/structural comparison only within proven snapshot identity; no unobserved cross-run drift or durable-state claim
+- WEEK SOURCE: `RESEARCH/weekly/2026-W46-alignment-report.md` @ `518be61529fc2e1033899bf22f4f34cd390f0394`, exact weekly source identity
+  - Content gate: # GAS R3 Weekly Semantic Drift and Phase Alignment Audit — 2026-W46 / - Canonical Task: `reflective/gas/R3`; Cadence: Weekly / - Run Identity: `reflective-continuum/gas/R3/2026-W46/GPT_NATIVE/481e54fe8717668236368772db66f637c77e403a/w46-store-comparability-audit-01` / - Task Status: `BOUNDED_DOCUMENTARY_REVIEW / CROSS_DAY_DRIFT_NOT_COMPUTED` / - Authority: `GOVERNANCE/MAINTENANCE.md`, `RESEARCH/daily/README.md`; independent R1 and R2, `SAME_DATE != SAME_STORE`
+  - Verdict: closed-week documentary/structural comparison only within proven snapshot identity; no unobserved cross-run drift or durable-state claim
+- WEEK SOURCE: `RESEARCH/weekly/2026-W46-reference-audit.md` @ `29aee0c19691d842d6cf0876771fafd2ab1e1188`, exact weekly source identity
+  - Content gate: # GAS R4 Weekly Reference and Graph Topology Audit — 2026-W46 / - Canonical Task: `reflective/gas/R4`; Cadence: Weekly / - Run Identity: `reflective-continuum/gas/R4/2026-W46/GPT_NATIVE/481e54fe8717668236368772db66f637c77e403a/w46-reference-and-topology-gate-01` / - Task Status: `DOCUMENTARY_REFERENCE_AUDIT / CURRENT_GRAPH_TOPOLOGY_NOT_COMPUTED` / - Scope: Independent R4; companion R3 has no cross-day comparable store.
+  - Verdict: closed-week documentary/structural comparison only within proven snapshot identity; no unobserved cross-run drift or durable-state claim
+- Earlier W46 temporary same-job fixtures, if present, are revision- and store-specific; they cannot establish Nov16 or current persistent cross-day state
+- R3 drift requires two independently attributable comparable snapshots; no such evidence arises merely from these monthly file paths
+- R4 topology/references likewise depends on exact snapshot/store identity and recorded checked links
+
+## MonthStart→N−1 per-day comparability matrix
+- 2026-11-01: R1=SOURCE_RETAINED:f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f; R2=SOURCE_RETAINED:d572a5ee7829b0b173fdcaa51ede38166ee2ddd0; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-02: R1=SOURCE_RETAINED:0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a; R2=SOURCE_RETAINED:96e91be59380aed7aadcdcee7d337dc138d56447; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-03: R1=SOURCE_RETAINED:d0638bdf97f1bc6a3d98918903712c7ab1380d78; R2=SOURCE_RETAINED:275984a759c0050089e83e0e31c3d52ba4f1d7f0; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-04: R1=SOURCE_RETAINED:a56aea23dec9f85cbaa36d4d00a739287232f09a; R2=SOURCE_RETAINED:fb88bb1d6c3579acc2c8f8d612d87f62bd03118d; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-05: R1=SOURCE_RETAINED:0bd935ecb1e8c8b76be5b7614889b3c50bc8317c; R2=SOURCE_RETAINED:5a575fb91bc130bb40ec3c174eed70ef8ec5990b; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-06: R1=SOURCE_RETAINED:6b5c1947225f8f60e14448e5b30d82c917112e2b; R2=SOURCE_RETAINED:0e0e3b46655bd13565a37186b9742287541d19ba; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-07: R1=SOURCE_RETAINED:8facda43ea780dba3e13791fe01bbebeaaac3ecb; R2=SOURCE_RETAINED:bd3170df865db1ee5004f0cb95a435b301cf0cbf; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-08: R1=SOURCE_RETAINED:940e8ff8f026c43979956c52ed574f912edaebde; R2=SOURCE_RETAINED:db63c4ed9ded8c39f755209a143982c22a1f5767; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-09: R1=SOURCE_RETAINED:eb8898fd1d0e684b231978a6022ca5e11f297ac9; R2=SOURCE_RETAINED:02aa24b20ec34e839ce698fdc70ed2486151233c; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-10: R1=SOURCE_RETAINED:998c3f5b4744c390a86778758f74943f43626c98; R2=SOURCE_RETAINED:937783c42cd86c7c555103977553492ed59f5e8c; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-11: R1=SOURCE_RETAINED:70e5469d308078d56f927e749e48676d894e9647; R2=SOURCE_RETAINED:3b19a0c0d6a6153f3822868f5cdc482f2e339cc1; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-12: R1=SOURCE_RETAINED:59e0205718e3dfa18c21f4128de373b416e9a1ae; R2=SOURCE_RETAINED:059e65cfdd81676cb61862221f96ef6f2aba4bb7; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-13: R1=SOURCE_RETAINED:8c33602e9fc634c4ac96f730cee1fcdf90d36bac; R2=SOURCE_RETAINED:d6462948ae833b5c8ae746742b77fc8b605ebe13; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-14: R1=SOURCE_RETAINED:b3b0323b5f16a3577299fbf819b5574a8bef44ba; R2=SOURCE_RETAINED:f35129f136c2d3230be29cf5ea5a75be22c93c93; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-15: R1=SOURCE_RETAINED:42011192355c50f582d9cd68526c778519d19580; R2=SOURCE_RETAINED:084d6f3b0768db5fa9ca61010026adc0aeecbc81; SAME_DATE != SAME_STORE; no independent new runtime measurement
+- 2026-11-16: R1=SOURCE_RETAINED:0c384a591072f12b802ab56dd90fd6d6729f1c21; R2=SOURCE_RETAINED:1c29891b5103f57a8836a9dc537dd2615df88acc; SAME_DATE != SAME_STORE; no independent new runtime measurement
+
+## Current verdict and falsification obligations
+- All 16 dates have canonical dated source paths; this proves document custody only, not successful ingestion or no incident
+- Original R1 accepted/rejected, R2 check outcomes and transient vs persistent store states are inherited with exact prior source/time; this A1 has no new GraphDB invocation
+- Counterexample: two isolated `:memory:` connections may each selfcheck as healthy on different data while no shared persistent graph state exists
+- Counterexample: temporary file named alike across runner containers does not imply identical inode, transaction history or store incarnation
+- Counterexample: one broken/rejected ingestion followed by a synthetic passing test is not durable recovery or graph health
+- No observed defect justifies editing historical Native R1/R2 or current CODE; historical bad interpretations require explicit forward correction
+
+## EVIDENCE_DELTA
+- NEW_EVIDENCE: 2026-11-16 original R1/R2 source identities now inside cutoff; all 32 dated records and 6 weekly records inventoried
+- CORRECTED_INTERPRETATION: source/fixture presence and selfcheck source text cannot replace named store and process receipts
+- UNCHANGED_BOUNDARY: SAME_DATE != SAME_STORE; RUN_PASSED != CONTINUOUS_STORAGE; REPORT_PRESENT != INGESTED
+- NEW_COUNTEREVIDENCE: differing ephemeral store identities and absent Nov16 R1/R2 run receipts block longitudinal drift or healthy claims
+- UNKNOWN_RETAINED: real Nov16 accepted/rejected outcomes, persistent store identity, current graph topology and phase/drift metrics
+- NEXT_RETEST_CONDITION: precise source checkout plus explicit named SQLite R1 write/readback; run independent R2 on identical store, record stdout/stderr/exit and digest
+
+## A1 numeric and delivery boundary
+- One original A1 PR; GitHub final additions>=100 must be independently inspected and does not imply separate novel research claims
+- A2 cannot begin until this original PR actually merges and the exact A1 blob is reread on fresh main
+- Native history, CODE, workflows, prior audits and Jules production records untouched
