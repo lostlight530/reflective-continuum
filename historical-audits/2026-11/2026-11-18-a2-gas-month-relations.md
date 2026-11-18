@@ -1,0 +1,232 @@
+# ORIGINAL Independent A2 2026-11-18 — GAS Nov01–18 source-to-store unified relations (OPEN MTD)
+
+## Fresh actual post-A1 dependency and window
+- Task independent-maintenance/A2, cutoff Nov01–18 Asia/Shanghai, not GAS R2 or independent periodic audit, natural month FINAL NOT_DUE
+- Fresh current main `1444a8e0ff5dc6ae7cfec496cc77b6244b811e2d`; complete nontruncated Git tree blobs=597; open PR at start=0
+- Original merged A1 PR #636, exact main-retained `historical-audits/2026-11/2026-11-18-a1-gas-source-custody.md` @ `286cb43a1a127413b059f7512ee15fe6186de025` reread AFTER merge
+- Previous monthly A2 source `historical-audits/2026-11/2026-11-17-a2-gas-month-relations.md` @ `bf0442bbef1ad1575bdc2cfbe48441b8668b9bc3` read; prior and current records distinct month-to-date editions
+- Full current Native GAS source set 42: Daily R1/R2 36/36, closed Weekly R3/R4 6/6; missing=0
+- Exact merged A1 path+blob matches 40; N18 source texts newly/directly reopened 2; prior original maintenance editions 33
+- R1 ingestion and R2 selfcheck separate task identities; no transaction or graph metrics imported from GitHub success
+- SAME_DATE != SAME_STORE, shared Git DNS probe != two process runs; intended named SQLite must be closed/reopened and independently checked
+- R1 CLI default :memory: vs explicitly configured named db_path is a candidate source-level persistence boundary, not a demonstrated GAS local graph regression
+- A storage snapshot version/digest, R1 effect run, R2 recheck run, graph node/edge set and test inputs form a comparable evidence tuple
+- Weekly W46 closed, W47 open, Monthly R5 and D30 NOT_DUE; D7/D10/D14 independent historical audit identities
+- Actual GitHub main, A1 artifact, previous A2 and N18 original texts inspected; no true R1 ingestion, R2 selfcheck, GraphDB, SQLite query, regression suite or current CI rerun
+
+## Entire Nov01–18 per-source relationship matrix
+- SOURCE_NODE `RESEARCH/daily/2026-11-01-cortex-selfcheck.md` @ `d572a5ee7829b0b173fdcaa51ede38166ee2ddd0`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-01-dehydrated-report.md` @ `f85a2a4e32d81a6cd4d83de2e37f7bd431d2c16f`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-02-cortex-selfcheck.md` @ `96e91be59380aed7aadcdcee7d337dc138d56447`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-02-dehydrated-report.md` @ `0e5faae9ca1515f0f1b63e802d5781dc22cf5b5a`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-03-cortex-selfcheck.md` @ `275984a759c0050089e83e0e31c3d52ba4f1d7f0`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-03-dehydrated-report.md` @ `d0638bdf97f1bc6a3d98918903712c7ab1380d78`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-04-cortex-selfcheck.md` @ `fb88bb1d6c3579acc2c8f8d612d87f62bd03118d`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-04-dehydrated-report.md` @ `a56aea23dec9f85cbaa36d4d00a739287232f09a`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-05-cortex-selfcheck.md` @ `5a575fb91bc130bb40ec3c174eed70ef8ec5990b`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-05-dehydrated-report.md` @ `0bd935ecb1e8c8b76be5b7614889b3c50bc8317c`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-06-cortex-selfcheck.md` @ `0e0e3b46655bd13565a37186b9742287541d19ba`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-06-dehydrated-report.md` @ `6b5c1947225f8f60e14448e5b30d82c917112e2b`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-07-cortex-selfcheck.md` @ `bd3170df865db1ee5004f0cb95a435b301cf0cbf`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-07-dehydrated-report.md` @ `8facda43ea780dba3e13791fe01bbebeaaac3ecb`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-08-cortex-selfcheck.md` @ `db63c4ed9ded8c39f755209a143982c22a1f5767`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-08-dehydrated-report.md` @ `940e8ff8f026c43979956c52ed574f912edaebde`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-09-cortex-selfcheck.md` @ `02aa24b20ec34e839ce698fdc70ed2486151233c`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-09-dehydrated-report.md` @ `eb8898fd1d0e684b231978a6022ca5e11f297ac9`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-10-cortex-selfcheck.md` @ `937783c42cd86c7c555103977553492ed59f5e8c`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-10-dehydrated-report.md` @ `998c3f5b4744c390a86778758f74943f43626c98`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-11-cortex-selfcheck.md` @ `3b19a0c0d6a6153f3822868f5cdc482f2e339cc1`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-11-dehydrated-report.md` @ `70e5469d308078d56f927e749e48676d894e9647`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-12-cortex-selfcheck.md` @ `059e65cfdd81676cb61862221f96ef6f2aba4bb7`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-12-dehydrated-report.md` @ `59e0205718e3dfa18c21f4128de373b416e9a1ae`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-13-cortex-selfcheck.md` @ `d6462948ae833b5c8ae746742b77fc8b605ebe13`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-13-dehydrated-report.md` @ `8c33602e9fc634c4ac96f730cee1fcdf90d36bac`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-14-cortex-selfcheck.md` @ `f35129f136c2d3230be29cf5ea5a75be22c93c93`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-14-dehydrated-report.md` @ `b3b0323b5f16a3577299fbf819b5574a8bef44ba`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-15-cortex-selfcheck.md` @ `084d6f3b0768db5fa9ca61010026adc0aeecbc81`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-15-dehydrated-report.md` @ `42011192355c50f582d9cd68526c778519d19580`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-16-cortex-selfcheck.md` @ `1c29891b5103f57a8836a9dc537dd2615df88acc`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-16-dehydrated-report.md` @ `0c384a591072f12b802ab56dd90fd6d6729f1c21`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-17-cortex-selfcheck.md` @ `dd370cf3a762784dc58b4b7d69d124485d765983`, role R2_SELF_CHECK
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-17-dehydrated-report.md` @ `f77dd69cb141aee81c6f8f43ea03a747cce36ccc`, role R1_INGESTION
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-18-cortex-selfcheck.md` @ `b50ce51993a6dded04ec86296c2e783aa2d53035`, role R2_SELF_CHECK
+  - MONTHLY_RELATION NEW_NATIVE_DATE_NODE / CHANGED_MONTH_COVERAGE / PERSISTENCE_NOT_COMPUTED, required verification independent real invocation, named same store, test and graph counts
+  - CURRENT_BOUNDARY source text reopened 48 lines, statuses NOT_EXECUTED/NOT_COMPUTED; no graph health promotion
+- SOURCE_NODE `RESEARCH/daily/2026-11-18-dehydrated-report.md` @ `0b21ecbeacbc964d8c3ce04b55edbf4c05dbea79`, role R1_INGESTION
+  - MONTHLY_RELATION NEW_NATIVE_DATE_NODE / CHANGED_MONTH_COVERAGE / PERSISTENCE_NOT_COMPUTED, required verification named persistent DB, actual accepted/rejected, transaction and close/reopen
+  - CURRENT_BOUNDARY source text reopened 50 lines, statuses NOT_EXECUTED/NOT_COMPUTED; no graph health promotion
+- SOURCE_NODE `RESEARCH/weekly/2026-W44-alignment-report.md` @ `131f833a8b8f7f29ee9eff6f6f77d84f7da84cee`, role R3_DRIFT
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification comparable graph snapshot and explicit delta over closed week
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/weekly/2026-W44-reference-audit.md` @ `6f8cc815caefe09ef9bbe1f8214c71cfd2f5ce3e`, role R4_REFERENCE
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification actual graph edge, reference and orphan validation on named graph
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/weekly/2026-W45-alignment-report.md` @ `9d68e752adbf22bd1916d2a15c3d42f99591dd7c`, role R3_DRIFT
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification comparable graph snapshot and explicit delta over closed week
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/weekly/2026-W45-reference-audit.md` @ `ba012925faf4527f04be8da2ec801f5714524503`, role R4_REFERENCE
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification actual graph edge, reference and orphan validation on named graph
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/weekly/2026-W46-alignment-report.md` @ `518be61529fc2e1033899bf22f4f34cd390f0394`, role R3_DRIFT
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification comparable graph snapshot and explicit delta over closed week
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+- SOURCE_NODE `RESEARCH/weekly/2026-W46-reference-audit.md` @ `29aee0c19691d842d6cf0876771fafd2ab1e1188`, role R4_REFERENCE
+  - MONTHLY_RELATION INHERITED_A1_EXACT_SOURCE / NO_EXECUTION_CREDIT, required verification actual graph edge, reference and orphan validation on named graph
+  - CURRENT_BOUNDARY merged A1 exact path/blob inherited; NO_NEW_EVIDENCE_OF_REAL_GRAPH_EFFECT; no graph health promotion
+
+## Nov18 source addition and independent store-id negative controls
+- N18_NEW `RESEARCH/daily/2026-11-18-cortex-selfcheck.md` @ `b50ce51993a6dded04ec86296c2e783aa2d53035`
+  - Direct actual text 48 lines, heading `# GAS Native Daily R2 — 2026-11-18 / independent selfcheck; no comparable R1 store`
+  - Source status line `- Task Status: 'BLOCKED_NO_NAMED_R1_STORE / R2_SELF_CHECK_NOT_EXECUTED'`, literal flags NOT_EXECUTED/NOT_COMPUTED
+  - Relation to N17: current new source hypothesis is a separate research object; 17th R1/R2 failure receipts do not multiply into 18th independent test count
+- N18_NEW `RESEARCH/daily/2026-11-18-dehydrated-report.md` @ `0b21ecbeacbc964d8c3ce04b55edbf4c05dbea79`
+  - Direct actual text 50 lines, heading `# GAS Native Daily R1 — 2026-11-18 / ingestion CLI persistence boundary; source acquisition blocked`
+  - Source status line `- Task Status: 'BLOCKED_WORKTREE_ACQUISITION / INGESTION_NOT_EXECUTED / PERSISTENCE_NOT_COMPUTED'`, literal flags NOT_EXECUTED/NOT_COMPUTED
+  - Relation to N17: current new source hypothesis is a separate research object; 17th R1/R2 failure receipts do not multiply into 18th independent test count
+
+## Month coverage and earlier independent original relationship ledger
+- All 36 R1/R2 expected Daily files present; no claim of 36 runnable named stores or selfchecks
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-02-a1-gas-source-custody.md` @ `30fb6160a378823aa8e7067f36ab2a08070e145b`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-02-a2-gas-month-relations.md` @ `7214a11c9386efd15e38c20f87a5689af74c2f3e`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-03-a1-gas-source-custody.md` @ `c5f22a30b11f1b18048d1e6284d6aa4f92d9921c`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-03-a2-gas-month-relations.md` @ `47164c553ff7b9e2f4034401a39404a1eef70fd2`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-04-a1-gas-source-custody.md` @ `97f7a17feeca4e574d0cdca0c6364ba651851972`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-04-a2-gas-month-relations.md` @ `24e37d3fe9dbb1fd74292bdefb4183ebbeb1be1b`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-05-a1-gas-source-custody.md` @ `f3153c4e21e0908fd790cb93cff6c64ab5e91135`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-05-a2-gas-month-relations.md` @ `2cd5dd0bab39636dd857f25fdb7114a69948a969`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-06-a1-gas-source-custody.md` @ `70ee5303d5eeadc3373dae6bc79954b175c2a8e3`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-06-a2-gas-month-relations.md` @ `e86d1c86f9038a0c0283abec36f5ca3b534a038a`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-07-a1-gas-source-custody.md` @ `d546f80bc90bf2e1d423f072ab521e0c24dbce9b`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-07-a2-gas-month-relations.md` @ `01b0b961b910825fd7ebf0612a7e82e36b8a53b1`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-08-a1-gas-source-custody.md` @ `aa37cf05689c1e81e11221d24676a2c12e3f35c9`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-08-a2-gas-month-relations.md` @ `14639d49c1eb0cf55e589c17f228b7a311705e56`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-09-a1-gas-source-custody.md` @ `b4fad138750fe362b0ac1068655c44e84b76fb70`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-09-a2-gas-month-relations.md` @ `dd17c1432c04a9ddd057c407b3b40f1d7542a168`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-10-a1-gas-source-custody.md` @ `8ee2d2b2f781b9637ec2f67749722e0c999ce73e`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-10-a2-gas-month-relations.md` @ `0fa04d177499b7472b748b41b6afec9e99c06058`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-11-a1-gas-source-custody.md` @ `f92286d7bd50288bf291e8edc3abb1d12903bc1b`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-11-a2-gas-month-relations.md` @ `798d344761f839e1aaf7f22c4d7a0ff0be40cafd`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-12-a1-gas-source-custody.md` @ `99de9f68564bf15b4fa11f2a460dff9b9edcebbe`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-12-a2-gas-month-relations.md` @ `f89ff450055bc82f6244c90478277827402ce689`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-13-a1-gas-source-custody.md` @ `4a15de52b8dfd2f737d08cb6ae1e7265e43830db`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-13-a2-gas-month-relations.md` @ `468feba948b22c92b1f5bb1d1d9f2e7cc3f5d087`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-14-a1-gas-source-custody.md` @ `387b6e6a292650e0469d0d77ba3a61860c849753`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-14-a2-gas-month-relations.md` @ `26b72a06571cfe31b637d1964930c8f0d3c5e412`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-15-a1-gas-source-custody.md` @ `094d1261e849e1e763bc4349da80f7b0f9591efe`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-15-a2-gas-month-relations.md` @ `6d7296883e1fb2feb1b009314ff7e46aa5ae25cc`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-16-a1-gas-source-custody.md` @ `f24f9cfd0eede57de84edfbd03599e8abec2fe48`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-16-a2-gas-month-relations.md` @ `63183b3c60ae0cd3306b6cb6335cf3bec21da8bc`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-17-a1-gas-source-custody.md` @ `bb16b5f546f87d4b3a4fc66e33d812e934a7db78`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-17-a2-gas-month-relations.md` @ `bf0442bbef1ad1575bdc2cfbe48441b8668b9bc3`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+- PRIOR_ORIGINAL `historical-audits/2026-11/2026-11-18-a1-gas-source-custody.md` @ `286cb43a1a127413b059f7512ee15fe6186de025`
+  - Historical relation INHERITED: separate original PR/additions/author; old failure and later correction retain original times and statuses
+
+## Evidence Delta, counterexample, validation boundary
+- NEW_EVIDENCE: merged original A1 with complete Nov01–17 source custody plus two Nov18 native GAS source nodes actually reread
+- CORRECTED_INTERPRETATION: choosing db_path programmatically may support file persistence, but default CLI :memory: cannot prove persistent Store by success exit
+- UNCHANGED_BOUNDARY: static CODE inspection != accepted SQLite rows != R2 check executed != graph health; SAME_DATE != SAME_STORE
+- NEW_COUNTEREVIDENCE: no real named store close/reopen, unsupported connection from one error to two run outcomes, no calculated node/edge/digest, no independent R2 test results
+- UNKNOWN_RETAINED: actual accepted/rejected counts, rollback causes, transaction commit SHA, store incarnation and temporal drift, authoritative graph invariants
+- NEXT_RETEST_CONDITION: pin main and input, run named-store R1 ingestion, persist+close+reopen, run independent R2 on same exact file; capture stdout/stderr/exit and digest
+- Maintainer conclusion MTD_RELATION_UPDATED / GRAPH_EXECUTION_BLOCKED / NOVEMBER_OPEN, no unjustified edits to Jules, CODE, GRAPH DB, originals or Governance
+- GitHub original A2 additions >=100 and semantic value require independent original PR review; source/relationship rows are valid custody, not 100 unrelated findings
