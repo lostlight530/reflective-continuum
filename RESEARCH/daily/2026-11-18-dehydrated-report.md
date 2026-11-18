@@ -25,7 +25,8 @@
 
 ## Actual execution and attribution ledger
 - Executed bootstrap diagnostic command: `git ls-remote https://github.com/lostlight530/reflective-continuum.git HEAD`
-- Observation UTC: `2026-11-18T09:43:37Z`; environment: Linux isolated shell, Git 2.47.3.
+- Actual independently rerun Git bootstrap start UTC `2026-11-18T09:58:38.990694694Z`, end `2026-11-18T09:58:44.009411515Z`; isolated Linux shell, Git `2.47.3`, Python `3.13.5`.
+- Draft correction / evidence custody: the initial unmerged Draft stated `09:43:37Z` without an independently retained command receipt. This earlier timestamp is withdrawn; the newly captured process is a distinct Git diagnostic, NOT ingestion or R2 execution.
 - Bootstrap exit code: `128`; stdout: `EMPTY`; stderr: `fatal: unable to access 'https://github.com/lostlight530/reflective-continuum.git/': Could not resolve host: github.com`
 - Classification: `GIT_DNS_ACQUISITION_FAILURE`. The command was NOT a native ingestion program, a checker or R2.
 - Intended convergence baseline `PYTHONPATH=. python3 CODE/tasks/convergence_drill.py --iterations 100`: `NOT_EXECUTED`; actual repeated digests and distinct outcomes `NOT_COMPUTED`.
