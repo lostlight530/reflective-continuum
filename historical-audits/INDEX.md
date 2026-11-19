@@ -30,6 +30,11 @@ Not archived here:
 | Cross-period Jules cadence reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-cadence--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-cadence-reconciliation.md` |
 | Jules content-contract reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-content-contract--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-content-contract-reconciliation.md` |
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `RESEARCH/monthly/2026-09-10-ten-day-cadence-reconciliation.md` |
+| October 27 A1/A2 coverage correction | `01-corrections-and-errata/2026-10-27-a1-a2-coverage-reconciliation.md` | `historical-audits/2026-10/2026-10-27-a1-a2-coverage-reconciliation.md` |
+| October 28 SOP minimal acceptance audit | `03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` | `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md` |
+| October 29 R2 database-identity evidence-gap document audit | `02-document-audits/2026-10-29-r2-opened-database-identity-evidence-gap.md` | `historical-audits/2026-10/2026-10-29-r2-opened-database-identity-evidence-gap.md` |
+| November 8 A1/A2 post-merge quality reconciliation | `05-maintenance-and-reconciliation/2026-11-08-a1a2-postmerge-quality-reconciliation.md` | `historical-audits/2026-11/2026-11-08-a1a2-postmerge-quality-reconciliation.md` |
+| November 10 GAS A1/A2 source adjudication | `05-maintenance-and-reconciliation/2026-11-10-strict-nov08-nov09-gas-a1a2-source-adjudication.md` | `historical-audits/2026-11/2026-11-10-strict-nov08-nov09-gas-a1a2-source-adjudication.md` |
 
 Empty archive classes are intentionally left empty. The old paths remain recoverable through Git history. This archive does not supersede current repository authority or the current maintenance record.
 
