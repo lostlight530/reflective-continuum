@@ -30,7 +30,7 @@ Not archived here:
 | Cross-period Jules cadence reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-cadence--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-cadence-reconciliation.md` |
 | Jules content-contract reconciliation | `05-maintenance-and-reconciliation/2026-09-06--jules-content-contract--reconciliation.md` | `RESEARCH/monthly/2026-09-06-jules-content-contract-reconciliation.md` |
 | September ten-day successor reconciliation | `05-maintenance-and-reconciliation/2026-09-10--sep-01-10--cadence-reconciliation.md` | `RESEARCH/monthly/2026-09-10-ten-day-cadence-reconciliation.md` |
-| October 27 A1/A2 coverage correction | `01-corrections-and-errata/2026-10-27-a1-a2-coverage-reconciliation.md` | `historical-audits/2026-10/2026-10-27-a1-a2-coverage-reconciliation.md` |
+| October 27 A1/A2 coverage correction | `01-corrections-and-errata/2026-10-27--a1-a2-coverage--reconciliation.md` | `historical-audits/2026-10/2026-10-27-a1-a2-coverage-reconciliation.md` |
 | October 28 SOP minimal acceptance audit | `03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` | `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md` |
 | October 29 R2 database-identity evidence-gap document audit | `02-document-audits/2026-10-29-r2-opened-database-identity-evidence-gap.md` | `historical-audits/2026-10/2026-10-29-r2-opened-database-identity-evidence-gap.md` |
 | November 8 A1/A2 post-merge quality reconciliation | `05-maintenance-and-reconciliation/2026-11-08-a1a2-postmerge-quality-reconciliation.md` | `historical-audits/2026-11/2026-11-08-a1a2-postmerge-quality-reconciliation.md` |
@@ -73,3 +73,11 @@ The preferred links below are for navigation. The retained paths point to the sa
 | October 29 R2 opened-database evidence-gap reconciliation | [Preferred](05-maintenance-and-reconciliation/2026-10-29--r2-opened-database-identity-gap--reconciliation.md) | [Retained](02-document-audits/2026-10-29-r2-opened-database-identity-evidence-gap.md) |
 
 The preserved [August 30 stage audit](03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md) uses the former relative target `2026-08-through-27-stage-audit.md`; its [current archive location](03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) is recorded here without editing the historical body.
+
+## Archive filename normalization
+
+Only the paths changed; the historical document bodies and original task records are unchanged.
+
+| Previous revision | Current path | Unchanged Git blob |
+| --- | --- | --- |
+| [Previous path at pre-rename main](https://github.com/lostlight530/reflective-continuum/blob/89ad1d62864a1a83edcd25ca155f6405c03ba7c7/historical-audits/01-corrections-and-errata/2026-10-27-a1-a2-coverage-reconciliation.md) | [2026-10-27--a1-a2-coverage--reconciliation.md](01-corrections-and-errata/2026-10-27--a1-a2-coverage--reconciliation.md) | `9dc007efef815223227960fcd247777de6185315` |
