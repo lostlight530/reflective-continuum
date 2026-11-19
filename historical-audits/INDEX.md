@@ -39,3 +39,12 @@ Empty archive classes are intentionally left empty. The old paths remain recover
 - `05-maintenance-and-reconciliation/2026-09-19--sep-19--maintenance-reconciliation.md` — 2026-09-19 R1/R2 evidence-plane and sibling-concurrency reconciliation
 
 As of 2026-09-19 this is the latest completed independent periodic-maintenance record in the archive. Current GAS contracts, implementation and current repository evidence remain higher authority for present interpretation.
+
+## 2026-10-28 classification-only relocation
+
+These two records were reclassified without rewriting their original Git blob bodies, producer identities, source-time findings, or acceptance states. Former paths remain recoverable in Git history. This is not a new Native, A1/A2, Periodic Audit, or Reconciliation execution.
+
+- `historical-audits/03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` — former path: `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md`; preserved blob: `13b8bbe3a7b681a73e6ed5dc8dee38e84047ff04`.
+- `historical-audits/05-maintenance-and-reconciliation/2026-10-28-october-native-weekly-gap-recovery-register.md` — former path: `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md`; preserved blob: `c705aa91965380cee266325cf5b3a244e8ac94fc`.
+
+The SOP acceptance is a derived audit of previously merged work; the gap-recovery register is a maintenance evidence inventory, not an original producer run.
