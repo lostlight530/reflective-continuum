@@ -62,3 +62,14 @@ The SOP acceptance is a derived audit of previously merged work; the gap-recover
 | `historical-audits/2026-10/2026-10-29-r2-opened-database-identity-evidence-gap.md` | `historical-audits/05-maintenance-and-reconciliation/2026-10-29--r2-opened-database-identity-gap--reconciliation.md` | `e026fc6264d163e6f8d1e733546b5a05dd411727` |
 
 The October 29 R2 opened-database identity review is an `INDEPENDENT_GPT_DOCUMENTARY_RECONCILIATION` of previously issued R2 source evidence, **not** a new GAS R2 run. Its original Markdown relative links remain at the same directory depth following classification into `05-maintenance-and-reconciliation/`. Original A1/A2, Native and periodic D-task reports are not changed. No indexed inbound code matches were found for these former names; external backlinks were not exhaustively audited.
+
+## Current navigation for retained duplicate paths
+
+The preferred links below are for navigation. The retained paths point to the same Git blobs and are not separate audits or additional evidence. This section supersedes conflicting path labels in earlier entries of this index without changing their historical provenance.
+
+| Record | Preferred archive path | Retained same-blob path |
+| --- | --- | --- |
+| October 28 SOP minimal acceptance audit | [Preferred](03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md) | [Retained](03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md) |
+| October 29 R2 opened-database evidence-gap reconciliation | [Preferred](05-maintenance-and-reconciliation/2026-10-29--r2-opened-database-identity-gap--reconciliation.md) | [Retained](02-document-audits/2026-10-29-r2-opened-database-identity-evidence-gap.md) |
+
+The preserved [August 30 stage audit](03-stage-and-period-audits/2026-08-30--august-through-30--stage-audit.md) uses the former relative target `2026-08-through-27-stage-audit.md`; its [current archive location](03-stage-and-period-audits/2026-08-27--august-through-27--stage-audit.md) is recorded here without editing the historical body.
