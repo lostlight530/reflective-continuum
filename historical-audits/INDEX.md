@@ -44,7 +44,16 @@ As of 2026-09-19 this is the latest completed independent periodic-maintenance r
 
 These two records were reclassified without rewriting their original Git blob bodies, producer identities, source-time findings, or acceptance states. Former paths remain recoverable in Git history. This is not a new Native, A1/A2, Periodic Audit, or Reconciliation execution.
 
-- `historical-audits/03-stage-and-period-audits/2026-10-28-sop-minimal-acceptance-audit.md` — former path: `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md`; preserved blob: `13b8bbe3a7b681a73e6ed5dc8dee38e84047ff04`.
-- `historical-audits/05-maintenance-and-reconciliation/2026-10-28-october-native-weekly-gap-recovery-register.md` — former path: `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md`; preserved blob: `c705aa91965380cee266325cf5b3a244e8ac94fc`.
+- `historical-audits/03-stage-and-period-audits/2026-10-28--sop-minimal-acceptance--audit.md` — former path: `historical-audits/2026-10/2026-10-28-sop-minimal-acceptance-audit.md`; preserved blob: `13b8bbe3a7b681a73e6ed5dc8dee38e84047ff04`.
+- `historical-audits/05-maintenance-and-reconciliation/2026-10-28--october-native-weekly-gap-recovery--register.md` — former path: `historical-audits/2026-10/2026-10-28-october-native-weekly-gap-recovery-register.md`; preserved blob: `c705aa91965380cee266325cf5b3a244e8ac94fc`.
 
 The SOP acceptance is a derived audit of previously merged work; the gap-recovery register is a maintenance evidence inventory, not an original producer run.
+
+## 2026-11-19 additional safely classified historical records
+
+| Former historical path | Normalized archival path | Preserved blob SHA |
+| --- | --- | --- |
+| `historical-audits/01-corrections-and-errata/2026-10-28-a1-a2-tree-oid-erratum.md` | `historical-audits/01-corrections-and-errata/2026-10-28--a1-a2-tree-oid--erratum.md` | `e21b1e70fd43b6252a84f11c4b422556122e165a` |
+| `historical-audits/2026-10/2026-10-29-r2-opened-database-identity-evidence-gap.md` | `historical-audits/05-maintenance-and-reconciliation/2026-10-29--r2-opened-database-identity-gap--reconciliation.md` | `e026fc6264d163e6f8d1e733546b5a05dd411727` |
+
+The October 29 R2 opened-database identity review is an `INDEPENDENT_GPT_DOCUMENTARY_RECONCILIATION` of previously issued R2 source evidence, **not** a new GAS R2 run. Its original Markdown relative links remain at the same directory depth following classification into `05-maintenance-and-reconciliation/`. Original A1/A2, Native and periodic D-task reports are not changed. No indexed inbound code matches were found for these former names; external backlinks were not exhaustively audited.
