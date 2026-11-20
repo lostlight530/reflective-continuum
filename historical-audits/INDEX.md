@@ -81,3 +81,7 @@ Only the paths changed; the historical document bodies and original task records
 | Previous revision | Current path | Unchanged Git blob |
 | --- | --- | --- |
 | [Previous path at pre-rename main](https://github.com/lostlight530/reflective-continuum/blob/89ad1d62864a1a83edcd25ca155f6405c03ba7c7/historical-audits/01-corrections-and-errata/2026-10-27-a1-a2-coverage-reconciliation.md) | [2026-10-27--a1-a2-coverage--reconciliation.md](01-corrections-and-errata/2026-10-27--a1-a2-coverage--reconciliation.md) | `9dc007efef815223227960fcd247777de6185315` |
+
+## 2026-11-20 independent GAS document audit
+
+- [GAS source role and persistent-store evidence review](02-document-audits/2026-11-20--gas-a1-a2-store-evidence--document-audit.md) — current A1/A2 role corrections and bounded native execution receipts
