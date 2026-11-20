@@ -43,7 +43,7 @@
 - It is a bounded existence proof about SQLite's snapshot semantics in this specific environment; it is not an inference about every WAL configuration or the actual GAS schema
 
 ## Formal R1 ingestion execution ledger
-- Attempted acquisition: `git ls-remote https://github.com/lostlight530/Axiom-0.git refs/heads/main`; exit `128`; stdout empty; stderr `Could not resolve host: github.com`; full executable Git tree NOT_AVAILABLE locally
+- Attempted acquisition: `git ls-remote https://github.com/lostlight530/reflective-continuum.git refs/heads/main`; exit `128`; stdout empty; stderr `Could not resolve host: github.com`; full executable Git tree NOT_AVAILABLE locally
 - Formal intended command: `PYTHONPATH=. python3 CODE/tasks/insight_morpher.py <named fixture.json>`; `NOT_EXECUTED`
 - Formal R1 input provenance, fixture checksum and native stdout/stderr/exit: `NOT_AVAILABLE`
 - Native accepted/rejected signal counts, rollback, graph nodes/edges: `NOT_COMPUTED`
