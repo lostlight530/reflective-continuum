@@ -85,3 +85,13 @@ Only the paths changed; the historical document bodies and original task records
 ## 2026-11-20 independent GAS document audit
 
 - [GAS source role and persistent-store evidence review](02-document-audits/2026-11-20--gas-a1-a2-store-evidence--document-audit.md) — current A1/A2 role corrections and bounded native execution receipts
+
+## 2026-11-24 retained archive navigation additions
+
+These existing records were not explicitly linked by path in the preceding index. This is a navigation supplement, not a new audit, a new producer run, or a reclassification. The directory column reports the retained physical location; original record content and provenance govern interpretation. Path-sensitive references and legacy locations remain intact. Existing same-blob aliases are not additional evidence.
+
+| Retained record | Existing directory | Blob at inspected main |
+| --- | --- | --- |
+| [2026-10-01--external-review-source-scope--correction.md](01-corrections-and-errata/2026-10-01--external-review-source-scope--correction.md) | `01-corrections-and-errata/` | `223ab1d4ca17fb5aa31d9e01d3d42e0c663ccd45` |
+| [2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md](01-corrections-and-errata/2026-11-01--a2-successor-retention-and-acceptance--reconciliation.md) | `01-corrections-and-errata/` | `e9cad06f92e7cb57b8aa878b0d667aa74b821b53` |
+| [2026-09-13--sep-01-13--maintenance-reconciliation.md](05-maintenance-and-reconciliation/2026-09-13--sep-01-13--maintenance-reconciliation.md) | `05-maintenance-and-reconciliation/` | `206c20f005c9bc2bc9f05862ed2f7b0523fb8792` |
